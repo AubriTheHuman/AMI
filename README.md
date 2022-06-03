@@ -1,3 +1,5 @@
+![alt text](https://github.com/AubriTheHuman/AMI/blob/main/amilogobanner.png?raw=true)
+
 Aubri's Magival Industries (AMI) modpack is a Tech modpack that leans heavily into using multiblock machines to accomplish tasks.
 
 It is for 1.16.5 focused on Create, Immersive Engineering, Astral Sorcery, Botania, and Advanced Rocketry. Create and grow your factory to produce magical items with automation control and long production chains utilizing multiblocks and sequenced assembly!
