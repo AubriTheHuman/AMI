@@ -67,9 +67,9 @@ Recipe.type(Type.BLACKSMITH)
   .tool(<tag:items:artisantools:type/cutters>, 1)
   .register();
 Recipe.type(Type.BLACKSMITH)
-  .shaped([[<tag:items:forge:plates/crystal_obsidian>,<tag:items:forge:plates/crystal_obsidian>,<tag:items:forge:plates/crystal_obsidian>],
-  [<tag:items:forge:plates/crystal_obsidian>,<item:ironchest:diamond_chest>,<tag:items:forge:plates/crystal_obsidian>],
-  [<tag:items:forge:plates/crystal_obsidian>,<tag:items:forge:plates/crystal_obsidian>,<tag:items:forge:plates/crystal_obsidian>]])
+  .shaped([[<tag:items:forge:plates/crying_obsidian>,<tag:items:forge:plates/crying_obsidian>,<tag:items:forge:plates/crying_obsidian>],
+  [<tag:items:forge:plates/crying_obsidian>,<item:ironchest:diamond_chest>,<tag:items:forge:plates/crying_obsidian>],
+  [<tag:items:forge:plates/crying_obsidian>,<tag:items:forge:plates/crying_obsidian>,<tag:items:forge:plates/crying_obsidian>]])
   .output(<item:ironchest:obsidian_chest>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .tool(<tag:items:artisantools:type/cutters>, 1)
@@ -118,9 +118,9 @@ Recipe.type(Type.BLACKSMITH)
   .fluid(<fluid:amicore:molten_tin_brass>*288)
   .register();
 Recipe.type(Type.BLACKSMITH)
-  .shaped([[<tag:items:forge:plates/crystal_obsidian>,<tag:items:forge:plates/crystal_obsidian>,<tag:items:forge:plates/crystal_obsidian>],
-  [<tag:items:forge:plates/crystal_obsidian>,<tag:items:minecraft:planks>,<tag:items:forge:plates/crystal_obsidian>],
-  [<tag:items:forge:plates/crystal_obsidian>,<tag:items:forge:plates/crystal_obsidian>,<tag:items:forge:plates/crystal_obsidian>]])
+  .shaped([[<tag:items:forge:plates/crying_obsidian>,<tag:items:forge:plates/crying_obsidian>,<tag:items:forge:plates/crying_obsidian>],
+  [<tag:items:forge:plates/crying_obsidian>,<tag:items:minecraft:planks>,<tag:items:forge:plates/crying_obsidian>],
+  [<tag:items:forge:plates/crying_obsidian>,<tag:items:forge:plates/crying_obsidian>,<tag:items:forge:plates/crying_obsidian>]])
   .output(<item:ironchest:diamond_to_obsidian_chest_upgrade>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .tool(<tag:items:artisantools:type/cutters>, 1)

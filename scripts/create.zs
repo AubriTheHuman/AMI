@@ -1229,10 +1229,10 @@ mixing.addRecipe("hydroxide_fuel", "heated", <fluid:amicore:hydroxide_fuel> * 10
 
 #diamond plates
 <tag:items:forge:plates/diamond>.add(<item:amicore:diamond_plate>);
-<tag:items:forge:plates/crystal_obsidian>.add(<item:amicore:crystal_obsidian_plate>);
+<tag:items:forge:plates/crying_obsidian>.add(<item:amicore:crying_obsidian_plate>);
 <tag:items:forge:plates/dirt>.add(<item:amicore:dirt_plate>);
 pressing.addRecipe("diamond_plate", [<item:amicore:diamond_plate>], <item:minecraft:diamond>);
-pressing.addRecipe("obsidan_ctystal_plate", [<item:amicore:crystal_obsidian_plate>], <item:minecraft:crying_obsidian>);
+pressing.addRecipe("obsidan_ctystal_plate", [<item:amicore:crying_obsidian_plate>], <item:minecraft:crying_obsidian>);
 pressing.addRecipe("dirt_plate", [<item:amicore:dirt_plate>], <item:minecraft:dirt>);
 
 #crude steel plate
