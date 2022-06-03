@@ -1,0 +1,17 @@
+cache/
+saves/
+screenshots/
+trees/
+mods/
+logs/
+local/
+downloads/
+crash-reports/
+backups/
+dumps/
+emojiful/
+resourcepacks/
+usercache.json
+usernamecache.json
+TrashSlotSaveState.json
+options.txt

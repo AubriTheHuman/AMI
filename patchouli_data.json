@@ -1,0 +1,181 @@
+{
+  "bookGuiScale": 4,
+  "clickedVisualize": false,
+  "bookData": {
+    "geolosys:field_manual": {
+      "viewedEntries": [
+        "geolosys:03_resources/beryl",
+        "geolosys:03_resources/gold_nether",
+        "geolosys:03_resources/platinum",
+        "geolosys:02_prospecting/01_samples",
+        "geolosys:03_resources/peat",
+        "geolosys:01_introduction/01_getting_started",
+        "geolosys:01_introduction/04_configuring",
+        "geolosys:01_introduction/03_vanilla_ores",
+        "geolosys:01_introduction/02_ore_plutons",
+        "geolosys:03_resources/bauxite",
+        "geolosys:03_resources/autunite",
+        "geolosys:03_resources/lapis",
+        "geolosys:03_resources/cinnabar",
+        "geolosys:03_resources/anthracitic_coal",
+        "geolosys:03_resources/sphalerite",
+        "geolosys:04_patrons/list",
+        "geolosys:03_resources/limonite",
+        "geolosys:03_resources/cassiterite",
+        "geolosys:03_resources/granite",
+        "geolosys:02_prospecting/02_prospectors_pick",
+        "geolosys:03_resources/lignite",
+        "geolosys:03_resources/kimberlite",
+        "geolosys:03_resources/ancient_debris",
+        "geolosys:03_resources/gold",
+        "geolosys:03_resources/diorite",
+        "geolosys:03_resources/galena",
+        "geolosys:03_resources/coal",
+        "geolosys:03_resources/malachite_and_azurite",
+        "geolosys:03_resources/hematite",
+        "geolosys:03_resources/andesite",
+        "geolosys:03_resources/teallite_and_emerald",
+        "geolosys:03_resources/bituminous_coal",
+        "geolosys:03_resources/assorted_quartz"
+      ],
+      "bookmarks": [],
+      "history": [
+        "geolosys:03_resources/andesite",
+        "geolosys:01_introduction/02_ore_plutons",
+        "geolosys:01_introduction/03_vanilla_ores",
+        "geolosys:01_introduction/04_configuring",
+        "geolosys:01_introduction/01_getting_started",
+        "geolosys:03_resources/peat",
+        "geolosys:02_prospecting/01_samples",
+        "geolosys:03_resources/platinum",
+        "geolosys:03_resources/gold_nether",
+        "geolosys:03_resources/beryl"
+      ],
+      "completedManualQuests": []
+    },
+    "littlelogistics:guide": {
+      "viewedEntries": [
+        "littlelogistics:tug_route"
+      ],
+      "bookmarks": [],
+      "history": [
+        "littlelogistics:tug_route"
+      ],
+      "completedManualQuests": []
+    },
+    "patchouli:field_manual_ami": {
+      "viewedEntries": [
+        "patchouli:01_introduction/01_getting_started",
+        "patchouli:01_introduction/03_vanilla_ores",
+        "patchouli:01_introduction/04_configuring",
+        "patchouli:01_introduction/02_ore_plutons",
+        "patchouli:02_prospecting/02_prospectors_pick",
+        "patchouli:02_prospecting/01_samples",
+        "patchouli:03_resources/anthracite",
+        "patchouli:03_resources/azurite",
+        "patchouli:03_resources/bauxite",
+        "patchouli:03_resources/autunite",
+        "patchouli:03_resources/beryl",
+        "patchouli:03_resources/pentlandite",
+        "patchouli:03_resources/limonite",
+        "patchouli:03_resources/nether_quartz",
+        "patchouli:03_resources/brucite",
+        "patchouli:03_resources/cinnabar",
+        "patchouli:03_resources/lazurite",
+        "patchouli:03_resources/pyrite",
+        "patchouli:03_resources/ender_pendorite",
+        "patchouli:03_resources/teallite",
+        "patchouli:03_resources/chromite",
+        "patchouli:03_resources/ender_amber",
+        "patchouli:03_resources/hematite",
+        "patchouli:03_resources/ender_thallasium",
+        "patchouli:03_resources/uraninite",
+        "patchouli:03_resources/gold",
+        "patchouli:03_resources/nether_gold",
+        "patchouli:03_resources/nether_anthracite",
+        "patchouli:03_resources/rutle",
+        "patchouli:03_resources/cassiterite",
+        "patchouli:03_resources/magnetite",
+        "patchouli:03_resources/quartzite",
+        "patchouli:03_resources/lignite",
+        "patchouli:03_resources/ender_biotite",
+        "patchouli:03_resources/sperrylite",
+        "patchouli:03_resources/bitumen",
+        "patchouli:03_resources/nether_cobalt",
+        "patchouli:03_resources/nether_debris",
+        "patchouli:03_resources/galena",
+        "patchouli:03_resources/kimberlite",
+        "patchouli:03_resources/malachite",
+        "patchouli:03_resources/sphalerite",
+        "patchouli:04_patrons/list"
+      ],
+      "bookmarks": [],
+      "history": [
+        "patchouli:03_resources/chromite",
+        "patchouli:03_resources/azurite",
+        "patchouli:03_resources/cassiterite",
+        "patchouli:02_prospecting/01_samples",
+        "patchouli:02_prospecting/02_prospectors_pick",
+        "patchouli:03_resources/hematite",
+        "patchouli:03_resources/limonite",
+        "patchouli:03_resources/nether_quartz",
+        "patchouli:03_resources/cinnabar",
+        "patchouli:03_resources/bitumen",
+        "patchouli:04_patrons/list",
+        "patchouli:03_resources/autunite",
+        "patchouli:01_introduction/04_configuring"
+      ],
+      "completedManualQuests": []
+    },
+    "engineerstools:engineerstools_manual": {
+      "viewedEntries": [
+        "engineerstools:consumables/grits"
+      ],
+      "bookmarks": [],
+      "history": [
+        "engineerstools:consumables/grits"
+      ],
+      "completedManualQuests": []
+    },
+    "psi:encyclopaedia_psionica": {
+      "viewedEntries": [
+        "psi:legacy/detection_dynamics",
+        "psi:items/flow_control"
+      ],
+      "bookmarks": [],
+      "history": [
+        "psi:items/flow_control",
+        "psi:legacy/detection_dynamics"
+      ],
+      "completedManualQuests": []
+    },
+    "betterendforge:guidebook": {
+      "viewedEntries": [
+        "betterendforge:rituals/eternal_ritual",
+        "betterendforge:rituals/infusion_ritual"
+      ],
+      "bookmarks": [],
+      "history": [
+        "betterendforge:rituals/infusion_ritual",
+        "betterendforge:rituals/eternal_ritual"
+      ],
+      "completedManualQuests": []
+    },
+    "bloodmagic:guide": {
+      "viewedEntries": [
+        "bloodmagic:altar/blood_altar",
+        "bloodmagic:altar/soul_network",
+        "bloodmagic:altar/slates",
+        "bloodmagic:altar/redstone_automation"
+      ],
+      "bookmarks": [],
+      "history": [
+        "bloodmagic:altar/redstone_automation",
+        "bloodmagic:altar/slates",
+        "bloodmagic:altar/blood_altar",
+        "bloodmagic:altar/soul_network"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}
