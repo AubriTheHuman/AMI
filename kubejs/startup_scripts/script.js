@@ -322,7 +322,7 @@ onEvent('item.registry', event => {
 
 	//random crafting components
 	event.create('amicore:diamond_plate').displayName('Diamond Plate').texture("kubejs:item/diamond_plate").group('amicore.materialtab')
-	event.create('amicore:crystal_obsidian_plate').displayName('Crystal Obsidian Plate').texture("kubejs:item/crystal_obsidian_plate").group('amicore.materialtab')
+	event.create('amicore:crying_obsidian_plate').displayName('Crying Obsidian Plate').texture("kubejs:item/crying_obsidian_plate").group('amicore.materialtab')
 	event.create('amicore:dirt_plate').displayName('Dirt Plate').texture("kubejs:item/dirt_plate").group('amicore.materialtab')
 	// event.create('programmer_socks', 'boots').tier('leather').displayName('Programmer Socks').maxDamage(500)
 
@@ -374,9 +374,10 @@ onEvent('item.registry', event => {
 	event.create('amicore:chemical_science_juice_bottle').displayName('Bottled Chemical Science Juice').texture("kubejs:item/chemical_science_juice_bottle").group('amicore.fluidtab');
 	event.create('amicore:stellar_science_juice_bottle').displayName('Bottled Stellar Science Juice').texture("kubejs:item/stellar_science_juice_bottle").group('amicore.fluidtab');
 	event.create('amicore:coalesced_science_juice_bottle').displayName('Bottled Coalesced Science Juice').texture("kubejs:item/coalesced_science_juice_bottle").group('amicore.fluidtab');
-	event.create('amicore:carbonic_science_juice_bottle').displayName('Bottled Carbonic Science Juice').texture("kubejs:item/carbonic_science_juice_bottle").group('amicore.fluidtab');
+	event.create('amicore:carbonic_science_juice_bottle').displayName('Bottled Steamy Science Juice').texture("kubejs:item/carbonic_science_juice_bottle").group('amicore.fluidtab');
 	event.create('amicore:spatial_science_juice_bottle').displayName('Bottled Spatial Science Juice').texture("kubejs:item/spatial_science_juice_bottle").group('amicore.fluidtab');
 	event.create('amicore:manaflux_science_juice_bottle').displayName('Bottled Manaflux Science Juice').texture("kubejs:item/manaflux_science_juice_bottle").group('amicore.fluidtab');
+	event.create('amicore:klein_bottle').displayName('Klein Bottle').texture("kubejs:item/klein_bottle").group('amicore.fluidtab');
 
 	//lava age items
 	event.create('amicore:simple_gearbox').displayName('Simple Gearbox').texture("kubejs:item/simple_gearbox").group('amicore.intermediatestab');
