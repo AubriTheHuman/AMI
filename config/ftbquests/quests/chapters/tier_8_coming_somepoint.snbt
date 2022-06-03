@@ -83,5 +83,16 @@
 				item: "create:creative_blaze_cake"
 			}]
 		}
+		{
+			title: "Getting home..."
+			x: 0.5d
+			y: 2.5d
+			id: "7C27FE0AB81230C8"
+			tasks: [{
+				id: "04E89F872861D8FA"
+				type: "item"
+				item: "portality:controller"
+			}]
+		}
 	]
 }

@@ -477,5 +477,15 @@
 				item: "astralsorcery:starmetal_ingot"
 			}]
 		}
+		{
+			x: -2.0d
+			y: -4.5d
+			id: "387ED01B579BD8E6"
+			tasks: [{
+				id: "665DA9685EF981C6"
+				type: "item"
+				item: "refinedpipes:improved_extractor_attachment"
+			}]
+		}
 	]
 }

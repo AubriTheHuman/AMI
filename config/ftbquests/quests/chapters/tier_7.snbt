@@ -40,16 +40,6 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: -0.5d
-			id: "1FF1035F4CFBB5B9"
-			tasks: [{
-				id: "02C785A1B8ABD712"
-				type: "item"
-				item: "refinedpipes:basic_item_pipe"
-			}]
-		}
-		{
 			x: 3.5d
 			y: -0.5d
 			id: "6DCD3FF7195A1C74"
@@ -138,6 +128,26 @@
 				id: "31043BADDAA98034"
 				type: "item"
 				item: "bloodmagic:altar"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			id: "68B71EFA42E0CC5E"
+			tasks: [{
+				id: "2FACC829D33969EF"
+				type: "item"
+				item: "refinedpipes:advanced_item_pipe"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			id: "3E0212415A23746A"
+			tasks: [{
+				id: "7CEFE7A41CC3F96E"
+				type: "item"
+				item: "refinedpipes:elite_extractor_attachment"
 			}]
 		}
 	]

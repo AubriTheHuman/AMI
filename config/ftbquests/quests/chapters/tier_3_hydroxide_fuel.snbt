@@ -1557,5 +1557,25 @@
 				item: "immersivepetroleum:auto_lubricator"
 			}]
 		}
+		{
+			x: 10.5d
+			y: -4.0d
+			id: "51ABF09BD17D3642"
+			tasks: [{
+				id: "0B74686DB0E4CB3A"
+				type: "item"
+				item: "refinedpipes:basic_item_pipe"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -3.0d
+			id: "47549D4AF358C45A"
+			tasks: [{
+				id: "45E68D33FAD12C1E"
+				type: "item"
+				item: "refinedpipes:basic_extractor_attachment"
+			}]
+		}
 	]
 }

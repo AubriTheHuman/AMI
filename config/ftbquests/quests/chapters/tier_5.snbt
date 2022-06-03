@@ -247,5 +247,25 @@
 				item: "betterendforge:end_fish_raw"
 			}]
 		}
+		{
+			x: -0.5d
+			y: -3.0d
+			id: "429510CC018FA504"
+			tasks: [{
+				id: "082475EC3B4728FF"
+				type: "item"
+				item: "refinedpipes:improved_item_pipe"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			id: "631F7C45C45BCA81"
+			tasks: [{
+				id: "2ECAFE2BE08014D1"
+				type: "item"
+				item: "refinedpipes:advanced_extractor_attachment"
+			}]
+		}
 	]
 }
