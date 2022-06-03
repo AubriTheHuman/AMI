@@ -176,6 +176,18 @@
         "bloodmagic:altar/soul_network"
       ],
       "completedManualQuests": []
+    },
+    "advancedperipherals:manual": {
+      "viewedEntries": [
+        "advancedperipherals:items/chunk_controller",
+        "advancedperipherals:peripherals/me_bridge"
+      ],
+      "bookmarks": [],
+      "history": [
+        "advancedperipherals:peripherals/me_bridge",
+        "advancedperipherals:items/chunk_controller"
+      ],
+      "completedManualQuests": []
     }
   }
 }

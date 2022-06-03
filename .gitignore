@@ -11,7 +11,10 @@ backups/
 dumps/
 emojiful/
 resourcepacks/
+tconplanner/
 usercache.json
 usernamecache.json
 TrashSlotSaveState.json
 options.txt
+minecraftinstance.json
+patchouli_data.json
