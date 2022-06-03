@@ -1,0 +1,29 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": 60,
+    "yMax": 128,
+    "size": 45,
+    "spread": 13,
+    "density": 1.0,
+    "dimensions": {
+      "isBlacklist": false,
+      "filter": [ "overworld" ]
+    },
+    "blocks": [{
+      "block": "amicore:lignite_ore",
+      "chance": 0.7
+    },{
+      "block": "amicore:coal_ore",
+      "chance": 0.27
+    },{
+      "block": "amicore:sulfur_ore",
+      "chance": 0.03
+    }],
+    "samples": [{
+      "block": "amicore:lignite_ore_sample",
+      "chance": 1.0
+    }],
+    "generationWeight": 5
+  }
+}

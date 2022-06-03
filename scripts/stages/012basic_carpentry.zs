@@ -1,0 +1,19 @@
+#import #mods.#ItemStages.#ItemStages;
+import crafttweaker.api.item.IIngredient;
+import crafttweaker.api.item.IItemStack;
+import crafttweaker.api.tag.MCTag;
+import crafttweaker.api.BracketHandlers;
+import crafttweaker.api.SmithingManager;
+import crafttweaker.api.tag.TagManager;
+import crafttweaker.api.tag.TagManagerItem;
+#import #mods.artisanworktables.Recipe;
+#import #mods.artisanworktables.Type;
+import crafttweaker.api.ILogger;
+
+#ItemStages.restrict(<item:artisanworktables:worktable_carpenter>, "012basic_carpentry");
+#ItemStages.restrict(<item:artisanworktables:workstation_carpenter>, "012basic_carpentry");
+#ItemStages.restrict(<item:artisanworktables:toolbox>, "012basic_carpentry");
+#mods.recipestages.Recipes.setRecipeStage("012basic_carpentry", <item:artisanworktables:worktable_carpenter>);
+#mods.recipestages.Recipes.setRecipeStage("012basic_carpentry", <item:artisanworktables:workstation_carpenter>);
+#mods.recipestages.Recipes.setRecipeStage("012basic_carpentry", <item:artisanworktables:toolbox>);
+#mods.recipestages.Recipes.setRecipeStage("012basic_carpentry", <resource:minecraft:boat>);

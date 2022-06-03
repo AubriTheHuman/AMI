@@ -1,0 +1,284 @@
+{
+  "catalyst": "{id:\"create:wrench\",Count:1b}",
+  "consumeCatalyst": false,
+  "location": "amicore:sitting_tank",
+  "traits": {},
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:sitting_tank_panel",
+    "frontTexture": "multiblocked:sitting_tank_panel",
+    "backTexture": "multiblocked:sitting_tank_panel",
+    "leftTexture": "multiblocked:sitting_tank_panel",
+    "rightTexture": "multiblocked:sitting_tank_panel",
+    "upTexture": "multiblocked:controller_panel_unformed",
+    "downTexture": "multiblocked:sitting_tank_panel",
+    "type": "gregtech"
+  },
+  "formedRenderer": {
+    "baseTexture": "multiblocked:sitting_tank_panel",
+    "frontTexture": "multiblocked:sitting_tank_panel",
+    "backTexture": "multiblocked:sitting_tank_panel",
+    "leftTexture": "multiblocked:sitting_tank_panel",
+    "rightTexture": "multiblocked:sitting_tank_panel",
+    "upTexture": "multiblocked:controller_panel",
+    "downTexture": "multiblocked:sitting_tank_panel",
+    "type": "gregtech"
+  },
+  "workingRenderer": {
+    "baseTexture": "multiblocked:sitting_tank_panel",
+    "frontTexture": "multiblocked:sitting_tank_panel",
+    "backTexture": "multiblocked:sitting_tank_panel",
+    "leftTexture": "multiblocked:sitting_tank_panel",
+    "rightTexture": "multiblocked:sitting_tank_panel",
+    "upTexture": "multiblocked:controller_panel_working",
+    "downTexture": "multiblocked:sitting_tank_panel",
+    "type": "gregtech"
+  },
+  "properties": {
+    "isOpaque": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "harvestLevel": 1,
+    "lightEmissive": 0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "hasCollision": true,
+    "tabGroup": "amicore.machinetab",
+    "stackSize": 64
+  },
+  "basePattern": {
+    "structureDir": [
+      "RIGHT",
+      "UP",
+      "FRONT"
+    ],
+    "pattern": [
+      [
+        "AAAAA",
+        "ABBBA",
+        "ABBBA",
+        "ABBBA",
+        "  C  "
+      ],
+      [
+        "ABBBA",
+        "B   B",
+        "B   B",
+        "B D B",
+        "  D  "
+      ],
+      [
+        "ABBBA",
+        "BEEEB",
+        "BEEEB",
+        "B   B",
+        "     "
+      ],
+      [
+        "ABBBA",
+        "B   B",
+        "B   B",
+        "B   B",
+        "     "
+      ],
+      [
+        "ABBBA",
+        "B   B",
+        "B   B",
+        "     ",
+        "     "
+      ],
+      [
+        "ABBBF",
+        "B   B",
+        "B   B",
+        "     ",
+        "     "
+      ],
+      [
+        "ABBBA",
+        "B   B",
+        "B   B",
+        "     ",
+        "     "
+      ],
+      [
+        "ABBBA",
+        "B   B",
+        "B   B",
+        "     ",
+        "     "
+      ],
+      [
+        "GBBBA",
+        "B   B",
+        "B   B",
+        "     ",
+        "     "
+      ],
+      [
+        "ABBBA",
+        "B   B",
+        "B   B",
+        "     ",
+        "     "
+      ],
+      [
+        "AAAAA",
+        "ABBBA",
+        "ABBB@",
+        "     ",
+        "     "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "createdeco:copper_sheet_metal"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "amicore:sitting_tank",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "create:copper_casing"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "amicore:sitting_pool_fluid_input"
+          }
+        ],
+        "type": "blocks"
+      },
+      "D": {
+        "blocks": [
+          {
+            "id": "create:fluid_pipe"
+          }
+        ],
+        "type": "blocks"
+      },
+      "E": {
+        "blocks": [
+          {
+            "id": "createdeco:copper_mesh_fence"
+          }
+        ],
+        "type": "blocks"
+      },
+      "F": {
+        "blocks": [
+          {
+            "id": "amicore:sitting_pool_fluid_output"
+          }
+        ],
+        "type": "blocks"
+      },
+      "G": {
+        "blocks": [
+          {
+            "id": "amicore:sitting_pool_item_output"
+          }
+        ],
+        "type": "blocks"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  },
+  "recipeMap": "sitting_pool"
+}

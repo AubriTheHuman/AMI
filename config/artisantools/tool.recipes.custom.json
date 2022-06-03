@@ -1,0 +1,223 @@
+{
+  "recipes": {
+    "cutters": {
+      "pattern": [
+        ". .",
+        " xb",
+        "/ /"
+      ],
+      "key": [
+        "b",
+        "item#amicore:wooden_bolt",
+        "x",
+        "tag#forge:string",
+        "/",
+        "item#minecraft:stick"
+      ]
+    },
+    "hammer": {
+      "pattern": [
+        "...",
+        "./.",
+        " / "
+      ],
+      "key": [
+        "/",
+        "item#minecraft:stick"
+      ]
+    },
+    "handsaw": {
+      "pattern": [
+        " ./",
+        "./ ",
+        "/  "
+      ],
+      "key": [
+        "/",
+        "item#minecraft:stick"
+      ]
+    },
+    "beaker": {
+      "pattern": [
+        ".g.",
+        " g "
+      ],
+      "key": [
+        "g",
+        "tag#forge:glass"
+      ]
+    },
+    "burner": {
+      "pattern": [
+        " . ",
+        " . ",
+        "ppp"
+      ],
+      "key": [
+        "p",
+        "tag#minecraft:planks"
+      ]
+    },
+    "pencil": {
+      "pattern": [
+        "  c",
+        "./.",
+        "/  "
+      ],
+      "key": [
+        "/",
+        "item#minecraft:stick",
+        "c",
+        "item#minecraft:coal"
+      ]
+    },
+    "tsquare": {
+      "pattern": [
+        "///",
+        " . ",
+        " . "
+      ],
+      "key": [
+        "/",
+        "item#minecraft:stick"
+      ]
+    },
+    "driver": {
+      "pattern": [
+        "  .",
+        " . ",
+        "/x "
+      ],
+      "key": [
+        "x",
+        "tag#forge:string",
+        "/",
+        "item#minecraft:stick"
+      ]
+    },
+    "spanner": {
+      "pattern": [
+        " . ",
+        " /.",
+        "/  "
+      ],
+      "key": [
+        "/",
+        "item#minecraft:stick"
+      ]
+    },
+    "chisel": {
+      "pattern": [
+        "  .",
+        " . ",
+        "/  "
+      ],
+      "key": [
+        "/",
+        "item#minecraft:stick"
+      ]
+    },
+    "compass": {
+      "pattern": [
+        " / ",
+        "/x/",
+        ". ."
+      ],
+      "key": [
+        "x",
+        "tag#forge:string",
+        "/",
+        "item#minecraft:stick"
+      ]
+    },
+    "mortar": {
+      "pattern": [
+        "  /",
+        ".f ",
+        " b "
+      ],
+      "key": [
+        "b",
+        "item#minecraft:bowl",
+        "f",
+        "item#minecraft:flint",
+        "/",
+        "item#minecraft:stick"
+      ]
+    },
+    "knife": {
+      "pattern": [
+        "  .",
+        "x. ",
+        "/x "
+      ],
+      "key": [
+        "x",
+        "tag#forge:string",
+        "/",
+        "item#minecraft:stick"
+      ]
+    },
+    "file": {
+      "pattern": [
+        " /.",
+        "/. ",
+        "/  "
+      ],
+      "key": [
+        "/",
+        "item#minecraft:stick"
+      ]
+    },
+    "solderer": {
+      "pattern": [
+        "  .",
+        " . ",
+        "c  "
+      ],
+      "key": [
+        "c",
+        "item#minecraft:clay_ball"
+      ]
+    },
+    "sifter": {
+      "pattern": [
+        "/./",
+        "/x/",
+        "/./"
+      ],
+      "key": [
+        "x",
+        "tag#forge:string",
+        "/",
+        "item#minecraft:stick"
+      ]
+    },
+    "quill": {
+      "pattern": [
+        "  f",
+        " .x",
+        ".  "
+      ],
+      "key": [
+        "x",
+        "tag#forge:string",
+        "f",
+        "tag#forge:feathers"
+      ]
+    },
+    "cutting_board": {
+      "pattern": [
+        "  /",
+        " . ",
+        ".bb"
+      ],
+      "key": [
+        "b",
+        "tag#minecraft:wooden_slabs",
+        "/",
+        "item#minecraft:stick"
+      ]
+    }
+  }
+}

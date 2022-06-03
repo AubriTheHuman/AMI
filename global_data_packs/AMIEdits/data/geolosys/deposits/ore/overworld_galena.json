@@ -1,0 +1,35 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": 5,
+    "yMax": 25,
+    "size": 40,
+    "spread": 13,
+    "density": 1.0,
+    "dimensions": {
+      "isBlacklist": false,
+      "filter": [ "overworld" ]
+    },
+    "blocks": [{
+      "block": "amicore:silvery_galena_ore",
+      "chance": 0.44
+    },{
+      "block": "amicore:leaded_galena_ore",
+      "chance": 0.44
+    },{
+      "block": "amicore:sphalerite_ore",
+      "chance": 0.06
+    },{
+      "block": "amicore:sulfur_ore",
+      "chance": 0.06
+    }],
+    "samples": [{
+      "block": "amicore:silvery_galena_ore_sample",
+      "chance": 0.5
+    },{
+      "block": "amicore:leaded_galena_ore_sample",
+      "chance": 0.5
+    }],
+    "generationWeight": 5
+  }
+}

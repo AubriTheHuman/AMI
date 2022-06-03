@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "artisantools:cutters_flint",
+    "artisantools:cutters_copper",
+    "artisantools:cutters_invar",
+    "artisantools:cutters_nickel",
+    "artisantools:cutters_silver",
+    "artisantools:cutters_tin",
+    "artisantools:cutters_iron",
+    "artisantools:cutters_bronze",
+    "artisantools:cutters_brass",
+    "artisantools:cutters_thallasium",
+    "artisantools:cutters_crude_steel",
+    "artisantools:cutters_steel",
+    "artisantools:cutters_terminite",
+    "artisantools:cutters_diamond",
+    "artisantools:cutters_netherite",
+    "artisantools:cutters_aeternium",
+    "artisantools:cutters_pendorite"
+  ]
+}

@@ -1,0 +1,666 @@
+{
+  "name": "sitting_pool",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "dc36972a-28d3-41d6-a7d2-ae8223c0e9c1",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:hematite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:hematite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "991d8af1-914c-4cb9-b9fb-7fae1a0132c6",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sphalerite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:sphalerite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "2dfea703-89dd-4ad6-a30f-e3d0fc284076",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:malachite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:malachite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "6a1e960f-9b5a-4d2d-a852-91019e86e65d",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:cassiterite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:cassiterite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "8a6603dc-5604-48a4-be24-6bef49ff8420",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:millerite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:millerite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "0c783941-3274-42dd-b43e-1af0d3518e75",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:pyrite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:pyrite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "geothite_slurry_sitting",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:geothite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:geothite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "38bbb9c2-10be-4504-9db5-a8894be00ca3",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:chalcopyrite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:chalcopyrite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "f73374f2-2b7b-4076-aec0-cdb2125dd5b4",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:silvery_galena_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:silvery_galena_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "f6efe785-a802-49d4-9e5b-f40a4e03d7e6",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:marmatite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:marmatite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "bd19228b-110b-4de9-a30c-8d2414e6588d",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:magnetite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:magnetite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "8cd82809-501c-41bd-896a-8aaa64803cf9",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:limonite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:limonite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "dfcb2bdb-71a9-4846-8a03-32f783967a58",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:calaverite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:calaverite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "238dd392-7d53-4a93-9120-de8bce642394",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:brucite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:brucite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "a8d593b0-ee1e-454b-9272-3d5351b34cbf",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:leaded_galena_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:leaded_galena_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "b3232bc5-bac2-4b2c-a997-51e318e73395",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:nether_gold_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:gold_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "03d25545-7d05-4b19-aaa0-e36ac65f700e",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:pentlandite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:pentlandite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "fe21c762-dde8-4998-897a-1f0640268b2c",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:teallite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:teallite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "3c458767-c2e8-4744-a96e-acb0086edb73",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:azurite_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:azurite_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "c12c8946-61b2-4481-8031-d56bd03d865d",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:nether_gold_fluxed_slurry\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 64,
+              "matches": {
+                "item": "amicore:nether_gold_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    }
+  ]
+}

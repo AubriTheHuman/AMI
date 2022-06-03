@@ -1,0 +1,7 @@
+{
+  "name": "Field Guide",
+  "landing_text": "Your guidebook through prospecting with Geolosys in AMI",
+  "version": 1,
+  "creative_tab": "geolosys.name",
+  "show_progress": false
+}

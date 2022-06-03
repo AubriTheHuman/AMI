@@ -1,0 +1,14 @@
+{
+  "name": "Magnetite",
+  "icon": "amicore:magnetite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Magnetite",
+      "item": "amicore:hematite_ore",
+      "link_recipe": false,
+      "text": "Magnetite spawns alongside Geothite and Gold in a high vein density, between Y 20 and 40. Magnetite anb Geothite both yield iron. It is a rare vein."
+    }
+  ]
+}

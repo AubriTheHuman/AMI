@@ -1,0 +1,14 @@
+{
+  "name": "Azurite",
+  "icon": "amicore:azurite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Azurite",
+      "item": "amicore:azurite_ore",
+      "link_recipe": false,
+      "text": "Azurite spawns alongside Malachite and Geothite in a high vein density, between Y 10 and 30. Azurite and Malachite yield copper. It is an uncommon vein."
+    }
+  ]
+}

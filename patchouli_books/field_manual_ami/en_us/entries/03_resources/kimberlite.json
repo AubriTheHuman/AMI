@@ -1,0 +1,14 @@
+{
+  "name": "Kimberlite",
+  "icon": "amicore:kimberlite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Kimberlite",
+      "item": "amicore:kimberlite_ore",
+      "link_recipe": false,
+      "text": "Kimberlite spawns alone in a low vein density, between Y 5 and 15. Kimberlite yields diamonds. It is a rare vein."
+    }
+  ]
+}

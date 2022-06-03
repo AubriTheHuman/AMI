@@ -1,0 +1,14 @@
+{
+  "name": "Bitumen",
+  "icon": "amicore:bitumen_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Bitumen",
+      "item": "amicore:bitumen_ore",
+      "link_recipe": false,
+      "text": "Bitumen spawns alongside Coal and Sulfur in a high vein density, between Y 40 and 80. It is a common vein."
+    }
+  ]
+}

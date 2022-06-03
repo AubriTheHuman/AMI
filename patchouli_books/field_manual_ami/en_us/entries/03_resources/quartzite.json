@@ -1,0 +1,14 @@
+{
+  "name": "Quartzite",
+  "icon": "amicore:quartzite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Quartzite",
+      "item": "amicore:quartzite_ore",
+      "link_recipe": false,
+      "text": "Quartzite spawns alongside Certus and Pyrite in a high vein density, between Y 5 and 25. Limonite yields Nickel. It is very common."
+    }
+  ]
+}

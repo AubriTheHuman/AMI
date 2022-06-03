@@ -1,0 +1,20 @@
+{
+	id: "4C6959FB818FB219"
+	group: "05AB46FBFC30BEB2"
+	order_index: 0
+	filename: "digitized_items"
+	title: "Digitized Items"
+	icon: "chisel:futura/controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 1.0d
+		y: 0.0d
+		id: "6CD1A20D5313915A"
+		tasks: [{
+			id: "78AFCFEF00984A4F"
+			type: "item"
+			item: "appliedenergistics2:controller"
+		}]
+	}]
+}

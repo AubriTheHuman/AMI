@@ -1,0 +1,14 @@
+{
+  "name": "Ender Pendorite",
+  "icon": "amicore:ender_pendorite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Ender Pendorite",
+      "item": "amicore:ender_pendorite_ore",
+      "link_recipe": false,
+      "text": "Ender Pendorite spawns alongside Ender ore in a low vein density, between Y 30 and 70 in the end. It is a rare vein."
+    }
+  ]
+}

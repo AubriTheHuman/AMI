@@ -1,0 +1,14 @@
+{
+  "name": "Teallite",
+  "icon": "amicore:teallite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Teallite",
+      "item": "amicore:teallite_ore",
+      "link_recipe": false,
+      "text": "Teallite spawns alongside Apatite and Leaded Galena in a medium vein density, between Y 25 and 50. Unlike most viens, Teallite is not the dominant material within its vein, surpassed by Apatite. Teallite yields Tin. It is an uncommon vein."
+    }
+  ]
+}

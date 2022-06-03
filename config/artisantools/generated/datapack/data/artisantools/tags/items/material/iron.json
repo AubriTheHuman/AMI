@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "artisantools:cutters_iron",
+    "artisantools:hammer_iron",
+    "artisantools:handsaw_iron",
+    "artisantools:beaker_iron",
+    "artisantools:burner_iron",
+    "artisantools:pencil_iron",
+    "artisantools:tsquare_iron",
+    "artisantools:driver_iron",
+    "artisantools:spanner_iron",
+    "artisantools:chisel_iron",
+    "artisantools:compass_iron",
+    "artisantools:mortar_iron",
+    "artisantools:knife_iron",
+    "artisantools:file_iron",
+    "artisantools:solderer_iron"
+  ]
+}

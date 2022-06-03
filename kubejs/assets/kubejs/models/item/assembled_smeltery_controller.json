@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/orientable",
+    "textures": {
+      "top": "kubejs:item/assembled_smeltery_controller_sides",
+      "front": "kubejs:item/assembled_smeltery_controller_front",
+      "side": "kubejs:item/assembled_smeltery_controller_sides"
+    }
+  }

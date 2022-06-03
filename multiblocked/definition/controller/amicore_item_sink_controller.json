@@ -1,0 +1,192 @@
+{
+  "catalyst": "{id:\"create:wrench\",Count:1b}",
+  "consumeCatalyst": false,
+  "location": "amicore:item_sink_controller",
+  "traits": {
+    "item": [
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 79,
+        "y": 83,
+        "autoIO": false
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 111,
+        "y": 84,
+        "autoIO": false
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 111,
+        "y": 65,
+        "autoIO": false
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 111,
+        "y": 103,
+        "autoIO": false
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 130,
+        "y": 65,
+        "autoIO": false
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 130,
+        "y": 84,
+        "autoIO": false
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 130,
+        "y": 103,
+        "autoIO": false
+      }
+    ]
+  },
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "state": {
+      "id": "create_stuff_additions:quartz_crusher",
+      "meta": 1
+    },
+    "type": "blockstate"
+  },
+  "properties": {
+    "isOpaque": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "harvestLevel": 1,
+    "lightEmissive": 0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "hasCollision": true,
+    "tabGroup": "amicore.machinetab",
+    "stackSize": 64
+  },
+  "basePattern": {
+    "structureDir": [
+      "FRONT",
+      "UP",
+      "LEFT"
+    ],
+    "pattern": [
+      [
+        " AA",
+        " AA",
+        "   ",
+        "   "
+      ],
+      [
+        "ABB",
+        "ABB",
+        "   ",
+        " C "
+      ],
+      [
+        "AB@",
+        "ABB",
+        " C ",
+        " C "
+      ],
+      [
+        "ABB",
+        "ABB",
+        "   ",
+        " C "
+      ],
+      [
+        " AA",
+        " AA",
+        "   ",
+        "   "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "createdeco:zinc_sheet_slab_vert"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "amicore:item_sink_controller",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "createdeco:worn_bricks"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "createdeco:zinc_bars"
+          }
+        ],
+        "type": "blocks"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ]
+    }
+  },
+  "recipeMap": "item_void"
+}

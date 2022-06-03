@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:plates/osmium"
+	},
+	"result": {
+		"item": "kubejs:osmium_wire",
+		"count": 2
+	}
+}

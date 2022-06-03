@@ -1,0 +1,1561 @@
+{
+	id: "2F01D6155BB432B3"
+	group: "280C159CD17D8CFF"
+	order_index: 3
+	filename: "tier_3_hydroxide_fuel"
+	title: "Tier 3: Hydroxide Fuel"
+	icon: "amicore:hydroxide_fuel_bucket"
+	subtitle: [
+		"Enough to melt the skin off your bones!"
+		"The Steel Age"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Age of Steel!"
+			x: -6.5d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "The main chaos begins..."
+			description: [
+				"So, you've managed to reach this point now, you have ore tripling setup, some decent tools and gear, and maybe a cool house. Well its all about to get bigger. I'll guide you through the first of the high output processing chains, however others will be less involved. "
+				""
+				"So far you are only able to melt items with temperatures up to about 1500C, which isnt enough to melt steel. Fear not though, the main goal of Tier 3 is to make, melt, and cast Steel. No longer will you be stuck with that crude version of steel. Now you'll need at least another bucket for this."
+				""
+				"Make sure you hold onto these heavy engineering blocks, you'll need all of them later."
+			]
+			id: "06EEF7D720F1D2F6"
+			tasks: [{
+				id: "7F7F365A76C2C47C"
+				type: "item"
+				item: "minecraft:bucket"
+			}]
+			rewards: [
+				{
+					id: "665D4FD64D271808"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "3022347BA678E06B"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+			]
+		}
+		{
+			title: "Upgraded Iron Ore Processing"
+			icon: "amicore:medium_crushed_iron_ore"
+			x: -5.0d
+			y: -0.5d
+			shape: "diamond"
+			subtitle: "The first part"
+			description: ["In order to get steel youre going to need Pig Iron, yes that kind of Pig Iron. However it cant just be made from existing iron, you'll need to process it from raw iron ore in ore-der to process it :fingerguns:"]
+			dependencies: ["06EEF7D720F1D2F6"]
+			id: "626F60D5DF32F00A"
+			tasks: [{
+				id: "3F0737F137A765BA"
+				type: "item"
+				title: "Any #forge:ores/iron"
+				item: "amicore:medium_crushed_iron_ore"
+				count: 64L
+			}]
+			rewards: [
+				{
+					id: "71376CE3198A8371"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "4E83570E827958C4"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+			]
+		}
+		{
+			title: "Limestone Production"
+			icon: "create:limestone"
+			x: -6.0d
+			y: -2.0d
+			description: [
+				"Iron ore sintering requires the use of Lime, as such youll need to make it automatically."
+				""
+				"Hint: You can make it using a cobble generator by placing limestone below it."
+			]
+			dependencies: ["06EEF7D720F1D2F6"]
+			id: "3BAECDED4BB4F4A4"
+			tasks: [
+				{
+					id: "253C17D5FACD1C39"
+					type: "item"
+					title: "Any #forge:stone/limestone"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:stone/limestone"
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "1C6C04945FBCC31C"
+					type: "item"
+					item: "minecraft:lava_bucket"
+				}
+				{
+					id: "16CFEB9B1CC9CC77"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+			]
+			rewards: [{
+				id: "37F1464648B20623"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Limestone Dust"
+			x: -5.0d
+			y: -1.5d
+			description: ["Smashed, crushed, powdered, and dusted."]
+			dependencies: ["3BAECDED4BB4F4A4"]
+			id: "1F66C29AE3958FD3"
+			tasks: [{
+				id: "2F53D80644BBFA43"
+				type: "item"
+				item: "amicore:limestone_dust"
+				count: 8L
+			}]
+			rewards: [{
+				id: "398C56AEBC958C71"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Limes"
+			x: -4.0d
+			y: -2.0d
+			subtitle: "Margaritaville"
+			description: ["Ah the wonderful citrus fruit, so tangy and wonderful. Of course this isnt that, rather you need to blast the dust you just made briefly in order to make this flux poweder."]
+			dependencies: [
+				"1F66C29AE3958FD3"
+				"0CCBAF5A753F8426"
+			]
+			id: "0E54364820F9361B"
+			tasks: [{
+				id: "7DFF550FDBF1FCEE"
+				type: "item"
+				item: "amicore:lime"
+				count: 16L
+			}]
+			rewards: [{
+				id: "2C20104BC9F5E0B1"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Sintering"
+			x: -3.5d
+			y: -0.5d
+			shape: "diamond"
+			description: ["By mixing Lime, Carbon Dust, and Iron ore together in a heated basin, you get double the iron out of it. Still needs more processing from here."]
+			dependencies: [
+				"0E54364820F9361B"
+				"08673D24C5DB4665"
+				"626F60D5DF32F00A"
+			]
+			hide_text_until_complete: true
+			id: "1F7ADF96F263D154"
+			tasks: [{
+				id: "6718FD7681EF4BDB"
+				type: "item"
+				item: "amicore:iron_ore_sinter"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "396105C2A7A28F3A"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "1A07D5E0BF6AE160"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+			]
+		}
+		{
+			title: "Coal Coke"
+			x: -6.0d
+			y: 1.0d
+			subtitle: "oh geez..."
+			description: ["While you should have done this already, you'll be needing a ton of this stuff for steel and iron production. Make sure the ovens are hot!"]
+			dependencies: ["06EEF7D720F1D2F6"]
+			id: "544FE9ACBFBE24C8"
+			tasks: [{
+				id: "22DCC6CB07E10AFF"
+				type: "item"
+				item: "immersiveengineering:coal_coke"
+				count: 4L
+			}]
+			rewards: [{
+				id: "0E21F66F5B43FCAC"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Happy Birthday!"
+			x: -5.0d
+			y: 1.0d
+			subtitle: "Delicious!"
+			description: ["In order to get the carbon powder for sintering, youll need some carbon cakes. If you press your coal coke enough you should be able to make one of these. This is also the first machine where crude steel is needed to make it."]
+			dependencies: ["544FE9ACBFBE24C8"]
+			id: "615A0D1D781D832A"
+			tasks: [{
+				id: "45294F71E4AEDDD5"
+				type: "item"
+				item: "amicore:carbon_cake"
+				count: 4L
+			}]
+		}
+		{
+			title: "Carbon Dust"
+			x: -4.0d
+			y: 1.0d
+			description: ["This part is where producing iron with coal becomes cheaper, you can get 4x the relative amount over just plain steel processing, and still it only takes 1 coal for 4 ore! Crazy!"]
+			dependencies: ["615A0D1D781D832A"]
+			id: "08673D24C5DB4665"
+			tasks: [{
+				id: "56586558EA22799E"
+				type: "item"
+				item: "amicore:carbon_dust"
+				count: 16L
+			}]
+		}
+		{
+			title: "High Purity Iron Ore"
+			x: -2.0d
+			y: -0.5d
+			shape: "diamond"
+			description: ["Once the ore is sintered, it can be crushed for the high quality ore, and with some bonus nickel!"]
+			dependencies: ["1F7ADF96F263D154"]
+			id: "5A21B504DE7921A6"
+			tasks: [{
+				id: "1228FE982F7F089C"
+				type: "item"
+				item: "amicore:high_crushed_iron_ore"
+				count: 40L
+			}]
+			rewards: [
+				{
+					id: "5D4D3E99ECA4B329"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "65EC316F9BC1C4F3"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+			]
+		}
+		{
+			title: "Nickel"
+			icon: "immersiveengineering:ingot_nickel"
+			x: -2.0d
+			y: -2.0d
+			description: ["While it has its own line of processing, you can't quite make that yet. So this is the main source of nickel for the time being."]
+			dependencies: ["5A21B504DE7921A6"]
+			id: "5F99FEC370F53ACB"
+			tasks: [{
+				id: "7421758D50577F16"
+				type: "item"
+				title: "Any #forge:ingots/nickel"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/nickel"
+					}
+				}
+			}]
+			rewards: [{
+				id: "52D4F7AAAC164379"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Pure Ore"
+			x: 1.0d
+			y: -0.5d
+			shape: "diamond"
+			description: ["That strength potion I had you automate seems to be part of this line, who knew! mixing the high purity ore with the strength 2 potion seems to really clean it off."]
+			dependencies: ["1DDEAA8F1C76E99F"]
+			id: "261E2C2AE3FC8D1E"
+			tasks: [{
+				id: "49E0FAA5BB531EF9"
+				type: "item"
+				item: "amicore:pure_crushed_iron_ore"
+				count: 40L
+			}]
+			rewards: [{
+				id: "173E1E7829FE846C"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+		}
+		{
+			title: "Automated Brewing"
+			icon: {
+				id: "minecraft:potion"
+				Count: 1b
+				tag: {
+					Potion: "minecraft:strong_strength"
+				}
+			}
+			x: -0.5d
+			y: -0.5d
+			shape: "diamond"
+			description: ["I'm a bit thirsty and am in need of a drink. I think I'll take a strength II potion and a harming II potion for lunch. Don't worry, Create will make automating this very easy."]
+			dependencies: ["5A21B504DE7921A6"]
+			id: "1DDEAA8F1C76E99F"
+			tasks: [
+				{
+					id: "37707181AA1A825A"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_strength"
+						}
+					}
+					count: 4L
+					consume_items: true
+				}
+				{
+					id: "71A3A24E4F49B87F"
+					type: "item"
+					item: "minecraft:glowstone_dust"
+				}
+				{
+					id: "3834A497434FF7D6"
+					type: "item"
+					item: "minecraft:nether_wart"
+				}
+				{
+					id: "629DDA0AE42D949C"
+					type: "item"
+					item: "minecraft:blaze_powder"
+				}
+				{
+					id: "778F3DE297E194BE"
+					type: "item"
+					item: "minecraft:glistering_melon_slice"
+				}
+				{
+					id: "57CF3CF107344808"
+					type: "item"
+					item: "minecraft:fermented_spider_eye"
+				}
+				{
+					id: "212E2EDC5A8DB541"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_harming"
+						}
+					}
+					count: 4L
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "1ABE947509D4F9ED"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "6F38187DCC05B936"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+			]
+		}
+		{
+			title: "Finally!"
+			x: 2.5d
+			y: -0.5d
+			shape: "diamond"
+			description: ["Finally! You can make some Pig Iron. Also, im not sure if youve noticed, but at this point youve quintupled your output from the ore you started with! Incredible! That said you cant really use the Pig Iron for much, but dang does it taste good."]
+			dependencies: ["261E2C2AE3FC8D1E"]
+			id: "4CB08912C67F67F1"
+			tasks: [{
+				id: "302F377E18371626"
+				type: "item"
+				item: "tconstruct:pig_iron_ingot"
+				count: 80L
+			}]
+			rewards: [
+				{
+					id: "3BF5C7F642CE088C"
+					type: "item"
+					item: "amicore:amicoin"
+					count: 5
+				}
+				{
+					id: "782183F0547B00F4"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+			]
+		}
+		{
+			title: "Hydroxide Fuel"
+			icon: "amicore:hydroxide_fuel_bucket"
+			x: 4.0d
+			y: -0.5d
+			shape: "diamond"
+			description: ["Before you can melt the Pig Iron down into anything useful, you'll need a hotter fuel for your smeltery. To make this you'll need to electrolyze some water and reassemble it into Hydroxide Fuel"]
+			dependencies: ["4CB08912C67F67F1"]
+			id: "73143E1E1F9D39E4"
+			tasks: [{
+				id: "76E9D0983F8DBA47"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "2A62B3AA04BA2F03"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "4E85E7027C2A1ACF"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+			]
+		}
+		{
+			title: "Desalination"
+			x: 4.0d
+			y: -1.5d
+			description: [
+				"To desalinate youll need to distill some water in a Distillation Tower, If you are having trouble making it, use a projector!"
+				""
+				"Also, you'll need a second one in a bit, so make sure you make enough crude steel to make two."
+				""
+				"Hope you kept those 8 blocks I gave you, you'll be needing them for this process."
+			]
+			dependencies: ["73143E1E1F9D39E4"]
+			id: "25F559F7E36E970D"
+			tasks: [{
+				id: "62DCE189069E1925"
+				type: "item"
+				item: "amicore:purified_water_bucket"
+			}]
+			rewards: [{
+				id: "6D916C3F2A058375"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Electolysis"
+			x: 4.0d
+			y: -3.5d
+			description: ["While not ultra realistic, youll need to distill this electrolytic water, yielding two parts hydrogen and one part oxygen. make sure to save your excess hydrogen for later!"]
+			dependencies: ["1C977B53835BE2DE"]
+			id: "001C93FF56BAA365"
+			tasks: [{
+				id: "3D875231F9D276CE"
+				type: "item"
+				item: "amicore:electrolytic_water_bucket"
+			}]
+			rewards: [{
+				id: "7EE5DA5A7744CB34"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Itty Bitty Brass"
+			x: 4.0d
+			y: -2.5d
+			description: ["To Electrolyze the purified water, you'll need to re-integrate some electrolytes into the water. By combining some zinc and copper you can make some brass dust. It doesnt take much to infuse into the water."]
+			dependencies: ["25F559F7E36E970D"]
+			id: "1C977B53835BE2DE"
+			tasks: [{
+				id: "782CF43AE6C7A443"
+				type: "item"
+				item: "amicore:tiny_brass_dust"
+			}]
+			rewards: [{
+				id: "00E1DDBE7FD278ED"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Actual Hydroxide!"
+			x: 5.5d
+			y: -3.5d
+			description: ["If you mix the two gasses back together, in equal parts, with some heat, you'll get hydroxide fuel! From here the rest of Tier 2 is now able to be done!"]
+			dependencies: ["001C93FF56BAA365"]
+			id: "18DCB704F8C44830"
+			tasks: [{
+				id: "60D1522C1BD84FD2"
+				type: "item"
+				item: "amicore:hydroxide_fuel_bucket"
+			}]
+			rewards: [{
+				id: "5D87DB53AD22D5F1"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Molten Iron from Pig Iron"
+			x: 5.5d
+			y: -0.5d
+			shape: "diamond"
+			description: ["Once Pig Iron is melted into the smeltery it can be heated up some more to refine it to Iron. 2000C to be precise. That said dont let it get too hot, at 3300C Iron will burn off leaving you with slag in your smeltery! (WIP)"]
+			dependencies: [
+				"18DCB704F8C44830"
+				"73143E1E1F9D39E4"
+			]
+			id: "7E49F9A67574D260"
+			tasks: [{
+				id: "65C896DC8E0BD05C"
+				type: "item"
+				item: "tconstruct:molten_iron_bucket"
+			}]
+			rewards: [{
+				id: "65238E1122637BA4"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Iron x5!"
+			icon: "minecraft:iron_ingot"
+			x: 7.0d
+			y: -0.5d
+			shape: "gear"
+			description: ["Now that you have this wonderful molten Iron, cast it into a few different components!"]
+			dependencies: ["7E49F9A67574D260"]
+			id: "5B2C0796D43BA7FB"
+			tasks: [
+				{
+					id: "671D5949D3FB96EE"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 40L
+				}
+				{
+					id: "052AF2AD7B718A4A"
+					type: "item"
+					item: "immersiveengineering:plate_iron"
+					count: 20L
+				}
+				{
+					id: "6B852F146A98D466"
+					type: "item"
+					item: "immersiveengineering:stick_iron"
+					count: 40L
+				}
+			]
+			rewards: [{
+				id: "087D60A14A639783"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Other ways"
+			x: 2.5d
+			y: -2.0d
+			description: ["Pig iron doesnt just become iron, it can become other things as well. The first of which is Steel! To start this process, grind this wonderful pig to dust."]
+			dependencies: ["4CB08912C67F67F1"]
+			id: "5C6154B26C034C8B"
+			tasks: [{
+				id: "60EB564E0547D642"
+				type: "item"
+				item: "amicore:pig_iron_dust"
+				count: 16L
+			}]
+			rewards: [{
+				id: "3323F90C1C907FD8"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Oxygen 2: Pig"
+			x: 2.5d
+			y: -3.5d
+			description: ["By mixing in some oxygen from your earlier electrolysis system with the pig iron dust, itll burn much hotter in the blast furnace."]
+			dependencies: [
+				"5C6154B26C034C8B"
+				"001C93FF56BAA365"
+			]
+			id: "638DD2ED10C868F3"
+			tasks: [{
+				id: "24DE3E040DF5C059"
+				type: "item"
+				item: "amicore:oxygenated_pig_iron_dust"
+				count: 16L
+			}]
+			rewards: [{
+				id: "1A0744B70EA2DD09"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Steel Grit"
+			x: 2.5d
+			y: -5.0d
+			description: ["After blasting the oxidized dust at a high temperature, you are left with a poor and globby pile of steel. While this has purposes, its not quite what were looking for. If it's melted down and casted then it may prove more useful."]
+			dependencies: ["638DD2ED10C868F3"]
+			id: "01501F8B07F3250E"
+			tasks: [{
+				id: "485B578704518E8E"
+				type: "item"
+				item: "immersiveengineering:dust_steel"
+			}]
+			rewards: [{
+				id: "0BFAA42013188BCD"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Molten Steel"
+			x: 4.0d
+			y: -5.0d
+			description: ["It will take 1600C to melt the steel, just slightly more than blazing blood or lava can handle. So you'll need to use the Hydroxide fuel we made earlier to melt it down. Dont let it get too hot though! Steel will burn away at 3300C! (WIP)"]
+			dependencies: [
+				"01501F8B07F3250E"
+				"18DCB704F8C44830"
+			]
+			id: "6190093B36E50720"
+			tasks: [{
+				id: "6AFB7C0C4C63FAD5"
+				type: "item"
+				item: "tconstruct:molten_steel_bucket"
+			}]
+			rewards: [{
+				id: "1C20CF921706EE89"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Real Steel"
+			icon: "immersiveengineering:ingot_steel"
+			x: 5.5d
+			y: -5.0d
+			shape: "gear"
+			subtitle: "Robot Boxing"
+			description: ["Finally you have some steel. Which is great because you'll need probably a few thousand moving forward. Get yourself a few components for the future."]
+			dependencies: ["6190093B36E50720"]
+			id: "2650498B9D601A6F"
+			tasks: [
+				{
+					id: "7435E3D4D4054D2F"
+					type: "item"
+					item: "immersiveengineering:ingot_steel"
+					count: 16L
+				}
+				{
+					id: "07F0E9F8C2169A41"
+					type: "item"
+					item: "immersiveengineering:plate_steel"
+					count: 8L
+				}
+				{
+					id: "74614DA746747CF4"
+					type: "item"
+					item: "immersiveengineering:stick_steel"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "3A9CA6A26AA1E1CF"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Alternate Sources"
+			x: -5.0d
+			y: -2.5d
+			description: ["Limestone isn't the sole source of lime, create offers another in the form of limesand."]
+			dependencies: ["3BAECDED4BB4F4A4"]
+			id: "0CCBAF5A753F8426"
+			tasks: [{
+				id: "6238ACEB2A53EB42"
+				type: "item"
+				item: "create:limesand"
+				count: 8L
+			}]
+			rewards: [{
+				id: "0CFDB1B0AB843E8B"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -5.0d
+			dependencies: ["2650498B9D601A6F"]
+			id: "71457F1F27F2D45A"
+			tasks: [{
+				id: "589756FF24A76D7A"
+				type: "item"
+				item: "immersiveengineering:component_steel"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -5.0d
+			id: "3FC681E702B5BAD6"
+			tasks: [{
+				id: "395E9185B98CE73A"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -6.0d
+			id: "6B5735D99D90A34E"
+			tasks: [{
+				id: "65F8905F1D209537"
+				type: "item"
+				item: "artisanworktables:workshop_engineer"
+			}]
+		}
+		{
+			title: "Structure Design"
+			x: -7.5d
+			y: 9.0d
+			description: ["loot some old blueprints, repair them and interpolate to create ie multiblocks"]
+			dependencies: ["2109C9CCA332ADB4"]
+			id: "75AF07B98FED7F3A"
+			tasks: [{
+				id: "7A488947D7007A8C"
+				type: "item"
+				item: "artisanworktables:workstation_designer"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.0d
+			id: "35B01F53FBF40CE3"
+			tasks: [{
+				id: "75B335133BF88F92"
+				type: "item"
+				item: "travel_anchors:travel_staff"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -6.0d
+			id: "39B5563B44B52E00"
+			tasks: [{
+				id: "5231F52D99391A75"
+				type: "item"
+				item: "steampowered:steel_steam_engine"
+			}]
+		}
+		{
+			title: "Generating Power"
+			x: -10.5d
+			y: 9.0d
+			dependencies: ["320BF2147EF53D41"]
+			id: "74926B1EAA6DE913"
+			tasks: [{
+				id: "19BD2BFE8924A402"
+				type: "item"
+				item: "steampowered:alternator"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -5.0d
+			id: "5816C78A72FF7037"
+			tasks: [{
+				id: "13066F52DAF193CC"
+				type: "item"
+				item: {
+					id: "tetra:modular_double"
+					Count: 1b
+					tag: {
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/basic_hammer_left"
+						"double/head_right": "double/basic_hammer_right"
+						id: "5ec4c637-7e1f-4fd6-a90c-c906981e1097"
+						"double/basic_hammer_right_material": "basic_hammer/netherite"
+						Damage: 0
+						"double/basic_handle_material": "basic_handle/forged_beam"
+						"double/basic_hammer_left_material": "basic_hammer/netherite"
+					}
+				}
+			}]
+		}
+		{
+			x: -15.0d
+			y: 8.5d
+			id: "25CD71BAD0575E91"
+			tasks: [
+				{
+					id: "6238B798DCEE5448"
+					type: "item"
+					item: "create:linked_controller"
+				}
+				{
+					id: "711B2C38349FCC58"
+					type: "item"
+					item: "create:nixie_tube"
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: -4.0d
+			id: "4139C34A1F4557B1"
+			tasks: [{
+				id: "36D2E3B56D31224B"
+				type: "item"
+				item: "immersiveengineering:conveyor_basic"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -4.0d
+			id: "7B6B04D5900628D1"
+			tasks: [{
+				id: "3D07B909E0F3AFFC"
+				type: "item"
+				item: "amicore:rubber"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 15.0d
+			id: "24A3CB461CA643C3"
+			tasks: [{
+				id: "3CB6C0C8922A28C6"
+				type: "item"
+				item: "appliedenergistics2:controller"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 15.0d
+			id: "195C0E3F55212A0A"
+			tasks: [{
+				id: "23B790AE4083D171"
+				type: "item"
+				item: "appliedenergistics2:crafting_terminal"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 15.5d
+			id: "1C854D694DE6533A"
+			tasks: [{
+				id: "73864D0915D45CB4"
+				type: "item"
+				item: "appliedenergistics2:1k_fluid_cell_component"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 14.5d
+			id: "00DC275C3576F25E"
+			tasks: [{
+				id: "0119C7FAB8842476"
+				type: "item"
+				item: "appliedenergistics2:1k_cell_component"
+			}]
+		}
+		{
+			title: "Ether byproduct"
+			x: 4.0d
+			y: 4.0d
+			id: "02E86ADDE3676E32"
+			tasks: [{
+				id: "356CB76E2B4F3244"
+				type: "item"
+				item: "malum:orange_ether"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.0d
+			id: "53CEA25441F1DC24"
+			tasks: [{
+				id: "64B40C7EA8D98D2F"
+				type: "item"
+				item: "immersiveengineering:seed"
+			}]
+		}
+		{
+			title: "charge crafting"
+			x: -8.5d
+			y: 12.0d
+			id: "25C8E3EDDC6205DD"
+			tasks: [{
+				id: "01E6F5C3561E192A"
+				type: "item"
+				item: "createaddition:tesla_coil"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 9.0d
+			id: "320BF2147EF53D41"
+			tasks: [{
+				id: "3FB56BF25BD386F3"
+				type: "item"
+				item: "amicore:lv_circuit"
+			}]
+		}
+		{
+			x: -14.0d
+			y: 9.5d
+			id: "2C93FBB101B07389"
+			tasks: [{
+				id: "1CD8DE8680629555"
+				type: "item"
+				item: "scannable:scanner"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 6.0d
+			id: "38F164E7E76A94DE"
+			tasks: [{
+				id: "2069012A4D80BD02"
+				type: "item"
+				item: "amicore:electrum_ingot"
+			}]
+		}
+		{
+			x: -16.0d
+			y: 9.0d
+			id: "569D6604BC4E8A1F"
+			tasks: [{
+				id: "6FBE9FB3F47F0B39"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -5.0d
+			id: "412C83BCD7045EFA"
+			tasks: [{
+				id: "41BFA91B38E9B639"
+				type: "item"
+				item: "immersiveengineering:sample_drill"
+			}]
+		}
+		{
+			title: "MAgical Matter tier 1"
+			x: 4.0d
+			y: 5.0d
+			id: "28C180CB3191D8A3"
+			tasks: [{
+				id: "63A246E1EC19B44A"
+				type: "item"
+				item: "malum:orange_ether_brazier"
+			}]
+		}
+		{
+			title: "Spirit Crafting with new spirits"
+			x: 3.0d
+			y: 5.0d
+			id: "6E2DDE01FBC2D635"
+			tasks: [{
+				id: "0735685DB3BFF0FC"
+				type: "item"
+				item: "byg:ether_crafting_table"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -6.0d
+			id: "1CD1A79119150E6E"
+			tasks: [{
+				id: "649E9CEB2C4E112D"
+				type: "item"
+				item: "amicore:steel_scrap"
+			}]
+		}
+		{
+			x: -12.5d
+			y: 7.5d
+			id: "30F1836DB33DAC9C"
+			tasks: [{
+				id: "7E0AF47654B1C36C"
+				type: "item"
+				item: "amicore:magnesium_ingot"
+			}]
+		}
+		{
+			x: -13.0d
+			y: 6.0d
+			id: "75C63DD8D63ADA5C"
+			tasks: [{
+				id: "664EA2F86DE984F8"
+				type: "item"
+				item: "amicore:invar_ingot"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 7.5d
+			id: "6A05CEC87FDE916C"
+			tasks: [{
+				id: "5E4ADAB779EC48D5"
+				type: "item"
+				item: "amicore:nickel_ingot"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 6.0d
+			id: "47987C542B4FC689"
+			tasks: [{
+				id: "40D7335563DABBA9"
+				type: "item"
+				item: "amicore:constantan_ingot"
+			}]
+		}
+		{
+			title: "Sulfur Reprocessing"
+			x: -11.0d
+			y: 3.0d
+			id: "78A875AB253BDBF0"
+			tasks: [{
+				id: "1FA65C3BBB5A76A6"
+				type: "item"
+				item: "immersiveengineering:dust_sulfur"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			id: "48CDDA07801D10EA"
+			tasks: [{
+				id: "7E280DDCFB0A2B1E"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			title: "DC Power"
+			x: -9.0d
+			y: 10.5d
+			id: "7A306CE6E06C1BF2"
+			tasks: [{
+				id: "39C2C563F009625C"
+				type: "item"
+				item: "createaddition:connector"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 9.0d
+			dependencies: ["19F01413A00BB938"]
+			id: "4065515873D37193"
+			tasks: [{
+				id: "0D983190B9FC51B0"
+				type: "item"
+				item: "amicore:transmissive_gearbox"
+			}]
+		}
+		{
+			title: "Fish Farming"
+			x: -5.5d
+			y: 11.5d
+			dependencies: ["19F01413A00BB938"]
+			id: "020277435F5E44E1"
+			tasks: [
+				{
+					id: "447EF2824F294334"
+					type: "item"
+					item: "minecraft:cod_bucket"
+				}
+				{
+					id: "6AAFD3CC8CBFA430"
+					type: "item"
+					item: "minecraft:salmon_bucket"
+				}
+			]
+		}
+		{
+			x: -14.0d
+			y: 8.5d
+			id: "0BF186C7EB9FF39F"
+			tasks: [{
+				id: "41D89D009B5D0A71"
+				type: "item"
+				item: {
+					id: "create_stuff_additions:encased_jet_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Slag Reprocessing"
+			x: 1.0d
+			y: 1.5d
+			id: "7F355875C81B9D5E"
+			tasks: [{
+				id: "408405505D3AE2A1"
+				type: "item"
+				item: "immersiveengineering:slag"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 9.0d
+			dependencies: ["74926B1EAA6DE913"]
+			id: "2109C9CCA332ADB4"
+			tasks: [{
+				id: "3991EC3455C5CEA8"
+				type: "item"
+				item: "immersiveengineering:connector_lv"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			id: "10ECFFB40011A166"
+			tasks: [{
+				id: "56F32B2439D3D6CC"
+				type: "item"
+				item: "amicore:soulfuric_acid_bottle"
+			}]
+		}
+		{
+			title: "Catch em' all"
+			x: -6.0d
+			y: 8.0d
+			description: ["find all the patterns"]
+			dependencies: ["75AF07B98FED7F3A"]
+			id: "0FC85C5D6F3938E7"
+			tasks: [{
+				id: "364BC5589A2F98C6"
+				type: "item"
+				item: {
+					id: "tetra:scroll_rolled"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							data: [{
+								intricate: 0b
+								effects: ["tetra:gem_expertise"]
+								material: 0
+								ribbon: "2bffee"
+								glyphs: [
+									14
+									13
+									14
+									15
+								]
+								key: "gem_expertise"
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -15.0d
+			y: 9.5d
+			id: "0C5DAC67C0758504"
+			tasks: [{
+				id: "5A32B61CC53588FB"
+				type: "item"
+				item: "create:redstone_link"
+			}]
+		}
+		{
+			title: "Larger Forge Furnace multiblock, faster and easier"
+			x: 6.0d
+			y: 2.0d
+			id: "43F76E48837CE281"
+			tasks: [{
+				id: "6DE4BA5459F1F5BC"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:forge_furnace"
+					}
+				}
+			}]
+		}
+		{
+			title: "Spirit Extraction"
+			x: 2.0d
+			y: 3.0d
+			id: "4EAFB2A451134CEF"
+			tasks: [{
+				id: "7D8F405D138E14BF"
+				type: "item"
+				item: "create_stuff_additions:quartz_crusher"
+			}]
+		}
+		{
+			title: "cheaper pipes"
+			x: -12.0d
+			y: 5.0d
+			id: "21BF22AEA4A2857B"
+			tasks: [{
+				id: "188670C5E6B3CC86"
+				type: "item"
+				item: "create:fluid_pipe"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 11.5d
+			dependencies: ["19F01413A00BB938"]
+			id: "5ED19D446171E5F1"
+			tasks: [
+				{
+					id: "0CAA8FD97FF7FDCF"
+					type: "item"
+					item: "pamhc2trees:avocado_sapling"
+				}
+				{
+					id: "0E84B6100FED58A9"
+					type: "item"
+					item: "pamhc2trees:olive_sapling"
+				}
+			]
+		}
+		{
+			title: "Waste Filtration"
+			x: -11.0d
+			y: 2.0d
+			id: "250A17FF553D2472"
+			tasks: [{
+				id: "35901F46FF8A9A60"
+				type: "item"
+				item: {
+					id: "create:filter"
+					Count: 1b
+					tag: {
+						Items: { }
+					}
+				}
+			}]
+		}
+		{
+			title: "lubricant"
+			x: -6.0d
+			y: 10.0d
+			dependencies: ["75AF07B98FED7F3A"]
+			id: "19F01413A00BB938"
+			tasks: [{
+				id: "1D186F516ED14B6A"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			title: "ie machines"
+			x: -3.0d
+			y: 9.0d
+			dependencies: ["4065515873D37193"]
+			id: "67D424D0BBB1CAB3"
+			tasks: [{
+				id: "5BA61A0819519776"
+				type: "item"
+				item: "appliedenergistics2:annihilation_core"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 13.5d
+			id: "2D6C8AF17E94B000"
+			tasks: [{
+				id: "730E739A96066C13"
+				type: "item"
+				item: "createaddition:overcharged_alloy"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 15.0d
+			id: "4A367FE45ADB6F6A"
+			tasks: [{
+				id: "245315C82CCD1DD4"
+				type: "item"
+				item: "createaddition:overcharged_casing"
+			}]
+		}
+		{
+			title: "Spirit combination"
+			x: 3.0d
+			y: 4.0d
+			id: "59904ABFCBF022B8"
+			tasks: [{
+				id: "38BD915C31A14583"
+				type: "item"
+				item: "malum:magnetic_spirit"
+			}]
+		}
+		{
+			title: "Other sources of basic Spirits"
+			x: 3.0d
+			y: 3.0d
+			id: "46D2E8A9ADBFEFE9"
+			tasks: [{
+				id: "10D76B94194FB352"
+				type: "item"
+				item: "malum:aerial_spirit"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 7.5d
+			id: "7081865E6499D0BD"
+			tasks: [{
+				id: "073A7AA43E3A2B8F"
+				type: "item"
+				item: "immersiveengineering:cloche"
+			}]
+		}
+		{
+			title: "Automatic blasting"
+			x: -2.0d
+			y: 7.5d
+			id: "3AD2436B7E1DB304"
+			tasks: [{
+				id: "64C22E2DBE2AE96E"
+				type: "item"
+				item: "immersiveengineering:blastfurnace_preheater"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 12.0d
+			id: "29A64CCAFA24BF76"
+			tasks: [{
+				id: "57C4EFB1F682F7FD"
+				type: "item"
+				item: "immersiveengineering:charging_station"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 7.5d
+			id: "1625E205BF8163A5"
+			tasks: [{
+				id: "3BA5BD7F23E00DEF"
+				type: "item"
+				item: "immersiveengineering:capacitor_lv"
+			}]
+		}
+		{
+			title: "mixer"
+			x: -3.0d
+			y: 10.5d
+			id: "7F433BA0BC5F9CCF"
+			tasks: [{
+				id: "5EB6E1EED8A81536"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			title: "squeezer"
+			x: -2.0d
+			y: 10.5d
+			id: "3DEAEE6BA7D76A63"
+			tasks: [{
+				id: "382BE5E46C90953A"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			title: "press"
+			x: -3.0d
+			y: 11.5d
+			id: "3B1B38B745B0BEB3"
+			tasks: [{
+				id: "22BAE183FBD73A67"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			title: "crusher"
+			x: -2.0d
+			y: 11.5d
+			id: "70CE33F74B6C8230"
+			tasks: [{
+				id: "2363F2A26BB91257"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			title: "sawmill"
+			x: -1.0d
+			y: 10.5d
+			id: "3D80761BB17C5785"
+			tasks: [{
+				id: "5ACC6722EFF14C76"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			title: "assembler"
+			x: -1.0d
+			y: 11.5d
+			id: "6AA5BA7DDFC38ECA"
+			tasks: [{
+				id: "1ED654CFF15BC9CB"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			title: "fermenter"
+			x: -3.0d
+			y: 12.5d
+			id: "54426CC36A7773F3"
+			tasks: [{
+				id: "70CD02CF5425B424"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			title: "Bottler"
+			x: -2.0d
+			y: 12.5d
+			id: "17EAA62BE0D295C7"
+			tasks: [{
+				id: "06EF81878D7F0AC8"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			title: "auto workbench"
+			x: -1.0d
+			y: 12.5d
+			id: "21F334CCBBF85423"
+			tasks: [{
+				id: "0E53584B6147E0B2"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			title: "refinery"
+			x: -3.0d
+			y: 14.0d
+			id: "27E23D469B7CE254"
+			tasks: [{
+				id: "6F119D90A544CDCC"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+		}
+		{
+			title: "excavator"
+			x: -2.0d
+			y: 15.0d
+			id: "4E05FFD74185F66C"
+			tasks: [{
+				id: "1AB9F3BF938F0BF5"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+		}
+		{
+			title: "arc furnace"
+			x: -1.0d
+			y: 14.0d
+			id: "091CA8DBAAD319C5"
+			tasks: [{
+				id: "2E5BB1D3322E1CD0"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+		}
+		{
+			title: "diesel generator"
+			x: -3.0d
+			y: 15.0d
+			id: "32FFAA95FEAE8FC9"
+			tasks: [{
+				id: "2C998DC5BABA8727"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 15.0d
+			id: "3CC33BD0FEF11C24"
+			tasks: [{
+				id: "0ECA2BFDBB859BB8"
+				type: "item"
+				item: "immersiveengineering:biodiesel_bucket"
+			}]
+		}
+		{
+			title: "Distillation tower"
+			x: -2.0d
+			y: 14.0d
+			id: "2E686AE39A9E6B6E"
+			tasks: [{
+				id: "799D3A27FFB101D9"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+		}
+		{
+			title: "magical matter on non fluid machines"
+			x: -1.0d
+			y: 7.5d
+			id: "23543BA294618103"
+			tasks: [{
+				id: "2909C37927EDEF67"
+				type: "item"
+				item: "immersivepetroleum:auto_lubricator"
+			}]
+		}
+	]
+}

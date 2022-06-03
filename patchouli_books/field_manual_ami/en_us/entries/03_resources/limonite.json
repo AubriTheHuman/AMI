@@ -1,0 +1,14 @@
+{
+  "name": "Limonite",
+  "icon": "amicore:limonite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Limonite",
+      "item": "amicore:limonite_ore",
+      "link_recipe": false,
+      "text": "Limonite spawns alongside Hematite and Geothite in a high vein density, between Y 30 and 60. Limonite yields Nickel. It is quite common."
+    }
+  ]
+}

@@ -1,0 +1,420 @@
+{
+	id: "1B60323540A9853D"
+	group: "05AB46FBFC30BEB2"
+	order_index: 4
+	filename: "cool_tools"
+	title: "Cool Tools"
+	icon: {
+		id: "charm:raid_horn"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.5d
+			y: 0.0d
+			id: "669C15DFFD3DD044"
+			tasks: [{
+				id: "195FDAF569A8D751"
+				type: "item"
+				item: "quark:abacus"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			id: "0B608106DFDBF1AF"
+			tasks: [{
+				id: "5AC710D9377F69E1"
+				type: "item"
+				item: "jecalculation:item_calculator_craft"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			id: "36FBBFB686B9552B"
+			tasks: [{
+				id: "1B20CFB468E6FD41"
+				type: "item"
+				item: "jecalculation:item_calculator_math"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			id: "089689B931CDC28B"
+			tasks: [{
+				id: "085033992135830F"
+				type: "item"
+				item: {
+					id: "quark:pickarang"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			id: "7CB9C376C6D7172B"
+			tasks: [{
+				id: "1C50A8046C46DA40"
+				type: "item"
+				item: {
+					id: "quark:flamerang"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			id: "1B56839E5157B11A"
+			tasks: [{
+				id: "3D3574644AF38901"
+				type: "item"
+				item: {
+					id: "supplementaries:slingshot"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			id: "0AF6AE7975703827"
+			tasks: [{
+				id: "58428786C836A50E"
+				type: "item"
+				item: {
+					id: "constructionwand:stone_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			id: "5B590255209D69ED"
+			tasks: [{
+				id: "197D57DF0A7F9D9E"
+				type: "item"
+				item: {
+					id: "constructionwand:iron_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			id: "3CAB90EF5F31B976"
+			tasks: [{
+				id: "66B41A446D9D49D7"
+				type: "item"
+				item: {
+					id: "constructionwand:diamond_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.5d
+			id: "4626E12510713C6E"
+			tasks: [{
+				id: "3C959B89208D44BB"
+				type: "item"
+				item: {
+					id: "constructionwand:infinity_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			id: "0CA319AB31594CD9"
+			tasks: [{
+				id: "38F0CDC2D7E1B6EA"
+				type: "item"
+				item: {
+					id: "quark:forgotten_hat"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			id: "0BA7994150134E80"
+			tasks: [{
+				id: "716816DAF6C7CF46"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			id: "11BC4D97FCFA7600"
+			tasks: [{
+				id: "3D0DF50E473C8AF1"
+				type: "item"
+				item: {
+					id: "lightingwand:wand"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			id: "6B7715BD11691684"
+			tasks: [{
+				id: "4C0E1981A9BC5B9C"
+				type: "item"
+				item: "toolbelt:belt"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			id: "78FCAF3E6A365C04"
+			tasks: [{
+				id: "7AD3832469EF20AB"
+				type: "item"
+				item: {
+					id: "solpotato:golden_lunchbox"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 14
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			id: "680102D55F4EC6C4"
+			tasks: [{
+				id: "6159A5E99C0062A7"
+				type: "item"
+				item: "losttrinkets:lunch_bag"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			id: "421029C03AF3B514"
+			tasks: [{
+				id: "44E020F3E298F643"
+				type: "item"
+				item: {
+					id: "supplementaries:rope_arrow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.5d
+			id: "4D961278F2F73363"
+			tasks: [{
+				id: "63F82C1FFDA13F52"
+				type: "item"
+				item: "antiqueatlas:empty_antique_atlas"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.5d
+			id: "339276DF5C28E52B"
+			tasks: [{
+				id: "6C31642BF7E6D285"
+				type: "item"
+				item: "create_stuff_additions:tuned_brass_moped_item"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.5d
+			id: "24F1BA73D668156E"
+			tasks: [{
+				id: "332F7F597A088C6F"
+				type: "item"
+				item: "quark:slime_in_a_bucket"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 6.0d
+			id: "39C6D97610DA051E"
+			tasks: [{
+				id: "1E48750E77AB4B71"
+				type: "item"
+				item: "botania:open_bucket"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 6.0d
+			id: "2C350248643DF235"
+			tasks: [{
+				id: "5352DCBA4080D1BB"
+				type: "item"
+				item: {
+					id: "charm:raid_horn"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			id: "3D10C1FE760D4E90"
+			tasks: [{
+				id: "1399A4B1D724B222"
+				type: "item"
+				item: {
+					id: "charm:atlas"
+					Count: 1b
+					tag: {
+						id: [I;
+							1085126917
+							1385775965
+							-1892622560
+							1353856119
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.5d
+			id: "450A0F179691413F"
+			tasks: [{
+				id: "28B1C1DB6691F202"
+				type: "item"
+				item: "quark:bottled_cloud"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			id: "51155AA62CE634DE"
+			tasks: [{
+				id: "710A897BF8BACB21"
+				type: "item"
+				item: "artifacts:cloud_in_a_bottle"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.5d
+			id: "6EFE7FB61848AB95"
+			tasks: [{
+				id: "4060650C19D93E2C"
+				type: "item"
+				item: "quark:trowel"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.0d
+			id: "410382D3EC9D97C6"
+			tasks: [{
+				id: "61AB5631107E0571"
+				type: "item"
+				item: "paraglider:paraglider"
+			}]
+		}
+		{
+			title: "Find a Goddess Statue"
+			icon: "paraglider:rito_goddess_statue"
+			x: 5.0d
+			y: 3.0d
+			id: "05B8AE615E54E770"
+			tasks: [
+				{
+					id: "2F37608E7C71A997"
+					type: "item"
+					item: "paraglider:goddess_statue"
+				}
+				{
+					id: "5213A57D17F84C22"
+					type: "item"
+					item: "paraglider:kakariko_goddess_statue"
+				}
+				{
+					id: "511232A675C7BD11"
+					type: "item"
+					item: "paraglider:goron_goddess_statue"
+				}
+				{
+					id: "0A33B2A6E5DF70F4"
+					type: "item"
+					item: "paraglider:rito_goddess_statue"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 3.0d
+			id: "2638E2D518CF7A3C"
+			tasks: [{
+				id: "4F288459112A3F2C"
+				type: "item"
+				item: "paraglider:horned_statue"
+			}]
+		}
+	]
+}

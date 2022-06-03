@@ -1,0 +1,14 @@
+{
+  "name": "Nether Quartzite",
+  "icon": "amicore:nether_quartz_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Nether Quartzite",
+      "item": "amicore:nether_quartz_ore",
+      "link_recipe": false,
+      "text": "Nether Quartzite spawns alongside Blazing Quartzite in a high vein density, between Y 5 and 120 in the nether. It is very common."
+    }
+  ]
+}

@@ -1,0 +1,3438 @@
+{
+	id: "6CDF9F3E5EB6A911"
+	group: "280C159CD17D8CFF"
+	order_index: 2
+	filename: "tier_2_molten_blaze"
+	title: "Tier 2: Blazing Blood"
+	icon: {
+		id: "tconstruct:copper_can"
+		Count: 1b
+		tag: {
+			fluid: "tconstruct:blazing_blood"
+		}
+	}
+	subtitle: ["Advancing create with better andesite efficiency, and crude steel"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Ore tripling"
+			x: 1.5d
+			y: 2.5d
+			shape: "diamond"
+			description: ["With the power of Soulfuric Acid, you can increase the yield from ores. By dissolving them into the acid, a slurry can be made and processed for triple the metal, or for a secondary metal (based on the ore)."]
+			dependencies: [
+				"5AF1A732721135DD"
+				"4314C8B2B07FA7E3"
+			]
+			id: "23A251E4EAF9BDF2"
+			tasks: [{
+				id: "15BF9E220A191568"
+				type: "item"
+				title: "Any #forge:ores/iron"
+				icon: "amicore:hematite_cluster"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/iron"
+					}
+				}
+				count: 32L
+			}]
+			rewards: [{
+				id: "43C96EDC2A98D15B"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Uses for Creosote"
+			x: 6.0d
+			y: 8.5d
+			description: [
+				"There arent many uses for creosote. This said, it makes a great oil base for certain clays and grouts. "
+				""
+				"Mixtures made this way have very high heat resistance, and are excellent for high temperature metalwork."
+			]
+			dependencies: ["55ECE1A531D4772A"]
+			id: "513C8F355178CF65"
+			tasks: [{
+				id: "7171909741B0CB58"
+				type: "item"
+				item: "immersiveengineering:treated_wood_horizontal"
+			}]
+			rewards: [{
+				id: "67FE58E5522F1D6E"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Upgraded Drawers"
+			icon: "storagedrawers:controller"
+			x: 4.0d
+			y: 4.0d
+			shape: "circle"
+			description: [
+				"A major upgrade to item storage. The drawer controller allows all your drawers to act as one, even working with create's funnels!"
+				""
+				"Compact drawers compact and decompact items automatically. super useful for automating tiny dusts."
+			]
+			dependencies: [
+				"7031FF38796B8BD4"
+				"0E49B8AD8FB358B1"
+			]
+			id: "75BE89EFC3928CBB"
+			tasks: [
+				{
+					id: "087AD60378069CE7"
+					type: "item"
+					item: "storagedrawers:controller"
+				}
+				{
+					id: "1EE84AC5BE3A65E6"
+					type: "item"
+					item: "storagedrawers:controller_slave"
+				}
+				{
+					id: "40C73AD4EC1F0F30"
+					type: "item"
+					item: "storagedrawers:compacting_drawers_3"
+				}
+			]
+			rewards: [
+				{
+					id: "7A5795097517B2F8"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "29312C0C147814A4"
+					type: "item"
+					item: "pamhc2foodextended:breadedporkchopitem"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			description: ["When held in the offhand, the player's reach is greatly extended."]
+			dependencies: ["4314C8B2B07FA7E3"]
+			id: "7EA9404E79073B0D"
+			tasks: [{
+				id: "645EB7D7099FADBB"
+				type: "item"
+				item: {
+					id: "create:extendo_grip"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "52277CC4F85C5983"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "09BDC04C5BB3DDA5"
+					type: "item"
+					item: "createcafe:guava_milk_tea"
+				}
+			]
+		}
+		{
+			title: "The Alloy Kiln"
+			x: 5.5d
+			y: 10.0d
+			description: ["While it's not used for many recipes, the alloy kiln is another way to make alloyed metals. It can smelt 2 different metals together to create a third."]
+			dependencies: ["513C8F355178CF65"]
+			id: "0D2E2ABBC88BB2D1"
+			tasks: [{
+				id: "355D0295E8256AFE"
+				type: "item"
+				item: "immersiveengineering:alloybrick"
+				count: 8L
+			}]
+			rewards: [{
+				id: "76B61041A8B96542"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 4.0d
+			shape: "rsquare"
+			description: [
+				"The mechanical crafter acts as an automated crafting table. It can craft anything that the basic, carpenter, engineer, and designer artisan tables can craft. It cannot craft any of the blacksmith, chemist, and mage recipes."
+				""
+				"It can also be fully configured in terms of shape, and does not need to be a square. "
+			]
+			dependencies: ["1E10D987D203B3EC"]
+			id: "168BBDC869B97867"
+			tasks: [{
+				id: "6671435E9C5991CC"
+				type: "item"
+				item: "create:mechanical_crafter"
+				count: 9L
+			}]
+			rewards: [
+				{
+					id: "0026F76A525BD183"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "64196556373F1923"
+					type: "item"
+					item: "pamhc2foodcore:caramelcupcakeitem"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 7.0d
+			shape: "rsquare"
+			description: [
+				"Congratulations! you've nearly reached the end of tier 2! while there are several more things to do before moving on, crude steel is the fourth of four alloys for this age."
+				""
+				"Feel free to visit portions of the tree incompletable to this point, such as ore tripling and multicylinder engines."
+			]
+			dependencies: ["3761E493E26F7619"]
+			id: "55ECE1A531D4772A"
+			tasks: [{
+				id: "7F3D3F6EDB000B03"
+				type: "item"
+				item: "amicore:crude_steel_ingot"
+			}]
+			rewards: [
+				{
+					id: "0CB83948BFE4BAD2"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "4612EEA7386F9A33"
+					type: "item"
+					item: "createcafe:oreo"
+				}
+			]
+		}
+		{
+			title: "Crude Blast Furnace"
+			x: 4.5d
+			y: 7.0d
+			shape: "rsquare"
+			description: [
+				"Constructed the same way as the coke oven, the simple blast funace serves as an effective way to make a crude steel. By blasting a piece of iron with coke, it can be made slowly."
+				""
+				"Keep in mind, this version of the blast furnace cannot be automated, and does not allow extraction or insertion, unlike the coke oven. It may be worth setting up multiple."
+			]
+			dependencies: ["4905AAD2F59E5D3B"]
+			id: "3761E493E26F7619"
+			tasks: [{
+				id: "57ABDDBD8F09EB99"
+				type: "item"
+				item: "immersiveengineering:blastbrick"
+				count: 27L
+			}]
+			rewards: [{
+				id: "232F34F2297E790D"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Intro to Chemistry and Fluid Crafting"
+			icon: "create:spout"
+			x: -3.0d
+			y: 5.5d
+			shape: "rsquare"
+			description: [
+				"One major system for AMI is small batch chemistry. Some substances are too volatile to mix in large amounts, so the best solution is to do it in small amounts. While this is certainly slower, it serves our purposes."
+				""
+				"The filtered pipe serves very well for allowing mixed type fluid systems, such as sorting molten metals or solutions."
+			]
+			dependencies: ["1E10D987D203B3EC"]
+			id: "49D5A70243B90AE9"
+			tasks: [
+				{
+					id: "2FDC061D7C645DF8"
+					type: "item"
+					item: "create:item_drain"
+				}
+				{
+					id: "69C4D75149C33A07"
+					type: "item"
+					item: "create:spout"
+				}
+				{
+					id: "389952E3284BBC81"
+					type: "item"
+					item: "create:smart_fluid_pipe"
+				}
+			]
+			rewards: [{
+				id: "27EE8BCA45549D21"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Deployer"
+			icon: "create:deployer"
+			x: -3.0d
+			y: 2.5d
+			shape: "rsquare"
+			description: [
+				"The deployer marks a new age for AMI. With this wonderful device, assembly is possible. "
+				""
+				"The deployer can add items during sequenced aseembly, and also can place blocks in front of it. It will do this as well on a kinetic assembly, extracting from an attached chest."
+			]
+			dependencies: ["195C87DB3915B2E9"]
+			id: "6D8774C872A685A8"
+			tasks: [{
+				id: "29BB2E96FC967890"
+				type: "item"
+				item: "create:deployer"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "520308E445D8F369"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "4713F81130362B0A"
+					type: "item"
+					item: "pamhc2crops:hotcoffeeitem"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 2.0d
+			shape: "rsquare"
+			description: [
+				"You may not have made crude steel yet, This path requires it to continue."
+				""
+				"For the next assembly you'll need to use a crude steel mechanical component as a primary component."
+			]
+			dependencies: ["6D8774C872A685A8"]
+			id: "37F44534E8A99AFE"
+			tasks: [{
+				id: "241A05CCE6A8948A"
+				type: "item"
+				item: "amicore:crude_steel_mech_component"
+			}]
+			rewards: [
+				{
+					id: "3E258B2D7B4AA028"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "3671DEE9DB6E5CAB"
+					type: "item"
+					item: "pamhc2foodcore:cheesecakeitem"
+				}
+			]
+		}
+		{
+			title: "Magic Fingers"
+			icon: "create:brass_hand"
+			x: -4.5d
+			y: 2.5d
+			shape: "rsquare"
+			description: [
+				"The brass hand is a highly intricate device, too much so to make by hand. The mechanical crafter should serve as a delicate enough instrument to do it properly."
+				""
+				"It is a vital crafting component for any advance sorting component, such as the tunnel, funnel, depolyer, and eventually the mechanical arm."
+			]
+			dependencies: ["168BBDC869B97867"]
+			id: "195C87DB3915B2E9"
+			tasks: [{
+				id: "54AD06DBD3B523AC"
+				type: "item"
+				item: "create:brass_hand"
+				count: 2L
+			}]
+			rewards: [
+				{
+					id: "0FE5FB888AA55466"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "2F4E55BFD9EA64D0"
+					type: "item"
+					item: "pamhc2crops:hotteaitem"
+				}
+			]
+		}
+		{
+			icon: "create:blaze_burner"
+			x: 1.5d
+			y: 7.0d
+			shape: "rsquare"
+			description: [
+				"The blaze burner serves as a heater for mixing processes. When fed with furnace fuels it will consistantly produce some heat. Later it can be fed another item to produce more heat."
+				""
+				"The blaze burner cage requires alot of native heat to make the blaze inside happy, so a synthetic blazing blood tank serves that purpose."
+			]
+			dependencies: ["26C1909B3DE5442D"]
+			id: "672DF2EEA0691B98"
+			tasks: [
+				{
+					id: "0A08B47B57F2ECA4"
+					type: "item"
+					item: "create:empty_blaze_burner"
+				}
+				{
+					id: "34214968C9EA23CC"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+			]
+			rewards: [{
+				id: "7B70CB57C48C1C40"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 11.5d
+			description: ["Since the foundry does not allow alloying, the scorched alloyer exists to fill that role. With this, alloying can happen in a very controlled way. Perfect for mass production of alloys."]
+			dependencies: [
+				"0D2E2ABBC88BB2D1"
+				"3D250AE26140576E"
+			]
+			id: "049708C77654DE48"
+			tasks: [{
+				id: "7B045F9CB5D88B5A"
+				type: "item"
+				item: "tconstruct:scorched_alloyer"
+			}]
+			rewards: [
+				{
+					id: "7832894C6EE6E0D2"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "2B2C88696D026B8C"
+					type: "item"
+					item: "create_confectionery:marshmallow"
+				}
+			]
+		}
+		{
+			title: "The Foundry"
+			icon: "tconstruct:foundry_controller"
+			x: 6.5d
+			y: 10.0d
+			description: [
+				"The foundry is a variant to the smeltery, it's benefit is that it can melt some items for two products, and prevents alloying within it."
+				""
+				""
+			]
+			dependencies: ["513C8F355178CF65"]
+			id: "3D250AE26140576E"
+			tasks: [
+				{
+					id: "1D39533958B61E8D"
+					type: "item"
+					item: "tconstruct:foundry_controller"
+				}
+				{
+					id: "2330608F1ED56949"
+					type: "item"
+					item: "tconstruct:scorched_bricks"
+					count: 21L
+				}
+			]
+			rewards: [
+				{
+					id: "43FB49E0868C52E1"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "47F53F438F41D562"
+					type: "item"
+					item: {
+						id: "create_confectionery:full_ruby_chocolate_bar"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Henry Ford's Assembly Line"
+			icon: "amicore:multicyl_engine"
+			x: 0.0d
+			y: 2.0d
+			shape: "rsquare"
+			description: [
+				"The multicylinder engine, the other major crafting component of this age, and the next. "
+				""
+				"It's imperative that this is nearly totally, or fully automated. How you do this is up to you, but it is a sequenced assembly. You wont need a million of them, but youll need a fair few."
+				""
+				"The above line of quests outline the main production line, which is split into 3 phases, (22 steps total!)"
+			]
+			dependencies: ["37F44534E8A99AFE"]
+			id: "4314C8B2B07FA7E3"
+			tasks: [{
+				id: "56D30F459BEED963"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "29D205596AE17128"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "07BFA9501BA3980C"
+					type: "choice"
+					icon: "paraglider:anti_vessel"
+					table_id: 946083085323769434L
+				}
+			]
+		}
+		{
+			title: "High Torque Gearbox"
+			x: -4.5d
+			y: 5.5d
+			shape: "rsquare"
+			description: ["The High Torque gearbox is and upgraded form of the simple gearbox, reinforced with metal. Excellent for use in higher stress situations, and for rapid change in direction."]
+			dependencies: ["6CBA67D54BC1789B"]
+			id: "1E10D987D203B3EC"
+			tasks: [{
+				id: "50C165448979E296"
+				type: "item"
+				item: "amicore:high_torque_gearbox"
+				count: 9L
+			}]
+			rewards: [
+				{
+					id: "5C039F7C5135BCD7"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "6E17BFD28DD09023"
+					type: "item"
+					item: "pamhc2foodcore:chocolatecupcakeitem"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 5.5d
+			shape: "rsquare"
+			description: [
+				"That's right! Were skipping straight to the workstation here."
+				""
+				"The workstation for working with chemistry based recipes. These recipes cant be done by the mechanical crafter."
+			]
+			dependencies: ["49D5A70243B90AE9"]
+			id: "0B2A6A818556407B"
+			tasks: [{
+				id: "502318B02421B191"
+				type: "item"
+				item: "artisanworktables:workstation_chemist"
+			}]
+			rewards: [{
+				id: "38CBC30A65A4C293"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 8.5d
+			shape: "gear"
+			description: [
+				"Welcome to the start of tier 2!"
+				""
+				"With the advent of silver and tin, some more complex mechanical components. Following the bronze path will explain the kinematic components of create, while the sterling path will lead to the main questline."
+			]
+			dependencies: ["3B4E2C9CB7226D3C"]
+			id: "4C39C7561605706E"
+			tasks: [{
+				id: "5F07E5B7715E485E"
+				type: "item"
+				item: "artisanworktables:workstation_engineer"
+			}]
+			rewards: [{
+				id: "6FFE3D850AAB51A3"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			icon: "steampowered:bronze_burner"
+			x: -6.0d
+			y: 3.5d
+			description: ["An alternative to furnace power, the steam engine will constantly burn fuel without the need for smelting, at the cost of complexity and water."]
+			dependencies: ["168BBDC869B97867"]
+			id: "2C51CE2B3CA9DC01"
+			tasks: [
+				{
+					id: "571C47387539F049"
+					type: "item"
+					item: "steampowered:bronze_steam_engine"
+				}
+				{
+					id: "622206BE387C2BF4"
+					type: "item"
+					item: "steampowered:bronze_flywheel"
+				}
+				{
+					id: "7275F5CCEDDF2071"
+					type: "item"
+					item: "steampowered:bronze_burner"
+				}
+				{
+					id: "0A636E08AFB695B3"
+					type: "item"
+					item: "steampowered:bronze_boiler"
+				}
+			]
+			rewards: [
+				{
+					id: "0B5D6AF69FCAF9A3"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "1E0A21ADC4B79167"
+					type: "item"
+					item: "pamhc2foodcore:carrotcupcakeitem"
+				}
+			]
+		}
+		{
+			title: "Getting an Upgrade"
+			icon: "steampowered:cast_iron_burner"
+			x: 10.0d
+			y: 7.5d
+			description: [
+				"The furnace engine can be upgraded with a blast furnace, which doubles it's output."
+				""
+				"In parallel, the steam engine can be upgraded with more advanced materials to double its stress output."
+			]
+			dependencies: ["6057D58F1A6A87AA"]
+			id: "155A97C4E8284F99"
+			tasks: [
+				{
+					id: "3F31E60C41004135"
+					type: "item"
+					item: "steampowered:cast_iron_steam_engine"
+				}
+				{
+					id: "125DBBC73245C5C9"
+					type: "item"
+					item: "steampowered:cast_iron_flywheel"
+				}
+				{
+					id: "3FA9C68F2B132462"
+					type: "item"
+					item: "steampowered:cast_iron_boiler"
+				}
+				{
+					id: "63845C7462F04C9C"
+					type: "item"
+					item: "steampowered:cast_iron_burner"
+				}
+				{
+					id: "4D4DB3B1DC30BE9D"
+					type: "item"
+					item: "minecraft:blast_furnace"
+				}
+			]
+			rewards: [
+				{
+					id: "0AF1965F1C5451AE"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "678C6E0F9D438259"
+					type: "item"
+					item: "createcafe:fig_milk_tea"
+				}
+			]
+		}
+		{
+			title: "How to fuel an engine?"
+			icon: "minecraft:coal"
+			x: -7.5d
+			y: 4.0d
+			description: ["There are many viable fuel sources for running a furnace engine setup. From kelp to coal, picking your fuel source is important."]
+			dependencies: [
+				"2C51CE2B3CA9DC01"
+				"1DA43439FB673ABA"
+			]
+			dependency_requirement: "one_started"
+			id: "6D02B66D2C4B03D9"
+			tasks: [{
+				id: "55C19FBE22EF7ABC"
+				type: "checkmark"
+				title: "Automated Fuel"
+			}]
+			rewards: [{
+				id: "7D9704230440E219"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Forge Hammer"
+			icon: "tetra:forged_workbench"
+			x: 7.5d
+			y: 4.5d
+			description: [
+				"If you followed the tetra line of tools, you may have reached a point where you cannot upgrade your tools."
+				""
+				"Deep below the earth are remants of a lost civilization. If you happen to find any, you may run across a forge hammer and workbench. By powering it with thermal cells, it can be ultilized to upgrade your hammer."
+			]
+			dependencies: ["6057D58F1A6A87AA"]
+			id: "2EE1F6809315F91C"
+			tasks: [
+				{
+					id: "214705B56F0465DD"
+					type: "item"
+					item: "tetra:hammer_base"
+				}
+				{
+					id: "25E0867AE9A74BDC"
+					type: "item"
+					item: "tetra:forged_workbench"
+				}
+				{
+					id: "033B5714EAC9C89D"
+					type: "item"
+					item: {
+						id: "tetra:magmatic_cell"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "14F5B325617202DC"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "0AD87A870BC1B89B"
+					type: "item"
+					item: "farmersdelight:beef_stew"
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 3.0d
+			description: ["Tier 5 of tools. While you could make tier 6 tools with any scavenged netherite, it cant be crafted without the next tier of fuel. So for not obsidian is the highest available tier."]
+			dependencies: ["2EE1F6809315F91C"]
+			id: "7E87FB9BD5441287"
+			tasks: [{
+				id: "7B8616C8397EE71F"
+				type: "advancement"
+				title: "Obsidian Hammer"
+				icon: {
+					id: "tetra:modular_double"
+					Count: 1b
+					tag: {
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/basic_hammer_left"
+						"double/head_right": "double/basic_hammer_right"
+						id: "1fd47c2d-f58c-42e7-87a1-b3d18a23621b"
+						"double/basic_hammer_right_material": "basic_hammer/obsidian"
+						Damage: 0
+						"double/basic_handle_material": "basic_handle/iron"
+						"double/basic_hammer_left_material": "basic_hammer/obsidian"
+					}
+				}
+				advancement: "tetra:upgrades/hammer_5"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "6A76903DC291FFF2"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "47964F2E38205FEC"
+					type: "item"
+					item: "pamhc2foodextended:broccolimacitem"
+				}
+			]
+		}
+		{
+			title: "Scrap Picking (WIP)"
+			x: -3.5d
+			y: 1.0d
+			description: [
+				"The scrap picker can filter through scrap in order to extract small amounts of material from it. Unlike other deployer tools, it only has 256 durability."
+				""
+				"Fun Fact: All deployer tools can be enchanted with Unbreaking!"
+			]
+			dependencies: ["6D8774C872A685A8"]
+			id: "6BD37FED945928C7"
+			tasks: [{
+				id: "71DBF39F16CA91A9"
+				type: "item"
+				item: {
+					id: "amicore:scrap_picker"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5062C9C070177C1E"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "086D486AC5853115"
+					type: "item"
+					item: "pamhc2foodextended:strawberrysodaitem"
+				}
+			]
+		}
+		{
+			title: "Mobile Contraptions"
+			x: -3.0d
+			y: 11.5d
+			description: [
+				"The Cart Assembler will attach a structure placed above it onto a minecart below it, creating a mobile machine. The minecart can then be picked up by shift clicking with a wrench."
+				""
+				"Check ponder for more information."
+			]
+			dependencies: ["299F8BFDB7C2FCAB"]
+			id: "2E2E171C10BFBFEB"
+			tasks: [{
+				id: "5F14B8E8FA51F26E"
+				type: "item"
+				item: "create:cart_assembler"
+			}]
+			rewards: [
+				{
+					id: "50034ECE33BB9756"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "424F0C18511D15D8"
+					type: "item"
+					item: "pamhc2foodcore:chocolatemuffinitem"
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 10.5d
+			description: ["The Rope Pulley can pull structures vertically, and drop them backk down when rotation is reversed."]
+			dependencies: ["299F8BFDB7C2FCAB"]
+			id: "796FB4593D6CA96F"
+			tasks: [{
+				id: "1E715ED5A6E8ABC6"
+				type: "item"
+				item: "create:rope_pulley"
+			}]
+			rewards: [
+				{
+					id: "32403F418A9B6252"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "55725632FA597CCC"
+					type: "item"
+					item: "pamhc2foodcore:carrotmuffinitem"
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 11.5d
+			description: ["The Clockwork bearing creates a clocklike function. By having 2 separate structures in front of the bearing, an hour and minute hand can be created."]
+			dependencies: ["299F8BFDB7C2FCAB"]
+			id: "55F0804B25B3A893"
+			tasks: [{
+				id: "62A62F0C39921CFE"
+				type: "item"
+				item: "create:clockwork_bearing"
+			}]
+			rewards: [{
+				id: "127AF79EDBAC3AC3"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			icon: "create:mechanical_piston"
+			x: -3.0d
+			y: 12.5d
+			description: ["The mechanical piston, is a piston. However, it can extend for more than 1 block. It will move the entire length of the attached arm, linearly."]
+			dependencies: ["299F8BFDB7C2FCAB"]
+			id: "209D875F86D5D78D"
+			tasks: [
+				{
+					id: "30244D7E0E201D01"
+					type: "item"
+					item: "create:mechanical_piston"
+				}
+				{
+					id: "5CB370F532666E38"
+					type: "item"
+					item: "create:sticky_mechanical_piston"
+				}
+				{
+					id: "0CB3068E7B20737C"
+					type: "item"
+					item: "create:piston_extension_pole"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "75E23921D9078871"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 13.5d
+			description: ["The mechanical bearing will spin any structure placed in front of it when supplied rotation."]
+			dependencies: ["299F8BFDB7C2FCAB"]
+			id: "20F303516839C013"
+			tasks: [{
+				id: "63FD94C08C7628AF"
+				type: "item"
+				item: "create:mechanical_bearing"
+			}]
+			rewards: [{
+				id: "484711566657F11F"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Gantry"
+			icon: "create:gantry_carriage"
+			x: -5.5d
+			y: 13.5d
+			description: ["A structure attached to a gantry carriage will run along the shaft like a rail. By applying rotation to the rail it will move the carriage in either direction. The only limitation to the gantry is the direct back and forth motion. It can be used on any axis."]
+			dependencies: ["299F8BFDB7C2FCAB"]
+			id: "0344083C6E721351"
+			tasks: [
+				{
+					id: "05BB0BE45DD98D2C"
+					type: "item"
+					item: "create:gantry_carriage"
+				}
+				{
+					id: "0640BC028D91E34C"
+					type: "item"
+					item: "create:gantry_shaft"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "332483E8E078A893"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 14.0d
+			description: ["The sticker acts as a claw, grabbing onto the block in front of it when powered. Toggling its state."]
+			dependencies: ["299F8BFDB7C2FCAB"]
+			id: "1BBF6FEA7BFB42AB"
+			tasks: [{
+				id: "23D9D80348B3CA6F"
+				type: "item"
+				item: "create:sticker"
+			}]
+			rewards: [{
+				id: "5EF210B138001B00"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 10.5d
+			description: [
+				"Superglue binds blocks together not attached to a chassis, allowing for much more complex kinetic creations."
+				""
+				"Perfect for attaching chests to kinetic contraptions."
+			]
+			dependencies: ["574F2447228B6B9A"]
+			id: "107BA0E1F2BDF128"
+			tasks: [{
+				id: "12CBF082C77E3963"
+				type: "item"
+				item: {
+					id: "create:super_glue"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "50647D3511C1A962"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Coke Oven"
+			icon: "immersiveengineering:cokebrick"
+			x: 3.0d
+			y: 7.0d
+			shape: "rsquare"
+			description: [
+				"By mixing some soul soil clay with our previous spirit distillation, a dark clay can be molded. Once fired, the bricks it produces are excellent for coking coal and other products."
+				""
+				"Once the bricks are placed in a 3x3x3 cube, click the middle front face with the hammer."
+			]
+			dependencies: ["672DF2EEA0691B98"]
+			id: "4905AAD2F59E5D3B"
+			tasks: [
+				{
+					id: "50C357692F150E1E"
+					type: "item"
+					item: "immersiveengineering:coal_coke"
+					count: 16L
+				}
+				{
+					id: "2DE9004397846EA5"
+					type: "item"
+					item: "immersiveengineering:cokebrick"
+					count: 27L
+				}
+				{
+					id: "7EF8999F989DD5BF"
+					type: "item"
+					item: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "2B7BB5AF78573CF2"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Mechanical Toolbox"
+			icon: "artisanworktables:mechanical_toolbox"
+			x: 8.0d
+			y: 3.0d
+			description: [
+				"Using the steel cogs, a mechanized toolbox can be created. The main benefit is that it will automatically restock tools in attached artisan tables."
+				""
+				"While at it, try using some crude steel tools. They last 2.5x as long as iron, and are much cheaper to make than diamond."
+			]
+			dependencies: ["2EE1F6809315F91C"]
+			id: "10EA6927473C5881"
+			tasks: [
+				{
+					id: "57357342D6F82254"
+					type: "item"
+					item: "artisanworktables:mechanical_toolbox"
+				}
+				{
+					id: "30B5577F014AB4BC"
+					type: "item"
+					item: {
+						id: "artisantools:hammer_crude_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "2A4ABBBFDE394D84"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "1953B7EEF7AC9834"
+					type: "item"
+					item: "farmersdelight:honey_cookie"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 8.5d
+			description: ["With crude steel, you can reinforce your backpack even more."]
+			dependencies: ["55ECE1A531D4772A"]
+			id: "44B6DA956ABCAFDF"
+			tasks: [{
+				id: "010CC61EC0F0423C"
+				type: "item"
+				item: "sophisticatedbackpacks:diamond_backpack"
+			}]
+			rewards: [{
+				id: "3B0C023C47BB1CFE"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Science of the Spirit"
+			x: -1.5d
+			y: 4.0d
+			shape: "rsquare"
+			description: [
+				"The spirit is a tricky concept, one laced with millenia of history, however by creating a specific weapon, the spirit can be harshly extracted from the living of this world."
+				""
+				"Killing a mob with this scythe will yield several spirits of varying types, useful for a few purposes."
+			]
+			dependencies: ["0B2A6A818556407B"]
+			id: "713B68A3E30BC6FD"
+			tasks: [{
+				id: "7A2998A22548CD82"
+				type: "item"
+				item: {
+					id: "malum:crude_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "43CDD8BB68B20A1B"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Spirit Distillation"
+			icon: "malum:sacred_spirit"
+			x: 0.0d
+			y: 4.0d
+			shape: "rsquare"
+			description: [
+				"By mixing a collected spirit with water and sugar, a simple distillation of the spirit can be created, serving multiple purposes."
+				""
+				"For now lets make Soulfuric Acid."
+			]
+			dependencies: ["713B68A3E30BC6FD"]
+			id: "53834433E826F5B1"
+			tasks: [{
+				id: "1414BA8E041720DA"
+				type: "item"
+				title: "Any #malum:spirits/basic_spirits"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "malum:spirits/basic_spirits"
+					}
+				}
+			}]
+			rewards: [{
+				id: "3ED94BAAB77C11E8"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			icon: "create:flywheel"
+			x: -6.0d
+			y: 4.5d
+			description: [
+				"The Furnace Engine is one of two new power sources for create machines now available. By fueling a furnace or blast furnace beside it, it will capture the heat to generate large amount of stress capacity."
+				""
+				"The only downside is that the furnace must be smelting and fueled constantly to accomplish this."
+			]
+			dependencies: ["168BBDC869B97867"]
+			id: "1DA43439FB673ABA"
+			tasks: [
+				{
+					id: "6B797AF89A86AF47"
+					type: "item"
+					item: "create:furnace_engine"
+				}
+				{
+					id: "107473EC634E1BEE"
+					type: "item"
+					item: "create:flywheel"
+				}
+			]
+			rewards: [{
+				id: "07A5F75F36B2FA12"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "What can I get?"
+			icon: "amicore:bronze_nugget"
+			x: -3.5d
+			y: -1.0d
+			description: [
+				"By using the picker on the scrap, some usable alloys can be salvaged. This type of scrap seems to only yield alloys you've already made, or can make at this moment."
+				""
+				"The scrap has a 12.5% chance of yielding each nugget, and a 3.125% chance for a pewter nugget."
+			]
+			dependencies: ["59F8468A66D189F5"]
+			id: "25447C59F9598B79"
+			tasks: [
+				{
+					id: "762B7AA65D1D6874"
+					type: "item"
+					item: "amicore:lead_brass_nugget"
+				}
+				{
+					id: "7263990D23AC4A20"
+					type: "item"
+					item: "amicore:tin_brass_nugget"
+				}
+				{
+					id: "7FB40A6AFED65B0C"
+					type: "item"
+					item: "amicore:iron_brass_nugget"
+				}
+				{
+					id: "65F83E40DEF25E7E"
+					type: "item"
+					item: "amicore:silicon_brass_nugget"
+				}
+				{
+					id: "1A05757A6F55812D"
+					type: "item"
+					item: "amicore:brass_nugget"
+				}
+				{
+					id: "360CF85AB8DD8468"
+					type: "item"
+					item: "amicore:bronze_nugget"
+				}
+				{
+					id: "25F811B56217931B"
+					type: "item"
+					item: "amicore:sterling_silver_nugget"
+				}
+				{
+					id: "1325F25C006D27EE"
+					type: "item"
+					item: "amicore:pewter_nugget"
+				}
+			]
+			rewards: [
+				{
+					id: "29D9424C2CEF0032"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "4D11517B33834BB3"
+					type: "item"
+					item: "pamhc2foodcore:trailmixitem"
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 1.5d
+			description: [
+				"The brass tunnel has several functionalities, the primary being to sort items across or along belts."
+				""
+				"It has many intricacies, so best check the ponder for more information."
+			]
+			dependencies: ["195C87DB3915B2E9"]
+			id: "4E8501E835B78915"
+			tasks: [{
+				id: "1D3D9AFA193B7F4D"
+				type: "item"
+				item: "create:brass_tunnel"
+				count: 2L
+			}]
+			rewards: [{
+				id: "05DFBB200BDE1B4A"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Brass Funnel"
+			x: -6.0d
+			y: 2.5d
+			description: ["The Brass funnel acts exactly as its andesite counterpart, however it can drop up to a stack at a time (configurable)"]
+			dependencies: ["195C87DB3915B2E9"]
+			id: "702D3489D187A36B"
+			tasks: [{
+				id: "40E681602008DF5D"
+				type: "item"
+				item: "create:brass_funnel"
+				count: 2L
+			}]
+			rewards: [{
+				id: "774336543C59D033"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Chromatic Compound Synthesis"
+			icon: {
+				id: "create:chromatic_compound"
+				Count: 1b
+				tag: { }
+			}
+			x: 4.5d
+			y: 5.5d
+			shape: "circle"
+			description: [
+				"Chromatic compound and it's derivatives do not have many purposes, but one is basic computational needs. By mixing several powders and catalyzing it with lead and silver, a thick chromatic paste can be created."
+				""
+				"Once removed from the bottle, it can be converted to a few other materials for use elsewhere. Two of which cannot be made at this stage"
+			]
+			dependencies: ["1EE42538BEAF0B25"]
+			id: "7031FF38796B8BD4"
+			tasks: [
+				{
+					id: "3CF9BA09186C4B87"
+					type: "item"
+					item: "amicore:chromatic_compound_bottle"
+				}
+				{
+					id: "4B9BF0CA34374694"
+					type: "item"
+					item: {
+						id: "create:chromatic_compound"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "13C1A0F3023D2429"
+					type: "item"
+					item: "amicore:amicoin_starmetal"
+				}
+				{
+					id: "423482986877CFD2"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: 5.0d
+			description: [
+				"The hose pulley will extract fluids from the world, or pump them into it."
+				""
+				"If you havent figured out an unlimited lava source yet, this is one option."
+			]
+			dependencies: ["6057D58F1A6A87AA"]
+			id: "10373014279137F6"
+			tasks: [{
+				id: "01E908BF46F142ED"
+				type: "item"
+				item: "create:hose_pulley"
+			}]
+			rewards: [
+				{
+					id: "42B0CE4078534526"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "1290E37E575AD373"
+					type: "item"
+					item: "pamhc2foodcore:caramelappleitem"
+				}
+			]
+		}
+		{
+			icon: "create:minecart_coupling"
+			x: -1.5d
+			y: 12.0d
+			description: [
+				"The minecart coupling will hold 2 minecarts at a set distance. Allowing for chaining minecarts together. "
+				""
+				"The seat prevents entities from glitching through minecart and other contraptions. This is especially useful on servers for players riding a contraption."
+			]
+			dependencies: ["2E2E171C10BFBFEB"]
+			id: "2D06AEEF28112048"
+			tasks: [
+				{
+					id: "69174870F403C77D"
+					type: "item"
+					item: "create:minecart_coupling"
+				}
+				{
+					id: "6BAED913D97BFD54"
+					type: "item"
+					item: "create:white_seat"
+				}
+			]
+			rewards: [{
+				id: "498B12807D47F5A1"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Kinetic Interfacing"
+			icon: "create:portable_storage_interface"
+			x: -6.0d
+			y: 12.5d
+			description: [
+				"The portable interfaces serve to move items on and off a contraption. One must be placed down on the contraption, and the other opposing it in the world. Attaching a funnel to the back will extract the items. The fluid and item interfaces function the same."
+				""
+				"The redstone connection will be powered while two are passing by each other."
+			]
+			dependencies: ["299F8BFDB7C2FCAB"]
+			id: "008B7A883F6C9C63"
+			tasks: [
+				{
+					id: "059087055830EC63"
+					type: "item"
+					item: "create:portable_fluid_interface"
+					count: 2L
+				}
+				{
+					id: "073F80621DDA572B"
+					type: "item"
+					item: "create:portable_storage_interface"
+					count: 2L
+				}
+				{
+					id: "2ECB01743B31F174"
+					type: "item"
+					item: "create:redstone_contact"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "701A2E69AC59AD68"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "05A44B447D99E832"
+					type: "item"
+					item: "pamhc2foodcore:caramelmuffinitem"
+				}
+			]
+		}
+		{
+			icon: {
+				id: "create:filter"
+				Count: 1b
+				tag: {
+					Items: { }
+				}
+			}
+			x: -3.0d
+			y: 7.0d
+			description: ["Need a more specific filter? The filter and attribute filter should serve that purpose."]
+			dependencies: ["49D5A70243B90AE9"]
+			id: "1FA639F8F2F507E1"
+			tasks: [
+				{
+					id: "2A4DCCC2AB2E7D62"
+					type: "item"
+					item: {
+						id: "create:filter"
+						Count: 1b
+						tag: {
+							Items: { }
+						}
+					}
+				}
+				{
+					id: "76B235FFFF141E27"
+					type: "item"
+					item: {
+						id: "create:attribute_filter"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "49BDC30751864C7E"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			description: ["When automating the mechanical crafter, you may find some recipes need air gaps. The slot cover will prevent an item from being placed in that slot."]
+			dependencies: ["168BBDC869B97867"]
+			id: "726818BC40068829"
+			tasks: [{
+				id: "136B775CDCE8C083"
+				type: "item"
+				item: "create:crafter_slot_cover"
+			}]
+			rewards: [{
+				id: "377A18ED4D8A13F6"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 6.5d
+			description: ["The Speed contoller can adjust the rpm of the attached large cogwheel. This allows for easy increasing of rpm without need for large gear ratio chains, as well as the use of more specific speeds."]
+			dependencies: ["1E10D987D203B3EC"]
+			id: "770C3C6AD0A244CE"
+			tasks: [{
+				id: "70C2B6EBC92F54AA"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+			rewards: [
+				{
+					id: "0071F25077ABA567"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "44BE1527A99C0816"
+					type: "item"
+					item: "pamhc2foodcore:pumpkincupcakeitem"
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 1.0d
+			description: ["The smart chute is a filterable addon to chutes. They can also control stack size extracted. They are also redstone toggleable."]
+			dependencies: ["195C87DB3915B2E9"]
+			id: "26DEE0EE03F38D88"
+			tasks: [{
+				id: "2B69E200C9AA6B5D"
+				type: "item"
+				item: "create:smart_chute"
+			}]
+			rewards: [{
+				id: "767A6FC064BBE805"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.5d
+			description: ["Too many spirits? Not enough space? Go ahead and shove them in a jar!"]
+			dependencies: ["713B68A3E30BC6FD"]
+			id: "19271125FD83DA38"
+			tasks: [{
+				id: "31E9EA54EF1DB3F4"
+				type: "item"
+				item: "malum:spirit_jar"
+			}]
+			rewards: [{
+				id: "53968C06CC61E39B"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Bronze Cogwheels"
+			icon: "steampowered:bronze_large_cogwheel"
+			x: -4.5d
+			y: 12.0d
+			description: [
+				"The bronze cogwheel functions exactly as its wooden counterpart. It also serves as a vital crafting component in many kinematic machines"
+				""
+				"Check ponders for a more indepth look at individual components."
+			]
+			dependencies: ["574F2447228B6B9A"]
+			id: "299F8BFDB7C2FCAB"
+			tasks: [
+				{
+					id: "265A87F4DF78B11E"
+					type: "item"
+					item: "steampowered:bronze_large_cogwheel"
+					count: 4L
+				}
+				{
+					id: "63B3C156CFCB13D7"
+					type: "item"
+					item: "steampowered:bronze_cogwheel"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "59D0A1C58F2E94CB"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "7E8B110214F6928A"
+					type: "item"
+					item: "pamhc2crops:bakedsweetpotatoitem"
+				}
+			]
+		}
+		{
+			title: "Sterling Silver"
+			x: -4.5d
+			y: 7.0d
+			shape: "rsquare"
+			description: [
+				"While you've already made some, you'll need alot of sterling for more advanced create components."
+				""
+				"Go ahead and stock up some."
+			]
+			dependencies: ["4C39C7561605706E"]
+			id: "6CBA67D54BC1789B"
+			tasks: [{
+				id: "53383AF7DE449808"
+				type: "item"
+				item: "amicore:sterling_silver_ingot"
+				count: 48L
+			}]
+			rewards: [{
+				id: "34D83684354DB7BE"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Bronze"
+			x: -4.5d
+			y: 10.0d
+			shape: "rsquare"
+			description: ["A very versatile alloy, bronze serves excellently for managing the kinematic stresses of multiblock contraptions."]
+			dependencies: ["4C39C7561605706E"]
+			id: "574F2447228B6B9A"
+			tasks: [{
+				id: "56FF1A67CCBF9E86"
+				type: "item"
+				item: "amicore:bronze_ingot"
+				count: 32L
+			}]
+			rewards: [{
+				id: "4BA5FBCC626EFFE5"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Natural Sulfur Source"
+			icon: "immersiveengineering:dust_sulfur"
+			x: 4.5d
+			y: 2.5d
+			description: [
+				"In attempting to triplicate ores, you may find the amount of sulfur needed extremely daunting. Worry not!"
+				""
+				"During your time in the nether, you may have noticed the extreme sulfury smell in crimson forests. After closer examination, some of the local flora effciently extracts sulfur from the soil and the air."
+				""
+				"Can it be extracted somehow?"
+			]
+			dependencies: ["6B4C19FB7C9990D6"]
+			id: "1635E72CC19A7FEE"
+			tasks: [{
+				id: "5DABB458AF5840E9"
+				type: "item"
+				item: "amicore:unusable_waste_water_bucket"
+			}]
+			rewards: [
+				{
+					id: "55F6F953137E5CD7"
+					type: "item"
+					item: "amicore:amicoin_starmetal"
+				}
+				{
+					id: "52D98BFA12E40F93"
+					type: "item"
+					item: "create_confectionery:honey_candy"
+				}
+			]
+		}
+		{
+			title: "Blazing Blood Synthesis"
+			icon: {
+				id: "tconstruct:copper_can"
+				Count: 1b
+				tag: {
+					fluid: "tconstruct:blazing_blood"
+				}
+			}
+			x: 0.0d
+			y: 7.0d
+			shape: "hexagon"
+			subtitle: "The first process"
+			description: [
+				"The blood of the blaze is a fickle substance, when attempting to extract it directly, it often leads to a highly unstable sulfurized mixture. Instead you'll have to synthesize it yourself. "
+				""
+				"The synthesized version is a mixture of lava, blaze powder, and some metal catalysts. Check JEI for specifics. (Also you can drain the cans in a create drain, JEI just wont show it)"
+				""
+				"Once made, blazing blood works as an excellent fuel, allowing the melting of materials up to 1500C. "
+			]
+			dependencies: ["2CC7A3DABE019BB0"]
+			size: 1.5d
+			id: "26C1909B3DE5442D"
+			tasks: [{
+				id: "0421A7875D9C2EDA"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "7E0FE16C282F48D3"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Lava"
+			x: 0.0d
+			y: 8.5d
+			description: ["To begin synthesis, fill a copper can with lava. Each can will hold 144mb, doing so will begin the sequenced assembly."]
+			dependencies: ["26C1909B3DE5442D"]
+			id: "3D5522D95276E3B9"
+			tasks: [{
+				id: "50171B3D4BB46BD5"
+				type: "item"
+				item: "create:spout"
+			}]
+			rewards: [{
+				id: "4AE8C79465F14031"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Blaze Powder"
+			x: 0.0d
+			y: 9.5d
+			description: ["Once you've filled a can with lava, deploy a piece of blaze powder into it."]
+			dependencies: [
+				"3D5522D95276E3B9"
+				"26C1909B3DE5442D"
+			]
+			id: "43C4FBF46D364AA8"
+			tasks: [{
+				id: "1A7739274C056BFC"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "67169BB4AFB00521"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Red Metal Catalyst"
+			x: 0.0d
+			y: 10.5d
+			description: [
+				"There are several metallic catalysts available to begin reactions between substances. Blazing blood requires a simple iron/copper catalyst solution to initiate the reaction between the lava and blaze powder. "
+				""
+				"By mixing a small amount of iron and copper dust with water, the catalyst can be created. Once done, drop just 10mB into the canned mixture to start the reaction."
+			]
+			dependencies: [
+				"43C4FBF46D364AA8"
+				"26C1909B3DE5442D"
+			]
+			id: "764F43B84DC48244"
+			tasks: [{
+				id: "76F017D6CD6B9D5D"
+				type: "item"
+				item: "create:spout"
+			}]
+			rewards: [{
+				id: "54565C383035B308"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			icon: {
+				id: "amicore:bottle_mixer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: 11.5d
+			description: [
+				"To finalize the reaction, the mixture needs to be mixed. The bottle mixer serves this purpose."
+				""
+				"It is the first of several deployer tools, which each have 128,000 durability, lasting for quite a long time."
+			]
+			dependencies: [
+				"764F43B84DC48244"
+				"26C1909B3DE5442D"
+			]
+			id: "3D479FA47E2EA740"
+			tasks: [
+				{
+					id: "6112DC7857CAE17A"
+					type: "item"
+					item: {
+						id: "amicore:bottle_mixer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0748E5A067370486"
+					type: "item"
+					item: "create:deployer"
+				}
+			]
+			rewards: [
+				{
+					id: "518ABD3714B5C059"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "6CE8AD079545541C"
+					type: "item"
+					item: "create_confectionery:hot_chocolate_bottle"
+				}
+			]
+		}
+		{
+			title: "Soulfuric Acid"
+			x: 1.5d
+			y: 4.0d
+			shape: "rsquare"
+			description: ["Sulfuric acid is an incredibly versatile substance on its own, however by adding some distilled spirits into it, a more potent acid can be synthesized. "]
+			dependencies: [
+				"670F4C9D80DAFD45"
+				"53834433E826F5B1"
+			]
+			id: "5AF1A732721135DD"
+			tasks: [{
+				id: "7A9A7CA5988BC546"
+				type: "item"
+				item: "amicore:soulfuric_acid_bottle"
+			}]
+			rewards: [
+				{
+					id: "56ED054DF13E7E8A"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "6C0B6EE070619368"
+					type: "item"
+					item: "create_confectionery:bar_of_caramel"
+				}
+			]
+		}
+		{
+			title: "Sulfuric Acid Synthesis"
+			x: 3.0d
+			y: 4.0d
+			shape: "rsquare"
+			description: ["By placing sulfur in a jar, heating it, spouting some water and then mixing it all together, a sulfuric acid solution can be created."]
+			dependencies: ["1EE42538BEAF0B25"]
+			id: "670F4C9D80DAFD45"
+			tasks: [{
+				id: "2EAE9FB0A007971A"
+				type: "item"
+				item: "amicore:sulfuric_acid_bottle"
+			}]
+			rewards: [{
+				id: "5D9F22F475D5AEB5"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Chemical Containers"
+			icon: "amicore:tempered_bottle"
+			x: 0.0d
+			y: 5.5d
+			shape: "rsquare"
+			description: [
+				"The tempered bottle and copper can are the baselines of chemistry in AMI. While the copper can is relatively easy to make by hand, the tempered bottle requires machines to make."
+				""
+				"Thankfully they are very inexpensive."
+			]
+			dependencies: ["0B2A6A818556407B"]
+			id: "2CC7A3DABE019BB0"
+			tasks: [{
+				id: "7CEBDE927917FB80"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "575F5C0243D1BEB5"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Sitting Pool"
+			icon: "amicore:sitting_tank"
+			x: 2.5d
+			y: 2.5d
+			description: [
+				"A sitting tank is a large multiblock for letting mixtures settle. This fits the need for processing slurries excellently. "
+				""
+				"Before adding slurry to the tank, mix in a flux for the metallic components to bind to. After that take 32 ore worth of slurry and leave it in the pool for a time. The ore powder will settle to the bottom, and waste water will remain."
+				""
+				"Youll have to find a way to not underfill the tank, else risk bottlenecking your ore processing system."
+			]
+			dependencies: ["23A251E4EAF9BDF2"]
+			id: "69A375FA08932135"
+			tasks: [
+				{
+					id: "0C01124398B3804A"
+					type: "item"
+					item: "amicore:sitting_tank"
+				}
+				{
+					id: "60095E57F2134455"
+					type: "item"
+					item: "amicore:sitting_pool_fluid_input"
+				}
+				{
+					id: "0FC5021302F54873"
+					type: "item"
+					item: "amicore:sitting_pool_fluid_output"
+				}
+				{
+					id: "302351991AF9D8C2"
+					type: "item"
+					item: "amicore:sitting_pool_item_output"
+				}
+				{
+					id: "79BA7EE4536FCE17"
+					type: "item"
+					item: "create:copper_casing"
+					count: 84L
+				}
+				{
+					id: "36A86C51F5E3C816"
+					type: "item"
+					item: "createdeco:copper_sheet_metal"
+					count: 35L
+				}
+				{
+					id: "1814EC8780F0CDCC"
+					type: "item"
+					item: "createdeco:copper_mesh_fence"
+					count: 6L
+				}
+				{
+					id: "6CB3D23DD0D9BB25"
+					type: "item"
+					item: "create:fluid_pipe"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "2754D10049DEC146"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "728C5B6D01D14DB4"
+					type: "item"
+					item: "pamhc2foodextended:salsaitem"
+				}
+			]
+		}
+		{
+			title: "Ore Blasts"
+			icon: "amicore:sphalerite_blast"
+			x: 3.5d
+			y: 2.5d
+			description: ["Once the powder is dredged from the slurry, it needs to be processed a little more before it can be melted down. Once it is, you've sucessfully tripled ore yield."]
+			dependencies: [
+				"69A375FA08932135"
+				"23A251E4EAF9BDF2"
+			]
+			id: "6B4C19FB7C9990D6"
+			tasks: [{
+				id: "6E861DDB91229185"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+			rewards: [{
+				id: "171F19F45513052D"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Bottle Mold"
+			icon: {
+				id: "amicore:bottle_press"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.0d
+			y: 5.5d
+			shape: "circle"
+			description: ["To make a tempered bottle, you need to have a mold for them. By pressing a bottle shape into some sand, the mold can be created."]
+			dependencies: ["2CC7A3DABE019BB0"]
+			id: "17F9596E00F6C335"
+			tasks: [
+				{
+					id: "798C5EC2FAC6E90D"
+					type: "item"
+					item: "minecraft:sand"
+				}
+				{
+					id: "665D99182DE51735"
+					type: "item"
+					item: {
+						id: "amicore:bottle_press"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "122E86F219CBF452"
+					type: "item"
+					item: "create:deployer"
+				}
+			]
+			rewards: [{
+				id: "40514F956C8F3C4E"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Molten Glass"
+			icon: "tconstruct:molten_glass_bucket"
+			x: 2.0d
+			y: 5.5d
+			description: [
+				"Fill the mold with molten glass, and then blow compressed air into it to blow it into the whole mold."
+				""
+				"Compressed air can be collected with a small air vent."
+			]
+			dependencies: [
+				"17F9596E00F6C335"
+				"2CC7A3DABE019BB0"
+			]
+			id: "039C3042E82FF36F"
+			tasks: [
+				{
+					id: "5DCCC43D089A86C8"
+					type: "item"
+					item: "create:spout"
+					count: 2L
+				}
+				{
+					id: "413E613AC6A83C5F"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "custommachinery:small_air_vent"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "20C15EE1CE19F657"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Tempered Bottles Produced"
+			icon: "create:mechanical_press"
+			x: 3.0d
+			y: 5.5d
+			description: ["Once the glass is blow, smash the mold around it to free the bottle."]
+			dependencies: [
+				"039C3042E82FF36F"
+				"2CC7A3DABE019BB0"
+			]
+			id: "1EE42538BEAF0B25"
+			tasks: [
+				{
+					id: "54E333DC08FA63AC"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "45952479CBF02A58"
+					type: "item"
+					item: "amicore:tempered_bottle"
+					count: 16L
+				}
+				{
+					id: "08C931E9D959C6E7"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+			rewards: [{
+				id: "2B62135C9ED83B08"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Coking Other Materials"
+			icon: "amicore:warped_coke"
+			x: 3.0d
+			y: 8.5d
+			description: [
+				"Coal is non-renewable, so it's best to find some other fuel sources for blasting steel. In your travels a few plants have enough resiliance to produce cokes."
+				""
+				"This comes at the cost of complexity and time, as it takes twice the time to coke these materials, and need a constant blaze burner to produce. As well as burning for less time in a blast furnace."
+			]
+			dependencies: ["4905AAD2F59E5D3B"]
+			id: "4B3F868BA323E243"
+			tasks: [
+				{
+					id: "7836860BCF1B641E"
+					type: "item"
+					item: "amicore:warped_coke"
+					count: 16L
+				}
+				{
+					id: "282AAA5C8C273A81"
+					type: "item"
+					item: "amicore:sugary_coke"
+					count: 16L
+				}
+				{
+					id: "2961631318E28091"
+					type: "item"
+					item: "amicore:fungal_coke"
+					count: 16L
+				}
+				{
+					id: "0D17C52DFF7827A1"
+					type: "item"
+					item: "geolosys:lignite_coal_coke"
+					count: 16L
+				}
+				{
+					id: "645C4E7152E60E7E"
+					type: "item"
+					item: "geolosys:bituminous_coal_coke"
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "61F4083B4C70C7BC"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "3E6A4233801B8425"
+					type: "item"
+					item: "createcafe:vanilla_milk_tea"
+				}
+			]
+		}
+		{
+			title: "Raw Spirit Crafting"
+			icon: "malum:aerial_spirit"
+			x: -2.0d
+			y: 3.0d
+			description: ["Not only can spirits be distilled for other products, but they are useful for crafting many magical items."]
+			dependencies: ["713B68A3E30BC6FD"]
+			id: "571042D95C0F0EAD"
+			tasks: [
+				{
+					id: "289C4CC587C90A94"
+					type: "item"
+					item: "malum:ring_of_arcane_reach"
+				}
+				{
+					id: "5E0C57FC81323F8F"
+					type: "item"
+					item: "malum:ring_of_arcane_spoil"
+				}
+				{
+					id: "05A969BB460AA7C7"
+					type: "item"
+					item: "malum:ring_of_prowess"
+				}
+			]
+			rewards: [{
+				id: "2020A8F52D429DF2"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Water Collection"
+			icon: "amicore:tank_valve"
+			x: -7.5d
+			y: 3.0d
+			description: ["On top of fueling the steam engine, water is contantly needed to boil. An excellent early solution for sourcing water is the collection tank. Thankfully they are not overly expensive, but they only generate 1 mb/t of water."]
+			dependencies: ["2C51CE2B3CA9DC01"]
+			dependency_requirement: "all_started"
+			id: "07E1663074B67D38"
+			tasks: [
+				{
+					id: "1EE6937D397D45E0"
+					type: "item"
+					item: "amicore:tank_valve"
+				}
+				{
+					id: "09BDC07D362CB40B"
+					type: "item"
+					item: "amicore:tank_wall"
+					count: 26L
+				}
+				{
+					id: "54095445EFE2D177"
+					type: "item"
+					item: "minecraft:smooth_stone_slab"
+					count: 9L
+				}
+				{
+					id: "3A03C2619C4559A1"
+					type: "item"
+					item: "minecraft:oak_log"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "0582B41F6C8A21AC"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Cast Iron Cogs"
+			icon: "steampowered:cast_iron_large_cogwheel"
+			x: 7.5d
+			y: 7.0d
+			shape: "rsquare"
+			description: [
+				"While steel and cast iron are not the same material, they are both very simillar. The crude steel has a high enough carbon ratio to use as a substitution. "
+				""
+				"Like its bronze counterpart, the cast iron cogs are usable as crafting components for a few machines and devices. It is the final gateway to create."
+			]
+			dependencies: ["55ECE1A531D4772A"]
+			id: "6057D58F1A6A87AA"
+			tasks: [
+				{
+					id: "04ED8162578B3E63"
+					type: "item"
+					item: "steampowered:cast_iron_cogwheel"
+					count: 4L
+				}
+				{
+					id: "2677CA2A281366AE"
+					type: "item"
+					item: "steampowered:cast_iron_large_cogwheel"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "7008DFC477727A8B"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 8.0d
+			dependencies: ["6057D58F1A6A87AA"]
+			id: "35AFD6E0AB454CC2"
+			tasks: [{
+				id: "4777505030F6F2E4"
+				type: "item"
+				item: "create_stuff_additions:brass_moped_item"
+			}]
+			rewards: [
+				{
+					id: "000A601AC6E19346"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "5BA00675A73E29EE"
+					type: "item"
+					item: "pamhc2foodextended:cinnamonbreaditem"
+				}
+			]
+		}
+		{
+			title: "Cloning Machine"
+			icon: "create:schematicannon"
+			x: 7.5d
+			y: 9.5d
+			description: [
+				"The schamaticannon will build create schematics, consuming items from a chest beside it. It needs gunpowder as fuel to launch blocks into place."
+				""
+				"Use the schematic table for creating schematics."
+			]
+			dependencies: ["6057D58F1A6A87AA"]
+			id: "1190B924A30158E1"
+			tasks: [
+				{
+					id: "3DB5E12679C8F5F9"
+					type: "item"
+					item: "create:schematicannon"
+				}
+				{
+					id: "406224115EE78B59"
+					type: "item"
+					item: "create:schematic_table"
+				}
+				{
+					id: "5318CDB39AEA9E70"
+					type: "item"
+					item: "create:schematic_and_quill"
+				}
+			]
+			rewards: [
+				{
+					id: "2907A3F8765E90B2"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "033D1450701016E0"
+					type: "item"
+					item: "pamhc2foodextended:quesadillaitem"
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: 9.0d
+			description: ["The nozzle is an extension to the encased fan. It distributes the fan's blowing capability in all directions around it."]
+			dependencies: ["6057D58F1A6A87AA"]
+			id: "5443DF089C6055DB"
+			tasks: [{
+				id: "4604508A57B6BB90"
+				type: "item"
+				item: "create:nozzle"
+			}]
+			rewards: [{
+				id: "2241430F585F6DA7"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Incinerator"
+			x: 6.5d
+			y: 5.5d
+			description: [
+				"Not really an incinerator, but will void any item pushed into it."
+				""
+				"Variants also exist for fluids and energy."
+			]
+			dependencies: ["55ECE1A531D4772A"]
+			id: "0B5C17677EE95994"
+			tasks: [{
+				id: "3F31754BA683A32A"
+				type: "item"
+				item: "trashcans:item_trash_can"
+			}]
+			rewards: [{
+				id: "0A58F71DFB656A43"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Bioprocessing"
+			icon: "minecraft:fern"
+			x: -3.0d
+			y: 8.5d
+			description: [
+				"Plants are a wonderful thing, the flora of this world is incredibly diverse. Every one special."
+				""
+				"And that's exactly what were here to exploit."
+				""
+				"Known flora can effectively be split into five catagories: grassy, fruited, fungal, arboreal, and nether-bloom. Each is suited to its own purposes, but all are useful."
+			]
+			dependencies: ["4C39C7561605706E"]
+			id: "35F91AA4D7CC90CD"
+			tasks: [{
+				id: "578DC3F314F89DF9"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "137AE4709A6E876E"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Metal Scrap"
+			x: -3.5d
+			y: 0.0d
+			description: [
+				"Buried deep under the soil of this planet, seems to be the remnants of an old civilization. They may be gone, but some scraps of them are still here."
+				""
+				"If you can find some remnant scrap, i'll show you how to take advantage of the treasure."
+			]
+			dependencies: ["6BD37FED945928C7"]
+			id: "59F8468A66D189F5"
+			tasks: [{
+				id: "6613F35B8E848B7A"
+				type: "item"
+				item: "tetra:metal_scrap"
+				count: 32L
+			}]
+			rewards: [{
+				id: "4775141CCBF787AE"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 5.5d
+			description: ["The weighted ejector will launch any items or entities on top of it. The landing location can be configured before placing."]
+			dependencies: ["1E10D987D203B3EC"]
+			id: "6B3E19C3224B2F0D"
+			tasks: [{
+				id: "0A100A080B125FD4"
+				type: "item"
+				item: "create:weighted_ejector"
+			}]
+			rewards: [{
+				id: "6D3577C1B34E5A62"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "High-Torque Gearbox"
+			icon: "amicore:high_torque_gearbox"
+			x: 0.0d
+			y: 1.0d
+			dependencies: ["4314C8B2B07FA7E3"]
+			id: "67BEEE8EC9A15287"
+			tasks: [{
+				id: "7735091592FAF5B2"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "79572AFE42CBBAC8"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Crude Steel Bolts and Hammer"
+			icon: "amicore:crude_steel_bolt"
+			x: 0.0d
+			y: 0.0d
+			dependencies: [
+				"67BEEE8EC9A15287"
+				"4314C8B2B07FA7E3"
+			]
+			id: "52C93D2F98270350"
+			tasks: [{
+				id: "0BB46BA4B6A789CE"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "2F685FCF5D63E306"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Crude Steel Mech. Component"
+			icon: "amicore:crude_steel_mech_component"
+			x: 0.0d
+			y: -1.0d
+			dependencies: [
+				"52C93D2F98270350"
+				"4314C8B2B07FA7E3"
+			]
+			id: "730E70DF8D635A56"
+			tasks: [{
+				id: "5B4968E5C2B6C588"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "7339849B5405FF81"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Rounded Crude Steel Plate"
+			icon: "amicore:crude_steel_round_sheet"
+			x: 0.0d
+			y: -2.0d
+			dependencies: [
+				"730E70DF8D635A56"
+				"4314C8B2B07FA7E3"
+			]
+			id: "1E320A0111868DE9"
+			tasks: [{
+				id: "395808A765C1DE2E"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "1BDF3B754FA9DC82"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Pressing into Shape"
+			x: 0.0d
+			y: -3.0d
+			dependencies: [
+				"1E320A0111868DE9"
+				"4314C8B2B07FA7E3"
+			]
+			id: "4C04FB745FF30761"
+			tasks: [{
+				id: "0C79DDF7FC58A712"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+			rewards: [{
+				id: "3F1A253962A211A2"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Shaft"
+			icon: "create:shaft"
+			x: 0.0d
+			y: -4.0d
+			dependencies: [
+				"4C04FB745FF30761"
+				"4314C8B2B07FA7E3"
+			]
+			id: "009FD5616EACBD3A"
+			tasks: [{
+				id: "166EF297FC820A25"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "270B5365231C3645"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Brass Casing"
+			icon: "create:brass_casing"
+			x: 0.0d
+			y: -6.0d
+			dependencies: [
+				"4314C8B2B07FA7E3"
+				"1749BE4D161EB7B6"
+			]
+			id: "015AF519A4071866"
+			tasks: [{
+				id: "3B14589BF6EB16C1"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "55E5BABA6AAFECEB"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Rounded Crude Steel Plate"
+			icon: "amicore:crude_steel_round_sheet"
+			x: 0.0d
+			y: -7.0d
+			dependencies: [
+				"015AF519A4071866"
+				"4314C8B2B07FA7E3"
+			]
+			id: "2904E4F464887B8C"
+			tasks: [{
+				id: "4EA8CF1BEA3B2C3E"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "1A3695C3D073AE3D"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Crude Steel Bolt"
+			icon: "amicore:crude_steel_bolt"
+			x: 0.0d
+			y: -8.0d
+			dependencies: [
+				"2904E4F464887B8C"
+				"4314C8B2B07FA7E3"
+			]
+			id: "6B905CAA3D962E55"
+			tasks: [{
+				id: "4E910974ED5B2E0C"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "4D267658AE5A774F"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.0d
+			dependencies: [
+				"009FD5616EACBD3A"
+				"4314C8B2B07FA7E3"
+			]
+			id: "1749BE4D161EB7B6"
+			tasks: [{
+				id: "2C91E91130E44944"
+				type: "item"
+				item: "steampowered:cast_iron_cogwheel"
+			}]
+			rewards: [{
+				id: "6ADB6DBC9AD3FA84"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Automated Harvesting"
+			icon: "create:mechanical_harvester"
+			x: -3.0d
+			y: 9.5d
+			description: [
+				"The Mechanical plough will scoop blocks off the ground without a full hitbox. Collecting them if a chest is attached. It can also launch entities when moved at high speed."
+				""
+				"The Mechanical Harvester will harvest anything it passes over, such as plants and crops. Depositng them in an attached chest."
+			]
+			dependencies: ["574F2447228B6B9A"]
+			id: "7015100B257D71D2"
+			tasks: [
+				{
+					id: "0C72121FCE4E6DBF"
+					type: "item"
+					item: "create:mechanical_plough"
+				}
+				{
+					id: "08408DC64EBADCE3"
+					type: "item"
+					item: "create:mechanical_harvester"
+				}
+			]
+			rewards: [
+				{
+					id: "2DF436693A524799"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "5B214531DA84C5EA"
+					type: "item"
+					item: "pamhc2foodcore:carrotmuffinitem"
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: 6.0d
+			description: [
+				"Effectively an upgrade to furnace engines, it will constantly burn fuel to power one, without needing to smelt material to do so. "
+				""
+				"It powers at the same rate as a regular furnace."
+			]
+			dependencies: ["6057D58F1A6A87AA"]
+			dependency_requirement: "one_started"
+			id: "77CB7DA869C48FD3"
+			tasks: [{
+				id: "15673F10A834EF95"
+				type: "item"
+				item: "createaddition:furnace_burner"
+			}]
+			rewards: [{
+				id: "25F97192E21BE194"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 4.0d
+			description: [
+				"         |"
+				"         | "
+				"         |              ?"
+				"        []"
+				"      [][][]     (you'll have to "
+				"              power it with gems)"
+			]
+			dependencies: ["7031FF38796B8BD4"]
+			id: "0E49B8AD8FB358B1"
+			tasks: [{
+				id: "51CBC47E8B310C8C"
+				type: "item"
+				item: "create:refined_radiance"
+			}]
+			rewards: [
+				{
+					id: "26BDAB7867E13004"
+					type: "item"
+					item: "amicore:amicoin_orachalchum"
+				}
+				{
+					id: "56BAE18E6AF71765"
+					type: "item"
+					item: "pamhc2foodcore:meatloafitem"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			description: ["The dagger functions the same as the scythe, but only attacks one enemy at a time, rather than being a sweep attack."]
+			dependencies: ["713B68A3E30BC6FD"]
+			id: "31244B1045149B0A"
+			tasks: [{
+				id: "102D563A922D6A7E"
+				type: "item"
+				item: {
+					id: "malum:sacrificial_dagger"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "657C00C955AD45B5"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 5.5d
+			description: [
+				"By combining the raw energy of refined radiance, and the versatility of crude steel, a powered exoskeleton can be constructed."
+				""
+				"To fuel it, hold the item in your offhand, and then throw any furnace fuel from your mainhand to the ground."
+			]
+			dependencies: [
+				"0E49B8AD8FB358B1"
+				"55ECE1A531D4772A"
+			]
+			id: "7C331D82210C110C"
+			tasks: [{
+				id: "055C4378CAB98D13"
+				type: "item"
+				item: {
+					id: "create_stuff_additions:refined_radiance_exoskeleton_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "36BE4A38791AA3D6"
+					type: "item"
+					item: "amicore:amicoin_starmetal"
+				}
+				{
+					id: "5E01C26A3D0426A7"
+					type: "item"
+					item: "createcafe:lime_milk_tea"
+				}
+			]
+		}
+		{
+			title: "The Electric Age"
+			x: 10.0d
+			y: 6.5d
+			shape: "diamond"
+			description: [
+				"Its time to move on to a more electrical age. While you still need all the tools you've made going forward, the advent of electricity and circuitry means that more complex machines can be constructed."
+				""
+				"The above quest chain will go over how to produce the LV circuit."
+			]
+			dependencies: ["6057D58F1A6A87AA"]
+			id: "417096C593DECCAF"
+			tasks: [{
+				id: "613CF5ECD9B47192"
+				type: "item"
+				item: "amicore:lv_circuit"
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "6F1B5BD43540757D"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "6D4AB44A0043774E"
+					type: "item"
+					item: "create:builders_tea"
+				}
+				{
+					id: "47F99E757BAB5B65"
+					type: "choice"
+					icon: "paraglider:anti_vessel"
+					table_id: 946083085323769434L
+				}
+			]
+		}
+		{
+			title: "Scorched I/O"
+			icon: "tconstruct:scorched_drain"
+			x: 7.0d
+			y: 11.5d
+			description: ["These function exactly the same as their seared counterparts, however they require different materials to craft."]
+			dependencies: ["3D250AE26140576E"]
+			id: "5BEF28F0FBE41833"
+			tasks: [
+				{
+					id: "7BBE23C9537A797E"
+					type: "item"
+					item: "tconstruct:scorched_drain"
+				}
+				{
+					id: "30EFA81C4859C460"
+					type: "item"
+					item: "tconstruct:scorched_duct"
+				}
+				{
+					id: "767760BD42BAB0E1"
+					type: "item"
+					item: "tconstruct:scorched_chute"
+				}
+			]
+			rewards: [
+				{
+					id: "790A4C5AF1AA1BE2"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "5DA8561F9CA6A812"
+					type: "item"
+					item: "pamhc2foodextended:cookedtofickenitem"
+				}
+			]
+		}
+		{
+			title: "Blazing blood as a Fuel"
+			icon: "tconstruct:blazing_blood_bucket"
+			x: 1.5d
+			y: 8.5d
+			description: [
+				"Not only can blazing blood be used as a smeltery fuel, but it can be used to power furnaces as well. This said, because of the cost of creation, it may not be worth it. "
+				""
+				"That is up to you to decide."
+			]
+			dependencies: ["26C1909B3DE5442D"]
+			id: "5F05630C82AE6A10"
+			tasks: [{
+				id: "0A3BFF8B43D3A48A"
+				type: "checkmark"
+				title: "hmmmmm"
+			}]
+			rewards: [{
+				id: "48AB7FEBFBFEAA30"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Simple Resistor"
+			icon: "amicore:simple_resistor"
+			x: 10.0d
+			y: 5.5d
+			description: ["Deploy onto a wooden slab."]
+			dependencies: ["417096C593DECCAF"]
+			id: "411F9F67A9DEE828"
+			tasks: [{
+				id: "14943E035DE1D191"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "1F8600979C9F2953"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Solder Spool"
+			icon: {
+				id: "amicore:solder_spool"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 10.0d
+			y: 4.5d
+			description: ["The solder spool lasts for 16 uses."]
+			dependencies: [
+				"417096C593DECCAF"
+				"411F9F67A9DEE828"
+			]
+			id: "6E21CD7B1CB9798D"
+			tasks: [{
+				id: "5DDC9B94F7BDD399"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "5A29E0C9AB8713D9"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Held Solderer"
+			icon: {
+				id: "amicore:held_solderer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 10.0d
+			y: 3.5d
+			dependencies: [
+				"417096C593DECCAF"
+				"6E21CD7B1CB9798D"
+			]
+			id: "31E36431821F07A6"
+			tasks: [{
+				id: "6D24319B50537489"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "51F2AEDC60D8A84D"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Simple Resistor"
+			icon: "amicore:simple_resistor"
+			x: 10.0d
+			y: 2.5d
+			dependencies: [
+				"417096C593DECCAF"
+				"31E36431821F07A6"
+			]
+			id: "5384CDB053C77F15"
+			tasks: [{
+				id: "52157462C5334DAF"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "7D07AAA098961DEF"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Solder Spool"
+			icon: {
+				id: "amicore:solder_spool"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 10.0d
+			y: 1.5d
+			dependencies: [
+				"417096C593DECCAF"
+				"5384CDB053C77F15"
+			]
+			id: "35579723AFD4AC62"
+			tasks: [{
+				id: "49272E23F1AAFE0D"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "0A32E0E559981BB9"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Held Solderer"
+			icon: {
+				id: "amicore:held_solderer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 10.0d
+			y: 0.5d
+			dependencies: [
+				"417096C593DECCAF"
+				"35579723AFD4AC62"
+			]
+			id: "07C7DC28D7FB7AAC"
+			tasks: [{
+				id: "4C6DD5042C961BD7"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "0698307EAA9BC760"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Crude Steel Bolt"
+			icon: "amicore:crude_steel_bolt"
+			x: 10.0d
+			y: -0.5d
+			dependencies: [
+				"417096C593DECCAF"
+				"07C7DC28D7FB7AAC"
+			]
+			id: "112E9F3E491AA651"
+			tasks: [{
+				id: "2F6A1C73398BE374"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "0C46CCD1EDDB8121"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -1.5d
+			dependencies: [
+				"417096C593DECCAF"
+				"112E9F3E491AA651"
+			]
+			id: "0780B2DA555E618B"
+			tasks: [{
+				id: "62022BF115F0D271"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+			rewards: [
+				{
+					id: "4A17229790500CD0"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "2EACB91B1C9EC86D"
+					type: "item"
+					item: "pamhc2foodextended:peppermintitem"
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: 6.5d
+			description: ["The sequenced gearshift will execute a set of rotations that are preprogrammed into it."]
+			dependencies: ["770C3C6AD0A244CE"]
+			id: "28346E172E639896"
+			tasks: [{
+				id: "3214F4DD5ED892F9"
+				type: "item"
+				item: "create:sequenced_gearshift"
+			}]
+			rewards: [
+				{
+					id: "39CAACA7D75E8BB5"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "3E556EE61DDE0F05"
+					type: "item"
+					item: "pamhc2foodcore:sweetberrysmoothieitem"
+				}
+			]
+		}
+		{
+			title: "Storage Solutions"
+			icon: "create:adjustable_crate"
+			x: -6.0d
+			y: 8.5d
+			description: [
+				"Create has a variety of storage monitors to read the contents of containers. Thet can detect a specific threshold of items or the presence of them. The content observer can also detect the item in a funnel. "
+				""
+				"The crate can limit fill limit to more easily control automation (much like a factorio chest)"
+			]
+			dependencies: ["4C39C7561605706E"]
+			id: "51EB3494FA385647"
+			tasks: [
+				{
+					id: "4BA9A960A2113468"
+					type: "item"
+					item: "create:stockpile_switch"
+				}
+				{
+					id: "2E04070794AD6B18"
+					type: "item"
+					item: "create:content_observer"
+				}
+				{
+					id: "31796A0AB0881FBC"
+					type: "item"
+					item: "create:adjustable_crate"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "0628BDC51E640B24"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "573AAAE064E6F2A5"
+					type: "item"
+					item: "pamhc2foodextended:bbqchickenpizzaitem"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 11.0d
+			description: ["The controller rail is an analog powered rail, and will accelerate or deccelerate a passing minecart to its set speed."]
+			dependencies: ["2E2E171C10BFBFEB"]
+			id: "72676445362C603E"
+			tasks: [{
+				id: "60D2F345DC3BBDC5"
+				type: "item"
+				title: "Controller Rail"
+				item: "create:controller_rail"
+				count: 3L
+			}]
+			rewards: [{
+				id: "1A0AE114BFBDA601"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Tier 2 Complete!"
+			icon: {
+				id: "tconstruct:copper_can"
+				Count: 1b
+				tag: {
+					fluid: "tconstruct:blazing_blood"
+				}
+			}
+			x: -9.0d
+			y: 7.0d
+			shape: "gear"
+			description: [
+				"Congratulations for completing the main quests of Tier 2! "
+				""
+				"Have a pizza!"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"4C39C7561605706E"
+				"574F2447228B6B9A"
+				"6CBA67D54BC1789B"
+				"1E10D987D203B3EC"
+				"168BBDC869B97867"
+				"195C87DB3915B2E9"
+				"6D8774C872A685A8"
+				"37F44534E8A99AFE"
+				"4314C8B2B07FA7E3"
+				"49D5A70243B90AE9"
+				"0B2A6A818556407B"
+				"713B68A3E30BC6FD"
+				"53834433E826F5B1"
+				"2CC7A3DABE019BB0"
+				"26C1909B3DE5442D"
+				"5AF1A732721135DD"
+				"23A251E4EAF9BDF2"
+				"672DF2EEA0691B98"
+				"4905AAD2F59E5D3B"
+				"3761E493E26F7619"
+				"55ECE1A531D4772A"
+				"6057D58F1A6A87AA"
+				"417096C593DECCAF"
+				"670F4C9D80DAFD45"
+			]
+			hide: true
+			id: "7CDF1CBD321D18AD"
+			tasks: [{
+				id: "3933E736BBEFE061"
+				type: "checkmark"
+				title: "Tier 2 Complete!"
+			}]
+			rewards: [
+				{
+					id: "131EF48CF3D7260D"
+					type: "item"
+					item: "amicore:amicoin_orachalchum"
+				}
+				{
+					id: "785CBD2841C1B28E"
+					type: "item"
+					item: "pamhc2foodextended:hamandpineapplepizzaitem"
+				}
+				{
+					id: "550D0DA10CEB61C9"
+					type: "choice"
+					icon: "paraglider:anti_vessel"
+					table_id: 946083085323769434L
+				}
+			]
+		}
+		{
+			icon: {
+				id: "tconstruct:copper_can"
+				Count: 1b
+				tag: {
+					fluid: "tconstruct:blazing_blood"
+				}
+			}
+			x: -9.0d
+			y: 6.0d
+			shape: "gear"
+			description: ["Congratulations for 100% completing Tier 2! "]
+			hide_dependency_lines: true
+			dependencies: [
+				"23A251E4EAF9BDF2"
+				"513C8F355178CF65"
+				"75BE89EFC3928CBB"
+				"7EA9404E79073B0D"
+				"0D2E2ABBC88BB2D1"
+				"168BBDC869B97867"
+				"55ECE1A531D4772A"
+				"3761E493E26F7619"
+				"49D5A70243B90AE9"
+				"6D8774C872A685A8"
+				"37F44534E8A99AFE"
+				"195C87DB3915B2E9"
+				"672DF2EEA0691B98"
+				"049708C77654DE48"
+				"3D250AE26140576E"
+				"4314C8B2B07FA7E3"
+				"1E10D987D203B3EC"
+				"0B2A6A818556407B"
+				"4C39C7561605706E"
+				"2C51CE2B3CA9DC01"
+				"155A97C4E8284F99"
+				"6D02B66D2C4B03D9"
+				"2EE1F6809315F91C"
+				"7E87FB9BD5441287"
+				"6BD37FED945928C7"
+				"2E2E171C10BFBFEB"
+				"796FB4593D6CA96F"
+				"55F0804B25B3A893"
+				"209D875F86D5D78D"
+				"20F303516839C013"
+				"0344083C6E721351"
+				"1BBF6FEA7BFB42AB"
+				"107BA0E1F2BDF128"
+				"4905AAD2F59E5D3B"
+				"10EA6927473C5881"
+				"44B6DA956ABCAFDF"
+				"713B68A3E30BC6FD"
+				"53834433E826F5B1"
+				"1DA43439FB673ABA"
+				"25447C59F9598B79"
+				"4E8501E835B78915"
+				"702D3489D187A36B"
+				"7031FF38796B8BD4"
+				"10373014279137F6"
+				"2D06AEEF28112048"
+				"008B7A883F6C9C63"
+				"1FA639F8F2F507E1"
+				"726818BC40068829"
+				"770C3C6AD0A244CE"
+				"26DEE0EE03F38D88"
+				"19271125FD83DA38"
+				"299F8BFDB7C2FCAB"
+				"6CBA67D54BC1789B"
+				"574F2447228B6B9A"
+				"1635E72CC19A7FEE"
+				"26C1909B3DE5442D"
+				"3D5522D95276E3B9"
+				"43C4FBF46D364AA8"
+				"764F43B84DC48244"
+				"3D479FA47E2EA740"
+				"5AF1A732721135DD"
+				"670F4C9D80DAFD45"
+				"2CC7A3DABE019BB0"
+				"69A375FA08932135"
+				"6B4C19FB7C9990D6"
+				"17F9596E00F6C335"
+				"039C3042E82FF36F"
+				"1EE42538BEAF0B25"
+				"4B3F868BA323E243"
+				"571042D95C0F0EAD"
+				"07E1663074B67D38"
+				"6057D58F1A6A87AA"
+				"35AFD6E0AB454CC2"
+				"1190B924A30158E1"
+				"5443DF089C6055DB"
+				"0B5C17677EE95994"
+				"35F91AA4D7CC90CD"
+				"59F8468A66D189F5"
+				"6B3E19C3224B2F0D"
+				"67BEEE8EC9A15287"
+				"52C93D2F98270350"
+				"730E70DF8D635A56"
+				"1E320A0111868DE9"
+				"4C04FB745FF30761"
+				"009FD5616EACBD3A"
+				"015AF519A4071866"
+				"2904E4F464887B8C"
+				"6B905CAA3D962E55"
+				"1749BE4D161EB7B6"
+				"7015100B257D71D2"
+				"77CB7DA869C48FD3"
+				"0E49B8AD8FB358B1"
+				"31244B1045149B0A"
+				"7C331D82210C110C"
+				"417096C593DECCAF"
+				"5BEF28F0FBE41833"
+				"5F05630C82AE6A10"
+				"411F9F67A9DEE828"
+				"6E21CD7B1CB9798D"
+				"31E36431821F07A6"
+				"5384CDB053C77F15"
+				"35579723AFD4AC62"
+				"07C7DC28D7FB7AAC"
+				"112E9F3E491AA651"
+				"0780B2DA555E618B"
+				"28346E172E639896"
+				"51EB3494FA385647"
+				"72676445362C603E"
+				"7CDF1CBD321D18AD"
+				"36FF1D997D2B7853"
+			]
+			hide: true
+			id: "0BC633B86051D043"
+			tasks: [{
+				id: "5965BBC616265C3E"
+				type: "checkmark"
+				title: "Tier 2: 100%"
+			}]
+			rewards: [
+				{
+					id: "0E236DDBF979A42D"
+					type: "item"
+					item: "amicore:amicoin_managold"
+				}
+				{
+					id: "70E5D739383ABD7E"
+					type: "item"
+					item: "pamhc2foodextended:anchovypepperonipizzaitem"
+				}
+				{
+					id: "5D0FE953BDA74A5F"
+					type: "choice"
+					icon: "paraglider:anti_vessel"
+					table_id: 946083085323769434L
+				}
+			]
+		}
+		{
+			title: "Deployer Tools"
+			icon: {
+				id: "amicore:bottle_mixer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.5d
+			y: 1.0d
+			description: [
+				"Most sequenced assembly lines require the use of deployer tools. These include anything from the Bottle Mixer, the Bottle Heater, or Molds. Most have 128,000 durability, and last a long time."
+				""
+				"These create specialized deployers for various tasks."
+			]
+			dependencies: ["6D8774C872A685A8"]
+			id: "36FF1D997D2B7853"
+			tasks: [{
+				id: "5E77A65ACFB83924"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "65E1D74D01DCE90B"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+	]
+}

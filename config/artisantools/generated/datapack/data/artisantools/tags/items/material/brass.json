@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "artisantools:cutters_brass",
+    "artisantools:hammer_brass",
+    "artisantools:handsaw_brass",
+    "artisantools:beaker_brass",
+    "artisantools:burner_brass",
+    "artisantools:pencil_brass",
+    "artisantools:tsquare_brass",
+    "artisantools:driver_brass",
+    "artisantools:spanner_brass",
+    "artisantools:chisel_brass",
+    "artisantools:compass_brass",
+    "artisantools:mortar_brass",
+    "artisantools:knife_brass",
+    "artisantools:file_brass",
+    "artisantools:solderer_brass"
+  ]
+}

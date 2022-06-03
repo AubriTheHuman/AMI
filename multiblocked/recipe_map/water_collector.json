@@ -1,0 +1,21 @@
+{
+  "name": "water_collector",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "water_output",
+      "duration": 20,
+      "inputs": {},
+      "outputs": {},
+      "tickInputs": {},
+      "tickOutputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"minecraft:water\",Amount:1}",
+            "chance": 1.0
+          }
+        ]
+      }
+    }
+  ]
+}

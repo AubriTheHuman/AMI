@@ -1,0 +1,11 @@
+{
+	id: "0D21298DB4BA965A"
+	order_index: 5
+	title: "vessels"
+	icon: "paraglider:anti_vessel"
+	loot_size: 1
+	rewards: [
+		{ item: "paraglider:heart_container" }
+		{ item: "paraglider:stamina_vessel" }
+	]
+}

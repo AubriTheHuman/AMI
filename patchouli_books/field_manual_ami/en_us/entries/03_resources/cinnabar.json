@@ -1,0 +1,14 @@
+{
+  "name": "Cinnabar",
+  "icon": "amicore:redstone_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Cinnabar",
+      "item": "amicore:redstone_ore",
+      "link_recipe": false,
+      "text": "Redstone spawns alongside Pyrite, Quartz, and Certus in a high vein density, between Y 5 and 40. Malachite and Azurite both yield copper. It is a common vein."
+    }
+  ]
+}

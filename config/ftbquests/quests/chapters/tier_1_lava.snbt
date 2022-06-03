@@ -1,0 +1,3484 @@
+{
+	id: "7CF2E9143DE4A37B"
+	group: "280C159CD17D8CFF"
+	order_index: 1
+	filename: "tier_1_lava"
+	title: "Tier 1: Lava"
+	icon: "minecraft:lava_bucket"
+	subtitle: ["Smelteries, Brass, and Engineering."]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Holy Fuel"
+			x: -0.5d
+			y: -2.5d
+			shape: "gear"
+			description: [
+				"Welcome to Aubri's Magical Industries Tier 1! No longer are you bound by solid fuels, from now you can experience the joy of liquid and gaseuos fuels to power your creations."
+				""
+				"To finally start the real journey you'll need to find yourself some lava. You'll likely want multiple buckets, but for now just find one."
+				""
+				"I would recommend heading downwards along the tree before heading left."
+			]
+			dependencies: ["1B1F62F5D30C1A63"]
+			hide: false
+			id: "3390B56BAA548BB9"
+			tasks: [{
+				id: "6271E47EFFD5841C"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+			rewards: [
+				{
+					id: "4DF75467756B4350"
+					type: "item"
+					item: "minecraft:bucket"
+				}
+				{
+					id: "1B8ACBD1E9FC3C45"
+					type: "item"
+					item: "amicore:amicoin"
+					count: 3
+				}
+			]
+		}
+		{
+			title: "Ore doubling"
+			icon: "amicore:hematite_cluster"
+			x: 3.5d
+			y: 11.5d
+			shape: "rsquare"
+			description: [
+				"The convergence has finally arrived, all the parts for ore doubling have come together. By crushing, washing and melting down the result, a single ore cluster can be turned to approximately twice the normal amount."
+				""
+				"There are two main types of ore in minecraft: metallic and gemstone. You will need to account for this in your system. On top of this, some metals require other methods to process, you can check an ore's type in its tooltip. "
+				""
+				"Some ores with their own processes are: Magnesium, Platinum, Lead, and Uranium."
+			]
+			dependencies: ["2844E211D2D45506"]
+			id: "61052822DEFA5372"
+			tasks: [{
+				id: "090DE747AB61BBFB"
+				type: "checkmark"
+				title: "Ready to begin?"
+			}]
+			rewards: [{
+				id: "743F8C3CF28EF26B"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Tinker's Anvil"
+			x: -2.5d
+			y: 12.5d
+			description: [
+				"By attaching it to an anvil, it should serve to make more impressive tools."
+				""
+				"Its probably best to use brass as the decorative portion since thats pretty much all you can use, but that is up to you."
+			]
+			dependencies: ["2934DB77E4DA82AA"]
+			id: "4658D5925E999C8A"
+			tasks: [{
+				id: "17792FF0E14F606A"
+				type: "item"
+				item: {
+					id: "tconstruct:tinkers_anvil"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "03D980641DAE5143"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Generic Brass"
+			x: -0.5d
+			y: 10.5d
+			shape: "rsquare"
+			description: [
+				"With your newfound tools for working with the smeltery, its time to make something with it. Let's start with a simple alloy of brass. "
+				""
+				"After this we'll move to variants of it using other metals for different purposes. Plain brass is not particularly useful for anything but decoration unfortunately."
+			]
+			dependencies: ["1DAED9FAE5E81F97"]
+			id: "0A4B12865A953D08"
+			tasks: [{
+				id: "3E96574F7EE8C895"
+				type: "item"
+				title: "Brass Ingot"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/brass"
+					}
+				}
+				count: 2L
+			}]
+			rewards: [
+				{
+					id: "760437C323C108AA"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "4954F70860488402"
+					type: "item"
+					item: "amicore:zinc_ingot"
+				}
+				{
+					id: "77AEC04F975B2486"
+					type: "item"
+					item: "amicore:copper_ingot"
+				}
+			]
+		}
+		{
+			title: "Obsidian"
+			x: -3.0d
+			y: -2.5d
+			shape: "rsquare"
+			description: [
+				"To get started on this tier you'll need 4 basic materials."
+				""
+				"Obsidian is one of these 4. Collect a few to get started. Should be easy since you have diamonds and lava!"
+			]
+			dependencies: ["3390B56BAA548BB9"]
+			id: "17F69C9FDE54F3FB"
+			tasks: [{
+				id: "620BE46601CE5CE6"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 20L
+			}]
+			rewards: [{
+				id: "11F58357D16522E0"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Blaze Powder"
+			x: -4.5d
+			y: -4.0d
+			shape: "rsquare"
+			description: ["A fine powder of blaze spine with many alchemical properties. While mostly used in the brewing of potions, it can also serve as a low temperature catalyst in some chemical reactions."]
+			dependencies: ["0921C101BDC9EDC4"]
+			id: "592A486CD9A0AA2F"
+			tasks: [{
+				id: "6A5BAB810D2AE4EE"
+				type: "item"
+				item: "minecraft:blaze_powder"
+				count: 4L
+			}]
+			rewards: [{
+				id: "303B16D2CF3EB848"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.5d
+			description: [
+				"The enchanting table, enchant your tools and armour to improve their capabilities. Or enchant books to apply to your tetra tools."
+				""
+				"If you're chosing to use tinkers over tetra, then this wont help alot."
+			]
+			dependencies: ["7D70BDBFE6BC24E5"]
+			id: "5597384CBEF71168"
+			tasks: [{
+				id: "1EC00F9AAD596A25"
+				type: "item"
+				item: "minecraft:enchanting_table"
+			}]
+			rewards: [
+				{
+					id: "0F2E3922D9711D46"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "0021496904E2C4DE"
+					type: "item"
+					item: "tetra:pristine_lapis"
+				}
+			]
+		}
+		{
+			title: "Bookshelves"
+			icon: "minecraft:bookshelf"
+			x: -2.5d
+			y: -4.5d
+			description: ["Bookshelves can be used to empower the enchanting table. 15 will bring it all the way up to maximum power."]
+			dependencies: ["5597384CBEF71168"]
+			id: "3B729F97D25B0582"
+			tasks: [{
+				id: "0638CF6CAC71522A"
+				type: "item"
+				title: "Bookshelf"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:bookshelves"
+					}
+				}
+				count: 15L
+			}]
+			rewards: [
+				{
+					id: "6193F39E23608D22"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "2F269424A8B1ECDF"
+					type: "item"
+					item: "pamhc2foodextended:silkentofuitem"
+				}
+			]
+		}
+		{
+			title: "Fairy Lights"
+			icon: {
+				id: "fairylights:fairy_light"
+				Count: 1b
+				tag: {
+					color: 16701501
+				}
+			}
+			x: -7.5d
+			y: -5.5d
+			description: ["With glowstone, small lights can be crafted to decorate large open areas."]
+			dependencies: ["122544FAF8F73DAC"]
+			id: "39DD679B9E59DE31"
+			tasks: [
+				{
+					id: "4A62458994990AA2"
+					type: "item"
+					title: "Any Fairylight"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "fairylights:lights"
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "44D904D9419828F7"
+					type: "item"
+					item: {
+						id: "fairylights:hanging_lights"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "7B184336BCA3A3BC"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "4ECDA770E813C166"
+					type: "item"
+					item: "pamhc2foodextended:hamsweetpicklesandwichitem"
+				}
+			]
+		}
+		{
+			title: "Cooking Table"
+			icon: "cookingforblockheads:cooking_table"
+			x: -9.0d
+			y: -3.5d
+			description: [
+				"The cooking table can make any food that requires a crafting table. The book it holds is more powerful than Julia Childs herself."
+				""
+				"The floor blocks connect all nearby cookingforblockheads blocks on top of it."
+			]
+			dependencies: ["61226A5AC2C53F45"]
+			id: "1B0236A94762A0A9"
+			tasks: [
+				{
+					id: "7930E000709B7F03"
+					type: "item"
+					item: "cookingforblockheads:cooking_table"
+				}
+				{
+					id: "7344E23EB6082F4A"
+					type: "item"
+					item: "cookingforblockheads:white_kitchen_floor"
+					count: 24L
+				}
+			]
+			rewards: [
+				{
+					id: "056D892E40B9F716"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "581A8EB37178E4AC"
+					type: "item"
+					item: "pamhc2foodextended:bananajellysandwichitem"
+				}
+			]
+		}
+		{
+			title: "Cooking Appliences"
+			icon: "cookingforblockheads:oven"
+			x: -10.5d
+			y: -3.5d
+			description: [
+				"There are a large number of tools available to use in cooking. Each with their own purpose."
+				""
+				"Note: The sink does not act as an infinite water source."
+			]
+			dependencies: ["1B0236A94762A0A9"]
+			id: "2B61AFFEE377F013"
+			tasks: [
+				{
+					id: "2D2AF23EC5B1DE96"
+					type: "item"
+					item: "cookingforblockheads:oven"
+				}
+				{
+					id: "4F1A83999501FDCF"
+					type: "item"
+					item: "cookingforblockheads:toaster"
+				}
+				{
+					id: "343A9450185877A3"
+					type: "item"
+					item: "cookingforblockheads:sink"
+				}
+			]
+			rewards: [{
+				id: "5EDD8F633B6366BF"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Food Stores"
+			icon: "cookingforblockheads:fridge"
+			x: -10.5d
+			y: -4.5d
+			description: ["These blocks can be used to store food items for the cooking table to use in recipes. The fridge can also be used to make ice."]
+			dependencies: ["1B0236A94762A0A9"]
+			id: "45C98945BED9FE1C"
+			tasks: [
+				{
+					id: "0063E225DDA630F4"
+					type: "item"
+					item: "cookingforblockheads:fridge"
+					count: 2L
+				}
+				{
+					id: "3DE2320AE35E1AE2"
+					type: "item"
+					item: "cookingforblockheads:cabinet"
+					count: 3L
+				}
+				{
+					id: "3992D90BF0A02785"
+					type: "item"
+					item: "cookingforblockheads:counter"
+					count: 2L
+				}
+				{
+					id: "114B2A2463887F25"
+					type: "item"
+					item: "cookingforblockheads:corner"
+				}
+			]
+			rewards: [
+				{
+					id: "14F51E85D16A629A"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "36E2040C5D31F96E"
+					type: "item"
+					item: "farmersdelight:vegetable_noodles"
+				}
+			]
+		}
+		{
+			title: "Chipped"
+			x: 1.0d
+			y: -2.5d
+			description: ["Using a little redstone, a variant stonecutter can be made, allowing access to the Chipped mod's litany of blocks."]
+			dependencies: ["3390B56BAA548BB9"]
+			id: "6E9FF81238BBE584"
+			tasks: [{
+				id: "24F1AE999A0EEAFA"
+				type: "item"
+				item: "chipped:botanist_workbench"
+			}]
+			rewards: [
+				{
+					id: "16CC68BE4EA8A6DB"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "0212E6D3E18D95FE"
+					type: "choice"
+					table_id: 4244077926375737673L
+				}
+			]
+		}
+		{
+			title: "Farmer's Delight"
+			icon: "farmersdelight:stove"
+			x: -9.0d
+			y: -1.5d
+			description: ["Farmer's Delight contains a large number of food items for consumption. Using a cutting board, stove and a knife you can cook many items."]
+			dependencies: ["61226A5AC2C53F45"]
+			id: "0113ACBB0F4C2E49"
+			tasks: [
+				{
+					id: "1C229F985A92C0CD"
+					type: "item"
+					item: "farmersdelight:stove"
+				}
+				{
+					id: "1080B46A0C382AC6"
+					type: "item"
+					item: "farmersdelight:cutting_board"
+				}
+				{
+					id: "7A9CC6F0A340501A"
+					type: "item"
+					title: "Any #farmersdelight:tools/knives"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "farmersdelight:tools/knives"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "2AB31EEAB7C7DB67"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "42C9BDA1B1C6C792"
+					type: "item"
+					item: "farmersdelight:sweet_berry_cheesecake_slice"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 7.5d
+			description: ["The mechanical press will strike down on the block below it. When items are placed onto a depot, it will hammer them. If placed in a basin, they will be compacted."]
+			dependencies: ["2B1672A01435F4E2"]
+			id: "76E9CFAFDA151CB7"
+			tasks: [{
+				id: "25C300C47F6343C3"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+			rewards: [{
+				id: "47AFA7623A25FD39"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 7.5d
+			description: [
+				"The mixer can blend together items, fluids, and a mix of both. While it can only do cold recipes right now, its recipe potential is massive."
+				""
+				"Plus it will do any shapeless recipe automatically."
+			]
+			dependencies: ["2B1672A01435F4E2"]
+			id: "71DC866309DA35E9"
+			tasks: [{
+				id: "4AE9A78FEEB94204"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+			rewards: [{
+				id: "4699C348A3C97208"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 6.5d
+			description: [
+				"The rolling mill will cold roll many items, including metals. "
+				""
+				"The roller can roll large sheets into coils, coils into wires, plates into rounded sheets, and bar stock into rods."
+				""
+				"This version of the mill is markably slow, taking 20 seconds to process items. Later, a more powerful version can be constructed."
+			]
+			dependencies: ["2B1672A01435F4E2"]
+			id: "6EF344262B48EF76"
+			tasks: [{
+				id: "6761DEB03782B30A"
+				type: "item"
+				item: "createaddition:rolling_mill"
+			}]
+			rewards: [{
+				id: "58DD7D518A37ED61"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 6.5d
+			description: ["The millstone will grind down any item put into it. However its not as strong as its older cousin the crushing wheels, only smashing more brittle things."]
+			dependencies: ["2B1672A01435F4E2"]
+			id: "3B879F114D21B57A"
+			tasks: [{
+				id: "07D03B893F268066"
+				type: "item"
+				item: "create:millstone"
+			}]
+			rewards: [{
+				id: "6A67D34ACC2932A5"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "The Smeltery"
+			icon: "tconstruct:smeltery_controller"
+			x: -0.5d
+			y: 9.0d
+			shape: "rsquare"
+			description: [
+				"The heart of the smeltery. By plating and pressing a seared heater with zinc and copper, a much larger structure can be constructed."
+				""
+				"The smeltery also has two types of fluid I/O, which are adressed in the next quests."
+			]
+			dependencies: ["2B1672A01435F4E2"]
+			id: "1DAED9FAE5E81F97"
+			tasks: [
+				{
+					id: "3ACA8F63ABA64C2C"
+					type: "item"
+					item: "tconstruct:smeltery_controller"
+				}
+				{
+					id: "213B2BC229960B07"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+				{
+					id: "61AE583ED5042526"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+				{
+					id: "33A4B3777FB8F1B2"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+					count: 2L
+				}
+				{
+					id: "43589CEAA2D9254D"
+					type: "item"
+					item: "tconstruct:seared_fuel_tank"
+				}
+				{
+					id: "1602B2D0965D6B33"
+					type: "item"
+					item: "tconstruct:seared_bricks"
+					count: 18L
+				}
+				{
+					id: "1096E83DD0C52E57"
+					type: "item"
+					item: "amicore:assembled_smeltery_controller"
+				}
+			]
+			rewards: [{
+				id: "101BA90732EFEBD9"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "We need to go deeper!"
+			icon: {
+				id: "minecraft:flint_and_steel"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -6.0d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["You may have noticed the flint and steel requires the mage's worktable to create. Now that you have one go ahead and head to the nether. Theres several useful materials to be found there."]
+			dependencies: ["7D70BDBFE6BC24E5"]
+			id: "0921C101BDC9EDC4"
+			tasks: [
+				{
+					id: "20875C14AF132988"
+					type: "dimension"
+					dimension: "minecraft:the_nether"
+				}
+				{
+					id: "0D0C4F61F07F2AAB"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "4F9B619F424CCBD4"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "00DDA51F6901C93C"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Great Stone Twins"
+			x: 4.5d
+			y: 10.0d
+			shape: "rsquare"
+			description: [
+				"The mighty crushing wheels, useful for smashing between the twin stones. Not even metal can withstand its capability. The main downside being their massive stress requirement."
+				""
+				"Dropping items in the gap between 2 crushing wheels will process them, and they will do so a stack at a time even."
+			]
+			dependencies: ["61052822DEFA5372"]
+			id: "67FA0C3E161B632D"
+			tasks: [{
+				id: "494E979B1705DF88"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+			rewards: [{
+				id: "190C6BB804AC85D9"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Wishy Washy"
+			x: 5.5d
+			y: 11.5d
+			shape: "rsquare"
+			description: [
+				"The fan will blow anything placed in front of it. Anything from mobs to items."
+				""
+				"Placing water in front of the fan will cause it to wash any items in front of it, even works on belts."
+				""
+				"Also, when placed above a chute it will reverse the direction of flow, pushing items upwards."
+			]
+			dependencies: ["67FA0C3E161B632D"]
+			id: "0A60E3B680D64E3E"
+			tasks: [{
+				id: "1041C100E6B698C8"
+				type: "item"
+				item: "create:encased_fan"
+				count: 3L
+			}]
+			rewards: [{
+				id: "4151AFAC64CDA44B"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			description: [
+				"These goggles will show the stress use of any create mod machine. Takes up the helmet slot, so best to combine it with some armor."
+				""
+				"Or just put it in the curios goggles space. That works too."
+			]
+			dependencies: ["11A34B6184D305A6"]
+			id: "73E0EFA3107350C4"
+			tasks: [{
+				id: "254FC0B96AF3CA94"
+				type: "item"
+				item: "create:goggles"
+			}]
+			rewards: [{
+				id: "3AB47F7F26AA683C"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			description: ["By bolting a zinc plate, diamond, and some paper to the top of a chest, it can be used to filter the inputs. Allowing for a simple sorter."]
+			dependencies: ["444522C8E2569C55"]
+			id: "4ABAD0E364A11B08"
+			tasks: [{
+				id: "6AC1025C7A01F360"
+				type: "item"
+				item: "filteredchests:normal"
+			}]
+			rewards: [
+				{
+					id: "3326756E571D5E19"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "3D5E2FDD78D0159D"
+					type: "item"
+					item: "pamhc2foodextended:blueberryjellysandwichitem"
+				}
+			]
+		}
+		{
+			title: "Quartz"
+			x: -5.5d
+			y: -4.0d
+			shape: "rsquare"
+			description: ["Nether quartz is a silica based compound found in the nether. Useful in circuitry even in its raw form. Can later be refined down to a more pure form of silicon for more advanced electronics."]
+			dependencies: ["0921C101BDC9EDC4"]
+			id: "5742E5AA131144AE"
+			tasks: [{
+				id: "404F22D342184558"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 16L
+			}]
+			rewards: [{
+				id: "6833E8BBE2B15679"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -5.5d
+			description: ["By coating a metallic chest in quartz, it allows for more functionality. Mostly in the cosmetic properties."]
+			dependencies: ["5742E5AA131144AE"]
+			id: "29792BF2ABF86AAD"
+			tasks: [{
+				id: "7B4DF9F937F796DE"
+				type: "item"
+				item: "quartzchests:chest"
+			}]
+			rewards: [
+				{
+					id: "17B9B75BDF5F7815"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "29621EFD7C720911"
+					type: "item"
+					item: "create_confectionery:chocolate_candy"
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: -1.5d
+			description: ["Smaller capacity filtered chest, only holds 9 stacks."]
+			dependencies: ["4ABAD0E364A11B08"]
+			id: "41DD7DCF69B86EF0"
+			tasks: [{
+				id: "2BE695FB75BA0EF5"
+				type: "item"
+				item: "filteredchests:small"
+				count: 3L
+			}]
+			rewards: [{
+				id: "470C59B4921F0564"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Wind Power"
+			icon: "create:windmill_bearing"
+			x: -1.0d
+			y: 5.0d
+			shape: "rsquare"
+			description: [
+				"There are two options for early power in create, one of which is a windmill. By placing a windmill bearing with an attached radial chasis, and a large number of sails, you can generate free stress capacity. However not very much."
+				""
+				"Hovering over the side of a radial chasis will let you change how far it searches for blocks."
+			]
+			dependencies: ["79EA884C9DAB8742"]
+			id: "2841029227D22D02"
+			tasks: [
+				{
+					id: "7C4A577F39ECBDF7"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+				{
+					id: "059BD03A6D2F42FC"
+					type: "item"
+					item: "create:radial_chassis"
+				}
+				{
+					id: "4010293E1FD59E03"
+					type: "item"
+					item: "create:white_sail"
+					count: 48L
+				}
+			]
+			rewards: [
+				{
+					id: "3A4097AF9E6197B7"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "52A4B05159B88DA1"
+					type: "item"
+					item: "pamhc2foodextended:pineapplejellysandwichitem"
+				}
+			]
+		}
+		{
+			title: "Torque and Stress"
+			icon: "create:shaft"
+			x: -0.5d
+			y: 2.0d
+			shape: "rsquare"
+			description: [
+				"The shaft and cog are the way power is transfered between create mod machines. Cogs have two sizes, large and small. While shafts only have one form. When a small and large cog are placed diagonally from each other the rpm is modified by a factor of 2."
+				""
+				"Different machines require different interfaces to deliver torque, so both will be needed."
+				""
+				"If at any time you are confused about a create mod component, you can hover over the item and hold 'w'. Most items will bring up an example showing how it's used in game. This modpack also has some custom ponder scenarios to explain processes."
+			]
+			dependencies: ["64213C12195E5CAE"]
+			id: "11A34B6184D305A6"
+			tasks: [
+				{
+					id: "399331CCD78AEFFA"
+					type: "item"
+					item: "create:shaft"
+					count: 4L
+				}
+				{
+					id: "31E7F3B1BA9F771F"
+					type: "item"
+					item: "create:cogwheel"
+					count: 2L
+				}
+				{
+					id: "6FA22A2B9277714C"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+			]
+			rewards: [{
+				id: "14136DF368FD9367"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			shape: "rsquare"
+			description: [
+				"Instead of the precision mechanism, AMI uses various gearboxes and Engines. This is the first in the line of these items, serves as solely a crafting component."
+				""
+				""
+			]
+			dependencies: ["11A34B6184D305A6"]
+			id: "79EA884C9DAB8742"
+			tasks: [{
+				id: "1DCFF5E5082AA34C"
+				type: "item"
+				item: "amicore:simple_gearbox"
+			}]
+			rewards: [
+				{
+					id: "12ED910963FEE37C"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "0CE27D68680CF06F"
+					type: "item"
+					item: "pamhc2foodextended:honeysandwichitem"
+				}
+			]
+		}
+		{
+			title: "Hydropower"
+			x: 0.0d
+			y: 5.0d
+			shape: "rsquare"
+			description: ["While simpler than a windmill, it generates much less stress, only enough to power a few machines. By placing a water source atop the wheel, it will endlessly generate stress. Multiple can be connected together in order to generate more."]
+			dependencies: ["79EA884C9DAB8742"]
+			id: "781B28E81EEABB33"
+			tasks: [{
+				id: "3CBB316A6A742AA7"
+				type: "item"
+				item: "create:water_wheel"
+				count: 3L
+			}]
+			rewards: [
+				{
+					id: "2FC76E27F4893302"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "29FD23147CB20BC1"
+					type: "item"
+					item: "pamhc2foodextended:datejellysandwichitem"
+				}
+			]
+		}
+		{
+			title: "Working Parts"
+			icon: "create:depot"
+			x: -0.5d
+			y: 7.0d
+			shape: "rsquare"
+			description: ["Part of create is automatic processing of items. 4 main devices exist for this purpose. Some however, require a space to work. The basin and depot perform this duty."]
+			dependencies: [
+				"2841029227D22D02"
+				"781B28E81EEABB33"
+			]
+			id: "2B1672A01435F4E2"
+			tasks: [
+				{
+					id: "197B4C92A828C495"
+					type: "item"
+					item: "create:basin"
+				}
+				{
+					id: "5BC819435D0C7741"
+					type: "item"
+					item: "create:depot"
+				}
+			]
+			rewards: [{
+				id: "6C191170A2CE7DBE"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.5d
+			description: ["Automatically extracts and outputs items. Very slow, but nonetheless useful for early automation of containers."]
+			dependencies: ["61B578041ABCB2F7"]
+			id: "395AE87B2502AB3D"
+			tasks: [{
+				id: "1E55A079D97175E3"
+				type: "item"
+				item: "minecraft:hopper"
+			}]
+			rewards: [{
+				id: "6152485F254A323A"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Redstone"
+			x: -1.5d
+			y: -1.0d
+			shape: "rsquare"
+			description: [
+				"To get started on this tier you'll need 4 basic materials."
+				""
+				"Redstone is one of these 4, collect a little bit to get started."
+			]
+			dependencies: ["3390B56BAA548BB9"]
+			id: "61B578041ABCB2F7"
+			tasks: [{
+				id: "3D7025F3F38DA7FD"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 32L
+			}]
+			rewards: [{
+				id: "1E6A22598FEC3BD5"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Iron Brass"
+			x: -1.5d
+			y: 11.5d
+			shape: "rsquare"
+			description: ["By incorperating a small amount of iron into brass, a more corrosive and thermally resistant to expansion. Perfect for use in piping and fluid works."]
+			dependencies: ["0A4B12865A953D08"]
+			id: "49936517BA6D8B92"
+			tasks: [{
+				id: "38D5A748E98467C5"
+				type: "item"
+				item: "amicore:iron_brass_ingot"
+			}]
+			rewards: [{
+				id: "5D0814E035F9E89A"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Leaded Brass"
+			x: 0.5d
+			y: 11.5d
+			shape: "rsquare"
+			description: ["Brass with a lead additive is softer, and easier to machine. Also more resistant to corrosion. It's perfect for making more mechanical components. Especially when combined with andesite alloys."]
+			dependencies: ["0A4B12865A953D08"]
+			id: "5EA427B66A7FB747"
+			tasks: [{
+				id: "632BFEB0220637D1"
+				type: "item"
+				item: "amicore:lead_brass_ingot"
+			}]
+			rewards: [{
+				id: "3C639E143C950EC9"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Melted Down"
+			icon: "tconstruct:smeltery_controller"
+			x: 6.5d
+			y: 10.0d
+			shape: "rsquare"
+			description: ["After washing the crushed ores, you are left with raw nuggets of ore. On their own they are useless, but once melted and cast into parts they can serve a purpose. Best to make another smeltery for this."]
+			dependencies: ["0A60E3B680D64E3E"]
+			id: "46AED12B4C59ABC8"
+			tasks: [{
+				id: "3C436F5DCF6B0B15"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+			rewards: [{
+				id: "357DC6E96C6EDCFB"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Tinker's Bronze/Silicon Brass"
+			x: -1.0d
+			y: 12.5d
+			shape: "rsquare"
+			description: [
+				"Tinker's Bronze, also known as a silicon heavy brass, serves many uses in the formation of metal. It's a very hard and versatile form of brass."
+				""
+				"Silicon can be produced in small amounts from quartz and certus."
+			]
+			dependencies: ["0A4B12865A953D08"]
+			id: "2934DB77E4DA82AA"
+			tasks: [{
+				id: "0D8A219EDD02517D"
+				type: "item"
+				title: "Any #forge:ingots/silicon_brass"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/silicon_brass"
+					}
+				}
+			}]
+			rewards: [{
+				id: "3AE6EE23DECD3077"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Cooking Utensils"
+			icon: "pamhc2foodcore:cuttingboarditem"
+			x: -9.5d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["Pam's foods require various cooking items to make. Using bricks of soul soil they can be made in a food-safe way."]
+			dependencies: ["61226A5AC2C53F45"]
+			id: "3AABD15BD7B640E4"
+			tasks: [
+				{
+					id: "102D2DF6E8E0A4A8"
+					type: "item"
+					item: "pamhc2foodcore:cuttingboarditem"
+				}
+				{
+					id: "11071C8A7C4D7F8C"
+					type: "item"
+					item: "pamhc2foodcore:bakewareitem"
+				}
+				{
+					id: "4894D6D5F2AA1F90"
+					type: "item"
+					item: "pamhc2foodcore:juiceritem"
+				}
+				{
+					id: "2FDE3AC717FA129F"
+					type: "item"
+					item: "pamhc2foodcore:grinderitem"
+				}
+				{
+					id: "744DC2A11BF2ADB9"
+					type: "item"
+					item: "pamhc2foodcore:potitem"
+				}
+				{
+					id: "7AEE89CA8D4BFE46"
+					type: "item"
+					item: "pamhc2foodcore:rolleritem"
+				}
+				{
+					id: "68E3BC8FFBDB854C"
+					type: "item"
+					item: "pamhc2foodcore:saucepanitem"
+				}
+				{
+					id: "119FE3A09B1ED8F4"
+					type: "item"
+					item: "pamhc2foodcore:skilletitem"
+				}
+				{
+					id: "6F961F171BCBDD4E"
+					type: "item"
+					item: "cookingforblockheads:tool_rack"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "2B52D1BD2263D1CF"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "3AA5C1167F97E7C4"
+					type: "item"
+					item: "pamhc2foodextended:leafychickensandwichitem"
+				}
+			]
+		}
+		{
+			title: "Copper"
+			x: -0.5d
+			y: -1.0d
+			shape: "rsquare"
+			description: [
+				"To start this tier, you'll need 4 basic materials."
+				""
+				"Copper is one of these 4. Collect a little bit to get started."
+			]
+			dependencies: ["3390B56BAA548BB9"]
+			id: "22BB041171A549DD"
+			tasks: [{
+				id: "130E7045F15C7160"
+				type: "item"
+				title: "Any #forge:ingots/copper"
+				icon: "amicore:copper_ingot"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/copper"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [{
+				id: "44FE356C80ED24B0"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Zinc"
+			x: 0.5d
+			y: -1.0d
+			shape: "rsquare"
+			description: [
+				"To get started on this tier you'll need 4 basic materials."
+				""
+				"Zinc is one of these 4, collect a little bit to get started. "
+			]
+			dependencies: ["3390B56BAA548BB9"]
+			id: "444522C8E2569C55"
+			tasks: [{
+				id: "59473D971EF14AE4"
+				type: "item"
+				title: "Any #forge:ingots/zinc"
+				icon: "amicore:zinc_ingot"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/zinc"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [{
+				id: "2939EB62887C0B17"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Pistons"
+			x: -2.5d
+			y: 0.5d
+			description: ["Pushes blocks, but also is a common mechanical crafting component."]
+			dependencies: ["61B578041ABCB2F7"]
+			id: "49B404EDB99DB399"
+			tasks: [{
+				id: "505CC276F730A892"
+				type: "item"
+				item: "minecraft:piston"
+				count: 2L
+			}]
+			rewards: [{
+				id: "27AA7F7E8C9F7497"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 10.5d
+			shape: "rsquare"
+			description: ["The fluid tank holds 16000mb of fluid, 4x as much as a tinkers tank. However they can be connected together to form a larger structure, and will act as one. Also serves as a crafting component."]
+			dependencies: ["74E9AEA02BE85C89"]
+			id: "1A008438E793CF2C"
+			tasks: [{
+				id: "5FF23E243A1E66A5"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
+			rewards: [{
+				id: "7F60D5FFC234BEA5"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 11.5d
+			shape: "rsquare"
+			description: [
+				"By fashioning some rounded sheets together, a cohesive pipeline can be made. These pipes transfer at the speed of their pump. Clicking with a wrench toggles transparency."
+				""
+				"Theres are several utility items that add functanilty to pipe networks."
+			]
+			dependencies: ["49936517BA6D8B92"]
+			id: "74E9AEA02BE85C89"
+			tasks: [{
+				id: "60169963AD4DE000"
+				type: "item"
+				item: "create:fluid_pipe"
+				count: 6L
+			}]
+			rewards: [{
+				id: "4E97909283CB67D2"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 12.5d
+			shape: "rsquare"
+			description: ["The mechanical pump will push fluid along the pipe network in one direction. They work to extract from containers and direct flow."]
+			dependencies: ["74E9AEA02BE85C89"]
+			id: "4332880B584DE930"
+			tasks: [{
+				id: "4335606ADD3C1FEB"
+				type: "item"
+				item: "create:mechanical_pump"
+			}]
+			rewards: [{
+				id: "4008CB4FDE6DDE7F"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			shape: "rsquare"
+			description: ["The fifth variant crafting table, used for crafting mechanical items and blocks. This tier can only make simple mechanisms, but is a neccesary step towards automation."]
+			dependencies: [
+				"22BB041171A549DD"
+				"444522C8E2569C55"
+				"61B578041ABCB2F7"
+			]
+			id: "64213C12195E5CAE"
+			tasks: [{
+				id: "6053F0D654561DF1"
+				type: "item"
+				item: "artisanworktables:worktable_engineer"
+			}]
+			rewards: [
+				{
+					id: "5DC2B2E9727598F1"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "1A6FB1BE9860FEB6"
+					type: "item"
+					item: "create:zinc_block"
+				}
+			]
+		}
+		{
+			title: "Item Movement"
+			x: -2.0d
+			y: 5.5d
+			description: [
+				"The first fully capable system for moving items. Cheaper and more versatile than hoppers. "
+				""
+				"By coating dried kelp in soul soil clay, it can be bent and warped repeatedly without breaking."
+				""
+				"The mechanical belt connects two shafts to transfer items across its surface."
+			]
+			dependencies: ["2B1672A01435F4E2"]
+			id: "12BE4955EEEE01E1"
+			tasks: [{
+				id: "078099BE902ED0DA"
+				type: "item"
+				item: "create:belt_connector"
+				count: 8L
+			}]
+			rewards: [{
+				id: "769BCB97AC751C3C"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.5d
+			description: [
+				"The chute drops any item from the space above it downwards. It will also insert those items into the inventory below."
+				""
+				"It can also be placed to move items down and diagonally."
+			]
+			dependencies: ["2B1672A01435F4E2"]
+			id: "03B564A3CD5CC741"
+			tasks: [{
+				id: "58BAE8C70C0EACDB"
+				type: "item"
+				item: "create:chute"
+			}]
+			rewards: [{
+				id: "1F2D7CF73E068F30"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 8.5d
+			description: [
+				"The seared duct is a filtered form of the seared drain. It can be filtered using a bucket or can of the desired fluid. "
+				""
+				"Note: While you can find cobalt at this stage, you cannot melt it or work with it. Instead this block is crafted with zinc."
+			]
+			dependencies: ["1DAED9FAE5E81F97"]
+			id: "0B7041D03DA34C25"
+			tasks: [{
+				id: "5217A34C899A96D4"
+				type: "item"
+				item: "tconstruct:seared_duct"
+			}]
+			rewards: [{
+				id: "26723D32713BF2C7"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Seared Drain"
+			icon: "tconstruct:seared_drain"
+			x: 1.0d
+			y: 8.5d
+			description: [
+				"The drain is used to input and output fluids from the smeltery. It will extract whichever is lowest in the list."
+				""
+				"The channels can be used to move fluids across multiple endpoints. They will prioritize moving down before any other direction. Good early fluid logistics solution"
+			]
+			hide_dependency_lines: false
+			dependencies: ["1DAED9FAE5E81F97"]
+			id: "4619548DF44706DC"
+			tasks: [
+				{
+					id: "739603D903B1B78A"
+					type: "item"
+					item: "tconstruct:seared_channel"
+					count: 3L
+				}
+				{
+					id: "10EC13D6264CAF6E"
+					type: "item"
+					item: "tconstruct:seared_drain"
+				}
+			]
+			rewards: [{
+				id: "5968092447718868"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 11.5d
+			shape: "rsquare"
+			description: [
+				"Using leaded brass in combination with andesite and copper parts, a small and simplistic engine can be formed. This engine serves perfect for the creation of more powerful and autonomous mechanical devices."
+				""
+				"While this is solely a crafting component, you'll need a fair few for the upcoming quests."
+			]
+			dependencies: ["5EA427B66A7FB747"]
+			id: "2844E211D2D45506"
+			tasks: [{
+				id: "7158990C97931DAA"
+				type: "item"
+				item: "amicore:simple_engine"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "312D334F4E9F5325"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "282C1E3872DABB1E"
+					type: "item"
+					item: "pamhc2foodextended:passionfruitjellysandwichitem"
+				}
+			]
+		}
+		{
+			title: "Smoking and Blasting"
+			icon: {
+				id: "minecraft:flint_and_steel"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 5.5d
+			y: 13.0d
+			description: ["Placing a fire or lava in front of a fan will cause it to smoke or blast the item in front of it. "]
+			dependencies: ["0A60E3B680D64E3E"]
+			id: "75AF89757F562B9A"
+			tasks: [
+				{
+					id: "7D1D66F1B30A84C0"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "652AA0DD58506481"
+					type: "item"
+					item: "minecraft:lava_bucket"
+				}
+				{
+					id: "19BEC57E28A19D0D"
+					type: "item"
+					item: "minecraft:netherrack"
+				}
+			]
+			rewards: [
+				{
+					id: "25F6FC23A237800C"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "3A8FC13F4B7ED522"
+					type: "item"
+					item: "farmersdelight:smoked_ham"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 14.0d
+			description: [
+				"A wide faced shovel, will dig in a 3x3 square."
+				""
+				"Any material is valid."
+			]
+			dependencies: ["4658D5925E999C8A"]
+			id: "6C7230C5D3A5030D"
+			tasks: [{
+				id: "03B9D7DE51D747EC"
+				type: "item"
+				item: {
+					id: "tconstruct:excavator"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.3f
+							"tconstruct:attack_damage": 1.2f
+							"tconstruct:durability": 3.75f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 1.0f
+							"tconstruct:mining_speed": 0.3f
+							"tconstruct:attack_damage": 1.8000001f
+							"tconstruct:durability": 3.75f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:knockback"
+								level: 2s
+							}
+							{
+								name: "tconstruct:shovel_transform_hidden"
+								level: 1s
+							}
+							{
+								name: "tconstruct:two_handed"
+								level: 1s
+							}
+						]
+						Damage: 0
+						tic_persistent_data: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "235C6BA08B3AE49E"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 14.0d
+			description: [
+				"A wide faced pickaxe, will mine in a 3x3 square."
+				""
+				"Any material is valid."
+			]
+			dependencies: ["4658D5925E999C8A"]
+			id: "21F8057B20D711B4"
+			tasks: [{
+				id: "0A87D6B298C862F7"
+				type: "item"
+				item: {
+					id: "tconstruct:sledge_hammer"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.4f
+							"tconstruct:attack_damage": 1.35f
+							"tconstruct:durability": 4.0f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 0.75f
+							"tconstruct:mining_speed": 0.4f
+							"tconstruct:attack_damage": 4.05f
+							"tconstruct:durability": 4.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:smite"
+								level: 2s
+							}
+							{
+								name: "tconstruct:two_handed"
+								level: 1s
+							}
+						]
+						Damage: 0
+						tic_persistent_data: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "098C04159C787615"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 14.0d
+			description: [
+				"A weapon with AOE damage, attacking mobs in a radius."
+				""
+				"Any material is valid."
+			]
+			dependencies: ["4658D5925E999C8A"]
+			id: "111C024B7EAC4EA9"
+			tasks: [{
+				id: "1E5515921DAB41AA"
+				type: "item"
+				item: {
+					id: "tconstruct:scythe"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.45f
+							"tconstruct:durability": 2.5f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 0.8f
+							"tconstruct:mining_speed": 0.45f
+							"tconstruct:attack_damage": 1.0f
+							"tconstruct:durability": 2.5f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:silky_aoe_shears"
+								level: 1s
+							}
+							{
+								name: "tconstruct:harvest"
+								level: 1s
+							}
+							{
+								name: "tconstruct:hoe_transform_hidden"
+								level: 1s
+							}
+							{
+								name: "tconstruct:two_handed"
+								level: 1s
+							}
+						]
+						Damage: 0
+						tic_persistent_data: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "2BD2B70F9F1AF53D"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["The fourth variant worktable, used for the creation of items with magical properties. While not used the most, it is an important tool."]
+			dependencies: ["17F69C9FDE54F3FB"]
+			id: "7D70BDBFE6BC24E5"
+			tasks: [{
+				id: "056C6F12E0489E42"
+				type: "item"
+				item: "artisanworktables:worktable_mage"
+			}]
+			rewards: [
+				{
+					id: "63C1AD5C15FAB8B1"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "44EF2A03FB85C57C"
+					type: "item"
+					item: "pamhc2foodextended:huckleberryjellysandwichitem"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			description: ["A comically oversized wrench for create machines. Clicking with this will build or unbuild some devices, and will allow tweaking of some machine settings."]
+			dependencies: ["11A34B6184D305A6"]
+			id: "204456BFEBB9C5E7"
+			tasks: [{
+				id: "1217DBB2B91B6F18"
+				type: "item"
+				item: "create:wrench"
+			}]
+			rewards: [{
+				id: "7BC8557451EAD23E"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Blackstone Hammer"
+			x: -6.5d
+			y: -5.5d
+			description: ["Blackstone can be formed into a hammer to use more advanced tetra materials."]
+			dependencies: ["76C6381CF94BAA32"]
+			id: "2254C08A2DCA7307"
+			tasks: [{
+				id: "60BFDD32F4664BFC"
+				type: "advancement"
+				title: "Blackstone Hammer"
+				icon: {
+					id: "tetra:modular_double"
+					Count: 1b
+					tag: {
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/basic_hammer_left"
+						"double/head_right": "double/basic_hammer_right"
+						id: "18986db0-4bc4-48e6-b7f5-9e3093e051ff"
+						"double/basic_hammer_right_material": "basic_hammer/blackstone"
+						Damage: 0
+						"double/basic_handle_material": "basic_handle/spruce"
+						"double/basic_hammer_left_material": "basic_hammer/blackstone"
+					}
+				}
+				advancement: "tetra:upgrades/hammer_4"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "3C30B3BA14BBC7D4"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 13.0d
+			description: ["When pushed, the mechanica drill will break any block directly in front of it. Useful for cobblestone farms."]
+			dependencies: ["2844E211D2D45506"]
+			id: "1FF23A16851ABE5A"
+			tasks: [{
+				id: "790C8C5B2BEDBC33"
+				type: "item"
+				item: "create:mechanical_drill"
+			}]
+			rewards: [{
+				id: "68619DC26A682F68"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			icon: "minecraft:andesite"
+			x: 1.0d
+			y: 14.5d
+			description: ["Most stone variants can be generated from lava and water when placed above a specific catalyst block. For andesite, that is quartz ore. Other stones have different catalysts, check JEI for all of them."]
+			dependencies: ["1FF23A16851ABE5A"]
+			id: "30423D763D817964"
+			tasks: [
+				{
+					id: "2722A3C360D8DB6A"
+					type: "item"
+					item: "minecraft:andesite"
+				}
+				{
+					id: "7E1F30010C3D729B"
+					type: "item"
+					title: "Any #forge:ores/quartz"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/quartz"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "61165BEF52C1433C"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "0704EC3B9A76A1A4"
+					type: "item"
+					item: "pamhc2foodextended:cactusfruitjellysandwichitem"
+				}
+			]
+		}
+		{
+			icon: "minecraft:basalt"
+			x: 3.0d
+			y: 14.5d
+			description: ["Basalt is useful for a variety of purposes. Best to gather a stockpile, or better yet just automate it."]
+			dependencies: ["1FF23A16851ABE5A"]
+			id: "73695F69945934AB"
+			tasks: [
+				{
+					id: "6A66EB0386ABB54A"
+					type: "item"
+					item: "minecraft:basalt"
+				}
+				{
+					id: "74DD04FE3A85C3B8"
+					type: "item"
+					item: "minecraft:blue_ice"
+				}
+			]
+			rewards: [{
+				id: "6E147A38ADF836C7"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			description: ["Drops any item placed into its inventory automatically."]
+			dependencies: ["395AE87B2502AB3D"]
+			id: "23CA3931C01AFCE2"
+			tasks: [{
+				id: "23D38240DE434C4D"
+				type: "item"
+				item: "quark:chute"
+			}]
+			rewards: [{
+				id: "5ED47DA42A57A0AB"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			description: [
+				"The iron grate is scary to animals, and will prevent them from walking over it. "
+				""
+				"Also, any item entity dropped on it will pass right through."
+			]
+			dependencies: ["395AE87B2502AB3D"]
+			id: "375BB015E043CA87"
+			tasks: [{
+				id: "613C84EC7831D24C"
+				type: "item"
+				item: "quark:grate"
+			}]
+			rewards: [{
+				id: "2EDA8E41C562F1E6"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Tinny Brass"
+			x: 0.0d
+			y: 12.5d
+			shape: "rsquare"
+			description: [
+				"Tinny brass, or better known as 'Gunmetal', is a variation of brass with small amounts of tin incorperated. It allows for resistence to corrosion and rapid expansion."
+				""
+				"While it doesnt have many uses, it could serve a cosmetic purpose..."
+			]
+			dependencies: ["0A4B12865A953D08"]
+			id: "1655863724E4176A"
+			tasks: [{
+				id: "67E1CDEFF0A6A404"
+				type: "item"
+				item: "amicore:tin_brass_ingot"
+			}]
+			rewards: [{
+				id: "4DED77EC9A06464F"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Soda Pop"
+			x: -2.0d
+			y: 10.0d
+			description: ["The copper can is fashioned from a few bent plates and can be used to hold a single ingot of fluid (144mb). Later can be used for fluid crafting, but for now helps store molten materials in an item form. Also works as a filter for the seared duct."]
+			dependencies: [
+				"0A4B12865A953D08"
+				"0B7041D03DA34C25"
+			]
+			id: "5476954733EBFE82"
+			tasks: [{
+				id: "2BE156BE54532B82"
+				type: "item"
+				item: "tconstruct:copper_can"
+			}]
+			rewards: [{
+				id: "3AB45C3E45D31074"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Fluid Tanks"
+			x: 1.0d
+			y: 10.0d
+			description: ["The seared tank is perfect for storing spare molten metals. When alloying you may be left with a small amount of nuggets in spare. If you dont want it to be accidentally alloyed, it can be stored for later."]
+			dependencies: [
+				"0A4B12865A953D08"
+				"4619548DF44706DC"
+			]
+			id: "145C533B28034CC1"
+			tasks: [{
+				id: "04838986D2C42EAA"
+				type: "item"
+				item: "tconstruct:seared_ingot_tank"
+			}]
+			rewards: [{
+				id: "6E4DD5A2143AD3C2"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 12.5d
+			description: [
+				"The mechanical saw serves mutiple functions. It can be used to cut various metal and wood items, as well as cut down wood blocks it is pushed into."
+				""
+				"It can be inputted into automatically for use in assembly lines. Best to keep one around in your crafting hub though."
+			]
+			dependencies: ["2844E211D2D45506"]
+			id: "6B8B8DC943357AD9"
+			tasks: [{
+				id: "15F03A200C236C1C"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+			rewards: [{
+				id: "4217D9C136BBFD16"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Diamond Crafting Tools"
+			icon: {
+				id: "artisantools:hammer_diamond"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.0d
+			y: 0.0d
+			description: ["Crafting tools can be made of diamond, and will last much longer, 4x longer than the iron tools."]
+			dependencies: ["64213C12195E5CAE"]
+			id: "321FF9EEA196FDB2"
+			tasks: [
+				{
+					id: "76CD0728D2335E60"
+					type: "item"
+					item: {
+						id: "artisantools:hammer_diamond"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "21AD87BF17C107A7"
+					type: "item"
+					item: {
+						id: "artisantools:cutters_diamond"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "76900087616EA869"
+					type: "item"
+					item: {
+						id: "artisantools:driver_diamond"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "451A3148AA8108B9"
+					type: "item"
+					item: {
+						id: "artisantools:spanner_diamond"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "48D8F52871F246C6"
+					type: "item"
+					item: {
+						id: "artisantools:solderer_diamond"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "625A3726509417BD"
+					type: "item"
+					item: {
+						id: "artisantools:file_diamond"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "1944EC991F2C651B"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "5F662E6A5620587C"
+					type: "item"
+					item: {
+						id: "artisantools:mortar_diamond"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "create:fluid_valve"
+			x: -4.5d
+			y: 11.5d
+			shape: "rsquare"
+			description: ["The fluid valve will block flow along a pipe network. It can be opened with slight rotation, and closed just the same."]
+			dependencies: ["74E9AEA02BE85C89"]
+			id: "7031F6EAD803978E"
+			tasks: [
+				{
+					id: "6BD1EB2BCD357271"
+					type: "item"
+					item: "create:fluid_valve"
+				}
+				{
+					id: "314A76DE8A83AAC0"
+					type: "item"
+					item: "create:copper_valve_handle"
+				}
+			]
+			rewards: [{
+				id: "1390EFA0E46CC8A9"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -5.5d
+			description: ["A system designed for making potions."]
+			dependencies: ["592A486CD9A0AA2F"]
+			id: "62364992FFFF144C"
+			tasks: [{
+				id: "2549B6C503CB4A11"
+				type: "item"
+				item: "minecraft:brewing_stand"
+			}]
+			rewards: [
+				{
+					id: "414336B195CBF7E8"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "3A5EF2698909088B"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_swiftness"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Blackstone"
+			x: -6.5d
+			y: -4.0d
+			shape: "rsquare"
+			description: ["A stone common around basalt enclaves in the nether. Harder than regular stone, and even iron."]
+			dependencies: ["0921C101BDC9EDC4"]
+			id: "76C6381CF94BAA32"
+			tasks: [{
+				id: "477439EA51FE7478"
+				type: "item"
+				item: "minecraft:blackstone"
+				count: 2L
+			}]
+			rewards: [
+				{
+					id: "6791EFE67F697FA2"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "7C2CD56C6D9B1F66"
+					type: "item"
+					item: "betterendforge:blackstone_lantern"
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 7.5d
+			description: [
+				"The mechanical press can be used to quickly hammer out plates, skipping the need to craft them yourself."
+				""
+				"Tip: The forge furnace is compatible with hoppers."
+			]
+			dependencies: ["76E9CFAFDA151CB7"]
+			id: "16697C1543837CA5"
+			tasks: [{
+				id: "078F370291823810"
+				type: "item"
+				item: "amicore:iron_plate"
+			}]
+			rewards: [{
+				id: "2ECF28ADB5213D39"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.5d
+			description: ["This all said, it will still crush stones."]
+			dependencies: ["3B879F114D21B57A"]
+			id: "5E1D60B5D8A12FFB"
+			tasks: [{
+				id: "0A1929E156FAFEAF"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+			rewards: [{
+				id: "5A65BEB9EA12FCCB"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 7.5d
+			description: ["Not alot you can use it for yet, but you can make a mean sauce!"]
+			dependencies: ["71DC866309DA35E9"]
+			id: "2784108B6FF1ACFA"
+			tasks: [{
+				id: "785041C1CAB0133F"
+				type: "item"
+				item: "farmersdelight:tomato_sauce"
+			}]
+			rewards: [{
+				id: "3D035711E6114372"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Soul Soil"
+			icon: "minecraft:soul_soil"
+			x: -7.5d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["Soul soil can be refined or compacted into bricks for use in food safe items."]
+			dependencies: ["0921C101BDC9EDC4"]
+			id: "61226A5AC2C53F45"
+			tasks: [
+				{
+					id: "120DDD1CDCB890FC"
+					type: "item"
+					item: "minecraft:soul_soil"
+					count: 32L
+				}
+				{
+					id: "0E65D77F8FA90AE8"
+					type: "item"
+					item: "amicore:soul_soil_brick"
+					count: 32L
+				}
+			]
+			rewards: [
+				{
+					id: "7B128FA366FF37E3"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "201BD7B1FD60C919"
+					type: "item"
+					item: "pamhc2foodextended:toastsandwichitem"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -3.5d
+			description: ["Whilst exploring you may have found and ancient tome. These can be used to add a level to any enchantment, even above the designated maximum. Find one and I'll give you a Feather Falling tome."]
+			dependencies: ["5597384CBEF71168"]
+			id: "75315E5F9B69576A"
+			tasks: [{
+				id: "7254AB7744B3D2CD"
+				type: "item"
+				item: {
+					id: "quark:ancient_tome"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "51035C3A5D3BC18F"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "1A4D626B508A2D8D"
+					type: "item"
+					item: {
+						id: "quark:ancient_tome"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 4s
+								id: "minecraft:feather_falling"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Nether Bed"
+			x: -4.5d
+			y: -1.0d
+			description: [
+				"When travelling in the nether you may encounter many dangers. A respawn anchor will let you set a spawnpoint in the nether."
+				""
+				"It requires glowstone to power it, with a max of 4 charges. Not for overworld use."
+			]
+			dependencies: ["7D70BDBFE6BC24E5"]
+			id: "660A3B7B3263019A"
+			tasks: [{
+				id: "5BE85C276009840A"
+				type: "item"
+				item: "minecraft:respawn_anchor"
+			}]
+			rewards: [
+				{
+					id: "145DCFB71A107E89"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "279C08241BAEF93A"
+					type: "item"
+					item: "farmersdelight:nether_salad"
+				}
+			]
+		}
+		{
+			title: "Glowstone"
+			x: -7.5d
+			y: -4.0d
+			shape: "rsquare"
+			description: ["Glowstone is a rocky crystalline formation that hangs from the nether cielings. It emits a bright glow and has many alchemical properties."]
+			dependencies: ["0921C101BDC9EDC4"]
+			id: "122544FAF8F73DAC"
+			tasks: [{
+				id: "758CF4DA29C24472"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+				count: 32L
+			}]
+			rewards: [{
+				id: "6EBC194A5A1285A0"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Stuffing Meals"
+			icon: "farmersdelight:stuffed_pumpkin"
+			x: -11.0d
+			y: -2.5d
+			shape: "diamond"
+			description: [
+				"Using all the tools made so far, try and make some very involved dishes."
+				""
+				"To make the farmer's delight items, make the respective block and click with a bowl or plate."
+			]
+			dependencies: [
+				"59439D986AF7DD0E"
+				"2B61AFFEE377F013"
+				"3AABD15BD7B640E4"
+			]
+			id: "37A51D922429298A"
+			tasks: [
+				{
+					id: "589E458D35C5BABC"
+					type: "item"
+					item: "farmersdelight:stuffed_pumpkin"
+					count: 16L
+				}
+				{
+					id: "3B0B67C8FFD8B10F"
+					type: "item"
+					item: "pamhc2foodextended:delightedmealitem"
+					count: 16L
+				}
+				{
+					id: "2BA542C6C51F66D1"
+					type: "item"
+					item: "farmersdelight:roast_chicken"
+					count: 16L
+				}
+				{
+					id: "1BA423E74CD3F7BE"
+					type: "item"
+					item: "farmersdelight:shepherds_pie"
+					count: 16L
+				}
+				{
+					id: "353F86D8665FD45D"
+					type: "item"
+					item: "pamhc2foodextended:friedfeastitem"
+					count: 16L
+				}
+				{
+					id: "0C628D98A8573981"
+					type: "item"
+					item: "pamhc2foodextended:supremepizzaitem"
+					count: 16L
+				}
+				{
+					id: "30413AEA441C0DB5"
+					type: "item"
+					item: "pamhc2foodextended:ploughmanslunchitem"
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "411286954A60A699"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "48005E226880265C"
+					type: "item"
+					item: "minecraft:bowl"
+				}
+				{
+					id: "563F1D368D1FAD43"
+					type: "choice"
+					icon: "paraglider:anti_vessel"
+					table_id: 946083085323769434L
+				}
+			]
+		}
+		{
+			icon: "farmersdelight:cooking_pot"
+			x: -10.5d
+			y: -1.5d
+			description: ["When placed on a stove or campfire, it can be used to make tons of different food items."]
+			dependencies: ["0113ACBB0F4C2E49"]
+			id: "59439D986AF7DD0E"
+			tasks: [
+				{
+					id: "5FAC2F1AAA80A04C"
+					type: "item"
+					item: "farmersdelight:cooking_pot"
+				}
+				{
+					id: "23EDD4080653EFDA"
+					type: "item"
+					item: {
+						id: "farmersdelight:skillet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6D297D144E56E3D8"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Cows, in jars??"
+			x: -12.0d
+			y: -3.5d
+			description: ["Through sheer force, a cow can fit into a jar. Who knew! It will constantly generate 4mb/s of milk for use in recipes."]
+			dependencies: ["45C98945BED9FE1C"]
+			id: "1955643AD206AF31"
+			tasks: [{
+				id: "67C3A8FCE72CB640"
+				type: "item"
+				item: "cookingforblockheads:cow_jar"
+			}]
+			rewards: [{
+				id: "6508CDCCF68CCF96"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Compost"
+			icon: "farmersdelight:organic_compost"
+			x: -10.5d
+			y: -0.5d
+			description: ["Compost can be fermented over a short time to create rich soil. The soil grows crops at a faster speed."]
+			dependencies: ["0113ACBB0F4C2E49"]
+			id: "73E5575E076FF140"
+			tasks: [
+				{
+					id: "7ED89C995C6E40D1"
+					type: "item"
+					item: "farmersdelight:organic_compost"
+					count: 8L
+				}
+				{
+					id: "4DFC5805B028EB4B"
+					type: "item"
+					item: "farmersdelight:rich_soil"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "24146776F69DCD38"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -1.5d
+			description: [
+				"The tinker's hoe. Also serves as a decent weapon in case of combat."
+				""
+				"Any material is valid."
+			]
+			dependencies: ["73E5575E076FF140"]
+			id: "560878958A900FD2"
+			tasks: [{
+				id: "3844EBE05E4880A4"
+				type: "item"
+				item: {
+					id: "tconstruct:kama"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:attack_damage": 0.75f
+						}
+						tic_stats: {
+							"tconstruct:attack_damage": 0.75f
+							"tconstruct:attack_speed": 1.8f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:shears"
+								level: 1s
+							}
+							{
+								name: "tconstruct:harvest"
+								level: 1s
+							}
+							{
+								name: "tconstruct:hoe_transform_hidden"
+								level: 1s
+							}
+						]
+						Damage: 0
+						tic_persistent_data: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0902D5C33E654FB7"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "30131AB7F4317892"
+					type: "item"
+					item: "farmersdelight:cooked_salmon_slice"
+				}
+			]
+		}
+		{
+			title: "The Result"
+			x: 7.5d
+			y: 11.5d
+			shape: "rsquare"
+			description: ["Now you should have twice the ratio of metal to ore. Allowing for much more efficient creation of items."]
+			dependencies: ["46AED12B4C59ABC8"]
+			id: "2A21F30F172103B9"
+			tasks: [{
+				id: "5D77ED382FD4F754"
+				type: "item"
+				item: "amicore:iron_ingot"
+			}]
+			rewards: [{
+				id: "7473D2DAD16F9BA7"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			icon: "minecraft:lava_bucket"
+			x: 6.5d
+			y: 2.5d
+			shape: "gear"
+			description: ["Congratulations! You've completed all the main line quests of Tier 1! Try completing all the sidequests now!"]
+			hide_dependency_lines: true
+			dependencies: [
+				"3390B56BAA548BB9"
+				"61B578041ABCB2F7"
+				"22BB041171A549DD"
+				"444522C8E2569C55"
+				"64213C12195E5CAE"
+				"17F69C9FDE54F3FB"
+				"7D70BDBFE6BC24E5"
+				"0921C101BDC9EDC4"
+				"592A486CD9A0AA2F"
+				"61226A5AC2C53F45"
+				"122544FAF8F73DAC"
+				"76C6381CF94BAA32"
+				"5742E5AA131144AE"
+				"79EA884C9DAB8742"
+				"2841029227D22D02"
+				"781B28E81EEABB33"
+				"11A34B6184D305A6"
+				"2B1672A01435F4E2"
+				"1DAED9FAE5E81F97"
+				"0A4B12865A953D08"
+				"49936517BA6D8B92"
+				"2934DB77E4DA82AA"
+				"1655863724E4176A"
+				"5EA427B66A7FB747"
+				"2844E211D2D45506"
+				"61052822DEFA5372"
+				"67FA0C3E161B632D"
+				"0A60E3B680D64E3E"
+				"46AED12B4C59ABC8"
+				"2A21F30F172103B9"
+				"74E9AEA02BE85C89"
+				"7031F6EAD803978E"
+				"1A008438E793CF2C"
+				"4332880B584DE930"
+				"3AABD15BD7B640E4"
+				"37A51D922429298A"
+				"3B4E2C9CB7226D3C"
+			]
+			hide: true
+			id: "79FB4810B1E244EC"
+			tasks: [{
+				id: "46B3AFE4EAE2016F"
+				type: "checkmark"
+				title: "Tier 1: Complete!"
+			}]
+			rewards: [
+				{
+					id: "38072A1BCA684355"
+					type: "item"
+					item: "amicore:amicoin_orachalchum"
+				}
+				{
+					id: "4DD56CF81407FECD"
+					type: "random"
+					icon: "paraglider:anti_vessel"
+					table_id: 946083085323769434L
+				}
+			]
+		}
+		{
+			title: "Tier 1: 100%"
+			icon: "minecraft:lava_bucket"
+			x: 6.5d
+			y: 3.5d
+			shape: "gear"
+			description: ["Amazing! You've done every quest in all of Tier 1!"]
+			hide_dependency_lines: true
+			dependencies: [
+				"3390B56BAA548BB9"
+				"61B578041ABCB2F7"
+				"22BB041171A549DD"
+				"444522C8E2569C55"
+				"64213C12195E5CAE"
+				"17F69C9FDE54F3FB"
+				"7D70BDBFE6BC24E5"
+				"0921C101BDC9EDC4"
+				"592A486CD9A0AA2F"
+				"61226A5AC2C53F45"
+				"122544FAF8F73DAC"
+				"76C6381CF94BAA32"
+				"5742E5AA131144AE"
+				"79EA884C9DAB8742"
+				"2841029227D22D02"
+				"781B28E81EEABB33"
+				"11A34B6184D305A6"
+				"2B1672A01435F4E2"
+				"1DAED9FAE5E81F97"
+				"0A4B12865A953D08"
+				"49936517BA6D8B92"
+				"2934DB77E4DA82AA"
+				"1655863724E4176A"
+				"5EA427B66A7FB747"
+				"2844E211D2D45506"
+				"61052822DEFA5372"
+				"67FA0C3E161B632D"
+				"0A60E3B680D64E3E"
+				"46AED12B4C59ABC8"
+				"2A21F30F172103B9"
+				"74E9AEA02BE85C89"
+				"7031F6EAD803978E"
+				"1A008438E793CF2C"
+				"4332880B584DE930"
+				"4658D5925E999C8A"
+				"5597384CBEF71168"
+				"3B729F97D25B0582"
+				"39DD679B9E59DE31"
+				"1B0236A94762A0A9"
+				"2B61AFFEE377F013"
+				"45C98945BED9FE1C"
+				"6E9FF81238BBE584"
+				"0113ACBB0F4C2E49"
+				"76E9CFAFDA151CB7"
+				"71DC866309DA35E9"
+				"6EF344262B48EF76"
+				"3B879F114D21B57A"
+				"73E0EFA3107350C4"
+				"4ABAD0E364A11B08"
+				"29792BF2ABF86AAD"
+				"41DD7DCF69B86EF0"
+				"395AE87B2502AB3D"
+				"3AABD15BD7B640E4"
+				"49B404EDB99DB399"
+				"12BE4955EEEE01E1"
+				"03B564A3CD5CC741"
+				"0B7041D03DA34C25"
+				"4619548DF44706DC"
+				"75AF89757F562B9A"
+				"6C7230C5D3A5030D"
+				"21F8057B20D711B4"
+				"111C024B7EAC4EA9"
+				"204456BFEBB9C5E7"
+				"2254C08A2DCA7307"
+				"1FF23A16851ABE5A"
+				"30423D763D817964"
+				"73695F69945934AB"
+				"23CA3931C01AFCE2"
+				"375BB015E043CA87"
+				"5476954733EBFE82"
+				"145C533B28034CC1"
+				"6B8B8DC943357AD9"
+				"321FF9EEA196FDB2"
+				"62364992FFFF144C"
+				"16697C1543837CA5"
+				"5E1D60B5D8A12FFB"
+				"2784108B6FF1ACFA"
+				"75315E5F9B69576A"
+				"660A3B7B3263019A"
+				"37A51D922429298A"
+				"59439D986AF7DD0E"
+				"1955643AD206AF31"
+				"73E5575E076FF140"
+				"560878958A900FD2"
+				"79FB4810B1E244EC"
+				"514C2814FD1BEAE1"
+				"0045C2196B431514"
+				"101C451FF9FDF552"
+				"065A9F4594E07366"
+				"0AA732FEB5F7EFA9"
+				"5037D9C2619F0AD2"
+				"1C28B037FE493214"
+				"6DF272F58A4AF0A7"
+				"412551DC7BA1B3DC"
+				"34BA32AB4A66A448"
+				"2125CA014168BED1"
+				"2CBCAD1E20FACBAD"
+				"101A19B18833F98F"
+				"4BB5E991E5147F80"
+				"6315125B6F5773C2"
+				"4908667F6738933C"
+				"4D33BC5C1E6B0A67"
+				"2349E8A7ED615C60"
+				"1B39E01D15FF5B04"
+				"6C3C76CD53CAB5FF"
+				"6BCFA8F9F7A801EE"
+				"3B4E2C9CB7226D3C"
+				"1D8EC4FCEBCC383E"
+				"13CB7D91E4727389"
+				"2A3378CAFDB5469A"
+				"0A16DD7F287118FE"
+				"1BE8C23D51E4200E"
+				"7008AD69FBAF0EB0"
+			]
+			hide: true
+			id: "0609F17BB92946A0"
+			tasks: [{
+				id: "0AD4B0B51B4A247D"
+				type: "checkmark"
+				title: "Tier 1: 100%!"
+			}]
+			rewards: [
+				{
+					id: "2C81BB35E85470D6"
+					type: "item"
+					item: "amicore:amicoin_managold"
+				}
+				{
+					id: "267E595790C445BB"
+					type: "item"
+					item: "farmersdelight:roast_chicken_block"
+				}
+				{
+					id: "51A81277411FAFD6"
+					type: "choice"
+					icon: "paraglider:anti_vessel"
+					table_id: 946083085323769434L
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -3.5d
+			description: [
+				"You can replace the seared heater on your melter(s) with a fuel tank, allowing you to use lava as a fuel source."
+				""
+				"Also works great for moving lava around."
+			]
+			dependencies: ["3390B56BAA548BB9"]
+			id: "6315125B6F5773C2"
+			tasks: [{
+				id: "4DF8B9603D2587CB"
+				type: "item"
+				item: "tconstruct:seared_fuel_tank"
+			}]
+			rewards: [
+				{
+					id: "2479A330796DF4F3"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "7600423C3AD1F249"
+					type: "item"
+					item: "pamhc2foodcore:basichamburgeritem"
+				}
+			]
+		}
+		{
+			icon: "create:gearbox"
+			x: 1.0d
+			y: 3.0d
+			description: ["Sometimes you need to move around a tight corner. In this case a gearbox can be repurposed to allow in world interfacing."]
+			dependencies: ["79EA884C9DAB8742"]
+			id: "4908667F6738933C"
+			tasks: [
+				{
+					id: "712864976103F1E1"
+					type: "item"
+					item: "create:gearbox"
+				}
+				{
+					id: "015BD14D7CC3774E"
+					type: "item"
+					item: "create:vertical_gearbox"
+				}
+			]
+			rewards: [{
+				id: "535E57348DE17747"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 12.5d
+			description: ["The clutch acts as a redstone toggleable shaft block. Allowing for disabling of create systems."]
+			dependencies: ["2844E211D2D45506"]
+			id: "4D33BC5C1E6B0A67"
+			tasks: [{
+				id: "79067DA0125C5579"
+				type: "item"
+				item: "create:clutch"
+			}]
+			rewards: [{
+				id: "512B0FAE1926A0AB"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 8.5d
+			description: ["The seared chute acts as an item I/O for the smeltery. Useful when melting massive amounts of ore or materials."]
+			dependencies: ["0B7041D03DA34C25"]
+			id: "2349E8A7ED615C60"
+			tasks: [{
+				id: "30787C81ACFA544D"
+				type: "item"
+				item: "tconstruct:seared_chute"
+			}]
+			rewards: [
+				{
+					id: "150A1731C48D74F7"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "79DDEF36BEEBD87C"
+					type: "item"
+					item: "pamhc2foodextended:limejellysandwichitem"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 5.5d
+			description: ["The andesite funnel will extract items from an invtory onto a belt. It will also insert them. The only limitation being that only one is extracted at a time, and it cannot be filtered."]
+			dependencies: ["03B564A3CD5CC741"]
+			id: "1B39E01D15FF5B04"
+			tasks: [{
+				id: "54ECA9BF1044CA62"
+				type: "item"
+				item: "create:andesite_funnel"
+			}]
+			rewards: [{
+				id: "50636F0F1E19B36B"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Vein Hammer"
+			x: -2.5d
+			y: 15.5d
+			description: [
+				"A hammer which mines all connected ores."
+				""
+				"Any material is valid."
+			]
+			dependencies: [
+				"21F8057B20D711B4"
+				"6C7230C5D3A5030D"
+				"111C024B7EAC4EA9"
+			]
+			id: "6C3C76CD53CAB5FF"
+			tasks: [{
+				id: "5350C4DA66073F19"
+				type: "item"
+				item: {
+					id: "tconstruct:vein_hammer"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.3f
+							"tconstruct:attack_damage": 1.25f
+							"tconstruct:durability": 5.0f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 1.1f
+							"tconstruct:mining_speed": 0.3f
+							"tconstruct:attack_damage": 2.5f
+							"tconstruct:durability": 5.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:piercing"
+								level: 2s
+							}
+							{
+								name: "tconstruct:two_handed"
+								level: 1s
+							}
+						]
+						Damage: 0
+						tic_persistent_data: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "32931399ACE6B403"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "6155909DA6826F79"
+					type: "item"
+					item: "pamhc2foodextended:figjellysandwichitem"
+				}
+			]
+		}
+		{
+			title: "Measurement and Maintenance"
+			icon: "create:stressometer"
+			x: -2.0d
+			y: 3.5d
+			description: ["The stressometer and speedometer will show the stress capacity and rpm of the system respectively."]
+			dependencies: ["79EA884C9DAB8742"]
+			id: "6BCFA8F9F7A801EE"
+			tasks: [
+				{
+					id: "6E0A3372C57A1969"
+					type: "item"
+					item: "create:speedometer"
+				}
+				{
+					id: "2BAEA8413901995D"
+					type: "item"
+					item: "create:stressometer"
+				}
+			]
+			rewards: [
+				{
+					id: "40B12D46C0F80AE2"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "100C576730D1F286"
+					type: "item"
+					item: "create_confectionery:black_chocolate_candy_3"
+				}
+			]
+		}
+		{
+			title: "Moving On"
+			x: 9.0d
+			y: 11.5d
+			shape: "diamond"
+			description: [
+				"Now that you can double your ores, its time to move on from lava as a heat source. This does not mean it wont be used ever again, it still has many uses."
+				""
+				"The next age will require some new alloys, including some sterling silver. Go ahead and make a large sheet from it."
+			]
+			dependencies: ["2A21F30F172103B9"]
+			id: "3B4E2C9CB7226D3C"
+			tasks: [{
+				id: "51233A1AAB1AE338"
+				type: "item"
+				item: "amicore:sterling_silver_large_sheet"
+			}]
+			rewards: [
+				{
+					id: "110B55D8F4147F74"
+					type: "item"
+					item: "amicore:amicoin_starmetal"
+				}
+				{
+					id: "1CAEC121541AC0FC"
+					type: "item"
+					item: "pamhc2foodextended:lamingtonitem"
+				}
+				{
+					id: "0971E88D16363447"
+					type: "choice"
+					icon: "paraglider:anti_vessel"
+					table_id: 946083085323769434L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 14.0d
+			description: ["By plating a golden plated chest with a layer of diamond and gunmetal, it can be reinforced to store even more items."]
+			dependencies: ["1655863724E4176A"]
+			id: "1D8EC4FCEBCC383E"
+			tasks: [{
+				id: "12D00CC449FC2582"
+				type: "item"
+				item: "ironchest:diamond_chest"
+			}]
+			rewards: [{
+				id: "34D6055EC020CBC6"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			description: ["A larger version of the filtered chest, holds more items."]
+			dependencies: ["4ABAD0E364A11B08"]
+			id: "13CB7D91E4727389"
+			tasks: [{
+				id: "7BF3C7D022FA4DA0"
+				type: "item"
+				item: "filteredchests:medium"
+			}]
+			rewards: [{
+				id: "46B6C1396537A2E6"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Belt and Shaft Coverings"
+			x: -3.5d
+			y: 5.5d
+			description: ["Belts and shafts can have covers installed by right clicking with a casing block."]
+			dependencies: ["12BE4955EEEE01E1"]
+			id: "101C451FF9FDF552"
+			tasks: [{
+				id: "30B2AA0C16016475"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+			rewards: [{
+				id: "2882E5806B199A0C"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Cast Storage"
+			x: 2.5d
+			y: 8.5d
+			description: ["At this point you likely have several casts, you can make a chest specifically for them."]
+			dependencies: ["4619548DF44706DC"]
+			id: "514C2814FD1BEAE1"
+			tasks: [{
+				id: "7DF0EBA9723F6B33"
+				type: "item"
+				item: "tconstruct:cast_chest"
+			}]
+			rewards: [{
+				id: "634AA8ECE1E23B2A"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Wires"
+			x: -4.0d
+			y: 6.5d
+			description: ["You are now able to craft wires with the rolling machine, that said they aren't very useful yet so best to just hold onto these for now."]
+			dependencies: ["6EF344262B48EF76"]
+			id: "0045C2196B431514"
+			tasks: [{
+				id: "04C9824B4B974D9E"
+				type: "item"
+				item: "amicore:gold_wire"
+				count: 2L
+			}]
+			rewards: [{
+				id: "21B6E641FEC72E62"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Brackets"
+			icon: "create:metal_bracket"
+			x: -3.5d
+			y: 10.0d
+			description: ["Brackets can be used for decorating pipes and belts; can be removed with a wrench."]
+			dependencies: ["74E9AEA02BE85C89"]
+			id: "2A3378CAFDB5469A"
+			tasks: [
+				{
+					id: "74D7F99079D83B7F"
+					type: "item"
+					item: "create:wooden_bracket"
+				}
+				{
+					id: "76E09869596F691D"
+					type: "item"
+					item: "create:metal_bracket"
+				}
+			]
+			rewards: [{
+				id: "7536066FA0F50E1C"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Infinite Fuel"
+			icon: "minecraft:lava_bucket"
+			x: 8.0d
+			y: 10.0d
+			description: ["Running a smeltery constantly will take a fair bit of fuel, if you haven't figured out a way to fuel it indefinately, it may be worth a shot."]
+			dependencies: ["46AED12B4C59ABC8"]
+			id: "065A9F4594E07366"
+			tasks: [{
+				id: "281FCA12033965AE"
+				type: "checkmark"
+				title: "Infinite Lava"
+			}]
+			rewards: [{
+				id: "5EEA9D7847AB9477"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Interdimensional Pocket Storage"
+			icon: "enderstorage:ender_chest"
+			x: -6.0d
+			y: -1.0d
+			description: [
+				"Using some eldritch materials, as well as some more earthen components, a chest can be made which holds a static pocket dimension within. You'll need to seek them out however, since some cannot be crafted."
+				""
+				"The top 3 white nodes can be dyed to link to different inventories, and a diamond can be used on the latch nub to make it player specific."
+			]
+			dependencies: ["0921C101BDC9EDC4"]
+			id: "0AA732FEB5F7EFA9"
+			tasks: [
+				{
+					id: "132E66B8F3EF9169"
+					type: "item"
+					item: "enderstorage:ender_chest"
+					count: 2L
+				}
+				{
+					id: "73B33D667BB73CAC"
+					type: "item"
+					item: "enderstorage:ender_tank"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "3A99AE0A07C4A373"
+					type: "item"
+					item: "amicore:amicoin_orachalchum"
+				}
+				{
+					id: "1E75AC2F3D13D5A5"
+					type: "item"
+					item: "pamhc2foodextended:epicbltitem"
+				}
+			]
+		}
+		{
+			title: "Toolbox"
+			x: 2.5d
+			y: 2.0d
+			description: ["When placed on the ground, it can be right clicked to open the inventory. Tools can be placed inside and then acessed by holding the related keybind (default \"-\") to bring up the toolbox inventory while in range. "]
+			dependencies: ["204456BFEBB9C5E7"]
+			id: "5037D9C2619F0AD2"
+			tasks: [{
+				id: "5048590646089CF4"
+				type: "item"
+				title: "Any #create:toolboxes"
+				icon: "create:brown_toolbox"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "create:toolboxes"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "2493860D426ED179"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "5D07C465768B09DE"
+					type: "item"
+					item: "pamhc2foodextended:orangejellysandwichitem"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			description: ["Don't want to make a stress setup for a contraption? Dont worry, power it manually with a hand crank!"]
+			dependencies: ["79EA884C9DAB8742"]
+			id: "0A16DD7F287118FE"
+			tasks: [{
+				id: "5B5794CEAE5421B9"
+				type: "item"
+				item: "create:hand_crank"
+			}]
+			rewards: [{
+				id: "6033FB1137D54FF9"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 14.5d
+			description: ["Sand can generated from crushing stones made with various generator catalysts. Extremely useful for mass sand production later on."]
+			dependencies: ["1FF23A16851ABE5A"]
+			id: "1C28B037FE493214"
+			tasks: [{
+				id: "686E01044E7795CA"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+			rewards: [{
+				id: "7D9DA6F2626045A2"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Potato Cannon"
+			icon: {
+				id: "create:potato_cannon"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -6.0d
+			y: 11.5d
+			description: ["The world's strongest weapon."]
+			dependencies: ["1A008438E793CF2C"]
+			id: "4BB5E991E5147F80"
+			tasks: [
+				{
+					id: "0D8326312A137669"
+					type: "item"
+					item: {
+						id: "create:potato_cannon"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "16812556ADCF1B07"
+					type: "item"
+					item: {
+						id: "create:copper_backtank"
+						Count: 1b
+						tag: {
+							Air: 900
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "30FE2EC3D89E11A4"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 10.0d
+			dependencies: ["2844E211D2D45506"]
+			id: "1BE8C23D51E4200E"
+			tasks: [{
+				id: "3371759FBC937874"
+				type: "item"
+				item: "create:gearshift"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 10.5d
+			dependencies: ["2844E211D2D45506"]
+			id: "7008AD69FBAF0EB0"
+			tasks: [{
+				id: "7B67C0653202699F"
+				type: "item"
+				item: "create:adjustable_chain_gearshift"
+			}]
+		}
+		{
+			title: "Create Redstone"
+			x: -3.0d
+			y: -0.5d
+			description: ["Create has a collection of redstone components for control. The most basic of which is the analog lever, which outputs a signal 0-15."]
+			dependencies: ["61B578041ABCB2F7"]
+			id: "6DF272F58A4AF0A7"
+			tasks: [{
+				id: "1E869AAD1A1BD349"
+				type: "item"
+				item: "create:analog_lever"
+			}]
+			rewards: [{
+				id: "0EBB79167C20FD54"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 1.5d
+			description: ["The Pulse repeater will turn any input signal into a pulse, while also extending the signal."]
+			dependencies: ["6DF272F58A4AF0A7"]
+			id: "2CBCAD1E20FACBAD"
+			tasks: [{
+				id: "1B1574DBD14F8CE0"
+				type: "item"
+				item: "create:pulse_repeater"
+			}]
+			rewards: [{
+				id: "4D4B5F72C7B9969B"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			description: ["The Adjuststable Repeater acts like a noraml repeater, but can have a longer pulse time set on it. Just like a repeater, it will also hold signal for that long upon being unpowered."]
+			dependencies: ["6DF272F58A4AF0A7"]
+			id: "2125CA014168BED1"
+			tasks: [{
+				id: "7CDF6002556DB359"
+				type: "item"
+				item: "create:adjustable_repeater"
+			}]
+			rewards: [{
+				id: "3517D4C3E4A63396"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.0d
+			description: ["The Adjustable Pulse Repeated will emit a pulse after a certain delay, basically a combination of its two crafting components."]
+			dependencies: ["6DF272F58A4AF0A7"]
+			id: "412551DC7BA1B3DC"
+			tasks: [{
+				id: "4323DA8DB5EC4891"
+				type: "item"
+				item: "create:adjustable_pulse_repeater"
+			}]
+			rewards: [{
+				id: "1BAF3715D54B6B6D"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			description: ["The powered latch acts as a memory cell. An input from one side will make it output, and a signal from the other will stop the output. It can also be toggled manually."]
+			dependencies: ["6DF272F58A4AF0A7"]
+			id: "34BA32AB4A66A448"
+			tasks: [{
+				id: "247C6B4C5686F1D4"
+				type: "item"
+				item: "create:powered_latch"
+			}]
+			rewards: [{
+				id: "644CD88EF545B732"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 0.5d
+			description: ["The Powered Toggle Latch acts as a T-Flip-Flop. A redstone pulse toggles its state, on or off. It can also be set manually."]
+			dependencies: ["6DF272F58A4AF0A7"]
+			id: "101A19B18833F98F"
+			tasks: [{
+				id: "646DFED939919612"
+				type: "item"
+				item: "create:powered_toggle_latch"
+			}]
+			rewards: [{
+				id: "2B6CA9FB82D27D76"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.5d
+			description: ["The andesite funnel will split exactly one item off from any passing stacks of items. Allowing the rest to continue on."]
+			dependencies: ["03B564A3CD5CC741"]
+			id: "7E9B1C40AA9DA241"
+			tasks: [{
+				id: "44A493AF75A7890F"
+				type: "item"
+				item: "create:andesite_tunnel"
+			}]
+			rewards: [
+				{
+					id: "73A518A00BB40E99"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "2823DC709D04E41F"
+					type: "item"
+					item: "pamhc2foodcore:carrotbreaditem"
+				}
+			]
+		}
+	]
+}

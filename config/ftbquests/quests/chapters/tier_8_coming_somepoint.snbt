@@ -1,0 +1,87 @@
+{
+	id: "4428AED9F9E73E38"
+	group: "280C159CD17D8CFF"
+	order_index: 8
+	filename: "tier_8_coming_somepoint"
+	title: "Tier 8: Manaflux Starlight"
+	icon: "mythicbotany:alfheim_rune"
+	subtitle: [
+		"The finality, synthesize and make use of the "
+		"most powerful substance in the known universe,"
+		"or so it seems..."
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: -0.5d
+			id: "211684E0A9B7D34D"
+			tasks: [{
+				id: "6F769DE0B0153F0A"
+				type: "item"
+				item: "mythicbotany:alfheim_rune"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			id: "41A3284B5E29DEFF"
+			tasks: [{
+				id: "2AC8D223303E7596"
+				type: "item"
+				item: {
+					id: "ironjetpacks:creative_jetpack"
+					Count: 1b
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			id: "2DF6F953361E8C1E"
+			tasks: [{
+				id: "625C1968EF6C8EA4"
+				type: "item"
+				item: "create:creative_motor"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			id: "18212D718BF38205"
+			tasks: [{
+				id: "03EA2B7E5E54A0AE"
+				type: "item"
+				item: "mythicbotany:alfsteel_ingot"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			id: "1C0B034545C9F7B5"
+			tasks: [{
+				id: "4590984AAFC7A1CD"
+				type: "item"
+				item: {
+					id: "ae2wtlib:wireless_universal_terminal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.5d
+			id: "6C950FFCB0BA60FB"
+			tasks: [{
+				id: "5FC887F93DF22259"
+				type: "item"
+				item: "create:creative_blaze_cake"
+			}]
+		}
+	]
+}

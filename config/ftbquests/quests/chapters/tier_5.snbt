@@ -1,0 +1,251 @@
+{
+	id: "25DB8D108627B880"
+	group: "280C159CD17D8CFF"
+	order_index: 5
+	filename: "tier_5"
+	title: "Tier 5: Coalesced Mana"
+	icon: "botania:quartz_mana"
+	subtitle: ["Botanical Magic and discovering new realms whilst extracting their oil."]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -3.0d
+			y: -1.0d
+			id: "3B35AE7CC638DEF8"
+			tasks: [{
+				id: "31984B697319DBF7"
+				type: "item"
+				item: "botania:quartz_mana"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			id: "393527C7DD942B6D"
+			tasks: [{
+				id: "4B8802DC13AB6DAA"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			id: "400435F3C420E3F4"
+			tasks: [{
+				id: "69E0D3FA430B0260"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+		}
+		{
+			title: "Automining"
+			x: 1.5d
+			y: -1.0d
+			id: "68E5FA165D0FCBF5"
+			tasks: [{
+				id: "7BD028A71CEEF8CD"
+				type: "item"
+				item: "losttrinkets:miners_pick"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			id: "7E93C03ACD90923F"
+			tasks: [{
+				id: "0F4D209ADC1F5073"
+				type: "item"
+				item: "botania:manasteel_ingot"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			id: "527E0FAC8C438756"
+			tasks: [{
+				id: "3CC34FF04AF57706"
+				type: "item"
+				item: "botania:mana_powder"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -1.0d
+			id: "66C9511EF2405C9B"
+			tasks: [{
+				id: "6DB8D3A91059FADA"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -1.0d
+			id: "6B1C0936C5A361E1"
+			tasks: [{
+				id: "28BE3D7B0DE72075"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			id: "0A2859CEC611FAE5"
+			tasks: [{
+				id: "1BB6D06AAA923E62"
+				type: "item"
+				item: "quark:violet_crystal_cluster"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			id: "65910FF905355F84"
+			tasks: [{
+				id: "202844C35E697C04"
+				type: "item"
+				item: {
+					id: "ae2wtlib:wireless_crafting_terminal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			id: "481F0FDCC0315C2A"
+			tasks: [{
+				id: "427DD926226E971D"
+				type: "item"
+				item: {
+					id: "interactive_corporea:requesting_halo"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			id: "13A0A1C2BB08AA8D"
+			tasks: [{
+				id: "4B694FDF26B216FA"
+				type: "item"
+				item: "appliedenergistics2:me_p2p_tunnel"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			id: "3D09ED06F298EA9C"
+			tasks: [{
+				id: "4A567C70C8CB5BB0"
+				type: "item"
+				item: "amicore:managold_ingot"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			id: "382E41527D68E34B"
+			tasks: [{
+				id: "4D11F7545EF0545E"
+				type: "item"
+				item: "botania:gaia_pylon"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -4.0d
+			id: "0BD6B91C654E1E33"
+			tasks: [{
+				id: "4AFDE34ED97599C1"
+				type: "item"
+				item: "amicore:mana_circuit"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			id: "75776BE725F81650"
+			tasks: [{
+				id: "40897044EB0B1FAE"
+				type: "item"
+				item: "amicore:hv_circuit"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.0d
+			id: "12BE93533BAAF33C"
+			tasks: [{
+				id: "67CBA7B2E9F34035"
+				type: "item"
+				item: "immersivepetroleum:oil_bucket"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			id: "2187F3B10F7A6D32"
+			tasks: [{
+				id: "387662EE083CAC05"
+				type: "item"
+				item: "createaddition:crude_burner"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			id: "39A38427215FE4E7"
+			tasks: [{
+				id: "7B78B1D1C3E9A0ED"
+				type: "item"
+				item: "immersiveengineering:connector_hv"
+			}]
+		}
+		{
+			title: "Natural Silica"
+			x: 0.5d
+			y: -3.0d
+			id: "60BB6A6666870DF3"
+			tasks: [{
+				id: "42AFC39854F4DDFD"
+				type: "item"
+				item: "byg:sythian_stalk_block"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			id: "373A8223987CED2C"
+			tasks: [{
+				id: "685469EA3DCC9F94"
+				type: "item"
+				item: "botanypots:botany_pot"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			description: ["end fish residue (angels crystals)"]
+			id: "62B9ACDA122A9CDD"
+			tasks: [{
+				id: "5D76FECCE83FB72C"
+				type: "item"
+				item: "betterendforge:end_fish_raw"
+			}]
+		}
+	]
+}

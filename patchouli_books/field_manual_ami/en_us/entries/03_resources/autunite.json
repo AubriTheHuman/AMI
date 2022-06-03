@@ -1,0 +1,14 @@
+{
+  "name": "Autunite",
+  "icon": "amicore:autunite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Autunite",
+      "item": "amicore:autunite_ore",
+      "link_recipe": false,
+      "text": "Autunite spawns alongside Apatite in a smaller vein density, between Y 5 and 15. Autunite yields uranium. It is a rare vein"
+    }
+  ]
+}

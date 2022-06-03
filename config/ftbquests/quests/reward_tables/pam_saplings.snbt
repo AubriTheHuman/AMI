@@ -1,0 +1,58 @@
+{
+	id: "508507507F4A1AA1"
+	order_index: 2
+	title: "Pam Saplings"
+	icon: "pamhc2trees:apple_sapling"
+	loot_size: 1
+	rewards: [
+		{ item: "pamhc2trees:apple_sapling" }
+		{ item: "pamhc2trees:avocado_sapling" }
+		{ item: "pamhc2trees:candlenut_sapling" }
+		{ item: "pamhc2trees:cherry_sapling" }
+		{ item: "pamhc2trees:chestnut_sapling" }
+		{ item: "pamhc2trees:gooseberry_sapling" }
+		{ item: "pamhc2trees:lemon_sapling" }
+		{ item: "pamhc2trees:nutmeg_sapling" }
+		{ item: "pamhc2trees:orange_sapling" }
+		{ item: "pamhc2trees:peach_sapling" }
+		{ item: "pamhc2trees:pear_sapling" }
+		{ item: "pamhc2trees:plum_sapling" }
+		{ item: "pamhc2trees:walnut_sapling" }
+		{ item: "pamhc2trees:spiderweb_sapling" }
+		{ item: "pamhc2trees:hazelnut_sapling" }
+		{ item: "pamhc2trees:pawpaw_sapling" }
+		{ item: "pamhc2trees:soursop_sapling" }
+		{ item: "pamhc2trees:almond_sapling" }
+		{ item: "pamhc2trees:apricot_sapling" }
+		{ item: "pamhc2trees:banana_sapling" }
+		{ item: "pamhc2trees:cashew_sapling" }
+		{ item: "pamhc2trees:cinnamon_sapling" }
+		{ item: "pamhc2trees:coconut_sapling" }
+		{ item: "pamhc2trees:date_sapling" }
+		{ item: "pamhc2trees:dragonfruit_sapling" }
+		{ item: "pamhc2trees:durian_sapling" }
+		{ item: "pamhc2trees:fig_sapling" }
+		{ item: "pamhc2trees:grapefruit_sapling" }
+		{ item: "pamhc2trees:lime_sapling" }
+		{ item: "pamhc2trees:mango_sapling" }
+		{ item: "pamhc2trees:olive_sapling" }
+		{ item: "pamhc2trees:papaya_sapling" }
+		{ item: "pamhc2trees:paperbark_sapling" }
+		{ item: "pamhc2trees:pecan_sapling" }
+		{ item: "pamhc2trees:peppercorn_sapling" }
+		{ item: "pamhc2trees:persimmon_sapling" }
+		{ item: "pamhc2trees:pistachio_sapling" }
+		{ item: "pamhc2trees:pomegranate_sapling" }
+		{ item: "pamhc2trees:starfruit_sapling" }
+		{ item: "pamhc2trees:vanillabean_sapling" }
+		{ item: "pamhc2trees:breadfruit_sapling" }
+		{ item: "pamhc2trees:guava_sapling" }
+		{ item: "pamhc2trees:jackfruit_sapling" }
+		{ item: "pamhc2trees:lychee_sapling" }
+		{ item: "pamhc2trees:passionfruit_sapling" }
+		{ item: "pamhc2trees:rambutan_sapling" }
+		{ item: "pamhc2trees:tamarind_sapling" }
+		{ item: "pamhc2trees:maple_sapling" }
+		{ item: "pamhc2trees:pinenut_sapling" }
+	]
+}

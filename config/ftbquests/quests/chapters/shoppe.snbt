@@ -1,0 +1,204 @@
+{
+	id: "19C4253A3172B442"
+	group: "05AB46FBFC30BEB2"
+	order_index: 5
+	filename: "shoppe"
+	title: "AMI Shoppe"
+	icon: "amicore:amicoin"
+	subtitle: ["Spend your coins here!"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			title: "Vanilla Saplings"
+			icon: "minecraft:oak_sapling"
+			x: 1.0d
+			y: -0.5d
+			dependencies: ["77A465AFE409E041"]
+			hide: true
+			id: "2D04293087F416BE"
+			tasks: [{
+				id: "158FE1DB724BD848"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 5L
+			}]
+			rewards: [{
+				id: "3DEF1259F0224321"
+				type: "choice"
+				icon: "minecraft:oak_sapling"
+				table_id: 8675251055295471294L
+			}]
+		}
+		{
+			title: "Random Sapling"
+			icon: "byg:aspen_sapling"
+			x: 1.0d
+			y: 0.5d
+			dependencies: [
+				"5806BB37145D65D8"
+				"77A465AFE409E041"
+			]
+			hide: true
+			id: "140CEC3183058331"
+			tasks: [{
+				id: "74D49FC5E4B07858"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 5L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3FCD5F198DE906C7"
+				type: "random"
+				title: "Random Sapling"
+				table_id: 3058814192095194128L
+			}]
+		}
+		{
+			title: "Random Pam's Sapling"
+			x: 1.0d
+			y: 1.5d
+			dependencies: [
+				"5806BB37145D65D8"
+				"77A465AFE409E041"
+			]
+			hide: true
+			id: "7E384F0F4A961315"
+			tasks: [{
+				id: "3DF5963F41DC7662"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 5L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "177FA996114CB781"
+				type: "random"
+				table_id: 5802051737251093153L
+			}]
+		}
+		{
+			title: "Anvil Repair Kit"
+			icon: {
+				id: "amicore:anvil_repair"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.0d
+			y: -0.5d
+			dependencies: ["21C13592EC5EF07F"]
+			hide: true
+			id: "63E24ABDCF89C586"
+			tasks: [{
+				id: "33EA8DDAA9879883"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 3L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6F3CD4FEE23AC30D"
+				type: "item"
+				item: {
+					id: "amicore:anvil_repair"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Iron Cluster"
+			icon: "geolosys:iron_cluster"
+			x: 4.0d
+			y: -0.5d
+			dependencies: ["02A63DF4EE4CCC8B"]
+			id: "5E0F7AF7CC7E076B"
+			tasks: [{
+				id: "251EC27AF1516CDC"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 16L
+			}]
+			rewards: [{
+				id: "0F268065E8001163"
+				type: "item"
+				item: "geolosys:iron_cluster"
+				count: 64
+			}]
+		}
+		{
+			title: "Gold Cluster"
+			icon: "geolosys:gold_cluster"
+			x: 4.0d
+			y: 0.5d
+			dependencies: ["13795E051B8764E4"]
+			id: "59E033EB375EE7E6"
+			tasks: [{
+				id: "0C5CCBBD8F46F2CF"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 16L
+			}]
+			rewards: [{
+				id: "56F4216E75DF44AB"
+				type: "item"
+				item: "geolosys:gold_cluster"
+				count: 64
+			}]
+		}
+		{
+			title: "Copper Cluster"
+			icon: "geolosys:copper_cluster"
+			x: 4.0d
+			y: 1.5d
+			dependencies: ["02A63DF4EE4CCC8B"]
+			id: "016F9CFA18303E16"
+			tasks: [{
+				id: "59756F45215B381E"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 16L
+			}]
+			rewards: [{
+				id: "7AA2EB60C1D0794C"
+				type: "item"
+				item: "geolosys:copper_cluster"
+				count: 64
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			id: "68C78B44D11EBF0E"
+			tasks: [{
+				id: "03C1DB961B2BF91F"
+				type: "item"
+				item: "minecraft:ender_pearl"
+			}]
+		}
+		{
+			title: "Spirit Orb"
+			icon: "paraglider:spirit_orb"
+			x: -2.0d
+			y: 1.5d
+			dependencies: ["4F703FEFFBD2281F"]
+			id: "6C39A03F43E8889D"
+			tasks: [{
+				id: "7AAD73845222BCFE"
+				type: "item"
+				item: "amicore:amicoin_damascus"
+				count: 2L
+			}]
+			rewards: [{
+				id: "1EF6BAA7D9976420"
+				type: "item"
+				item: "paraglider:spirit_orb"
+			}]
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": 5,
+    "yMax": 15,
+    "size": 15,
+    "spread": 13,
+    "density": 1.0,
+    "dimensions": {
+      "isBlacklist": false,
+      "filter": [ "overworld" ]
+    },
+    "blocks": [{
+      "block": "amicore:beryl_ore",
+      "chance": 0.4
+    },{
+      "block": "amicore:aquamarine_ore",
+      "chance": 0.35
+    },{
+      "block": "amicore:red_beryl_ore",
+      "chance": 0.2
+    },{
+      "block": "amicore:wolframite_ore",
+      "chance": 0.05
+    }],
+    "samples": [{
+      "block": "amicore:beryl_ore_sample",
+      "chance": 1.0
+    }],
+    "generationWeight": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Sphalerite",
+  "icon": "amicore:sphalerite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Sphalerite",
+      "item": "amicore:sphalerite_ore",
+      "link_recipe": false,
+      "text": "Sphalerite spawns alongside Marmatite, Quartz, and Silvery Galena in a high vein density, between Y 15 and 40. Sphalerite and Marmatite both yield zinc. It is a common vein."
+    }
+  ]
+}

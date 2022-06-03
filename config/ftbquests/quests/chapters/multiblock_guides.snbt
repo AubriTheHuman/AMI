@@ -1,0 +1,412 @@
+{
+	id: "15F9FA96D53A953C"
+	group: "05AB46FBFC30BEB2"
+	order_index: 1
+	filename: "multiblock_guides"
+	title: "Multiblock Guides"
+	icon: "tconstruct:smeltery_controller"
+	subtitle: ["Lego Digital Designer"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Sitting Pool"
+			icon: "amicore:sitting_tank"
+			x: -3.0d
+			y: 1.5d
+			description: ["The sitting pool will allow fluids to settle over a period of time, yielding some waste water and precipitates."]
+			dependencies: ["69A375FA08932135"]
+			hide: true
+			dependency_requirement: "one_started"
+			id: "392883329960907C"
+			tasks: [
+				{
+					id: "4F457F2C058743D5"
+					type: "item"
+					item: "amicore:sitting_tank"
+				}
+				{
+					id: "3CCC4CE09CB8BC1B"
+					type: "item"
+					item: "amicore:sitting_pool_fluid_input"
+				}
+				{
+					id: "4167A4B5B32DD9F6"
+					type: "item"
+					item: "amicore:sitting_pool_fluid_output"
+				}
+				{
+					id: "6C3FF93E7985B200"
+					type: "item"
+					item: "amicore:sitting_pool_item_output"
+				}
+				{
+					id: "3CC71C0C534B4F56"
+					type: "item"
+					item: "create:copper_casing"
+					count: 84L
+				}
+				{
+					id: "294A70A7B6B6AE3E"
+					type: "item"
+					item: "createdeco:copper_sheet_metal"
+					count: 36L
+				}
+				{
+					id: "662852D48BCDC483"
+					type: "item"
+					item: "createdeco:copper_mesh_fence"
+					count: 6L
+				}
+				{
+					id: "6B5285E0C6A63131"
+					type: "item"
+					item: "create:fluid_pipe"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Coke Oven"
+			x: 0.5d
+			y: 1.5d
+			description: [
+				"Coke oven, makes cokes from various materials for use in blasting."
+				""
+				"It is built as a 3x3x3 cube"
+			]
+			dependencies: ["4905AAD2F59E5D3B"]
+			hide: true
+			dependency_requirement: "one_started"
+			id: "3B8339FF37C069BD"
+			tasks: [{
+				id: "7ECF1E0E2488A736"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+		}
+		{
+			title: "Crude Blast Furnace"
+			x: 0.5d
+			y: 2.5d
+			description: [
+				"The Crude Blast Furnace is a non-automatable version of the blast furnace. It is primarily used in the making of crude steel, and remains the main blasting method until actual steel is produced."
+				""
+				"It is built as a 3x3x3 cube."
+			]
+			dependencies: ["3761E493E26F7619"]
+			hide: true
+			dependency_requirement: "one_started"
+			id: "556BF2EF136CAF8E"
+			tasks: [{
+				id: "18E5391E116B1AEB"
+				type: "item"
+				item: "immersiveengineering:blastbrick"
+				count: 27L
+			}]
+		}
+		{
+			title: "Scorched Alloyer"
+			icon: "tconstruct:scorched_alloyer"
+			x: 4.0d
+			y: 2.5d
+			description: ["The scorched alloyer is a block that can only alloy materials, not melt them. It serves as the antithesis to the seared melter, and a supplementary for the foundry."]
+			dependencies: ["049708C77654DE48"]
+			hide: true
+			dependency_requirement: "one_started"
+			id: "18FD6D84EF8AEF7E"
+			tasks: [
+				{
+					id: "30E873A3B8E70F61"
+					type: "item"
+					item: "tconstruct:scorched_alloyer"
+				}
+				{
+					id: "7B696D1FEA542EC3"
+					type: "item"
+					item: "tconstruct:scorched_fuel_tank"
+				}
+			]
+		}
+		{
+			title: "Alloy Kiln"
+			x: 0.5d
+			y: 3.5d
+			description: [
+				"The Alloy Kiln can smelt 2 metal ingots into an alloy. Not super useful but still available."
+				""
+				"It is built as a 2x2x2 cube."
+			]
+			dependencies: ["0D2E2ABBC88BB2D1"]
+			hide: true
+			dependency_requirement: "one_started"
+			id: "7B6C651A22EA8132"
+			tasks: [{
+				id: "2FEE8468E3E0D01D"
+				type: "item"
+				item: "immersiveengineering:alloybrick"
+				count: 8L
+			}]
+		}
+		{
+			title: "The Foundry"
+			icon: "tconstruct:foundry_controller"
+			x: 4.0d
+			y: 1.5d
+			description: ["The Foundry is a variant to the smeltery, which cannot do alloying recipes. This is a plus and a benefit, depending on your needs. Its perfect for working with ores, but not so much working with the metals themselves."]
+			dependencies: ["3D250AE26140576E"]
+			hide: true
+			dependency_requirement: "one_started"
+			id: "721DEBCB2146F0FF"
+			tasks: [
+				{
+					id: "53233BD70DED4D05"
+					type: "item"
+					item: "tconstruct:foundry_controller"
+				}
+				{
+					id: "513BC1236F8D78C3"
+					type: "item"
+					item: "tconstruct:scorched_fuel_tank"
+				}
+				{
+					id: "5F7F48E9A33505E6"
+					type: "item"
+					item: "tconstruct:scorched_drain"
+				}
+				{
+					id: "0757289A0B387B3B"
+					type: "item"
+					item: "tconstruct:scorched_faucet"
+					count: 2L
+				}
+				{
+					id: "1E1E97E8CB3C309F"
+					type: "item"
+					item: "tconstruct:scorched_basin"
+				}
+				{
+					id: "536E46FA0D0A50A1"
+					type: "item"
+					item: "tconstruct:scorched_table"
+				}
+				{
+					id: "3632855E1EFA351A"
+					type: "item"
+					item: "tconstruct:scorched_bricks"
+					count: 18L
+				}
+			]
+		}
+		{
+			title: "The Smeltery"
+			icon: "tconstruct:smeltery_controller"
+			x: 3.0d
+			y: 2.5d
+			description: ["The Smeltery is the second tinker's multiblock. It serves to melt and alloy metals for use in toolmaking or general metalworking."]
+			dependencies: ["1DAED9FAE5E81F97"]
+			hide: true
+			dependency_requirement: "one_started"
+			id: "58088C2AB3AB787A"
+			tasks: [
+				{
+					id: "11018A42A1FCD1F8"
+					type: "item"
+					item: "tconstruct:smeltery_controller"
+				}
+				{
+					id: "715701F23CDAE3B1"
+					type: "item"
+					item: "tconstruct:seared_drain"
+				}
+				{
+					id: "2F115A2C1ACA9079"
+					type: "item"
+					item: "tconstruct:seared_fuel_tank"
+				}
+				{
+					id: "6A6CD51C8F178A52"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+					count: 2L
+				}
+				{
+					id: "5591DE5596D498AE"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+				{
+					id: "4F16C77C3F1983F4"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+				{
+					id: "77B82E6BC84E37B4"
+					type: "item"
+					item: "tconstruct:seared_bricks"
+					count: 18L
+				}
+			]
+		}
+		{
+			title: "Create"
+			icon: "create:wrench"
+			x: 0.5d
+			y: -2.0d
+			description: [
+				"While not all create machines are \"multiblocks\" in their nature. Most crafting machines are singular blocks, but require a depot, basin, or belt beneath it to act on."
+				""
+				"There are actual multiblocks, like the mechanical crafter, or the stone crushers."
+			]
+			dependencies: ["204456BFEBB9C5E7"]
+			hide: true
+			dependency_requirement: "one_started"
+			id: "3649D3E917400780"
+			tasks: [{
+				id: "201C345D7509FE8F"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Water Collector"
+			icon: "amicore:tank_valve"
+			x: -2.0d
+			y: 1.5d
+			description: ["The water collection tank will slowly generate 1 mb/t of water. Excellent for early steam power, but quickly can become outpaced by the factory's need."]
+			dependencies: ["07E1663074B67D38"]
+			hide: true
+			dependency_requirement: "one_started"
+			id: "542329070E290F25"
+			tasks: [
+				{
+					id: "372F8AF4148A3936"
+					type: "item"
+					item: "amicore:tank_valve"
+				}
+				{
+					id: "7C6F415C63CBFF00"
+					type: "item"
+					item: "amicore:tank_wall"
+					count: 26L
+				}
+				{
+					id: "3D96E37A37DB691F"
+					type: "item"
+					item: "minecraft:oak_log"
+					count: 4L
+				}
+				{
+					id: "539BFEB6656593F4"
+					type: "item"
+					item: "minecraft:smooth_stone_slab"
+					count: 9L
+				}
+			]
+		}
+		{
+			title: "Multiblocked Multiblocks"
+			icon: "multiblocked:multiblock_builder"
+			x: -2.5d
+			y: 0.0d
+			description: [
+				"This pack uses the mod \"Multiblocked\" mod for custom multiblock machines. They all operate simillarly. The logic is guided by a controller, and once placed, along with its associated structure, needs to be clicked with a create mod wrench to form."
+				""
+				"Many custom port blocks exist for various machines. They are non-permutable, meaning they only input or only output."
+				""
+				"The multiblock builder will automatically assemble a multiblock for the associated controller. (be careful to have it rotated properly before use, its quite unforgiving)"
+			]
+			dependencies: [
+				"07E1663074B67D38"
+				"69A375FA08932135"
+			]
+			hide: true
+			dependency_requirement: "one_started"
+			id: "6369ECC9736E3B3C"
+			tasks: [{
+				id: "261464FAF8E7A270"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "46950D54A6D82D1E"
+				type: "item"
+				item: "multiblocked:multiblock_builder"
+			}]
+		}
+		{
+			title: "Immersive Engineering Multiblocks"
+			icon: {
+				id: "immersiveengineering:hammer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.5d
+			y: 0.0d
+			description: [
+				"Immersive Engineering's multiblocks all share the same concept. Specific locations for i/o, and special models for everything."
+				""
+				"While you are probably only making the cubic machines at this time, they all require the engineer's hammer to form."
+			]
+			dependencies: ["4905AAD2F59E5D3B"]
+			hide: true
+			dependency_requirement: "one_started"
+			id: "6536895355603128"
+			tasks: [{
+				id: "5E2A06E7D743AE1F"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Item Sink"
+			x: -3.0d
+			y: 2.5d
+			hide: true
+			id: "40F61E53531DAED9"
+			tasks: [{
+				id: "7CEE00D312313E03"
+				type: "item"
+				item: "create_stuff_additions:quartz_crusher"
+			}]
+		}
+		{
+			title: "Tinker's Multiblocks"
+			icon: "tconstruct:mighty_smelting"
+			x: 3.5d
+			y: 0.0d
+			description: ["Tinkers only has a few multiblocks, but they are incredibly versatile and are required throughout all of AMI."]
+			dependencies: ["200FF97B4314F878"]
+			hide: true
+			dependency_requirement: "one_started"
+			id: "308E22CB49F4DF0D"
+			tasks: [{
+				id: "333CC2C5979CDE45"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Seared Melter"
+			icon: "tconstruct:seared_melter"
+			x: 3.0d
+			y: 1.5d
+			description: ["The Seared Melter is the first multiblock available for Tinkers. It may be small, but it is useful, and serves as the launch point for tinkers."]
+			dependencies: ["200FF97B4314F878"]
+			hide: true
+			dependency_requirement: "one_started"
+			id: "30CCA3E0F948EBAD"
+			tasks: [
+				{
+					id: "013C1698128DE4FE"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "68E08E459499357A"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+			]
+		}
+	]
+}

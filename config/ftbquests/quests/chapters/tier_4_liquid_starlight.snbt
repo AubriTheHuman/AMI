@@ -1,0 +1,481 @@
+{
+	id: "0BFAFF8C831E8EC2"
+	group: "280C159CD17D8CFF"
+	order_index: 4
+	filename: "tier_4_liquid_starlight"
+	title: "Tier 4: Liquid Starlight"
+	icon: "astralsorcery:liquid_starlight_bucket"
+	subtitle: ["Getting hot, careful not to burn your metals"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "476BBE8AA7DED3CB"
+			tasks: [{
+				id: "44F3427A9AA1339F"
+				type: "item"
+				item: "astralsorcery:liquid_starlight_bucket"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			id: "54C86A31C0B80F04"
+			tasks: [{
+				id: "261DE07213C18F41"
+				type: "item"
+				item: "meetyourfight:passages_toll"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			id: "0B47F4F99B14BF53"
+			tasks: [{
+				id: "72D0FF5B6DF1C531"
+				type: "item"
+				item: "astralsorcery:altar_discovery"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			id: "7D7513FFFBAEC93E"
+			tasks: [{
+				id: "173B9837FAA76FEF"
+				type: "item"
+				item: "minecraft:end_portal_frame"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			id: "1470FD989611A462"
+			tasks: [{
+				id: "4AE3F9F876A0A6AF"
+				type: "item"
+				item: "resourcefulbees:t1_beehive"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			id: "4076CA89CBA59689"
+			tasks: [{
+				id: "3D658A4578E8CE6A"
+				type: "item"
+				item: "resourcefulbees:centrifuge_controller"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			id: "585BDB7293E7FBF4"
+			tasks: [{
+				id: "7B1B11602535E04B"
+				type: "item"
+				item: "psi:psimetal"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			id: "496641A560768356"
+			tasks: [{
+				id: "4592A81F495EAA30"
+				type: "item"
+				item: "minecraft:milk_bucket"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			id: "3521A149C3C96B8C"
+			tasks: [{
+				id: "0EC6C33386A08E93"
+				type: "item"
+				item: "create:bar_of_chocolate"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			id: "38EBD86B33BA7EA3"
+			tasks: [{
+				id: "6FDB00EFC397638F"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			id: "27F2BB4D73174324"
+			tasks: [{
+				id: "5A23630F2D4FA931"
+				type: "item"
+				item: "minecraft:dragon_breath"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			id: "41318DAB7EADA3A2"
+			tasks: [{
+				id: "64B94A1AA4A3BC58"
+				type: "item"
+				item: "artisanworktables:workshop_basic"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			id: "56DB8969BDCD7B5F"
+			tasks: [{
+				id: "3195A354679432B2"
+				type: "item"
+				item: "artisanworktables:workshop_blacksmith"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.0d
+			id: "5B526B3E936D165C"
+			tasks: [{
+				id: "106079669885E9C3"
+				type: "item"
+				item: "artisanworktables:workshop_designer"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			id: "16103ECB9EF3DD8B"
+			tasks: [{
+				id: "4498EB61C1CF9763"
+				type: "item"
+				item: "artisanworktables:workshop_chemist"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			id: "610E158BB85D1966"
+			tasks: [{
+				id: "69AA6B03C74E26BF"
+				type: "item"
+				item: "artisanworktables:workshop_carpenter"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			id: "4B10D6DB92DE7AA4"
+			tasks: [{
+				id: "4D4DFB9363EAAC02"
+				type: "item"
+				item: "artisanworktables:workstation_mage"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			id: "36322A46DF64CAE7"
+			tasks: [{
+				id: "1F1AE494ECE85CE7"
+				type: "item"
+				item: "create:copper_ingot"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			id: "66613CA763EADEFF"
+			tasks: [{
+				id: "12766BBA8FA2D910"
+				type: "item"
+				item: "geolosys:zinc_ingot"
+			}]
+		}
+		{
+			title: "perks"
+			x: -3.5d
+			y: 0.0d
+			id: "2BBDF9AD3FF602DC"
+			tasks: [{
+				id: "7A2C2F50994C3E8E"
+				type: "item"
+				item: "astralsorcery:tome"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.0d
+			id: "4CCB12CA6985B7B5"
+			tasks: [{
+				id: "5DEAA4BFA91DA982"
+				type: "item"
+				item: "byg:pendorite_ingot"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			id: "0AFCF8EED30A56A2"
+			tasks: [{
+				id: "3964B0CB707ED89E"
+				type: "item"
+				item: "packagedauto:recipe_holder"
+			}]
+		}
+		{
+			title: "custom AS multiblock"
+			icon: {
+				id: "astralsorcery:rock_collector_crystal"
+				Count: 1b
+				tag: {
+					astralsorcery: {
+						constellation: "astralsorcery:fornax"
+						crystalProperties: {
+							attributes: [
+								{
+									property: "astralsorcery:size"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:purity"
+									pLevel: 2
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:shape"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:collector.rate"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:constellation.fornax"
+									pLevel: 2
+									discovered: 1b
+								}
+							]
+						}
+					}
+				}
+			}
+			x: -2.5d
+			y: -1.5d
+			id: "19D4346D833A29A7"
+			tasks: [{
+				id: "3EFA5B8922985FC6"
+				type: "item"
+				item: "ftbquests:custom_icon"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			id: "71FC51AFBDD8A5F2"
+			tasks: [{
+				id: "7884ACAC9971D76B"
+				type: "item"
+				item: "amicore:mv_circuit"
+			}]
+		}
+		{
+			title: "Lost cities adventure"
+			x: 3.0d
+			y: -3.0d
+			id: "101C7A898C8CA384"
+			tasks: [{
+				id: "0FC970D9F49D5A86"
+				type: "item"
+				item: "minecraft:chiseled_stone_bricks"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			id: "0764761A01CFAAFF"
+			tasks: [{
+				id: "35EF80B5A389DA22"
+				type: "item"
+				item: "amicore:chromium_ingot"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			id: "0FA981F840D6EA94"
+			tasks: [{
+				id: "1FD832C570462428"
+				type: "item"
+				item: "amicore:nichrome_ingot"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 5.0d
+			id: "5A043739BD74694A"
+			tasks: [{
+				id: "6A8DDA7C0E46575F"
+				type: "item"
+				item: "amicore:stainless_steel_ingot"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.5d
+			id: "531915C3882A299F"
+			tasks: [{
+				id: "2937E559F7E1A311"
+				type: "item"
+				item: "refinedpipes:basic_item_pipe"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			id: "3E09CA796B832758"
+			tasks: [{
+				id: "243DC169940F9120"
+				type: "item"
+				item: "create:electron_tube"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			id: "19CB39AEF49CDCAA"
+			tasks: [{
+				id: "4545E78950DBF142"
+				type: "item"
+				item: "immersiveengineering:connector_mv"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -3.0d
+			id: "079FDA4429D2A229"
+			tasks: [{
+				id: "2DE32FBFE188555F"
+				type: "item"
+				item: "moreminecarts:lightspeed_rail"
+			}]
+		}
+		{
+			title: "Natural Phosphorus"
+			x: 4.5d
+			y: -4.5d
+			id: "4AB2261D716CC327"
+			tasks: [{
+				id: "499F52E621501CB3"
+				type: "item"
+				item: "betterendforge:glowing_bulb"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -4.5d
+			id: "1D113AAC38C187A3"
+			tasks: [{
+				id: "661AA5F60411E2B1"
+				type: "item"
+				item: "betterendforge:silk_moth_nest"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -4.5d
+			id: "76D6C4A323DEDFDA"
+			tasks: [{
+				id: "48D59501EBA07B68"
+				type: "item"
+				item: "tconstruct:ender_slime_ball"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -3.0d
+			id: "009FFE1FCB0DAC4B"
+			tasks: [{
+				id: "33D12F35758477F6"
+				type: "item"
+				item: "minecraft:chorus_flower"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -1.5d
+			id: "5A9E0D98CD6221BD"
+			tasks: [{
+				id: "1437D0C3BE43CBE2"
+				type: "item"
+				item: "betterendforge:ancient_emerald_ice"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -1.5d
+			id: "3A571BD557556044"
+			tasks: [{
+				id: "38F00DCC99469F7A"
+				type: "item"
+				item: "betterendforge:aurora_crystal"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -1.5d
+			id: "3D46C8A2781CBAB7"
+			tasks: [{
+				id: "079BAFFA08D1B11B"
+				type: "item"
+				item: "byg:therium_crystal"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -3.0d
+			id: "13708447B8E7B529"
+			tasks: [{
+				id: "57D28B2D940BB65A"
+				type: "item"
+				item: "betterendforge:smaragdant_crystal_shard"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.5d
+			id: "333EA33A87E4E1A5"
+			tasks: [{
+				id: "4A461F207EAB640D"
+				type: "item"
+				item: "refinedpipes:basic_item_pipe"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			id: "619B72AD59A3BECB"
+			tasks: [{
+				id: "1AB15620DA4874F2"
+				type: "item"
+				item: "astralsorcery:starmetal_ingot"
+			}]
+		}
+	]
+}

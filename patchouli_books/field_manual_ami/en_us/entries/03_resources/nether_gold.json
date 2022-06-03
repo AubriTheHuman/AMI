@@ -1,0 +1,14 @@
+{
+  "name": "Nether Gold",
+  "icon": "amicore:nether_gold_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Nether Gold",
+      "item": "amicore:nether_gold_ore",
+      "link_recipe": false,
+      "text": "Nether Gold spawns alongside Ancient Debris and Pervaded netherrack in a high vein density, between Y 5 and 120 in the nether. It is quite common."
+    }
+  ]
+}

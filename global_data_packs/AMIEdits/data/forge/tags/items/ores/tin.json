@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "geolosys:tin_cluster",
+    "geolosys:cassiterite_ore",
+    "geolosys:teallite_ore"
+  ]
+}

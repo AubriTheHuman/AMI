@@ -1,0 +1,14 @@
+{
+  "name": "Lignite",
+  "icon": "amicore:lignite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Lignite",
+      "item": "amicore:lignite_ore",
+      "link_recipe": false,
+      "text": "Lignite spawns alongside Coal and Sulfur in a very high vein density, between Y 60 and 120. It is very common."
+    }
+  ]
+}

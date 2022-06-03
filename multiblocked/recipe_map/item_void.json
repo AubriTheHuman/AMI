@@ -1,0 +1,110 @@
+{
+  "name": "item_void",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "void_items",
+      "duration": 1,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "minecraft:dirt"
+              }
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "paraglider:spirit_orb"
+              }
+            },
+            "chance": 1.0E-4
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "malum:sacred_spirit"
+              }
+            },
+            "chance": 0.01
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "malum:wicked_spirit"
+              }
+            },
+            "chance": 0.01
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "malum:arcane_spirit"
+              }
+            },
+            "chance": 0.01
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "malum:eldritch_spirit"
+              }
+            },
+            "chance": 0.01
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "malum:earthen_spirit"
+              }
+            },
+            "chance": 0.01
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "malum:infernal_spirit"
+              }
+            },
+            "chance": 0.01
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "malum:aerial_spirit"
+              }
+            },
+            "chance": 0.01
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "malum:aquatic_spirit"
+              }
+            },
+            "chance": 0.01
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    }
+  ]
+}

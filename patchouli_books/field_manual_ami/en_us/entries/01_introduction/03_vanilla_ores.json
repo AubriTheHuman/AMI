@@ -1,0 +1,12 @@
+{
+  "name": "Vanilla Ores",
+  "icon": "minecraft:iron_ore",
+  "category": "patchouli:01_introduction",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "text",
+      "text": "All vanilla style ore generation is disabled with the exception of Malum Soul Stone ore, and Astral Sorcery Rock Crystal ore, which both function as default"
+    }
+  ]
+}

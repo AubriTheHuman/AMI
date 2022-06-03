@@ -1,0 +1,17 @@
+#Enable new biome specific gemstones.
+enable_gemstones = true
+#Enable dangerous blocks like thorny bushes, quicksand, etc.
+enable_dangerous_blocks = true
+#Enhance vanilla biomes by add new decoration.
+enhance_vanilla_biomes = true
+#Wandering trades will sell Generic Ecosphere saplings.
+wanderersTrades = true
+#Wandering trades will sell Generic Ecosphere items.
+villagerTrades = true
+#Biome variants will be generated, accompanying many biomes.
+subBiomes = true
+#Special island biomes will replace oceans on occasions.
+islandBiomes = true
+#River and beach biome variants will generate for realism.
+riverAndBeachBiomes = true
+

@@ -1,0 +1,14 @@
+{
+  "name": "Beryl",
+  "icon": "amicore:beryl_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Beryl",
+      "item": "amicore:beryl_ore",
+      "link_recipe": false,
+      "text": "Beryl spawns alongside Aquamarine, Red Beryl, and Wolframite in a low vein density, between Y 5 and 15. Both beryl ores yield emeralds. It is a rare vein. (not biome dependent)"
+    }
+  ]
+}

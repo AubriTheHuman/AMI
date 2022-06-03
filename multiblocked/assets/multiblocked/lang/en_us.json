@@ -1,0 +1,8 @@
+{
+  "block.amicore.sitting_tank": "Sitting Pool Controller",
+  "block.amicore.tank_valve": "Collection Tank Valve",
+  "block.amicore.sitting_pool_fluid_input": "Sitting Pool Fluid Inlet",
+  "block.amicore.sitting_pool_fluid_output": "Sitting Pool Fluid Outlet",
+  "block.amicore.sitting_pool_item_output": "Sitting Pool Item Outlet",
+  "block.multiblocked.multiblock_builder": "Multiblock Builder"
+}

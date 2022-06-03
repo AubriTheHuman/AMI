@@ -1,0 +1,14 @@
+{
+  "name": "Nether Debris",
+  "icon": "amicore:nether_debris_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Nether Debris",
+      "item": "amicore:nether_debris_ore",
+      "link_recipe": false,
+      "text": "Nether Debris spawns alongside Gold and Pervaded netherrack in a low vein density, between Y 5 and 120 in the nether. It is very rare."
+    }
+  ]
+}

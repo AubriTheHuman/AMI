@@ -1,0 +1,14 @@
+{
+  "name": "Chromite",
+  "icon": "amicore:chromite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Chromite",
+      "item": "amicore:chromite_ore",
+      "link_recipe": false,
+      "text": "Chromite spawns alongside Magnesiochromite and Hercynite in a medium vein density, between Y 5 and 15. Chromite yields chromium and Hercynite yields aluminum. It is a rare vein."
+    }
+  ]
+}

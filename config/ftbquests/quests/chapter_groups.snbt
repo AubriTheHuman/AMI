@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "280C159CD17D8CFF", title: "Main Questline" }
+		{ id: "05AB46FBFC30BEB2", title: "Extras" }
+		{ id: "3528E2F209CFDEE9", title: "Coming Soon" }
+	]
+}

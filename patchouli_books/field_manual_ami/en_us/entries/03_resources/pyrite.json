@@ -1,0 +1,14 @@
+{
+  "name": "Pyrite",
+  "icon": "amicore:pyrite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Pyrite",
+      "item": "amicore:pyrite_ore",
+      "link_recipe": false,
+      "text": "Pyrite spawns alongside Chalcopyrite, Sphalerite, and Quartz in a high vein density, between Y 10 and 40. Pyrite yields Iron, while chalcopyrite yields copper. It is an uncommon vein."
+    }
+  ]
+}

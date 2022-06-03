@@ -1,0 +1,29 @@
+{
+	id: "6432E1DE8CD51398"
+	group: "05AB46FBFC30BEB2"
+	order_index: 6
+	filename: "hall_of_fame"
+	title: "Hall of Fame"
+	subtitle: ["Where all the greatest acheivements go"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "Tier 0 100%"
+		icon: "minecraft:coal"
+		x: -4.0d
+		y: -0.5d
+		shape: "gear"
+		description: ["Good job! You've 100% completed this tier. Have a trophy and a nice sandwhich."]
+		dependencies: [
+			"4AC2742AC548FEA6"
+			"7613E3695CA74273"
+		]
+		hide: true
+		id: "1DA12CF0914F696F"
+		tasks: [{
+			id: "5911126B48B3A428"
+			type: "item"
+			item: "minecraft:spruce_sapling"
+		}]
+	}]
+}

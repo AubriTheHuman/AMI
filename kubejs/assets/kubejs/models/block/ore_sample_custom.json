@@ -1,0 +1,8 @@
+{
+    "parent": "kubejs:block/ore_sample_custom_geolosys_base",
+    "textures": {
+      "particle": "minecraft:block/gravel",
+      "ore": "kubejs:block/ore_custom",
+      "stone": "minecraft:block/gravel"
+    }
+  }

@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "artisantools:cutters_terminite",
+    "artisantools:hammer_terminite",
+    "artisantools:handsaw_terminite",
+    "artisantools:beaker_terminite",
+    "artisantools:burner_terminite",
+    "artisantools:pencil_terminite",
+    "artisantools:tsquare_terminite",
+    "artisantools:driver_terminite",
+    "artisantools:spanner_terminite",
+    "artisantools:chisel_terminite",
+    "artisantools:compass_terminite",
+    "artisantools:mortar_terminite",
+    "artisantools:knife_terminite",
+    "artisantools:file_terminite",
+    "artisantools:solderer_terminite"
+  ]
+}

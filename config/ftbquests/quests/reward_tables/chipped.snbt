@@ -1,0 +1,15 @@
+{
+	id: "3AE5FE6350B3C949"
+	order_index: 3
+	title: "Chipped"
+	icon: "ftbquests:barrier"
+	loot_size: 1
+	rewards: [
+		{ item: "chipped:glassblower" }
+		{ item: "chipped:carpenters_table" }
+		{ item: "chipped:loom_table" }
+		{ item: "chipped:mason_table" }
+		{ item: "chipped:alchemy_bench" }
+		{ item: "chipped:mechanist_workbench" }
+	]
+}

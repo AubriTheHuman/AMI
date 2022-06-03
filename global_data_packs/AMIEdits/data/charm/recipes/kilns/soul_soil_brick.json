@@ -1,0 +1,15 @@
+{
+  "type": "charm:firing",
+  "ingredient": {
+    "item": "kubejs:soul_soil_clay"
+  },
+  "result": "kubejs:soul_soil_brick",
+  "experience": 1,
+  "cookingtime": 200,
+  "conditions": [
+    {
+      "type": "charm:module_enabled",
+      "module": "charm:kilns"
+    }
+  ]
+}

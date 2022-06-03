@@ -1,0 +1,14 @@
+{
+  "name": "Gold",
+  "icon": "amicore:gold_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Gold",
+      "item": "amicore:gold_ore",
+      "link_recipe": false,
+      "text": "Gold spawns alongside Calaverite in a medium vein density, between Y 5 and 40. Gold and Calaverite both yield gold. It is somwhat common."
+    }
+  ]
+}

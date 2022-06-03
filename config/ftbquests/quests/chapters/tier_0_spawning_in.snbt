@@ -1,0 +1,3075 @@
+{
+	id: "5E1B2696C0048C30"
+	group: "280C159CD17D8CFF"
+	order_index: 0
+	filename: "tier_0_spawning_in"
+	title: "Tier 0: Spawning in"
+	icon: "minecraft:coal"
+	subtitle: ["Welcome to AMI!"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Punching Trees"
+			icon: "minecraft:oak_log"
+			x: -0.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "It's only fitting...."
+			description: [
+				"Welcome to the techincal start of Aubri's Magical Industries (AMI)! A \"quasi-hardcore\" Create based modpack."
+				""
+				"There's alot to do before you really get going. Chances are you'll find much of what you need for the pack exploring the wilderness. But fear not! I'll still be here to make sure you stay a bit on path."
+				""
+				"As for how the questbook will work, all tier starting and ending quests will be shaped as gears, with all main quests as squares and main line enders as diamonds. Side quests, or optional quests will be circular. I still highly recommend doing them as they offer useful tools and benefits later down the line."
+				""
+				"As your first task, youll need some wood."
+			]
+			hide: false
+			id: "044979F991978D36"
+			tasks: [{
+				id: "76EF27ABEDAC2009"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "3ED89DBB81E827C0"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "6A82FC9613B19F04"
+					type: "item"
+					item: "pamhc2foodcore:applepieitem"
+				}
+				{
+					id: "26655D697823610F"
+					type: "item"
+					item: "pamhc2foodcore:cheeseitem"
+				}
+			]
+		}
+		{
+			title: "Tinker's Power"
+			icon: {
+				id: "tconstruct:tinker_station"
+				Count: 1b
+				tag: {
+					texture: "chipped:oak_planks_1"
+				}
+			}
+			x: 4.0d
+			y: 0.5d
+			shape: "rsquare"
+			description: [
+				"To make these Flint tools you'll need to create a tool station and its counterparts."
+				""
+				"Your first patterns will be very inefficient to craft. Later tools can increase the amount made."
+			]
+			dependencies: [
+				"78D105B6CBFB10AD"
+				"3C57DD314905B1C3"
+			]
+			id: "613118AC3275A7EC"
+			tasks: [
+				{
+					id: "279876CEB3867806"
+					type: "item"
+					icon: {
+						id: "tconstruct:crafting_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_log"
+						}
+					}
+					item: {
+						id: "tconstruct:crafting_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:dark_oak_log"
+						}
+					}
+				}
+				{
+					id: "3C8C31A5CA3549DB"
+					type: "item"
+					item: {
+						id: "tconstruct:tinker_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+				{
+					id: "023EC21EC40D7C10"
+					type: "item"
+					item: {
+						id: "tconstruct:part_builder"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+				{
+					id: "30BEB46E9D668FFE"
+					type: "item"
+					item: "tconstruct:pattern"
+					count: 3L
+				}
+			]
+			rewards: [
+				{
+					id: "5E121B62BC6460CA"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "566F8EFE7A6D5D44"
+					type: "item"
+					item: "pamhc2foodcore:macncheeseitem"
+				}
+			]
+		}
+		{
+			title: "Saplings"
+			x: 0.5d
+			y: 2.5d
+			description: ["If you had the unfortunate luck of spawning away from any trees, saplings may be hard to come across, but if you bring me just one ill give you 16 in return."]
+			dependencies: ["7BDC3766EAA2631C"]
+			id: "0A12FAEA57A5524E"
+			tasks: [{
+				id: "34482AE0FCA803D5"
+				type: "item"
+				title: "Any #minecraft:saplings"
+				icon: "minecraft:oak_sapling"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:saplings"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "185E86CA7580DF5B"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "75F2BD62DF71DCB3"
+					type: "item"
+					item: "minecraft:oak_sapling"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Andesite Alloy"
+			x: 8.5d
+			y: 0.5d
+			shape: "circle"
+			description: [
+				"Your first alloy!"
+				""
+				"Andesite alloy will be a major component for the future, especially once create comes into play. Until then though it seems to be useful for several other things...."
+			]
+			dependencies: ["200FF97B4314F878"]
+			id: "51B62E01A62944E3"
+			tasks: [{
+				id: "104BDB9F8692CC2A"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 4L
+			}]
+			rewards: [{
+				id: "691584CCFFEC1239"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			description: [
+				"You might have noticed that foods have a unique taste. By eating a large variety of foods you can gain buffs."
+				""
+				"A lunchbag cycles what you eat as you eat it, helping you maintain these buffs longer."
+			]
+			dependencies: ["3ACC42F34BA35AD9"]
+			id: "300CEC0332E30EB6"
+			tasks: [{
+				id: "64794C5F86F24899"
+				type: "item"
+				item: {
+					id: "solpotato:lunchbag"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 5
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "67271F9669E7B172"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "6990B7548FB2E422"
+					type: "item"
+					item: "solpotato:food_book"
+				}
+				{
+					id: "4BA7BEBEE327C6E0"
+					type: "item"
+					item: "farmersdelight:sweet_berry_cookie"
+				}
+			]
+		}
+		{
+			title: "Antique Atlas"
+			x: 2.5d
+			y: -3.0d
+			description: ["An antique atlas can work as a substitute for minimaps. While there should be one in the top right of your screen, the atlas may serve as a cleaner way to make and manage waypoints. Especially for geolosys deposits you may want to come back to."]
+			dependencies: ["3ACC42F34BA35AD9"]
+			id: "7BDCF2AD3AD3A573"
+			tasks: [{
+				id: "7CDA2EE368D6F619"
+				type: "item"
+				item: "antiqueatlas:empty_antique_atlas"
+			}]
+			rewards: [{
+				id: "4EFCC61D60061F16"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "On a Boat"
+			x: 0.5d
+			y: 4.0d
+			description: ["Once you've explored far enough to reach the end of the continent you'll probably want a boat, or even just for a wide river or lake."]
+			dependencies: ["0A12FAEA57A5524E"]
+			id: "1D276853ADEB52A9"
+			tasks: [{
+				id: "5CBD2B2A5BFE2120"
+				type: "item"
+				title: "Any #minecraft:boats"
+				icon: "minecraft:oak_boat"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:boats"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6D0A062B94E8A3E6"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "3E473ACC4D24E230"
+					type: "item"
+					item: "farmersdelight:cooked_bacon"
+				}
+			]
+		}
+		{
+			title: "First Tools"
+			x: 1.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: [
+				"Vanilla tools do not work here in the world of AMI, well except those you can refine with tetra. "
+				""
+				"But to do that you'll need to get flint for Tinker's tools."
+			]
+			dependencies: ["044979F991978D36"]
+			id: "043E8FC39A0AECE1"
+			tasks: [{
+				id: "3182E3CF64613FAA"
+				type: "item"
+				item: "minecraft:flint"
+				count: 8L
+			}]
+			rewards: [{
+				id: "4CD35B00837B725A"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Metal"
+			icon: "amicore:iron_bar_stock"
+			x: 7.0d
+			y: -1.0d
+			shape: "rsquare"
+			description: [
+				"Yay! Iron!"
+				""
+				"Iron will be the strongest material you can work with until you aquire lava, However it will serve you quite well. It stays the main crafting component for a while so be sure to stock up on a fair bit."
+				""
+				"Note: Bar stock are different from ingots."
+			]
+			dependencies: ["200FF97B4314F878"]
+			id: "02A63DF4EE4CCC8B"
+			tasks: [
+				{
+					id: "20FEE33444BA2AD9"
+					type: "item"
+					item: "amicore:iron_bar_stock"
+					count: 4L
+				}
+				{
+					id: "17B114635211B31D"
+					type: "item"
+					item: "amicore:iron_ingot"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "0667AB8FD792F852"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "00AAD53B6505F909"
+					type: "item"
+					item: "minecraft:dark_oak_sapling"
+					count: 8
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -13.0d
+			shape: "diamond"
+			description: [
+				"Now that your tools are made from iron, try and find some diamonds. Maybe if youre lucky you already have!"
+				""
+				"To get the diamond from your ore, you need to hammer it, check JEI for the recipes. More advanced methods will become available later."
+			]
+			dependencies: [
+				"436DE3A2A09A04BA"
+				"07106EDF6F4D0649"
+			]
+			id: "1B1F62F5D30C1A63"
+			tasks: [{
+				id: "5813D2C694A2E3C1"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+			rewards: [
+				{
+					id: "04D82AE30106FEFD"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "12FC1FD3D8907DDF"
+					type: "item"
+					item: "pamhc2foodextended:datejellysandwichitem"
+				}
+				{
+					id: "40893FD3B4E92CC2"
+					type: "item"
+					item: "tetra:pristine_diamond"
+				}
+				{
+					id: "6B026854D88C6CC9"
+					type: "choice"
+					icon: "paraglider:anti_vessel"
+					table_id: 946083085323769434L
+				}
+			]
+		}
+		{
+			title: "Bounty Board (WIP)"
+			x: -4.5d
+			y: -2.0d
+			description: ["Speaking of robbing villages, find yourself a bounty board. While the rewards arent overwhelmingly good, periodically something useful may come along."]
+			dependencies: ["3C453753643763E0"]
+			id: "2DCAEB840B9166DB"
+			tasks: [{
+				id: "49F78CB28DB2E28F"
+				type: "item"
+				item: "bountiful:bountyboard"
+			}]
+			rewards: [
+				{
+					id: "1F483ABC0C4026AD"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "73BD1B5211BFEED4"
+					type: "item"
+					item: "pamhc2foodcore:chickennuggetitem"
+				}
+			]
+		}
+		{
+			title: "Walking About"
+			x: -2.0d
+			y: 0.5d
+			shape: "rsquare"
+			description: [
+				"Welcome to exploration half of Tier 0. Some quest trees can split like this one, but not all will."
+				""
+				"That said, if you want to settle down you'll likely want some seeds to grow crops. Breaking Pam's gardens will yield fruits and vegetables which can be converted to seeds. Or you can break grass for some."
+			]
+			dependencies: ["044979F991978D36"]
+			id: "4BE0F0CA62DC37A0"
+			tasks: [{
+				id: "4F2BCC49DBBBE65F"
+				type: "item"
+				title: "Any #forge:seeds"
+				icon: "minecraft:wheat_seeds"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:seeds"
+					}
+				}
+			}]
+			rewards: [{
+				id: "265514556F1ADE50"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -0.5d
+			description: ["Seed bags are a perfect tool to sow large areas. Now just to find a few rabbits..."]
+			dependencies: ["254D20348431674A"]
+			id: "46FE14B06B2E4B5C"
+			tasks: [{
+				id: "7C3CD306AC676D51"
+				type: "item"
+				item: {
+					id: "quark:seed_pouch"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "60699631D3FF6EDF"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "6E74894DBEC6E86C"
+					type: "item"
+					item: "farmersdelight:sweet_berry_cookie"
+				}
+			]
+		}
+		{
+			title: "Seared Melter"
+			icon: "tconstruct:seared_melter"
+			x: 7.0d
+			y: 0.5d
+			shape: "rsquare"
+			description: [
+				"The aforemention melter. This small little guy can do alot for you, and will be your main metalworker for a bit."
+				""
+				"To construct it, place the melter on top of the heater and supply it with fuel."
+			]
+			dependencies: ["0DF2F213F01F3201"]
+			id: "200FF97B4314F878"
+			tasks: [
+				{
+					id: "70DB5735163801A4"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "23C0F4BA73E0D2B1"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+				{
+					id: "433B3C89E7DB9EDB"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+					count: 2L
+				}
+				{
+					id: "03335A145A4934CD"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+				{
+					id: "047CA9EA1E73D585"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+			]
+			rewards: [
+				{
+					id: "04754B9EF095ECD5"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "3D71A7EA0FF91334"
+					type: "item"
+					item: "farmersdelight:hamburger"
+				}
+			]
+		}
+		{
+			title: "Iron Armor TODO"
+			icon: {
+				id: "minecraft:iron_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 6.0d
+			y: -11.5d
+			shape: "rsquare"
+			description: ["How was your first experience with metalworking? Quite a neat system. Some metalworking processes will need to be done this way, but dont worry, like anything else in this pack it can be automated down the line."]
+			dependencies: ["104CA3ED9F1F8CF9"]
+			id: "07106EDF6F4D0649"
+			tasks: [
+				{
+					id: "4EE39669E8F4A9F8"
+					type: "item"
+					item: {
+						id: "minecraft:iron_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "415CAB14273B405A"
+					type: "item"
+					item: {
+						id: "minecraft:iron_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "166E9638483F52F7"
+					type: "item"
+					item: {
+						id: "minecraft:iron_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "602C6778BF1AA9D9"
+					type: "item"
+					item: {
+						id: "minecraft:iron_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "1EB8BB9ED4C2F6FF"
+					type: "item"
+					item: "amicore:amicoin_starmetal"
+				}
+				{
+					id: "1173BB656D48204D"
+					type: "item"
+					item: "pamhc2foodextended:kiwijellysandwichitem"
+				}
+			]
+		}
+		{
+			icon: "minecraft:anvil"
+			x: 5.5d
+			y: -2.5d
+			shape: "circle"
+			description: [
+				"The anvil is an important tool for working with enchantments. While making some yourself is a bit out of reach, you should be able to loot some in chests around the world. With this you can utilize them on non-tetra or tinkers tools."
+				""
+				""
+			]
+			dependencies: ["08F9A99A5BB9C80D"]
+			id: "5B958C2BBB8A258A"
+			tasks: [{
+				id: "6563EFC676060FEA"
+				type: "item"
+				item: "minecraft:anvil"
+			}]
+			rewards: [
+				{
+					id: "3734D4E6FC5D593C"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "56FDF183E38547F2"
+					type: "item"
+					item: "pamhc2foodextended:grapefruitjellysandwichitem"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -4.0d
+			description: [
+				"A more portable form of the stonecutter. Quite the impressive tool actually. "
+				""
+				"It really is the actual modern day chisel. Except for the chisel itself."
+				""
+				"Craft it by smashing some components with an anvil."
+			]
+			dependencies: ["5B958C2BBB8A258A"]
+			id: "5A847C630310A268"
+			tasks: [{
+				id: "74A0A148E54DAC57"
+				type: "item"
+				item: "portable_stonecutter:portable_stonecutter"
+			}]
+			rewards: [
+				{
+					id: "67F94DCAB62D4387"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "601B89728971D935"
+					type: "item"
+					item: "pamhc2foodextended:figjellysandwichitem"
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			shape: "diamond"
+			description: [
+				"Fear not! Long range teleportation is now possible, thought it does cost a small amount of xp."
+				""
+				"These can be found often in the wild, atop towers and in villages. You can steal them to use as teleport points."
+			]
+			dependencies: ["77A465AFE409E041"]
+			id: "3C453753643763E0"
+			tasks: [{
+				id: "7FAE00AE379784A7"
+				type: "item"
+				title: "Waystone"
+				icon: "waystones:waystone"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "waystones:waystone"
+								Count: 1b
+							}
+							{
+								id: "waystones:mossy_waystone"
+								Count: 1b
+							}
+							{
+								id: "waystones:sandy_waystone"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "68346FACE19F4109"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "5932B47040F11262"
+					type: "choice"
+					icon: "paraglider:anti_vessel"
+					table_id: 946083085323769434L
+				}
+			]
+		}
+		{
+			title: "Warp Plates"
+			x: -3.5d
+			y: -2.5d
+			description: ["Warp Plates function as a 2-way teleport to specific locations. The two plates can be linked together and will instantly transport you to the other."]
+			dependencies: ["3C453753643763E0"]
+			id: "5780845FDE862B42"
+			tasks: [{
+				id: "4C7927177912D311"
+				type: "item"
+				item: "waystones:warp_plate"
+				count: 2L
+			}]
+			rewards: [
+				{
+					id: "4447E60BEBA60263"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "19113EBC75117395"
+					type: "item"
+					item: "pamhc2foodcore:chickendinneritem"
+				}
+			]
+		}
+		{
+			title: "Sleeping Bag"
+			icon: "comforts:sleeping_bag_white"
+			x: -3.5d
+			y: 2.0d
+			description: ["The night is pretty terrifying, Especially since on nights with a new moon you can't see at all. The ability to pass the night will help with that. The downside being you can't set your spawn yet."]
+			dependencies: ["77A465AFE409E041"]
+			id: "681C30C843116DF4"
+			tasks: [{
+				id: "7D3E36CFBBDA3281"
+				type: "item"
+				title: "Sleeping Bag"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "comforts:sleeping_bag_white"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_light_gray"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_gray"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_black"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_brown"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_red"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_orange"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_yellow"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_lime"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_green"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_light_blue"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_cyan"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_blue"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_purple"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_magenta"
+								Count: 1b
+							}
+							{
+								id: "comforts:sleeping_bag_pink"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "7B23CBE79467D2B4"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Storage Drawers"
+			icon: "storagedrawers:oak_full_drawers_1"
+			x: 11.5d
+			y: -0.5d
+			description: ["Storage drawers are a more elegant solution to mass amounts of specific items. Allowing compression of several stacks into one space."]
+			dependencies: ["7315AB7B1AAAC973"]
+			id: "3CD2D5EB4278DD93"
+			tasks: [{
+				id: "771727F0BCEA5036"
+				type: "item"
+				title: "Storage Drawer"
+				icon: "storagedrawers:oak_full_drawers_1"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "0C4EF3D179633CC6"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "7A3896853EC921D1"
+					type: "item"
+					item: "farmersdelight:beef_stew"
+				}
+			]
+		}
+		{
+			title: "Chests"
+			icon: "minecraft:chest"
+			x: 2.5d
+			y: 2.5d
+			description: ["Item storage is important and thus are chests. Crafting a few of these to store your items will be very useful!"]
+			dependencies: ["7BDC3766EAA2631C"]
+			id: "16CD9AFB43DB141B"
+			tasks: [{
+				id: "01719133DC2437BB"
+				type: "item"
+				title: "Any #forge:chests/wooden"
+				icon: "minecraft:chest"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:chests"
+					}
+				}
+				count: 2L
+				consume_items: false
+			}]
+			rewards: [{
+				id: "4C7741BBB8890440"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Tetra"
+			x: 3.5d
+			y: 2.0d
+			description: [
+				"Now that you have basic tinker's tools, you have the option to transition to tetra for your tool needs."
+				""
+				"If so, youll need to make a tetra hammer from wood. I'll give you a materials guide to help decide what works best. To get started, right click a crafting table with the hammer to make a tetra workbench."
+				""
+				"Also, tinkers does not have ranged weapons, so for custom ranged weapons tetra works best."
+			]
+			dependencies: ["613118AC3275A7EC"]
+			id: "2FF43B74F798DB72"
+			tasks: [{
+				id: "6F9F0B3670566BE0"
+				type: "advancement"
+				title: "Wooden Hammer"
+				icon: {
+					id: "tetra:modular_double"
+					Count: 1b
+					tag: {
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/basic_hammer_left"
+						"double/head_right": "double/basic_hammer_right"
+						id: "b9cbcf74-ff10-47dc-8c01-bc709049a6a6"
+						"double/basic_hammer_right_material": "basic_hammer/oak"
+						Damage: 0
+						"double/basic_handle_material": "basic_handle/stick"
+						"double/basic_hammer_left_material": "basic_hammer/oak"
+					}
+				}
+				advancement: "tetra:upgrades/root"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "22A0EBEFF14ED7A7"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "685369709C21B0C6"
+					type: "item"
+					item: {
+						id: "tetra:holo"
+						Count: 1b
+						tag: {
+							"holo/core_material": "frame/dim"
+							"holo/frame": "holo/frame"
+							"holo/core": "holo/core"
+							"holo/frame_material": "core/ancient"
+						}
+					}
+				}
+				{
+					id: "4072BA556CF97A87"
+					type: "item"
+					item: "pamhc2foodcore:basichamburgeritem"
+				}
+			]
+		}
+		{
+			title: "Saplings"
+			x: -3.5d
+			y: 0.5d
+			shape: "rsquare"
+			description: ["Alongside some seeds, a nice fruit tree would work great for some early food."]
+			dependencies: ["4BE0F0CA62DC37A0"]
+			id: "77A465AFE409E041"
+			tasks: [{
+				id: "33C17105F3C2B380"
+				type: "item"
+				item: "pamhc2trees:apple_sapling"
+			}]
+			rewards: [{
+				id: "4B4AF13450797525"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Flying High"
+			icon: {
+				id: "tconstruct:earth_slime_sling"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.5d
+			y: -2.0d
+			subtitle: "But not too high..."
+			description: [
+				"Slime slings are a great way to travel far and fast. While other variants exist, the green slime sling is what we're looking for here."
+				""
+				"Unfortunately slime boots are a little more advanced, so be careful launching yourself."
+			]
+			dependencies: ["3C453753643763E0"]
+			id: "74FA88F4F6F2B6B4"
+			tasks: [{
+				id: "3BD08B708B7644FD"
+				type: "item"
+				title: "Slime Sling"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:slimeslings"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "2B9EA98300D4B7C6"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "12F0AA83A0F9DF09"
+					type: "item"
+					item: "pamhc2foodextended:garlicchickenitem"
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: -9.0d
+			description: [
+				"By fashioning 3 plates, 2 screws, and a rod together you can craft a bucket. These will be especially necessary once you reach the next tier."
+				""
+				""
+			]
+			dependencies: ["3C9F518B25E5592B"]
+			id: "0BDA866B4708F9B2"
+			tasks: [{
+				id: "378EAF35D5F0140C"
+				type: "item"
+				item: "minecraft:bucket"
+			}]
+			rewards: [
+				{
+					id: "1D1AD5463749B937"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "20DB6EB437E118EA"
+					type: "item"
+					item: "pamhc2foodextended:cantaloupejellysandwichitem"
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 0.5d
+			description: [
+				"A stonecutter for all your stonecutting needs. Almost the modern day chisel."
+				""
+				"This should help with decoration."
+			]
+			dependencies: ["51B62E01A62944E3"]
+			id: "4EE5D9E37AA454D7"
+			tasks: [{
+				id: "1AE2A94359E76C4F"
+				type: "item"
+				item: "minecraft:stonecutter"
+			}]
+			rewards: [{
+				id: "2FABC9962D3F4474"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Stone Hammer"
+			x: 3.5d
+			y: 3.5d
+			description: ["The first step towards stone tools, having this lets you make tier 2 tools."]
+			dependencies: ["2FF43B74F798DB72"]
+			id: "19D79AEDC8D9ABB4"
+			tasks: [{
+				id: "3CD1E037D4CD326A"
+				type: "advancement"
+				title: "Stone Hammer"
+				icon: {
+					id: "tetra:modular_double"
+					Count: 1b
+					tag: {
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/basic_hammer_left"
+						"double/head_right": "double/basic_hammer_right"
+						id: "357a4062-1841-4303-8ce0-d6a6fa651532"
+						"double/basic_hammer_right_material": "basic_hammer/stone"
+						Damage: 0
+						"double/basic_handle_material": "basic_handle/stick"
+						"double/basic_hammer_left_material": "basic_hammer/stone"
+					}
+				}
+				advancement: "tetra:upgrades/hammer_2"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "72A7D7EE9CEB0E1F"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "7672FCB7DB1CE03B"
+					type: "item"
+					item: "farmersdelight:beef_patty"
+				}
+			]
+		}
+		{
+			title: "Iron Hammer"
+			x: 3.5d
+			y: 5.0d
+			description: ["The highest hammer you can make for now, later you can make a better one."]
+			dependencies: ["19D79AEDC8D9ABB4"]
+			id: "3B04AE6C723632EC"
+			tasks: [{
+				id: "0384CEF6A56443C3"
+				type: "advancement"
+				title: "Iron Hammer"
+				icon: {
+					id: "tetra:modular_double"
+					Count: 1b
+					tag: {
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/basic_hammer_left"
+						"double/head_right": "double/basic_hammer_right"
+						id: "727413e8-9e43-422a-97e0-368c2705b869"
+						"double/basic_hammer_right_material": "basic_hammer/iron"
+						Damage: 0
+						"double/basic_handle_material": "basic_handle/spruce"
+						"double/basic_hammer_left_material": "basic_hammer/iron"
+					}
+				}
+				advancement: "tetra:upgrades/hammer_3"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "4CC13F3B64F90C89"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "53DAF809A5F0967B"
+					type: "item"
+					item: "pamhc2foodcore:potatosoupitem"
+				}
+			]
+		}
+		{
+			title: "Farm Animals"
+			icon: "minecraft:leather"
+			x: -5.0d
+			y: 0.5d
+			description: [
+				"During your travels you may have come across some animals. Bringing some home and breeding them will assist with your need for food."
+				""
+				"Or just go on a murder spree I don't judge."
+			]
+			dependencies: ["77A465AFE409E041"]
+			id: "254D20348431674A"
+			tasks: [
+				{
+					id: "2BAED828E7A33D30"
+					type: "item"
+					item: "minecraft:leather"
+					count: 24L
+				}
+				{
+					id: "336DE98DA53B28DF"
+					type: "item"
+					item: "minecraft:beef"
+					count: 24L
+				}
+				{
+					id: "1890ECEABC50CF53"
+					type: "item"
+					item: "minecraft:porkchop"
+					count: 24L
+				}
+				{
+					id: "32133C61FF955D42"
+					type: "item"
+					item: "minecraft:white_wool"
+					count: 24L
+				}
+				{
+					id: "14590D7E06C774B0"
+					type: "item"
+					item: "minecraft:mutton"
+					count: 24L
+				}
+				{
+					id: "3A8C2E0296D367F1"
+					type: "item"
+					item: "minecraft:chicken"
+					count: 24L
+				}
+				{
+					id: "5021A62B84457861"
+					type: "item"
+					item: "minecraft:feather"
+					count: 24L
+				}
+			]
+			rewards: [
+				{
+					id: "5A22AA6DA57B1FA0"
+					type: "item"
+					item: "amicore:amicoin_starmetal"
+				}
+				{
+					id: "61497CCEECB4E29E"
+					type: "item"
+					item: "farmersdelight:steak_and_potatoes"
+				}
+			]
+		}
+		{
+			title: "Bed"
+			x: 4.5d
+			y: -8.5d
+			description: [
+				"Crafting a bed will require some bolts. "
+				""
+				"With this you can actually set a spawnpoint."
+			]
+			dependencies: ["347AB6442F84A933"]
+			id: "6084730C629B53AD"
+			tasks: [{
+				id: "728FF0A416C3F0F6"
+				type: "item"
+				title: "Any #minecraft:beds"
+				icon: "minecraft:red_bed"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:beds"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "055ABF28FB52DA56"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "5BB43FCD857001CA"
+					type: "item"
+					item: "pamhc2foodcore:cookiesandmilkitem"
+				}
+			]
+		}
+		{
+			title: "Sugarcane"
+			x: 2.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["Sugarcane is needed to make paper, among some other things. But you need to find a few first."]
+			dependencies: ["043E8FC39A0AECE1"]
+			id: "3C57DD314905B1C3"
+			tasks: [{
+				id: "731A59B975CA5ED5"
+				type: "item"
+				item: "minecraft:sugar_cane"
+				count: 3L
+			}]
+			rewards: [{
+				id: "0CD4D82310CD0FE7"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Wacky Wonderful Coins!"
+			icon: "amicore:amicoin_starmetal"
+			x: -1.0d
+			y: -1.0d
+			description: [
+				"As you progress through this pack you will recieve Amicoin (meaning AMI coins). These can be spent in the shop tab for some extra items, or if certain things cannot be found in the world."
+				""
+				"Spend them, it will help your playthough a TON!"
+			]
+			dependencies: ["044979F991978D36"]
+			id: "65DDE42B97822913"
+			tasks: [{
+				id: "73AC931F67E17D0B"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+			rewards: [
+				{
+					id: "6CAE0353989C3F51"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "55ABDB55E6C04F8C"
+					type: "item"
+					item: {
+						id: "naturescompass:naturescompass"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: 0.5d
+			description: [
+				"Ah yes, the backpack. A hallmark of modded minecraft. These backpacks can be upgraded to 4 higher tiers of storage as well as accepting other upgrades. Once you have some more iron you should come back here and upgrade your pack."
+				""
+				"Fun Fact: you can place the backpack in the back slot of the curios inventory. Then hitting 'b' (default) will open it."
+			]
+			dependencies: ["254D20348431674A"]
+			id: "5FF4E122D404A9BC"
+			tasks: [{
+				id: "5F213EB8ED57EC80"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
+			}]
+			rewards: [
+				{
+					id: "05A10A8C3EA950A4"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "26BC50B79BF08331"
+					type: "item"
+					item: "minecraft:cookie"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			shape: "rsquare"
+			description: ["A crafting table is integral for any good minecraft playthrough, so go ahead and make one!"]
+			dependencies: ["044979F991978D36"]
+			id: "7BDC3766EAA2631C"
+			tasks: [{
+				id: "473C849FD508981B"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+			rewards: [
+				{
+					id: "683174685E2F4D46"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "197BD1308AEE870D"
+					type: "item"
+					item: "pamhc2foodextended:walnutbutteritem"
+				}
+			]
+		}
+		{
+			title: "Mob Parts"
+			icon: "minecraft:string"
+			x: 2.5d
+			y: 1.0d
+			shape: "rsquare"
+			description: [
+				"By this point it may or may not be nightime, to progress you'll need the sun to set since string is ultra important. "
+				""
+				"Finding 4 should be alright. Plus a few other bits for good measure."
+			]
+			dependencies: ["7BDC3766EAA2631C"]
+			id: "78D105B6CBFB10AD"
+			tasks: [
+				{
+					id: "1009AC7464B52E68"
+					type: "item"
+					item: "minecraft:string"
+					count: 4L
+				}
+				{
+					id: "1B037D632C344A44"
+					type: "item"
+					item: "minecraft:rotten_flesh"
+					count: 4L
+				}
+				{
+					id: "3C4A6335AEC6A4CC"
+					type: "item"
+					item: "minecraft:bone"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "2CECD66A0F21160D"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "416FF672E5B1D8AB"
+					type: "item"
+					item: "pamhc2foodcore:epicbaconitem"
+				}
+			]
+		}
+		{
+			title: "Grout"
+			icon: "tconstruct:grout"
+			x: 5.5d
+			y: 0.5d
+			shape: "rsquare"
+			description: [
+				"Next step in improving your tools is to make a small melter, a major smeltery is not yet required."
+				""
+				"Neither the smeltery nor the melter will multiply your ores, but to make one you need the other. That said the melter will cover your needs for the near future."
+				""
+				"Note: If you cannot find clay near your spawn, you can make it using sand, water and a mortar in a basic worktable."
+			]
+			dependencies: ["613118AC3275A7EC"]
+			id: "0DF2F213F01F3201"
+			tasks: [
+				{
+					id: "3DD10223826C0889"
+					type: "item"
+					item: "tconstruct:grout"
+					count: 36L
+				}
+				{
+					id: "10A93BAF76DAB9FD"
+					type: "item"
+					item: "tconstruct:seared_brick"
+					count: 36L
+				}
+			]
+			rewards: [{
+				id: "0865E1EAD924BAC2"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 2.5d
+			description: [
+				"The classic calculator, NOW WITH JEI!"
+				""
+				"The bottom right button in the gui should help explain how to use this. Otherwise just click an item out of jei and place it into the top left slot to start."
+			]
+			dependencies: ["0C246EC3E6AF074A"]
+			id: "223EC940CB68EA5C"
+			tasks: [{
+				id: "448693FE277F8FD1"
+				type: "item"
+				item: "jecalculation:item_calculator_craft"
+			}]
+			rewards: [
+				{
+					id: "629D2905273FC1DE"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "460B4E0713038AEC"
+					type: "item"
+					item: "amicore:chicken_cheese"
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 1.5d
+			description: ["In the future you may find yourself making large amounts of items, or having to figure out how much of an item you need to make. Well fear not! You no longer need to tab out and look at that calculator. "]
+			dependencies: ["51B62E01A62944E3"]
+			id: "0C246EC3E6AF074A"
+			tasks: [{
+				id: "29D469C1D98AA502"
+				type: "item"
+				item: "jecalculation:item_calculator_math"
+			}]
+			rewards: [{
+				id: "114B9A7E2BD92E46"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Other Furnaces"
+			icon: "minecraft:smoker"
+			x: 1.5d
+			y: 4.0d
+			description: [
+				"There are 3 main variants for the furnace, all with their own benefits and perks. Only 2 can be crafted right now."
+				""
+				"Kiln: Great for glass and bricks"
+				""
+				"Smoker: Designed for Food"
+			]
+			dependencies: ["43592213F83AB465"]
+			id: "65BD7C5787772848"
+			tasks: [
+				{
+					id: "7FD589A3A1BE2BF3"
+					type: "item"
+					item: "charm:kiln"
+				}
+				{
+					id: "01993A63BE6F1248"
+					type: "item"
+					item: "minecraft:smoker"
+				}
+			]
+			rewards: [
+				{
+					id: "0F7AC15F3338053C"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "656CF84AC083346E"
+					type: "item"
+					item: "minecraft:rabbit_stew"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 2.5d
+			description: ["A pretty necessary item, but still rewarding to acquire. This will make plenty of charcoal and some early smelts for you."]
+			dependencies: ["7BDC3766EAA2631C"]
+			id: "43592213F83AB465"
+			tasks: [{
+				id: "7E1733AEBF4B2DA0"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+			rewards: [
+				{
+					id: "38756A388FFE7D4D"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "49F5F0B0A5D2CE6B"
+					type: "item"
+					item: "farmersdelight:mutton_chops"
+				}
+			]
+		}
+		{
+			title: "Iron Plate"
+			x: 8.0d
+			y: -5.5d
+			shape: "rsquare"
+			description: ["Metal sheets are a backbone of many crafting recipes. These will make up a large amount of your crafting materials."]
+			dependencies: ["1BA932B65B4335EB"]
+			id: "51F9664F60510814"
+			tasks: [{
+				id: "6B2F6A4847F2057A"
+				type: "item"
+				title: "Iron Plate"
+				icon: "amicore:iron_plate"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:plates/iron"
+					}
+				}
+			}]
+			rewards: [{
+				id: "217A2E1B8B2430CC"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Tinker's Upgrade"
+			icon: {
+				id: "tconstruct:pickaxe_head"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:iron"
+				}
+			}
+			x: 8.0d
+			y: -11.5d
+			shape: "rsquare"
+			description: ["Now that you have access to iron, go ahead and upgrade your tools."]
+			dependencies: ["104CA3ED9F1F8CF9"]
+			id: "436DE3A2A09A04BA"
+			tasks: [
+				{
+					id: "27768D2D7584E00C"
+					type: "item"
+					item: {
+						id: "tconstruct:pickaxe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:iron"
+						}
+					}
+				}
+				{
+					id: "0FA3591AAF657741"
+					type: "item"
+					item: {
+						id: "tconstruct:small_axe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:iron"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "67955D9B40DB6C4A"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "0F22AA48ABAB2D7E"
+					type: "item"
+					item: "pamhc2foodextended:cherryjellysandwichitem"
+				}
+				{
+					id: "7675BF186399742E"
+					type: "item"
+					item: "minecraft:compass"
+				}
+			]
+		}
+		{
+			title: "Iron Rod"
+			icon: "amicore:iron_rod"
+			x: 6.0d
+			y: -5.5d
+			shape: "rsquare"
+			description: ["Metal rods are a crafting ingredient, but can be worked further for smaller parts."]
+			dependencies: ["1BA932B65B4335EB"]
+			id: "791F18326EE6AD52"
+			tasks: [{
+				id: "4C372F14FD5C6C28"
+				type: "item"
+				title: "Iron Rod"
+				icon: "amicore:iron_rod"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:rods/iron"
+					}
+				}
+			}]
+			rewards: [{
+				id: "60D658E81D7E7DF5"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Forge"
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "custommachinery:forge_furnace"
+				}
+			}
+			x: 7.0d
+			y: -4.0d
+			shape: "rsquare"
+			description: [
+				"Using a Forge, you can heat metal ingots, bars, or other components up for forging. The Forge can only be used to heat metals to a malleable temperature."
+				""
+				"Setup the Forge by placing the bellows on any side of the block. Then fuel it with charcoal or tiny charcoals to heat items. Make sure you have tongs in you hand slot when working with hot metals!"
+				""
+				"If you feel you've heated too much metal, right clicking on a cauldron with water will cool it down without trouble."
+			]
+			dependencies: ["08F9A99A5BB9C80D"]
+			id: "1BA932B65B4335EB"
+			tasks: [
+				{
+					id: "26AE7B3A6600D97B"
+					type: "item"
+					icon: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "custommachinery:forge_furnace"
+						}
+					}
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "custommachinery:forge_furnace"
+						}
+					}
+				}
+				{
+					id: "08464B8D725F2C26"
+					type: "item"
+					item: "supplementaries:bellows"
+				}
+				{
+					id: "078B05B46BA1D1C5"
+					type: "item"
+					item: "minecraft:cauldron"
+				}
+				{
+					id: "57C6270C139E372B"
+					type: "item"
+					item: "amicore:iron_heated_ingot"
+				}
+				{
+					id: "565DAEDCF74392EE"
+					type: "item"
+					item: {
+						id: "amicore:metal_tongs"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "2B5DBC0C90A1FFA0"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "726CFAB7619D8C92"
+					type: "item"
+					item: "pamhc2foodextended:melonjellysandwichitem"
+				}
+			]
+		}
+		{
+			title: "Iron Bolt"
+			x: 6.0d
+			y: -8.5d
+			shape: "rsquare"
+			description: [
+				"The rod can be cold hammered into some bolts for use in crafting. Also nuggets can be cold worked into bolts."
+				""
+				"Bolts are often used in the secondary ingredient slot for crafting, so best to keep a small amount around."
+			]
+			dependencies: ["5A5C139EA9D11174"]
+			id: "347AB6442F84A933"
+			tasks: [{
+				id: "689C68ACC07A338E"
+				type: "item"
+				item: "amicore:iron_bolt"
+			}]
+			rewards: [{
+				id: "581DCA93A6DE08B6"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Rounded Iron Plate"
+			x: 8.0d
+			y: -8.5d
+			shape: "rsquare"
+			description: ["A plate can be cold hammered into a crescent shape. Useful for armor and some tool pieces."]
+			dependencies: ["5A5C139EA9D11174"]
+			id: "3C9F518B25E5592B"
+			tasks: [{
+				id: "538D2AB7D3F7173F"
+				type: "item"
+				item: "amicore:iron_round_sheet"
+			}]
+			rewards: [{
+				id: "45BF8B779DFF7DE0"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Storage Options"
+			icon: "minecraft:iron_block"
+			x: 5.5d
+			y: -1.0d
+			description: [
+				"Blocks and cakes are great ways to store your metals. Since you cant directly cast most metals to parts."
+				""
+				"Blocks primarily exist for crafting, while cakes are meant for making other intermediary parts, blocks are used less often."
+			]
+			dependencies: ["02A63DF4EE4CCC8B"]
+			id: "2C6C1450770AFA6E"
+			tasks: [
+				{
+					id: "12B0BEA51E1D69D7"
+					type: "item"
+					item: "minecraft:iron_block"
+				}
+				{
+					id: "2D9144D4799EC78E"
+					type: "item"
+					item: "amicore:iron_cake"
+				}
+			]
+			rewards: [
+				{
+					id: "33A6D2AD630A916F"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "104D7A1D6F84344D"
+					type: "item"
+					item: "pamhc2foodextended:tomatosoupitem"
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -10.0d
+			shape: "rsquare"
+			description: ["The smithing table can be used to combine certain parts to make more complex items. Some still require many parts and such will require a crafting table."]
+			dependencies: [
+				"347AB6442F84A933"
+				"3C9F518B25E5592B"
+				"1B5AAA6F8FE0FB85"
+			]
+			id: "104CA3ED9F1F8CF9"
+			tasks: [{
+				id: "25E239DAE79938EB"
+				type: "item"
+				item: "minecraft:smithing_table"
+			}]
+			rewards: [{
+				id: "062DA274B3B6F5E2"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			icon: "minecraft:coal"
+			x: 1.0d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "Check!"
+			description: ["Congrats! You've sucessfully completed the first section of AMI! Or at least just the main questlines. Feel free to do the optional quests as well to get the 100% acheivement for this tier! "]
+			hide_dependency_lines: true
+			dependencies: [
+				"3C453753643763E0"
+				"104CA3ED9F1F8CF9"
+				"77A465AFE409E041"
+				"4BE0F0CA62DC37A0"
+				"043E8FC39A0AECE1"
+				"7BDC3766EAA2631C"
+				"78D105B6CBFB10AD"
+				"3C57DD314905B1C3"
+				"613118AC3275A7EC"
+				"46944569A10BFA6C"
+				"0DF2F213F01F3201"
+				"200FF97B4314F878"
+				"02A63DF4EE4CCC8B"
+				"1BA932B65B4335EB"
+				"791F18326EE6AD52"
+				"51F9664F60510814"
+				"3C9F518B25E5592B"
+				"347AB6442F84A933"
+				"044979F991978D36"
+				"436DE3A2A09A04BA"
+				"07106EDF6F4D0649"
+				"1B1F62F5D30C1A63"
+				"1B5AAA6F8FE0FB85"
+				"12A12E206A8FDD23"
+				"08F9A99A5BB9C80D"
+				"5A5C139EA9D11174"
+				"75489C7150DD17A2"
+				"2436D64CF4AE1B2E"
+				"149B0A1CFF575A0D"
+			]
+			hide: true
+			id: "7613E3695CA74273"
+			tasks: [{
+				id: "168268C82B5C0B71"
+				type: "checkmark"
+				title: "Tier 0 Complete!"
+			}]
+			rewards: [
+				{
+					id: "212895729A0F9840"
+					type: "item"
+					item: "amicore:amicoin_starmetal"
+				}
+				{
+					id: "544B65E7D4BBEDD3"
+					type: "item"
+					item: "pamhc2foodcore:noodlesoupitem"
+				}
+				{
+					id: "5A3BB16A99AD6D1E"
+					type: "choice"
+					icon: "paraglider:anti_vessel"
+					table_id: 946083085323769434L
+				}
+			]
+		}
+		{
+			title: "Tier 0 100%"
+			icon: "minecraft:coal"
+			x: 1.0d
+			y: -7.0d
+			shape: "gear"
+			description: ["Good job! You've 100% completed this tier. Have a trophy and a nice sandwhich."]
+			hide_dependency_lines: true
+			dependencies: [
+				"044979F991978D36"
+				"613118AC3275A7EC"
+				"0A12FAEA57A5524E"
+				"51B62E01A62944E3"
+				"300CEC0332E30EB6"
+				"7BDCF2AD3AD3A573"
+				"1D276853ADEB52A9"
+				"043E8FC39A0AECE1"
+				"02A63DF4EE4CCC8B"
+				"1B1F62F5D30C1A63"
+				"2DCAEB840B9166DB"
+				"4BE0F0CA62DC37A0"
+				"46FE14B06B2E4B5C"
+				"200FF97B4314F878"
+				"07106EDF6F4D0649"
+				"5B958C2BBB8A258A"
+				"5A847C630310A268"
+				"3C453753643763E0"
+				"5780845FDE862B42"
+				"681C30C843116DF4"
+				"3CD2D5EB4278DD93"
+				"16CD9AFB43DB141B"
+				"2FF43B74F798DB72"
+				"77A465AFE409E041"
+				"74FA88F4F6F2B6B4"
+				"0BDA866B4708F9B2"
+				"4EE5D9E37AA454D7"
+				"19D79AEDC8D9ABB4"
+				"3B04AE6C723632EC"
+				"254D20348431674A"
+				"6084730C629B53AD"
+				"3C57DD314905B1C3"
+				"65DDE42B97822913"
+				"5FF4E122D404A9BC"
+				"7BDC3766EAA2631C"
+				"78D105B6CBFB10AD"
+				"0DF2F213F01F3201"
+				"223EC940CB68EA5C"
+				"0C246EC3E6AF074A"
+				"65BD7C5787772848"
+				"43592213F83AB465"
+				"51F9664F60510814"
+				"436DE3A2A09A04BA"
+				"791F18326EE6AD52"
+				"1BA932B65B4335EB"
+				"347AB6442F84A933"
+				"3C9F518B25E5592B"
+				"2C6C1450770AFA6E"
+				"104CA3ED9F1F8CF9"
+				"7613E3695CA74273"
+				"570DC4A6A98895ED"
+				"3ACC42F34BA35AD9"
+				"5806BB37145D65D8"
+				"46944569A10BFA6C"
+				"77FC84A07EB711FB"
+				"5FDD3C0F764186F4"
+				"21C13592EC5EF07F"
+				"12A12E206A8FDD23"
+				"1B5AAA6F8FE0FB85"
+				"08F9A99A5BB9C80D"
+				"2436D64CF4AE1B2E"
+				"5A5C139EA9D11174"
+				"75489C7150DD17A2"
+				"149B0A1CFF575A0D"
+				"5C03B0C5029ABF8E"
+				"5F56CCEF39159E86"
+				"05428A7A7B02E108"
+				"66E3BDE5CDB2BF94"
+				"7315AB7B1AAAC973"
+				"332C5B26D0AEC69B"
+				"5EF28B0975160533"
+				"63DD009403C33F30"
+			]
+			hide: true
+			id: "4AC2742AC548FEA6"
+			tasks: [{
+				id: "38221E25CFDE2CFD"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "63F840451D82EE22"
+					type: "item"
+					item: "amicore:amicoin_orachalchum"
+				}
+				{
+					id: "6E9E24DB8C4545B1"
+					type: "item"
+					item: "farmersdelight:chicken_sandwich"
+				}
+				{
+					id: "58C85959D42C66E3"
+					type: "choice"
+					icon: "paraglider:anti_vessel"
+					table_id: 946083085323769434L
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: 0.5d
+			description: ["By plating your backpack with iron, you can effectively reinforce and expand your backpack's available space, doubling it's capacity!"]
+			dependencies: ["5FF4E122D404A9BC"]
+			id: "570DC4A6A98895ED"
+			tasks: [{
+				id: "26F525B881FEA9B9"
+				type: "item"
+				item: "sophisticatedbackpacks:iron_backpack"
+			}]
+			rewards: [
+				{
+					id: "69ED3FC0E90A517C"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "2AA60901AD807D93"
+					type: "item"
+					item: "pamhc2foodextended:biscuititem"
+				}
+			]
+		}
+		{
+			title: "Paper"
+			x: 2.5d
+			y: -1.5d
+			description: ["Paper requires a pestle and mortar in order to craft. You'll need it for some items so make a little bit."]
+			dependencies: ["3C57DD314905B1C3"]
+			id: "3ACC42F34BA35AD9"
+			tasks: [{
+				id: "2826BB2C2BA9B38F"
+				type: "item"
+				item: "minecraft:paper"
+				count: 18L
+			}]
+			rewards: [{
+				id: "1341997B7BD6CE32"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.5d
+			description: [
+				"Paperbark should remove most of your need for paper crafting, but you'll need a jungle sapling to craft it."
+				""
+				"hInTT: uSEE ShoOPpEe"
+			]
+			dependencies: ["3ACC42F34BA35AD9"]
+			id: "5806BB37145D65D8"
+			tasks: [{
+				id: "3041C1C9086D08B7"
+				type: "item"
+				item: "pamhc2trees:paperbark_sapling"
+			}]
+			rewards: [
+				{
+					id: "0CD10349FD6A657B"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "1F92177E6A9C2709"
+					type: "item"
+					item: "pamhc2foodextended:breadedporkchopitem"
+				}
+			]
+		}
+		{
+			title: "Guide to Mining"
+			icon: "geolosys:prospectors_pick"
+			x: 4.0d
+			y: -1.0d
+			shape: "rsquare"
+			description: [
+				"Mining in AMI is slightly different from vanilla. While you can find ore undergound like in vanilla, it is much sparser than normal. Instead, large deposits of ore exist throughout the world."
+				""
+				"These geolosys deposits will show themselves with surface samples when wandering. digging within that chunk will yield the vein. For a guide of all veins and their associated dimensions, y-levels, and chances, visit the AMI official discord in the modpack description."
+				""
+				"There may come a time where you find an ore in which you cannot process it or use it for anything yet. Hold onto them since you may want it later."
+				""
+				""
+			]
+			dependencies: ["613118AC3275A7EC"]
+			id: "46944569A10BFA6C"
+			tasks: [{
+				id: "36E76B7B709BB846"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "7502CE95DE01F1CA"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "2F2A39EEE0F6A3F7"
+					type: "item"
+					item: "pamhc2foodcore:porkjerkyitem"
+				}
+				{
+					id: "1D2A1692ABA9B511"
+					type: "item"
+					item: "geolosys:prospectors_pick"
+				}
+				{
+					id: "158B23A2ECA5C273"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "patchouli:field_manual_ami"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Smithing Room"
+			icon: "minecraft:smithing_table"
+			x: 7.0d
+			y: -11.5d
+			description: [
+				"A concept that may become important in AMI will be the idea of dynamic processes. Or systems that do not always need to be working at all times. As such you can repurpose existing factories and rooms to other purposes as you go."
+				""
+				"Having a main crafting hub will be important for this concept. While you may not need follow this idea right now, as the sprawl grows it may become necessary for lag management."
+				""
+				"Try building a room specifically for smithwork and metalwork. "
+			]
+			dependencies: ["104CA3ED9F1F8CF9"]
+			id: "77FC84A07EB711FB"
+			tasks: [
+				{
+					id: "02BC9608940C5C39"
+					type: "item"
+					item: "minecraft:smithing_table"
+				}
+				{
+					id: "0A44B972437F2887"
+					type: "item"
+					item: "minecraft:crafting_table"
+				}
+				{
+					id: "0EABC93A9D1F5D0C"
+					type: "item"
+					item: "minecraft:anvil"
+				}
+				{
+					id: "1E84C22E1EBC4236"
+					type: "item"
+					item: "supplementaries:item_shelf"
+				}
+				{
+					id: "240B8971C808F5A8"
+					type: "item"
+					icon: "minecraft:furnace"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "custommachinery:forge_furnace"
+						}
+					}
+				}
+				{
+					id: "0A27C2DAA229C743"
+					type: "item"
+					item: "supplementaries:bellows"
+				}
+				{
+					id: "41C3D36FDB9A9559"
+					type: "item"
+					item: "artisanworktables:workstation_blacksmith"
+				}
+				{
+					id: "6D46090174123C27"
+					type: "item"
+					item: "artisanworktables:workstation_basic"
+				}
+			]
+			rewards: [
+				{
+					id: "6487FB36D4E8B6DC"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "727FE3B8A5D1C243"
+					type: "item"
+					item: "pamhc2foodcore:fishandchipsitem"
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: -0.5d
+			description: ["A stonecutter but for wood. Makes fences, trapdoors, fencegates, etc. much more efficient to craft."]
+			dependencies: ["51B62E01A62944E3"]
+			id: "5FDD3C0F764186F4"
+			tasks: [{
+				id: "4A33EB00471B2996"
+				type: "item"
+				item: "charm:woodcutter"
+			}]
+			rewards: [
+				{
+					id: "73CC3E5DAE7657D9"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "4F609C4C596A5C13"
+					type: "item"
+					item: "pamhc2foodcore:marshmellowchicksitem"
+				}
+			]
+		}
+		{
+			title: "Anvil Repair"
+			x: 5.5d
+			y: -4.0d
+			description: ["By clicking a damaged anvil with an anvil repair kit, it can be refreshed to mint condition without having to make a new one. Thankfully these are pretty inexpensive and make anvils last 4x longer with just one kit. Keep in mind it can only be used on vanilla anvils."]
+			dependencies: ["5B958C2BBB8A258A"]
+			id: "21C13592EC5EF07F"
+			tasks: [{
+				id: "4F65B02A01D3B163"
+				type: "item"
+				item: {
+					id: "amicore:anvil_repair"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "62B2DE7667D0EA30"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -5.5d
+			shape: "rsquare"
+			description: [
+				"A cake can be hammered into a large sheet, which can serve to wrap other parts."
+				""
+				"Note: These are not the same as tinker's large plates and do not serve as replacements."
+			]
+			dependencies: ["1BA932B65B4335EB"]
+			id: "12A12E206A8FDD23"
+			tasks: [{
+				id: "2118E01768A8568C"
+				type: "item"
+				item: "amicore:iron_large_sheet"
+			}]
+			rewards: [{
+				id: "2EE3AFBD3125FF32"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -8.5d
+			shape: "rsquare"
+			description: ["Heating and hammering a large sheet can yield a coil, which can later be formed into wires."]
+			dependencies: ["5A5C139EA9D11174"]
+			id: "1B5AAA6F8FE0FB85"
+			tasks: [{
+				id: "70376DFF6003AA5F"
+				type: "item"
+				item: "amicore:iron_coil"
+			}]
+			rewards: [{
+				id: "37B54003A3707064"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["The blacksmith worktable is a variant of the basic worktable, meant for crafting with metals. It serves as an imporant piece of metalworking in AMI."]
+			dependencies: ["02A63DF4EE4CCC8B"]
+			id: "08F9A99A5BB9C80D"
+			tasks: [{
+				id: "34D0200666FAAEA2"
+				type: "item"
+				item: "artisanworktables:worktable_blacksmith"
+			}]
+			rewards: [{
+				id: "7660A11FE33B070A"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Iron Crafting Tools"
+			icon: {
+				id: "artisantools:hammer_iron"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 8.5d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["Now that you have access to iron, go ahead and make some better tools for crafting with! Iron will last 4x longer than flint tools."]
+			dependencies: ["08F9A99A5BB9C80D"]
+			id: "2436D64CF4AE1B2E"
+			tasks: [
+				{
+					id: "26E7CD41497DBCAE"
+					type: "item"
+					item: {
+						id: "artisantools:hammer_iron"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "130DDF9657B1F643"
+					type: "item"
+					item: {
+						id: "artisantools:cutters_iron"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "71F1ECC95590E182"
+					type: "item"
+					item: {
+						id: "artisantools:handsaw_iron"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "795595C6C202B3D3"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -7.0d
+			shape: "rsquare"
+			description: ["An upgraded form of the blacksmiths worktop, can use 2 tools at once allowing for more complex metal parts to be made. Also holds crafting tools in its inventory."]
+			dependencies: [
+				"791F18326EE6AD52"
+				"12A12E206A8FDD23"
+				"51F9664F60510814"
+			]
+			id: "5A5C139EA9D11174"
+			tasks: [{
+				id: "176B75BAF35BC06C"
+				type: "item"
+				item: "artisanworktables:workstation_blacksmith"
+			}]
+			rewards: [{
+				id: "19560487C6BFD64E"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			shape: "rsquare"
+			description: [
+				"You may have noticed some crafting recipes are done on different kinds of crafting tables. AMI takes advantage of the Artisans Worktables mod to utilize tools and fluids in recipes."
+				""
+				"There are several different types of these crafting tables, but for now make the basic one."
+			]
+			dependencies: ["613118AC3275A7EC"]
+			id: "75489C7150DD17A2"
+			tasks: [{
+				id: "78FE2EBAA10C8099"
+				type: "item"
+				item: "artisanworktables:worktable_basic"
+			}]
+			rewards: [{
+				id: "18F096FE6E26307F"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.0d
+			shape: "diamond"
+			description: [
+				"All Artisans workbenches have higher tiers, able to use more types of tools at once, hold more fluids, and even utilize a larger crafting grid. By upgrading to the workstation, you can now store tools in the table itself."
+				""
+				"Crafting this will require iron."
+			]
+			dependencies: ["0A5B5BC914BF2AB7"]
+			hide: false
+			id: "149B0A1CFF575A0D"
+			tasks: [{
+				id: "2BB72E635F4E7A58"
+				type: "item"
+				item: "artisanworktables:workstation_basic"
+			}]
+			rewards: [
+				{
+					id: "659056323FB8C039"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "525385738967FE7F"
+					type: "item"
+					item: "pamhc2foodcore:noodlesoupitem"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -3.5d
+			description: ["Can cycle five foods instead of only three."]
+			dependencies: ["300CEC0332E30EB6"]
+			id: "5F56CCEF39159E86"
+			tasks: [{
+				id: "5AFFB965824DBCCC"
+				type: "item"
+				item: {
+					id: "solpotato:lunchbox"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 9
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "23BC3F0B792F0F63"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.5d
+			description: ["Can cycle seven foods instead of five."]
+			dependencies: ["5F56CCEF39159E86"]
+			id: "5C03B0C5029ABF8E"
+			tasks: [{
+				id: "6ED99531CF53D6AD"
+				type: "item"
+				item: {
+					id: "solpotato:golden_lunchbox"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 14
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "4060D1694C273881"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "7E6D31D6AEF4B783"
+					type: "item"
+					item: "pamhc2foodextended:beetburgeritem"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -5.5d
+			description: ["The modern day chisel."]
+			dependencies: [
+				"5A847C630310A268"
+				"791F18326EE6AD52"
+			]
+			id: "05428A7A7B02E108"
+			tasks: [{
+				id: "04AB84D72187D3D6"
+				type: "item"
+				item: {
+					id: "chisel:iron_chisel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "53F95F55B35D85DA"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Torch"
+			x: -0.5d
+			y: 2.5d
+			description: [
+				"AMI uses a mod to darken the night, so much that on new moons you cannot see during the night. Its imperative to craft torches to combat this."
+				""
+				"Caves are also incredibly dark, so if you plan on heading underground you'll need these as well."
+			]
+			dependencies: ["7BDC3766EAA2631C"]
+			id: "66E3BDE5CDB2BF94"
+			tasks: [{
+				id: "0A9D8330D4D778B4"
+				type: "item"
+				item: "minecraft:torch"
+				count: 16L
+			}]
+			rewards: [{
+				id: "6EDD35663E1B7CCF"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -1.5d
+			description: ["The carpenters worktable is a variant crafting station for making wood related items and blocks. With this, you can break down logs more efficiently, craft more sticks, and make slabs and stairs."]
+			dependencies: ["5FDD3C0F764186F4"]
+			id: "7315AB7B1AAAC973"
+			tasks: [{
+				id: "21DA208ADC7CF2DC"
+				type: "item"
+				item: "artisanworktables:worktable_carpenter"
+			}]
+			rewards: [{
+				id: "181E9E41129561A2"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -2.5d
+			description: ["An upgraded version of the carpenters worktable. Can use 2 tools at once, and can store tools in its inventory."]
+			dependencies: ["7315AB7B1AAAC973"]
+			id: "332C5B26D0AEC69B"
+			tasks: [{
+				id: "711B7DDED5CFAADB"
+				type: "item"
+				item: "artisanworktables:workstation_carpenter"
+			}]
+			rewards: [
+				{
+					id: "437F08E4BBFA9065"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "0BB5E9FFA62BA67B"
+					type: "item"
+					item: "pamhc2foodcore:icecreamitem"
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: -5.5d
+			description: ["By reinforcing the corners of a copper chest with iron, you can effectively double the storage capacity."]
+			dependencies: ["5EF28B0975160533"]
+			id: "6FD8E7D4F9A1BE2B"
+			tasks: [{
+				id: "5114A9196C25492F"
+				type: "item"
+				item: "ironchest:iron_chest"
+			}]
+			rewards: [{
+				id: "6906EBA8DF96C2A3"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -5.5d
+			description: ["Plating an iron chest with gold seems to make it denser, allowing for almost 50% more space inside."]
+			dependencies: ["6FD8E7D4F9A1BE2B"]
+			id: "75C409E9DC192AD4"
+			tasks: [{
+				id: "33D442976FEC78F0"
+				type: "item"
+				item: "ironchest:gold_chest"
+			}]
+			rewards: [
+				{
+					id: "3242FC392B877C30"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "438CF59F51178610"
+					type: "item"
+					item: "pamhc2foodextended:raspberryjellysandwichitem"
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: -4.0d
+			description: ["Gold has a few useful properties, maybe we can take advantage of them? If you find any ill give you another."]
+			dependencies: ["1BA932B65B4335EB"]
+			id: "13795E051B8764E4"
+			tasks: [{
+				id: "424DDB8D6CB9EB42"
+				type: "item"
+				item: "minecraft:gold_ingot"
+			}]
+			rewards: [
+				{
+					id: "574171EE98B181D9"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "6D7F383C7E56FDD4"
+					type: "item"
+					item: "minecraft:gold_ingot"
+				}
+			]
+		}
+		{
+			title: "Gold Casts"
+			icon: "tconstruct:ingot_cast"
+			x: 7.0d
+			y: 3.5d
+			description: ["Once you find gold, go ahead and make a permanent cast!"]
+			dependencies: ["1D97D42BA840D811"]
+			id: "46F2ADE51BAC40D1"
+			tasks: [
+				{
+					id: "08E35246144673A0"
+					type: "item"
+					item: "tconstruct:ingot_cast"
+				}
+				{
+					id: "6FD1FBB43F1BF49B"
+					type: "item"
+					item: "amicore:bar_stock_cast"
+				}
+			]
+			rewards: [
+				{
+					id: "65F17FF73D7D02D8"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "1C21677523F586F0"
+					type: "item"
+					item: "tconstruct:nugget_cast"
+				}
+			]
+		}
+		{
+			title: "Astikor"
+			icon: "astikorcarts:supply_cart"
+			x: -6.5d
+			y: 1.5d
+			description: [
+				"By attaching the plow to a horse, donkey, or mule, you can quickly plow large areas of land for farming."
+				""
+				"Tha same creature can also assist in hauling large amounts of material with a cart."
+			]
+			dependencies: ["254D20348431674A"]
+			id: "24076E71DC81D6B6"
+			tasks: [
+				{
+					id: "44DF835E018EB59F"
+					type: "item"
+					item: "astikorcarts:plow"
+				}
+				{
+					id: "2B99FBABF0D7A773"
+					type: "item"
+					item: "astikorcarts:supply_cart"
+				}
+			]
+			rewards: [
+				{
+					id: "34E33CDC117DB598"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "65E7D44D64D3B7B0"
+					type: "item"
+					item: "pamhc2foodextended:sugarcookieitem"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			description: [
+				"Flax can be used to grow string, cotton works just as well. "
+				""
+				"Flax can also be used to make rope and rope arrows."
+			]
+			dependencies: ["4BE0F0CA62DC37A0"]
+			id: "31A43C7FC9D67A9B"
+			tasks: [{
+				id: "159E5D42BBDC26F6"
+				type: "item"
+				item: "supplementaries:flax_seeds"
+			}]
+			rewards: [{
+				id: "2ADD0005C8C4E4FF"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Feeding Trough"
+			x: -5.5d
+			y: 2.0d
+			description: [
+				"Animals need to eat, and if you want them to on their own, a feeding trough is neccesary. "
+				""
+				"It can hold up to a stack of wheat, carrots, or seeds."
+			]
+			dependencies: ["254D20348431674A"]
+			id: "7CB9F5B1A419747D"
+			tasks: [{
+				id: "163D72E171FCF0C9"
+				type: "item"
+				item: "farmingforblockheads:feeding_trough"
+			}]
+			rewards: [
+				{
+					id: "553F55B369A5320A"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "64841AAE045DC5C0"
+					type: "item"
+					item: "pamhc2foodextended:oatmealraisincookiesitem"
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: -1.0d
+			description: [
+				"The chicken nest will collect eggs nearby chickens drop. No need to shove all your chickens into a single hole!"
+				""
+				"Keep in mind it only holds 4 eggs!"
+			]
+			dependencies: ["254D20348431674A"]
+			id: "1D9C57D71402C2ED"
+			tasks: [{
+				id: "10DE9FB9672B33C7"
+				type: "item"
+				item: "farmingforblockheads:chicken_nest"
+			}]
+			rewards: [
+				{
+					id: "4E254A767C7FCAD1"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "3288915F7D3691B2"
+					type: "item"
+					item: "pamhc2foodextended:peanutbuttercookiesitem"
+				}
+			]
+		}
+		{
+			title: "Flint Crafting Tools"
+			icon: {
+				id: "artisantools:hammer_flint"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 4.5d
+			y: 3.5d
+			shape: "rsquare"
+			description: [
+				"Recipes done on the Basic Worktable require tools, go ahead and craft some flint ones."
+				""
+				"The hammer, cutters, and handsaw are the most used typically."
+			]
+			dependencies: ["75489C7150DD17A2"]
+			id: "0A5B5BC914BF2AB7"
+			tasks: [
+				{
+					id: "40A9AD2FF87A96EF"
+					type: "item"
+					item: {
+						id: "artisantools:hammer_flint"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "700598400695759C"
+					type: "item"
+					item: {
+						id: "artisantools:cutters_flint"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "52F375F457B861E1"
+					type: "item"
+					item: {
+						id: "artisantools:handsaw_flint"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5B939BF46BCCBE43"
+					type: "item"
+					item: {
+						id: "artisantools:mortar_flint"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "73B710B4166B6846"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "730A50D7C23B231C"
+					type: "item"
+					item: "pamhc2foodcore:pumpkinsoupitem"
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: -8.0d
+			description: ["A chest for holding your crafting tools. When placed adjacent to artisans worktables, the inventory will be visible whilst using them. Holds 27 tools."]
+			dependencies: ["3C9F518B25E5592B"]
+			id: "35F8934E44667917"
+			tasks: [{
+				id: "55F75C14EA89AE52"
+				type: "item"
+				item: "artisanworktables:toolbox"
+			}]
+			rewards: [{
+				id: "76064C0B5D7BCC47"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Sand Casts"
+			icon: "tconstruct:blank_sand_cast"
+			x: 7.0d
+			y: 2.0d
+			description: ["Until you can create a permanent cast, temporary sand casts will have to do. Make sure to stock up on blank sand casts."]
+			dependencies: ["200FF97B4314F878"]
+			id: "1D97D42BA840D811"
+			tasks: [{
+				id: "6A5ACCD5F9E0C182"
+				type: "item"
+				title: "Any #tconstruct:casts/sand"
+				icon: "tconstruct:blank_sand_cast"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:casts/sand"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [{
+				id: "238AD17072338E99"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			description: ["Glide slowly down while holding the paraglider. Can help prevent death from a high drop. And it can be dyed!"]
+			dependencies: ["3C453753643763E0"]
+			id: "6E69D7D22F625FD2"
+			tasks: [{
+				id: "763E389873B0EE56"
+				type: "item"
+				item: "paraglider:paraglider"
+			}]
+			rewards: [{
+				id: "775F3DFE82358AD8"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -5.5d
+			description: ["By coating parts of a chest with copper, it can be expanded to hold slightly more items."]
+			dependencies: ["51F9664F60510814"]
+			id: "5EF28B0975160533"
+			tasks: [{
+				id: "5587F3ACC3EE59F3"
+				type: "item"
+				item: "ironchest:copper_chest"
+			}]
+			rewards: [{
+				id: "24ABA81FFC48F97D"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.5d
+			description: ["Peat can be an excellent early fuel source, smelting 6 items a piece. It can be found in swampy biomes."]
+			dependencies: ["46944569A10BFA6C"]
+			id: "63DD009403C33F30"
+			tasks: [{
+				id: "2C20EDA8C14B6BE1"
+				type: "item"
+				item: "geolosys:peat_coal"
+			}]
+			rewards: [{
+				id: "453A7D01F3CA24C5"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Toolbelts"
+			icon: {
+				id: "tetra:modular_toolbelt"
+				Count: 1b
+				tag: {
+					"toolbelt/belt_material": "belt/rope"
+					"toolbelt/belt": "toolbelt/belt"
+					"toolbelt/slot1": "toolbelt/strap_slot1"
+					"toolbelt/strap_slot1_material": "strap1/leather"
+				}
+			}
+			x: 3.5d
+			y: 6.5d
+			description: [
+				"The toolbelt can hold an array of tools to compact your inventory. It is placed in the belt slot in the curios inventory."
+				""
+				"The default keybind for swapping tools is \"b\". \"shift+b\" will automatically place an item into an empty slot, and \"alt+b\" opens the belt inventory directly."
+			]
+			dependencies: ["3B04AE6C723632EC"]
+			id: "4DBA134567DF37FA"
+			tasks: [{
+				id: "390FF78C8CAA35FF"
+				type: "advancement"
+				title: "Craft a Rope Toolbelt"
+				advancement: "tetra:upgrades/toolbelt"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "34E366C7B27929E7"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "3A9256548879F098"
+					type: "item"
+					item: "pamhc2foodextended:theatreboxitem"
+				}
+			]
+		}
+		{
+			title: "Stamina"
+			icon: "paraglider:stamina_vessel"
+			x: 0.0d
+			y: -1.0d
+			description: [
+				"This pack contains the mod Paraglider, which has a system for stamina akin to Legend of Zelda: Breath of the Wild."
+				""
+				"Your sprinting capability is limited by your stamina cap. As you complete questlines, you gain the option to increase your stamina or health. Also, spirit orbs can be found in the world, looted in chests, or gotten through challenge quests. 4 of them can be turned into a stamina vessel or heart container."
+				""
+				"If you wish to disable the stamina mechanic, go to the instance folder, find defaultconfigs and the paraglider-server.toml. Disable runningAndSwimmingConsumesStamina and paraglidingConsumesStamina, setting both to false, and recreating the world. Or, close the world, go to the serverconfigs folder in the world save, and do the same changes."
+			]
+			dependencies: ["044979F991978D36"]
+			id: "4F703FEFFBD2281F"
+			tasks: [{
+				id: "1FAE96DAD2C6D068"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "2B05EC99951C5027"
+					type: "item"
+					item: "pamhc2foodextended:gingersodaitem"
+				}
+				{
+					id: "2A4062912664F83A"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,144 @@
+{
+  "catalyst": "{id:\"create:wrench\",Count:1b}",
+  "consumeCatalyst": false,
+  "location": "amicore:tank_valve",
+  "traits": {
+    "fluid": [
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 80,
+        "y": 80,
+        "autoIO": false,
+        "tC": 10000
+      }
+    ],
+    "background": "multiblocked:textures/sitting_pool_fluid_gui.png"
+  },
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:tank_wall",
+    "frontTexture": "multiblocked:fluid_valve_out",
+    "backTexture": "multiblocked:tank_wall",
+    "leftTexture": "multiblocked:tank_wall",
+    "rightTexture": "multiblocked:tank_wall",
+    "upTexture": "multiblocked:tank_wall_top",
+    "downTexture": "multiblocked:tank_wall_top",
+    "type": "gregtech"
+  },
+  "properties": {
+    "isOpaque": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "harvestLevel": 1,
+    "lightEmissive": 0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "hasCollision": true,
+    "tabGroup": "amicore.machinetab",
+    "stackSize": 64
+  },
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "A A",
+        "BBB",
+        "BBB",
+        "BBB",
+        "CCC"
+      ],
+      [
+        "   ",
+        "@BB",
+        "BBB",
+        "BBB",
+        "CCC"
+      ],
+      [
+        "A A",
+        "BBB",
+        "BBB",
+        "BBB",
+        "CCC"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "minecraft:oak_log"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "amicore:tank_valve",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "amicore:tank_wall"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "minecraft:smooth_stone_slab"
+          }
+        ],
+        "type": "blocks"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  },
+  "recipeMap": "water_collector"
+}

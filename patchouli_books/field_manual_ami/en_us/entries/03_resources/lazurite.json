@@ -1,0 +1,14 @@
+{
+  "name": "Lazurite",
+  "icon": "amicore:lapis_lazuli_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Lazurite",
+      "item": "amicore:lapis_lazuli_ore",
+      "link_recipe": false,
+      "text": "Lapis Lazuli spawns alongside Sodalite and Pyrite in a low vein density, between Y 5 and 20. Lapis ore yields Lapis Lazuli. It is an uncommon vein."
+    }
+  ]
+}

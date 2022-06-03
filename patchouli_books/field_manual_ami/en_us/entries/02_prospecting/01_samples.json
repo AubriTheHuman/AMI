@@ -1,0 +1,18 @@
+{
+  "name": "Samples",
+  "icon": "amicore:hematite_ore_sample",
+  "category": "patchouli:02_prospecting",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Samples lie on the surface above underground mineral deposits, also referred to as Plutons. They are somewhat indicative of what vein lies below it. Mine the block to collect a cluster of its associated ore."
+    },
+    {
+      "type": "image",
+      "images": [
+        "geolosys:textures/gui/patchouli/introduction/samples.png"
+      ],
+      "border": true
+    }
+  ]
+}

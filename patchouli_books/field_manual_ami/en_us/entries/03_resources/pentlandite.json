@@ -1,0 +1,14 @@
+{
+  "name": "Pentlandite",
+  "icon": "amicore:pentlandite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Pentlandite",
+      "item": "amicore:pentlandite_ore",
+      "link_recipe": false,
+      "text": "Pentlandite spawns alongside Millerite and Silvery and Leaded Galena in a medium vein density, between Y 10 and 30. Malachite and Azurite both yield copper. It is an uncommon vein."
+    }
+  ]
+}

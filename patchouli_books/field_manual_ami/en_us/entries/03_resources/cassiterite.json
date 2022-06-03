@@ -1,0 +1,14 @@
+{
+  "name": "Cassiterite",
+  "icon": "amicore:cassiterite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Cassiterite",
+      "item": "amicore:cassiterite_ore",
+      "link_recipe": false,
+      "text": "Cassiterite spawns alongside Wolframite, Pyrite, and Quartz in a high vein density, between Y 5 and 25. Cassiterite yields tin and wolframite yields tungsten. It is an uncommon vein."
+    }
+  ]
+}

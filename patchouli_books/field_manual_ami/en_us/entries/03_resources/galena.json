@@ -1,0 +1,14 @@
+{
+  "name": "Galena",
+  "icon": "amicore:leaded_galena_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Galena",
+      "item": "amicore:leaded_galena_ore",
+      "link_recipe": false,
+      "text": "Leaded and Silvery Galena spawn alongside Sphalerite and Sulfur in a high vein density, between Y 5 and 25. Both galena yield their respective metals accordingly. It is a quite common vein."
+    }
+  ]
+}

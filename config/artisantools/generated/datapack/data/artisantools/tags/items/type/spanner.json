@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "artisantools:spanner_flint",
+    "artisantools:spanner_copper",
+    "artisantools:spanner_invar",
+    "artisantools:spanner_nickel",
+    "artisantools:spanner_silver",
+    "artisantools:spanner_tin",
+    "artisantools:spanner_iron",
+    "artisantools:spanner_bronze",
+    "artisantools:spanner_brass",
+    "artisantools:spanner_thallasium",
+    "artisantools:spanner_crude_steel",
+    "artisantools:spanner_steel",
+    "artisantools:spanner_terminite",
+    "artisantools:spanner_diamond",
+    "artisantools:spanner_netherite",
+    "artisantools:spanner_aeternium",
+    "artisantools:spanner_pendorite"
+  ]
+}

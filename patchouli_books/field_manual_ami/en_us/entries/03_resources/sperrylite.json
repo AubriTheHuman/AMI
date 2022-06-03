@@ -1,0 +1,14 @@
+{
+  "name": "Sperrylite",
+  "icon": "amicore:sperrylite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Sperrylite",
+      "item": "amicore:sperrylite_ore",
+      "link_recipe": false,
+      "text": "Sperrylite spawns alongside Cooperite and Osmiridium in a medium vein density, between Y 5 and 15. Sperrylite and Cooperite yield platinum. It is a rare vein."
+    }
+  ]
+}

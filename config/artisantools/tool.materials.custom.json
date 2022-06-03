@@ -1,0 +1,212 @@
+{
+  "__comments": [
+    "WARNING: All changes should be made to the file with the name `custom`",
+    "in the title. Changes made to the `generated` file will be overwritten."
+  ],
+  "list": [
+    {
+      "name": "flint",
+      "harvestLevel": 1,
+      "maxUses": 32,
+      "efficiency": 1.5,
+      "damage": 1,
+      "enchantability": 4,
+      "color": "FFFFFF",
+      "shiny": false,
+      "ingredient": "tag#forge:gems/flint",
+      "langKey": "material.artisantools.flint"
+    },
+    {
+      "name": "copper",
+      "harvestLevel": 1,
+      "maxUses": 64,
+      "efficiency": 4.0,
+      "damage": 0.75,
+      "enchantability": 6,
+      "color": "FFA131",
+      "shiny": true,
+      "ingredient": "tag#forge:ingots/copper",
+      "langKey": "material.artisantools.copper"
+    },
+    {
+      "name": "invar",
+      "harvestLevel": 2,
+      "maxUses": 192,
+      "efficiency": 7.0,
+      "damage": 3.0,
+      "enchantability": 16,
+      "color": "8E9A95",
+      "shiny": true,
+      "ingredient": "tag#forge:ingots/invar",
+      "langKey": "material.artisantools.invar"
+    },
+    {
+      "name": "nickel",
+      "harvestLevel": 2,
+      "maxUses": 96,
+      "efficiency": 6.5,
+      "damage": 2.5,
+      "enchantability": 18,
+      "color": "A2975D",
+      "shiny": true,
+      "ingredient": "tag#forge:ingots/nickel",
+      "langKey": "material.artisantools.nickel"
+    },
+    {
+      "name": "silver",
+      "harvestLevel": 2,
+      "maxUses": 96,
+      "efficiency": 6.0,
+      "damage": 1.5,
+      "enchantability": 20,
+      "color": "7B9DA4",
+      "shiny": true,
+      "ingredient": "tag#forge:ingots/silver",
+      "langKey": "material.artisantools.silver"
+    },
+    {
+      "name": "tin",
+      "harvestLevel": 1,
+      "maxUses": 96,
+      "efficiency": 4.5,
+      "damage": 1.0,
+      "enchantability": 7,
+      "color": "7C9AB2",
+      "shiny": true,
+      "ingredient": "tag#forge:ingots/tin",
+      "langKey": "material.artisantools.tin"
+    },
+    {
+      "name": "iron",
+      "harvestLevel": 2,
+      "maxUses": 128,
+      "efficiency": 6.0,
+      "damage": 2.0,
+      "enchantability": 14,
+      "color": "D4D4D4",
+      "shiny": true,
+      "ingredient": "tag#forge:ingots/iron",
+      "langKey": "material.artisantools.iron"
+    },
+    {
+      "name": "bronze",
+      "harvestLevel": 2,
+      "maxUses": 128,
+      "efficiency": 6.0,
+      "damage": 2.0,
+      "enchantability": 15,
+      "color": "D5905C",
+      "shiny": true,
+      "ingredient": "tag#forge:ingots/bronze",
+      "langKey": "material.artisantools.bronze"
+    },
+    {
+      "name": "brass",
+      "harvestLevel": 2,
+      "maxUses": 128,
+      "efficiency": 6.0,
+      "damage": 2.0,
+      "enchantability": 15,
+      "color": "CEBD77",
+      "shiny": true,
+      "ingredient": "tag#forge:ingots/brass",
+      "langKey": "material.artisantools.brass"
+    },
+    {
+      "name": "thallasium",
+      "harvestLevel": 1,
+      "maxUses": 128,
+      "efficiency": 4.5,
+      "damage": 1.0,
+      "enchantability": 7,
+      "color": "74C4C9",
+      "shiny": true,
+      "ingredient": "tag#forge:ingots/thallasium",
+      "langKey": "material.artisantools.thallasium"
+    },
+    {
+      "name": "crude_steel",
+      "harvestLevel": 1,
+      "maxUses": 320,
+      "efficiency": 4.5,
+      "damage": 1.0,
+      "enchantability": 7,
+      "color": "70848F",
+      "shiny": true,
+      "ingredient": "tag#forge:ingots/crude_steel",
+      "langKey": "material.artisantools.crude_steel"
+    },
+    {
+      "name": "steel",
+      "harvestLevel": 1,
+      "maxUses": 384,
+      "efficiency": 4.5,
+      "damage": 1.0,
+      "enchantability": 7,
+      "color": "949CA1",
+      "shiny": true,
+      "ingredient": "tag#forge:ingots/steel",
+      "langKey": "material.artisantools.steel"
+    },
+    {
+      "name": "terminite",
+      "harvestLevel": 1,
+      "maxUses": 256,
+      "efficiency": 4.5,
+      "damage": 1.0,
+      "enchantability": 7,
+      "color": "00D392",
+      "shiny": true,
+      "ingredient": "tag#forge:ingots/terminite",
+      "langKey": "material.artisantools.terminite"
+    },
+    {
+      "name": "diamond",
+      "harvestLevel": 3,
+      "maxUses": 512,
+      "efficiency": 8.0,
+      "damage": 3.0,
+      "enchantability": 10,
+      "color": "33EBCB",
+      "shiny": false,
+      "ingredient": "tag#forge:gems/diamond",
+      "langKey": "material.artisantools.diamond"
+    },
+    {
+      "name": "netherite",
+      "harvestLevel": 4,
+      "maxUses": 768,
+      "efficiency": 9.0,
+      "damage": 4.0,
+      "enchantability": 15,
+      "color": "756975",
+      "shiny": false,
+      "ingredient": "tag#forge:ingots/netherite",
+      "langKey": "material.artisantools.netherite"
+    },
+    {
+      "name": "aeternium",
+      "harvestLevel": 4,
+      "maxUses": 1024,
+      "efficiency": 9.0,
+      "damage": 4.0,
+      "enchantability": 15,
+      "color": "756975",
+      "shiny": false,
+      "ingredient": "tag#forge:ingots/aeternium",
+      "langKey": "material.artisantools.aeternium"
+    },
+    {
+      "name": "pendorite",
+      "harvestLevel": 4,
+      "maxUses": 1024,
+      "efficiency": 9.0,
+      "damage": 4.0,
+      "enchantability": 15,
+      "color": "784B76",
+      "shiny": false,
+      "ingredient": "tag#forge:ingots/pendorite",
+      "langKey": "material.artisantools.pendorite"
+    }
+  ]
+}

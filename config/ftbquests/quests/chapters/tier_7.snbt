@@ -1,0 +1,144 @@
+{
+	id: "2AC471FB71237BFB"
+	group: "280C159CD17D8CFF"
+	order_index: 6
+	filename: "tier_7"
+	title: "Tier 6: Superheated Steam"
+	icon: "steampowered:steel_steam_engine"
+	subtitle: ["Advanced Oil Processing, advancing electronics, uranium, and runic computation."]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: -0.5d
+			id: "24FE7036A551ACB7"
+			tasks: [{
+				id: "2C05EE1FEA6B049D"
+				type: "item"
+				item: "meetyourfight:phantoplasm"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			id: "63060FEEA8BB3912"
+			tasks: [{
+				id: "0C10547B471D4B27"
+				type: "item"
+				item: "compactcrafting:field_projector"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			id: "07F441D7E263F9A7"
+			tasks: [{
+				id: "674621228E6793B0"
+				type: "item"
+				item: "immersivepetroleum:oil_bucket"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			id: "1FF1035F4CFBB5B9"
+			tasks: [{
+				id: "02C785A1B8ABD712"
+				type: "item"
+				item: "refinedpipes:basic_item_pipe"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			id: "6DCD3FF7195A1C74"
+			tasks: [{
+				id: "7DBC8AAB5ABD8986"
+				type: "item"
+				item: "refinedpipes:basic_fluid_pipe"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			id: "01181292F1CCFB84"
+			tasks: [{
+				id: "65A5B4F582429F64"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			id: "3DCA39F319CE2407"
+			tasks: [{
+				id: "729DBC5BD27E267E"
+				type: "item"
+				item: "appliedenergistics2:2_cubed_spatial_cell_component"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			id: "65C6B9639035BCE3"
+			tasks: [{
+				id: "5AD31AD36543B118"
+				type: "item"
+				item: "amicore:uranium_ingot"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			id: "1E88574A069ADA59"
+			tasks: [{
+				id: "00EF9E0329A8603F"
+				type: "item"
+				item: "amicore:chrome_circuit"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			id: "678F6B9B64BFAC84"
+			tasks: [{
+				id: "7EFEF92654857860"
+				type: "item"
+				item: "amicore:aluminum_ingot"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.5d
+			id: "1FA066AC85B1BB71"
+			tasks: [{
+				id: "2351C69DFD0E0497"
+				type: "item"
+				item: "amicore:v8_engine"
+			}]
+		}
+		{
+			title: "Fluorite"
+			x: 2.5d
+			y: -1.5d
+			id: "51224176A07AC5D7"
+			tasks: [{
+				id: "2FE8A44B8EB0619C"
+				type: "item"
+				item: "byg:embur_gel_ball"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			id: "35F6E5D62D0DCCCC"
+			tasks: [{
+				id: "31043BADDAA98034"
+				type: "item"
+				item: "bloodmagic:altar"
+			}]
+		}
+	]
+}

@@ -1,0 +1,72 @@
+{
+	id: "300B0E8F30783FBF"
+	group: "05AB46FBFC30BEB2"
+	order_index: 3
+	filename: "food_and_cooking"
+	title: "Food and Cooking"
+	icon: "pamhc2foodextended:delightedmealitem"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "6506417320DC0F74"
+			tasks: [{
+				id: "266E141082B9AC39"
+				type: "item"
+				item: "farmersdelight:stuffed_pumpkin"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			id: "4091B469E398F247"
+			tasks: [{
+				id: "5FA425D0467C0192"
+				type: "item"
+				item: "pamhc2foodextended:delightedmealitem"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			id: "0DB4289DE38F1004"
+			tasks: [{
+				id: "55EE835A4E73FEFE"
+				type: "item"
+				item: "create:honeyed_apple"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			id: "72601A91C9B996F5"
+			tasks: [{
+				id: "3A07BE7FC5E4DE1C"
+				type: "item"
+				item: "create_confectionery:white_chocolate_candy_2"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			id: "58F8FAA4B2CC1F2A"
+			tasks: [{
+				id: "0B0DE1287ED0F54A"
+				type: "item"
+				item: "create_confectionery:caramelized_marshmellow_on_a_stick"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			id: "58B400B3CAD0FB70"
+			tasks: [{
+				id: "7067F4C032613707"
+				type: "item"
+				item: "createcafe:mango_milk_tea"
+			}]
+		}
+	]
+}

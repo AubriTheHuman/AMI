@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:ingots/uranium"
+	},
+	"result": {
+		"item": "immersiveengineering:uranium_rod",
+		"count": 2
+	}
+}

@@ -1,0 +1,119 @@
+{
+	id: "3ABF9C96B1C651CD"
+	group: "280C159CD17D8CFF"
+	order_index: 7
+	filename: "tier_6"
+	title: "Tier 7: Rocket Fuel"
+	icon: "advancedrocketry:bucketrocketfuel"
+	subtitle: ["A second age of exploration and advanced processing"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: -0.5d
+			id: "3F353104ECFE9738"
+			tasks: [{
+				id: "6D67848562BA0DC0"
+				type: "item"
+				item: "advancedrocketry:liquidtank"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			id: "126531D8EE4660E1"
+			tasks: [{
+				id: "4591021DD368ECCB"
+				type: "item"
+				item: "advancedrocketry:rocketmotor"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			id: "01FAFEE6B59F2019"
+			tasks: [{
+				id: "713D93A7FF213E62"
+				type: "item"
+				item: "appliedenergistics2:quantum_ring"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			id: "5621E4828D7F472A"
+			tasks: [{
+				id: "650FC8DE9D27B015"
+				type: "item"
+				item: "amicore:iridium_circuit"
+			}]
+		}
+		{
+			title: "zero g experiments"
+			x: 0.5d
+			y: -1.5d
+			id: "0C9668534DE0BDE9"
+			tasks: [{
+				id: "0EDF2EACB4C171A4"
+				type: "item"
+				item: "bountifulbaubles:balloon"
+			}]
+		}
+		{
+			title: "space station building"
+			x: 0.5d
+			y: -2.5d
+			id: "03593DAD956E6CF1"
+			tasks: [{
+				id: "238E04F53F4D4DEA"
+				type: "item"
+				item: "minecraft:andesite"
+			}]
+		}
+		{
+			title: "Natural Chlorine"
+			x: 1.5d
+			y: -1.5d
+			id: "780A90305A1E87D2"
+			tasks: [{
+				id: "74EFF7B8E6C9E94E"
+				type: "item"
+				item: "byg:lament_vine"
+			}]
+		}
+		{
+			title: "Natural Rubidium"
+			x: 2.5d
+			y: -1.5d
+			id: "4F9A15547C97C50F"
+			tasks: [{
+				id: "44A4E9A92D7FB58D"
+				type: "item"
+				item: "byg:skyris_vine"
+			}]
+		}
+		{
+			title: "Natural Helium"
+			x: 3.5d
+			y: -1.5d
+			id: "6E4E5D153A2928AA"
+			tasks: [{
+				id: "2E0F667374E64019"
+				type: "item"
+				item: "byg:imparius_vine"
+			}]
+		}
+		{
+			icon: "byg:lament_leaves"
+			x: 1.5d
+			y: -2.5d
+			id: "4A922C39B762B9E2"
+			tasks: [{
+				id: "754D0085C0E286FE"
+				type: "item"
+				item: "byg:lament_vine"
+			}]
+		}
+	]
+}

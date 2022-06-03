@@ -1,0 +1,1417 @@
+{
+	id: "0EB88A610A590476"
+	group: "05AB46FBFC30BEB2"
+	order_index: 2
+	filename: "bioprocessing"
+	title: "Bioprocessing"
+	icon: "minecraft:fern"
+	disable_toast: true
+	subtitle: ["Functional Flora and Fauna"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			title: "Bioprocessing Florae"
+			icon: "minecraft:fern"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Plants are a wonderful thing, the flora of this world is incredibly diverse. Every one special."
+				""
+				"And that's exactly what were here to exploit."
+				""
+				"Known flora can effectively be split into five catagories: grassy, fruited, fungal, arboreal, and nether-bloom. Each is suited to its own purposes, but all are useful."
+			]
+			dependencies: ["35F91AA4D7CC90CD"]
+			hide: true
+			id: "17E475058831DD55"
+			tasks: [{
+				id: "0631E13A1AB27327"
+				type: "checkmark"
+				title: "Ready?"
+			}]
+		}
+		{
+			title: "Tall Grass"
+			icon: "minecraft:grass_block"
+			x: -2.0d
+			y: -1.0d
+			description: [
+				"Some plants naturally grow very tall. They can be found in almost every dimension, however are often classified within their dimensional flora."
+				""
+				"Plants from this catagory traditionally are tall, stiff, and often are the dominating plant in their biome."
+			]
+			dependencies: ["17E475058831DD55"]
+			id: "42748A7D087EFCA9"
+			tasks: [{
+				id: "11E23C3E9E06F038"
+				type: "checkmark"
+				title: "Tall Grass"
+			}]
+		}
+		{
+			title: "Nether-Bloom"
+			icon: "minecraft:warped_nylium"
+			x: 0.0d
+			y: -2.0d
+			description: [
+				"Nether-Bloom can effectively be split into 4 catagories, each rich in their own non-metal element."
+				""
+				"Crimson bloom are highly rich in sulfur. They characteristically stink."
+				""
+				"Warped bloom is very dense in carbon and natural oils."
+				""
+				"Sythian bloom are rich in natural silica, and are unnatually hard and dense in structure, allowing them to grow much taller than their counterparts."
+				""
+				"Embur bloom are rich in fluorine. As such they are highly toxic, and often believed to be the source of the wither's poison."
+			]
+			dependencies: ["17E475058831DD55"]
+			id: "2B77C5AEB8B06B0C"
+			tasks: [{
+				id: "0B9AA18F3081F87F"
+				type: "checkmark"
+				title: "Nether-Bloom"
+			}]
+		}
+		{
+			title: "Fruited Plants"
+			icon: "minecraft:farmland"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Fruited plants are more often called crops. Almost all crops are vegetables, and trees are fruits."
+				""
+				"All of them are edible, and as such people have cultivated them for centuries. This world, once seeded with these plants, is rich in mixed gardens of them. Can you find and collect every one?"
+			]
+			dependencies: ["17E475058831DD55"]
+			id: "700671B7D33F1369"
+			tasks: [{
+				id: "6EF86BD824A24A40"
+				type: "checkmark"
+				title: "Fruited Plants"
+			}]
+		}
+		{
+			title: "Fungal Mycelia"
+			icon: "minecraft:mycelium"
+			x: -2.0d
+			y: 1.0d
+			description: [
+				"Fungal plants are not plants, however they can be classified simillarly."
+				""
+				"Fungus are naturally high in edible proteins, fats, an nutrients. They make excellent fertilizer."
+			]
+			dependencies: ["17E475058831DD55"]
+			id: "279CD5AD6F6DCEEC"
+			tasks: [{
+				id: "7C1AAC87B680598D"
+				type: "checkmark"
+				title: "Fungal Mycelia"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["279CD5AD6F6DCEEC"]
+			id: "78FE425E31D6E64A"
+			tasks: [{
+				id: "43729F7FD8A0CF69"
+				type: "item"
+				item: "minecraft:brown_mushroom"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["279CD5AD6F6DCEEC"]
+			id: "0F1A0613D2767E92"
+			tasks: [{
+				id: "16032B9B9FA1387E"
+				type: "item"
+				item: "minecraft:red_mushroom"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["279CD5AD6F6DCEEC"]
+			id: "18E407E1E2C71F6C"
+			tasks: [{
+				id: "1EC7EAC7CB803A6B"
+				type: "item"
+				item: "farmersdelight:brown_mushroom_colony"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["279CD5AD6F6DCEEC"]
+			id: "3B02C61DE2C209EC"
+			tasks: [{
+				id: "51EAC2D089991AD7"
+				type: "item"
+				item: "farmersdelight:red_mushroom_colony"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.5d
+			hide_dependency_lines: true
+			dependencies: ["279CD5AD6F6DCEEC"]
+			id: "231B57FF0AA20850"
+			tasks: [{
+				id: "4AA9D08010AC15B9"
+				type: "item"
+				item: "pamhc2crops:whitemushroomitem"
+			}]
+		}
+		{
+			title: "Shimmering Mushrooms"
+			icon: "botania:white_mushroom"
+			x: -4.5d
+			y: 2.5d
+			hide_dependency_lines: true
+			dependencies: ["279CD5AD6F6DCEEC"]
+			id: "2E30E6A5B7A2CE15"
+			tasks: [
+				{
+					id: "0D2BC82D0D93B809"
+					type: "item"
+					item: "botania:white_mushroom"
+				}
+				{
+					id: "26006549BBCA2725"
+					type: "item"
+					item: "botania:orange_mushroom"
+				}
+				{
+					id: "7AE87A5269713D29"
+					type: "item"
+					item: "botania:magenta_mushroom"
+				}
+				{
+					id: "16788AAAFF9D83D1"
+					type: "item"
+					item: "botania:light_blue_mushroom"
+				}
+				{
+					id: "5C07B3ECC9A68F43"
+					type: "item"
+					item: "botania:yellow_mushroom"
+				}
+				{
+					id: "7DC11B7B441F9523"
+					type: "item"
+					item: "botania:lime_mushroom"
+				}
+				{
+					id: "5C8FBA30D25DB047"
+					type: "item"
+					item: "botania:pink_mushroom"
+				}
+				{
+					id: "56C768A71368D020"
+					type: "item"
+					item: "botania:gray_mushroom"
+				}
+				{
+					id: "26D5C926014D826A"
+					type: "item"
+					item: "botania:light_gray_mushroom"
+				}
+				{
+					id: "56CD75EB254FDC0D"
+					type: "item"
+					item: "botania:cyan_mushroom"
+				}
+				{
+					id: "53FDC77D787D14AC"
+					type: "item"
+					item: "botania:purple_mushroom"
+				}
+				{
+					id: "1148A30A09A6084D"
+					type: "item"
+					item: "botania:blue_mushroom"
+				}
+				{
+					id: "78591091A6B2CF84"
+					type: "item"
+					item: "botania:brown_mushroom"
+				}
+				{
+					id: "178D70CB2227D150"
+					type: "item"
+					item: "botania:green_mushroom"
+				}
+				{
+					id: "5D2356AC56C269D6"
+					type: "item"
+					item: "botania:red_mushroom"
+				}
+				{
+					id: "793F6D92ED44D46C"
+					type: "item"
+					item: "botania:black_mushroom"
+				}
+			]
+			rewards: [{
+				id: "61FB0BFAB4FDEBF0"
+				type: "item"
+				item: "amicore:amicoin_starmetal"
+				count: 3
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "6872CE37ED5C50CC"
+			tasks: [{
+				id: "2E3F76F2CC126480"
+				type: "item"
+				item: "minecraft:sugar_cane"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "5D6C18A6E6738F67"
+			tasks: [{
+				id: "293E1A0447227E6C"
+				type: "item"
+				item: "minecraft:kelp"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "0A1E5568933BBE6B"
+			tasks: [{
+				id: "1B2E40CF1A603B28"
+				type: "item"
+				item: "minecraft:bamboo"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "349761071845CCE1"
+			tasks: [{
+				id: "32F379E0482A4100"
+				type: "item"
+				item: "minecraft:vine"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "4503813A3B74B635"
+			tasks: [{
+				id: "2E439FFE19382CB8"
+				type: "item"
+				item: "minecraft:seagrass"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "1E2D8F3AF4A1A55C"
+			tasks: [{
+				id: "39BC2F146FFDF919"
+				type: "item"
+				item: "minecraft:grass"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 1.5d
+			description: ["Is it a fungus? A fruit? An animal? Who knows, I sure don't!"]
+			hide_dependency_lines: true
+			dependencies: ["279CD5AD6F6DCEEC"]
+			id: "02A378CB1C2C6447"
+			tasks: [{
+				id: "537DCDF640FDF453"
+				type: "item"
+				item: "minecraft:sea_pickle"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "0ECA2045EABAB4BE"
+			tasks: [{
+				id: "5F4F3F2A8557A194"
+				type: "item"
+				item: "minecraft:cactus"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "7E6E89C5DCAFE3A2"
+			tasks: [{
+				id: "57B3CBB8C006F667"
+				type: "item"
+				item: "pamhc2crops:cactusfruititem"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "26F3E1C2C2DDB998"
+			tasks: [{
+				id: "0F9C7F2582627281"
+				type: "item"
+				item: "byg:prickly_pear_cactus"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "293A213987AFB47C"
+			tasks: [{
+				id: "5E949193480BE35F"
+				type: "item"
+				item: "byg:golden_spined_cactus"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "184B798F6A0682B1"
+			tasks: [{
+				id: "6AFDF4C45CBA7447"
+				type: "item"
+				item: "byg:mini_cactus"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.5d
+			description: [
+				"Noticably Useful Florae:"
+				"- Weeping Vines"
+				"- Nether Wart"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "488AF8C13E0DC29B"
+			tasks: [{
+				id: "629564E7CDA58201"
+				type: "item"
+				item: "minecraft:crimson_nylium"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			description: [
+				"Noticably Useful Florae:"
+				"- Twisting vine"
+				"- Warped roots"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			hide: false
+			id: "530003D75B10EDA9"
+			tasks: [{
+				id: "2C56B28D85AE4B75"
+				type: "item"
+				item: "minecraft:warped_nylium"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			hide: false
+			id: "6494778BC6F42728"
+			tasks: [{
+				id: "6D83604953B97881"
+				type: "item"
+				item: "byg:sythian_nylium"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "6F64694BF18143EA"
+			tasks: [{
+				id: "094AF74C2E4C6D45"
+				type: "item"
+				item: "byg:sythian_fungus"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "2963B767C260987E"
+			tasks: [{
+				id: "15DD281D662A78F8"
+				type: "item"
+				item: "byg:sythian_stalk_block"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -6.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "49AA221F31D84EA9"
+			tasks: [{
+				id: "51F3124D54DD3B19"
+				type: "item"
+				item: "byg:sythian_roots"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "6E6E7455F9F52780"
+			tasks: [{
+				id: "2A46A82F2850C30A"
+				type: "item"
+				item: "byg:hanging_sythian_roots"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -8.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "331529C86F6798E8"
+			tasks: [{
+				id: "7CCB53A7FEBF5CEF"
+				type: "item"
+				item: "byg:sythian_sprout"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "145AE1012D6A6672"
+			tasks: [{
+				id: "708EBE07B219E102"
+				type: "item"
+				item: "byg:embur_nylium"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "188839BE3F885BF9"
+			tasks: [{
+				id: "6B4F2CF05A4D093A"
+				type: "item"
+				item: "byg:embur_wart"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -6.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "27D1E45ACECD8E64"
+			tasks: [{
+				id: "32BF1B616D664133"
+				type: "item"
+				item: "byg:embur_roots"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -7.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "0CD2749B630C03E2"
+			tasks: [{
+				id: "3107A86A7832A1B7"
+				type: "item"
+				item: "byg:tall_embur_roots"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -8.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "0698CCA5C5EFEBA1"
+			tasks: [{
+				id: "0A6CDE70BB6153CD"
+				type: "item"
+				item: "byg:embur_sprouts"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "49A9E3FB12FDB0DB"
+			tasks: [{
+				id: "4B9BFCECBDF70F4A"
+				type: "item"
+				item: "minecraft:warped_fungus"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "7BAE370D52978E70"
+			tasks: [{
+				id: "1300988926FC2828"
+				type: "item"
+				item: "minecraft:twisting_vines"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -6.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "57A1CE553AE6A49D"
+			tasks: [{
+				id: "680247880007AAC1"
+				type: "item"
+				item: "minecraft:warped_roots"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "1520FDDFCAD21078"
+			tasks: [{
+				id: "30A20D0CD83206D0"
+				type: "item"
+				item: "minecraft:nether_sprouts"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "119B927717D648DC"
+			tasks: [{
+				id: "2A5ABE629064FB8D"
+				type: "item"
+				item: "minecraft:crimson_fungus"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "529F7E7005E4E7A7"
+			tasks: [{
+				id: "62D2357768A51BCC"
+				type: "item"
+				item: "minecraft:weeping_vines"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -6.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "2AC1BEEA2A65DD82"
+			tasks: [{
+				id: "518A65BFFEB681AE"
+				type: "item"
+				item: "minecraft:crimson_roots"
+			}]
+		}
+		{
+			title: "root variants for sister elements?"
+			x: -2.0d
+			y: -7.5d
+			hide_dependency_lines: true
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "7F61184EAA6132E5"
+			tasks: [{
+				id: "4C50CA1F817D5036"
+				type: "item"
+				item: "minecraft:nether_wart"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "7A6387602B1B9E38"
+			tasks: [{
+				id: "59AFF9A06BF314FF"
+				type: "item"
+				item: "pamhc2crops:amaranthitem"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "157231AAA02E815E"
+			tasks: [{
+				id: "7F0F1EA0BC8947CC"
+				type: "item"
+				item: "pamhc2crops:barleyitem"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "268916AF23560FC9"
+			tasks: [{
+				id: "01C525AF3A6D23E4"
+				type: "item"
+				item: "pamhc2crops:cornitem"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "4E7BAE0ACD16C227"
+			tasks: [{
+				id: "29A2753CDD96D725"
+				type: "item"
+				item: "pamhc2crops:milletitem"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "3395A02DAD1B9F5F"
+			tasks: [{
+				id: "466318A8BBBAB7D6"
+				type: "item"
+				item: "pamhc2crops:oatsitem"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "51B5D6A636F8852F"
+			tasks: [{
+				id: "418AA50691C8F571"
+				type: "item"
+				item: "pamhc2crops:ryeitem"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "19BFE74A4E1D3CF1"
+			tasks: [{
+				id: "6E6890CD3A715850"
+				type: "item"
+				item: "pamhc2crops:quinoaitem"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "09B60892E4E7C395"
+			tasks: [{
+				id: "14A4EA767117667E"
+				type: "item"
+				item: "pamhc2crops:riceitem"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "459082E728A17B31"
+			tasks: [{
+				id: "2559B3442D34743E"
+				type: "item"
+				item: "pamhc2crops:okraitem"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			description: ["Upon falling through the stars into an alien landscape, you are met with an extraordinary landscape of unique flora and fauna. Perhaps some of them are useful for resource harvesting, or something else?"]
+			dependencies: ["17E475058831DD55"]
+			hide: true
+			id: "00C6A45F586738AF"
+			tasks: [{
+				id: "2381E48AB56F6339"
+				type: "item"
+				item: "betterendforge:chorus_nylium"
+			}]
+		}
+		{
+			x: -13.0d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "394EB1632531A43B"
+			tasks: [{
+				id: "222222434E73E135"
+				type: "item"
+				item: "pamhc2crops:cottonitem"
+			}]
+		}
+		{
+			x: -13.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "5125DBD8B1EABF62"
+			tasks: [{
+				id: "6B2928BA3E68AC59"
+				type: "item"
+				item: "pamhc2crops:kenafitem"
+			}]
+		}
+		{
+			x: -13.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "0B22A2AD128E5ECC"
+			tasks: [{
+				id: "56BA0DB1C9E7FCF4"
+				type: "item"
+				item: "pamhc2crops:flaxitem"
+			}]
+		}
+		{
+			x: -14.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "663C9B2F8994C08C"
+			tasks: [{
+				id: "5D0D383AEE3D0391"
+				type: "item"
+				item: "pamhc2crops:juteitem"
+			}]
+		}
+		{
+			x: -14.0d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "40DAD1381B4E45C6"
+			tasks: [{
+				id: "074694B4A4444EF7"
+				type: "item"
+				item: "pamhc2crops:sisalitem"
+			}]
+		}
+		{
+			title: "Genreral crop types for feed"
+			x: 0.0d
+			y: 3.5d
+			description: ["like angels, for fishwork"]
+			dependencies: ["700671B7D33F1369"]
+			id: "0D9F2FD99A30B034"
+			tasks: [{
+				id: "3E8614F7E5FDBF78"
+				type: "item"
+				item: "pamhc2foodextended:generaltsochickenitem"
+			}]
+		}
+		{
+			title: "Arboreal"
+			icon: "minecraft:oak_log"
+			x: 2.0d
+			y: 1.0d
+			description: [
+				"All arboreal plants share the same property, they are generally tall, and all have wide, thick, woody stems."
+				""
+				"The wood is probably the most versatile material of the early world. "
+				""
+				"On top of this some trees, like the gum tree, have other purposes and serve massive industrial purpose."
+			]
+			dependencies: ["17E475058831DD55"]
+			id: "15E1E735A1207366"
+			tasks: [{
+				id: "0383553C30696C14"
+				type: "item"
+				item: "minecraft:oak_log"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			hide_dependency_lines: true
+			dependencies: ["15E1E735A1207366"]
+			id: "41D367094FB00E61"
+			tasks: [{
+				id: "7F354AD0FA7255DE"
+				type: "item"
+				item: "minecraft:oak_sapling"
+			}]
+		}
+		{
+			title: "Rubber Spaling"
+			x: 3.5d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["15E1E735A1207366"]
+			id: "5EC7BDC9A7382542"
+			tasks: [{
+				id: "788367E09893D32D"
+				type: "item"
+				item: "minecraft:birch_sapling"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			hide_dependency_lines: true
+			dependencies: ["15E1E735A1207366"]
+			id: "6053A6DE15A74CB2"
+			tasks: [{
+				id: "5AF5F08F51610AC2"
+				type: "item"
+				item: "pamhc2trees:avocado_sapling"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["15E1E735A1207366"]
+			id: "4AD18A69CE1B4141"
+			tasks: [{
+				id: "6829FDC49F88D477"
+				type: "item"
+				item: "pamhc2trees:maple_sapling"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["15E1E735A1207366"]
+			id: "77B6EEE7E2A85AE0"
+			tasks: [{
+				id: "740DF91C448E2673"
+				type: "item"
+				item: "tconstruct:earth_slime_sapling"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["15E1E735A1207366"]
+			id: "17C2A22A728A9B93"
+			tasks: [{
+				id: "4A8001E044157943"
+				type: "item"
+				item: "pamhc2trees:paperbark_sapling"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			hide_dependency_lines: true
+			dependencies: ["15E1E735A1207366"]
+			id: "1E0A1162DD338A9D"
+			tasks: [{
+				id: "06E6920D50787F12"
+				type: "item"
+				item: "pamhc2trees:spiderweb_sapling"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["15E1E735A1207366"]
+			id: "0F6A9F2D89408468"
+			tasks: [{
+				id: "5DB6F4EFA9FDE346"
+				type: "item"
+				item: "pamhc2trees:pinenut_sapling"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -0.5d
+			dependencies: ["42748A7D087EFCA9"]
+			id: "4B397B241074FCF2"
+			tasks: [{
+				id: "706CB8873A9CC183"
+				type: "item"
+				item: "moreminecarts:glass_cactus"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "444188482FA98CFB"
+			tasks: [{
+				id: "283EA89D26793BE6"
+				type: "item"
+				item: "byg:arisian_bloom_branch"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "4CA41399811F5E03"
+			tasks: [{
+				id: "05ACA69C1F44715C"
+				type: "item"
+				item: "byg:lament_vine"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -10.5d
+			dependencies: ["530003D75B10EDA9"]
+			id: "3BFE17E358592BDE"
+			tasks: [{
+				id: "6069F06D8CA1676D"
+				type: "item"
+				item: "minecraft:warped_wart_block"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -9.5d
+			dependencies: ["6494778BC6F42728"]
+			id: "69197EF376F30DA5"
+			tasks: [{
+				id: "113F477890D05BC1"
+				type: "item"
+				item: "byg:sythian_wart_block"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.5d
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "643C0E661DBA585E"
+			tasks: [{
+				id: "12FB6866EDEF89EB"
+				type: "item"
+				item: "byg:weeping_roots"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 2.5d
+			dependencies: ["279CD5AD6F6DCEEC"]
+			id: "4A68883C4ADCA407"
+			tasks: [{
+				id: "0D170650297DC984"
+				type: "item"
+				item: "byg:soul_shroom"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 0.5d
+			dependencies: ["279CD5AD6F6DCEEC"]
+			id: "4E66D7802F028CA2"
+			tasks: [{
+				id: "5EE47A81A9A9D669"
+				type: "item"
+				item: "byg:soul_shroom_spore_end"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -8.5d
+			dependencies: ["530003D75B10EDA9"]
+			id: "5D2DCFAD6F1DC1A7"
+			tasks: [{
+				id: "064B2BC5361D74DC"
+				type: "item"
+				item: "byg:warped_bush"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -9.5d
+			dependencies: ["530003D75B10EDA9"]
+			id: "02C87F2988023898"
+			tasks: [{
+				id: "7FABFAABAB900617"
+				type: "item"
+				item: "byg:warped_cactus"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.5d
+			dependencies: ["145AE1012D6A6672"]
+			id: "55016BB9B66385BE"
+			tasks: [{
+				id: "7FD369A0C3B7BB7E"
+				type: "item"
+				item: "byg:embur_gel_block"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "72947C51B70402C2"
+			tasks: [{
+				id: "67AA539B43E10CDF"
+				type: "item"
+				item: "betterendforge:jungle_vine"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "070844EBB5BED391"
+			tasks: [{
+				id: "6CF08E952B76F5B6"
+				type: "item"
+				item: "byg:vermilion_sculk_tendrils"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "217986DF3E95F93C"
+			tasks: [{
+				id: "50EF291F0E0ED703"
+				type: "item"
+				item: "byg:oddity_cactus"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.5d
+			dependencies: ["00C6A45F586738AF"]
+			id: "385A3B62CB7D9441"
+			tasks: [{
+				id: "54821E789DC5017E"
+				type: "item"
+				item: "betterendforge:hydralux_sapling"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "412935DC40BFA1C9"
+			tasks: [{
+				id: "0F7DCBD22F9C5962"
+				type: "item"
+				item: "betterendforge:dense_vine"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "3E077226B2FF10C6"
+			tasks: [{
+				id: "0737A90B00E83DE7"
+				type: "item"
+				item: "betterendforge:filalux"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "4D3D5ECFE7619C31"
+			tasks: [{
+				id: "20D58A56458D2432"
+				type: "item"
+				item: "betterendforge:aeridium"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "58532111D75AE0B7"
+			tasks: [{
+				id: "2A5AC75C42308640"
+				type: "item"
+				item: "byg:bulbis_anomaly"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -3.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "3CC4FFA8F2345E05"
+			tasks: [{
+				id: "0732A4FB4C8E3CD9"
+				type: "item"
+				item: "betterendforge:tenanea_flowers"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "29CA24B413909144"
+			tasks: [{
+				id: "587A74DCD1376001"
+				type: "item"
+				item: "betterendforge:bulb_vine"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "70D5F91B7A4B0248"
+			tasks: [{
+				id: "6A02827E500EBFA9"
+				type: "item"
+				item: "byg:imparius_vine"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "6820D7C21FC7969B"
+			tasks: [{
+				id: "6CE6D59B4E3904CC"
+				type: "item"
+				item: "betterendforge:twisted_vine"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -0.5d
+			dependencies: ["00C6A45F586738AF"]
+			id: "416ADCE3A010FC0B"
+			tasks: [{
+				id: "5CADB633705E758A"
+				type: "item"
+				item: "betterendforge:lanceleaf_seed"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -2.5d
+			dependencies: ["00C6A45F586738AF"]
+			id: "169B14308E7A69CA"
+			tasks: [{
+				id: "03AD65C045582265"
+				type: "item"
+				item: "betterendforge:blossom_berry_seed"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -0.5d
+			dependencies: ["00C6A45F586738AF"]
+			id: "44EDBDB9B724E2F5"
+			tasks: [{
+				id: "3D7E3D945FABA0DD"
+				type: "item"
+				item: "betterendforge:lumecorn_seed"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -1.5d
+			dependencies: ["00C6A45F586738AF"]
+			id: "2A23754EF1E9B03D"
+			tasks: [{
+				id: "06B4697D9530C17F"
+				type: "item"
+				item: "byg:ether_bulbs"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "219B86E4D5F4DE45"
+			tasks: [{
+				id: "4F531B306E7B878E"
+				type: "item"
+				item: "betterendforge:neon_cactus"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.5d
+			dependencies: ["00C6A45F586738AF"]
+			id: "79B14D66DF584B40"
+			tasks: [{
+				id: "39B854E608BFD54C"
+				type: "item"
+				item: "betterendforge:bolux_mushroom"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 2.0d
+			dependencies: [
+				"279CD5AD6F6DCEEC"
+				"00C6A45F586738AF"
+			]
+			id: "7333B19141532214"
+			tasks: [{
+				id: "4009AA12CB3ED289"
+				type: "item"
+				item: "byg:shulkren_fungus"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "59D505ABFF009099"
+			tasks: [{
+				id: "478BD4B44CC72EEF"
+				type: "item"
+				item: "betterendforge:rubinea"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "11D33FA6CFF8350C"
+			tasks: [{
+				id: "63946CF1049E298A"
+				type: "item"
+				item: "byg:ivis_sprout"
+			}]
+		}
+		{
+			title: "Bioprocessing Faunae"
+			icon: "minecraft:cod"
+			x: 0.0d
+			y: 8.5d
+			description: [
+				"Not only can plants be processed for various products, the fauna of this planet can also be utilized for various matierals and substances."
+				""
+				"None of these processes actively kill the animals, and are instead ways to utilize their natural byproducts."
+				""
+				"Anything from fish, to bird's eggs, to moth's silk is useful."
+			]
+			dependencies: ["020277435F5E44E1"]
+			id: "3E1CA9FF4D3578E1"
+			tasks: [{
+				id: "52BEABF6FAF0198E"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["42748A7D087EFCA9"]
+			id: "74DA104C21F5384F"
+			tasks: [{
+				id: "33FF4AA513491E82"
+				type: "item"
+				item: "minecraft:sweet_berries"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.0d
+			dependencies: ["15E1E735A1207366"]
+			id: "5C5E3F261FD00CF1"
+			tasks: [{
+				id: "6D99E2E5358AD1D9"
+				type: "item"
+				item: "malum:runewood_sapling"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -6.5d
+			description: ["extractable glowstone"]
+			dependencies: ["2B77C5AEB8B06B0C"]
+			id: "2F55CC12E90B29EC"
+			tasks: [
+				{
+					id: "56498E561B764647"
+					type: "item"
+					item: "byg:blue_glowcane"
+				}
+				{
+					id: "78AE05DD271EDF7B"
+					type: "item"
+					item: "byg:pink_glowcane"
+				}
+				{
+					id: "70B71FC49C7BD724"
+					type: "item"
+					item: "byg:purple_glowcane"
+				}
+				{
+					id: "37C44B40CAD57ABD"
+					type: "item"
+					item: "byg:red_glowcane"
+				}
+			]
+		}
+	]
+}

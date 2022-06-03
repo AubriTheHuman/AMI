@@ -1,0 +1,14 @@
+{
+  "name": "Bauxite",
+  "icon": "amicore:bauxite_ore",
+  "category": "patchouli:03_resources",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Bauxite",
+      "item": "amicore:bauxite_ore",
+      "link_recipe": false,
+      "text": "Bauxite spawns alongside Geothite, Granite, and Hematite in a high vein density, between Y 50 and 80. Bauxite yields aluminium. It is a common vein."
+    }
+  ]
+}
