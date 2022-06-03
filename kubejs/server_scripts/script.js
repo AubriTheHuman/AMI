@@ -154,14 +154,14 @@ onEvent('item.tags', event => {
 
   event.add('forge:sheetmetals/crude_steel', 'amicore:crude_steel_sheetmetal')
 
-  event.add('malum:spirits', 'malum:arcane_spirit')
-  event.add('malum:spirits', 'malum:wicked_spirit')
-  event.add('malum:spirits', 'malum:eldritch_spirit')
-  event.add('malum:spirits', 'malum:earthen_spirit')
-  event.add('malum:spirits', 'malum:infernal_spirit')
-  event.add('malum:spirits', 'malum:aerial_spirit')
-  event.add('malum:spirits', 'malum:aquatic_spirit')
-  event.add('malum:spirits', 'malum:sacred_spirit')
+  // event.add('malum:spirits', 'malum:arcane_spirit')
+  // event.add('malum:spirits', 'malum:wicked_spirit')
+  // event.add('malum:spirits', 'malum:eldritch_spirit')
+  // event.add('malum:spirits', 'malum:earthen_spirit')
+  // event.add('malum:spirits', 'malum:infernal_spirit')
+  // event.add('malum:spirits', 'malum:aerial_spirit')
+  // event.add('malum:spirits', 'malum:aquatic_spirit')
+  // event.add('malum:spirits', 'malum:sacred_spirit')
 
 
   // const triplevariants = ["iron", "gold", "copper", "tin", "silver", "lead", "aluminum", "nickel", "platinum", "uranium", "zinc", "osmium", "titanium"];

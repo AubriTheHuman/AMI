@@ -239,7 +239,7 @@ draining.addRecipe("sulfuric_acid_drain", <item:quark:clear_shard>, <fluid:amico
 draining.addRecipe("soulfuric_acid_drain", <item:quark:clear_shard>, <fluid:amicore:soulfuric_acid> * 100, <item:amicore:soulfuric_acid_bottle>);
 draining.addRecipe("spirit_distillation_drain", <item:amicore:tempered_bottle>, <fluid:amicore:simple_spirit_distillation> * 100, <item:amicore:spirit_distillation_bottle>);
 filling.addRecipe("spirit_distillation_filling", <item:amicore:spirit_distillation_bottle>, <item:amicore:tempered_bottle>, <fluid:amicore:simple_spirit_distillation>);
-mixing.addRecipe("simple_spirit_distillation_mixing", "heated", <fluid:amicore:simple_spirit_distillation> * 1000, [<tag:items:malum:basic_spirits>, <item:minecraft:sugar>], [<fluid:minecraft:water> * 1000], 600);
+mixing.addRecipe("simple_spirit_distillation_mixing", "heated", <fluid:amicore:simple_spirit_distillation> * 1000, [<tag:items:malum:spirits/basic_spirits>, <item:minecraft:sugar>], [<fluid:minecraft:water> * 1000], 600);
 
 //sulfur processings
 milling.addRecipe("sulfur_milling", [<item:immersiveengineering:dust_sulfur> * 3, <item:immersiveengineering:dust_sulfur> % 50], <item:amicore:sulfur_crystal>);
