@@ -1236,3 +1236,14 @@ Recipe.type(Type.CARPENTER)
     .tool(<tag:items:artisantools:type/handsaw>, 1)
     .extra(<item:immersiveengineering:dust_wood>, 0.05)
     .register("runewood_item_pedestal_stand_carpenter");
+
+//lectern
+craftingTable.removeRecipe(<item:minecraft:lectern>);
+Recipe.type(Type.CARPENTER) 
+    .shaped([[<tag:items:minecraft:slabs/wooden>,<tag:items:minecraft:slabs/wooden>,<tag:items:minecraft:slabs/wooden>],
+    [<item:minecraft:air>,<tag:items:forge:bookshelves>,<item:minecraft:air>],
+    [<item:minecraft:air>,<tag:items:minecraft:slabs/wooden>,<item:minecraft:air>]])
+    .output(<item:minecraft:lectern>)
+    .tool(<tag:items:artisantools:type/handsaw>, 1)
+    .extra(<item:immersiveengineering:dust_wood>, 0.05)
+    .register("minecraft_lectern");

@@ -76,7 +76,10 @@ val materials = [
   ["thallasium", "Thallasium", 0x74C4C9, 0xFFFFFF, false, true, true, true, "betterendforge:thallasium_ingot"],
   ["terminite", "Terminite", 0x00D392, 0xFFFFFF, false, true, true, true, "betterendforge:terminite_ingot"],
   ["pendorite", "Pendorite", 0x784B76, 0xFFFFFF, false, true, true, true, "byg:pendorite_ingot"],
-  ["starmetal", "Starmetal", 0xFFFFFF, 0xFFFFFF, false, true, true, true, "astralsorcery:starmetal_ingot"]
+  ["starmetal", "Starmetal", 0x0800C3, 0xFFFFFF, false, true, true, true, "astralsorcery:starmetal_ingot"],
+	["rosenquartz", "Rosenquartz", 0xE646B9, 0xFFFFFF, false, true, true, true, "tdelight:rosenquartz_ingot"],
+	["gildedfern", "Goldedfern", 0x096A14, 0xFFFFFF, false, true, true, true, "tdelight:gildedfern_ingot"],
+	["hamletite", "Hamletite", 0x900821, 0xFFFFFF, false, true, true, true, "tdelight:hamletite_ingot"]
 ] as string[][];
 
 var manager = <tag:items:forge:stone>.getManager();
