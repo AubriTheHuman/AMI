@@ -66,7 +66,10 @@ const metalvariants = [
   ["thallasium", "Thallasium", 0x74C4C9, 0xFFFFFF, false, true, true, true, "betterendforge:thallasium_ingot"],
   ["terminite", "Terminite", 0x00D392, 0xFFFFFF, false, true, true, true, "betterendforge:terminite_ingot"],
   ["pendorite", "Pendorite", 0x784B76, 0xFFFFFF, false, true, true, true, "byg:pendorite_ingot"],
-  ["starmetal", "Starmetal", 0xFFFFFF, 0xFFFFFF, false, true, true, true, "astralsorcery:starmetal_ingot"]
+  ["starmetal", "Starmetal", 0x0800C3, 0xFFFFFF, false, true, true, true, "astralsorcery:starmetal_ingot"],
+	["rosenquartz", "Rosenquartz", 0xE646B9, 0xFFFFFF, false, true, true, true, "tdelight:rosenquartz_ingot"],
+	["gildedfern", "Goldedfern", 0x096A14, 0xFFFFFF, false, true, true, true, "tdelight:gildedfern_ingot"],
+	["hamletite", "Hamletite", 0x900821, 0xFFFFFF, false, true, true, true, "tdelight:hamletite_ingot"]
 ];
 
 const oretypes = [
@@ -486,7 +489,47 @@ onEvent('item.tags', event => {
   event.remove('forge:nuggets/titaniumaluminide', 'advancedrocketry:nuggettitaniumaluminide');
   event.remove('forge:nuggets', 'advancedrocketry:nuggettitaniumiridium');
   event.remove('forge:nuggets/titaniumiridium', 'advancedrocketry:nuggettitaniumiridium');
+
+
+  //ccbp
+  event.remove('forge:ingots', 'cavesandcliffs:copper_ingot');
+  event.remove('forge:ingots/copper', 'cavesandcliffs:copper_ingot');
+  event.remove('forge:storage_blocks', 'cavesandcliffs:copper_block');
+  event.remove('forge:storage_blocks/copper', 'cavesandcliffs:copper_block');
+  event.remove('forge:ores', 'cavesandcliffs:copper_ore');
+  event.remove('forge:ores/copper', 'cavesandcliffs:copper_ore');
+  event.remove('forge:ores', 'cavesandcliffs:deepslate_copper_ore');
+  event.remove('forge:ores/copper', 'cavesandcliffs:deepslate_copper_ore');
+  event.remove('forge:ores', 'cavesandcliffs:deepslate_gold_ore');
+  event.remove('forge:ores/gold', 'cavesandcliffs:deepslate_gold_ore');
+  event.remove('tconstruct:chrysophilite_ores', 'cavesandcliffs:deepslate_gold_ore');
+  event.remove('forge:ores', 'cavesandcliffs:raw_iron');
+  event.remove('forge:ores/iron', 'cavesandcliffs:raw_iron');
+  event.remove('forge:ores', 'cavesandcliffs:raw_copper');
+  event.remove('forge:ores/copper', 'cavesandcliffs:raw_copper');
+  event.remove('forge:ores', 'cavesandcliffs:raw_gold');
+  event.remove('forge:ores/gold', 'cavesandcliffs:raw_gold');
+  event.remove('forge:ores', 'cavesandcliffs:deepslate_iron_ore');
+  event.remove('forge:ores/iron', 'cavesandcliffs:deepslate_iron_ore');
+
+  //steampowered
+  event.remove('steampowered:plates', 'steampowered:bronze_sheet');
+  event.remove('steampowered:plates/bronze', 'steampowered:bronze_sheet');
+  event.remove('steampowered:plates', 'steampowered:cast_iron_sheet');
+  event.remove('steampowered:plates/cast_iron', 'steampowered:cast_iron_sheet');
+  event.remove('steampowered:plates', 'steampowered:steel_sheet');
+  event.remove('steampowered:plates/steel', 'steampowered:steel_sheet');
+  event.remove('steampowered:ingots', 'steampowered:steel_ingot');
+  event.remove('steampowered:ingots/steel', 'steampowered:steel_ingot');
+  event.remove('steampowered:ingots', 'steampowered:cast_iron_ingot');
+  event.remove('steampowered:ingots/cast_iron', 'steampowered:cast_iron_ingot');
+
   
+  event.remove('forge:ingots/steel', 'libvulpes:ingotsteel');
+  event.remove('forge:ingots', 'libvulpes:ingotsteel');
+  event.remove('steampowered:ingots/steel', 'libvulpes:ingotsteel');
+
+
   event.remove('forge:ingots/silicon_bronze', 'tconstruct:tinkers_bronze_ingot');
   event.add('forge:ingots/silicon_brass', 'tconstruct:tinkers_bronze_ingot');
   event.add('forge:ingots', 'tconstruct:tinkers_bronze_ingot');
@@ -498,6 +541,45 @@ onEvent('item.tags', event => {
   event.add('forge:storage_blocks', 'tconstruct:tinkers_bronze_block');
   
   event.add('forge:gems/flint', 'minecraft:flint');
+
+
+  //swappable steel tag
+  event.add('forge:ingots/steel_crafting', 'amicore:steel_ingot');
+  event.add('forge:ingots/steel_crafting', 'amicore:crude_steel_ingot');
+  event.add('forge:rods/steel_crafting', 'amicore:steel_rod');
+  event.add('forge:rods/steel_crafting', 'amicore:crude_steel_rod');
+  event.add('forge:plates/steel_crafting', 'amicore:steel_plate');
+  event.add('forge:plates/steel_crafting', 'amicore:crude_steel_plate');
+  event.add('forge:rounded_sheets/steel_crafting', 'amicore:steel_round_sheet');
+  event.add('forge:rounded_sheets/steel_crafting', 'amicore:crude_steel_round_sheet');
+  event.add('forge:cakes/steel_crafting', 'amicore:steel_cake');
+  event.add('forge:cakes/steel_crafting', 'amicore:crude_steel_cake');
+  event.add('forge:large_sheets/steel_crafting', 'amicore:steel_large_sheet');
+  event.add('forge:large_sheets/steel_crafting', 'amicore:crude_steel_large_sheet');
+  event.add('forge:coils/steel_crafting', 'amicore:steel_coil');
+  event.add('forge:coils/steel_crafting', 'amicore:crude_steel_coil');
+  event.add('forge:bar_stocks/steel_crafting', 'amicore:steel_bar_stock');
+  event.add('forge:bar_stocks/steel_crafting', 'amicore:crude_steel_bar_stock');
+  event.add('forge:nuggets/steel_crafting', 'amicore:steel_nugget');
+  event.add('forge:nuggets/steel_crafting', 'amicore:crude_steel_nugget');
+  event.add('forge:bolts/steel_crafting', 'amicore:steel_bolt');
+  event.add('forge:bolts/steel_crafting', 'amicore:crude_steel_bolt');
+  event.add('forge:wires/steel_crafting', 'amicore:steel_wire');
+  event.add('forge:wires/steel_crafting', 'amicore:crude_steel_wire');
+  event.add('forge:dusts/steel_crafting', 'amicore:steel_wire');
+  event.add('forge:dusts/steel_crafting', 'amicore:crude_steel_wire');
+  event.add('forge:tiny_dusts/steel_crafting', 'amicore:steel_tiny_dust');
+  event.add('forge:tiny_dusts/steel_crafting', 'amicore:crude_steel_tiny_dust');
+  event.add('forge:storage_blocks/steel_crafting', 'amicore:steel_block');
+  event.add('forge:storage_blocks/steel_crafting', 'amicore:crude_steel_block');
+  event.add('forge:heated_cakes/steel_crafting', 'amicore:steel_heated_cake');
+  event.add('forge:heated_cakes/steel_crafting', 'amicore:crude_steel_heated_cake');
+  event.add('forge:heated_ingots/steel_crafting', 'amicore:steel_heated_ingot');
+  event.add('forge:heated_ingots/steel_crafting', 'amicore:crude_steel_heated_ingot');
+  event.add('forge:heated_bar_stocks/steel_crafting', 'amicore:steel_heated_bar_stock');
+  event.add('forge:heated_bar_stocks/steel_crafting', 'amicore:crude_steel_heated_bar_stock');
+  event.add('forge:heated_large_sheets/steel_crafting', 'amicore:steel_heated_large_sheet');
+  event.add('forge:heated_large_sheets/steel_crafting', 'amicore:crude_steel_heated_large_sheet');
   
   //tongs tag
   event.add('curios:hands', 'amicore:metal_tongs');

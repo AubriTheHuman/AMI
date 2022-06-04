@@ -45,3 +45,13 @@ mods.jei.JEI.hideItem(<item:create:crushed_lead_ore>);
 mods.jei.JEI.hideItem(<item:create:crushed_aluminum_ore>);
 mods.jei.JEI.hideItem(<item:create:crushed_uranium_ore>);
 mods.jei.JEI.hideItem(<item:create:crushed_nickel_ore>);
+
+
+#steampowere
+mods.jei.JEI.hideItem(<item:steampowered:bronze_sheet>);
+mods.jei.JEI.hideItem(<item:steampowered:cast_iron_sheet>);
+mods.jei.JEI.hideItem(<item:steampowered:steel_sheet>);
+mods.jei.JEI.hideItem(<item:steampowered:cast_iron_ingot>);
+mods.jei.JEI.hideItem(<item:steampowered:steel_ingot>);
+pressing.removeRecipe(<item:steampowered:cast_iron_sheet>);
+mixing.removeRecipe(<item:steampowered:cast_iron_ingot>);

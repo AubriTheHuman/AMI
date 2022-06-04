@@ -63,7 +63,10 @@ const metalvariants = [
 	["thallasium", "Thallasium", 0x74C4C9, 0xFFFFFF, false, true, true, true],
 	["terminite", "Terminite", 0x00D392, 0xFFFFFF, false, true, true, true],
 	["pendorite", "Pendorite", 0x784B76, 0xFFFFFF, false, true, true, true],
-	["starmetal", "Starmetal", 0xFFFFFF, 0xFFFFFF, false, true, true, true]
+	["starmetal", "Starmetal", 0x0800C3, 0xFFFFFF, false, true, true, true],
+	["rosenquartz", "Rosenquartz", 0xE646B9, 0xFFFFFF, false, true, true, true],
+	["gildedfern", "Goldedfern", 0x096A14, 0xFFFFFF, false, true, true, true],
+	["hamletite", "Hamletite", 0x900821, 0xFFFFFF, false, true, true, true]
 ];
 
 // 0 = advanced (triples)
