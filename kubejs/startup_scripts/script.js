@@ -442,7 +442,7 @@ onEvent('item.registry', event => {
 	//hydroxide fuel age
 	event.create('amicore:rubber_chunk').displayName('Rubber Chunk').texture("kubejs:item/rubber_chunk").group('amicore.biotab');
 	event.create('amicore:raw_rubber').displayName('Raw Rubber').texture("kubejs:item/raw_rubber").group('amicore.biotab');
-	event.create('amicore:crushed_rubber').displayName('Crushed Rubber').texture("kubejs:item/crushed_rubber").group('amicore.biotab');
+	event.create('amicore:ground_rubber').displayName('Ground Rubber').texture("kubejs:item/ground_rubber").group('amicore.biotab');
 	event.create('amicore:rubber_sheet').displayName('Rubber Sheet').texture("kubejs:item/rubber_sheet").group('amicore.biotab');
 	event.create('amicore:fish_meal').displayName('Fish Meal').texture("kubejs:item/fish_meal").group('amicore.biotab');
 	event.create('amicore:olive_meal').displayName('Olive Meal').texture("kubejs:item/olive_meal").group('amicore.biotab');
@@ -590,13 +590,14 @@ onEvent('fluid.registry', event => {
 	// event.create('amicore:molten_solder').textureThick(0x837D7D).bucketColor(0x837D7D).displayName('Molten Solder').bucketItem(item => { item.group('amicore.metaltab')  });
 
 	//Hydroxide age fluids
-	event.create('amicore:fish_water').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Fish Water');
-	event.create('amicore:used_fish_water').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Dirty Fish Water');
-	event.create('amicore:fish_oil').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Fish Oil');
-	event.create('amicore:olive_oil').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Olive Oil');
-	event.create('amicore:avocado_oil').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Avocado Oil');
-	event.create('amicore:mineral_oil').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Mineral Oil');
-	event.create('amicore:saline').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Saline');
+	event.create('amicore:fish_water').textureThin(0x97C1F7).bucketColor(0x97C1F7).displayName('Fish Water');
+	event.create('amicore:used_fish_water').textureThin(0xBFA571).bucketColor(0xBFA571).displayName('Dirty Fish Water');
+	event.create('amicore:fish_oil').textureThin(0xE9BB16).bucketColor(0xE9BB16).displayName('Fish Oil');
+	event.create('amicore:olive_oil').textureThin(0x818C1C).bucketColor(0x818C1C).displayName('Olive Oil');
+	event.create('amicore:avocado_oil').textureThin(0xD1DF5C).bucketColor(0xD1DF5C).displayName('Avocado Oil');
+	event.create('amicore:saline').textureThin(0xADD6F6).bucketColor(0xADD6F6).displayName('Saline');
+	event.create('amicore:refined_plant_oil').textureThin(0xF2E131).bucketColor(0xF2E131).displayName('Refined Plant Oil');
+	event.create('amicore:lubricant').textureThin(0x008F19).bucketColor(0x008F19).displayName('Lubricant');
 	
 
 })
