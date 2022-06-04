@@ -20,6 +20,7 @@
 			}]
 		}
 		{
+			title: "Radioactive crafting"
 			x: 0.5d
 			y: -0.5d
 			id: "63060FEEA8BB3912"

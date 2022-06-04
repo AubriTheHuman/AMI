@@ -2420,7 +2420,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: 8.5d
 			y: 12.0d
 			dependencies: ["3DFB9E99A226F3A7"]
 			id: "7C40241E360F5DB9"
@@ -2475,6 +2475,17 @@
 				id: "0A5B8EFE92925E98"
 				type: "item"
 				item: "advancedrocketry:qcrucible"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 12.0d
+			dependencies: ["3DFB9E99A226F3A7"]
+			id: "61BE316888E4C0E9"
+			tasks: [{
+				id: "1E786D821305B348"
+				type: "item"
+				item: "appliedenergistics2:capacity_card"
 			}]
 		}
 	]

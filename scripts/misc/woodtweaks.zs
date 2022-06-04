@@ -1240,9 +1240,9 @@ Recipe.type(Type.CARPENTER)
 //lectern
 craftingTable.removeRecipe(<item:minecraft:lectern>);
 Recipe.type(Type.CARPENTER) 
-    .shaped([[<tag:items:minecraft:slabs/wooden>,<tag:items:minecraft:slabs/wooden>,<tag:items:minecraft:slabs/wooden>],
+    .shaped([[<tag:items:minecraft:wooden_slabs>,<tag:items:minecraft:wooden_slabs>,<tag:items:minecraft:wooden_slabs>],
     [<item:minecraft:air>,<tag:items:forge:bookshelves>,<item:minecraft:air>],
-    [<item:minecraft:air>,<tag:items:minecraft:slabs/wooden>,<item:minecraft:air>]])
+    [<item:minecraft:air>,<tag:items:minecraft:wooden_slabs>,<item:minecraft:air>]])
     .output(<item:minecraft:lectern>)
     .tool(<tag:items:artisantools:type/handsaw>, 1)
     .extra(<item:immersiveengineering:dust_wood>, 0.05)
