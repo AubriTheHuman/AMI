@@ -1,0 +1,33 @@
+{
+  "isOutput": false,
+  "stress": 128.0,
+  "canShared": false,
+  "location": "amicore:sitting_tank_stress_input",
+  "traits": {},
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:sitting_tank_panel",
+    "frontTexture": "multiblocked:rotation_in",
+    "backTexture": "multiblocked:rotation_in",
+    "leftTexture": "multiblocked:rotation_in",
+    "rightTexture": "multiblocked:rotation_in",
+    "upTexture": "multiblocked:rotation_in",
+    "downTexture": "multiblocked:rotation_in",
+    "type": "gregtech"
+  },
+  "properties": {
+    "isOpaque": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "harvestLevel": 1,
+    "lightEmissive": 0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "hasCollision": true,
+    "tabGroup": "amicore.machinetab",
+    "stackSize": 64
+  },
+  "type": "create_part"
+}

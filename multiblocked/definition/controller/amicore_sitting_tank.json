@@ -72,7 +72,7 @@
       [
         "ABBBA",
         "BEEEB",
-        "BEEEB",
+        "BEEEH",
         "B   B",
         "     "
       ],
@@ -240,6 +240,14 @@
         ],
         "type": "blocks"
       },
+      "H": {
+        "blocks": [
+          {
+            "id": "amicore:sitting_tank_stress_input"
+          }
+        ],
+        "type": "blocks"
+      },
       "air": {
         "type": "air"
       },
@@ -274,6 +282,9 @@
       ],
       "G": [
         "G"
+      ],
+      "H": [
+        "H"
       ],
       "-": [
         "air"

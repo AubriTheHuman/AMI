@@ -1,5 +1,5 @@
 {
-  "canShared": true,
+  "canShared": false,
   "location": "amicore:sitting_pool_fluid_input",
   "traits": {
     "fluid": [

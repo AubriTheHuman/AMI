@@ -1,0 +1,5 @@
+
+["Config for AMICore"]
+	#Toggle malum spirit additions. Default: true
+	"Do Malum Additions" = true
+

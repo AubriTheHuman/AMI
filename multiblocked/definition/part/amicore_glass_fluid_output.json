@@ -1,0 +1,62 @@
+{
+  "canShared": false,
+  "location": "amicore:glass_fluid_output",
+  "traits": {
+    "background": "multiblocked:textures/sitting_pool_fluid_gui.png",
+    "fluid": [
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 79,
+        "y": 80,
+        "autoIO": false,
+        "tC": 20000
+      }
+    ]
+  },
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:glass_base",
+    "frontTexture": "multiblocked:fluid_valve_out",
+    "backTexture": "multiblocked:fluid_valve_out",
+    "leftTexture": "multiblocked:fluid_valve_out",
+    "rightTexture": "multiblocked:fluid_valve_out",
+    "upTexture": "multiblocked:fluid_valve_out",
+    "downTexture": "multiblocked:fluid_valve_out",
+    "type": "gregtech"
+  },
+  "formedRenderer": {
+    "baseTexture": "multiblocked:glass_base",
+    "frontTexture": "multiblocked:fluid_valve_out",
+    "backTexture": "multiblocked:glass_base",
+    "leftTexture": "multiblocked:glass_base",
+    "rightTexture": "multiblocked:glass_base",
+    "upTexture": "multiblocked:glass_base",
+    "downTexture": "multiblocked:glass_base",
+    "type": "gregtech"
+  },
+  "workingRenderer": {
+    "baseTexture": "multiblocked:glass_base",
+    "frontTexture": "multiblocked:fluid_valve_out",
+    "backTexture": "multiblocked:glass_base",
+    "leftTexture": "multiblocked:glass_base",
+    "rightTexture": "multiblocked:glass_base",
+    "upTexture": "multiblocked:glass_base",
+    "downTexture": "multiblocked:glass_base",
+    "type": "gregtech"
+  },
+  "properties": {
+    "isOpaque": false,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "harvestLevel": 1,
+    "lightEmissive": 0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "hasCollision": true,
+    "tabGroup": "amicore.machinetab",
+    "stackSize": 64
+  }
+}

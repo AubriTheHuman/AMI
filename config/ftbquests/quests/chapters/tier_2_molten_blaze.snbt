@@ -1919,6 +1919,8 @@
 				"Before adding slurry to the tank, mix in a flux for the metallic components to bind to. After that take 32 ore worth of slurry and leave it in the pool for a time. The ore powder will settle to the bottom, and waste water will remain."
 				""
 				"Youll have to find a way to not underfill the tank, else risk bottlenecking your ore processing system."
+				""
+				"Also, the machine requires a minimum of 32 RPM to run the dredger, but it also requires 64 stress, making it quite expensive to run, needing 2048 stress capacity. On top of this, increasing speed will not speed up the machine, so keep that in mind before giving it 256 rpm."
 			]
 			dependencies: ["23A251E4EAF9BDF2"]
 			id: "69A375FA08932135"
@@ -1947,7 +1949,7 @@
 					id: "79BA7EE4536FCE17"
 					type: "item"
 					item: "create:copper_casing"
-					count: 84L
+					count: 83L
 				}
 				{
 					id: "36A86C51F5E3C816"
@@ -1966,6 +1968,11 @@
 					type: "item"
 					item: "create:fluid_pipe"
 					count: 2L
+				}
+				{
+					id: "10FEAC4234B75D7B"
+					type: "item"
+					item: "amicore:sitting_tank_stress_input"
 				}
 			]
 			rewards: [

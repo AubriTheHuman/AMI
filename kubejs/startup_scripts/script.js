@@ -440,8 +440,14 @@ onEvent('item.registry', event => {
 	event.create('amicore:antenna_cluster').displayName('Simple Antenna').texture("kubejs:item/antenna_cluster").group('amicore.materialtab');
 
 	//hydroxide fuel age
-	event.create('amicore:rubber').displayName('Rubber').texture("kubejs:item/rubber").group('amicore.biotab');
+	event.create('amicore:rubber_chunk').displayName('Rubber Chunk').texture("kubejs:item/rubber_chunk").group('amicore.biotab');
 	event.create('amicore:raw_rubber').displayName('Raw Rubber').texture("kubejs:item/raw_rubber").group('amicore.biotab');
+	event.create('amicore:crushed_rubber').displayName('Crushed Rubber').texture("kubejs:item/crushed_rubber").group('amicore.biotab');
+	event.create('amicore:rubber_sheet').displayName('Rubber Sheet').texture("kubejs:item/rubber_sheet").group('amicore.biotab');
+	event.create('amicore:fish_meal').displayName('Fish Meal').texture("kubejs:item/fish_meal").group('amicore.biotab');
+	event.create('amicore:olive_meal').displayName('Olive Meal').texture("kubejs:item/olive_meal").group('amicore.biotab');
+	event.create('amicore:avocado_meal').displayName('Avocado Meal').texture("kubejs:item/avocado_meal").group('amicore.biotab');
+	event.create('amicore:biowaste').displayName('Biowaste').texture("kubejs:item/biowaste").group('amicore.biotab');
 
 })
 
@@ -516,7 +522,8 @@ onEvent('block.registry', event => {
 	event.create('amicore:regolith').material('stone').hardness(2).displayName('Regolith').texture("kubejs:block/regolith").item(item => { item.group('amicore.oretab')  });
 	event.create('amicore:talcum').material('stone').hardness(0.5).displayName('Talcum').texture("kubejs:block/talcum").item(item => { item.group('amicore.oretab')  });
 	event.create('amicore:talc_dust').material('sand').hardness(0.5).displayName('Talcum Dust').texture("kubejs:block/talc_dust").item(item => { item.group('amicore.oretab')  });
-	event.create('amicore:tank_wall').material('wood').hardness(2).displayName('Tank Wall').texture("kubejs:block/tank_wall").item(item => { item.group('amicore.machinetab')  });
+	event.create('amicore:tank_wall').material('wood').hardness(2).displayName('Tank Wall').texture("kubejs:block/tank_wall").harvestTool('axe', 0).item(item => { item.group('amicore.machinetab')  });
+	event.create('amicore:tank_filter').material('wood').hardness(2).displayName('Tank Filter').texture("kubejs:block/tank_filter").harvestTool('axe', 0).item(item => { item.group('amicore.machinetab')  });
 
 })
 
@@ -581,6 +588,15 @@ onEvent('fluid.registry', event => {
 	event.create('amicore:ashy_weeping_paste').textureThin(0xB2000A).bucketColor(0xB2000A).displayName('Ashy Weeping Paste')	
 	event.create('amicore:simple_spirit_distillation').textureThin(0xD453C9).bucketColor(0xD453C9).displayName('Simple Spirit Distillation');
 	// event.create('amicore:molten_solder').textureThick(0x837D7D).bucketColor(0x837D7D).displayName('Molten Solder').bucketItem(item => { item.group('amicore.metaltab')  });
+
+	//Hydroxide age fluids
+	event.create('amicore:fish_water').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Fish Water');
+	event.create('amicore:used_fish_water').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Dirty Fish Water');
+	event.create('amicore:fish_oil').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Fish Oil');
+	event.create('amicore:olive_oil').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Olive Oil');
+	event.create('amicore:avocado_oil').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Avocado Oil');
+	event.create('amicore:mineral_oil').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Mineral Oil');
+	event.create('amicore:saline').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Saline');
 	
 
 })

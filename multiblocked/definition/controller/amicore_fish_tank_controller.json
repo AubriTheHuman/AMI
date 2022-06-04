@@ -1,0 +1,190 @@
+{
+  "catalyst": "{id:\"create:wrench\",Count:1b}",
+  "consumeCatalyst": false,
+  "location": "amicore:fish_tank_controller",
+  "traits": {},
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:glass_base",
+    "frontTexture": "multiblocked:controller_panel_unformed",
+    "backTexture": "multiblocked:glass_base",
+    "leftTexture": "multiblocked:glass_base",
+    "rightTexture": "multiblocked:glass_base",
+    "upTexture": "multiblocked:glass_base",
+    "downTexture": "multiblocked:glass_base",
+    "type": "gregtech"
+  },
+  "formedRenderer": {
+    "baseTexture": "multiblocked:glass_base",
+    "frontTexture": "multiblocked:controller_panel",
+    "backTexture": "multiblocked:glass_base",
+    "leftTexture": "multiblocked:glass_base",
+    "rightTexture": "multiblocked:glass_base",
+    "upTexture": "multiblocked:glass_base",
+    "downTexture": "multiblocked:glass_base",
+    "type": "gregtech"
+  },
+  "workingRenderer": {
+    "baseTexture": "multiblocked:glass_base",
+    "frontTexture": "multiblocked:controller_panel_working",
+    "backTexture": "multiblocked:glass_base",
+    "leftTexture": "multiblocked:glass_base",
+    "rightTexture": "multiblocked:glass_base",
+    "upTexture": "multiblocked:glass_base",
+    "downTexture": "multiblocked:glass_base",
+    "type": "gregtech"
+  },
+  "properties": {
+    "isOpaque": false,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "harvestLevel": 1,
+    "lightEmissive": 0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "hasCollision": true,
+    "tabGroup": "multiblocked.all",
+    "stackSize": 64
+  },
+  "basePattern": {
+    "structureDir": [
+      "FRONT",
+      "UP",
+      "LEFT"
+    ],
+    "pattern": [
+      [
+        " ABBC ",
+        " BBBB "
+      ],
+      [
+        "BDEEEB",
+        "BDEEEB"
+      ],
+      [
+        "FEEEE@",
+        "BEEEEB"
+      ],
+      [
+        " FBGG ",
+        " BBBB "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "amicore:glass_fluid_output"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "amicore:fish_tank_controller",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "minecraft:glass"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "amicore:glass_item_output"
+          }
+        ],
+        "type": "blocks"
+      },
+      "D": {
+        "blocks": [
+          {
+            "id": "amicore:tank_filter"
+          }
+        ],
+        "type": "blocks"
+      },
+      "E": {
+        "blocks": [
+          {
+            "id": "minecraft:water"
+          }
+        ],
+        "type": "blocks"
+      },
+      "F": {
+        "blocks": [
+          {
+            "id": "amicore:glass_fluid_input"
+          }
+        ],
+        "type": "blocks"
+      },
+      "G": {
+        "blocks": [
+          {
+            "id": "amicore:glass_item_input"
+          }
+        ],
+        "type": "blocks"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "H": []
+    }
+  },
+  "recipeMap": "empty"
+}

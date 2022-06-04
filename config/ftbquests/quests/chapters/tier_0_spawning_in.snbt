@@ -21,7 +21,7 @@
 				""
 				"There's alot to do before you really get going. Chances are you'll find much of what you need for the pack exploring the wilderness. But fear not! I'll still be here to make sure you stay a bit on path."
 				""
-				"As for how the questbook will work, all tier starting and ending quests will be shaped as gears, with all main quests as squares and main line enders as diamonds. Side quests, or optional quests will be circular. I still highly recommend doing them as they offer useful tools and benefits later down the line."
+				"As for how the questbook will work, all tier starting and ending quests will be shaped as gears, with all main quests as squares and main line enders as diamonds. Side quests, or optional quests will be circular. Finally, any repeatable quest will be a hexagon (Never required for 100%). I still highly recommend doing them as they offer useful tools and benefits later down the line."
 				""
 				"As your first task, youll need some wood."
 			]
@@ -30,7 +30,7 @@
 			tasks: [{
 				id: "76EF27ABEDAC2009"
 				type: "item"
-				title: "Any #minecraft:logs"
+				title: "16x Logs"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -2983,7 +2983,7 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 4.5d
 			y: -2.5d
 			description: ["Peat can be an excellent early fuel source, smelting 6 items a piece. It can be found in swampy biomes."]
 			dependencies: ["46944569A10BFA6C"]
@@ -3070,6 +3070,33 @@
 					item: "amicore:amicoin"
 				}
 			]
+		}
+		{
+			title: "Akashic Tome"
+			icon: "akashictome:tome"
+			x: 3.5d
+			y: -2.5d
+			shape: "hexagon"
+			description: [
+				"The akashic tome will hold all the guidebooks youre given. DONT LOSE IT."
+				""
+				"But in case you do, this reward is repeatable. (And not required for 100%)"
+				""
+				"To add a book to it, just combine them in the crafting table."
+			]
+			dependencies: ["3ACC42F34BA35AD9"]
+			optional: true
+			id: "5B8F31ABE692BAF4"
+			tasks: [{
+				id: "4424C77D3DB127F3"
+				type: "checkmark"
+				title: "Akashic Tome"
+			}]
+			rewards: [{
+				id: "51FDC82337ADD982"
+				type: "questsadditions:repeat"
+				table_id: 9167514142016014558L
+			}]
 		}
 	]
 }

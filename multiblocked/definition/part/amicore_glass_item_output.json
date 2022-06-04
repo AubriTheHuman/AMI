@@ -1,78 +1,36 @@
 {
   "canShared": false,
-  "location": "amicore:sitting_pool_item_output",
+  "location": "amicore:glass_item_output",
   "traits": {
+    "background": "multiblocked:textures/3x1item_gui.png",
     "item": [
       {
         "cIO": 1,
         "gIO": 1,
-        "x": 80,
+        "x": 61,
         "y": 80,
-        "autoIO": false
-      },
-      {
-        "cIO": 1,
-        "gIO": 1,
-        "x": 62,
-        "y": 80,
-        "autoIO": false
-      },
-      {
-        "cIO": 1,
-        "gIO": 1,
-        "x": 97,
-        "y": 80,
-        "autoIO": false
-      },
-      {
-        "cIO": 1,
-        "gIO": 1,
-        "x": 62,
-        "y": 62,
-        "autoIO": false
-      },
-      {
-        "cIO": 1,
-        "gIO": 1,
-        "x": 80,
-        "y": 62,
-        "autoIO": false
-      },
-      {
-        "cIO": 1,
-        "gIO": 1,
-        "x": 97,
-        "y": 62,
-        "autoIO": false
-      },
-      {
-        "cIO": 1,
-        "gIO": 1,
-        "x": 62,
-        "y": 98,
         "autoIO": false
       },
       {
         "cIO": 1,
         "gIO": 1,
         "x": 79,
-        "y": 98,
+        "y": 80,
         "autoIO": false
       },
       {
         "cIO": 1,
         "gIO": 1,
         "x": 97,
-        "y": 98,
+        "y": 80,
         "autoIO": false
       }
-    ],
-    "background": "multiblocked:textures/sitting_pool_item_gui.png"
+    ]
   },
   "allowRotate": true,
   "showInJei": true,
   "baseRenderer": {
-    "baseTexture": "multiblocked:sitting_tank_panel",
+    "baseTexture": "multiblocked:glass_base",
     "frontTexture": "multiblocked:item_valve_out",
     "backTexture": "multiblocked:item_valve_out",
     "leftTexture": "multiblocked:item_valve_out",
@@ -81,8 +39,28 @@
     "downTexture": "multiblocked:item_valve_out",
     "type": "gregtech"
   },
+  "formedRenderer": {
+    "baseTexture": "multiblocked:glass_base",
+    "frontTexture": "multiblocked:item_valve_out",
+    "backTexture": "multiblocked:glass_base",
+    "leftTexture": "multiblocked:glass_base",
+    "rightTexture": "multiblocked:glass_base",
+    "upTexture": "multiblocked:glass_base",
+    "downTexture": "multiblocked:glass_base",
+    "type": "gregtech"
+  },
+  "workingRenderer": {
+    "baseTexture": "multiblocked:glass_base",
+    "frontTexture": "multiblocked:item_valve_out",
+    "backTexture": "multiblocked:glass_base",
+    "leftTexture": "multiblocked:glass_base",
+    "rightTexture": "multiblocked:glass_base",
+    "upTexture": "multiblocked:glass_base",
+    "downTexture": "multiblocked:glass_base",
+    "type": "gregtech"
+  },
   "properties": {
-    "isOpaque": true,
+    "isOpaque": false,
     "destroyTime": 1.5,
     "explosionResistance": 6.0,
     "harvestLevel": 1,

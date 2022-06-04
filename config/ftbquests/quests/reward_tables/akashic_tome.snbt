@@ -1,0 +1,8 @@
+{
+	id: "7F398D8A643C08DE"
+	order_index: 6
+	title: "Akashic Tome"
+	icon: "akashictome:tome"
+	loot_size: 1
+	rewards: [{ item: "akashictome:tome" }]
+}
