@@ -3,15 +3,15 @@
   "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
   "recipes": [
     {
-      "uid": "aa3b93ba-e996-4045-b72f-d14633c1e9c9",
-      "duration": 1,
+      "uid": "salmon_fish_water",
+      "duration": 600,
       "inputs": {
         "item": [
           {
             "content": {
-              "amount": 1,
+              "amount": 2,
               "matches": {
-                "item": "minecraft:iron_ingot"
+                "item": "minecraft:salmon"
               }
             },
             "chance": 1.0
@@ -20,7 +20,7 @@
             "content": {
               "amount": 1,
               "matches": {
-                "item": "minecraft:iron_ingot"
+                "item": "amicore:algae"
               }
             },
             "chance": 1.0
@@ -28,11 +28,11 @@
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"minecraft:lava\",Amount:1000}",
+            "content": "{FluidName:\"amicore:fish_water\",Amount:500}",
             "chance": 1.0
           },
           {
-            "content": "{FluidName:\"minecraft:lava\",Amount:1000}",
+            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:1000}",
             "chance": 1.0
           }
         ]
@@ -41,9 +41,9 @@
         "item": [
           {
             "content": {
-              "amount": 1,
+              "amount": 12,
               "matches": {
-                "item": "minecraft:iron_ingot"
+                "item": "minecraft:salmon"
               }
             },
             "chance": 1.0
@@ -51,7 +51,289 @@
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"minecraft:lava\",Amount:1000}",
+            "content": "{FluidName:\"amicore:used_fish_water\",Amount:500}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "algae_farming",
+      "duration": 600,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"minecraft:water\",Amount:1000}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 4,
+              "matches": {
+                "item": "amicore:algae"
+              }
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "cod_fish_water",
+      "duration": 600,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 2,
+              "matches": {
+                "item": "minecraft:cod"
+              }
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "amicore:algae"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:fish_water\",Amount:500}",
+            "chance": 1.0
+          },
+          {
+            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:100}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 12,
+              "matches": {
+                "item": "minecraft:cod"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:used_fish_water\",Amount:500}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "cod_fish_petting",
+      "duration": 300,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 4,
+              "matches": {
+                "item": "minecraft:cod"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:fish_water\",Amount:250}",
+            "chance": 1.0
+          },
+          {
+            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:50}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 3,
+              "matches": {
+                "item": "minecraft:cod"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:used_fish_water\",Amount:250}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "salmon_fish_petting",
+      "duration": 1,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 4,
+              "matches": {
+                "item": "minecraft:salmon"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:fish_water\",Amount:250}",
+            "chance": 1.0
+          },
+          {
+            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:50}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 3,
+              "matches": {
+                "item": "minecraft:salmon"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:used_fish_water\",Amount:250}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "salmon_water",
+      "duration": 600,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 2,
+              "matches": {
+                "item": "minecraft:salmon"
+              }
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "amicore:algae"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"minecraft:water\",Amount:500}",
+            "chance": 1.0
+          },
+          {
+            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:100}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 6,
+              "matches": {
+                "item": "minecraft:salmon"
+              }
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "cod_water",
+      "duration": 600,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 2,
+              "matches": {
+                "item": "minecraft:cod"
+              }
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "amicore:algae"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"minecraft:water\",Amount:500}",
+            "chance": 1.0
+          },
+          {
+            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:100}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 6,
+              "matches": {
+                "item": "minecraft:cod"
+              }
+            },
             "chance": 1.0
           }
         ]

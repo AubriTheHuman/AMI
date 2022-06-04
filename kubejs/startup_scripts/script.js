@@ -448,6 +448,7 @@ onEvent('item.registry', event => {
 	event.create('amicore:olive_meal').displayName('Olive Meal').texture("kubejs:item/olive_meal").group('amicore.biotab');
 	event.create('amicore:avocado_meal').displayName('Avocado Meal').texture("kubejs:item/avocado_meal").group('amicore.biotab');
 	event.create('amicore:biowaste').displayName('Biowaste').texture("kubejs:item/biowaste").group('amicore.biotab');
+	event.create('amicore:algae').displayName('Algae').texture("kubejs:item/algae").group('amicore.biotab');
 
 })
 
@@ -548,7 +549,6 @@ onEvent('fluid.registry', event => {
 
 	//fuels
 	event.create('amicore:hydroxide_fuel').textureThin(0xE27778).bucketColor(0xE27778).displayName('Hydroxide Fuel');
-	event.create('amicore:purified_water').textureThin(0xABECF4).bucketColor(0xABECF4).displayName('Pure Water');
 	event.create('amicore:electrolytic_water').textureThin(0xCAC3B8).bucketColor(0xCAC3B8).displayName('Electrolytic Water');
 	event.create('amicore:hydrogen_gas').textureThin(0xF5FDFE).bucketColor(0xF5FDFE).displayName('Hydrogen Gas');
 	event.create('amicore:oxygen_gas').textureThin(0xEA1523).bucketColor(0xEA1523).displayName('Oxygen Gas');
@@ -595,9 +595,11 @@ onEvent('fluid.registry', event => {
 	event.create('amicore:fish_oil').textureThin(0xE9BB16).bucketColor(0xE9BB16).displayName('Fish Oil');
 	event.create('amicore:olive_oil').textureThin(0x818C1C).bucketColor(0x818C1C).displayName('Olive Oil');
 	event.create('amicore:avocado_oil').textureThin(0xD1DF5C).bucketColor(0xD1DF5C).displayName('Avocado Oil');
-	event.create('amicore:saline').textureThin(0xADD6F6).bucketColor(0xADD6F6).displayName('Saline');
+	event.create('amicore:purified_water').textureThin(0xABECF4).bucketColor(0xABECF4).displayName('Pure Water');
+	event.create('amicore:saline').textureThin(0xADD6F6).bucketColor(0xADD6F6).displayName('Saline Water');
 	event.create('amicore:refined_plant_oil').textureThin(0xF2E131).bucketColor(0xF2E131).displayName('Refined Plant Oil');
-	event.create('amicore:lubricant').textureThin(0x008F19).bucketColor(0x008F19).displayName('Lubricant');
+	// event.create('amicore:lubricant').textureThin(0x008F19).bucketColor(0x008F19).displayName('Lubricant');
+	event.create('amicore:nutrient_paste').textureThin(0x864D09).bucketColor(0x864D09).displayName('Nutrient Paste');
 	
 
 })

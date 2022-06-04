@@ -4,5 +4,12 @@
   "block.amicore.sitting_pool_fluid_input": "Sitting Pool Fluid Inlet",
   "block.amicore.sitting_pool_fluid_output": "Sitting Pool Fluid Outlet",
   "block.amicore.sitting_pool_item_output": "Sitting Pool Item Outlet",
-  "block.multiblocked.multiblock_builder": "Multiblock Builder"
+  "block.multiblocked.multiblock_builder": "Multiblock Builder",
+
+
+  "block.amicore.glass_item_input": "Glass Item Inlet",
+  "block.amicore.glass_item_output": "Glass Item Outlet",
+  "block.amicore.glass_fluid_input": "Glass Fluid Inlet",
+  "block.amicore.glass_fluid_output": "Glass Fluid Outlet",
+  "block.amicore.fish_tank_controller": "Fish Tank Controller"
 }

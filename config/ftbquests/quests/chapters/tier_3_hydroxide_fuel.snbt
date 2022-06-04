@@ -1089,25 +1089,62 @@
 		}
 		{
 			title: "Fish Farming"
+			icon: "minecraft:cod_bucket"
 			x: -6.5d
 			y: 7.5d
+			description: [
+				"One component of natural lubricant is fish oil. You can breed fish using water, algae, and nutrient paste."
+				""
+				"You'll have to setup at least 2 of the tanks, one for algae, and one for fish."
+				""
+				"Later, fish water can be made to increase the yield of breeding."
+				""
+				"As for the structure, the corner edges can be any block, as well as the top and bottom. It does not need to be filled with water, but I suggest doing that anyway for aesthetic reasons."
+			]
 			dependencies: ["19F01413A00BB938"]
 			id: "020277435F5E44E1"
 			tasks: [
 				{
-					id: "447EF2824F294334"
+					id: "265B579B53A174A3"
 					type: "item"
-					item: "minecraft:cod_bucket"
+					item: "amicore:fish_tank_controller"
+					count: 2L
 				}
 				{
-					id: "6AAFD3CC8CBFA430"
+					id: "5931A0570C392128"
 					type: "item"
-					item: "minecraft:salmon_bucket"
+					item: "amicore:glass_item_input"
+					count: 4L
 				}
 				{
-					id: "7A68112210C6C29D"
+					id: "171D98313EEBCCFA"
 					type: "item"
-					item: "minecraft:heart_of_the_sea"
+					item: "amicore:glass_item_output"
+					count: 2L
+				}
+				{
+					id: "15285AA9510B8725"
+					type: "item"
+					item: "amicore:glass_fluid_input"
+					count: 4L
+				}
+				{
+					id: "748B7BBA793F6A3B"
+					type: "item"
+					item: "amicore:glass_fluid_output"
+					count: 2L
+				}
+				{
+					id: "22DFD388B52129CA"
+					type: "item"
+					item: "amicore:tank_filter"
+					count: 4L
+				}
+				{
+					id: "013D246235AD6579"
+					type: "item"
+					item: "minecraft:glass"
+					count: 34L
 				}
 			]
 		}
@@ -1228,9 +1265,17 @@
 			}]
 		}
 		{
+			title: "Vegetable Oils"
+			icon: "pamhc2trees:oliveitem"
 			x: -5.5d
 			y: 7.5d
-			description: ["garden cloche only used for trees/vines"]
+			description: [
+				"Avocados and Olives are plants brought here from earth during the initial terraforming attempt. Outside their natural climate, they didnt really survive well. Or so we thought."
+				""
+				"Turns out the enviroment here is perfect for growing them, which is extremely fortunate as they are both highly rich in natural oils. You wont need both, but one of them should serve perfectly as a coarser component for lubricant."
+				""
+				"If you havent found a way to grow plants in enclosed spaces, I suggest doing so."
+			]
 			dependencies: ["19F01413A00BB938"]
 			hide: false
 			id: "5ED19D446171E5F1"
@@ -1271,16 +1316,21 @@
 			}]
 		}
 		{
-			title: "lubricant"
+			title: "Lubricant"
 			x: -6.0d
 			y: 9.0d
 			shape: "rsquare"
+			description: [
+				"Making an improved mechanism for machines will require removing as much friction as possible. The best way to do that is lubrication."
+				""
+				"During travels you've come across almost every other resource seen on earth, but one that hasnt shown its ugly face is oil. This does make sense, this world is newly terraformed, and hasnt had time to develope oil. No worries, natural oils can stand in its place."
+			]
 			dependencies: ["75AF07B98FED7F3A"]
 			id: "19F01413A00BB938"
 			tasks: [{
-				id: "1D186F516ED14B6A"
-				type: "item"
-				item: "minecraft:water_bucket"
+				id: "0B6115860ADAFA4D"
+				type: "checkmark"
+				title: "Produced"
 			}]
 		}
 		{
@@ -2486,6 +2536,52 @@
 				id: "1E786D821305B348"
 				type: "item"
 				item: "appliedenergistics2:capacity_card"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 6.5d
+			description: ["Once the fish are consistently breeding, you can skim some off the surface for oil extraction. By milling or crushing the fish, you are left with a fish meal. Draining will yield 100mB of fish oil. It can also be squeezed later for 125mB instead."]
+			dependencies: ["020277435F5E44E1"]
+			id: "1FAEF4F8BB6334B7"
+			tasks: [{
+				id: "3BD0EEDD9001CBAE"
+				type: "item"
+				item: "amicore:fish_meal"
+			}]
+		}
+		{
+			title: "Plant Oil"
+			x: -5.5d
+			y: 6.5d
+			description: [
+				"In order to make use of either avocado or olive oils, they first need to be crushed or milled. Once pasted, the oil can be extracted by draining or squeezing."
+				""
+				"Once the oil is harvested, heat it above a blaze burner to remove any impurities, yielding refined plant oil."
+			]
+			dependencies: ["5ED19D446171E5F1"]
+			id: "20044DCC915F5206"
+			tasks: [{
+				id: "5C4DDA25AA34B913"
+				type: "item"
+				item: "amicore:olive_meal"
+			}]
+		}
+		{
+			title: "Lubriucant"
+			icon: "immersivepetroleum:lubricant_bucket"
+			x: -6.0d
+			y: 5.5d
+			description: ["By mixing together 1 part fish oil, and 1 part vegetable oil, lubricant is produced."]
+			dependencies: [
+				"1FAEF4F8BB6334B7"
+				"20044DCC915F5206"
+			]
+			id: "2B5FD091DBF8F470"
+			tasks: [{
+				id: "4D9E3A2527D2E6E4"
+				type: "checkmark"
+				title: "Produced"
 			}]
 		}
 	]

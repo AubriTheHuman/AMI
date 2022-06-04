@@ -238,7 +238,7 @@ craftingTable.addShaped("crude_steel_sheetmetal", <item:amicore:crude_steel_shee
 draining.addRecipe("sulfuric_acid_drain", <item:quark:clear_shard>, <fluid:amicore:sulfuric_acid> * 100, <item:amicore:sulfuric_acid_bottle>);
 draining.addRecipe("soulfuric_acid_drain", <item:quark:clear_shard>, <fluid:amicore:soulfuric_acid> * 100, <item:amicore:soulfuric_acid_bottle>);
 draining.addRecipe("spirit_distillation_drain", <item:amicore:tempered_bottle>, <fluid:amicore:simple_spirit_distillation> * 100, <item:amicore:spirit_distillation_bottle>);
-filling.addRecipe("spirit_distillation_filling", <item:amicore:spirit_distillation_bottle>, <item:amicore:tempered_bottle>, <fluid:amicore:simple_spirit_distillation>);
+filling.addRecipe("spirit_distillation_filling", <item:amicore:spirit_distillation_bottle>, <item:amicore:tempered_bottle>, <fluid:amicore:simple_spirit_distillation> * 100);
 mixing.addRecipe("simple_spirit_distillation_mixing", "heated", <fluid:amicore:simple_spirit_distillation> * 1000, [<tag:items:malum:spirits/basic_spirits>, <item:minecraft:sugar>], [<fluid:minecraft:water> * 1000], 600);
 
 //sulfur processings
