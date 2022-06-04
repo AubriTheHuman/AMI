@@ -608,6 +608,10 @@ onEvent('item.tags', event => {
 
 	// }
 
+  
+  console.log("Recommended to restart server, all malum recipes are duplicated on reload");
+  // event.server.tell("Recommended to restart server, all malum recipes are duplicated on reload");
+
 })
 
 onEvent('block.loot_tables', event => {

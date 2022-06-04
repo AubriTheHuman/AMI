@@ -42,6 +42,10 @@ onEvent('recipes', event => {
   event.recipes.custommachinery.custom_machine("custommachinery:small_air_vent", 200)
   .produceFluid(Fluid.of("amicore:compressed_air", 100))
 
+  
+  // event.server.runCommand('tellraw @a {"text":"Recommended to restart server, all malum recipes are duplicated on reload","bold":true,"color":"dark_red"}')
+
+
   // broken attempt at malum registry reflection
   let test = new malumRecipe(new itemIngredient(Item.of("amicore:iron_ingot"), 4), new itemIngredient(Item.of("amicore:gold_ingot"), 1))
   .addSpirit(new spiritIngredient(malumSpiritTypes.ARCANE_SPIRIT, 2))
