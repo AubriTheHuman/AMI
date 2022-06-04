@@ -5,9 +5,9 @@
 
 		["World Generation"."Ore Generation"."Copper Settings"]
 			#Determines if Copper should generate so it doesn't interfere with other modded copper.
-			GenerateCopperOre = true
+			GenerateCopperOre = false
 			#Determines if Large Copper Blobs should generate in Dripstone Caves.
-			DripstoneCaveLargeCopperBlobs = true
+			DripstoneCaveLargeCopperBlobs = false
 
 		["World Generation"."Ore Generation"."Tuff Settings"]
 			#Determines if Tuff Blobs should generate underground.
@@ -17,11 +17,11 @@
 
 		["World Generation"."Ore Generation"."Deepslate Settings"]
 			#Determines if Deepslate Blobs should generate underground.
-			GenerateDeepslate = true
+			GenerateDeepslate = false
 			#Determines the weight of spawning for Deepslate.
-			DeepslateSpawnWeight = 2
+			DeepslateSpawnWeight = 0
 			#Determines if Deepslate Ores should generate underground.
-			GenerateDeepslateOres = true
+			GenerateDeepslateOres = false
 
 	["World Generation"."Feature Generation"]
 		#Determines if Glow Lichen should generate underground.
@@ -78,11 +78,11 @@
 
 ["Gameplay Settings"]
 	#Determines if monsters should only spawn where the light value equals zero.
-	MonstersSpawnInTotalDarkness = true
+	MonstersSpawnInTotalDarkness = false
 
 	["Gameplay Settings"."Raw Ore Settings"]
 		#Determines if Iron, Gold and Copper should drop Raw Ores.
-		RawOreDrops = true
+		RawOreDrops = false
 		#Determines if Copper from other mods should also drop Raw Copper.
 		RawOreDropsForExternalCopper = false
 
@@ -93,5 +93,5 @@
 	#1 = part I panoramic view. 
 	#2 = part II panoramic view.
 	#Range: 0 ~ 2
-	PanoramaValue = 1
+	PanoramaValue = 0
 

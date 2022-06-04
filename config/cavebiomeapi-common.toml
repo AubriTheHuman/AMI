@@ -5,5 +5,5 @@
 	"Generate Default Cave Biome" = true
 	#Determines if the Noise Carvers should generate. 
 	#This option will allow the generation of huge caves that are created by noise, similar to the new caves from 1.17 but a bit smaller.
-	"Generate Noise Carvers" = true
+	"Generate Noise Carvers" = false
 

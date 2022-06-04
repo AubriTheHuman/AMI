@@ -3167,7 +3167,14 @@
 			icon: "minecraft:lava_bucket"
 			x: 8.0d
 			y: 10.0d
-			description: ["Running a smeltery constantly will take a fair bit of fuel, if you haven't figured out a way to fuel it indefinately, it may be worth a shot."]
+			description: [
+				"Running a smeltery constantly will take a fair bit of fuel, if you haven't figured out a way to fuel it indefinately, it may be worth a shot."
+				""
+				"   |  |"
+				"   \\/"
+				"    ;"
+				".   ⸤⸥"
+			]
 			dependencies: ["46AED12B4C59ABC8"]
 			id: "065A9F4594E07366"
 			tasks: [{
