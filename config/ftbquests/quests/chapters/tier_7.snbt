@@ -150,5 +150,16 @@
 				item: "refinedpipes:elite_extractor_attachment"
 			}]
 		}
+		{
+			title: "diesel generator"
+			x: 1.5d
+			y: 0.5d
+			id: "47B355E95480DE83"
+			tasks: [{
+				id: "4F42C37333EE4495"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+		}
 	]
 }

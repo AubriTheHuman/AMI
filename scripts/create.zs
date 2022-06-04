@@ -1196,6 +1196,38 @@ Recipe.type(Type.ENGINEER)
   .secondary([<item:amicore:crude_steel_bolt>*5])
   .register();
 
+
+#wireless parts and mechanical arm
+craftingTable.removeRecipe(<item:create:mechanical_arm>);
+craftingTable.removeRecipe(<item:create:redstone_link>);
+craftingTable.removeRecipe(<item:create:linked_controller>);
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:amicore:crude_steel_mech_component>, <tag:items:forge:rods/crude_steel>, <item:create:brass_hand>],
+  [<tag:items:forge:rods/crude_steel>,<tag:items:forge:rounded_sheets/crude_steel>, <item:minecraft:air>],
+  [<item:amicore:multicyl_engine>, <item:create:brass_casing>, <item:amicore:lv_circuit>]])
+  .output(<item:create:mechanical_arm>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .secondary([<item:amicore:crude_steel_bolt>*4])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:create:filter>,<item:amicore:lv_circuit>, <item:amicore:simple_antenna>],
+  [<tag:items:forge:rounded_sheets/crude_steel>, <item:create:brass_casing>, <tag:items:forge:rounded_sheets/crude_steel>]])
+  .output(<item:create:redstone_link>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .secondary([<item:amicore:crude_steel_bolt>*2])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<tag:items:minecraft:buttons>, <tag:items:minecraft:buttons>, <tag:items:minecraft:buttons>],
+  [<tag:items:minecraft:buttons>,<item:create:redstone_link>, <item:amicore:antenna_cluster>],
+  [<tag:items:forge:rounded_sheets/crude_steel>, <item:create:brass_casing>, <tag:items:forge:rounded_sheets/crude_steel>]])
+  .output(<item:create:linked_controller>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .secondary([<item:amicore:crude_steel_bolt>*2])
+  .register();
+
 #unify limestone
 <tag:items:forge:stone/limestone>.add([<item:create:limestone>,<item:create:limestone_cobblestone>,<item:create:limestone_cobblestone_wall>,
   <item:create:polished_limestone>,<item:create:polished_limestone_wall>,<item:create:limestone_bricks>,<item:create:limestone_bricks_wall>,

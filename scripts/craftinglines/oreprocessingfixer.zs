@@ -15,7 +15,6 @@ import crafttweaker.api.ILogger;
 craftingTable.removeByName("pedestals:upgrades/rfcrusher");
 craftingTable.removeByName("pedestals:upgrades/crusher");
 craftingTable.removeByName("advancedrocketry:platepress");
-craftingTable.removeRecipeByInput(<item:engineerstools:crushing_hammer>);
 <recipetype:immersiveengineering:arc_furnace>.removeAll();
 <recipetype:immersiveengineering:crusher>.removeByModid("immersive_geology");
 <recipetype:appliedenergistics2:grinder>.removeAll();

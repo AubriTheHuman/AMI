@@ -267,5 +267,15 @@
 				item: "refinedpipes:advanced_extractor_attachment"
 			}]
 		}
+		{
+			x: -1.5d
+			y: -2.0d
+			id: "7806534B60F257C6"
+			tasks: [{
+				id: "2DF44A9E5E1ECD0A"
+				type: "item"
+				item: "appliedenergistics2:molecular_assembler"
+			}]
+		}
 	]
 }

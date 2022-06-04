@@ -29,5 +29,5 @@
 			#   ["cobblestone", "minecraft:diamond_block", ["minecraft:diamond_block"]],
 			#   ["cobblestone", "minecraft:dirt", ["forge:dirt"]],
 			#   ["cobblestone", "minecraft:white_wool", ["minecraft:wool"]]]
-			custom_generators = [["stone", "byg:quartzite_sand", ["minecraft:diorite"]], ["stone", "byg:raw_quartz_block", ["minecraft:granite"]], ["cobblestone", "engineersdecor:dense_grit_sand_block", ["minecraft:sandstone"]], ["stone", "betterendforge:flavolite", ["betterendforge:flavolite|60", "minecraft:end_stone|40"]], ["cobblestone", "byg:scoria_stone", ["create:natural_scoria"]], ["stone", "byg:soapstone", ["create:dolomite"]]]
+			custom_generators = [["stone", "byg:quartzite_sand", ["minecraft:diorite"]], ["stone", "byg:raw_quartz_block", ["minecraft:granite"]], ["stone", "betterendforge:flavolite", ["betterendforge:flavolite|60", "minecraft:end_stone|40"]], ["cobblestone", "byg:scoria_stone", ["create:natural_scoria"]], ["stone", "byg:soapstone", ["create:dolomite"]]]
 

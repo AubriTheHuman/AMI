@@ -633,8 +633,8 @@ Recipe.type(Type.ENGINEER)
   .fluid(<fluid:minecraft:water> * 250)
   .register();
 Recipe.type(Type.ENGINEER)
-  .shapeless([<tag:items:forge:wires/copper>,<item:amicore:carbon_dust>])
-  .output(<item:amicore:simple_resistor> * 2)
+  .shaped([[<tag:items:forge:wires/copper>,<item:amicore:carbon_dust>,<tag:items:forge:wires/copper>]])
+  .output(<item:amicore:simple_resistor>)
   .tool(<tag:items:artisantools:type/cutters>, 1)
   .register();
 
@@ -699,3 +699,23 @@ Recipe.type(Type.ENGINEER)
 
 #powdered obsidian
 <recipetype:create:crushing>.addRecipe("powdered_obsidian", [<item:create:powdered_obsidian>], <item:tconstruct:obsidian_pane>);
+
+#antenna
+Recipe.type(Type.ENGINEER)
+  .shaped([[<tag:items:forge:wires/copper>, <item:minecraft:air>],
+  [<tag:items:forge:wires/copper>, <item:minecraft:air>],
+  [<tag:items:forge:wires/copper>, <item:amicore:simple_resistor>]])
+  .output(<item:amicore:antenna>)
+  .tool(<tag:items:artisantools:type/cutters>, 1)
+  .tool(<tag:items:artisantools:type/solderer>, 1)
+  .extra(<item:amicore:solder_spool>)
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:amicore:antenna>, <item:amicore:antenna>],
+  [<item:amicore:antenna>, <item:amicore:antenna>],
+  [<item:amicore:antenna>, <item:amicore:lv_circuit>]])
+  .output(<item:amicore:antenna_cluster>)
+  .tool(<tag:items:artisantools:type/cutters>, 1)
+  .tool(<tag:items:artisantools:type/solderer>, 1)
+  .extra(<item:amicore:solder_spool>)
+  .register();

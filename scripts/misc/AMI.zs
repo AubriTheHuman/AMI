@@ -38,8 +38,7 @@ for color in colors {
       [carp, carp, carp],
       [wool, wool, wool]]);
 }
-craftingTable.removeByName("engineerstools:independent/sleeping_bag_recipe");
-mods.jei.JEI.hideItem(<item:engineerstools:sleeping_bag>);
+
 
 #waystones tweak
 craftingTable.removeByName("waystones:warp_stone");

@@ -414,8 +414,6 @@ onEvent('item.tags', event => {
   event.remove('forge:dusts', 'immersiveengineering:dust_steel');
   event.remove('forge:dusts', 'immersiveengineering:dust_iron');
   event.remove('forge:dusts', 'immersiveengineering:dust_gold');
-  event.remove('forge:dusts', 'engineerstools:iron_grit');
-  event.remove('forge:dusts', 'engineerstools:gold_grit');
 
   event.remove('forge:dusts/iron', 'pedestals:dustiron');
   event.remove('forge:dusts/gold', 'pedestals:dustgold');
@@ -449,8 +447,6 @@ onEvent('item.tags', event => {
   event.remove('forge:dusts/steel', 'immersiveengineering:dust_steel');
   event.remove('forge:dusts/iron', 'immersiveengineering:dust_iron');
   event.remove('forge:dusts/gold', 'immersiveengineering:dust_gold');
-  event.remove('forge:dusts/iron', 'engineerstools:iron_grit');
-  event.remove('forge:dusts/gold', 'engineerstools:gold_grit');
 
   //remove wires
   event.remove('forge:wires', 'createaddition:copper_wire');

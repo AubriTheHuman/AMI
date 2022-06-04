@@ -27,6 +27,9 @@ mods.jei.JEI.hideItem(<item:tconstruct:dagger>);
 mods.jei.JEI.hideItem(<item:tconstruct:sword>);
 mods.jei.JEI.hideItem(<item:tconstruct:cleaver>);
 
+#remove all entity melting
+<recipetype:tconstruct:entity_melting>.removeAll();
+
 #steel melt temp dfix
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/steel/block");
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/steel/dust");
@@ -35,12 +38,12 @@ mods.jei.JEI.hideItem(<item:tconstruct:cleaver>);
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/steel/plates");
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/steel/rod");
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/steel/sheetmetal");
-<recipetype:tconstruct:melting>.addMeltingRecipe("steel_block_melting", <tag:items:forge:storage_blocks/steel>, <fluid:tconstruct:molten_steel> * 1296, 1600, 45);
-<recipetype:tconstruct:melting>.addMeltingRecipe("steel_dust_melting", <tag:items:forge:dusts/steel>, <fluid:tconstruct:molten_steel> * 144, 1600, 16);
-<recipetype:tconstruct:melting>.addMeltingRecipe("steel_ingot_melting", <tag:items:forge:ingots/steel>, <fluid:tconstruct:molten_steel> * 144, 1600, 16);
-<recipetype:tconstruct:melting>.addMeltingRecipe("steel_nugget_melting", <tag:items:forge:nuggets/steel>, <fluid:tconstruct:molten_steel> * 16, 1600, 4);
-<recipetype:tconstruct:melting>.addMeltingRecipe("steel_plates_melting", <tag:items:forge:plates/steel>, <fluid:tconstruct:molten_steel> * 144, 1600, 16);
-<recipetype:tconstruct:melting>.addMeltingRecipe("steel_rod_melting", <tag:items:forge:rods/steel>, <fluid:tconstruct:molten_steel> * 72, 1600, 12);
+// <recipetype:tconstruct:melting>.addMeltingRecipe("steel_block_melting", <tag:items:forge:storage_blocks/steel>, <fluid:tconstruct:molten_steel> * 1296, 1600, 45);
+// <recipetype:tconstruct:melting>.addMeltingRecipe("steel_dust_melting", <tag:items:forge:dusts/steel>, <fluid:tconstruct:molten_steel> * 144, 1600, 16);
+// <recipetype:tconstruct:melting>.addMeltingRecipe("steel_ingot_melting", <tag:items:forge:ingots/steel>, <fluid:tconstruct:molten_steel> * 144, 1600, 16);
+// <recipetype:tconstruct:melting>.addMeltingRecipe("steel_nugget_melting", <tag:items:forge:nuggets/steel>, <fluid:tconstruct:molten_steel> * 16, 1600, 4);
+// <recipetype:tconstruct:melting>.addMeltingRecipe("steel_plates_melting", <tag:items:forge:plates/steel>, <fluid:tconstruct:molten_steel> * 144, 1600, 16);
+// <recipetype:tconstruct:melting>.addMeltingRecipe("steel_rod_melting", <tag:items:forge:rods/steel>, <fluid:tconstruct:molten_steel> * 72, 1600, 12);
 <recipetype:tconstruct:melting>.addMeltingRecipe("steel_sheetmetal_melting", <tag:items:forge:sheetmetals/steel>, <fluid:tconstruct:molten_steel> * 144, 1600, 16);
 
 #raw nugget melting

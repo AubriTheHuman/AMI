@@ -85,9 +85,6 @@ mods.jei.JEI.hideItem(<item:immersiveengineering:dust_steel>);
 mods.jei.JEI.hideItem(<item:immersiveengineering:dust_iron>);
 mods.jei.JEI.hideItem(<item:immersiveengineering:dust_gold>);
 
-mods.jei.JEI.hideItem(<item:engineerstools:iron_grit>);
-mods.jei.JEI.hideItem(<item:engineerstools:gold_grit>);
-
 #rogue wires
 mods.jei.JEI.hideItem(<item:createaddition:copper_wire>);
 mods.jei.JEI.hideItem(<item:createaddition:iron_wire>);

@@ -7,10 +7,6 @@ import mods.artisanworktables.Type;
 <recipetype:immersiveengineering:blast_furnace>.removeByName("immersiveengineering:blastfurnace/steel");
 <recipetype:immersiveengineering:blast_furnace>.removeByName("immersiveengineering:blastfurnace/steel_block");
 
-#<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/steel");
-#<recipetype:immersiveengineering:arc_furnace>.removeByName("immersivepetroleum:arcfurnace/steel");
-#<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/dust_steel");
-
 #make coke
 
 #for Iron processing
