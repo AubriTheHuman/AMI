@@ -705,17 +705,17 @@ Recipe.type(Type.ENGINEER)
   .shaped([[<tag:items:forge:wires/copper>, <item:minecraft:air>],
   [<tag:items:forge:wires/copper>, <item:minecraft:air>],
   [<tag:items:forge:wires/copper>, <item:amicore:simple_resistor>]])
-  .output(<item:amicore:antenna>)
+  .output(<item:amicore:simple_antenna>)
   .tool(<tag:items:artisantools:type/cutters>, 1)
   .tool(<tag:items:artisantools:type/solderer>, 1)
-  .extra(<item:amicore:solder_spool>)
+  .secondary([<item:amicore:solder_spool>], false)
   .register();
 Recipe.type(Type.ENGINEER)
-  .shaped([[<item:amicore:antenna>, <item:amicore:antenna>],
-  [<item:amicore:antenna>, <item:amicore:antenna>],
-  [<item:amicore:antenna>, <item:amicore:lv_circuit>]])
+  .shaped([[<item:amicore:simple_antenna>, <item:amicore:simple_antenna>],
+  [<item:amicore:simple_antenna>, <item:amicore:simple_antenna>],
+  [<item:amicore:simple_antenna>, <item:amicore:lv_circuit>]])
   .output(<item:amicore:antenna_cluster>)
   .tool(<tag:items:artisantools:type/cutters>, 1)
   .tool(<tag:items:artisantools:type/solderer>, 1)
-  .extra(<item:amicore:solder_spool>)
+  .secondary([<item:amicore:solder_spool>], false)
   .register();

@@ -560,5 +560,25 @@
 				item: "immersiveengineering:electron_tube"
 			}]
 		}
+		{
+			x: 9.0d
+			y: -3.0d
+			id: "1B083DC08E9CC949"
+			tasks: [{
+				id: "60F07B0E8DC198BC"
+				type: "item"
+				item: "cavesandcliffs:amethyst_cluster"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -2.5d
+			id: "5E7C25D30647103A"
+			tasks: [{
+				id: "43760214598A2FCC"
+				type: "item"
+				item: "quark:green_crystal_cluster"
+			}]
+		}
 	]
 }

@@ -277,5 +277,15 @@
 				item: "appliedenergistics2:molecular_assembler"
 			}]
 		}
+		{
+			x: -0.5d
+			y: -4.0d
+			id: "7FFE1AC38F5E5C2A"
+			tasks: [{
+				id: "6E2B34E96373B98D"
+				type: "item"
+				item: "advancedperipherals:ar_controller"
+			}]
+		}
 	]
 }

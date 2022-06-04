@@ -784,7 +784,7 @@
 		}
 		{
 			x: 5.0d
-			y: 16.5d
+			y: 14.5d
 			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "35B01F53FBF40CE3"
 			tasks: [{
@@ -911,8 +911,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 11.5d
+			x: 2.5d
+			y: 6.0d
 			dependencies: ["250A17FF553D2472"]
 			id: "53CEA25441F1DC24"
 			tasks: [{
@@ -1052,7 +1052,7 @@
 		{
 			title: "Sulfur Reprocessing"
 			x: 3.0d
-			y: 12.0d
+			y: 9.0d
 			shape: "rsquare"
 			dependencies: ["1DDEAA8F1C76E99F"]
 			id: "78A875AB253BDBF0"
@@ -1112,9 +1112,9 @@
 			]
 		}
 		{
-			x: 6.5d
-			y: 14.5d
-			dependencies: ["23543BA294618103"]
+			x: 4.0d
+			y: 12.0d
+			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "0BF186C7EB9FF39F"
 			tasks: [{
 				id: "41D89D009B5D0A71"
@@ -1254,8 +1254,8 @@
 		}
 		{
 			title: "Waste Filtration"
-			x: 4.5d
-			y: 12.0d
+			x: 3.0d
+			y: 7.5d
 			dependencies: ["78A875AB253BDBF0"]
 			id: "250A17FF553D2472"
 			tasks: [{
@@ -1446,9 +1446,8 @@
 			title: "Odd Ones Out"
 			icon: "immersiveengineering:light_engineering"
 			x: 5.0d
-			y: 18.0d
+			y: 16.5d
 			description: ["Why cant you accelerate the Bottling machine, Assembler, or sawmill? Simple, they arent meant to be used. Two of them flat out have no recipes. Consider using their create alternatives. "]
-			hide_dependency_lines: true
 			dependencies: ["23543BA294618103"]
 			hide: true
 			id: "6AA5BA7DDFC38ECA"
@@ -1527,7 +1526,7 @@
 		{
 			title: "magical matter on non fluid machines"
 			x: 5.0d
-			y: 14.5d
+			y: 15.5d
 			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "23543BA294618103"
 			tasks: [{
@@ -1835,7 +1834,7 @@
 		}
 		{
 			x: 6.5d
-			y: 15.5d
+			y: 14.5d
 			dependencies: ["35B01F53FBF40CE3"]
 			id: "4B8323C74C074210"
 			tasks: [{
@@ -1846,7 +1845,7 @@
 		}
 		{
 			x: 6.5d
-			y: 16.5d
+			y: 15.5d
 			dependencies: ["35B01F53FBF40CE3"]
 			id: "5CA6F42DA0FB4D9D"
 			tasks: [{
@@ -1856,8 +1855,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 12.5d
+			x: 3.5d
+			y: 6.0d
 			dependencies: ["250A17FF553D2472"]
 			id: "76E0D5CB0974F272"
 			tasks: [{
@@ -2059,8 +2058,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 15.5d
+			x: 3.0d
+			y: 12.0d
 			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "330F0984AAF36A56"
 			tasks: [{
