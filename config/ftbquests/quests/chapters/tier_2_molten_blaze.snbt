@@ -3434,5 +3434,113 @@
 				item: "amicore:amicoin"
 			}]
 		}
+		{
+			x: 11.5d
+			y: 7.0d
+			description: [
+				"The mechanical arm is the apex of create flexibility. It can take items from one place and drop them in another spot."
+				""
+				"It is fully configurable, with the ability to have multiple pickup and drop points."
+			]
+			dependencies: ["417096C593DECCAF"]
+			id: "40E56F9DD40A4E2A"
+			tasks: [{
+				id: "1B59381F26522F4E"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+			rewards: [
+				{
+					id: "4F23FF4E19BAB8E6"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "05C90C533539BEAC"
+					type: "item"
+					item: "pamhc2foodextended:cornchipsitem"
+				}
+			]
+		}
+		{
+			title: "Simple Antenna"
+			x: 11.5d
+			y: 6.0d
+			description: [
+				"From some of the same components as the LV circuit, a simple antenna assembly can be made. While its range is quite high, it can only send low bandwith signals. "
+				""
+				"This does make it extremely useful for constructing specific signal links between locations."
+			]
+			dependencies: ["417096C593DECCAF"]
+			id: "4F5944C9BEE6626B"
+			tasks: [{
+				id: "01351764A71376D9"
+				type: "item"
+				item: "amicore:copper_wire"
+			}]
+			rewards: [{
+				id: "179E75898744AB13"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			x: 13.0d
+			y: 6.0d
+			description: [
+				"The redstone link can send a signal wirelessly between two points across a specific frequency."
+				""
+				"Two items define a frequency."
+			]
+			dependencies: ["4F5944C9BEE6626B"]
+			id: "2E882195C426FB9E"
+			tasks: [{
+				id: "267CE1E707147E4E"
+				type: "item"
+				item: "create:redstone_link"
+			}]
+			rewards: [
+				{
+					id: "1D2602CE4D49F396"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "021E9AEE3349B6FF"
+					type: "item"
+					item: "pamhc2foodcore:gummybearsitem"
+				}
+			]
+		}
+		{
+			x: 13.0d
+			y: 7.0d
+			description: [
+				"By bundling several antenna together, separate connections can be established to various redstone links."
+				""
+				"This can function as a remote control, with 6 inputs."
+				""
+				"It can also be placed on a lectern."
+			]
+			dependencies: ["2E882195C426FB9E"]
+			id: "318886484B59342A"
+			tasks: [{
+				id: "0BA3DC5D7C5A6E0A"
+				type: "item"
+				item: "create:linked_controller"
+			}]
+			rewards: [
+				{
+					id: "23F438A12D10B89B"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "3BFBCF29FC179BDF"
+					type: "item"
+					item: "pamhc2foodextended:bibimbapitem"
+				}
+			]
+		}
 	]
 }

@@ -347,16 +347,6 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -4.5d
-			id: "3E09CA796B832758"
-			tasks: [{
-				id: "243DC169940F9120"
-				type: "item"
-				item: "create:electron_tube"
-			}]
-		}
-		{
 			x: 3.0d
 			y: -1.5d
 			id: "19CB39AEF49CDCAA"
@@ -485,6 +475,89 @@
 				id: "665DA9685EF981C6"
 				type: "item"
 				item: "refinedpipes:improved_extractor_attachment"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -4.5d
+			id: "6374BAC842CA1CE4"
+			tasks: [{
+				id: "37957C7D7ABA3115"
+				type: "item"
+				item: "tconstruct:liquid_soul_bucket"
+			}]
+		}
+		{
+			title: "Starlight as fuel"
+			x: 6.0d
+			y: 1.5d
+			id: "649A17AA09718397"
+			tasks: [{
+				id: "50505631D413DCD4"
+				type: "item"
+				title: "Diesel generator"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -5.5d
+			id: "38632B9E6F64452E"
+			tasks: [{
+				id: "39101DBDF1CC0E74"
+				type: "item"
+				item: "computercraft:computer_normal"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			dependencies: ["476BBE8AA7DED3CB"]
+			id: "0C9B749108249D3B"
+			tasks: [{
+				id: "642B2768DE6E0274"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			id: "3FA708BDAF92E923"
+			tasks: [{
+				id: "287A645FD2D71D67"
+				type: "item"
+				item: "appliedenergistics2:pattern_terminal"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.0d
+			id: "5A39799E03617F25"
+			tasks: [{
+				id: "312A3D8B78CB8C19"
+				type: "item"
+				item: "appliedenergistics2:blank_pattern"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 1.0d
+			id: "0D2CDED10AF851B3"
+			tasks: [{
+				id: "62A366FF2270903F"
+				type: "item"
+				item: "appliedenergistics2:interface"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			id: "67A37C7E04B7B63E"
+			tasks: [{
+				id: "4E1D7CDCED2828BD"
+				type: "item"
+				item: "immersiveengineering:electron_tube"
 			}]
 		}
 	]

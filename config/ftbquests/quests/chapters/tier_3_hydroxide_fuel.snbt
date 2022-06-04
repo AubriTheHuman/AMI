@@ -14,9 +14,9 @@
 	quests: [
 		{
 			title: "The Age of Steel!"
-			x: -6.5d
-			y: -0.5d
-			shape: "gear"
+			x: -3.0d
+			y: 10.5d
+			shape: "rsquare"
 			subtitle: "The main chaos begins..."
 			description: [
 				"So, you've managed to reach this point now, you have ore tripling setup, some decent tools and gear, and maybe a cool house. Well its all about to get bigger. I'll guide you through the first of the high output processing chains, however others will be less involved. "
@@ -25,6 +25,7 @@
 				""
 				"Make sure you hold onto these heavy engineering blocks, you'll need all of them later."
 			]
+			dependencies: ["67D424D0BBB1CAB3"]
 			id: "06EEF7D720F1D2F6"
 			tasks: [{
 				id: "7F7F365A76C2C47C"
@@ -47,9 +48,9 @@
 		{
 			title: "Upgraded Iron Ore Processing"
 			icon: "amicore:medium_crushed_iron_ore"
-			x: -5.0d
-			y: -0.5d
-			shape: "diamond"
+			x: -1.5d
+			y: 10.5d
+			shape: "rsquare"
 			subtitle: "The first part"
 			description: ["In order to get steel youre going to need Pig Iron, yes that kind of Pig Iron. However it cant just be made from existing iron, you'll need to process it from raw iron ore in ore-der to process it :fingerguns:"]
 			dependencies: ["06EEF7D720F1D2F6"]
@@ -77,8 +78,9 @@
 		{
 			title: "Limestone Production"
 			icon: "create:limestone"
-			x: -6.0d
-			y: -2.0d
+			x: -2.5d
+			y: 9.0d
+			shape: "rsquare"
 			description: [
 				"Iron ore sintering requires the use of Lime, as such youll need to make it automatically."
 				""
@@ -119,8 +121,9 @@
 		}
 		{
 			title: "Limestone Dust"
-			x: -5.0d
-			y: -1.5d
+			x: -1.5d
+			y: 9.5d
+			shape: "rsquare"
 			description: ["Smashed, crushed, powdered, and dusted."]
 			dependencies: ["3BAECDED4BB4F4A4"]
 			id: "1F66C29AE3958FD3"
@@ -138,8 +141,9 @@
 		}
 		{
 			title: "Limes"
-			x: -4.0d
-			y: -2.0d
+			x: -0.5d
+			y: 9.0d
+			shape: "rsquare"
 			subtitle: "Margaritaville"
 			description: ["Ah the wonderful citrus fruit, so tangy and wonderful. Of course this isnt that, rather you need to blast the dust you just made briefly in order to make this flux poweder."]
 			dependencies: [
@@ -161,9 +165,9 @@
 		}
 		{
 			title: "Sintering"
-			x: -3.5d
-			y: -0.5d
-			shape: "diamond"
+			x: 0.0d
+			y: 10.5d
+			shape: "rsquare"
 			description: ["By mixing Lime, Carbon Dust, and Iron ore together in a heated basin, you get double the iron out of it. Still needs more processing from here."]
 			dependencies: [
 				"0E54364820F9361B"
@@ -193,8 +197,9 @@
 		}
 		{
 			title: "Coal Coke"
-			x: -6.0d
-			y: 1.0d
+			x: -2.5d
+			y: 12.0d
+			shape: "rsquare"
 			subtitle: "oh geez..."
 			description: ["While you should have done this already, you'll be needing a ton of this stuff for steel and iron production. Make sure the ovens are hot!"]
 			dependencies: ["06EEF7D720F1D2F6"]
@@ -213,8 +218,9 @@
 		}
 		{
 			title: "Happy Birthday!"
-			x: -5.0d
-			y: 1.0d
+			x: -1.5d
+			y: 12.0d
+			shape: "rsquare"
 			subtitle: "Delicious!"
 			description: ["In order to get the carbon powder for sintering, youll need some carbon cakes. If you press your coal coke enough you should be able to make one of these. This is also the first machine where crude steel is needed to make it."]
 			dependencies: ["544FE9ACBFBE24C8"]
@@ -228,8 +234,9 @@
 		}
 		{
 			title: "Carbon Dust"
-			x: -4.0d
-			y: 1.0d
+			x: -0.5d
+			y: 12.0d
+			shape: "rsquare"
 			description: ["This part is where producing iron with coal becomes cheaper, you can get 4x the relative amount over just plain steel processing, and still it only takes 1 coal for 4 ore! Crazy!"]
 			dependencies: ["615A0D1D781D832A"]
 			id: "08673D24C5DB4665"
@@ -242,9 +249,9 @@
 		}
 		{
 			title: "High Purity Iron Ore"
-			x: -2.0d
-			y: -0.5d
-			shape: "diamond"
+			x: 1.5d
+			y: 10.5d
+			shape: "rsquare"
 			description: ["Once the ore is sintered, it can be crushed for the high quality ore, and with some bonus nickel!"]
 			dependencies: ["1F7ADF96F263D154"]
 			id: "5A21B504DE7921A6"
@@ -270,8 +277,9 @@
 		{
 			title: "Nickel"
 			icon: "immersiveengineering:ingot_nickel"
-			x: -2.0d
-			y: -2.0d
+			x: 1.5d
+			y: 9.0d
+			shape: "rsquare"
 			description: ["While it has its own line of processing, you can't quite make that yet. So this is the main source of nickel for the time being."]
 			dependencies: ["5A21B504DE7921A6"]
 			id: "5F99FEC370F53ACB"
@@ -295,9 +303,9 @@
 		}
 		{
 			title: "Pure Ore"
-			x: 1.0d
-			y: -0.5d
-			shape: "diamond"
+			x: 4.5d
+			y: 10.5d
+			shape: "rsquare"
 			description: ["That strength potion I had you automate seems to be part of this line, who knew! mixing the high purity ore with the strength 2 potion seems to really clean it off."]
 			dependencies: ["1DDEAA8F1C76E99F"]
 			id: "261E2C2AE3FC8D1E"
@@ -322,9 +330,9 @@
 					Potion: "minecraft:strong_strength"
 				}
 			}
-			x: -0.5d
-			y: -0.5d
-			shape: "diamond"
+			x: 3.0d
+			y: 10.5d
+			shape: "rsquare"
 			description: ["I'm a bit thirsty and am in need of a drink. I think I'll take a strength II potion and a harming II potion for lunch. Don't worry, Create will make automating this very easy."]
 			dependencies: ["5A21B504DE7921A6"]
 			id: "1DDEAA8F1C76E99F"
@@ -396,9 +404,9 @@
 		}
 		{
 			title: "Finally!"
-			x: 2.5d
-			y: -0.5d
-			shape: "diamond"
+			x: 6.0d
+			y: 10.5d
+			shape: "rsquare"
 			description: ["Finally! You can make some Pig Iron. Also, im not sure if youve noticed, but at this point youve quintupled your output from the ore you started with! Incredible! That said you cant really use the Pig Iron for much, but dang does it taste good."]
 			dependencies: ["261E2C2AE3FC8D1E"]
 			id: "4CB08912C67F67F1"
@@ -425,11 +433,11 @@
 		{
 			title: "Hydroxide Fuel"
 			icon: "amicore:hydroxide_fuel_bucket"
-			x: 4.0d
-			y: -0.5d
-			shape: "diamond"
+			x: 7.5d
+			y: 7.5d
+			shape: "rsquare"
 			description: ["Before you can melt the Pig Iron down into anything useful, you'll need a hotter fuel for your smeltery. To make this you'll need to electrolyze some water and reassemble it into Hydroxide Fuel"]
-			dependencies: ["4CB08912C67F67F1"]
+			dependencies: ["01501F8B07F3250E"]
 			id: "73143E1E1F9D39E4"
 			tasks: [{
 				id: "76E9D0983F8DBA47"
@@ -450,8 +458,9 @@
 		}
 		{
 			title: "Desalination"
-			x: 4.0d
-			y: -1.5d
+			x: 7.5d
+			y: 6.0d
+			shape: "rsquare"
 			description: [
 				"To desalinate youll need to distill some water in a Distillation Tower, If you are having trouble making it, use a projector!"
 				""
@@ -474,8 +483,9 @@
 		}
 		{
 			title: "Electolysis"
-			x: 4.0d
-			y: -3.5d
+			x: 7.5d
+			y: 3.0d
+			shape: "rsquare"
 			description: ["While not ultra realistic, youll need to distill this electrolytic water, yielding two parts hydrogen and one part oxygen. make sure to save your excess hydrogen for later!"]
 			dependencies: ["1C977B53835BE2DE"]
 			id: "001C93FF56BAA365"
@@ -492,8 +502,9 @@
 		}
 		{
 			title: "Itty Bitty Brass"
-			x: 4.0d
-			y: -2.5d
+			x: 7.5d
+			y: 4.5d
+			shape: "rsquare"
 			description: ["To Electrolyze the purified water, you'll need to re-integrate some electrolytes into the water. By combining some zinc and copper you can make some brass dust. It doesnt take much to infuse into the water."]
 			dependencies: ["25F559F7E36E970D"]
 			id: "1C977B53835BE2DE"
@@ -510,8 +521,9 @@
 		}
 		{
 			title: "Actual Hydroxide!"
-			x: 5.5d
-			y: -3.5d
+			x: 7.5d
+			y: 1.5d
+			shape: "diamond"
 			description: ["If you mix the two gasses back together, in equal parts, with some heat, you'll get hydroxide fuel! From here the rest of Tier 2 is now able to be done!"]
 			dependencies: ["001C93FF56BAA365"]
 			id: "18DCB704F8C44830"
@@ -528,14 +540,11 @@
 		}
 		{
 			title: "Molten Iron from Pig Iron"
-			x: 5.5d
-			y: -0.5d
-			shape: "diamond"
+			x: 7.5d
+			y: 10.5d
+			shape: "rsquare"
 			description: ["Once Pig Iron is melted into the smeltery it can be heated up some more to refine it to Iron. 2000C to be precise. That said dont let it get too hot, at 3300C Iron will burn off leaving you with slag in your smeltery! (WIP)"]
-			dependencies: [
-				"18DCB704F8C44830"
-				"73143E1E1F9D39E4"
-			]
+			dependencies: ["4CB08912C67F67F1"]
 			id: "7E49F9A67574D260"
 			tasks: [{
 				id: "65C896DC8E0BD05C"
@@ -551,9 +560,9 @@
 		{
 			title: "Iron x5!"
 			icon: "minecraft:iron_ingot"
-			x: 7.0d
-			y: -0.5d
-			shape: "gear"
+			x: 9.0d
+			y: 10.5d
+			shape: "diamond"
 			description: ["Now that you have this wonderful molten Iron, cast it into a few different components!"]
 			dependencies: ["7E49F9A67574D260"]
 			id: "5B2C0796D43BA7FB"
@@ -577,16 +586,24 @@
 					count: 40L
 				}
 			]
-			rewards: [{
-				id: "087D60A14A639783"
-				type: "item"
-				item: "amicore:amicoin"
-			}]
+			rewards: [
+				{
+					id: "087D60A14A639783"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "610E6CE4032374E2"
+					type: "choice"
+					table_id: 946083085323769434L
+				}
+			]
 		}
 		{
 			title: "Other ways"
-			x: 2.5d
-			y: -2.0d
+			x: 4.5d
+			y: 9.0d
+			shape: "rsquare"
 			description: ["Pig iron doesnt just become iron, it can become other things as well. The first of which is Steel! To start this process, grind this wonderful pig to dust."]
 			dependencies: ["4CB08912C67F67F1"]
 			id: "5C6154B26C034C8B"
@@ -604,13 +621,11 @@
 		}
 		{
 			title: "Oxygen 2: Pig"
-			x: 2.5d
-			y: -3.5d
+			x: 6.0d
+			y: 9.0d
+			shape: "rsquare"
 			description: ["By mixing in some oxygen from your earlier electrolysis system with the pig iron dust, itll burn much hotter in the blast furnace."]
-			dependencies: [
-				"5C6154B26C034C8B"
-				"001C93FF56BAA365"
-			]
+			dependencies: ["5C6154B26C034C8B"]
 			id: "638DD2ED10C868F3"
 			tasks: [{
 				id: "24DE3E040DF5C059"
@@ -626,8 +641,9 @@
 		}
 		{
 			title: "Steel Grit"
-			x: 2.5d
-			y: -5.0d
+			x: 7.5d
+			y: 9.0d
+			shape: "rsquare"
 			description: ["After blasting the oxidized dust at a high temperature, you are left with a poor and globby pile of steel. While this has purposes, its not quite what were looking for. If it's melted down and casted then it may prove more useful."]
 			dependencies: ["638DD2ED10C868F3"]
 			id: "01501F8B07F3250E"
@@ -644,13 +660,11 @@
 		}
 		{
 			title: "Molten Steel"
-			x: 4.0d
-			y: -5.0d
+			x: 9.0d
+			y: 9.0d
+			shape: "rsquare"
 			description: ["It will take 1600C to melt the steel, just slightly more than blazing blood or lava can handle. So you'll need to use the Hydroxide fuel we made earlier to melt it down. Dont let it get too hot though! Steel will burn away at 3300C! (WIP)"]
-			dependencies: [
-				"01501F8B07F3250E"
-				"18DCB704F8C44830"
-			]
+			dependencies: ["01501F8B07F3250E"]
 			id: "6190093B36E50720"
 			tasks: [{
 				id: "6AFB7C0C4C63FAD5"
@@ -666,9 +680,9 @@
 		{
 			title: "Real Steel"
 			icon: "immersiveengineering:ingot_steel"
-			x: 5.5d
-			y: -5.0d
-			shape: "gear"
+			x: 10.5d
+			y: 9.0d
+			shape: "rsquare"
 			subtitle: "Robot Boxing"
 			description: ["Finally you have some steel. Which is great because you'll need probably a few thousand moving forward. Get yourself a few components for the future."]
 			dependencies: ["6190093B36E50720"]
@@ -701,8 +715,9 @@
 		}
 		{
 			title: "Alternate Sources"
-			x: -5.0d
-			y: -2.5d
+			x: -1.5d
+			y: 8.5d
+			shape: "rsquare"
 			description: ["Limestone isn't the sole source of lime, create offers another in the form of limesand."]
 			dependencies: ["3BAECDED4BB4F4A4"]
 			id: "0CCBAF5A753F8426"
@@ -719,8 +734,9 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: -5.0d
+			x: 12.0d
+			y: 9.0d
+			shape: "rsquare"
 			dependencies: ["2650498B9D601A6F"]
 			id: "71457F1F27F2D45A"
 			tasks: [{
@@ -730,8 +746,9 @@
 			}]
 		}
 		{
-			x: 9.5d
-			y: -5.0d
+			x: 10.5d
+			y: 7.5d
+			dependencies: ["2650498B9D601A6F"]
 			id: "3FC681E702B5BAD6"
 			tasks: [{
 				id: "395E9185B98CE73A"
@@ -740,8 +757,10 @@
 			}]
 		}
 		{
-			x: 9.5d
-			y: -6.0d
+			x: 13.5d
+			y: 9.0d
+			shape: "rsquare"
+			dependencies: ["71457F1F27F2D45A"]
 			id: "6B5735D99D90A34E"
 			tasks: [{
 				id: "65F8905F1D209537"
@@ -753,6 +772,7 @@
 			title: "Structure Design"
 			x: -7.5d
 			y: 9.0d
+			shape: "rsquare"
 			description: ["loot some old blueprints, repair them and interpolate to create ie multiblocks"]
 			dependencies: ["2109C9CCA332ADB4"]
 			id: "75AF07B98FED7F3A"
@@ -763,8 +783,9 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 6.0d
+			x: 5.0d
+			y: 16.5d
+			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "35B01F53FBF40CE3"
 			tasks: [{
 				id: "75B335133BF88F92"
@@ -773,8 +794,12 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: -6.0d
+			x: 13.5d
+			y: 12.5d
+			dependencies: [
+				"6E17974A62E5257D"
+				"27AB4C61E7614F33"
+			]
 			id: "39B5563B44B52E00"
 			tasks: [{
 				id: "5231F52D99391A75"
@@ -786,7 +811,11 @@
 			title: "Generating Power"
 			x: -10.5d
 			y: 9.0d
-			dependencies: ["320BF2147EF53D41"]
+			shape: "rsquare"
+			dependencies: [
+				"30F1836DB33DAC9C"
+				"6A05CEC87FDE916C"
+			]
 			id: "74926B1EAA6DE913"
 			tasks: [{
 				id: "19BD2BFE8924A402"
@@ -796,7 +825,8 @@
 		}
 		{
 			x: 10.5d
-			y: -5.0d
+			y: 6.0d
+			dependencies: ["3FC681E702B5BAD6"]
 			id: "5816C78A72FF7037"
 			tasks: [{
 				id: "13066F52DAF193CC"
@@ -818,45 +848,10 @@
 			}]
 		}
 		{
-			x: -15.0d
-			y: 8.5d
-			id: "25CD71BAD0575E91"
-			tasks: [
-				{
-					id: "6238B798DCEE5448"
-					type: "item"
-					item: "create:linked_controller"
-				}
-				{
-					id: "711B2C38349FCC58"
-					type: "item"
-					item: "create:nixie_tube"
-				}
-			]
-		}
-		{
-			x: 9.5d
-			y: -4.0d
-			id: "4139C34A1F4557B1"
-			tasks: [{
-				id: "36D2E3B56D31224B"
-				type: "item"
-				item: "immersiveengineering:conveyor_basic"
-			}]
-		}
-		{
-			x: 8.5d
-			y: -4.0d
-			id: "7B6B04D5900628D1"
-			tasks: [{
-				id: "3D07B909E0F3AFFC"
-				type: "item"
-				item: "amicore:rubber"
-			}]
-		}
-		{
-			x: -10.5d
-			y: 15.0d
+			x: -9.0d
+			y: 16.5d
+			shape: "rsquare"
+			dependencies: ["4A367FE45ADB6F6A"]
 			id: "24A3CB461CA643C3"
 			tasks: [{
 				id: "3CB6C0C8922A28C6"
@@ -865,18 +860,25 @@
 			}]
 		}
 		{
-			x: -13.5d
-			y: 15.0d
+			x: -9.0d
+			y: 19.5d
+			shape: "diamond"
+			dependencies: [
+				"00DC275C3576F25E"
+				"1C854D694DE6533A"
+			]
 			id: "195C0E3F55212A0A"
 			tasks: [{
-				id: "23B790AE4083D171"
+				id: "140BE080A05F4BCF"
 				type: "item"
-				item: "appliedenergistics2:crafting_terminal"
+				item: "appliedenergistics2:terminal"
 			}]
 		}
 		{
-			x: -12.0d
-			y: 15.5d
+			x: -9.5d
+			y: 18.0d
+			shape: "rsquare"
+			dependencies: ["24A3CB461CA643C3"]
 			id: "1C854D694DE6533A"
 			tasks: [{
 				id: "73864D0915D45CB4"
@@ -885,8 +887,10 @@
 			}]
 		}
 		{
-			x: -12.0d
-			y: 14.5d
+			x: -8.5d
+			y: 18.0d
+			shape: "rsquare"
+			dependencies: ["24A3CB461CA643C3"]
 			id: "00DC275C3576F25E"
 			tasks: [{
 				id: "0119C7FAB8842476"
@@ -896,8 +900,9 @@
 		}
 		{
 			title: "Ether byproduct"
-			x: 4.0d
-			y: 4.0d
+			x: 2.0d
+			y: 15.0d
+			dependencies: ["791C79B98ABFF20A"]
 			id: "02E86ADDE3676E32"
 			tasks: [{
 				id: "356CB76E2B4F3244"
@@ -906,8 +911,9 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 3.0d
+			x: 6.0d
+			y: 11.5d
+			dependencies: ["250A17FF553D2472"]
 			id: "53CEA25441F1DC24"
 			tasks: [{
 				id: "64B40C7EA8D98D2F"
@@ -919,6 +925,8 @@
 			title: "charge crafting"
 			x: -8.5d
 			y: 12.0d
+			shape: "rsquare"
+			dependencies: ["7A306CE6E06C1BF2"]
 			id: "25C8E3EDDC6205DD"
 			tasks: [{
 				id: "01E6F5C3561E192A"
@@ -927,18 +935,25 @@
 			}]
 		}
 		{
-			x: -12.0d
+			title: "Tier 3"
+			icon: "amicore:lv_circuit"
+			x: -13.5d
 			y: 9.0d
+			shape: "gear"
+			dependencies: ["417096C593DECCAF"]
 			id: "320BF2147EF53D41"
 			tasks: [{
-				id: "3FB56BF25BD386F3"
-				type: "item"
-				item: "amicore:lv_circuit"
+				id: "008548E18184BD41"
+				type: "checkmark"
 			}]
 		}
 		{
-			x: -14.0d
-			y: 9.5d
+			x: -11.0d
+			y: 12.0d
+			dependencies: [
+				"29A64CCAFA24BF76"
+				"25C8E3EDDC6205DD"
+			]
 			id: "2C93FBB101B07389"
 			tasks: [{
 				id: "1CD8DE8680629555"
@@ -957,18 +972,9 @@
 			}]
 		}
 		{
-			x: -16.0d
-			y: 9.0d
-			id: "569D6604BC4E8A1F"
-			tasks: [{
-				id: "6FBE9FB3F47F0B39"
-				type: "item"
-				item: "create:mechanical_arm"
-			}]
-		}
-		{
-			x: 8.5d
-			y: -5.0d
+			x: 14.5d
+			y: 9.5d
+			dependencies: ["6E17974A62E5257D"]
 			id: "412C83BCD7045EFA"
 			tasks: [{
 				id: "41BFA91B38E9B639"
@@ -978,8 +984,9 @@
 		}
 		{
 			title: "MAgical Matter tier 1"
-			x: 4.0d
-			y: 5.0d
+			x: 2.0d
+			y: 16.5d
+			dependencies: ["02E86ADDE3676E32"]
 			id: "28C180CB3191D8A3"
 			tasks: [{
 				id: "63A246E1EC19B44A"
@@ -988,19 +995,9 @@
 			}]
 		}
 		{
-			title: "Spirit Crafting with new spirits"
-			x: 3.0d
-			y: 5.0d
-			id: "6E2DDE01FBC2D635"
-			tasks: [{
-				id: "0735685DB3BFF0FC"
-				type: "item"
-				item: "byg:ether_crafting_table"
-			}]
-		}
-		{
-			x: 10.5d
-			y: -6.0d
+			x: 13.5d
+			y: 14.0d
+			dependencies: ["39B5563B44B52E00"]
 			id: "1CD1A79119150E6E"
 			tasks: [{
 				id: "649E9CEB2C4E112D"
@@ -1009,8 +1006,10 @@
 			}]
 		}
 		{
-			x: -12.5d
-			y: 7.5d
+			x: -12.0d
+			y: 8.5d
+			shape: "rsquare"
+			dependencies: ["320BF2147EF53D41"]
 			id: "30F1836DB33DAC9C"
 			tasks: [{
 				id: "7E0AF47654B1C36C"
@@ -1029,8 +1028,10 @@
 			}]
 		}
 		{
-			x: -11.5d
-			y: 7.5d
+			x: -12.0d
+			y: 9.5d
+			shape: "rsquare"
+			dependencies: ["320BF2147EF53D41"]
 			id: "6A05CEC87FDE916C"
 			tasks: [{
 				id: "5E4ADAB779EC48D5"
@@ -1050,8 +1051,10 @@
 		}
 		{
 			title: "Sulfur Reprocessing"
-			x: -11.0d
-			y: 3.0d
+			x: 3.0d
+			y: 12.0d
+			shape: "rsquare"
+			dependencies: ["1DDEAA8F1C76E99F"]
 			id: "78A875AB253BDBF0"
 			tasks: [{
 				id: "1FA65C3BBB5A76A6"
@@ -1060,19 +1063,11 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 1.0d
-			id: "48CDDA07801D10EA"
-			tasks: [{
-				id: "7E280DDCFB0A2B1E"
-				type: "item"
-				item: "create:blaze_cake"
-			}]
-		}
-		{
 			title: "DC Power"
 			x: -9.0d
 			y: 10.5d
+			shape: "rsquare"
+			dependencies: ["2109C9CCA332ADB4"]
 			id: "7A306CE6E06C1BF2"
 			tasks: [{
 				id: "39C2C563F009625C"
@@ -1081,8 +1076,9 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: 9.0d
+			x: -6.0d
+			y: 10.5d
+			shape: "rsquare"
 			dependencies: ["19F01413A00BB938"]
 			id: "4065515873D37193"
 			tasks: [{
@@ -1093,8 +1089,8 @@
 		}
 		{
 			title: "Fish Farming"
-			x: -5.5d
-			y: 11.5d
+			x: -6.5d
+			y: 7.5d
 			dependencies: ["19F01413A00BB938"]
 			id: "020277435F5E44E1"
 			tasks: [
@@ -1108,11 +1104,17 @@
 					type: "item"
 					item: "minecraft:salmon_bucket"
 				}
+				{
+					id: "7A68112210C6C29D"
+					type: "item"
+					item: "minecraft:heart_of_the_sea"
+				}
 			]
 		}
 		{
-			x: -14.0d
-			y: 8.5d
+			x: 6.5d
+			y: 14.5d
+			dependencies: ["23543BA294618103"]
 			id: "0BF186C7EB9FF39F"
 			tasks: [{
 				id: "41D89D009B5D0A71"
@@ -1128,8 +1130,9 @@
 		}
 		{
 			title: "Slag Reprocessing"
-			x: 1.0d
-			y: 1.5d
+			x: -0.5d
+			y: 7.5d
+			dependencies: ["0E54364820F9361B"]
 			id: "7F355875C81B9D5E"
 			tasks: [{
 				id: "408405505D3AE2A1"
@@ -1140,6 +1143,7 @@
 		{
 			x: -9.0d
 			y: 9.0d
+			shape: "rsquare"
 			dependencies: ["74926B1EAA6DE913"]
 			id: "2109C9CCA332ADB4"
 			tasks: [{
@@ -1149,8 +1153,10 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 3.0d
+			x: -1.0d
+			y: 13.5d
+			shape: "rsquare"
+			dependencies: ["46D2E8A9ADBFEFE9"]
 			id: "10ECFFB40011A166"
 			tasks: [{
 				id: "56F32B2439D3D6CC"
@@ -1160,8 +1166,8 @@
 		}
 		{
 			title: "Catch em' all"
-			x: -6.0d
-			y: 8.0d
+			x: -7.5d
+			y: 10.5d
 			description: ["find all the patterns"]
 			dependencies: ["75AF07B98FED7F3A"]
 			id: "0FC85C5D6F3938E7"
@@ -1192,19 +1198,10 @@
 			}]
 		}
 		{
-			x: -15.0d
-			y: 9.5d
-			id: "0C5DAC67C0758504"
-			tasks: [{
-				id: "5A32B61CC53588FB"
-				type: "item"
-				item: "create:redstone_link"
-			}]
-		}
-		{
 			title: "Larger Forge Furnace multiblock, faster and easier"
-			x: 6.0d
-			y: 2.0d
+			x: -8.5d
+			y: 7.5d
+			dependencies: ["75AF07B98FED7F3A"]
 			id: "43F76E48837CE281"
 			tasks: [{
 				id: "6DE4BA5459F1F5BC"
@@ -1219,20 +1216,10 @@
 			}]
 		}
 		{
-			title: "Spirit Extraction"
-			x: 2.0d
-			y: 3.0d
-			id: "4EAFB2A451134CEF"
-			tasks: [{
-				id: "7D8F405D138E14BF"
-				type: "item"
-				item: "create_stuff_additions:quartz_crusher"
-			}]
-		}
-		{
 			title: "cheaper pipes"
-			x: -12.0d
-			y: 5.0d
+			x: 12.5d
+			y: 14.5d
+			dependencies: ["56520E994CB7D011"]
 			id: "21BF22AEA4A2857B"
 			tasks: [{
 				id: "188670C5E6B3CC86"
@@ -1241,9 +1228,11 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: 11.5d
+			x: -5.5d
+			y: 7.5d
+			description: ["garden cloche only used for trees/vines"]
 			dependencies: ["19F01413A00BB938"]
+			hide: false
 			id: "5ED19D446171E5F1"
 			tasks: [
 				{
@@ -1256,12 +1245,18 @@
 					type: "item"
 					item: "pamhc2trees:olive_sapling"
 				}
+				{
+					id: "426D8C029E385871"
+					type: "item"
+					item: "immersiveengineering:cloche"
+				}
 			]
 		}
 		{
 			title: "Waste Filtration"
-			x: -11.0d
-			y: 2.0d
+			x: 4.5d
+			y: 12.0d
+			dependencies: ["78A875AB253BDBF0"]
 			id: "250A17FF553D2472"
 			tasks: [{
 				id: "35901F46FF8A9A60"
@@ -1278,7 +1273,8 @@
 		{
 			title: "lubricant"
 			x: -6.0d
-			y: 10.0d
+			y: 9.0d
+			shape: "rsquare"
 			dependencies: ["75AF07B98FED7F3A"]
 			id: "19F01413A00BB938"
 			tasks: [{
@@ -1288,9 +1284,17 @@
 			}]
 		}
 		{
-			title: "ie machines"
-			x: -3.0d
-			y: 9.0d
+			title: "Machine Cores"
+			x: -4.5d
+			y: 10.5d
+			shape: "rsquare"
+			description: [
+				"All IE machines require something called a machine core. These cores are machine specific and require a repaired blueprint for each."
+				""
+				"Some other machines require blueprints, but once you have enough blueprints to make most basic level machines, feel free to continue."
+				""
+				"The path splits into a few ways from here, some necessary and some optional."
+			]
 			dependencies: ["4065515873D37193"]
 			id: "67D424D0BBB1CAB3"
 			tasks: [{
@@ -1300,8 +1304,10 @@
 			}]
 		}
 		{
-			x: -9.0d
+			x: -9.5d
 			y: 13.5d
+			shape: "rsquare"
+			dependencies: ["25C8E3EDDC6205DD"]
 			id: "2D6C8AF17E94B000"
 			tasks: [{
 				id: "730E739A96066C13"
@@ -1310,8 +1316,13 @@
 			}]
 		}
 		{
-			x: -9.0d
+			x: -9.5d
 			y: 15.0d
+			shape: "rsquare"
+			dependencies: [
+				"2D6C8AF17E94B000"
+				"0C2C65ED4A23593B"
+			]
 			id: "4A367FE45ADB6F6A"
 			tasks: [{
 				id: "245315C82CCD1DD4"
@@ -1321,8 +1332,10 @@
 		}
 		{
 			title: "Spirit combination"
-			x: 3.0d
-			y: 4.0d
+			x: 1.0d
+			y: 13.5d
+			shape: "rsquare"
+			dependencies: ["54426CC36A7773F3"]
 			id: "59904ABFCBF022B8"
 			tasks: [{
 				id: "38BD915C31A14583"
@@ -1332,8 +1345,10 @@
 		}
 		{
 			title: "Other sources of basic Spirits"
-			x: 3.0d
-			y: 3.0d
+			x: -2.5d
+			y: 13.5d
+			shape: "rsquare"
+			dependencies: ["67D424D0BBB1CAB3"]
 			id: "46D2E8A9ADBFEFE9"
 			tasks: [{
 				id: "10D76B94194FB352"
@@ -1342,19 +1357,10 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 7.5d
-			id: "7081865E6499D0BD"
-			tasks: [{
-				id: "073A7AA43E3A2B8F"
-				type: "item"
-				item: "immersiveengineering:cloche"
-			}]
-		}
-		{
-			title: "Automatic blasting"
-			x: -2.0d
-			y: 7.5d
+			title: "Fast Blasting"
+			x: 11.5d
+			y: 14.5d
+			dependencies: ["56520E994CB7D011"]
 			id: "3AD2436B7E1DB304"
 			tasks: [{
 				id: "64C22E2DBE2AE96E"
@@ -1365,6 +1371,7 @@
 		{
 			x: -9.5d
 			y: 12.0d
+			dependencies: ["7A306CE6E06C1BF2"]
 			id: "29A64CCAFA24BF76"
 			tasks: [{
 				id: "57C4EFB1F682F7FD"
@@ -1373,19 +1380,27 @@
 			}]
 		}
 		{
-			x: -9.0d
+			x: -9.5d
 			y: 7.5d
+			dependencies: ["2109C9CCA332ADB4"]
 			id: "1625E205BF8163A5"
-			tasks: [{
-				id: "3BA5BD7F23E00DEF"
-				type: "item"
-				item: "immersiveengineering:capacitor_lv"
-			}]
+			tasks: [
+				{
+					id: "3BA5BD7F23E00DEF"
+					type: "item"
+					item: "immersiveengineering:capacitor_lv"
+				}
+				{
+					id: "3D744B7A25FC097A"
+					type: "item"
+					item: "createaddition:accumulator"
+				}
+			]
 		}
 		{
 			title: "mixer"
-			x: -3.0d
-			y: 10.5d
+			x: -8.5d
+			y: 22.0d
 			id: "7F433BA0BC5F9CCF"
 			tasks: [{
 				id: "5EB6E1EED8A81536"
@@ -1395,8 +1410,9 @@
 		}
 		{
 			title: "squeezer"
-			x: -2.0d
-			y: 10.5d
+			x: -7.0d
+			y: 13.0d
+			dependencies: ["4065515873D37193"]
 			id: "3DEAEE6BA7D76A63"
 			tasks: [{
 				id: "382BE5E46C90953A"
@@ -1406,8 +1422,8 @@
 		}
 		{
 			title: "press"
-			x: -3.0d
-			y: 11.5d
+			x: -7.5d
+			y: 21.0d
 			id: "3B1B38B745B0BEB3"
 			tasks: [{
 				id: "22BAE183FBD73A67"
@@ -1417,8 +1433,8 @@
 		}
 		{
 			title: "crusher"
-			x: -2.0d
-			y: 11.5d
+			x: -7.5d
+			y: 22.0d
 			id: "70CE33F74B6C8230"
 			tasks: [{
 				id: "2363F2A26BB91257"
@@ -1427,31 +1443,26 @@
 			}]
 		}
 		{
-			title: "sawmill"
-			x: -1.0d
-			y: 10.5d
-			id: "3D80761BB17C5785"
-			tasks: [{
-				id: "5ACC6722EFF14C76"
-				type: "item"
-				item: "immersiveengineering:light_engineering"
-			}]
-		}
-		{
-			title: "assembler"
-			x: -1.0d
-			y: 11.5d
+			title: "Odd Ones Out"
+			icon: "immersiveengineering:light_engineering"
+			x: 5.0d
+			y: 18.0d
+			description: ["Why cant you accelerate the Bottling machine, Assembler, or sawmill? Simple, they arent meant to be used. Two of them flat out have no recipes. Consider using their create alternatives. "]
+			hide_dependency_lines: true
+			dependencies: ["23543BA294618103"]
+			hide: true
 			id: "6AA5BA7DDFC38ECA"
 			tasks: [{
-				id: "1ED654CFF15BC9CB"
-				type: "item"
-				item: "immersiveengineering:light_engineering"
+				id: "3469E83F5A797DB1"
+				type: "checkmark"
 			}]
 		}
 		{
 			title: "fermenter"
-			x: -3.0d
-			y: 12.5d
+			x: 0.0d
+			y: 13.5d
+			shape: "rsquare"
+			dependencies: ["10ECFFB40011A166"]
 			id: "54426CC36A7773F3"
 			tasks: [{
 				id: "70CD02CF5425B424"
@@ -1460,20 +1471,9 @@
 			}]
 		}
 		{
-			title: "Bottler"
-			x: -2.0d
-			y: 12.5d
-			id: "17EAA62BE0D295C7"
-			tasks: [{
-				id: "06EF81878D7F0AC8"
-				type: "item"
-				item: "immersiveengineering:light_engineering"
-			}]
-		}
-		{
 			title: "auto workbench"
-			x: -1.0d
-			y: 12.5d
+			x: -7.5d
+			y: 23.0d
 			id: "21F334CCBBF85423"
 			tasks: [{
 				id: "0E53584B6147E0B2"
@@ -1482,20 +1482,13 @@
 			}]
 		}
 		{
-			title: "refinery"
-			x: -3.0d
-			y: 14.0d
-			id: "27E23D469B7CE254"
-			tasks: [{
-				id: "6F119D90A544CDCC"
-				type: "item"
-				item: "immersiveengineering:heavy_engineering"
-			}]
-		}
-		{
 			title: "excavator"
-			x: -2.0d
-			y: 15.0d
+			x: 15.0d
+			y: 10.5d
+			dependencies: [
+				"412C83BCD7045EFA"
+				"27AB4C61E7614F33"
+			]
 			id: "4E05FFD74185F66C"
 			tasks: [{
 				id: "1AB9F3BF938F0BF5"
@@ -1505,8 +1498,13 @@
 		}
 		{
 			title: "arc furnace"
-			x: -1.0d
-			y: 14.0d
+			x: 12.5d
+			y: 11.5d
+			shape: "rsquare"
+			dependencies: [
+				"6E17974A62E5257D"
+				"27AB4C61E7614F33"
+			]
 			id: "091CA8DBAAD319C5"
 			tasks: [{
 				id: "2E5BB1D3322E1CD0"
@@ -1515,30 +1513,10 @@
 			}]
 		}
 		{
-			title: "diesel generator"
-			x: -3.0d
-			y: 15.0d
-			id: "32FFAA95FEAE8FC9"
-			tasks: [{
-				id: "2C998DC5BABA8727"
-				type: "item"
-				item: "immersiveengineering:heavy_engineering"
-			}]
-		}
-		{
-			x: -4.0d
-			y: 15.0d
-			id: "3CC33BD0FEF11C24"
-			tasks: [{
-				id: "0ECA2BFDBB859BB8"
-				type: "item"
-				item: "immersiveengineering:biodiesel_bucket"
-			}]
-		}
-		{
 			title: "Distillation tower"
-			x: -2.0d
-			y: 14.0d
+			x: 6.0d
+			y: 6.0d
+			dependencies: ["25F559F7E36E970D"]
 			id: "2E686AE39A9E6B6E"
 			tasks: [{
 				id: "799D3A27FFB101D9"
@@ -1548,8 +1526,9 @@
 		}
 		{
 			title: "magical matter on non fluid machines"
-			x: -1.0d
-			y: 7.5d
+			x: 5.0d
+			y: 14.5d
+			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "23543BA294618103"
 			tasks: [{
 				id: "2909C37927EDEF67"
@@ -1558,8 +1537,9 @@
 			}]
 		}
 		{
-			x: 10.5d
-			y: -4.0d
+			x: 13.5d
+			y: 7.5d
+			dependencies: ["6B5735D99D90A34E"]
 			id: "51ABF09BD17D3642"
 			tasks: [{
 				id: "0B74686DB0E4CB3A"
@@ -1568,13 +1548,934 @@
 			}]
 		}
 		{
-			x: 10.5d
-			y: -3.0d
+			x: 13.5d
+			y: 6.0d
+			dependencies: ["51ABF09BD17D3642"]
 			id: "47549D4AF358C45A"
 			tasks: [{
 				id: "45E68D33FAD12C1E"
 				type: "item"
 				item: "refinedpipes:basic_extractor_attachment"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 7.5d
+			dependencies: ["75AF07B98FED7F3A"]
+			id: "0FB961C128D781C2"
+			tasks: [{
+				id: "211EC80F77AFFBBE"
+				type: "item"
+				item: "immersiveengineering:blastbrick_reinforced"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 10.5d
+			dependencies: ["74926B1EAA6DE913"]
+			id: "348E526A5410FF1C"
+			tasks: [{
+				id: "3438DA3DA6D174C5"
+				type: "item"
+				item: "immersiveengineering:thermoelectric_generator"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 7.5d
+			dependencies: ["74926B1EAA6DE913"]
+			id: "00AEFCC990F946C6"
+			tasks: [
+				{
+					id: "03E400B613F4F296"
+					type: "item"
+					item: "immersiveengineering:windmill"
+				}
+				{
+					id: "19F731B0906E974E"
+					type: "item"
+					item: "immersiveengineering:watermill"
+				}
+				{
+					id: "3638C1324939F629"
+					type: "item"
+					item: "immersiveengineering:dynamo"
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: 13.5d
+			shape: "rsquare"
+			dependencies: ["25C8E3EDDC6205DD"]
+			id: "0C2C65ED4A23593B"
+			tasks: [{
+				id: "563B323986899351"
+				type: "item"
+				item: "appliedenergistics2:fluix_crystal"
+			}]
+		}
+		{
+			title: "crystal purification"
+			x: -7.0d
+			y: 14.5d
+			dependencies: [
+				"3DEAEE6BA7D76A63"
+				"0C2C65ED4A23593B"
+			]
+			id: "6032F7DAC5916BEC"
+			tasks: [{
+				id: "77839BE8AB060B58"
+				type: "item"
+				item: "appliedenergistics2:purified_fluix_crystal"
+			}]
+		}
+		{
+			title: "Other ways of storing item"
+			x: -5.5d
+			y: 16.5d
+			dependencies: [
+				"64BF4A59FA059529"
+				"0202675F9D6CE17F"
+			]
+			id: "50CC03A6CF2234F2"
+			tasks: [{
+				id: "2F253F5164095827"
+				type: "item"
+				item: "appliedenergistics2:storage_bus"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 16.5d
+			shape: "rsquare"
+			dependencies: ["24A3CB461CA643C3"]
+			id: "64BF4A59FA059529"
+			tasks: [{
+				id: "7ED5D24AC40D371C"
+				type: "item"
+				item: "appliedenergistics2:drive"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 16.5d
+			dependencies: ["24A3CB461CA643C3"]
+			id: "31880519D349F2F4"
+			tasks: [{
+				id: "6381D66F1655B9AC"
+				type: "item"
+				item: "appliedenergistics2:interface"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 15.5d
+			dependencies: ["24A3CB461CA643C3"]
+			id: "66B9E2AEA550C371"
+			tasks: [{
+				id: "3DD42A12EBA1E1EC"
+				type: "item"
+				item: "appliedenergistics2:import_bus"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 17.5d
+			dependencies: ["24A3CB461CA643C3"]
+			id: "078626BC8D9A0D13"
+			tasks: [{
+				id: "793EB42BC92E4C10"
+				type: "item"
+				item: "appliedenergistics2:export_bus"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 17.5d
+			dependencies: ["24A3CB461CA643C3"]
+			id: "0EF42F97577F1F66"
+			tasks: [{
+				id: "2EDF8AD9D3195E47"
+				type: "item"
+				item: "appliedenergistics2:energy_acceptor"
+			}]
+		}
+		{
+			title: "Specialized Circuits"
+			x: -5.5d
+			y: 15.5d
+			dependencies: ["2BB8A3D81484DC0C"]
+			id: "0202675F9D6CE17F"
+			tasks: [{
+				id: "5FD6EFA3EA245B12"
+				type: "item"
+				item: "appliedenergistics2:engineering_processor"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 15.0d
+			dependencies: ["0C2C65ED4A23593B"]
+			id: "6D51A4693BFD8151"
+			tasks: [{
+				id: "52F5B6CB9986A71B"
+				type: "item"
+				item: "appliedenergistics2:fluix_glass_cable"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 15.5d
+			dependencies: [
+				"6D51A4693BFD8151"
+				"0202675F9D6CE17F"
+			]
+			id: "073F53734FF9E2BD"
+			tasks: [{
+				id: "4800D996856BB636"
+				type: "item"
+				item: "appliedenergistics2:fluix_smart_dense_cable"
+			}]
+		}
+		{
+			title: "Nitric waste water"
+			x: -6.0d
+			y: 13.5d
+			dependencies: ["6032F7DAC5916BEC"]
+			id: "651FEEB0168DD592"
+			tasks: [{
+				id: "79D7A8D860F4CC20"
+				type: "item"
+				item: "amicore:unusable_waste_water_bucket"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 17.5d
+			dependencies: ["64BF4A59FA059529"]
+			id: "55C752593836249C"
+			tasks: [{
+				id: "53A9AA85EC3EE499"
+				type: "item"
+				item: "appliedenergistics2:chest"
+			}]
+		}
+		{
+			title: "Welding"
+			x: -6.0d
+			y: 11.5d
+			description: ["A coil of wire used for welding"]
+			dependencies: ["4065515873D37193"]
+			id: "1B8E57A538E8A809"
+			tasks: [
+				{
+					id: "1FD77E00A408041E"
+					type: "item"
+					item: "amicore:magnesium_wire"
+				}
+				{
+					id: "589ED3960B3E1432"
+					type: "item"
+					title: "Deployer Welder"
+					item: {
+						id: "artisantools:solderer_diamond"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Nickel Wire Coils"
+			x: -12.0d
+			y: 11.0d
+			dependencies: ["6A05CEC87FDE916C"]
+			id: "2CA66099ED95B688"
+			tasks: [{
+				id: "39D3E8272E4DC2C1"
+				type: "item"
+				item: "amicore:nickel_wire"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 7.5d
+			dependencies: ["7F355875C81B9D5E"]
+			id: "7B7A83F8E220A1E4"
+			tasks: [{
+				id: "6F37D0341BF3F5BD"
+				type: "item"
+				item: "amicore:sulfuric_acid_bottle"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 9.0d
+			dependencies: ["67D424D0BBB1CAB3"]
+			id: "5C9C39A0803AFD28"
+			tasks: [{
+				id: "712EA60CE47474F7"
+				type: "item"
+				item: "amicore:rubber"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 7.5d
+			dependencies: ["5C9C39A0803AFD28"]
+			id: "18E3E0CB6B4747B9"
+			tasks: [{
+				id: "04FA454351A8E246"
+				type: "item"
+				item: "immersiveengineering:conveyor_basic"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 15.5d
+			dependencies: ["35B01F53FBF40CE3"]
+			id: "4B8323C74C074210"
+			tasks: [{
+				id: "4F527093FB8ED58B"
+				type: "item"
+				item: "travel_anchors:travel_anchor"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 16.5d
+			dependencies: ["35B01F53FBF40CE3"]
+			id: "5CA6F42DA0FB4D9D"
+			tasks: [{
+				id: "2DF021B7AC1C8552"
+				type: "item"
+				item: "enderstorage:ender_pouch"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 12.5d
+			dependencies: ["250A17FF553D2472"]
+			id: "76E0D5CB0974F272"
+			tasks: [{
+				id: "41B08EFA449A13D2"
+				type: "item"
+				item: "immersivepetroleum:flarestack"
+			}]
+		}
+		{
+			title: "Earthy Plants"
+			x: -3.0d
+			y: 15.0d
+			dependencies: ["46D2E8A9ADBFEFE9"]
+			id: "5967F6E9E19F62BD"
+			tasks: [
+				{
+					id: "7063423C4B8115E4"
+					type: "item"
+					item: "minecraft:wheat"
+				}
+				{
+					id: "4F0CBA4481B780D0"
+					type: "item"
+					item: "pamhc2crops:beanitem"
+				}
+				{
+					id: "034410CCA9E4605D"
+					type: "item"
+					item: "pamhc2crops:chickpeaitem"
+				}
+				{
+					id: "15885E53F7746F98"
+					type: "item"
+					item: "pamhc2crops:cornitem"
+				}
+				{
+					id: "4D75578BFFBC5089"
+					type: "item"
+					item: "pamhc2crops:soybeanitem"
+				}
+				{
+					id: "6AFB868098E08CE0"
+					type: "item"
+					item: "pamhc2crops:kaleitem"
+				}
+				{
+					id: "144F6BCC1E06470F"
+					type: "item"
+					item: "pamhc2crops:arrowrootitem"
+				}
+				{
+					id: "2E237FE58728B7AA"
+					type: "item"
+					item: "pamhc2crops:cassavaitem"
+				}
+				{
+					id: "3EEA44C022798141"
+					type: "item"
+					item: "pamhc2crops:onionitem"
+				}
+				{
+					id: "1CF2EEB70C37B5DC"
+					type: "item"
+					item: "pamhc2crops:parsnipitem"
+				}
+				{
+					id: "1498AD46D0A34242"
+					type: "item"
+					item: "pamhc2crops:peanutitem"
+				}
+				{
+					id: "10AA9BED3D5495E4"
+					type: "item"
+					item: "pamhc2crops:radishitem"
+				}
+				{
+					id: "2B120ACDF84AD961"
+					type: "item"
+					item: "pamhc2crops:rutabagaitem"
+				}
+				{
+					id: "0E738241296E4B09"
+					type: "item"
+					item: "pamhc2crops:sweetpotatoitem"
+				}
+				{
+					id: "5B75C83395D6E4E6"
+					type: "item"
+					item: "pamhc2crops:taroitem"
+				}
+				{
+					id: "3FF9FED8CC6A1EDA"
+					type: "item"
+					item: "pamhc2crops:turnipitem"
+				}
+			]
+		}
+		{
+			title: "Water rich plants"
+			x: -2.0d
+			y: 15.0d
+			dependencies: ["46D2E8A9ADBFEFE9"]
+			id: "16E7613684068A09"
+			tasks: [
+				{
+					id: "4B4E511DE8BC34D6"
+					type: "item"
+					item: "pamhc2crops:lettuceitem"
+				}
+				{
+					id: "3DB3658AD76736E9"
+					type: "item"
+					item: "pamhc2crops:cranberryitem"
+				}
+				{
+					id: "4E56F8B6E99A0CBE"
+					type: "item"
+					item: "pamhc2crops:riceitem"
+				}
+				{
+					id: "2718FC24C3A6C7DF"
+					type: "item"
+					item: "pamhc2crops:tomatoitem"
+				}
+				{
+					id: "06E14BE4CBE0A6A5"
+					type: "item"
+					item: "pamhc2crops:cucumberitem"
+				}
+				{
+					id: "58D3CC0AA7E0AC89"
+					type: "item"
+					item: "pamhc2crops:zucchiniitem"
+				}
+				{
+					id: "50553D4393E6289C"
+					type: "item"
+					item: "pamhc2crops:celeryitem"
+				}
+				{
+					id: "53F8D68F76DA35B6"
+					type: "item"
+					item: "pamhc2crops:rhubarbitem"
+				}
+				{
+					id: "2EA4A5A3CC7C4CA8"
+					type: "item"
+					item: "pamhc2crops:waterchestnutitem"
+				}
+			]
+		}
+		{
+			title: "Flaming plants"
+			x: -1.0d
+			y: 14.5d
+			dependencies: ["46D2E8A9ADBFEFE9"]
+			id: "3258C0DD3940C278"
+			tasks: [{
+				id: "1ADF3B43F17D65B1"
+				type: "item"
+				item: "pamhc2crops:cactusfruititem"
+			}]
+		}
+		{
+			title: "Airous plants"
+			x: -4.0d
+			y: 14.5d
+			dependencies: ["46D2E8A9ADBFEFE9"]
+			id: "3A690A6B9C527213"
+			tasks: [{
+				id: "3A3702884376456A"
+				type: "item"
+				item: "pamhc2trees:almonditem"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 13.5d
+			shape: "rsquare"
+			dependencies: ["791C79B98ABFF20A"]
+			id: "60AFE3DA3E0BF2D6"
+			tasks: [{
+				id: "44827872C3515269"
+				type: "item"
+				item: "malum:spirit_altar"
+			}]
+		}
+		{
+			title: "Chemical crystalizer"
+			x: 2.0d
+			y: 13.5d
+			shape: "rsquare"
+			dependencies: ["59904ABFCBF022B8"]
+			id: "791C79B98ABFF20A"
+			tasks: [{
+				id: "6690F30855C2C727"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 15.5d
+			dependencies: ["60AFE3DA3E0BF2D6"]
+			id: "330F0984AAF36A56"
+			tasks: [{
+				id: "799F1FDEE14AB362"
+				type: "item"
+				item: "torchmaster:megatorch"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 16.5d
+			dependencies: ["1571EE2AB2F3BB93"]
+			id: "59D577D371C2D392"
+			tasks: [{
+				id: "47AA0FC2FDCF1588"
+				type: "item"
+				item: "malum:rune_table"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 15.0d
+			dependencies: ["60AFE3DA3E0BF2D6"]
+			id: "1571EE2AB2F3BB93"
+			tasks: [{
+				id: "6911E00D5FD69EDF"
+				type: "item"
+				item: "malum:totem_base"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 10.5d
+			dependencies: ["6E17974A62E5257D"]
+			id: "77992A6E7CD89EAD"
+			tasks: [{
+				id: "0D2BBE5ED4C4CEC9"
+				type: "item"
+				item: "createaddition:electric_motor"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 10.5d
+			shape: "rsquare"
+			dependencies: ["6B5735D99D90A34E"]
+			id: "6E17974A62E5257D"
+			tasks: [{
+				id: "08E9B566D03BBDC3"
+				type: "item"
+				item: "steampowered:steel_cogwheel"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 8.0d
+			dependencies: ["5C9C39A0803AFD28"]
+			id: "2275B75F1F4B1D62"
+			tasks: [{
+				id: "7204696CBCE015C5"
+				type: "item"
+				item: "immersiveengineering:sorter"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 9.0d
+			dependencies: ["5C9C39A0803AFD28"]
+			id: "38A74C2E5F289054"
+			tasks: [{
+				id: "5607240F0C3F5522"
+				type: "item"
+				item: "immersiveengineering:item_batcher"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 13.5d
+			shape: "diamond"
+			dependencies: [
+				"11B31B746EEE8FB1"
+				"60CE9D83C6EE0611"
+				"6E42430AA7028047"
+				"2CECF2EE7CADF3C3"
+			]
+			id: "7DDB285E27C125CD"
+			tasks: [{
+				id: "64083D325D27310E"
+				type: "item"
+				item: "amicore:mv_circuit"
+			}]
+		}
+		{
+			title: "Transistor"
+			x: 9.5d
+			y: 12.0d
+			shape: "rsquare"
+			dependencies: [
+				"3DFB9E99A226F3A7"
+				"221DA642F791634C"
+			]
+			id: "60CE9D83C6EE0611"
+			tasks: [{
+				id: "55FFCA0DB39A2CB1"
+				type: "item"
+				item: "amicore:simple_resistor"
+			}]
+		}
+		{
+			title: "capacitor"
+			x: 9.5d
+			y: 14.0d
+			shape: "rsquare"
+			dependencies: ["3DFB9E99A226F3A7"]
+			id: "6E42430AA7028047"
+			tasks: [{
+				id: "63F627B923F3497A"
+				type: "item"
+				item: "amicore:simple_resistor"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 14.5d
+			dependencies: ["6032F7DAC5916BEC"]
+			id: "2BB8A3D81484DC0C"
+			tasks: [{
+				id: "725A36CFB3C970A5"
+				type: "item"
+				item: "create:electron_tube"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 15.5d
+			dependencies: ["0202675F9D6CE17F"]
+			id: "3F1B898A18EC966E"
+			tasks: [{
+				id: "55FBA5E342E8F614"
+				type: "item"
+				item: "appliedenergistics2:crafting_terminal"
+			}]
+		}
+		{
+			title: "Remaining metals"
+			x: -0.5d
+			y: 6.0d
+			dependencies: ["7F355875C81B9D5E"]
+			id: "702C17D8624D9487"
+			tasks: [{
+				id: "250038E94186B17C"
+				type: "item"
+				item: "amicore:crushed_pyrite"
+			}]
+		}
+		{
+			title: "fermenter"
+			x: -8.5d
+			y: 21.0d
+			id: "2CEBEE4AEC25467B"
+			tasks: [{
+				id: "56E80396E98116E8"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			title: "crystalizer"
+			x: -10.0d
+			y: 21.5d
+			id: "3EC0925258E4F03E"
+			tasks: [{
+				id: "3E6AFDC6AB215BA3"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			title: "squeezer"
+			x: -8.5d
+			y: 23.0d
+			id: "674543D7ED865B58"
+			tasks: [{
+				id: "429E06EA0FB6A53D"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			title: "electrolyzer"
+			x: 6.0d
+			y: 3.0d
+			dependencies: ["001C93FF56BAA365"]
+			id: "6B1321F74832AA8E"
+			tasks: [{
+				id: "69BC094D83665481"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 12.0d
+			dependencies: ["08673D24C5DB4665"]
+			id: "112A2ABB835935C5"
+			tasks: [{
+				id: "7A0A37C79A9AEF0A"
+				type: "item"
+				item: {
+					id: "immersiveengineering:graphite_electrode"
+					Count: 1b
+					tag: {
+						graphDmg: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Mid strength resistor"
+			x: 9.5d
+			y: 13.0d
+			shape: "rsquare"
+			dependencies: ["3DFB9E99A226F3A7"]
+			id: "11B31B746EEE8FB1"
+			tasks: [{
+				id: "5444B2F7D5E33AD6"
+				type: "item"
+				item: "amicore:simple_resistor"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 13.5d
+			shape: "rsquare"
+			dependencies: ["60AFE3DA3E0BF2D6"]
+			id: "4B4A3E6B2307C0F3"
+			tasks: [{
+				id: "0A852B737F29428F"
+				type: "item"
+				item: "appliedenergistics2:inscriber"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 13.5d
+			shape: "rsquare"
+			description: ["needs steel"]
+			dependencies: ["4B4A3E6B2307C0F3"]
+			id: "3DFB9E99A226F3A7"
+			tasks: [{
+				id: "3F8F2CD63D38AE78"
+				type: "item"
+				item: "appliedenergistics2:calculation_processor_press"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 13.0d
+			dependencies: ["091CA8DBAAD319C5"]
+			id: "56520E994CB7D011"
+			tasks: [{
+				id: "0060FBB1CE5157BA"
+				type: "item"
+				item: "amicore:invar_ingot"
+			}]
+		}
+		{
+			icon: {
+				id: "minecraft:netherite_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 12.0d
+			y: 7.5d
+			dependencies: ["3FC681E702B5BAD6"]
+			id: "07B7A013839A6ECB"
+			tasks: [
+				{
+					id: "6EB3BC3EAA28D3DD"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "31F6D86BB6B72D7C"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4911A36B9ED0CB95"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "339D21A114E5B9D8"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 14.5d
+			y: 11.5d
+			dependencies: ["6E17974A62E5257D"]
+			id: "27AB4C61E7614F33"
+			tasks: [{
+				id: "62217E971D448E25"
+				type: "item"
+				item: "amicore:constantan_wire"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 11.5d
+			shape: "rsquare"
+			dependencies: ["091CA8DBAAD319C5"]
+			id: "221DA642F791634C"
+			tasks: [{
+				id: "7BB5F7EB0B37DB14"
+				type: "item"
+				item: "amicore:electrum_ingot"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 13.5d
+			dependencies: ["60AFE3DA3E0BF2D6"]
+			id: "79A7BAE72F40203D"
+			tasks: [{
+				id: "570114D39A0F8A27"
+				type: "item"
+				item: "appliedenergistics2:quartz_growth_accelerator"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 12.0d
+			dependencies: ["3DFB9E99A226F3A7"]
+			id: "7C40241E360F5DB9"
+			tasks: [{
+				id: "03D9E882639878F2"
+				type: "item"
+				item: "appliedenergistics2:redstone_card"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 6.5d
+			dependencies: ["7F355875C81B9D5E"]
+			id: "797729677277EFA0"
+			tasks: [{
+				id: "0CD5BB8581EC3F26"
+				type: "item"
+				item: "immersiveengineering:concrete"
+			}]
+		}
+		{
+			title: "phenolic board"
+			x: 9.5d
+			y: 15.0d
+			shape: "rsquare"
+			dependencies: ["3DFB9E99A226F3A7"]
+			id: "2CECF2EE7CADF3C3"
+			tasks: [{
+				id: "5EA095EB72F89DAE"
+				type: "item"
+				item: "minecraft:smooth_quartz_slab"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 15.0d
+			dependencies: ["02E86ADDE3676E32"]
+			id: "6E1FBD630FCE3E50"
+			tasks: [{
+				id: "35FFED06D9DE77C3"
+				type: "item"
+				item: "malum:hex_ash"
+			}]
+		}
+		{
+			title: "Crucible multiblock"
+			x: 6.0d
+			y: 7.5d
+			dependencies: ["01501F8B07F3250E"]
+			id: "70037F17BFED2568"
+			tasks: [{
+				id: "0A5B8EFE92925E98"
+				type: "item"
+				item: "advancedrocketry:qcrucible"
 			}]
 		}
 	]
