@@ -1312,6 +1312,7 @@
 		}
 		{
 			title: "Lubricant"
+			icon: "immersivepetroleum:lubricant_bucket"
 			x: -6.0d
 			y: 9.0d
 			shape: "rsquare"

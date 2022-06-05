@@ -7,7 +7,7 @@
 	icon: "minecraft:fern"
 	disable_toast: true
 	subtitle: ["Functional Flora and Fauna"]
-	default_quest_shape: ""
+	default_quest_shape: "hexagon"
 	default_hide_dependency_lines: true
 	quests: [
 		{
@@ -15,6 +15,7 @@
 			icon: "minecraft:fern"
 			x: 0.0d
 			y: 0.0d
+			shape: "circle"
 			description: [
 				"Plants are a wonderful thing, the flora of this world is incredibly diverse. Every one special."
 				""
@@ -36,6 +37,7 @@
 			icon: "minecraft:grass_block"
 			x: -2.0d
 			y: -1.0d
+			shape: "circle"
 			description: [
 				"Some plants naturally grow very tall. They can be found in almost every dimension, however are often classified within their dimensional flora."
 				""
@@ -54,6 +56,7 @@
 			icon: "minecraft:warped_nylium"
 			x: 0.0d
 			y: -2.0d
+			shape: "circle"
 			description: [
 				"Nether-Bloom can effectively be split into 4 catagories, each rich in their own non-metal element."
 				""
@@ -78,6 +81,7 @@
 			icon: "minecraft:farmland"
 			x: 0.0d
 			y: 2.0d
+			shape: "circle"
 			description: [
 				"Fruited plants are more often called crops. Almost all crops are vegetables, and trees are fruits."
 				""
@@ -96,6 +100,7 @@
 			icon: "minecraft:mycelium"
 			x: -2.0d
 			y: 1.0d
+			shape: "circle"
 			description: [
 				"Fungal plants are not plants, however they can be classified simillarly."
 				""
@@ -112,6 +117,7 @@
 		{
 			x: -3.5d
 			y: 0.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["279CD5AD6F6DCEEC"]
 			id: "78FE425E31D6E64A"
@@ -124,6 +130,7 @@
 		{
 			x: -3.5d
 			y: 1.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["279CD5AD6F6DCEEC"]
 			id: "0F1A0613D2767E92"
@@ -136,6 +143,7 @@
 		{
 			x: -4.5d
 			y: 0.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["279CD5AD6F6DCEEC"]
 			id: "18E407E1E2C71F6C"
@@ -148,6 +156,7 @@
 		{
 			x: -4.5d
 			y: 1.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["279CD5AD6F6DCEEC"]
 			id: "3B02C61DE2C209EC"
@@ -160,6 +169,7 @@
 		{
 			x: -3.5d
 			y: 2.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["279CD5AD6F6DCEEC"]
 			id: "231B57FF0AA20850"
@@ -174,6 +184,7 @@
 			icon: "botania:white_mushroom"
 			x: -4.5d
 			y: 2.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["279CD5AD6F6DCEEC"]
 			id: "2E30E6A5B7A2CE15"
@@ -329,6 +340,7 @@
 		{
 			x: -3.5d
 			y: -0.5d
+			shape: "hexagon"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "1E2D8F3AF4A1A55C"
@@ -341,6 +353,7 @@
 		{
 			x: -5.5d
 			y: 1.5d
+			shape: "rsquare"
 			description: ["Is it a fungus? A fruit? An animal? Who knows, I sure don't!"]
 			hide_dependency_lines: true
 			dependencies: ["279CD5AD6F6DCEEC"]
@@ -366,6 +379,7 @@
 		{
 			x: -7.0d
 			y: -1.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "7E6E89C5DCAFE3A2"
@@ -378,6 +392,7 @@
 		{
 			x: -7.0d
 			y: -0.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "26F3E1C2C2DDB998"
@@ -389,7 +404,8 @@
 		}
 		{
 			x: -8.0d
-			y: -1.5d
+			y: -1.0d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "293A213987AFB47C"
@@ -401,7 +417,8 @@
 		}
 		{
 			x: -8.0d
-			y: -2.5d
+			y: -2.0d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "184B798F6A0682B1"
@@ -414,6 +431,7 @@
 		{
 			x: -2.0d
 			y: -3.5d
+			shape: "circle"
 			description: [
 				"Noticably Useful Florae:"
 				"- Weeping Vines"
@@ -431,6 +449,7 @@
 		{
 			x: -1.0d
 			y: -3.5d
+			shape: "circle"
 			description: [
 				"Noticably Useful Florae:"
 				"- Twisting vine"
@@ -449,6 +468,7 @@
 		{
 			x: 1.0d
 			y: -3.5d
+			shape: "circle"
 			hide_dependency_lines: true
 			dependencies: ["2B77C5AEB8B06B0C"]
 			hide: false
@@ -486,6 +506,7 @@
 		{
 			x: 1.0d
 			y: -6.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["2B77C5AEB8B06B0C"]
 			id: "49AA221F31D84EA9"
@@ -498,6 +519,7 @@
 		{
 			x: 1.0d
 			y: -7.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["2B77C5AEB8B06B0C"]
 			id: "6E6E7455F9F52780"
@@ -510,6 +532,7 @@
 		{
 			x: 1.0d
 			y: -8.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["2B77C5AEB8B06B0C"]
 			id: "331529C86F6798E8"
@@ -522,6 +545,7 @@
 		{
 			x: 2.0d
 			y: -3.5d
+			shape: "circle"
 			hide_dependency_lines: true
 			dependencies: ["2B77C5AEB8B06B0C"]
 			id: "145AE1012D6A6672"
@@ -546,6 +570,7 @@
 		{
 			x: 2.0d
 			y: -6.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["2B77C5AEB8B06B0C"]
 			id: "27D1E45ACECD8E64"
@@ -558,6 +583,7 @@
 		{
 			x: 2.0d
 			y: -7.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["2B77C5AEB8B06B0C"]
 			id: "0CD2749B630C03E2"
@@ -570,6 +596,7 @@
 		{
 			x: 2.0d
 			y: -8.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["2B77C5AEB8B06B0C"]
 			id: "0698CCA5C5EFEBA1"
@@ -606,6 +633,7 @@
 		{
 			x: -1.0d
 			y: -6.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["2B77C5AEB8B06B0C"]
 			id: "57A1CE553AE6A49D"
@@ -618,6 +646,7 @@
 		{
 			x: -1.0d
 			y: -7.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["2B77C5AEB8B06B0C"]
 			id: "1520FDDFCAD21078"
@@ -654,6 +683,7 @@
 		{
 			x: -2.0d
 			y: -6.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["2B77C5AEB8B06B0C"]
 			id: "2AC1BEEA2A65DD82"
@@ -667,6 +697,7 @@
 			title: "root variants for sister elements?"
 			x: -2.0d
 			y: -7.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["2B77C5AEB8B06B0C"]
 			id: "7F61184EAA6132E5"
@@ -679,6 +710,7 @@
 		{
 			x: -9.5d
 			y: -2.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "7A6387602B1B9E38"
@@ -691,6 +723,7 @@
 		{
 			x: -9.5d
 			y: -1.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "157231AAA02E815E"
@@ -703,6 +736,7 @@
 		{
 			x: -9.5d
 			y: -0.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "268916AF23560FC9"
@@ -715,6 +749,7 @@
 		{
 			x: -10.5d
 			y: -0.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "4E7BAE0ACD16C227"
@@ -727,6 +762,7 @@
 		{
 			x: -10.5d
 			y: -1.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "3395A02DAD1B9F5F"
@@ -739,6 +775,7 @@
 		{
 			x: -10.5d
 			y: -2.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "51B5D6A636F8852F"
@@ -751,6 +788,7 @@
 		{
 			x: -11.5d
 			y: -2.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "19BFE74A4E1D3CF1"
@@ -763,6 +801,7 @@
 		{
 			x: -11.5d
 			y: -1.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "09B60892E4E7C395"
@@ -775,6 +814,7 @@
 		{
 			x: -11.5d
 			y: -0.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "459082E728A17B31"
@@ -787,6 +827,7 @@
 		{
 			x: 2.0d
 			y: -1.0d
+			shape: "circle"
 			description: ["Upon falling through the stars into an alien landscape, you are met with an extraordinary landscape of unique flora and fauna. Perhaps some of them are useful for resource harvesting, or something else?"]
 			dependencies: ["17E475058831DD55"]
 			hide: true
@@ -800,6 +841,7 @@
 		{
 			x: -13.0d
 			y: -0.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "394EB1632531A43B"
@@ -812,6 +854,7 @@
 		{
 			x: -13.0d
 			y: -1.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "5125DBD8B1EABF62"
@@ -824,6 +867,7 @@
 		{
 			x: -13.0d
 			y: -2.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "0B22A2AD128E5ECC"
@@ -836,6 +880,7 @@
 		{
 			x: -14.0d
 			y: -2.0d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "663C9B2F8994C08C"
@@ -848,6 +893,7 @@
 		{
 			x: -14.0d
 			y: -1.0d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["42748A7D087EFCA9"]
 			id: "40DAD1381B4E45C6"
@@ -861,6 +907,7 @@
 			title: "Genreral crop types for feed"
 			x: 0.0d
 			y: 3.5d
+			shape: "rsquare"
 			description: ["like angels, for fishwork"]
 			dependencies: ["700671B7D33F1369"]
 			id: "0D9F2FD99A30B034"
@@ -875,6 +922,7 @@
 			icon: "minecraft:oak_log"
 			x: 2.0d
 			y: 1.0d
+			shape: "circle"
 			description: [
 				"All arboreal plants share the same property, they are generally tall, and all have wide, thick, woody stems."
 				""
@@ -988,17 +1036,6 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: -0.5d
-			dependencies: ["42748A7D087EFCA9"]
-			id: "4B397B241074FCF2"
-			tasks: [{
-				id: "706CB8873A9CC183"
-				type: "item"
-				item: "moreminecarts:glass_cactus"
-			}]
-		}
-		{
 			x: 0.0d
 			y: -3.5d
 			dependencies: ["2B77C5AEB8B06B0C"]
@@ -1056,6 +1093,7 @@
 		{
 			x: -5.5d
 			y: 2.5d
+			shape: "rsquare"
 			dependencies: ["279CD5AD6F6DCEEC"]
 			id: "4A68883C4ADCA407"
 			tasks: [{
@@ -1067,6 +1105,7 @@
 		{
 			x: -5.5d
 			y: 0.5d
+			shape: "rsquare"
 			dependencies: ["279CD5AD6F6DCEEC"]
 			id: "4E66D7802F028CA2"
 			tasks: [{
@@ -1078,6 +1117,7 @@
 		{
 			x: -1.0d
 			y: -8.5d
+			shape: "rsquare"
 			dependencies: ["530003D75B10EDA9"]
 			id: "5D2DCFAD6F1DC1A7"
 			tasks: [{
@@ -1122,6 +1162,7 @@
 		{
 			x: 6.0d
 			y: 0.0d
+			shape: "rsquare"
 			dependencies: ["00C6A45F586738AF"]
 			id: "070844EBB5BED391"
 			tasks: [{
@@ -1142,8 +1183,8 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: -1.5d
+			x: 9.0d
+			y: -3.0d
 			dependencies: ["00C6A45F586738AF"]
 			id: "385A3B62CB7D9441"
 			tasks: [{
@@ -1242,7 +1283,7 @@
 		}
 		{
 			x: 7.5d
-			y: -0.5d
+			y: -2.0d
 			dependencies: ["00C6A45F586738AF"]
 			id: "416ADCE3A010FC0B"
 			tasks: [{
@@ -1252,8 +1293,8 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: -2.5d
+			x: 7.0d
+			y: -3.0d
 			dependencies: ["00C6A45F586738AF"]
 			id: "169B14308E7A69CA"
 			tasks: [{
@@ -1264,7 +1305,7 @@
 		}
 		{
 			x: 8.5d
-			y: -0.5d
+			y: -2.0d
 			dependencies: ["00C6A45F586738AF"]
 			id: "44EDBDB9B724E2F5"
 			tasks: [{
@@ -1274,8 +1315,9 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: -1.5d
+			x: 8.5d
+			y: -1.0d
+			shape: "rsquare"
 			dependencies: ["00C6A45F586738AF"]
 			id: "2A23754EF1E9B03D"
 			tasks: [{
@@ -1296,8 +1338,9 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: -2.5d
+			x: 7.5d
+			y: -1.0d
+			shape: "rsquare"
 			dependencies: ["00C6A45F586738AF"]
 			id: "79B14D66DF584B40"
 			tasks: [{
@@ -1309,6 +1352,7 @@
 		{
 			x: -6.5d
 			y: 2.0d
+			shape: "rsquare"
 			dependencies: [
 				"279CD5AD6F6DCEEC"
 				"00C6A45F586738AF"
@@ -1334,6 +1378,7 @@
 		{
 			x: 6.5d
 			y: -1.0d
+			shape: "rsquare"
 			dependencies: ["00C6A45F586738AF"]
 			id: "11D33FA6CFF8350C"
 			tasks: [{
@@ -1347,6 +1392,7 @@
 			icon: "minecraft:cod"
 			x: 0.0d
 			y: 8.5d
+			shape: "circle"
 			description: [
 				"Not only can plants be processed for various products, the fauna of this planet can also be utilized for various matierals and substances."
 				""
@@ -1416,6 +1462,7 @@
 		{
 			x: 0.0d
 			y: 11.5d
+			shape: "circle"
 			dependencies: ["5BC84CA33CA79E12"]
 			id: "5872E53DE391DD97"
 			tasks: [{
@@ -1427,6 +1474,7 @@
 		{
 			x: 1.0d
 			y: 11.5d
+			shape: "circle"
 			dependencies: ["5BC84CA33CA79E12"]
 			id: "2DF83DE915E2CCA0"
 			tasks: [{
@@ -1438,6 +1486,7 @@
 		{
 			x: -1.0d
 			y: 11.5d
+			shape: "circle"
 			dependencies: ["5BC84CA33CA79E12"]
 			id: "73A2700F91F8EE38"
 			tasks: [{
@@ -1450,6 +1499,7 @@
 			title: "Puffers"
 			x: -2.0d
 			y: 8.5d
+			shape: "circle"
 			dependencies: ["3E1CA9FF4D3578E1"]
 			id: "2DCBA214BDAD85BB"
 			tasks: [{
@@ -1462,6 +1512,7 @@
 			title: "Fish"
 			x: 0.0d
 			y: 10.0d
+			shape: "circle"
 			dependencies: ["3E1CA9FF4D3578E1"]
 			id: "5BC84CA33CA79E12"
 			tasks: [{
@@ -1484,6 +1535,7 @@
 		{
 			x: 6.5d
 			y: 1.5d
+			shape: "rsquare"
 			dependencies: ["15E1E735A1207366"]
 			id: "1D4F91142DC2B1C3"
 			tasks: [{
@@ -1504,8 +1556,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: -3.5d
+			x: 8.0d
+			y: -3.0d
 			dependencies: ["00C6A45F586738AF"]
 			id: "7932F91EFA00BAB1"
 			tasks: [{
@@ -1534,6 +1586,182 @@
 				id: "00A39096A1CBF51D"
 				type: "item"
 				item: "minecraft:nether_wart_block"
+			}]
+		}
+		{
+			title: "Astute Research"
+			icon: "minecraft:fern"
+			x: -4.5d
+			y: -5.5d
+			shape: "gear"
+			description: ["Congratulations! You found every single plant!"]
+			dependencies: [
+				"17E475058831DD55"
+				"42748A7D087EFCA9"
+				"2B77C5AEB8B06B0C"
+				"700671B7D33F1369"
+				"279CD5AD6F6DCEEC"
+				"78FE425E31D6E64A"
+				"0F1A0613D2767E92"
+				"18E407E1E2C71F6C"
+				"3B02C61DE2C209EC"
+				"231B57FF0AA20850"
+				"2E30E6A5B7A2CE15"
+				"6872CE37ED5C50CC"
+				"5D6C18A6E6738F67"
+				"0A1E5568933BBE6B"
+				"349761071845CCE1"
+				"4503813A3B74B635"
+				"1E2D8F3AF4A1A55C"
+				"02A378CB1C2C6447"
+				"0ECA2045EABAB4BE"
+				"7E6E89C5DCAFE3A2"
+				"26F3E1C2C2DDB998"
+				"293A213987AFB47C"
+				"184B798F6A0682B1"
+				"488AF8C13E0DC29B"
+				"530003D75B10EDA9"
+				"6494778BC6F42728"
+				"6F64694BF18143EA"
+				"2963B767C260987E"
+				"49AA221F31D84EA9"
+				"6E6E7455F9F52780"
+				"331529C86F6798E8"
+				"145AE1012D6A6672"
+				"188839BE3F885BF9"
+				"27D1E45ACECD8E64"
+				"0CD2749B630C03E2"
+				"0698CCA5C5EFEBA1"
+				"49A9E3FB12FDB0DB"
+				"7BAE370D52978E70"
+				"57A1CE553AE6A49D"
+				"1520FDDFCAD21078"
+				"119B927717D648DC"
+				"529F7E7005E4E7A7"
+				"2AC1BEEA2A65DD82"
+				"7F61184EAA6132E5"
+				"7A6387602B1B9E38"
+				"157231AAA02E815E"
+				"268916AF23560FC9"
+				"4E7BAE0ACD16C227"
+				"3395A02DAD1B9F5F"
+				"51B5D6A636F8852F"
+				"19BFE74A4E1D3CF1"
+				"09B60892E4E7C395"
+				"459082E728A17B31"
+				"00C6A45F586738AF"
+				"394EB1632531A43B"
+				"5125DBD8B1EABF62"
+				"0B22A2AD128E5ECC"
+				"663C9B2F8994C08C"
+				"40DAD1381B4E45C6"
+				"0D9F2FD99A30B034"
+				"15E1E735A1207366"
+				"41D367094FB00E61"
+				"5EC7BDC9A7382542"
+				"6053A6DE15A74CB2"
+				"4AD18A69CE1B4141"
+				"77B6EEE7E2A85AE0"
+				"17C2A22A728A9B93"
+				"1E0A1162DD338A9D"
+				"0F6A9F2D89408468"
+				"444188482FA98CFB"
+				"4CA41399811F5E03"
+				"3BFE17E358592BDE"
+				"69197EF376F30DA5"
+				"643C0E661DBA585E"
+				"4A68883C4ADCA407"
+				"4E66D7802F028CA2"
+				"5D2DCFAD6F1DC1A7"
+				"02C87F2988023898"
+				"55016BB9B66385BE"
+				"72947C51B70402C2"
+				"070844EBB5BED391"
+				"217986DF3E95F93C"
+				"385A3B62CB7D9441"
+				"412935DC40BFA1C9"
+				"3E077226B2FF10C6"
+				"4D3D5ECFE7619C31"
+				"58532111D75AE0B7"
+				"3CC4FFA8F2345E05"
+				"29CA24B413909144"
+				"70D5F91B7A4B0248"
+				"6820D7C21FC7969B"
+				"416ADCE3A010FC0B"
+				"169B14308E7A69CA"
+				"44EDBDB9B724E2F5"
+				"2A23754EF1E9B03D"
+				"219B86E4D5F4DE45"
+				"79B14D66DF584B40"
+				"7333B19141532214"
+				"59D505ABFF009099"
+				"11D33FA6CFF8350C"
+				"74DA104C21F5384F"
+				"5C5E3F261FD00CF1"
+				"2F55CC12E90B29EC"
+				"04D11974E5AD9916"
+				"1D4F91142DC2B1C3"
+				"03584A7E4680B839"
+				"7932F91EFA00BAB1"
+				"4666365C4B0F4B57"
+				"049E99E46C9D75F4"
+			]
+			hide: true
+			secret: true
+			id: "0072D7926DFCEC31"
+			tasks: [{
+				id: "11151E9F2C68A91D"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "7623A197645E7CDC"
+					type: "item"
+					item: "amicore:amicoin_damascus"
+				}
+				{
+					id: "764946B85B2A0F92"
+					type: "item"
+					item: "tconstruct:jeweled_apple"
+				}
+				{
+					id: "2B472AF931AAFEC6"
+					type: "item"
+					item: "minecraft:enchanted_golden_apple"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 11.5d
+			dependencies: ["5BC84CA33CA79E12"]
+			id: "5D1202533707768F"
+			tasks: [{
+				id: "239B84FD687C184B"
+				type: "item"
+				item: "betterendforge:bucket_cubozoa"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "0FA1F727964C8590"
+			tasks: [{
+				id: "6F696EC45FBCF4DD"
+				type: "item"
+				item: "byg:whaling_vine"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -4.0d
+			dependencies: ["00C6A45F586738AF"]
+			id: "4CDE33539D9EEB94"
+			tasks: [{
+				id: "17AF0D5176EDA149"
+				type: "item"
+				item: "byg:shulkren_vine"
 			}]
 		}
 	]

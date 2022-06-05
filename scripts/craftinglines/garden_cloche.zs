@@ -168,14 +168,24 @@ cloche.addRecipe("embur_gel_branch", <item:byg:embur_gel_branch>, <item:byg:embu
 
 cloche.addRecipe("warped_cactus", <item:byg:warped_cactus>, <item:byg:nylium_soul_sand>, 2200, [<item:byg:warped_cactus> * 2], <blockstate:byg:warped_cactus>.block, "stacking");
 
-cloche.addRecipe("blue_glowcane", <item:byg:blue_glowcane>, <item:byg:glowcylium_block>, 2200, [<item:byg:blue_glowcane> * 2], <blockstate:byg:blue_glowcane>.block, "stacking");
-cloche.addRecipe("pink_glowcane", <item:byg:pink_glowcane>, <item:byg:glowcylium_block>, 2200, [<item:byg:pink_glowcane> * 2], <blockstate:byg:pink_glowcane>.block, "stacking");
-cloche.addRecipe("purple_glowcane", <item:byg:purple_glowcane>, <item:byg:glowcylium_block>, 2200, [<item:byg:purple_glowcane> * 2], <blockstate:byg:purple_glowcane>.block, "stacking");
-cloche.addRecipe("red_glowcane", <item:byg:red_glowcane>, <item:byg:glowcylium_block>, 2200, [<item:byg:red_glowcane> * 2], <blockstate:byg:red_glowcane>.block, "stacking");
+cloche.addRecipe("blue_glowcane", <item:byg:blue_glowcane>, <item:byg:glowcelium_block>, 2200, [<item:byg:blue_glowcane> * 2], <blockstate:byg:blue_glowcane>.block, "stacking");
+cloche.addRecipe("pink_glowcane", <item:byg:pink_glowcane>, <item:byg:glowcelium_block>, 2200, [<item:byg:pink_glowcane> * 2], <blockstate:byg:pink_glowcane>.block, "stacking");
+cloche.addRecipe("purple_glowcane", <item:byg:purple_glowcane>, <item:byg:glowcelium_block>, 2200, [<item:byg:purple_glowcane> * 2], <blockstate:byg:purple_glowcane>.block, "stacking");
+cloche.addRecipe("red_glowcane", <item:byg:red_glowcane>, <item:byg:glowcelium_block>, 2200, [<item:byg:red_glowcane> * 2], <blockstate:byg:red_glowcane>.block, "stacking");
 
 cloche.addRecipe("weeping_roots", <item:byg:weeping_roots>, <item:amicore:rich_crimson_nylium>, 2200, [<item:byg:weeping_roots>*2], <blockstate:byg:weeping_roots>.block, "stacking");
 cloche.addRecipe("lament_vine", <item:byg:lament_vine>, <item:byg:overgrown_netherrack>, 2200, [<item:byg:lament_vine>*2], <blockstate:byg:lament_vine>.block, "stacking");
 cloche.addRecipe("arisian_bloom_branch", <item:byg:arisian_bloom_branch>, <item:byg:withering_oak_log>, 2200, [<item:byg:arisian_bloom_branch>*2], <blockstate:byg:arisian_bloom_branch>.block, "generic");
 
+#slimy
+cloche.addRecipe("greenheart_chopping", <item:tconstruct:earth_slime_sapling>, <item:tconstruct:earth_slime_dirt>, 2200, [<item:tconstruct:greenheart_log> * 2], <blockstate:malum:earth_slime_sapling>.block, "generic");
+cloche.addRecipe("greenheart_growing", <item:tconstruct:earth_slime_sapling>, <item:amicore:rich_earth_slime_dirt>, 2200, [<item:minecraft:slime_ball> * 2], <blockstate:malum:earth_slime_sapling>.block, "generic");
+cloche.addRecipe("skyroot_chopping", <item:tconstruct:sky_slime_sapling>, <item:tconstruct:sky_slime_dirt>, 2200, [<item:tconstruct:skyroot_log> * 2], <blockstate:malum:sky_slime_sapling>.block, "generic");
+cloche.addRecipe("skyroot_growing", <item:tconstruct:sky_slime_sapling>, <item:amicore:rich_sky_slime_dirt>, 2200, [<item:tconstruct:sky_slime_ball> * 2], <blockstate:malum:sky_slime_sapling>.block, "generic");
+cloche.addRecipe("endersime_chopping", <item:tconstruct:ender_slime_sapling>, <item:tconstruct:ender_slime_dirt>, 2200, [<item:tconstruct:greenheart_log> * 2], <blockstate:malum:ender_slime_sapling>.block, "generic");
+cloche.addRecipe("endersime_growing", <item:tconstruct:ender_slime_sapling>, <item:amicore:rich_ender_slime_dirt>, 2200, [<item:tconstruct:ender_slime_ball> * 2], <blockstate:malum:ender_slime_sapling>.block, "generic");
+
+cloche.addRecipe("sky_slime_vine", <item:tconstruct:sky_slime_vine>, <item:amicore:rich_sky_slime_dirt>, 2200, [<item:tconstruct:sky_slime_vine> * 2], <blockstate:tconstruct:sky_slime_vine>.block, "stacking");
+cloche.addRecipe("ender_slime_vine", <item:tconstruct:ender_slime_vine>, <item:amicore:rich_ender_slime_dirt>, 2200, [<item:tconstruct:ender_slime_vine> * 2], <blockstate:tconstruct:ender_slime_vine>.block, "stacking");
 
 #ender

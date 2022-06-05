@@ -525,7 +525,12 @@ onEvent('block.registry', event => {
 	event.create('amicore:talc_dust').material('sand').hardness(0.5).displayName('Talcum Dust').texture("kubejs:block/talc_dust").item(item => { item.group('amicore.oretab')  });
 	event.create('amicore:tank_wall').material('wood').hardness(2).displayName('Tank Wall').texture("kubejs:block/tank_wall").harvestTool('axe', 0).item(item => { item.group('amicore.machinetab')  });
 	event.create('amicore:tank_filter').material('wood').hardness(2).displayName('Tank Filter').texture("kubejs:block/tank_filter").harvestTool('axe', 0).item(item => { item.group('amicore.machinetab')  });
-
+	
+	event.create('amicore:rich_crimson_nylium').material('stone').hardness(0.4).displayName('Rich Crimson Nylium').model("kubejs:block/rich_crimson_nylium").harvestTool('pickaxe', 0).item(item => { item.group('amicore.biotab')  });
+	event.create('amicore:rich_warped_nylium').material('stone').hardness(0.4).displayName('Rich Warped Nylium').model("kubejs:block/rich_warped_nylium").harvestTool('pickaxe', 0).item(item => { item.group('amicore.biotab')  });
+	event.create('amicore:rich_sythian_nylium').material('stone').hardness(0.4).displayName('Rich Sythian Nylium').model("kubejs:block/rich_sythian_nylium").harvestTool('pickaxe', 0).item(item => { item.group('amicore.biotab')  });
+	event.create('amicore:rich_embur_nylium').material('stone').hardness(0.4).displayName('Rich Embur Nylium').model("kubejs:block/rich_embur_nylium").harvestTool('pickaxe', 0).item(item => { item.group('amicore.biotab')  });
+	
 })
 
 
