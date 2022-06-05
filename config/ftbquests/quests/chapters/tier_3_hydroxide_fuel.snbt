@@ -1290,11 +1290,6 @@
 					type: "item"
 					item: "pamhc2trees:olive_sapling"
 				}
-				{
-					id: "426D8C029E385871"
-					type: "item"
-					item: "immersiveengineering:cloche"
-				}
 			]
 		}
 		{
@@ -2540,7 +2535,7 @@
 		}
 		{
 			x: -6.5d
-			y: 6.5d
+			y: 6.0d
 			description: ["Once the fish are consistently breeding, you can skim some off the surface for oil extraction. By milling or crushing the fish, you are left with a fish meal. Draining will yield 100mB of fish oil. It can also be squeezed later for 125mB instead."]
 			dependencies: ["020277435F5E44E1"]
 			id: "1FAEF4F8BB6334B7"
@@ -2553,7 +2548,7 @@
 		{
 			title: "Plant Oil"
 			x: -5.5d
-			y: 6.5d
+			y: 6.0d
 			description: [
 				"In order to make use of either avocado or olive oils, they first need to be crushed or milled. Once pasted, the oil can be extracted by draining or squeezing."
 				""
@@ -2571,7 +2566,7 @@
 			title: "Lubriucant"
 			icon: "immersivepetroleum:lubricant_bucket"
 			x: -6.0d
-			y: 5.5d
+			y: 4.5d
 			description: ["By mixing together 1 part fish oil, and 1 part vegetable oil, lubricant is produced."]
 			dependencies: [
 				"1FAEF4F8BB6334B7"
@@ -2582,6 +2577,37 @@
 				id: "4D9E3A2527D2E6E4"
 				type: "checkmark"
 				title: "Produced"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 6.0d
+			description: [
+				"Quick note about the Garden Cloche."
+				""
+				"Due to its tall nature, it can only suport the growing of tall plants. Crops cannot survive within it."
+				""
+				"Also, it is capable of growing plants from other dimensions inside of it. Given the right medium."
+			]
+			hide_dependency_lines: true
+			dependencies: ["19F01413A00BB938"]
+			secret: true
+			id: "558537CAC91005C9"
+			tasks: [{
+				id: "25A280DB84D1FD24"
+				type: "item"
+				item: "immersiveengineering:cloche"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 16.0d
+			dependencies: ["2CECF2EE7CADF3C3"]
+			id: "06B0679D87A87F7F"
+			tasks: [{
+				id: "213BEB14A74EF7A4"
+				type: "item"
+				item: "malum:solar_sapball"
 			}]
 		}
 	]

@@ -437,7 +437,7 @@ onEvent('item.registry', event => {
 	event.create('amicore:assembled_foundry_controller').displayName('Assembled Foundry Controller').parentModel("kubejs:item/assembled_foundry_controller").group('amicore.intermediatestab'); //cast with obsiidian to finish
 	event.create('amicore:simple_resistor').displayName('Simple Resistor').texture("kubejs:item/simple_resistor").group('amicore.intermediatestab');
 	event.create('amicore:simple_antenna').displayName('Simple Antenna').texture("kubejs:item/simple_antenna").group('amicore.materialtab');
-	event.create('amicore:antenna_cluster').displayName('Simple Antenna').texture("kubejs:item/antenna_cluster").group('amicore.materialtab');
+	event.create('amicore:antenna_cluster').displayName('Antenna Cluster').texture("kubejs:item/antenna_cluster").group('amicore.materialtab');
 
 	//hydroxide fuel age
 	event.create('amicore:rubber_chunk').displayName('Rubber Chunk').texture("kubejs:item/rubber_chunk").group('amicore.biotab');

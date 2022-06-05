@@ -1099,7 +1099,7 @@
 		}
 		{
 			x: 2.0d
-			y: -5.5d
+			y: -9.5d
 			dependencies: ["145AE1012D6A6672"]
 			id: "55016BB9B66385BE"
 			tasks: [{
@@ -1501,6 +1501,39 @@
 				id: "7CF32AED676F3DD5"
 				type: "item"
 				item: "cavesandcliffs:glow_lichen"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -3.5d
+			dependencies: ["00C6A45F586738AF"]
+			id: "7932F91EFA00BAB1"
+			tasks: [{
+				id: "5C2ED18201E4FCB1"
+				type: "item"
+				item: "minecraft:chorus_flower"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.5d
+			dependencies: ["145AE1012D6A6672"]
+			id: "4666365C4B0F4B57"
+			tasks: [{
+				id: "2BE718BE432CED88"
+				type: "item"
+				item: "byg:embur_gel_vines"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -8.5d
+			dependencies: ["488AF8C13E0DC29B"]
+			id: "049E99E46C9D75F4"
+			tasks: [{
+				id: "00A39096A1CBF51D"
+				type: "item"
+				item: "minecraft:nether_wart_block"
 			}]
 		}
 	]

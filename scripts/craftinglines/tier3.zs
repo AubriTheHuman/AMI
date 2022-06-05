@@ -48,7 +48,7 @@ mixing.addRecipe("mix_fish_water", "none", <fluid:amicore:fish_water> * 200, [],
 #fish tank components
 Recipe.type(Type.ENGINEER)
   .shaped([[<item:steampowered:cast_iron_large_cogwheel>, <item:amicore:lv_circuit>, <item:steampowered:cast_iron_large_cogwheel>],
-  [<item:minecraft:glass>, <item:minecraft:glass>, <item:minecraft:glass>],
+  [<item:minecraft:glass>, <item:minecraft:heart_of_the_sea>, <item:minecraft:glass>],
   [<item:minecraft:glass>, <item:amicore:multicyl_engine>, <item:minecraft:glass>]])
   .output(<item:amicore:fish_tank_controller>)
   .tool(<tag:items:artisantools:type/driver>, 1)
