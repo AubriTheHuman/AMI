@@ -4,6 +4,8 @@ var cloche = <recipetype:immersiveengineering:cloche>;
 
 cloche.removeAll();
 
+<recipetype:immersiveengineering:fertilizer>.addFertilizer("biowaste", <item:amicore:biowaste>, 1.5F);
+
 #pams fruit trees
 val pamstreetypes = [
     ["avocado", "oak"], 
