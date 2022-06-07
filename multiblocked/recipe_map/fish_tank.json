@@ -164,7 +164,7 @@
             "chance": 1.0
           },
           {
-            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:50}",
+            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:25}",
             "chance": 1.0
           }
         ]
@@ -212,7 +212,7 @@
             "chance": 1.0
           },
           {
-            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:50}",
+            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:25}",
             "chance": 1.0
           }
         ]
@@ -232,6 +232,33 @@
         "fluid": [
           {
             "content": "{FluidName:\"amicore:used_fish_water\",Amount:250}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "algae_fish_water_farming",
+      "duration": 300,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:fish_water\",Amount:500}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 4,
+              "matches": {
+                "item": "amicore:algae"
+              }
+            },
             "chance": 1.0
           }
         ]

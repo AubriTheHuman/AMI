@@ -203,7 +203,7 @@
       "C": {
         "blocks": [
           {
-            "id": "amicore:sitting_pool_fluid_input"
+            "id": "amicore:copper_fluid_input"
           }
         ],
         "type": "blocks"
@@ -227,7 +227,7 @@
       "F": {
         "blocks": [
           {
-            "id": "amicore:sitting_pool_fluid_output"
+            "id": "amicore:copper_fluid_output"
           }
         ],
         "type": "blocks"
@@ -235,7 +235,7 @@
       "G": {
         "blocks": [
           {
-            "id": "amicore:sitting_pool_item_output"
+            "id": "amicore:copper_item_output"
           }
         ],
         "type": "blocks"
@@ -243,7 +243,7 @@
       "H": {
         "blocks": [
           {
-            "id": "amicore:sitting_tank_stress_input"
+            "id": "amicore:copper_stress_input"
           }
         ],
         "type": "blocks"

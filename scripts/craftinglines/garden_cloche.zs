@@ -135,13 +135,13 @@ cloche.addRecipe("malum_sappy_runewood_chopping", <item:malum:runewood_sapling>,
 
 #vines
 // //grass vines
-cloche.addRecipe("vines", <item:minecraft:vine>, <item:farmersdelight:rich_soil>, 2200, [<item:minecraft:vine>] * 2, <blockstate:minecraft:vine>.block, "stacking");
+cloche.addRecipe("vines", <item:minecraft:vine>, <item:farmersdelight:rich_soil>, 2200, [<item:minecraft:vine> * 2], <blockstate:minecraft:vine>.block, "stacking");
 cloche.addRecipe("glow_lichen", <item:cavesandcliffs:glow_lichen>, <item:farmersdelight:rich_soil>, 2200, [<item:cavesandcliffs:glow_lichen> * 2], <blockstate:cavesandcliffs:glow_lichen>.block, "stacking");
 cloche.addRecipe("cave_roots", <item:quark:root>, <item:farmersdelight:rich_soil>, 2200, [<item:quark:root_item> * 2], <blockstate:quark:root>.block, "stacking");
 cloche.addRecipe("bamboo", <item:minecraft:bamboo>, <item:farmersdelight:rich_soil>, 2200, [<item:minecraft:bamboo> * 2], <blockstate:minecraft:bamboo>.block, "stacking");
 cloche.addRecipe("sugarcane", <item:minecraft:sugar_cane>, <item:farmersdelight:rich_soil>, 2200, [<item:minecraft:sugar_cane> * 2], <blockstate:minecraft:sugar_cane>.block, "stacking");
 cloche.addRecipe("kelp", <item:minecraft:kelp>, <item:minecraft:water_bucket>, 2200, [<item:minecraft:kelp> * 2], <blockstate:minecraft:kelp>.block, "stacking");
-cloche.addRecipe("seagrass", <item:minecraft:seagrass>, <item:minecraft:water_bucket>, 2200, [<item:minecraft:seagrass>] * 2, <blockstate:minecraft:seagrass>.block, "generic");
+cloche.addRecipe("seagrass", <item:minecraft:seagrass>, <item:minecraft:water_bucket>, 2200, [<item:minecraft:seagrass> * 2], <blockstate:minecraft:seagrass>.block, "generic");
 cloche.addRecipe("grass", <item:minecraft:grass>, <item:farmersdelight:rich_soil>, 2200, [<item:minecraft:grass> * 2], <blockstate:minecraft:grass>.block, "generic");
 cloche.addRecipe("sweet_berries", <item:minecraft:sweet_berries>, <item:farmersdelight:rich_soil>, 2200, [<item:minecraft:sweet_berries> * 2], <blockstate:minecraft:sweet_berry_bush>.withProperty("age", "3").block, "generic");
 
@@ -154,7 +154,7 @@ cloche.addRecipe("cactus_red", <item:minecraft:cactus>, <item:minecraft:red_sand
 cloche.addRecipe("crimson_farming", <item:minecraft:crimson_fungus>, <item:amicore:rich_crimson_nylium>, 2200, [<item:minecraft:crimson_fungus>, <item:minecraft:nether_wart_block>], <blockstate:minecraft:crimson_fungus>.block, "generic");
 cloche.addRecipe("crimson_chopping", <item:minecraft:crimson_fungus>, <item:minecraft:crimson_nylium>, 2200, [<item:minecraft:crimson_stem>], <blockstate:minecraft:crimson_fungus>.block, "generic");
 cloche.addRecipe("warped_farming", <item:minecraft:warped_fungus>, <item:amicore:rich_warped_nylium>, 2200, [<item:minecraft:warped_fungus>, <item:minecraft:warped_wart_block>], <blockstate:minecraft:warped_fungus>.block, "generic");
-cloche.addRecipe("warped_chopping", <item:minecraft:warped_fungus>, <item:minecraft:waped_nylium>, 2200, [<item:minecraft:warped_stem>], <blockstate:minecraft:warped_fungus>.block, "generic");
+cloche.addRecipe("warped_chopping", <item:minecraft:warped_fungus>, <item:minecraft:warped_nylium>, 2200, [<item:minecraft:warped_stem>], <blockstate:minecraft:warped_fungus>.block, "generic");
 cloche.addRecipe("sythian_farming", <item:byg:sythian_fungus>, <item:amicore:rich_sythian_nylium>, 2200, [<item:byg:sythian_fungus>, <item:byg:sythian_wart_block>], <blockstate:byg:sythian_fungus>.block, "generic");
 cloche.addRecipe("sythian_chopping", <item:byg:sythian_fungus>, <item:byg:sythian_nylium>, 2200, [<item:byg:sythian_stem>], <blockstate:byg:sythian_fungus>.block, "generic");
 cloche.addRecipe("embur_farming", <item:byg:embur_wart>, <item:amicore:rich_embur_nylium>, 2200, [<item:byg:embur_wart>, <item:byg:embur_gel_ball>], <blockstate:byg:embur_wart>.block, "generic");
@@ -163,7 +163,7 @@ cloche.addRecipe("embur_chopping", <item:byg:embur_wart>, <item:byg:embur_nylium
 cloche.addRecipe("weeping_vines", <item:minecraft:weeping_vines>, <item:amicore:rich_crimson_nylium>, 2200, [<item:minecraft:weeping_vines>*2], <blockstate:minecraft:weeping_vines>.block, "stacking");
 cloche.addRecipe("twisting_vines", <item:minecraft:twisting_vines>, <item:amicore:rich_warped_nylium>, 2200, [<item:minecraft:twisting_vines>*2], <blockstate:minecraft:twisting_vines>.block, "stacking");
 cloche.addRecipe("sythian_stalk", <item:byg:sythian_stalk_block>, <item:amicore:rich_sythian_nylium>, 2200, [<item:byg:sythian_stalk_block>*2], <blockstate:byg:sythian_stalk_block>.block, "stacking");
-cloche.addRecipe("embur_gel_vines", <item:byg:embur_gel_vines>, <item:amicore:rich_embur_nylium>, 2200, [<item:byg:embur_gel_vines>*2, <item:byg:embur_gell_ball>], <blockstate:byg:embur_gel_vines>.block, "stacking");
+cloche.addRecipe("embur_gel_vines", <item:byg:embur_gel_vines>, <item:amicore:rich_embur_nylium>, 2200, [<item:byg:embur_gel_vines>*2, <item:byg:embur_gel_ball>], <blockstate:byg:embur_gel_vines>.block, "stacking");
 cloche.addRecipe("embur_gel_branch", <item:byg:embur_gel_branch>, <item:byg:embur_pedu>, 2200, [<item:byg:embur_gel_branch>*2], <blockstate:byg:embur_gel_vines>.block, "stacking");
 
 cloche.addRecipe("warped_cactus", <item:byg:warped_cactus>, <item:byg:nylium_soul_sand>, 2200, [<item:byg:warped_cactus> * 2], <blockstate:byg:warped_cactus>.block, "stacking");
@@ -178,14 +178,25 @@ cloche.addRecipe("lament_vine", <item:byg:lament_vine>, <item:byg:overgrown_neth
 cloche.addRecipe("arisian_bloom_branch", <item:byg:arisian_bloom_branch>, <item:byg:withering_oak_log>, 2200, [<item:byg:arisian_bloom_branch>*2], <blockstate:byg:arisian_bloom_branch>.block, "generic");
 
 #slimy
-cloche.addRecipe("greenheart_chopping", <item:tconstruct:earth_slime_sapling>, <item:tconstruct:earth_slime_dirt>, 2200, [<item:tconstruct:greenheart_log> * 2], <blockstate:malum:earth_slime_sapling>.block, "generic");
-cloche.addRecipe("greenheart_growing", <item:tconstruct:earth_slime_sapling>, <item:amicore:rich_earth_slime_dirt>, 2200, [<item:minecraft:slime_ball> * 2], <blockstate:malum:earth_slime_sapling>.block, "generic");
-cloche.addRecipe("skyroot_chopping", <item:tconstruct:sky_slime_sapling>, <item:tconstruct:sky_slime_dirt>, 2200, [<item:tconstruct:skyroot_log> * 2], <blockstate:malum:sky_slime_sapling>.block, "generic");
-cloche.addRecipe("skyroot_growing", <item:tconstruct:sky_slime_sapling>, <item:amicore:rich_sky_slime_dirt>, 2200, [<item:tconstruct:sky_slime_ball> * 2], <blockstate:malum:sky_slime_sapling>.block, "generic");
-cloche.addRecipe("endersime_chopping", <item:tconstruct:ender_slime_sapling>, <item:tconstruct:ender_slime_dirt>, 2200, [<item:tconstruct:greenheart_log> * 2], <blockstate:malum:ender_slime_sapling>.block, "generic");
-cloche.addRecipe("endersime_growing", <item:tconstruct:ender_slime_sapling>, <item:amicore:rich_ender_slime_dirt>, 2200, [<item:tconstruct:ender_slime_ball> * 2], <blockstate:malum:ender_slime_sapling>.block, "generic");
+cloche.addRecipe("greenheart_chopping", <item:tconstruct:earth_slime_sapling>, <item:tconstruct:earth_slime_dirt>, 2200, [<item:tconstruct:greenheart_log> * 2], <blockstate:tconstruct:earth_slime_sapling>.block, "generic");
+cloche.addRecipe("greenheart_growing", <item:tconstruct:earth_slime_sapling>, <item:amicore:rich_earth_slime_dirt>, 2200, [<item:minecraft:slime_ball> * 2], <blockstate:tconstruct:earth_slime_sapling>.block, "generic");
+cloche.addRecipe("skyroot_chopping", <item:tconstruct:sky_slime_sapling>, <item:tconstruct:sky_slime_dirt>, 2200, [<item:tconstruct:skyroot_log> * 2], <blockstate:tconstruct:sky_slime_sapling>.block, "generic");
+cloche.addRecipe("skyroot_growing", <item:tconstruct:sky_slime_sapling>, <item:amicore:rich_sky_slime_dirt>, 2200, [<item:tconstruct:sky_slime_ball> * 2], <blockstate:tconstruct:sky_slime_sapling>.block, "generic");
+cloche.addRecipe("endersime_chopping", <item:tconstruct:ender_slime_sapling>, <item:tconstruct:ender_slime_dirt>, 2200, [<item:tconstruct:greenheart_log> * 2], <blockstate:tconstruct:ender_slime_sapling>.block, "generic");
+cloche.addRecipe("endersime_growing", <item:tconstruct:ender_slime_sapling>, <item:amicore:rich_ender_slime_dirt>, 2200, [<item:tconstruct:ender_slime_ball> * 2], <blockstate:tconstruct:ender_slime_sapling>.block, "generic");
 
 cloche.addRecipe("sky_slime_vine", <item:tconstruct:sky_slime_vine>, <item:amicore:rich_sky_slime_dirt>, 2200, [<item:tconstruct:sky_slime_vine> * 2], <blockstate:tconstruct:sky_slime_vine>.block, "stacking");
 cloche.addRecipe("ender_slime_vine", <item:tconstruct:ender_slime_vine>, <item:amicore:rich_ender_slime_dirt>, 2200, [<item:tconstruct:ender_slime_vine> * 2], <blockstate:tconstruct:ender_slime_vine>.block, "stacking");
 
 #ender
+
+
+#soils
+craftingTable.addShapeless("rich_crimson_nylium", <item:amicore:rich_crimson_nylium>, [<item:farmersdelight:rich_soil>,<item:minecraft:crimson_nylium>]);
+craftingTable.addShapeless("rich_warped_nylium", <item:amicore:rich_warped_nylium>, [<item:farmersdelight:rich_soil>,<item:minecraft:warped_nylium>]);
+craftingTable.addShapeless("rich_sythian_nylium", <item:amicore:rich_sythian_nylium>, [<item:farmersdelight:rich_soil>,<item:byg:sythian_nylium>]);
+craftingTable.addShapeless("rich_embur_nylium", <item:amicore:rich_embur_nylium>, [<item:farmersdelight:rich_soil>,<item:byg:embur_nylium>]);
+
+craftingTable.addShapeless("rich_earth_slime_dirt", <item:amicore:rich_earth_slime_dirt>, [<item:farmersdelight:rich_soil>,<item:tconstruct:earth_slime_dirt>]);
+craftingTable.addShapeless("rich_sky_slime_dirt", <item:amicore:rich_sky_slime_dirt>, [<item:farmersdelight:rich_soil>,<item:tconstruct:sky_slime_dirt>]);
+craftingTable.addShapeless("rich_ender_slime_dirt", <item:amicore:rich_ender_slime_dirt>, [<item:farmersdelight:rich_soil>,<item:tconstruct:ender_slime_dirt>]);

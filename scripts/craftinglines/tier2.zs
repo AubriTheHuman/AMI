@@ -652,7 +652,7 @@ Recipe.type(Type.ENGINEER)
   .shaped([[<item:create:fluid_pipe>, <item:create:fluid_valve>, <item:create:fluid_pipe>],
   [<tag:items:forge:rods/iron_brass>, <item:create:copper_casing>, <tag:items:forge:rods/iron_brass>],
   [<item:createdeco:copper_sheet_metal>, <tag:items:forge:plates/crude_steel>, <item:createdeco:copper_sheet_metal>]])
-  .output(<item:amicore:sitting_pool_fluid_input>)
+  .output(<item:amicore:copper_fluid_input>)
   .tool(<tag:items:artisantools:type/driver>, 1)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*2])
@@ -661,21 +661,21 @@ Recipe.type(Type.ENGINEER)
   .shaped([[<item:create:fluid_pipe>, <tag:items:forge:plates/crude_steel>, <item:create:fluid_pipe>],
   [<tag:items:forge:rods/iron_brass>, <item:create:copper_casing>, <tag:items:forge:rods/iron_brass>],
   [<item:createdeco:copper_sheet_metal>, <item:create:fluid_valve>, <item:createdeco:copper_sheet_metal>]])
-  .output(<item:amicore:sitting_pool_fluid_output>)
+  .output(<item:amicore:copper_fluid_output>)
   .tool(<tag:items:artisantools:type/driver>, 1)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*2])
   .register();
-craftingTable.addShapeless("ami_fluid_outlet_inlet", <item:amicore:sitting_pool_fluid_output>,
-[<item:amicore:sitting_pool_fluid_input>], null);
-craftingTable.addShapeless("ami_fluid_inlet_outlet", <item:amicore:sitting_pool_fluid_input>,
-[<item:amicore:sitting_pool_fluid_output>], null);
+craftingTable.addShapeless("ami_fluid_outlet_inlet", <item:amicore:copper_fluid_output>,
+[<item:amicore:copper_fluid_input>], null);
+craftingTable.addShapeless("ami_fluid_inlet_outlet", <item:amicore:copper_fluid_input>,
+[<item:amicore:copper_fluid_output>], null);
 
 Recipe.type(Type.ENGINEER)
   .shaped([[<item:minecraft:air>, <tag:items:forge:plates/crude_steel>, <item:minecraft:air>],
   [<item:createdeco:copper_sheet_metal>, <item:create:brass_casing>,<item:createdeco:copper_sheet_metal>],
   [<tag:items:forge:rounded_sheets/lead_brass>, <item:quark:chute>, <tag:items:forge:rounded_sheets/lead_brass>]])
-  .output(<item:amicore:sitting_pool_item_output>)
+  .output(<item:amicore:copper_item_output>)
   .tool(<tag:items:artisantools:type/driver>, 1)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*2])
