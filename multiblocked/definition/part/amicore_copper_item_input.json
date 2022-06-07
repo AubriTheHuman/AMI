@@ -1,0 +1,97 @@
+{
+  "canShared": false,
+  "location": "amicore:copper_item_input",
+  "traits": {
+    "background": "multiblocked:textures/sitting_pool_item_gui.png",
+    "item": [
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 62,
+        "y": 62,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 79,
+        "y": 62,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 97,
+        "y": 62,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 62,
+        "y": 80,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 79,
+        "y": 80,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 97,
+        "y": 80,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 62,
+        "y": 98,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 79,
+        "y": 98,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 97,
+        "y": 98,
+        "autoIO": false
+      }
+    ]
+  },
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:sitting_tank_panel",
+    "frontTexture": "multiblocked:item_valve_in",
+    "backTexture": "multiblocked:item_valve_in",
+    "leftTexture": "multiblocked:item_valve_in",
+    "rightTexture": "multiblocked:item_valve_in",
+    "upTexture": "multiblocked:item_valve_in",
+    "downTexture": "multiblocked:item_valve_in",
+    "type": "gregtech"
+  },
+  "properties": {
+    "isOpaque": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "harvestLevel": 1,
+    "lightEmissive": 0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "hasCollision": true,
+    "tabGroup": "amicore.machinetab",
+    "stackSize": 64
+  }
+}

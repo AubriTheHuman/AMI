@@ -1,0 +1,207 @@
+{
+  "catalyst": "{id:\"create:wrench\",Count:1b}",
+  "consumeCatalyst": false,
+  "location": "amicore:hydroscrubber_controller",
+  "traits": {},
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:sheetmetal_nickel",
+    "frontTexture": "multiblocked:controller_panel_unformed",
+    "backTexture": "multiblocked:sheetmetal_nickel",
+    "leftTexture": "multiblocked:sheetmetal_nickel",
+    "rightTexture": "multiblocked:sheetmetal_nickel",
+    "upTexture": "multiblocked:sheetmetal_nickel",
+    "downTexture": "multiblocked:sheetmetal_nickel",
+    "type": "gregtech"
+  },
+  "formedRenderer": {
+    "baseTexture": "multiblocked:sheetmetal_nickel",
+    "frontTexture": "multiblocked:controller_panel",
+    "backTexture": "multiblocked:sheetmetal_nickel",
+    "leftTexture": "multiblocked:sheetmetal_nickel",
+    "rightTexture": "multiblocked:sheetmetal_nickel",
+    "upTexture": "multiblocked:sheetmetal_nickel",
+    "downTexture": "multiblocked:sheetmetal_nickel",
+    "type": "gregtech"
+  },
+  "workingRenderer": {
+    "baseTexture": "multiblocked:sheetmetal_nickel",
+    "frontTexture": "multiblocked:controller_panel_working",
+    "backTexture": "multiblocked:sheetmetal_nickel",
+    "leftTexture": "multiblocked:sheetmetal_nickel",
+    "rightTexture": "multiblocked:sheetmetal_nickel",
+    "upTexture": "multiblocked:sheetmetal_nickel",
+    "downTexture": "multiblocked:sheetmetal_nickel",
+    "type": "gregtech"
+  },
+  "properties": {
+    "isOpaque": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "harvestLevel": 1,
+    "lightEmissive": 0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "hasCollision": true,
+    "tabGroup": "multiblocked.all",
+    "stackSize": 64
+  },
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "AAA",
+        "BCB",
+        "BBB",
+        "BBB",
+        "AAA"
+      ],
+      [
+        "AAA",
+        "@DE",
+        "BDB",
+        "BDF",
+        "AGA"
+      ],
+      [
+        "AAA",
+        "BHB",
+        "BBB",
+        "BBB",
+        "AAA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "create:copper_casing"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "amicore:hydroscrubber_controller",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "immersiveengineering:sheetmetal_nickel"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "amicore:copper_item_input"
+          }
+        ],
+        "type": "blocks"
+      },
+      "D": {
+        "blocks": [
+          {
+            "id": "amicore:tank_filter"
+          }
+        ],
+        "type": "blocks"
+      },
+      "E": {
+        "blocks": [
+          {
+            "id": "amicore:copper_fluid_output"
+          }
+        ],
+        "type": "blocks"
+      },
+      "F": {
+        "blocks": [
+          {
+            "id": "amicore:copper_fluid_input"
+          }
+        ],
+        "type": "blocks"
+      },
+      "G": {
+        "blocks": [
+          {
+            "id": "pamhc2trees:pamcinnamon"
+          }
+        ],
+        "type": "blocks"
+      },
+      "H": {
+        "blocks": [
+          {
+            "id": "amicore:copper_item_output"
+          }
+        ],
+        "type": "blocks"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "H": [
+        "H"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  },
+  "recipeMap": "hydroscrubber"
+}

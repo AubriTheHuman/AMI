@@ -1,5 +1,5 @@
 {
-  "parent": "item/generated",
+  "parent": "builtin/generated",
   "textures": {
     "layer0": "kubejs:item/blanks/tempered_bottle_fill",
     "layer1": "kubejs:item/blanks/tempered_bottle"

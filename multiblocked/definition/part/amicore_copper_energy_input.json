@@ -1,0 +1,43 @@
+{
+  "canShared": false,
+  "location": "amicore:copper_energy_input",
+  "traits": {
+    "forge_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 30,
+      "y": 77,
+      "width": 120,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "capacity": 512,
+      "maxReceive": 500,
+      "maxExtract": 500
+    }
+  },
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:sitting_tank_panel",
+    "frontTexture": "multiblocked:lv_energy_input",
+    "backTexture": "multiblocked:lv_energy_input",
+    "leftTexture": "multiblocked:lv_energy_input",
+    "rightTexture": "multiblocked:lv_energy_input",
+    "upTexture": "multiblocked:lv_energy_input",
+    "downTexture": "multiblocked:lv_energy_input",
+    "type": "gregtech"
+  },
+  "properties": {
+    "isOpaque": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "harvestLevel": 1,
+    "lightEmissive": 0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "hasCollision": true,
+    "tabGroup": "multiblocked.all",
+    "stackSize": 64
+  }
+}

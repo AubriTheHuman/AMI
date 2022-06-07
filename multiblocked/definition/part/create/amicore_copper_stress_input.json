@@ -2,7 +2,7 @@
   "isOutput": false,
   "stress": 128.0,
   "canShared": false,
-  "location": "amicore:sitting_tank_stress_input",
+  "location": "amicore:copper_stress_input",
   "traits": {},
   "allowRotate": true,
   "showInJei": true,

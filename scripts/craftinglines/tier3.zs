@@ -16,19 +16,35 @@ var deploying = <recipetype:create:deploying>;
 var sequence = <recipetype:create:sequenced_assembly>;
 var draining = <recipetype:create:emptying>;
 
+
+
 #lubricant
 milling.addRecipe("fish_milling_cod", [<item:amicore:fish_meal>], <item:minecraft:cod>);
 milling.addRecipe("fish_milling_salmon", [<item:amicore:fish_meal>], <item:minecraft:salmon>);
 milling.addRecipe("olive_milling", [<item:amicore:olive_meal>], <item:pamhc2trees:oliveitem>);
 milling.addRecipe("avocado_milling", [<item:amicore:avocado_meal>], <item:pamhc2trees:avocadoitem>);
+milling.addRecipe("peanut_milling", [<item:amicore:peanut_meal>], <item:pamhc2trees:avocadoitem>);
+milling.addRecipe("soybean_milling", [<item:amicore:soybean_meal>], <item:pamhc2trees:avocadoitem>);
+milling.addRecipe("sesame_seed_milling", [<item:amicore:sesame_seed_meal>], <item:pamhc2trees:avocadoitem>);
+milling.addRecipe("pinenut_milling", [<item:amicore:pinenut_meal>], <item:pamhc2trees:avocadoitem>);
+milling.addRecipe("coconut_milling", [<item:amicore:coconut_meal>], <item:pamhc2trees:avocadoitem>);
 draining.addRecipe("fish_meal_draining", <item:amicore:biowaste>, <fluid:amicore:fish_oil> * 100, <item:amicore:fish_meal>);
-<recipetype:immersiveengineering:squeezer>.addRecipe("fish_meal_squeezing", <item:amicore:fish_meal>, 10240, <fluid:amicore:fish_oil> * 125, <item:amicore:biowaste>);
-draining.addRecipe("olive_meal_draining", <item:amicore:biowaste>, <fluid:amicore:olive_oil> * 100, <item:amicore:olive_meal>);
-draining.addRecipe("avocado_meal_draining", <item:amicore:biowaste>, <fluid:amicore:avocado_oil> * 100, <item:amicore:avocado_meal>);
-<recipetype:immersiveengineering:squeezer>.addRecipe("olive_meal_squeezing", <item:amicore:olive_meal>, 10240, <fluid:amicore:olive_oil> * 125, <item:amicore:biowaste>);
-<recipetype:immersiveengineering:squeezer>.addRecipe("avocado_meal_squeezing", <item:amicore:avocado_meal>, 10240, <fluid:amicore:avocado_oil> * 125, <item:amicore:biowaste>);
-mixing.addRecipe("refined_plant_olive_oil", "heated", <fluid:amicore:refined_plant_oil> * 100, [], [<fluid:amicore:olive_oil> * 100], 400);
-mixing.addRecipe("refined_plant_avocado_oil", "heated", <fluid:amicore:refined_plant_oil> * 100, [], [<fluid:amicore:avocado_oil> * 100], 400);
+draining.addRecipe("olive_meal_draining", <item:amicore:biowaste>, <fluid:amicore:plant_oil> * 150, <item:amicore:olive_meal>);
+draining.addRecipe("avocado_meal_draining", <item:amicore:biowaste>, <fluid:amicore:plant_oil> * 150, <item:amicore:avocado_meal>);
+draining.addRecipe("peanut_meal_draining", <item:amicore:biowaste>, <fluid:amicore:plant_oil> * 75, <item:amicore:peanut_meal>);
+draining.addRecipe("soybean_meal_draining", <item:amicore:biowaste>, <fluid:amicore:plant_oil> * 75, <item:amicore:soybean_meal>);
+draining.addRecipe("sesame_seed_meal_draining", <item:amicore:biowaste>, <fluid:amicore:plant_oil> * 75, <item:amicore:sesame_seed_meal>);
+draining.addRecipe("pinenut_meal_draining", <item:amicore:biowaste>, <fluid:amicore:plant_oil> * 150, <item:amicore:pinenut_meal>);
+draining.addRecipe("coconut_meal_draining", <item:amicore:biowaste>, <fluid:amicore:plant_oil> * 150, <item:amicore:coconut_meal>);
+<recipetype:immersiveengineering:squeezer>.addRecipe("fish_meal_squeezing", <item:amicore:fish_meal>, 40960, <fluid:amicore:fish_oil> * 125, <item:amicore:biowaste>);
+<recipetype:immersiveengineering:squeezer>.addRecipe("olive_meal_squeezing", <item:amicore:olive_meal>, 40960, <fluid:amicore:plant_oil> * 175, <item:amicore:biowaste>);
+<recipetype:immersiveengineering:squeezer>.addRecipe("avocado_meal_squeezing", <item:amicore:avocado_meal>, 40960, <fluid:amicore:plant_oil> * 175, <item:amicore:biowaste>);
+<recipetype:immersiveengineering:squeezer>.addRecipe("peanut_meal_squeezing", <item:amicore:peanut_meal>, 40960, <fluid:amicore:plant_oil> * 100, <item:amicore:biowaste>);
+<recipetype:immersiveengineering:squeezer>.addRecipe("soybean_meal_squeezing", <item:amicore:soybean_meal>, 40960, <fluid:amicore:plant_oil> * 100, <item:amicore:biowaste>);
+<recipetype:immersiveengineering:squeezer>.addRecipe("sesame_seed_meal_squeezing", <item:amicore:sesame_seed_meal>, 40960, <fluid:amicore:plant_oil> * 100, <item:amicore:biowaste>);
+<recipetype:immersiveengineering:squeezer>.addRecipe("pinenut_meal_squeezing", <item:amicore:pinenut_meal>, 40960, <fluid:amicore:plant_oil> * 175, <item:amicore:biowaste>);
+<recipetype:immersiveengineering:squeezer>.addRecipe("coconut_meal_squeezing", <item:amicore:coconut_meal>, 40960, <fluid:amicore:plant_oil> * 175, <item:amicore:biowaste>);
+mixing.addRecipe("refined_plant_oil", "heated", <fluid:amicore:refined_plant_oil> * 100, [], [<fluid:amicore:plant_oil> * 100], 400);
 mixing.addRecipe("lubricant", "heated", <fluid:immersivepetroleum:lubricant> * 100, [], [<fluid:amicore:refined_plant_oil> * 50,<fluid:amicore:fish_oil> * 50], 400);
 
 #fish water
@@ -41,9 +57,12 @@ new mods.immersivepetroleum.DistillationBuilder()
 mixing.addRecipe("mix_fish_water", "none", <fluid:amicore:fish_water> * 200, [], [<fluid:amicore:saline> * 100, <fluid:minecraft:water> * 100], 400);
 
 #nutrient paste
-<recipetype:immersiveengineering:mixer>.addRecipe("nutrient_paste_veggie", <tag:fluids:minecraft:water>, [<tag:items:forge:vegetables> * 4], 10240, <fluid:amicore:nutrient_paste>, 100);
-<recipetype:immersiveengineering:mixer>.addRecipe("nutrient_paste_fruit", <tag:fluids:minecraft:water>, [<tag:items:forge:fruits> * 3], 10240, <fluid:amicore:nutrient_paste>, 100);
-<recipetype:immersiveengineering:mixer>.addRecipe("nutrient_paste_nuts", <tag:fluids:minecraft:water>, [<tag:items:forge:nuts> * 2], 10240, <fluid:amicore:nutrient_paste>, 100);
+<recipetype:immersiveengineering:mixer>.addRecipe("nutrient_paste_veggie", <tag:fluids:minecraft:water>, [<tag:items:forge:vegetables> * 4], 20480, <fluid:amicore:nutrient_paste>, 100);
+<recipetype:immersiveengineering:mixer>.addRecipe("nutrient_paste_fruit", <tag:fluids:minecraft:water>, [<tag:items:forge:fruits> * 3], 20480, <fluid:amicore:nutrient_paste>, 100);
+<recipetype:immersiveengineering:mixer>.addRecipe("nutrient_paste_nuts", <tag:fluids:minecraft:water>, [<tag:items:forge:nuts> * 2], 20480, <fluid:amicore:nutrient_paste>, 100);
+<recipetype:immersiveengineering:mixer>.addRecipe("nutrient_paste_algae", <tag:fluids:minecraft:water>, [<item:amicore:algae> * 5], 20480, <fluid:amicore:nutrient_paste>, 100);
+<recipetype:immersiveengineering:mixer>.addRecipe("nutrient_paste_seaweed", <tag:fluids:minecraft:water>, [<item:minecraft:seagrass> * 5], 20480, <fluid:amicore:nutrient_paste>, 100);
+<recipetype:immersiveengineering:mixer>.addRecipe("nutrient_paste_kelp", <tag:fluids:minecraft:water>, [<item:minecraft:kelp> * 8], 20480, <fluid:amicore:nutrient_paste>, 100);
 
 #fish tank components
 Recipe.type(Type.ENGINEER)

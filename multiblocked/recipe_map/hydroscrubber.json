@@ -1,0 +1,50 @@
+{
+  "name": "hydroscrubber",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "sulfuric_water_scrubbing",
+      "duration": 200,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "create:filter"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:sulfuric_waste_water\",Amount:400}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "minecraft:iron_ingot"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:unusable_waste_water\",Amount:400}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    }
+  ]
+}

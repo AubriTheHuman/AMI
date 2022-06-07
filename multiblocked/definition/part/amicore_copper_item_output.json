@@ -1,6 +1,6 @@
 {
   "canShared": false,
-  "location": "amicore:sitting_pool_item_output",
+  "location": "amicore:copper_item_output",
   "traits": {
     "item": [
       {

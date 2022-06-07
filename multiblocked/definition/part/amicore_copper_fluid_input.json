@@ -1,6 +1,6 @@
 {
   "canShared": false,
-  "location": "amicore:sitting_pool_fluid_input",
+  "location": "amicore:copper_fluid_input",
   "traits": {
     "fluid": [
       {
@@ -9,7 +9,7 @@
         "x": 80,
         "y": 80,
         "autoIO": false,
-        "tC": 6400
+        "tC": 20000
       }
     ],
     "background": "multiblocked:textures/sitting_pool_fluid_gui.png"
