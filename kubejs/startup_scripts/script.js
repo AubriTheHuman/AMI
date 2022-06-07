@@ -136,6 +136,37 @@ const oretypes = [
 	['ender_biotite', 'Ender Biotite Rich Ore', 4, 1, 0x1B1C1F, ['forge:ores/biotite', 'forge:ores/biotite_ender'], 4, ['Biotite']]
 ];
 
+const basicSpirits = [
+	['earthen', 'Earthen', 0x65FF0D, 0x51DD00],
+	['infernal', 'Infernal', 0xFCCB18, 0xDDAD02], 
+	['aerial', 'Aerial', 0x41E8E4, 0x16b5b1], 
+	['aquatic', 'Aquatic', 0x2e85f5, 0x0b65d8]];
+const simpleSpirits = [
+	['sacred', 'Sacred', 0xF3416B, 0xf0184b], 
+	['wicked', 'Wicked', 0xa519da, 0x8213ac], 
+	['arcane', 'Arcane', 0xe554d1, 0xd120b8], 
+	['eldritch', 'Eldritch', 0x48165f, 0x2d0e3c]];
+const intermediateSpirits = [
+	['malicious', 'Malicious', 0xAB1182, 0x8f0e6c], 
+	['magnetic', 'Magnetic', 0xEB4D4D, 0xe83333], 
+	['ruinous', 'Ruinous', 0x0f0f0f, 0x080808], 
+	['tempestuous', 'Tempestuous', 0x84a8cb, 0x84a8cb], 
+	['electric', 'Electric', 0xDCEC73, 0xd1e646], 
+	['mechanical', 'mechanical', 0xF5BC22, 0xc89509], 
+	['herbal', 'Herbal', 0x0A7C30, 0x086326]];
+const advancedSpirits = [
+	['voidial', 'Voidial', 0x391B4D, 0x2a1439], 
+	['deathly', 'Deathly', 0x3B3B52, 0x292939], 
+	['astral', 'Astral', 0xEBF0FF, 0xc7d5ff], 
+	['corporeal', 'Corporeal', 0xEDD3F5, 0xe1b7ef], 
+	['chaotic', 'Chaotic', 0x6F00FF, 0x4800a5], 
+	['frozen', 'Frozen', 0x97E8E2, 0x60dcd3], 
+	['hungry', 'Hungry', 0xEBC738, 0xc6a214]];
+const expertSpirits = [
+	['radiative', 'Radiative', 0x2A4E22, 0x1f3919], 
+	['thoughtful', 'Thoughtful', 0xFF6BF0, 0xff30ea], 
+	['enlightened', 'Enlightened', 0xA67910, 0x72530b]];
+
 // const chelperClass = java('top.theillusivec4.curios.api.CuriosApi');
 // const chelper = chelperClass.getCuriosHelper();
 // const param1 = java("net.minecraft.entity.LivingEntity");
@@ -447,8 +478,46 @@ onEvent('item.registry', event => {
 	event.create('amicore:fish_meal').displayName('Fish Meal').texture("kubejs:item/fish_meal").group('amicore.biotab');
 	event.create('amicore:olive_meal').displayName('Olive Meal').texture("kubejs:item/olive_meal").group('amicore.biotab');
 	event.create('amicore:avocado_meal').displayName('Avocado Meal').texture("kubejs:item/avocado_meal").group('amicore.biotab');
+	event.create('amicore:peanut_meal').displayName('Peanut Meal').texture("kubejs:item/peanut_meal").group('amicore.biotab');
+	event.create('amicore:soybean_meal').displayName('Soybean Meal').texture("kubejs:item/soybean_meal").group('amicore.biotab');
+	event.create('amicore:sesame_seed_meal').displayName('Sesame Seed Meal').texture("kubejs:item/sesame_seed_meal").group('amicore.biotab');
+	event.create('amicore:pinenut_meal').displayName('Peanut Meal').texture("kubejs:item/pinenut_meal").group('amicore.biotab');
+	event.create('amicore:coconut_meal').displayName('Coconut Meal').texture("kubejs:item/coconut_meal").group('amicore.biotab');
 	event.create('amicore:biowaste').displayName('Biowaste').texture("kubejs:item/biowaste").group('amicore.biotab');
 	event.create('amicore:algae').displayName('Algae').texture("kubejs:item/algae").group('amicore.biotab');
+	event.create('amicore:dirty_sulfur_filter').displayName('Used Filter with Sulfuric Particles').parentModel("kubejs:item/dirty_sulfur_filter").group('amicore.petrotab');
+	event.create('amicore:dirty_mineral_filter').displayName('Used Filter with Mineralized Particles').parentModel("kubejs:item/dirty_mineral_filter").group('amicore.petrotab');
+	event.create('amicore:dirty_nitric_filter').displayName('Used Filter with Nitric Particles').parentModel("kubejs:item/dirty_nitric_filter").group('amicore.petrotab');
+	event.create('amicore:mineral_powder').displayName('Mineral Powder').texture("kubejs:item/mineral_powder").group('amicore.petrotab');
+
+	//hydroxide malum
+	for(let j = 0; j < basicSpirits.length; j++) {
+		event.create('amicore:' + basicSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + 'Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(0, basicSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + basicSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + 'Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(0, basicSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + basicSpirits[j][0] + '_brew_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + 'Spirit Brew').parentModel("kubejs:item/filled_tempered_bottle").color(0, basicSpirits[j][3]).group('amicore.fluidtab');
+
+	}
+
+	for(let j = 0; j < simpleSpirits.length; j++) {
+		event.create('amicore:' + simpleSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + simpleSpirits[j][1] + 'Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(0, simpleSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + simpleSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + simpleSpirits[j][1] + 'Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(0, simpleSpirits[j][3]).group('amicore.fluidtab');
+	}
+
+	for(let j = 0; j < intermediateSpirits.length; j++) {
+		event.create('amicore:' + intermediateSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + 'Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(0, intermediateSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + intermediateSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + 'Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(0, intermediateSpirits[j][3]).group('amicore.fluidtab');
+	}
+
+	for(let j = 0; j < advancedSpirits.length; j++) {
+		event.create('amicore:' + advancedSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + advancedSpirits[j][1] + 'Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(0, advancedSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + advancedSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + advancedSpirits[j][1] + 'Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(0, advancedSpirits[j][3]).group('amicore.fluidtab');
+	}
+
+	for(let j = 0; j < expertSpirits.length; j++) {
+		event.create('amicore:' + expertSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + expertSpirits[j][1] + 'Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(0, expertSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + expertSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + expertSpirits[j][1] + 'Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(0, expertSpirits[j][3]).group('amicore.fluidtab');
+	}
+
 
 })
 
@@ -531,6 +600,10 @@ onEvent('block.registry', event => {
 	event.create('amicore:rich_sythian_nylium').material('stone').hardness(0.4).displayName('Rich Sythian Nylium').model("kubejs:block/rich_sythian_nylium").harvestTool('pickaxe', 0).item(item => { item.group('amicore.biotab')  });
 	event.create('amicore:rich_embur_nylium').material('stone').hardness(0.4).displayName('Rich Embur Nylium').model("kubejs:block/rich_embur_nylium").harvestTool('pickaxe', 0).item(item => { item.group('amicore.biotab')  });
 	
+	event.create('amicore:rich_earth_slime_dirt').material('dirt').hardness(0.4).displayName('Rich Earthy Slime Dirt').model("kubejs:block/rich_earth_slime_dirt").harvestTool('shovel', 0).item(item => { item.group('amicore.biotab')  });
+	event.create('amicore:rich_sky_slime_dirt').material('dirt').hardness(0.4).displayName('Rich Sky Slime Dirt').model("kubejs:block/rich_sky_slime_dirt").harvestTool('shovel', 0).item(item => { item.group('amicore.biotab')  });
+	event.create('amicore:rich_ender_slime_dirt').material('dirt').hardness(0.4).displayName('Rich Ender Slime Dirt').model("kubejs:block/rich_ender_slime_dirt").harvestTool('shovel', 0).item(item => { item.group('amicore.biotab')  });
+	
 })
 
 
@@ -584,27 +657,63 @@ onEvent('fluid.registry', event => {
 	//blaze age fluids
 	event.create('amicore:red_catalyst').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Red Metal Catalyst Solution');
 	event.create('amicore:green_catalyst').textureThin(0xC3F9AF).bucketColor(0xC3F9AF).displayName('Green Metal Catalyst Solution');
+	event.create('amicore:blue_catalyst').textureThin(0x528FB2).bucketColor(0x528FB2).displayName('Blue Metal Catalyst Solution');
+	event.create('amicore:yellow_catalyst').textureThin(0xF5FE8C).bucketColor(0xF5FE8C).displayName('Yellow Metal Catalyst Solution');
 	event.create('amicore:sulfuric_acid').textureThin(0xF5E749).bucketColor(0xF5E749).displayName('Sulfuric Acid');
 	event.create('amicore:soulfuric_acid').textureThin(0xB879B2).bucketColor(0xB879B2).displayName('Soulfuric Acid');
 	event.create('amicore:compressed_air').textureThin(0xFFFFFF).bucketColor(0xFFFFFF).displayName('Compressed Air');
-	event.create('amicore:unusable_waste_water').textureThin(0x201D1C).bucketColor(0x201D1C).displayName('Unusable Waste Water');
+	event.create('amicore:mineral_water').textureThin(0xA87035).bucketColor(0xA87035).displayName('Mineral Water');
 	event.create('amicore:sulfuric_waste_water').textureThin(0xCBDECD).bucketColor(0xCBDECD).displayName('Sulfuric Waste Water');
+	event.create('amicore:nitric_waste_water').textureThin(0xDD7F94).bucketColor(0xDD7F94).displayName('Nitric Waste Water');
 	event.create('amicore:weeping_paste').textureThin(0xC61E07).bucketColor(0xC61E07).displayName('Weeping Paste')	
 	event.create('amicore:ashy_weeping_paste').textureThin(0xB2000A).bucketColor(0xB2000A).displayName('Ashy Weeping Paste')	
-	event.create('amicore:simple_spirit_distillation').textureThin(0xD453C9).bucketColor(0xD453C9).displayName('Simple Spirit Distillation');
+	event.create('amicore:simple_spirit_solution').textureThin(0xD453C9).bucketColor(0xD453C9).displayName('Simple Spirit Solution');
 	// event.create('amicore:molten_solder').textureThick(0x837D7D).bucketColor(0x837D7D).displayName('Molten Solder').bucketItem(item => { item.group('amicore.metaltab')  });
 
 	//Hydroxide age fluids
 	event.create('amicore:fish_water').textureThin(0x97C1F7).bucketColor(0x97C1F7).displayName('Fish Water');
 	event.create('amicore:used_fish_water').textureThin(0xBFA571).bucketColor(0xBFA571).displayName('Dirty Fish Water');
 	event.create('amicore:fish_oil').textureThin(0xE9BB16).bucketColor(0xE9BB16).displayName('Fish Oil');
-	event.create('amicore:olive_oil').textureThin(0x818C1C).bucketColor(0x818C1C).displayName('Olive Oil');
-	event.create('amicore:avocado_oil').textureThin(0xD1DF5C).bucketColor(0xD1DF5C).displayName('Avocado Oil');
+	event.create('amicore:plant_oil').textureThin(0xD1DF5C).bucketColor(0xD1DF5C).displayName('Plant Oil');
 	event.create('amicore:purified_water').textureThin(0xABECF4).bucketColor(0xABECF4).displayName('Pure Water');
 	event.create('amicore:saline').textureThin(0xADD6F6).bucketColor(0xADD6F6).displayName('Saline Water');
 	event.create('amicore:refined_plant_oil').textureThin(0xF2E131).bucketColor(0xF2E131).displayName('Refined Plant Oil');
 	// event.create('amicore:lubricant').textureThin(0x008F19).bucketColor(0x008F19).displayName('Lubricant');
 	event.create('amicore:nutrient_paste').textureThin(0x864D09).bucketColor(0x864D09).displayName('Nutrient Paste');
+	event.create('amicore:slag_slurry').textureThick(0x683D03).bucketColor(0x683D03).displayName('Slag Slurry');
+	event.create('amicore:slag_sludge').textureThick(0x5A3C1C).bucketColor(0x5A3C1C).displayName('Slag Sludge');
+
+	//hydroxide sub malum distillations
+
+
+
+
+	for(let j = 0; j < basicSpirits.length; j++) {
+		event.create('amicore:' + basicSpirits[j][0] + '_spirit_distillation').textureThin(basicSpirits[j][2]).bucketColor(basicSpirits[j][2]).displayName(basicSpirits[j][1] + ' Spirit Distillation');
+		event.create('amicore:' + basicSpirits[j][0] + '_spirit_solution').textureThin(basicSpirits[j][3]).bucketColor(basicSpirits[j][3]).displayName(basicSpirits[j][1] + ' Spirit Solution');
+		event.create('amicore:' + basicSpirits[j][0] + '_spirit_brew').textureThin(basicSpirits[j][3]).bucketColor(basicSpirits[j][3]).displayName(basicSpirits[j][1] + ' Spirit Brew');
+	}
+
+	for(let j = 0; j < simpleSpirits.length; j++) {
+		event.create('amicore:' + simpleSpirits[j][0] + '_spirit_distillation').textureThin(simpleSpirits[j][2]).bucketColor(simpleSpirits[j][2]).displayName(simpleSpirits[j][1] + ' Spirit Distillation');
+		event.create('amicore:' + simpleSpirits[j][0] + '_spirit_solution').textureThin(simpleSpirits[j][3]).bucketColor(simpleSpirits[j][3]).displayName(simpleSpirits[j][1] + ' Spirit Solution');
+	}
+
+	for(let j = 0; j < intermediateSpirits.length; j++) {
+		event.create('amicore:' + intermediateSpirits[j][0] + '_spirit_distillation').textureThin(intermediateSpirits[j][2]).bucketColor(intermediateSpirits[j][2]).displayName(intermediateSpirits[j][1] + ' Spirit Distillation');
+		event.create('amicore:' + intermediateSpirits[j][0] + '_spirit_solution').textureThin(intermediateSpirits[j][3]).bucketColor(intermediateSpirits[j][3]).displayName(intermediateSpirits[j][1] + ' Spirit Solution');
+	}
+
+	for(let j = 0; j < advancedSpirits.length; j++) {
+		event.create('amicore:' + advancedSpirits[j][0] + '_spirit_distillation').textureThin(advancedSpirits[j][2]).bucketColor(advancedSpirits[j][2]).displayName(advancedSpirits[j][1] + ' Spirit Distillation');
+		event.create('amicore:' + advancedSpirits[j][0] + '_spirit_solution').textureThin(advancedSpirits[j][3]).bucketColor(advancedSpirits[j][3]).displayName(advancedSpirits[j][1] + ' Spirit Solution');
+	}
+
+	for(let j = 0; j < expertSpirits.length; j++) {
+		event.create('amicore:' + expertSpirits[j][0] + '_spirit_distillation').textureThin(expertSpirits[j][2]).bucketColor(expertSpirits[j][2]).displayName(expertSpirits[j][1] + ' Spirit Distillation');
+		event.create('amicore:' + expertSpirits[j][0] + '_spirit_solution').textureThin(expertSpirits[j][3]).bucketColor(expertSpirits[j][3]).displayName(expertSpirits[j][1] + ' Spirit Solution');
+	}
+	
 	
 
 })
