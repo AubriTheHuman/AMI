@@ -119,3 +119,11 @@ Recipe.type(Type.ENGINEER)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .secondary([<item:amicore:wooden_bolt>*6])
   .register();
+
+#filter2
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:minecraft:bamboo>, <item:immersiveengineering:hemp_fiber>, <item:minecraft:bamboo>]])
+  .output(<item:create:filter>)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .register();

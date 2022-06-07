@@ -214,7 +214,7 @@ craftingTable.addShaped("crude_steel_sheetmetal", <item:amicore:crude_steel_shee
     {
         "type": "create:filling",
         "ingredients": [ { "item": "amicore:sulfuric_acid_bottle" },
-        { "fluid": "amicore:simple_spirit_distillation", "nbt": {}, "amount": 50 } ],
+        { "fluid": "amicore:simple_spirit_solution", "nbt": {}, "amount": 50 } ],
         "results": [{ "item": "amicore:sulfuric_acid_bottle" }]
     },
     {
@@ -237,9 +237,9 @@ craftingTable.addShaped("crude_steel_sheetmetal", <item:amicore:crude_steel_shee
 });
 draining.addRecipe("sulfuric_acid_drain", <item:quark:clear_shard>, <fluid:amicore:sulfuric_acid> * 100, <item:amicore:sulfuric_acid_bottle>);
 draining.addRecipe("soulfuric_acid_drain", <item:quark:clear_shard>, <fluid:amicore:soulfuric_acid> * 100, <item:amicore:soulfuric_acid_bottle>);
-draining.addRecipe("spirit_distillation_drain", <item:amicore:tempered_bottle>, <fluid:amicore:simple_spirit_distillation> * 100, <item:amicore:spirit_distillation_bottle>);
-filling.addRecipe("spirit_distillation_filling", <item:amicore:spirit_distillation_bottle>, <item:amicore:tempered_bottle>, <fluid:amicore:simple_spirit_distillation> * 100);
-mixing.addRecipe("simple_spirit_distillation_mixing", "heated", <fluid:amicore:simple_spirit_distillation> * 1000, [<tag:items:malum:spirits/basic_spirits>, <item:minecraft:sugar>], [<fluid:minecraft:water> * 1000], 600);
+draining.addRecipe("spirit_distillation_drain", <item:amicore:tempered_bottle>, <fluid:amicore:simple_spirit_solution> * 100, <item:amicore:spirit_distillation_bottle>);
+filling.addRecipe("spirit_distillation_filling", <item:amicore:spirit_distillation_bottle>, <item:amicore:tempered_bottle>, <fluid:amicore:simple_spirit_solution> * 100);
+mixing.addRecipe("simple_spirit_solution_mixing", "heated", <fluid:amicore:simple_spirit_solution> * 1000, [<tag:items:malum:spirits/basic_spirits>, <item:minecraft:sugar>], [<fluid:minecraft:water> * 1000], 600);
 
 //sulfur processings
 milling.addRecipe("sulfur_milling", [<item:immersiveengineering:dust_sulfur> * 3, <item:immersiveengineering:dust_sulfur> % 50], <item:amicore:sulfur_crystal>);
@@ -255,7 +255,7 @@ craftingTable.addShapeless("sulfur_dust_compacting", <item:immersiveengineering:
 mixing.addRecipe("weeping_paste", "heated", <fluid:amicore:weeping_paste> * 200, [<item:minecraft:weeping_vines> * 3], [<fluid:minecraft:water> * 100], 200);
 mixing.addRecipe("ashy_weeping_paste", "heated", <fluid:amicore:ashy_weeping_paste> * 400, [<item:minecraft:yellow_dye>,<item:create:cinder_flour>], [<fluid:amicore:weeping_paste> * 200], 200);
 mixing.addRecipe("limey_weeping_paste", "heated", <item:amicore:limey_weeping_paste>, [<item:create:limesand>], [<fluid:amicore:ashy_weeping_paste> * 400], 200);
-draining.addRecipe("diry_sulfur_draining", <item:amicore:dirty_sulfur>, <fluid:amicore:unusable_waste_water> * 100, <item:amicore:limey_weeping_paste>);
+draining.addRecipe("diry_sulfur_draining", <item:amicore:dirty_sulfur>, <fluid:amicore:mineral_water> * 100, <item:amicore:limey_weeping_paste>);
 crushing.addRecipe("dirty_sulfur_crushing", [<item:immersiveengineering:dust_sulfur> * 2, <item:minecraft:sand> * 2 % 50], <item:amicore:dirty_sulfur>);
 milling.addRecipe("dirty_sulfur_milling", [<item:immersiveengineering:dust_sulfur> * 2, <item:minecraft:sand> * 2 % 50], <item:amicore:dirty_sulfur>);
 
@@ -442,7 +442,7 @@ mods.jei.JEI.hideItem(<item:amicore:multicylinder_phase3a>);
 craftingTable.removeRecipe(<item:immersiveengineering:cokebrick>);
 craftingTable.removeRecipe(<item:immersiveengineering:blastbrick>);
 craftingTable.removeRecipe(<item:immersiveengineering:alloybrick>);
-mixing.addRecipe("dark_clay_ami", "heated", <item:amicore:dark_clay> * 2, [<item:amicore:soul_soil_clay> * 2], [<fluid:amicore:simple_spirit_distillation> * 50], 500);
+mixing.addRecipe("dark_clay_ami", "heated", <item:amicore:dark_clay> * 2, [<item:amicore:soul_soil_clay> * 2], [<fluid:amicore:simple_spirit_solution> * 50], 500);
 mixing.addRecipe("reddened_clay_ami", "heated", <item:amicore:reddened_clay> * 2, [<item:amicore:soul_soil_clay> * 2, <item:create:cinder_flour> * 2], [<fluid:tconstruct:blazing_blood> * 50], 500);  
 mixing.addRecipe("sandy_clay_ami", "heated", <item:amicore:sandy_clay> * 2, [<item:amicore:soul_soil_clay> * 2, <item:minecraft:sand> * 2], [<fluid:immersiveengineering:creosote> * 50], 500);
 <recipetype:charm:firing>.addJSONRecipe("amicore/coke_brick_kiln", {

@@ -3,6 +3,234 @@
   "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
   "recipes": [
     {
+      "uid": "nitric_filter_revrse_osmosis",
+      "duration": 100,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "amicore:dirty_nitric_filter"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"minecraft:water\",Amount:400}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "create:filter"
+              }
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "minecraft:iron_ingot"
+              }
+            },
+            "chance": 0.92
+          },
+          {
+            "content": {
+              "amount": 3,
+              "matches": {
+                "item": "minecraft:iron_ingot"
+              }
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 128,
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickOutputs": {}
+    },
+    {
+      "uid": "mineral_sludge_filtering",
+      "duration": 200,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "create:filter"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:slag_slurry\",Amount:400}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "amicore:dirty_mineral_filter"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:slag_sludge\",Amount:400}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 128,
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickOutputs": {}
+    },
+    {
+      "uid": "mineral_filter_revrse_osmosis",
+      "duration": 100,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "amicore:dirty_mineral_filter"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"minecraft:water\",Amount:400}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "create:filter"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:mineral_water\",Amount:400}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 128,
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickOutputs": {}
+    },
+    {
+      "uid": "sulfuric_filter_revrse_osmosis",
+      "duration": 100,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "amicore:dirty_sulfur_filter"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"minecraft:water\",Amount:400}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "create:filter"
+              }
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "immersiveengineering:dust_sulfur"
+              }
+            },
+            "chance": 0.92
+          },
+          {
+            "content": {
+              "amount": 3,
+              "matches": {
+                "item": "immersiveengineering:dust_sulfur"
+              }
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 128,
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickOutputs": {}
+    },
+    {
       "uid": "sulfuric_water_scrubbing",
       "duration": 200,
       "inputs": {
@@ -30,7 +258,7 @@
             "content": {
               "amount": 1,
               "matches": {
-                "item": "minecraft:iron_ingot"
+                "item": "amicore:dirty_sulfur_filter"
               }
             },
             "chance": 1.0
@@ -38,12 +266,70 @@
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"amicore:unusable_waste_water\",Amount:400}",
+            "content": "{FluidName:\"amicore:mineral_water\",Amount:400}",
             "chance": 1.0
           }
         ]
       },
-      "tickInputs": {},
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 128,
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickOutputs": {}
+    },
+    {
+      "uid": "nitric_water_filtering",
+      "duration": 200,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "create:filter"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:nitric_waste_water\",Amount:400}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": {
+                "item": "amicore:dirty_nitric_filter"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:mineral_water\",Amount:400}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 128,
+            "chance": 1.0
+          }
+        ]
+      },
       "tickOutputs": {}
     }
   ]

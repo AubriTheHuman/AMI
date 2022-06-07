@@ -1,0 +1,6 @@
+{
+  "parent": "builtin/generated",
+  "textures": {
+    "layer0": "kubejs:item/tempered_bottle_fill"
+  }
+}

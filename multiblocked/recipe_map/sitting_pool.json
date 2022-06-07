@@ -781,6 +781,45 @@
       },
       "tickInputs": {},
       "tickOutputs": {}
+    },
+    {
+      "uid": "slag_sludge_sitting",
+      "duration": 1200,
+      "inputs": {
+        "create_stress": [
+          {
+            "content": 128.0,
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:slag_sludge\",Amount:3200}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 8,
+              "matches": {
+                "item": "amicore:mineral_powder"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"amicore:mineral_water\",Amount:1600}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
     }
   ]
 }

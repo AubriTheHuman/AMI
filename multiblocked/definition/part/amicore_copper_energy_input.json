@@ -10,9 +10,9 @@
       "width": 120,
       "height": 18,
       "texture": "multiblocked:textures/gui/energy_bar.png",
-      "capacity": 512,
-      "maxReceive": 500,
-      "maxExtract": 500
+      "capacity": 14000,
+      "maxReceive": 512,
+      "maxExtract": 512
     }
   },
   "allowRotate": true,
@@ -37,7 +37,7 @@
     "jumpFactor": 1.0,
     "friction": 0.6,
     "hasCollision": true,
-    "tabGroup": "multiblocked.all",
+    "tabGroup": "amicore.machinetab",
     "stackSize": 64
   }
 }

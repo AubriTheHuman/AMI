@@ -45,7 +45,7 @@
     "jumpFactor": 1.0,
     "friction": 0.6,
     "hasCollision": true,
-    "tabGroup": "multiblocked.all",
+    "tabGroup": "amicore.machinetab",
     "stackSize": 64
   },
   "basePattern": {
@@ -147,7 +147,7 @@
       "G": {
         "blocks": [
           {
-            "id": "pamhc2trees:pamcinnamon"
+            "id": "amicore:copper_energy_input"
           }
         ],
         "type": "blocks"
