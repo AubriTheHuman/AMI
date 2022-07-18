@@ -8,6 +8,7 @@ const itemIngredient = java("com.sammy.malum.core.systems.recipes.ItemIngredient
 const simpleItemIngredient = java("com.sammy.malum.core.systems.recipes.SimpleItemIngredient");
 const spiritIngredient = java("com.sammy.malum.core.systems.recipes.SpiritIngredient");
 const malumSpiritTypes = java("com.sammy.malum.core.modcontent.MalumSpiritTypes");
+const amiMalumSpiritTypes = java("com.aubrithehuman.amicore.malum.MalumSpiritAdditons");
 // const addSpirit = malumRecipe.getMethod("addSpirit", spiritIngredient);
 // const addExtra = malumRecipe.getMethod("addExtraItem", simpleItemIngredient);
 
@@ -47,9 +48,7 @@ onEvent('recipes', event => {
 
 
   // broken attempt at malum registry reflection
-  let test = new malumRecipe(new itemIngredient(Item.of("amicore:iron_ingot"), 4), new itemIngredient(Item.of("amicore:gold_ingot"), 1))
-  .addSpirit(new spiritIngredient(malumSpiritTypes.ARCANE_SPIRIT, 2))
-  .addExtraItem(new simpleItemIngredient(Item.of("amicore:copper_ingot")));
+
   
 //   try {
 //     addSpirit.invoke(test, new spiritIngredient(malumSpiritTypes.ARCANE_SPIRIT, 2));

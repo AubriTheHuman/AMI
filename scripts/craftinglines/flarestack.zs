@@ -1,0 +1,1 @@
+mods.immersivepetroleum.Flarestack.register(<tag:fluids:forge:gasses/ether_gas>);

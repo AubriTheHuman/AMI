@@ -42,7 +42,7 @@
 		#No comment
 		MeteoriteWorldGen = true
 		#No comment
-		SpawnPressesInMeteorites = true
+		SpawnPressesInMeteorites = false
 		#No comment
 		VillagerTrading = true
 

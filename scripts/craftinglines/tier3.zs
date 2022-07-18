@@ -127,3 +127,12 @@ Recipe.type(Type.ENGINEER)
   .tool(<tag:items:artisantools:type/driver>, 1)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .register();
+
+#slag processing
+
+
+#sap draining/filling
+draining.addRecipe("sap_draining", <item:malum:runewood_log>, <fluid:amicore:solar_sap> * 250, <item:malum:sap_filled_runewood_log>);
+filling.addRecipe("sap_filling_bottle", <item:malum:solar_sap_bottle>, <item:minecraft:glass_bottle>, <fluid:amicore:solar_sap> * 250);
+filling.addRecipe("sap_filling_slime", <item:malum:solar_sapball> * 3, <item:minecraft:slime_ball>, <fluid:amicore:solar_sap> * 250);
+

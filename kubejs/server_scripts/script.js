@@ -589,6 +589,91 @@ onEvent('item.tags', event => {
   event.add('forge:slimeballs/embur', 'byg:embur_gel_ball');
 
 
+  //malum plants
+  event.add('malum:earthen_plants', 'minecraft:wheat');
+  event.add('malum:earthen_plants', 'minecraft:potato');
+  event.add('malum:earthen_plants', 'minecraft:carrot');
+  event.add('malum:earthen_plants', 'minecraft:pumpkin');
+  event.add('malum:earthen_plants', 'minecraft:beetroot');
+  event.add('malum:earthen_plants', 'pamhc2crops:beanitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:chickpeaitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:cornitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:soybeanitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:kaleitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:arrowrootitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:cassavaitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:parsnipitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:radishitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:rutabagaitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:sweetpotatoitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:taroitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:turnipitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:jicamaitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:leekitem');
+  event.add('malum:earthen_plants', 'pamhc2crops:kohlrabiitem');
+
+  event.add('malum:aerous_plants', 'minecraft:apple');
+  event.add('malum:aerous_plants', 'minecraft:chorus_fruit');
+  event.add('malum:aerous_plants', 'minecraft:cocoa_beans');
+  event.add('malum:aerous_plants', 'byg:green_apple');
+  event.add('malum:aerous_plants', 'pamhc2foodcore:sunflowerseedsitem');
+  event.add('malum:aerous_plants', 'pamhc2trees:pecanitem');
+  event.add('malum:aerous_plants', 'pamhc2trees:pistachioitem');
+  event.add('malum:aerous_plants', 'pamhc2trees:hazelnutitem');
+  event.add('malum:aerous_plants', 'pamhc2trees:walnutitem');
+  event.add('malum:aerous_plants', 'pamhc2trees:chestnutitem');
+  event.add('malum:aerous_plants', 'pamhc2crops:peanutitem');
+  event.add('malum:aerous_plants', 'pamhc2trees:almonditem');
+  event.add('malum:aerous_plants', 'pamhc2trees:pinenutitem');
+  event.add('malum:aerous_plants', 'pamhc2crops:coffeebeanitem');
+
+  event.add('malum:aqueous_plants', 'minecraft:melon_slice');
+  event.add('malum:aqueous_plants', 'minecraft:sweet_berries');
+  event.add('malum:aqueous_plants', 'byg:nightshade_berries');
+  event.add('malum:aqueous_plants', 'pamhc2crops:wintersquashitem');
+  event.add('malum:aqueous_plants', 'pamhc2crops:zucchiniitem');
+  event.add('malum:aqueous_plants', 'pamhc2crops:cucumberitem');
+  event.add('malum:aqueous_plants', 'pamhc2crops:tomatoitem');
+  event.add('malum:aqueous_plants', 'pamhc2crops:tomatilloitem');
+  event.add('malum:aqueous_plants', 'pamhc2crops:eggplantitem');
+  event.add('malum:aqueous_plants', 'pamhc2crops:waterchestnutitem');
+  event.add('malum:aqueous_plants', 'pamhc2crops:agaveitem');
+  event.add('malum:aqueous_plants', 'pamhc2crops:cantaloupeitem');
+  event.add('malum:aqueous_plants', 'pamhc2crops:kiwiitem');
+  event.add('malum:aqueous_plants', 'pamhc2crops:bellpepperitem');
+  event.add('malum:aqueous_plants', 'farmersdelight:tomato');
+
+  event.add('malum:infernal_plants', 'minecraft:nether_wart');
+  event.add('malum:infernal_plants', 'byg:crimson_berries');
+  event.add('malum:infernal_plants', 'pamhc2crops:chilipepperitem');
+  event.add('malum:infernal_plants', 'pamhc2crops:garlicitem');
+  event.add('malum:infernal_plants', 'pamhc2crops:scallionitem');
+  event.add('malum:infernal_plants', 'pamhc2crops:onionitem');
+  event.add('malum:infernal_plants', 'pamhc2crops:rhubarbitem');
+  event.add('malum:infernal_plants', 'pamhc2crops:tealeafitem');
+  event.add('malum:infernal_plants', 'pamhc2crops:spiceleafitem');
+  event.add('malum:infernal_plants', 'pamhc2crops:gingeritem');
+  event.add('malum:infernal_plants', 'pamhc2crops:mustardseedsitem');
+
+  event.add('malum:herbal_plants', '#supplementaries:flower_box_plantable');
+  event.add('malum:herbal_plants', 'minecraft:grass');
+  event.add('malum:herbal_plants', 'minecraft:tall_grass');
+  event.add('malum:herbal_plants', 'minecraft:large_fern');
+
+  //malum ether
+  event.add('malum:ether', 'malum:orange_ether');
+  event.add('malum:ether', 'malum:magenta_ether');
+  event.add('malum:ether', 'malum:light_blue_ether');
+  event.add('malum:ether', 'malum:yellow_ether');
+  event.add('malum:ether', 'malum:lime_ether');
+  event.add('malum:ether', 'malum:pink_ether');
+  event.add('malum:ether', 'malum:cyan_ether');
+  event.add('malum:ether', 'malum:purple_ether');
+  event.add('malum:ether', 'malum:blue_ether');
+  event.add('malum:ether', 'malum:brown_ether');
+  event.add('malum:ether', 'malum:green_ether');
+  event.add('malum:ether', 'malum:red_ether');
+
   //run last
   glowings1 = new Array(metalvariants.length);
   glowings2 = new Array(metalvariants.length);

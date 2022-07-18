@@ -1,0 +1,12 @@
+{
+    "type": "immersive_geology:crystalizer",
+    "result": {
+      "item": "malum:electric_spirit"
+    },
+    "fluid_input": {
+      "tag": "forge:distillations/electric_spirit_distillation",
+      "amount": 1000
+    },
+    "time": 400,
+    "energy": 25600
+  }

@@ -385,7 +385,7 @@ onEvent('item.registry', event => {
 	event.create('amicore:magical_scrap').displayName('Magical Scrap').texture("kubejs:item/magical_scrap").group('amicore.materialtab');
 
 	//tiering items
-	event.create('amicore:transmissive_gearbox').displayName('Tranmissive Gearbox').texture("kubejs:item/transmissive_gearbox").group('amicore.intermediatestab');
+	event.create('amicore:transmissive_gearbox').displayName('Transmissive Gearbox').texture("kubejs:item/transmissive_gearbox").group('amicore.intermediatestab');
 	event.create('amicore:v8_engine').displayName('V8 Engine').texture("kubejs:item/v8_engine").group('amicore.intermediatestab');
 	event.create('amicore:mv_circuit').displayName('MV Circuit').texture("kubejs:item/mv_circuit").group('amicore.intermediatestab');
 	event.create('amicore:servo_gearbox').displayName('Servo Gearbox').texture("kubejs:item/servo_gearbox").group('amicore.intermediatestab');
@@ -440,7 +440,7 @@ onEvent('item.registry', event => {
 	event.create('amicore:sulfuric_acid_bottle').displayName('Tempered Bottle of Sulfuric Acid').texture("kubejs:item/tempered_bottle_sulfuric_acid").group('amicore.fluidtab');
 	event.create('amicore:soulfuric_acid_bottle').displayName('Tempered Bottle of Soulfuric Acid').texture("kubejs:item/tempered_bottle_soulfuric_acid").group('amicore.fluidtab');
 	event.create('amicore:spirit_distillation_bottle').displayName('Tempered Bottle of Spirit Distillation').texture("kubejs:item/tempered_bottle_spirit_distillation").group('amicore.fluidtab');
-	event.create('amicore:tiny_sulfur_pile').displayName('Tiny Pile of Sulfur Dust').texture("kubejs:item/tiny_sulfur_pile").texture('kubejs:item/blanks/tiny_dust').color(0, 0xDEE821).group('amicore.petrotab');
+	event.create('amicore:tiny_sulfur_pile').displayName('Tiny Pile of Sulfur Dust').texture('kubejs:item/blanks/tiny_dust').color(0, 0xDEE821).group('amicore.petrotab');
 	event.create('amicore:dirty_sulfur').displayName('Dirty Sulfur').texture("kubejs:item/dirty_sulfur").group('amicore.petrotab');
 	event.create('amicore:limey_weeping_paste').displayName('Limey Weeping Paste').texture("kubejs:item/limey_weeping_paste").group('amicore.biotab');
 	event.create('amicore:multicylinder_phase1').displayName('Partially Assembled Multi Cylinder Engine').texture("kubejs:item/multicylinder_phase1").tooltip("§7Phase 1 Completed").group('amicore.intermediatestab');
@@ -490,28 +490,56 @@ onEvent('item.registry', event => {
 	event.create('amicore:dirty_nitric_filter').displayName('Used Filter with Nitric Particles').parentModel("kubejs:item/dirty_nitric_filter").group('amicore.petrotab');
 	event.create('amicore:mineral_powder').displayName('Mineral Powder').texture("kubejs:item/mineral_powder").group('amicore.petrotab');
 
+	// //hydroxide data/blueprints
+	// event.create('amicore:forge_furnace_upgrade_blueprint').displayName('Blueprint: Forge Furnace Frame').texture("kubejs:item/blanks/blueprint").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:forge_furnace_upgrade_card').displayName('Data Drive: Forge Furnace Frame').texture("kubejs:item/blanks/datacard").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:blast_furnace_upgrade_blueprint').displayName('Blueprint: Reinforced Blast Furnace Brick').texture("kubejs:item/blanks/blueprint").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:blast_furnace_upgrade_card').displayName('Data Drive: Reinforced Blast Furnace Brick').texture("kubejs:item/blanks/datacard").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:fish_tank_blueprint').displayName('Blueprint: Fish Tank Controller').texture("kubejs:item/blanks/blueprint").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:fish_tank_card').displayName('Data Drive: Fish Tank Controller').texture("kubejs:item/blanks/datacard").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:scanner_blueprint').displayName('Blueprint: Scanner').texture("kubejs:item/blanks/blueprint").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:scanner_card').displayName('Data Drive: Scanner').texture("kubejs:item/blanks/datacard").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:me_controller_blueprint').displayName('Blueprint: ME Controller').texture("kubejs:item/blanks/blueprint").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:me_controller_card').displayName('Data Drive: ME Controller').texture("kubejs:item/blanks/datacard").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:garden_cloche_blueprint').displayName('Blueprint: Garden Cloche').texture("kubejs:item/blanks/blueprint").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:garden_cloche_card').displayName('Data Drive: Garden Cloche').texture("kubejs:item/blanks/datacard").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:heavy_machine_block_blueprint').displayName('Blueprint: Heavy Engineering Block').texture("kubejs:item/blanks/blueprint").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:heavy_machine_block_card').displayName('Data Drive: Heavy Engineering Block').texture("kubejs:item/blanks/datacard").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:inscriber_presses_blueprint').displayName('Blueprint: Inscriber Presses').texture("kubejs:item/blanks/blueprint").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:inscriber_presses_card').displayName('Data Drive: Inscriber Presses').texture("kubejs:item/blanks/datacard").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:steel_item_pipe_blueprint').displayName('Blueprint: Steel Item Pipe').texture("kubejs:item/blanks/blueprint").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:steel_item_pipe_card').displayName('Data Drive: Steel Item Pipe').texture("kubejs:item/blanks/datacard").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:manasteel_item_pipe_blueprint').displayName('Blueprint: Manasteel Item Pipe').texture("kubejs:item/blanks/blueprint").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:manasteel_item_pipe_card').displayName('Data Drive: Manasteel Item Pipe').texture("kubejs:item/blanks/datacard").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:aluminum_item_pipe_blueprint').displayName('Blueprint: Aluminum Item Pipe').texture("kubejs:item/blanks/blueprint").color(0, 0xFFFFFF).group('amicore.toolstab');
+	// event.create('amicore:aluminum_item_pipe_card').displayName('Data Drive: Aluminum Item Pipe').texture("kubejs:item/blanks/datacard").color(0, 0xFFFFFF).group('amicore.toolstab');
+
+
 	//hydroxide malum
 	for(let j = 0; j < basicSpirits.length; j++) {
-		event.create('amicore:' + basicSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(0, basicSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + basicSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(0, basicSpirits[j][3]).group('amicore.fluidtab');
-		event.create('amicore:' + basicSpirits[j][0] + '_brew_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Brew').parentModel("kubejs:item/filled_tempered_bottle").color(0, basicSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + basicSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(1, basicSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + basicSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(1, basicSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + basicSpirits[j][0] + '_brew_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Brew').parentModel("kubejs:item/filled_tempered_bottle").color(1, basicSpirits[j][3]).group('amicore.fluidtab');
 
 	}
 	for(let j = 0; j < simpleSpirits.length; j++) {
-		event.create('amicore:' + simpleSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + simpleSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(0, simpleSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + simpleSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + simpleSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(0, simpleSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + simpleSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + simpleSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(1, simpleSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + simpleSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + simpleSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(1, simpleSpirits[j][3]).group('amicore.fluidtab');
 	}
 	for(let j = 0; j < intermediateSpirits.length; j++) {
-		event.create('amicore:' + intermediateSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(0, intermediateSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + intermediateSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(0, intermediateSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + intermediateSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(1, intermediateSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + intermediateSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(1, intermediateSpirits[j][3]).group('amicore.fluidtab');
+		if(j == 3 || j == 6 ) {
+			event.create('amicore:' + intermediateSpirits[j][0] + '_brew_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Brew').parentModel("kubejs:item/filled_tempered_bottle").color(1, intermediateSpirits[j][3]).group('amicore.fluidtab');
+		}
 	}
 	for(let j = 0; j < advancedSpirits.length; j++) {
-		event.create('amicore:' + advancedSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + advancedSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(0, advancedSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + advancedSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + advancedSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(0, advancedSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + advancedSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + advancedSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(1, advancedSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + advancedSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + advancedSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(1, advancedSpirits[j][3]).group('amicore.fluidtab');
 	}
 	for(let j = 0; j < expertSpirits.length; j++) {
-		event.create('amicore:' + expertSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + expertSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(0, expertSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + expertSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + expertSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(0, expertSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + expertSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + expertSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(1, expertSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + expertSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + expertSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(1, expertSpirits[j][3]).group('amicore.fluidtab');
 	}
 
 
@@ -650,6 +678,12 @@ onEvent('fluid.registry', event => {
 	event.create('amicore:spatial_science_juice').textureThin(0x5865A7).bucketColor(0x5865A7).displayName('Spatial Science Juice');
 	event.create('amicore:manaflux_science_juice').textureThin(0x5865A7).bucketColor(0x5865A7).displayName('Manaflux Science Juice');
 
+	//magical matters
+	event.create('amicore:magical_matter_1').textureThin(0xea476f).bucketColor(0xea476f).displayName('Tier 1 Magical Matter');
+	event.create('amicore:magical_matter_2').textureThin(0xde217a).bucketColor(0xde217a).displayName('Tier 2 Magical Matter');
+	event.create('amicore:magical_matter_3').textureThin(0xdf20ad).bucketColor(0xdf20ad).displayName('Tier 3 Magical Matter');
+	event.create('amicore:magical_matter_4').textureThin(0x9f08aa).bucketColor(0x9f08aa).displayName('Tier 4 Magical Matter');
+
 	//blaze age fluids
 	event.create('amicore:red_catalyst').textureThin(0xF88D8C).bucketColor(0xF88D8C).displayName('Red Metal Catalyst Solution');
 	event.create('amicore:green_catalyst').textureThin(0xC3F9AF).bucketColor(0xC3F9AF).displayName('Green Metal Catalyst Solution');
@@ -678,12 +712,10 @@ onEvent('fluid.registry', event => {
 	event.create('amicore:nutrient_paste').textureThin(0x864D09).bucketColor(0x864D09).displayName('Nutrient Paste');
 	event.create('amicore:slag_slurry').textureThick(0x683D03).bucketColor(0x683D03).displayName('Slag Slurry');
 	event.create('amicore:slag_sludge').textureThick(0x5A3C1C).bucketColor(0x5A3C1C).displayName('Slag Sludge');
+	event.create('amicore:ether_gas').textureThin(0xf7f4c9).bucketColor(0xf7f4c9).displayName('Ether Gas');
+	event.create('amicore:solar_sap').textureThick(0xd3c22c).bucketColor(0xd3c22c).displayName('Solar Sap');
 
 	//hydroxide sub malum distillations
-
-
-
-
 	for(let j = 0; j < basicSpirits.length; j++) {
 		event.create('amicore:' + basicSpirits[j][0] + '_spirit_distillation').textureThin(basicSpirits[j][2]).bucketColor(basicSpirits[j][2]).displayName(basicSpirits[j][1] + ' Spirit Distillation');
 		event.create('amicore:' + basicSpirits[j][0] + '_spirit_solution').textureThin(basicSpirits[j][3]).bucketColor(basicSpirits[j][3]).displayName(basicSpirits[j][1] + ' Spirit Solution');
@@ -698,6 +730,9 @@ onEvent('fluid.registry', event => {
 	for(let j = 0; j < intermediateSpirits.length; j++) {
 		event.create('amicore:' + intermediateSpirits[j][0] + '_spirit_distillation').textureThin(intermediateSpirits[j][2]).bucketColor(intermediateSpirits[j][2]).displayName(intermediateSpirits[j][1] + ' Spirit Distillation');
 		event.create('amicore:' + intermediateSpirits[j][0] + '_spirit_solution').textureThin(intermediateSpirits[j][3]).bucketColor(intermediateSpirits[j][3]).displayName(intermediateSpirits[j][1] + ' Spirit Solution');
+		if(j == 3 || j == 6 ) {
+			event.create('amicore:' + intermediateSpirits[j][0] + '_spirit_brew').textureThin(intermediateSpirits[j][3]).bucketColor(intermediateSpirits[j][3]).displayName(intermediateSpirits[j][1] + ' Spirit Brew');
+	}
 	}
 
 	for(let j = 0; j < advancedSpirits.length; j++) {

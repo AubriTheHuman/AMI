@@ -435,9 +435,10 @@
 			icon: "amicore:hydroxide_fuel_bucket"
 			x: 7.5d
 			y: 7.5d
-			shape: "rsquare"
+			shape: "hexagon"
 			description: ["Before you can melt the Pig Iron down into anything useful, you'll need a hotter fuel for your smeltery. To make this you'll need to electrolyze some water and reassemble it into Hydroxide Fuel"]
 			dependencies: ["01501F8B07F3250E"]
+			size: 1.5d
 			id: "73143E1E1F9D39E4"
 			tasks: [{
 				id: "76E9D0983F8DBA47"
@@ -769,22 +770,13 @@
 			}]
 		}
 		{
-			title: "Structure Design"
-			x: -7.5d
-			y: 9.0d
-			shape: "rsquare"
-			description: ["loot some old blueprints, repair them and interpolate to create ie multiblocks"]
-			dependencies: ["2109C9CCA332ADB4"]
-			id: "75AF07B98FED7F3A"
-			tasks: [{
-				id: "7A488947D7007A8C"
-				type: "item"
-				item: "artisanworktables:workstation_designer"
-			}]
-		}
-		{
 			x: 5.0d
 			y: 15.5d
+			description: [
+				"When charged with electricity, the travel staff will teleport the user forward."
+				""
+				"When paired with travel anchors, it can be used to teleport between them."
+			]
 			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "35B01F53FBF40CE3"
 			tasks: [{
@@ -810,7 +802,7 @@
 		{
 			title: "Generating Power"
 			x: -10.5d
-			y: 9.0d
+			y: 10.5d
 			shape: "rsquare"
 			dependencies: [
 				"30F1836DB33DAC9C"
@@ -849,7 +841,7 @@
 		}
 		{
 			x: -9.0d
-			y: 16.5d
+			y: 18.0d
 			shape: "rsquare"
 			dependencies: ["4A367FE45ADB6F6A"]
 			id: "24A3CB461CA643C3"
@@ -861,7 +853,7 @@
 		}
 		{
 			x: -9.0d
-			y: 19.5d
+			y: 21.0d
 			shape: "diamond"
 			dependencies: [
 				"00DC275C3576F25E"
@@ -876,7 +868,7 @@
 		}
 		{
 			x: -9.5d
-			y: 18.0d
+			y: 19.5d
 			shape: "rsquare"
 			dependencies: ["24A3CB461CA643C3"]
 			id: "1C854D694DE6533A"
@@ -888,7 +880,7 @@
 		}
 		{
 			x: -8.5d
-			y: 18.0d
+			y: 19.5d
 			shape: "rsquare"
 			dependencies: ["24A3CB461CA643C3"]
 			id: "00DC275C3576F25E"
@@ -900,14 +892,20 @@
 		}
 		{
 			title: "Ether byproduct"
-			x: 2.0d
+			icon: "malum:yellow_ether"
+			x: 0.5d
 			y: 15.0d
-			dependencies: ["791C79B98ABFF20A"]
+			description: [
+				"When fermenting spirit brews and solutions, small amount of ether are released. The fermenter will automatically collect this gaseous substance, which when injected into a solar sap ball will produce a physical ether bulb."
+				""
+				"These can be placed into the world, or processed further."
+			]
+			dependencies: ["0B0D1698B59ABA8B"]
 			id: "02E86ADDE3676E32"
 			tasks: [{
-				id: "356CB76E2B4F3244"
+				id: "1AB47755F03C6E04"
 				type: "item"
-				item: "malum:orange_ether"
+				item: "malum:yellow_ether"
 			}]
 		}
 		{
@@ -925,7 +923,7 @@
 		{
 			title: "charge crafting"
 			x: -8.5d
-			y: 12.0d
+			y: 13.5d
 			shape: "rsquare"
 			dependencies: ["7A306CE6E06C1BF2"]
 			id: "25C8E3EDDC6205DD"
@@ -939,7 +937,7 @@
 			title: "Tier 3"
 			icon: "amicore:lv_circuit"
 			x: -13.5d
-			y: 9.0d
+			y: 10.5d
 			shape: "gear"
 			dependencies: ["417096C593DECCAF"]
 			id: "320BF2147EF53D41"
@@ -950,7 +948,7 @@
 		}
 		{
 			x: -11.0d
-			y: 12.0d
+			y: 13.5d
 			dependencies: [
 				"29A64CCAFA24BF76"
 				"25C8E3EDDC6205DD"
@@ -984,15 +982,16 @@
 			}]
 		}
 		{
-			title: "MAgical Matter tier 1"
-			x: 2.0d
+			title: "Magical Matter: Tier 1"
+			x: 0.5d
 			y: 16.5d
+			description: ["By dissolving the coalesced ether into water with some catalyst, it can be used to speed up various machines."]
 			dependencies: ["02E86ADDE3676E32"]
 			id: "28C180CB3191D8A3"
 			tasks: [{
-				id: "63A246E1EC19B44A"
+				id: "7A957D8DF2015CD6"
 				type: "item"
-				item: "malum:orange_ether_brazier"
+				item: "amicore:magical_matter_1_bucket"
 			}]
 		}
 		{
@@ -1008,7 +1007,7 @@
 		}
 		{
 			x: -12.0d
-			y: 8.5d
+			y: 10.0d
 			shape: "rsquare"
 			dependencies: ["320BF2147EF53D41"]
 			id: "30F1836DB33DAC9C"
@@ -1030,7 +1029,7 @@
 		}
 		{
 			x: -12.0d
-			y: 9.5d
+			y: 11.0d
 			shape: "rsquare"
 			dependencies: ["320BF2147EF53D41"]
 			id: "6A05CEC87FDE916C"
@@ -1067,7 +1066,7 @@
 		{
 			title: "DC Power"
 			x: -9.0d
-			y: 10.5d
+			y: 12.0d
 			shape: "rsquare"
 			dependencies: ["2109C9CCA332ADB4"]
 			id: "7A306CE6E06C1BF2"
@@ -1092,8 +1091,8 @@
 		{
 			title: "Fish Farming"
 			icon: "minecraft:cod_bucket"
-			x: -6.5d
-			y: 7.5d
+			x: -8.0d
+			y: 9.0d
 			description: [
 				"One component of natural lubricant is fish oil. You can breed fish using water, algae, and nutrient paste."
 				""
@@ -1151,8 +1150,13 @@
 			]
 		}
 		{
-			x: 4.0d
+			x: 3.5d
 			y: 12.0d
+			description: [
+				"By using electric anc mechanical spirits, the brass jetpack can be crafted. By holding it in your offhand and throwing fuels on the ground, it can be fueled."
+				""
+				"Whilst wearing it, the player can repel themselves from the ground. It does not have a hover functionality."
+			]
 			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "0BF186C7EB9FF39F"
 			tasks: [{
@@ -1186,7 +1190,7 @@
 		}
 		{
 			x: -9.0d
-			y: 9.0d
+			y: 10.5d
 			shape: "rsquare"
 			dependencies: ["74926B1EAA6DE913"]
 			id: "2109C9CCA332ADB4"
@@ -1197,55 +1201,46 @@
 			}]
 		}
 		{
+			title: "Bottled Brews"
+			icon: "amicore:aerial_brew_bottle"
 			x: -1.0d
 			y: 13.5d
 			shape: "rsquare"
+			description: [
+				"Once a spirit brew is brewed, it can be bottled."
+				""
+				"A bottled brew cannot be consumed, but rather fermented into a more concentrated form."
+			]
 			dependencies: ["46D2E8A9ADBFEFE9"]
 			id: "10ECFFB40011A166"
-			tasks: [{
-				id: "56F32B2439D3D6CC"
-				type: "item"
-				item: "amicore:soulfuric_acid_bottle"
-			}]
-		}
-		{
-			title: "Catch em' all"
-			x: -7.5d
-			y: 10.5d
-			description: ["find all the patterns"]
-			dependencies: ["75AF07B98FED7F3A"]
-			id: "0FC85C5D6F3938E7"
-			tasks: [{
-				id: "364BC5589A2F98C6"
-				type: "item"
-				item: {
-					id: "tetra:scroll_rolled"
-					Count: 1b
-					tag: {
-						BlockEntityTag: {
-							data: [{
-								intricate: 0b
-								effects: ["tetra:gem_expertise"]
-								material: 0
-								ribbon: "2bffee"
-								glyphs: [
-									14
-									13
-									14
-									15
-								]
-								key: "gem_expertise"
-							}]
-						}
-					}
+			tasks: [
+				{
+					id: "478359FB6BFB237E"
+					type: "item"
+					item: "amicore:earthen_brew_bottle"
 				}
-			}]
+				{
+					id: "58BFFB1122FAA865"
+					type: "item"
+					item: "amicore:infernal_brew_bottle"
+				}
+				{
+					id: "5362324F48BCFEED"
+					type: "item"
+					item: "amicore:aerial_brew_bottle"
+				}
+				{
+					id: "0ADAB7A2EF032849"
+					type: "item"
+					item: "amicore:aquatic_brew_bottle"
+				}
+			]
 		}
 		{
 			title: "Larger Forge Furnace multiblock, faster and easier"
-			x: -8.5d
-			y: 7.5d
-			dependencies: ["75AF07B98FED7F3A"]
+			x: -10.0d
+			y: 9.0d
+			dependencies: ["2109C9CCA332ADB4"]
 			id: "43F76E48837CE281"
 			tasks: [{
 				id: "6DE4BA5459F1F5BC"
@@ -1274,8 +1269,8 @@
 		{
 			title: "Vegetable Oils"
 			icon: "pamhc2trees:oliveitem"
-			x: -5.5d
-			y: 7.5d
+			x: -7.0d
+			y: 9.0d
 			description: [
 				"Avocados and Olives are plants brought here from earth during the initial terraforming attempt. Outside their natural climate, they didnt really survive well. Or so we thought."
 				""
@@ -1361,15 +1356,15 @@
 		{
 			title: "Lubricant"
 			icon: "immersivepetroleum:lubricant_bucket"
-			x: -6.0d
-			y: 9.0d
+			x: -7.5d
+			y: 10.5d
 			shape: "rsquare"
 			description: [
 				"Making an improved mechanism for machines will require removing as much friction as possible. The best way to do that is lubrication."
 				""
 				"During travels you've come across almost every other resource seen on earth, but one that hasnt shown its ugly face is oil. This does make sense, this world is newly terraformed, and hasnt had time to develope oil. No worries, natural oils can stand in its place."
 			]
-			dependencies: ["75AF07B98FED7F3A"]
+			dependencies: ["2109C9CCA332ADB4"]
 			id: "19F01413A00BB938"
 			tasks: [{
 				id: "0B6115860ADAFA4D"
@@ -1378,28 +1373,28 @@
 			}]
 		}
 		{
-			title: "Machine Cores"
+			title: "Heavy Machinery"
+			icon: "immersiveengineering:heavy_engineering"
 			x: -4.5d
 			y: 10.5d
 			shape: "rsquare"
 			description: [
-				"All IE machines require something called a machine core. These cores are machine specific and require a repaired blueprint for each."
+				"The IE Heavy Engineering block requires the creation of steel. As such many machines are gated behind it."
 				""
-				"Some other machines require blueprints, but once you have enough blueprints to make most basic level machines, feel free to continue."
+				"On top of this, the block requires a blueprint to craft, one of few."
 				""
-				"The path splits into a few ways from here, some necessary and some optional."
+				""
 			]
 			dependencies: ["4065515873D37193"]
 			id: "67D424D0BBB1CAB3"
 			tasks: [{
-				id: "5BA61A0819519776"
-				type: "item"
-				item: "appliedenergistics2:annihilation_core"
+				id: "04DFC0D8F47C92A7"
+				type: "checkmark"
 			}]
 		}
 		{
 			x: -9.5d
-			y: 13.5d
+			y: 15.0d
 			shape: "rsquare"
 			dependencies: ["25C8E3EDDC6205DD"]
 			id: "2D6C8AF17E94B000"
@@ -1411,7 +1406,7 @@
 		}
 		{
 			x: -9.5d
-			y: 15.0d
+			y: 16.5d
 			shape: "rsquare"
 			dependencies: [
 				"2D6C8AF17E94B000"
@@ -1426,28 +1421,56 @@
 		}
 		{
 			title: "Spirit combination"
-			x: 1.0d
+			icon: "malum:magnetic_spirit"
+			x: 2.0d
 			y: 13.5d
 			shape: "rsquare"
-			dependencies: ["54426CC36A7773F3"]
+			description: [
+				"Spirit distillations can be mixed together to form higher tier spirit solutions in a 1 + 1 = 2 ratio."
+				""
+				"These new solutions can be fermented again to create the more advanced distillation."
+				""
+				"While there exists 5 tiers of spirits, only the second and third tiers can be created this way. The fourth and fifth require much more advanced methods of synthesis."
+				""
+				"Upon finishing fermentation, drain the distillation from the bottle and crystalize it with a crystalizer machine."
+				""
+				"For a complete guide on the tree of spirits, check out the AMI Discord."
+			]
+			dependencies: ["0B0D1698B59ABA8B"]
 			id: "59904ABFCBF022B8"
 			tasks: [{
-				id: "38BD915C31A14583"
+				id: "7BC06F3A528C46C3"
 				type: "item"
-				item: "malum:magnetic_spirit"
+				title: "Any #malum:spirits/intermediate_spirits"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "malum:spirits/intermediate_spirits"
+					}
+				}
 			}]
 		}
 		{
 			title: "Other sources of basic Spirits"
+			icon: "malum:aerial_spirit"
 			x: -2.5d
 			y: 13.5d
 			shape: "rsquare"
-			dependencies: ["67D424D0BBB1CAB3"]
+			description: [
+				"The spirits of living creatures are limited in quantity. They are only as plentiful as the beings from which they come."
+				""
+				"However with the discovery of the runewood tree, a new source of spirits can be utilized."
+				""
+				"Animals and Monsters are not the only source of spirits in the world, plants can be utilized to brew a concentrated solution of the desired base spirit. Four types are viable for extraction."
+				""
+				"The extraction process is detailed in the subsequent quests."
+			]
+			dependencies: ["1039AF1E0BB34816"]
 			id: "46D2E8A9ADBFEFE9"
 			tasks: [{
-				id: "10D76B94194FB352"
-				type: "item"
-				item: "malum:aerial_spirit"
+				id: "3BEE37131A9BA0B2"
+				type: "checkmark"
 			}]
 		}
 		{
@@ -1464,7 +1487,7 @@
 		}
 		{
 			x: -9.5d
-			y: 12.0d
+			y: 13.5d
 			dependencies: ["7A306CE6E06C1BF2"]
 			id: "29A64CCAFA24BF76"
 			tasks: [{
@@ -1474,8 +1497,8 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: 7.5d
+			x: -7.5d
+			y: 12.0d
 			dependencies: ["2109C9CCA332ADB4"]
 			id: "1625E205BF8163A5"
 			tasks: [
@@ -1494,7 +1517,7 @@
 		{
 			title: "mixer"
 			x: -8.5d
-			y: 22.0d
+			y: 23.5d
 			id: "7F433BA0BC5F9CCF"
 			tasks: [{
 				id: "5EB6E1EED8A81536"
@@ -1503,21 +1526,9 @@
 			}]
 		}
 		{
-			title: "squeezer"
-			x: -7.0d
-			y: 13.0d
-			dependencies: ["4065515873D37193"]
-			id: "3DEAEE6BA7D76A63"
-			tasks: [{
-				id: "382BE5E46C90953A"
-				type: "item"
-				item: "immersiveengineering:light_engineering"
-			}]
-		}
-		{
 			title: "press"
 			x: -7.5d
-			y: 21.0d
+			y: 22.5d
 			id: "3B1B38B745B0BEB3"
 			tasks: [{
 				id: "22BAE183FBD73A67"
@@ -1528,7 +1539,7 @@
 		{
 			title: "crusher"
 			x: -7.5d
-			y: 22.0d
+			y: 23.5d
 			id: "70CE33F74B6C8230"
 			tasks: [{
 				id: "2363F2A26BB91257"
@@ -1539,7 +1550,7 @@
 		{
 			title: "Odd Ones Out"
 			icon: "immersiveengineering:light_engineering"
-			x: 0.5d
+			x: 2.0d
 			y: 18.0d
 			description: ["Why cant you accelerate the Bottling machine, Assembler, or sawmill? Simple, they arent meant to be used. Two of them flat out have no recipes. Consider using their create alternatives. "]
 			dependencies: ["23543BA294618103"]
@@ -1551,22 +1562,9 @@
 			}]
 		}
 		{
-			title: "fermenter"
-			x: 0.0d
-			y: 13.5d
-			shape: "rsquare"
-			dependencies: ["10ECFFB40011A166"]
-			id: "54426CC36A7773F3"
-			tasks: [{
-				id: "70CD02CF5425B424"
-				type: "item"
-				item: "immersiveengineering:light_engineering"
-			}]
-		}
-		{
 			title: "auto workbench"
 			x: -7.5d
-			y: 23.0d
+			y: 24.5d
 			id: "21F334CCBBF85423"
 			tasks: [{
 				id: "0E53584B6147E0B2"
@@ -1618,9 +1616,14 @@
 			}]
 		}
 		{
-			title: "magical matter on non fluid machines"
-			x: 0.5d
+			title: "Magical Matter Injection"
+			x: 2.0d
 			y: 16.5d
+			description: [
+				"Attaching the Matter Injector to specific locations on Immersive machines, they can be sped up slightly, reducing the required number of machines."
+				""
+				"Tier 1 matter grants a 25% speed boost."
+			]
 			dependencies: ["28C180CB3191D8A3"]
 			id: "23543BA294618103"
 			tasks: [{
@@ -1652,9 +1655,9 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: 7.5d
-			dependencies: ["75AF07B98FED7F3A"]
+			x: -9.0d
+			y: 9.0d
+			dependencies: ["2109C9CCA332ADB4"]
 			id: "0FB961C128D781C2"
 			tasks: [{
 				id: "211EC80F77AFFBBE"
@@ -1664,7 +1667,7 @@
 		}
 		{
 			x: -10.5d
-			y: 10.5d
+			y: 12.0d
 			dependencies: ["74926B1EAA6DE913"]
 			id: "348E526A5410FF1C"
 			tasks: [{
@@ -1674,8 +1677,8 @@
 			}]
 		}
 		{
-			x: -10.5d
-			y: 7.5d
+			x: -11.0d
+			y: 9.0d
 			dependencies: ["74926B1EAA6DE913"]
 			id: "00AEFCC990F946C6"
 			tasks: [
@@ -1698,7 +1701,7 @@
 		}
 		{
 			x: -8.5d
-			y: 13.5d
+			y: 15.0d
 			shape: "rsquare"
 			dependencies: ["25C8E3EDDC6205DD"]
 			id: "0C2C65ED4A23593B"
@@ -1711,11 +1714,8 @@
 		{
 			title: "crystal purification"
 			x: -7.0d
-			y: 14.5d
-			dependencies: [
-				"3DEAEE6BA7D76A63"
-				"0C2C65ED4A23593B"
-			]
+			y: 16.0d
+			dependencies: ["0C2C65ED4A23593B"]
 			id: "6032F7DAC5916BEC"
 			tasks: [{
 				id: "77839BE8AB060B58"
@@ -1726,7 +1726,7 @@
 		{
 			title: "Other ways of storing item"
 			x: -5.5d
-			y: 16.5d
+			y: 18.0d
 			dependencies: [
 				"64BF4A59FA059529"
 				"0202675F9D6CE17F"
@@ -1740,7 +1740,7 @@
 		}
 		{
 			x: -7.0d
-			y: 16.5d
+			y: 18.0d
 			shape: "rsquare"
 			dependencies: ["24A3CB461CA643C3"]
 			id: "64BF4A59FA059529"
@@ -1752,7 +1752,7 @@
 		}
 		{
 			x: -11.0d
-			y: 16.5d
+			y: 18.0d
 			dependencies: ["24A3CB461CA643C3"]
 			id: "31880519D349F2F4"
 			tasks: [{
@@ -1763,7 +1763,7 @@
 		}
 		{
 			x: -10.5d
-			y: 15.5d
+			y: 17.0d
 			dependencies: ["24A3CB461CA643C3"]
 			id: "66B9E2AEA550C371"
 			tasks: [{
@@ -1774,7 +1774,7 @@
 		}
 		{
 			x: -10.5d
-			y: 17.5d
+			y: 19.0d
 			dependencies: ["24A3CB461CA643C3"]
 			id: "078626BC8D9A0D13"
 			tasks: [{
@@ -1785,7 +1785,7 @@
 		}
 		{
 			x: -7.5d
-			y: 17.5d
+			y: 19.0d
 			dependencies: ["24A3CB461CA643C3"]
 			id: "0EF42F97577F1F66"
 			tasks: [{
@@ -1797,7 +1797,7 @@
 		{
 			title: "Specialized Circuits"
 			x: -6.0d
-			y: 15.5d
+			y: 17.0d
 			dependencies: ["2BB8A3D81484DC0C"]
 			id: "0202675F9D6CE17F"
 			tasks: [{
@@ -1808,7 +1808,7 @@
 		}
 		{
 			x: -8.5d
-			y: 15.0d
+			y: 16.5d
 			dependencies: ["0C2C65ED4A23593B"]
 			id: "6D51A4693BFD8151"
 			tasks: [{
@@ -1819,7 +1819,7 @@
 		}
 		{
 			x: -7.5d
-			y: 15.5d
+			y: 17.0d
 			dependencies: [
 				"6D51A4693BFD8151"
 				"0202675F9D6CE17F"
@@ -1834,7 +1834,7 @@
 		{
 			title: "Nitric waste water"
 			x: -6.0d
-			y: 13.5d
+			y: 15.0d
 			dependencies: ["6032F7DAC5916BEC"]
 			id: "651FEEB0168DD592"
 			tasks: [{
@@ -1845,7 +1845,7 @@
 		}
 		{
 			x: -6.0d
-			y: 17.5d
+			y: 19.0d
 			dependencies: ["64BF4A59FA059529"]
 			id: "55C752593836249C"
 			tasks: [{
@@ -1855,36 +1855,9 @@
 			}]
 		}
 		{
-			title: "Welding"
-			x: -6.0d
-			y: 11.5d
-			description: ["A coil of wire used for welding"]
-			dependencies: ["4065515873D37193"]
-			id: "1B8E57A538E8A809"
-			tasks: [
-				{
-					id: "1FD77E00A408041E"
-					type: "item"
-					item: "amicore:magnesium_wire"
-				}
-				{
-					id: "589ED3960B3E1432"
-					type: "item"
-					title: "Deployer Welder"
-					item: {
-						id: "artisantools:solderer_diamond"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
-		}
-		{
 			title: "Nickel Wire Coils"
 			x: -12.0d
-			y: 11.0d
+			y: 12.5d
 			dependencies: ["6A05CEC87FDE916C"]
 			id: "2CA66099ED95B688"
 			tasks: [{
@@ -1935,6 +1908,11 @@
 		{
 			x: 6.5d
 			y: 15.5d
+			description: [
+				"When looking at a travel anchor whilst standing on another, you can shift to travel there instantly. The travel staff also allows this while off the anchor."
+				""
+				"Can also be renamed."
+			]
 			dependencies: ["35B01F53FBF40CE3"]
 			id: "4B8323C74C074210"
 			tasks: [{
@@ -1946,6 +1924,7 @@
 		{
 			x: 6.5d
 			y: 16.5d
+			description: ["By shift+right clicking on an ender chest, it can be bound to it allowing acess from your inventory. Effective for dumping items in an ME system remotely."]
 			dependencies: ["35B01F53FBF40CE3"]
 			id: "5CA6F42DA0FB4D9D"
 			tasks: [{
@@ -1957,6 +1936,7 @@
 		{
 			x: -2.5d
 			y: 16.5d
+			description: ["The flarestack can be used to burn off excess gasses and some flammable liquids that are unneeded or excess."]
 			dependencies: ["46D2E8A9ADBFEFE9"]
 			id: "76E0D5CB0974F272"
 			tasks: [{
@@ -1967,161 +1947,67 @@
 		}
 		{
 			title: "Earthy Plants"
+			icon: "malum:earthen_spirit"
 			x: -3.0d
 			y: 15.0d
 			dependencies: ["46D2E8A9ADBFEFE9"]
 			id: "5967F6E9E19F62BD"
-			tasks: [
-				{
-					id: "7063423C4B8115E4"
-					type: "item"
-					item: "minecraft:wheat"
+			tasks: [{
+				id: "7063423C4B8115E4"
+				type: "item"
+				title: "Any #malum:earthen_plants"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "malum:earthen_plants"
+					}
 				}
-				{
-					id: "4F0CBA4481B780D0"
-					type: "item"
-					item: "pamhc2crops:beanitem"
-				}
-				{
-					id: "034410CCA9E4605D"
-					type: "item"
-					item: "pamhc2crops:chickpeaitem"
-				}
-				{
-					id: "15885E53F7746F98"
-					type: "item"
-					item: "pamhc2crops:cornitem"
-				}
-				{
-					id: "4D75578BFFBC5089"
-					type: "item"
-					item: "pamhc2crops:soybeanitem"
-				}
-				{
-					id: "6AFB868098E08CE0"
-					type: "item"
-					item: "pamhc2crops:kaleitem"
-				}
-				{
-					id: "144F6BCC1E06470F"
-					type: "item"
-					item: "pamhc2crops:arrowrootitem"
-				}
-				{
-					id: "2E237FE58728B7AA"
-					type: "item"
-					item: "pamhc2crops:cassavaitem"
-				}
-				{
-					id: "3EEA44C022798141"
-					type: "item"
-					item: "pamhc2crops:onionitem"
-				}
-				{
-					id: "1CF2EEB70C37B5DC"
-					type: "item"
-					item: "pamhc2crops:parsnipitem"
-				}
-				{
-					id: "1498AD46D0A34242"
-					type: "item"
-					item: "pamhc2crops:peanutitem"
-				}
-				{
-					id: "10AA9BED3D5495E4"
-					type: "item"
-					item: "pamhc2crops:radishitem"
-				}
-				{
-					id: "2B120ACDF84AD961"
-					type: "item"
-					item: "pamhc2crops:rutabagaitem"
-				}
-				{
-					id: "0E738241296E4B09"
-					type: "item"
-					item: "pamhc2crops:sweetpotatoitem"
-				}
-				{
-					id: "5B75C83395D6E4E6"
-					type: "item"
-					item: "pamhc2crops:taroitem"
-				}
-				{
-					id: "3FF9FED8CC6A1EDA"
-					type: "item"
-					item: "pamhc2crops:turnipitem"
-				}
-			]
+			}]
 		}
 		{
 			title: "Water rich plants"
+			icon: "malum:aquatic_spirit"
 			x: -2.0d
 			y: 15.0d
 			dependencies: ["46D2E8A9ADBFEFE9"]
 			id: "16E7613684068A09"
-			tasks: [
-				{
-					id: "4B4E511DE8BC34D6"
-					type: "item"
-					item: "pamhc2crops:lettuceitem"
+			tasks: [{
+				id: "06E14BE4CBE0A6A5"
+				type: "item"
+				title: "Any #malum:aqueous_plants"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "malum:aqueous_plants"
+					}
 				}
-				{
-					id: "3DB3658AD76736E9"
-					type: "item"
-					item: "pamhc2crops:cranberryitem"
-				}
-				{
-					id: "4E56F8B6E99A0CBE"
-					type: "item"
-					item: "pamhc2crops:riceitem"
-				}
-				{
-					id: "2718FC24C3A6C7DF"
-					type: "item"
-					item: "pamhc2crops:tomatoitem"
-				}
-				{
-					id: "06E14BE4CBE0A6A5"
-					type: "item"
-					item: "pamhc2crops:cucumberitem"
-				}
-				{
-					id: "58D3CC0AA7E0AC89"
-					type: "item"
-					item: "pamhc2crops:zucchiniitem"
-				}
-				{
-					id: "50553D4393E6289C"
-					type: "item"
-					item: "pamhc2crops:celeryitem"
-				}
-				{
-					id: "53F8D68F76DA35B6"
-					type: "item"
-					item: "pamhc2crops:rhubarbitem"
-				}
-				{
-					id: "2EA4A5A3CC7C4CA8"
-					type: "item"
-					item: "pamhc2crops:waterchestnutitem"
-				}
-			]
+			}]
 		}
 		{
 			title: "Flaming plants"
+			icon: "malum:infernal_spirit"
 			x: -1.0d
 			y: 14.5d
 			dependencies: ["46D2E8A9ADBFEFE9"]
 			id: "3258C0DD3940C278"
 			tasks: [{
-				id: "1ADF3B43F17D65B1"
+				id: "7798806C4F48F70C"
 				type: "item"
-				item: "pamhc2crops:cactusfruititem"
+				title: "Any #malum:infernal_plants"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "malum:infernal_plants"
+					}
+				}
 			}]
 		}
 		{
 			title: "Airous plants"
+			icon: "malum:aerial_spirit"
 			x: -4.0d
 			y: 14.5d
 			dependencies: ["46D2E8A9ADBFEFE9"]
@@ -2129,14 +2015,27 @@
 			tasks: [{
 				id: "3A3702884376456A"
 				type: "item"
-				item: "pamhc2trees:almonditem"
+				title: "Any #malum:aerous_plants"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "malum:aerous_plants"
+					}
+				}
 			}]
 		}
 		{
+			title: "Complicating the Altar"
 			x: 3.5d
 			y: 13.5d
 			shape: "rsquare"
-			dependencies: ["791C79B98ABFF20A"]
+			description: [
+				"What to do with these new spirits? Well the spirit altar has several recipes to utilize them!"
+				""
+				"If you didnt craft one in tier 2, go ahead and make one. Otherwise just go pick yours up and put it back down."
+			]
+			dependencies: ["59904ABFCBF022B8"]
 			id: "60AFE3DA3E0BF2D6"
 			tasks: [{
 				id: "44827872C3515269"
@@ -2145,49 +2044,15 @@
 			}]
 		}
 		{
-			title: "Chemical crystalizer"
-			x: 2.0d
-			y: 13.5d
-			shape: "rsquare"
-			dependencies: ["59904ABFCBF022B8"]
-			id: "791C79B98ABFF20A"
-			tasks: [{
-				id: "6690F30855C2C727"
-				type: "item"
-				item: "immersiveengineering:light_engineering"
-			}]
-		}
-		{
-			x: 3.0d
-			y: 12.0d
+			x: 3.5d
+			y: 15.0d
+			description: ["The spirit altar can be used to craft a mega torch, which when placed will prevent all mob spawns within a 32 block radius."]
 			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "330F0984AAF36A56"
 			tasks: [{
 				id: "799F1FDEE14AB362"
 				type: "item"
 				item: "torchmaster:megatorch"
-			}]
-		}
-		{
-			x: 3.5d
-			y: 16.5d
-			dependencies: ["1571EE2AB2F3BB93"]
-			id: "59D577D371C2D392"
-			tasks: [{
-				id: "47AA0FC2FDCF1588"
-				type: "item"
-				item: "malum:rune_table"
-			}]
-		}
-		{
-			x: 3.5d
-			y: 15.0d
-			dependencies: ["60AFE3DA3E0BF2D6"]
-			id: "1571EE2AB2F3BB93"
-			tasks: [{
-				id: "6911E00D5FD69EDF"
-				type: "item"
-				item: "malum:totem_base"
 			}]
 		}
 		{
@@ -2283,7 +2148,7 @@
 		}
 		{
 			x: -5.5d
-			y: 14.5d
+			y: 16.0d
 			dependencies: ["6032F7DAC5916BEC"]
 			id: "2BB8A3D81484DC0C"
 			tasks: [{
@@ -2294,7 +2159,7 @@
 		}
 		{
 			x: -4.5d
-			y: 15.5d
+			y: 17.0d
 			dependencies: ["0202675F9D6CE17F"]
 			id: "3F1B898A18EC966E"
 			tasks: [{
@@ -2306,7 +2171,7 @@
 		{
 			title: "fermenter"
 			x: -8.5d
-			y: 21.0d
+			y: 22.5d
 			id: "2CEBEE4AEC25467B"
 			tasks: [{
 				id: "56E80396E98116E8"
@@ -2317,7 +2182,7 @@
 		{
 			title: "crystalizer"
 			x: -10.0d
-			y: 21.5d
+			y: 23.0d
 			id: "3EC0925258E4F03E"
 			tasks: [{
 				id: "3E6AFDC6AB215BA3"
@@ -2328,7 +2193,7 @@
 		{
 			title: "squeezer"
 			x: -8.5d
-			y: 23.0d
+			y: 24.5d
 			id: "674543D7ED865B58"
 			tasks: [{
 				id: "429E06EA0FB6A53D"
@@ -2394,7 +2259,7 @@
 			x: 6.5d
 			y: 13.5d
 			shape: "rsquare"
-			description: ["needs steel"]
+			description: ["Now that you've made an inscriber, it needs a pattern to inscribe with. There are "]
 			dependencies: ["4B4A3E6B2307C0F3"]
 			id: "3DFB9E99A226F3A7"
 			tasks: [{
@@ -2497,14 +2362,21 @@
 			}]
 		}
 		{
+			title: "Crystal Growth Accellerator"
 			x: 5.0d
 			y: 14.5d
+			description: [
+				"While already requiring an MV circuit to create. The Crystal Growth Acellerator will speed up the growth of pure cystal seeds significantly. Up to 6 can effect the growth, by placing on all sides of the water."
+				""
+				"But realistically only 5 can be used."
+			]
 			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "79A7BAE72F40203D"
 			tasks: [{
 				id: "570114D39A0F8A27"
 				type: "item"
 				item: "appliedenergistics2:quartz_growth_accelerator"
+				count: 5L
 			}]
 		}
 		{
@@ -2544,8 +2416,10 @@
 			}]
 		}
 		{
-			x: 0.5d
+			title: "Alternate Hex Ash source"
+			x: 2.0d
 			y: 15.0d
+			description: ["Ether gas can also be crystalized into hex ash as an alternate source of it."]
 			dependencies: ["02E86ADDE3676E32"]
 			id: "6E1FBD630FCE3E50"
 			tasks: [{
@@ -2578,8 +2452,8 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: 6.0d
+			x: -8.0d
+			y: 8.0d
 			description: ["Once the fish are consistently breeding, you can skim some off the surface for oil extraction. By milling or crushing the fish, you are left with a fish meal. Draining will yield 100mB of fish oil. It can also be squeezed later for 125mB instead."]
 			dependencies: ["020277435F5E44E1"]
 			id: "1FAEF4F8BB6334B7"
@@ -2591,8 +2465,8 @@
 		}
 		{
 			title: "Plant Oil"
-			x: -5.5d
-			y: 6.0d
+			x: -7.0d
+			y: 8.0d
 			description: [
 				"In order to make use of either avocado or olive oils, they first need to be crushed or milled. Once pasted, the oil can be extracted by draining or squeezing."
 				""
@@ -2609,8 +2483,8 @@
 		{
 			title: "Lubriucant"
 			icon: "immersivepetroleum:lubricant_bucket"
-			x: -6.0d
-			y: 4.5d
+			x: -7.5d
+			y: 6.5d
 			description: ["By mixing together 1 part fish oil, and 1 part vegetable oil, lubricant is produced."]
 			dependencies: [
 				"1FAEF4F8BB6334B7"
@@ -2669,6 +2543,86 @@
 				type: "item"
 				item: "amicore:mineral_powder"
 			}]
+		}
+		{
+			title: "Runewood Trees"
+			x: -4.0d
+			y: 12.5d
+			shape: "rsquare"
+			description: ["The Runewood tree is rich with spiritual energy, especially that of the sun. As it collects power from the world, a thick and slimy sap is created to coat its leaves. This solar sap can be harvested from them for more specific applications of spirit magic."]
+			dependencies: ["67D424D0BBB1CAB3"]
+			id: "1039AF1E0BB34816"
+			tasks: [{
+				id: "22D204998B4E4292"
+				type: "item"
+				item: "malum:runewood_sapling"
+			}]
+		}
+		{
+			title: "Spirit Solutions"
+			icon: "amicore:aerial_solution_bottle"
+			x: 0.5d
+			y: 13.5d
+			shape: "rsquare"
+			description: [
+				"Solutions are the product of fermenting brews. However they are also made by directly dissolving specific spirits."
+				""
+				"Unlike the generic spirit distillation from the previous tier, this requires a small amount of sugar to catalyze future raeactions."
+				""
+				"This solution can then be fermented for distillation, which can be used for a whole host of purposes."
+			]
+			dependencies: ["10ECFFB40011A166"]
+			id: "0B0D1698B59ABA8B"
+			tasks: [
+				{
+					id: "5667313B2A0BE2BB"
+					type: "item"
+					item: "amicore:earthen_solution_bottle"
+				}
+				{
+					id: "62B07293E92FFAA5"
+					type: "item"
+					item: "amicore:infernal_solution_bottle"
+				}
+				{
+					id: "69AAB5EAFC8FD65E"
+					type: "item"
+					item: "amicore:aerial_solution_bottle"
+					consume_items: false
+				}
+				{
+					id: "40D00FF564FF2664"
+					type: "item"
+					item: "amicore:aquatic_solution_bottle"
+				}
+			]
+		}
+		{
+			title: "Broken Rules"
+			icon: "malum:tempestuous_spirit"
+			x: 2.0d
+			y: 12.0d
+			description: [
+				"Generally speaking, tier 3 spirits can only be gathered through combining lower tier spirits and distilling them. However there exist 2 exceptions."
+				""
+				"Tempestuous spirits can be directly brewed from prismarine crystals, and processed like any basic spirit to create the distillation. Tempestuous solution also takes 3 types of spirits to combine, but retains the volume making 1+1+1=3 in amount."
+				""
+				"Herbal spirits can be brewed from most inedible plants, but of course not all of them. (tag: #malum:herbal_plants)"
+			]
+			dependencies: ["59904ABFCBF022B8"]
+			id: "02D1024388C34D9E"
+			tasks: [
+				{
+					id: "74AF678CEDD20495"
+					type: "item"
+					item: "malum:herbal_spirit"
+				}
+				{
+					id: "23C02D7D83A2565B"
+					type: "item"
+					item: "malum:tempestuous_spirit"
+				}
+			]
 		}
 	]
 }

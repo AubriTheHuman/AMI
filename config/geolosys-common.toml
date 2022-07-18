@@ -16,10 +16,9 @@
 	#Maximum samples that can generate with each pluton within a chunk
 	#Range: 1 ~ 256
 	maxSamplesPerChunk = 7
-	#The upper limit of RNG for generating any pluton in a given chunk.
-	#Larger values indicate further distance between plutons.
-	#Range: > 1
-	chunkSkipChance = 10
+	#The percentage chance that a given chunk will be devoid of any Geolosys plutons (higher means more space between plutons)
+	#Range: 0.0 ~ 1.0
+	chunkSkipChance = 1.0
 	#A list of <modid:block> that samples may not be placed on
 	samplePlacementBlacklist = ["minecraft:ice", "minecraft:packed_ice", "minecraft:bedrock"]
 	#Enable the prospector's pickaxe
@@ -37,6 +36,8 @@
 	proPickDiameter = 10
 	#Give players a Field Manual if they haven't gotten one
 	giveManual = false
+	#Whether or not Samples randomly tick (like crops). This can be bad for performance but fixes waterlogging issues on worldgen
+	shouldSamplesTick = true
 
 #Mod-Compat Settings
 [compat]
