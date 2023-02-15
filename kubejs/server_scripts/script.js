@@ -490,28 +490,6 @@ onEvent('item.tags', event => {
   event.remove('forge:nuggets', 'advancedrocketry:nuggettitaniumiridium');
   event.remove('forge:nuggets/titaniumiridium', 'advancedrocketry:nuggettitaniumiridium');
 
-
-  //ccbp
-  event.remove('forge:ingots', 'cavesandcliffs:copper_ingot');
-  event.remove('forge:ingots/copper', 'cavesandcliffs:copper_ingot');
-  event.remove('forge:storage_blocks', 'cavesandcliffs:copper_block');
-  event.remove('forge:storage_blocks/copper', 'cavesandcliffs:copper_block');
-  event.remove('forge:ores', 'cavesandcliffs:copper_ore');
-  event.remove('forge:ores/copper', 'cavesandcliffs:copper_ore');
-  event.remove('forge:ores', 'cavesandcliffs:deepslate_copper_ore');
-  event.remove('forge:ores/copper', 'cavesandcliffs:deepslate_copper_ore');
-  event.remove('forge:ores', 'cavesandcliffs:deepslate_gold_ore');
-  event.remove('forge:ores/gold', 'cavesandcliffs:deepslate_gold_ore');
-  event.remove('tconstruct:chrysophilite_ores', 'cavesandcliffs:deepslate_gold_ore');
-  event.remove('forge:ores', 'cavesandcliffs:raw_iron');
-  event.remove('forge:ores/iron', 'cavesandcliffs:raw_iron');
-  event.remove('forge:ores', 'cavesandcliffs:raw_copper');
-  event.remove('forge:ores/copper', 'cavesandcliffs:raw_copper');
-  event.remove('forge:ores', 'cavesandcliffs:raw_gold');
-  event.remove('forge:ores/gold', 'cavesandcliffs:raw_gold');
-  event.remove('forge:ores', 'cavesandcliffs:deepslate_iron_ore');
-  event.remove('forge:ores/iron', 'cavesandcliffs:deepslate_iron_ore');
-
   //steampowered
   event.remove('steampowered:plates', 'steampowered:bronze_sheet');
   event.remove('steampowered:plates/bronze', 'steampowered:bronze_sheet');
@@ -694,8 +672,8 @@ onEvent('item.tags', event => {
 	// }
 
   
-  console.log("Recommended to restart server, all malum recipes are duplicated on reload");
-  // event.server.tell("Recommended to restart server, all malum recipes are duplicated on reload");
+  // console.log("§c§lRecommended to restart server, all malum recipes are duplicated on reload");
+  // event.server.tell("§c§lRecommended to restart server, all malum recipes are duplicated on reload");
 
 })
 

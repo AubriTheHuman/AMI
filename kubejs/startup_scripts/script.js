@@ -517,29 +517,29 @@ onEvent('item.registry', event => {
 
 	//hydroxide malum
 	for(let j = 0; j < basicSpirits.length; j++) {
-		event.create('amicore:' + basicSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(1, basicSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + basicSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(1, basicSpirits[j][3]).group('amicore.fluidtab');
-		event.create('amicore:' + basicSpirits[j][0] + '_brew_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Brew').parentModel("kubejs:item/filled_tempered_bottle").color(1, basicSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + basicSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/tempered_bottle").color(1, basicSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + basicSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/tempered_bottle").color(1, basicSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + basicSpirits[j][0] + '_brew_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Brew').parentModel("kubejs:item/tempered_bottle").color(1, basicSpirits[j][3]).group('amicore.fluidtab');
 
 	}
 	for(let j = 0; j < simpleSpirits.length; j++) {
-		event.create('amicore:' + simpleSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + simpleSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(1, simpleSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + simpleSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + simpleSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(1, simpleSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + simpleSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + simpleSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/tempered_bottle").color(1, simpleSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + simpleSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + simpleSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/tempered_bottle").color(1, simpleSpirits[j][3]).group('amicore.fluidtab');
 	}
 	for(let j = 0; j < intermediateSpirits.length; j++) {
-		event.create('amicore:' + intermediateSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(1, intermediateSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + intermediateSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(1, intermediateSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + intermediateSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/tempered_bottle").color(1, intermediateSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + intermediateSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/tempered_bottle").color(1, intermediateSpirits[j][3]).group('amicore.fluidtab');
 		if(j == 3 || j == 6 ) {
-			event.create('amicore:' + intermediateSpirits[j][0] + '_brew_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Brew').parentModel("kubejs:item/filled_tempered_bottle").color(1, intermediateSpirits[j][3]).group('amicore.fluidtab');
+			event.create('amicore:' + intermediateSpirits[j][0] + '_brew_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Brew').parentModel("kubejs:item/tempered_bottle").color(1, intermediateSpirits[j][3]).group('amicore.fluidtab');
 		}
 	}
 	for(let j = 0; j < advancedSpirits.length; j++) {
-		event.create('amicore:' + advancedSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + advancedSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(1, advancedSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + advancedSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + advancedSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(1, advancedSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + advancedSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + advancedSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/tempered_bottle").color(1, advancedSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + advancedSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + advancedSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/tempered_bottle").color(1, advancedSpirits[j][3]).group('amicore.fluidtab');
 	}
 	for(let j = 0; j < expertSpirits.length; j++) {
-		event.create('amicore:' + expertSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + expertSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").color(1, expertSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + expertSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + expertSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").color(1, expertSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + expertSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + expertSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/tempered_bottle").color(1, expertSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + expertSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + expertSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/tempered_bottle").color(1, expertSpirits[j][3]).group('amicore.fluidtab');
 	}
 
 

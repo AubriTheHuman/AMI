@@ -3,7 +3,6 @@ const chelperClass = java('top.theillusivec4.curios.api.CuriosApi');
 const chelper = chelperClass.getCuriosHelper();
 const param1 = java("net.minecraft.entity.LivingEntity");
 const param2 = java("net.minecraft.item.Item");
-const tongitem = ['bountifulbaubles:gloves_digging_diamond', 'bountifulbaubles:shulker_heart'];
 const method1 = chelper.getClass().getDeclaredMethod("findCurios", param1, param2);
 
 // hot ingot damage
