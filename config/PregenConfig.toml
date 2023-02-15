@@ -21,8 +21,12 @@
 	"Deletion Time" = 10
 	#Defines if the pregenerator should automatically restart on server start. Automatically set to true when a task is running, and automatically set to false if no task is running
 	auto-restart = false
-	#Defines if the Profiler should run in the background or not
-	enable-profiler = false
+	#Defines if the pregenerator should kill the server when you get close to running out of memory for a while. This is to prevent World Corruption
+	"enable Memory Protector" = false
+	#Defines how much memory should be free before the Memory Protector should kick in.
+	#Range: > 32
+	"Required Free Memory" = 1024
+	info = true
 
 [client]
 
@@ -38,19 +42,4 @@
 		#Defines the Scale of the Overlay
 		#Range: 0.1 ~ 10.0
 		scale = 1.0
-
-	[client.profiler-overlay]
-		#Defines if the Profiler Overlay should be enabled
-		profiler-overlay = true
-		#Defines the Horizontal Alignment of the UI, left to right
-		#Allowed Values: START, CENTER, END
-		horizontal-alignment = "START"
-		#Defines the Vertical Alignment of the UI, top to bottom
-		#Allowed Values: START, CENTER, END
-		vertical-alignment = "START"
-		#Defines the Scale of the Overlay
-		#Range: 0.1 ~ 10.0
-		scale = 1.0
-		#Reference to save which dimension is currently detailed
-		detailed-dimension = "minecraft:overworld"
 
