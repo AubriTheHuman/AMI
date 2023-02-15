@@ -16,6 +16,8 @@ var washing = <recipetype:create:splashing>;
 var milling = <recipetype:create:milling>;
 var filling = <recipetype:create:filling>;
 
+# [id, name, colorcool, colorhot, needingot]
+
 val materials = [
   ["iron", "Iron", 0x8B8B94, 0xFFFFFF, true, true, true, true],
   ["gold", "Gold", 0xEAC33D, 0xFFFFFF, true, true, true, true],
@@ -202,7 +204,7 @@ for i, item in materials {
     "type": "createaddition:rolling",
     "result": {
         "item": "amicore:" + item[0] + "_rod",
-        "count": 1
+        "count": 2
     },
     "input": [ {
             "item": "amicore:" + item[0] + "_heated_bar_stock"
@@ -361,7 +363,10 @@ val moltens = [
   <fluid:amicore:molten_thallasium>,
   <fluid:amicore:molten_terminite>,
   <fluid:amicore:molten_pendorite>,
-  <fluid:amicore:molten_starmetal>
+  <fluid:amicore:molten_starmetal>,
+  <fluid:tdelight:molten_hamletite>,
+  <fluid:tdelight:molten_rosenquartz>,
+  <fluid:tdelight:molten_gildedfern>
 ];
 
 #fixing all the casting, bc THERES SOME ISSUES WITH IT

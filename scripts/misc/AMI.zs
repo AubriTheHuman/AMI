@@ -103,16 +103,16 @@ Recipe.type(Type.BASIC)
   .register();
 
 #bountyboard tweak
-craftingTable.removeByName("bountiful:crafting/bountyboard");
-Recipe.type(Type.BASIC)
-  .shaped([[<tag:items:minecraft:planks>,<tag:items:minecraft:logs>,<tag:items:minecraft:planks>],
-          [<item:minecraft:paper>,<tag:items:forge:ingots/gold>,<item:minecraft:paper>],
-          [<tag:items:minecraft:planks>,<tag:items:minecraft:logs>,<tag:items:minecraft:planks>]])
-  .output(<item:bountiful:bountyboard>)
-  .tool(<tag:items:artisantools:type/handsaw>, 1)
-.extra(<item:immersiveengineering:dust_wood>, 0.05)
-  .tool(<tag:items:artisantools:type/hammer>, 1)
-  .register();
+// craftingTable.removeByName("bountiful:crafting/bountyboard");
+// Recipe.type(Type.BASIC)
+//   .shaped([[<tag:items:minecraft:planks>,<tag:items:minecraft:logs>,<tag:items:minecraft:planks>],
+//           [<item:minecraft:paper>,<tag:items:forge:ingots/gold>,<item:minecraft:paper>],
+//           [<tag:items:minecraft:planks>,<tag:items:minecraft:logs>,<tag:items:minecraft:planks>]])
+//   .output(<item:bountiful:bountyboard>)
+//   .tool(<tag:items:artisantools:type/handsaw>, 1)
+// .extra(<item:immersiveengineering:dust_wood>, 0.05)
+//   .tool(<tag:items:artisantools:type/hammer>, 1)
+//   .register();
 
 
 #chests unify

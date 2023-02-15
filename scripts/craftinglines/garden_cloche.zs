@@ -136,7 +136,7 @@ cloche.addRecipe("malum_sappy_runewood_chopping", <item:malum:runewood_sapling>,
 #vines
 // //grass vines
 cloche.addRecipe("vines", <item:minecraft:vine>, <item:farmersdelight:rich_soil>, 2200, [<item:minecraft:vine> * 2], <blockstate:minecraft:vine>.block, "stacking");
-cloche.addRecipe("glow_lichen", <item:cavesandcliffs:glow_lichen>, <item:farmersdelight:rich_soil>, 2200, [<item:cavesandcliffs:glow_lichen> * 2], <blockstate:cavesandcliffs:glow_lichen>.block, "stacking");
+// cloche.addRecipe("glow_lichen", <item:cavesandcliffs:glow_lichen>, <item:farmersdelight:rich_soil>, 2200, [<item:cavesandcliffs:glow_lichen> * 2], <blockstate:cavesandcliffs:glow_lichen>.block, "stacking");
 cloche.addRecipe("cave_roots", <item:quark:root>, <item:farmersdelight:rich_soil>, 2200, [<item:quark:root_item> * 2], <blockstate:quark:root>.block, "stacking");
 cloche.addRecipe("bamboo", <item:minecraft:bamboo>, <item:farmersdelight:rich_soil>, 2200, [<item:minecraft:bamboo> * 2], <blockstate:minecraft:bamboo>.block, "stacking");
 cloche.addRecipe("sugarcane", <item:minecraft:sugar_cane>, <item:farmersdelight:rich_soil>, 2200, [<item:minecraft:sugar_cane> * 2], <blockstate:minecraft:sugar_cane>.block, "stacking");

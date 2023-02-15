@@ -115,5 +115,32 @@
 				item: "byg:lament_vine"
 			}]
 		}
+		{
+			title: "Salvaging Portal Tech"
+			x: 2.5d
+			y: -0.5d
+			id: "21356DDBC8FDAAB0"
+			tasks: [{
+				id: "1FD927477033FAF4"
+				type: "item"
+				item: "portality:controller"
+			}]
+		}
+		{
+			title: "The key to other worlds, otherwise unreachable"
+			x: 2.5d
+			y: 1.0d
+			dependencies: ["21356DDBC8FDAAB0"]
+			id: "643961DA10BDBC3A"
+			tasks: [{
+				id: "7C30B6B85B4233C5"
+				type: "item"
+				item: {
+					id: "botania:king_key"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
 	]
 }

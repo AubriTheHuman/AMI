@@ -491,10 +491,18 @@
 			]
 			dependencies: ["37F44534E8A99AFE"]
 			id: "4314C8B2B07FA7E3"
-			tasks: [{
-				id: "56D30F459BEED963"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "56D30F459BEED963"
+					type: "checkmark"
+					title: "Show Process"
+				}
+				{
+					id: "325E921DAA624E76"
+					type: "item"
+					item: "amicore:multicyl_engine"
+				}
+			]
 			rewards: [
 				{
 					id: "29D205596AE17128"
@@ -1715,6 +1723,7 @@
 			tasks: [{
 				id: "0421A7875D9C2EDA"
 				type: "checkmark"
+				title: "Show Process"
 			}]
 			rewards: [{
 				id: "7E0FE16C282F48D3"
@@ -1728,6 +1737,8 @@
 			y: 8.5d
 			description: ["To begin synthesis, fill a copper can with lava. Each can will hold 144mb, doing so will begin the sequenced assembly."]
 			dependencies: ["26C1909B3DE5442D"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "3D5522D95276E3B9"
 			tasks: [{
 				id: "50171B3D4BB46BD5"
@@ -1745,10 +1756,9 @@
 			x: 0.0d
 			y: 9.5d
 			description: ["Once you've filled a can with lava, deploy a piece of blaze powder into it."]
-			dependencies: [
-				"3D5522D95276E3B9"
-				"26C1909B3DE5442D"
-			]
+			dependencies: ["26C1909B3DE5442D"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "43C4FBF46D364AA8"
 			tasks: [{
 				id: "1A7739274C056BFC"
@@ -1770,10 +1780,9 @@
 				""
 				"By mixing a small amount of iron and copper dust with water, the catalyst can be created. Once done, drop just 10mB into the canned mixture to start the reaction."
 			]
-			dependencies: [
-				"43C4FBF46D364AA8"
-				"26C1909B3DE5442D"
-			]
+			dependencies: ["26C1909B3DE5442D"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "764F43B84DC48244"
 			tasks: [{
 				id: "76F017D6CD6B9D5D"
@@ -1801,10 +1810,9 @@
 				""
 				"It is the first of several deployer tools, which each have 128,000 durability, lasting for quite a long time."
 			]
-			dependencies: [
-				"764F43B84DC48244"
-				"26C1909B3DE5442D"
-			]
+			dependencies: ["26C1909B3DE5442D"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "3D479FA47E2EA740"
 			tasks: [
 				{
@@ -2464,6 +2472,8 @@
 			x: 0.0d
 			y: 1.0d
 			dependencies: ["4314C8B2B07FA7E3"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "67BEEE8EC9A15287"
 			tasks: [{
 				id: "7735091592FAF5B2"
@@ -2481,10 +2491,9 @@
 			icon: "amicore:crude_steel_bolt"
 			x: 0.0d
 			y: 0.0d
-			dependencies: [
-				"67BEEE8EC9A15287"
-				"4314C8B2B07FA7E3"
-			]
+			dependencies: ["4314C8B2B07FA7E3"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "52C93D2F98270350"
 			tasks: [{
 				id: "0BB46BA4B6A789CE"
@@ -2502,10 +2511,9 @@
 			icon: "amicore:crude_steel_mech_component"
 			x: 0.0d
 			y: -1.0d
-			dependencies: [
-				"52C93D2F98270350"
-				"4314C8B2B07FA7E3"
-			]
+			dependencies: ["4314C8B2B07FA7E3"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "730E70DF8D635A56"
 			tasks: [{
 				id: "5B4968E5C2B6C588"
@@ -2523,10 +2531,9 @@
 			icon: "amicore:crude_steel_round_sheet"
 			x: 0.0d
 			y: -2.0d
-			dependencies: [
-				"730E70DF8D635A56"
-				"4314C8B2B07FA7E3"
-			]
+			dependencies: ["4314C8B2B07FA7E3"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "1E320A0111868DE9"
 			tasks: [{
 				id: "395808A765C1DE2E"
@@ -2543,10 +2550,9 @@
 			title: "Pressing into Shape"
 			x: 0.0d
 			y: -3.0d
-			dependencies: [
-				"1E320A0111868DE9"
-				"4314C8B2B07FA7E3"
-			]
+			dependencies: ["4314C8B2B07FA7E3"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "4C04FB745FF30761"
 			tasks: [{
 				id: "0C79DDF7FC58A712"
@@ -2564,10 +2570,9 @@
 			icon: "create:shaft"
 			x: 0.0d
 			y: -4.0d
-			dependencies: [
-				"4C04FB745FF30761"
-				"4314C8B2B07FA7E3"
-			]
+			dependencies: ["4314C8B2B07FA7E3"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "009FD5616EACBD3A"
 			tasks: [{
 				id: "166EF297FC820A25"
@@ -2585,10 +2590,9 @@
 			icon: "create:brass_casing"
 			x: 0.0d
 			y: -6.0d
-			dependencies: [
-				"4314C8B2B07FA7E3"
-				"1749BE4D161EB7B6"
-			]
+			dependencies: ["4314C8B2B07FA7E3"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "015AF519A4071866"
 			tasks: [{
 				id: "3B14589BF6EB16C1"
@@ -2606,10 +2610,9 @@
 			icon: "amicore:crude_steel_round_sheet"
 			x: 0.0d
 			y: -7.0d
-			dependencies: [
-				"015AF519A4071866"
-				"4314C8B2B07FA7E3"
-			]
+			dependencies: ["4314C8B2B07FA7E3"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "2904E4F464887B8C"
 			tasks: [{
 				id: "4EA8CF1BEA3B2C3E"
@@ -2627,10 +2630,9 @@
 			icon: "amicore:crude_steel_bolt"
 			x: 0.0d
 			y: -8.0d
-			dependencies: [
-				"2904E4F464887B8C"
-				"4314C8B2B07FA7E3"
-			]
+			dependencies: ["4314C8B2B07FA7E3"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "6B905CAA3D962E55"
 			tasks: [{
 				id: "4E910974ED5B2E0C"
@@ -2646,10 +2648,9 @@
 		{
 			x: 0.0d
 			y: -5.0d
-			dependencies: [
-				"009FD5616EACBD3A"
-				"4314C8B2B07FA7E3"
-			]
+			dependencies: ["4314C8B2B07FA7E3"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "1749BE4D161EB7B6"
 			tasks: [{
 				id: "2C91E91130E44944"
@@ -2814,6 +2815,7 @@
 		}
 		{
 			title: "The Electric Age"
+			icon: "amicore:lv_circuit"
 			x: 10.0d
 			y: 6.5d
 			shape: "diamond"
@@ -2824,12 +2826,19 @@
 			]
 			dependencies: ["6057D58F1A6A87AA"]
 			id: "417096C593DECCAF"
-			tasks: [{
-				id: "613CF5ECD9B47192"
-				type: "item"
-				item: "amicore:lv_circuit"
-				count: 16L
-			}]
+			tasks: [
+				{
+					id: "613CF5ECD9B47192"
+					type: "item"
+					item: "amicore:lv_circuit"
+					count: 16L
+				}
+				{
+					id: "199065F829EEE16B"
+					type: "checkmark"
+					title: "Show Process"
+				}
+			]
 			rewards: [
 				{
 					id: "6F1B5BD43540757D"
@@ -2917,6 +2926,8 @@
 			y: 5.5d
 			description: ["Deploy onto a wooden slab."]
 			dependencies: ["417096C593DECCAF"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "411F9F67A9DEE828"
 			tasks: [{
 				id: "14943E035DE1D191"
@@ -2941,10 +2952,9 @@
 			x: 10.0d
 			y: 4.5d
 			description: ["The solder spool lasts for 16 uses."]
-			dependencies: [
-				"417096C593DECCAF"
-				"411F9F67A9DEE828"
-			]
+			dependencies: ["417096C593DECCAF"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "6E21CD7B1CB9798D"
 			tasks: [{
 				id: "5DDC9B94F7BDD399"
@@ -2968,10 +2978,9 @@
 			}
 			x: 10.0d
 			y: 3.5d
-			dependencies: [
-				"417096C593DECCAF"
-				"6E21CD7B1CB9798D"
-			]
+			dependencies: ["417096C593DECCAF"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "31E36431821F07A6"
 			tasks: [{
 				id: "6D24319B50537489"
@@ -2989,10 +2998,9 @@
 			icon: "amicore:simple_resistor"
 			x: 10.0d
 			y: 2.5d
-			dependencies: [
-				"417096C593DECCAF"
-				"31E36431821F07A6"
-			]
+			dependencies: ["417096C593DECCAF"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "5384CDB053C77F15"
 			tasks: [{
 				id: "52157462C5334DAF"
@@ -3016,10 +3024,9 @@
 			}
 			x: 10.0d
 			y: 1.5d
-			dependencies: [
-				"417096C593DECCAF"
-				"5384CDB053C77F15"
-			]
+			dependencies: ["417096C593DECCAF"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "35579723AFD4AC62"
 			tasks: [{
 				id: "49272E23F1AAFE0D"
@@ -3043,10 +3050,9 @@
 			}
 			x: 10.0d
 			y: 0.5d
-			dependencies: [
-				"417096C593DECCAF"
-				"35579723AFD4AC62"
-			]
+			dependencies: ["417096C593DECCAF"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "07C7DC28D7FB7AAC"
 			tasks: [{
 				id: "4C6DD5042C961BD7"
@@ -3064,10 +3070,9 @@
 			icon: "amicore:crude_steel_bolt"
 			x: 10.0d
 			y: -0.5d
-			dependencies: [
-				"417096C593DECCAF"
-				"07C7DC28D7FB7AAC"
-			]
+			dependencies: ["417096C593DECCAF"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "112E9F3E491AA651"
 			tasks: [{
 				id: "2F6A1C73398BE374"
@@ -3083,10 +3088,9 @@
 		{
 			x: 10.0d
 			y: -1.5d
-			dependencies: [
-				"417096C593DECCAF"
-				"112E9F3E491AA651"
-			]
+			dependencies: ["417096C593DECCAF"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "0780B2DA555E618B"
 			tasks: [{
 				id: "62022BF115F0D271"

@@ -57,16 +57,16 @@ craftingTable.removeByName("advancedrocketry:platepress");
 
 
 //remove non-amicore ingots and nuggets
-var ironIngots = ["minecraft:iron_ingot", "immersive_geology:ingot_iron"] as string[];
-var goldIngots = ["minecraft:gold_ingot", "immersive_geology:ingot_gold"] as string[];
-var copperIngots = ["create:copper_ingot", "immersiveengineering:ingot_copper", "tconstruct:copper_ingot", "libvulpes:ingotcopper", "geolosys:copper_ingot", "immersive_geology:ingot_copper"] as string[];
+var ironIngots = ["minecraft:iron_ingot"] as string[];
+var goldIngots = ["minecraft:gold_ingot"] as string[];
+var copperIngots = ["create:copper_ingot", "immersiveengineering:ingot_copper", "tconstruct:copper_ingot", "libvulpes:ingotcopper", "geolosys:copper_ingot"] as string[];
 var tinIngots = ["libvulpes:ingottin", "geolosys:tin_ingot", "immersive_geology:ingot_tin"] as string[];
 var silverIngots = ["immersiveengineering:ingot_silver", "geolosys:silver_ingot"] as string[];
 var leadIngots = ["immersiveengineering:ingot_lead", "geolosys:lead_ingot"] as string[];
 var aluminumIngots = ["immersiveengineering:ingot_aluminum", "libvulpes:ingotaluminum", "geolosys:aluminum_ingot"] as string[];
-var nickelIngots = ["immersiveengineering:ingot_nickel", "immersive_geology:ingot_nickel", "geolosys:nickel_ingot"] as string[];
+var nickelIngots = ["immersiveengineering:ingot_nickel", "geolosys:nickel_ingot"] as string[];
 var platinumIngots = ["immersive_geology:ingot_platinum", "geolosys:platinum_ingot"] as string[];
-var uraniumIngots = ["immersive_geology:ingot_uranium", "immersiveengineering:ingot_uranium"] as string[];
+var uraniumIngots = ["immersiveengineering:ingot_uranium"] as string[];
 var zincIngots = ["create:zinc_ingot", "geolosys:zinc_ingot"] as string[];
 var titaniumIngots = ["libvulpes:ingottitanium", "immersive_geology:ingot_titanium"] as string[];
 var chromiumIngots = ["immersive_geology:ingot_chromium"] as string[];

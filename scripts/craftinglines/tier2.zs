@@ -139,7 +139,7 @@ Recipe.type(Type.CHEMIST)
 pressing.addRecipe("remove_compound_from_bottle", [<item:create:chromatic_compound>], <item:amicore:chromatic_compound_bottle>);
 
 #crude steel from iron
-<recipetype:immersiveengineering:blast_furnace>.addRecipe("crude_steel", <item:minecraft:iron_ingot>, 600, <item:amicore:crude_steel_ingot>, <item:immersiveengineering:slag>);
+<recipetype:immersiveengineering:blast_furnace>.addRecipe("crude_steel", <item:amicore:iron_ingot>, 600, <item:amicore:crude_steel_ingot>, <item:immersiveengineering:slag>);
 
 #crude steel recipes TODO FIX
 craftingTable.addShaped("water_wheel_crude", <item:immersiveengineering:watermill>,
@@ -252,112 +252,81 @@ craftingTable.addShapeless("tiny_sulfur_dust_decompacting", <item:amicore:tiny_s
 craftingTable.addShapeless("sulfur_dust_compacting", <item:immersiveengineering:dust_sulfur>, [<item:amicore:tiny_sulfur_pile>, <item:amicore:tiny_sulfur_pile>, <item:amicore:tiny_sulfur_pile>, <item:amicore:tiny_sulfur_pile>, <item:amicore:tiny_sulfur_pile>, <item:amicore:tiny_sulfur_pile>, <item:amicore:tiny_sulfur_pile>, <item:amicore:tiny_sulfur_pile>, <item:amicore:tiny_sulfur_pile>]);
 
 //sulfur extraction from weeping vines
-mixing.addRecipe("weeping_paste", "heated", <fluid:amicore:weeping_paste> * 200, [<item:minecraft:weeping_vines> * 3], [<fluid:minecraft:water> * 100], 200);
-mixing.addRecipe("ashy_weeping_paste", "heated", <fluid:amicore:ashy_weeping_paste> * 400, [<item:minecraft:yellow_dye>,<item:create:cinder_flour>], [<fluid:amicore:weeping_paste> * 200], 200);
+mixing.addRecipe("ashy_weeping_paste", "heated", <fluid:amicore:ashy_weeping_paste> * 400, [<item:minecraft:yellow_dye>,<item:create:cinder_flour>,<item:minecraft:weeping_vines> * 3], [<fluid:minecraft:water> * 100], 200);
 mixing.addRecipe("limey_weeping_paste", "heated", <item:amicore:limey_weeping_paste>, [<item:create:limesand>], [<fluid:amicore:ashy_weeping_paste> * 400], 200);
 draining.addRecipe("diry_sulfur_draining", <item:amicore:dirty_sulfur>, <fluid:amicore:mineral_water> * 100, <item:amicore:limey_weeping_paste>);
 crushing.addRecipe("dirty_sulfur_crushing", [<item:immersiveengineering:dust_sulfur> * 2, <item:minecraft:sand> * 2 % 50], <item:amicore:dirty_sulfur>);
 milling.addRecipe("dirty_sulfur_milling", [<item:immersiveengineering:dust_sulfur> * 2, <item:minecraft:sand> * 2 % 50], <item:amicore:dirty_sulfur>);
 
 //multicyl engine
-<recipetype:create:sequenced_assembly>.addJSONRecipe("multicyliner_phase1", {
+<recipetype:create:sequenced_assembly>.addJSONRecipe("engine_cluster", {
   "type": "create:sequenced_assembly",
   "ingredient": { "item": "amicore:crude_steel_plate" },
-  "transitionalItem": { "item": ":multicylinder_phase1a" },
+  "transitionalItem": { "item": "amicore:partial_engine_cluster" },
   "sequence": [
     {
         "type": "create:deploying",
-        "ingredients": [{ "item": "amicore:multicylinder_phase1a" },
+        "ingredients": [{ "item": "amicore:partial_engine_cluster" },
             { "item": "amicore:high_torque_gearbox" }],
-        "results": [ { "item": "amicore:multicylinder_phase1a" } ],
+        "results": [ { "item": "amicore:partial_engine_cluster" } ],
         "processingTime": 100
     },
     {
         "type": "create:deploying",
-        "ingredients": [{ "item": "amicore:multicylinder_phase1a" },
-            { "item": "amicore:crude_steel_bolt" }],
-        "results": [ { "item": "amicore:multicylinder_phase1a" } ],
-        "processingTime": 40
-    },
-    {
-        "type": "create:pressing",
-        "ingredients": [ { "item": "amicore:multicylinder_phase1a" } ],
-        "results": [ { "item": "amicore:multicylinder_phase1a" } ],
+        "ingredients": [{ "item": "amicore:partial_engine_cluster" },
+            { "item": "amicore:simple_engine" }],
+        "results": [ { "item": "amicore:partial_engine_cluster" } ],
         "processingTime": 40
     },
     {
         "type": "create:deploying",
-        "ingredients": [{ "item": "amicore:multicylinder_phase1a" },
-            { "item": "amicore:crude_steel_bolt" }],
-        "results": [ { "item": "amicore:multicylinder_phase1a" } ],
-        "processingTime": 40
-    },
-    {
-        "type": "create:pressing",
-        "ingredients": [ { "item": "amicore:multicylinder_phase1a" } ],
-        "results": [ { "item": "amicore:multicylinder_phase1a" } ],
+        "ingredients": [{ "item": "amicore:partial_engine_cluster" },
+            { "item": "amicore:simple_engine" }],
+        "results": [ { "item": "amicore:partial_engine_cluster" } ],
         "processingTime": 40
     },
     {
         "type": "create:deploying",
-        "ingredients": [{ "item": "amicore:multicylinder_phase1a" },
-            { "item": "amicore:crude_steel_bolt" }],
-        "results": [ { "item": "amicore:multicylinder_phase1a" } ],
+        "ingredients": [{ "item": "amicore:partial_engine_cluster" },
+            { "item": "amicore:simple_engine" }],
+        "results": [ { "item": "amicore:partial_engine_cluster" } ],
         "processingTime": 40
     },
     {
-        "type": "create:pressing",
-        "ingredients": [ { "item": "amicore:multicylinder_phase1a" } ],
-        "results": [ { "item": "amicore:multicylinder_phase1a" } ],
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_engine_cluster" },
+            { "item": "amicore:simple_engine" }],
+        "results": [ { "item": "amicore:partial_engine_cluster" } ],
         "processingTime": 40
     }
   ],
-  "results": [ { "item": "amicore:multicylinder_phase1" } ],
+  "results": [ { "item": "amicore:engine_cluster" } ],
   "loops": 1
 });
-<recipetype:create:sequenced_assembly>.addJSONRecipe("multicyliner_phase2", {
+<recipetype:create:sequenced_assembly>.addJSONRecipe("multicyl_engine", {
   "type": "create:sequenced_assembly",
-  "ingredient": { "item": "amicore:multicylinder_phase1" },
-  "transitionalItem": { "item": "amicore:multicylinder_phase2a" },
+  "ingredient": { "item": "amicore:engine_cluster" },
+  "transitionalItem": { "item": "amicore:partial_multicyl_engine" },
   "sequence": [
     {
         "type": "create:deploying",
-        "ingredients": [{ "item": "amicore:multicylinder_phase2a" },
+        "ingredients": [{ "item": "amicore:partial_multicyl_engine" },
             { "item": "amicore:crude_steel_mech_component" }],
-        "results": [ { "item": "amicore:multicylinder_phase2a" } ],
+        "results": [ { "item": "amicore:partial_multicyl_engine" } ],
         "processingTime": 100
     },
     {
         "type": "create:deploying",
-        "ingredients": [{ "item": "amicore:multicylinder_phase2a" },
-            { "item": "amicore:simple_engine" }],
-        "results": [ { "item": "amicore:multicylinder_phase2a" } ],
-        "processingTime": 40
-    },
-    {
-        "type": "create:pressing",
-        "ingredients": [ { "item": "amicore:multicylinder_phase2a" } ],
-        "results": [ { "item": "amicore:multicylinder_phase2a" } ],
-        "processingTime": 40
-    },
-    {
-        "type": "create:deploying",
-        "ingredients": [{ "item": "amicore:multicylinder_phase2a" },
-            { "item": "amicore:simple_engine" }],
-        "results": [ { "item": "amicore:multicylinder_phase2a" } ],
-        "processingTime": 40
-    },
-    {
-        "type": "create:pressing",
-        "ingredients": [ { "item": "amicore:multicylinder_phase2a" } ],
-        "results": [ { "item": "amicore:multicylinder_phase2a" } ],
-        "processingTime": 40
-    },
-    {
-        "type": "create:deploying",
-        "ingredients": [{ "item": "amicore:multicylinder_phase2a" },
+        "ingredients": [{ "item": "amicore:partial_multicyl_engine" },
             { "item": "amicore:crude_steel_round_sheet" }],
-        "results": [ { "item": "amicore:multicylinder_phase2a" } ],
+        "results": [ { "item": "amicore:partial_multicyl_engine" } ],
+        "processingTime": 40
+    },
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_multicyl_engine" },
+            { "item": "amicore:crude_steel_bolt" }],
+        "results": [ { "item": "amicore:partial_multicyl_engine" } ],
         "processingTime": 40
     },
     {
@@ -365,77 +334,26 @@ milling.addRecipe("dirty_sulfur_milling", [<item:immersiveengineering:dust_sulfu
         "ingredients": [ { "item": "amicore:multicylinder_phase2a" } ],
         "results": [ { "item": "amicore:multicylinder_phase2a" } ],
         "processingTime": 40
-    }
-  ],
-  "results": [ { "item": "amicore:multicylinder_phase2" } ],
-  "loops": 1
-});
-<recipetype:create:sequenced_assembly>.addJSONRecipe("multicyliner_phase3", {
-  "type": "create:sequenced_assembly",
-  "ingredient": { "item": "amicore:multicylinder_phase2" },
-  "transitionalItem": { "item": "amicore:multicylinder_phase3a" },
-  "sequence": [
-    {
-        "type": "create:deploying",
-        "ingredients": [{ "item": "amicore:multicylinder_phase3a" },
-            { "item": "create:shaft" }],
-        "results": [ { "item": "amicore:multicylinder_phase3a" } ],
-        "processingTime": 100
     },
     {
         "type": "create:deploying",
-        "ingredients": [{ "item": "amicore:multicylinder_phase3a" },
-            { "item": "create:brass_casing" }],
-        "results": [ { "item": "amicore:multicylinder_phase3a" } ],
-        "processingTime": 40
-    },
-    {
-        "type": "create:deploying",
-        "ingredients": [{ "item": "amicore:multicylinder_phase3a" },
-            { "item": "amicore:simple_engine" }],
-        "results": [ { "item": "amicore:multicylinder_phase3a" } ],
-        "processingTime": 40
-    },
-    {
-        "type": "create:deploying",
-        "ingredients": [{ "item": "amicore:multicylinder_phase3a" },
-            { "item": "amicore:simple_engine" }],
-        "results": [ { "item": "amicore:multicylinder_phase3a" } ],
-        "processingTime": 40
-    },
-    {
-        "type": "create:deploying",
-        "ingredients": [{ "item": "amicore:multicylinder_phase3a" },
+        "ingredients": [{ "item": "amicore:partial_multicyl_engine" },
             { "item": "amicore:crude_steel_bolt" }],
-        "results": [ { "item": "amicore:multicylinder_phase3a" } ],
+        "results": [ { "item": "amicore:partial_multicyl_engine" } ],
         "processingTime": 40
     },
     {
         "type": "create:pressing",
-        "ingredients": [ { "item": "amicore:multicylinder_phase3a" } ],
-        "results": [ { "item": "amicore:multicylinder_phase3a" } ],
-        "processingTime": 40
-    },
-    {
-        "type": "create:deploying",
-        "ingredients": [{ "item": "amicore:multicylinder_phase3a" },
-            { "item": "amicore:crude_steel_bolt" }],
-        "results": [ { "item": "amicore:multicylinder_phase3a" } ],
-        "processingTime": 40
-    },
-    {
-        "type": "create:pressing",
-        "ingredients": [ { "item": "amicore:multicylinder_phase3a" } ],
-        "results": [ { "item": "amicore:multicylinder_phase3a" } ],
+        "ingredients": [ { "item": "amicore:partial_multicyl_engine" } ],
+        "results": [ { "item": "amicore:partial_multicyl_engine" } ],
         "processingTime": 40
     }
   ],
   "results": [ { "item": "amicore:multicyl_engine" } ],
   "loops": 1
 });
-mods.jei.JEI.hideItem(<item:amicore:multicylinder_phase1a>);
-mods.jei.JEI.hideItem(<item:amicore:multicylinder_phase2a>);
-mods.jei.JEI.hideItem(<item:amicore:multicylinder_phase3a>);
+mods.jei.JEI.hideItem(<item:amicore:partial_multicyl_engine>);
+mods.jei.JEI.hideItem(<item:amicore:partial_engine_cluster>);
 
 
 #coke, blast, and kiln

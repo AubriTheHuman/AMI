@@ -490,6 +490,9 @@ onEvent('item.tags', event => {
   event.remove('forge:nuggets', 'advancedrocketry:nuggettitaniumiridium');
   event.remove('forge:nuggets/titaniumiridium', 'advancedrocketry:nuggettitaniumiridium');
 
+  //tinkers delite
+
+
   //steampowered
   event.remove('steampowered:plates', 'steampowered:bronze_sheet');
   event.remove('steampowered:plates/bronze', 'steampowered:bronze_sheet');
@@ -651,6 +654,28 @@ onEvent('item.tags', event => {
   event.add('malum:ether', 'malum:brown_ether');
   event.add('malum:ether', 'malum:green_ether');
   event.add('malum:ether', 'malum:red_ether');
+
+  //deployer tools
+  event.add('forge:deployer_tools', 'amicore:bottle_press');
+  event.add('forge:deployer_tools', 'amicore:bottle_mixer');
+  event.add('forge:deployer_tools', 'amicore:bottle_heater');
+  event.add('forge:deployer_tools', 'amicore:held_solderer');
+
+  //plant meal
+  event.add('forge:plant_oil_meal', 'amicore:olive_meal');
+  event.add('forge:plant_oil_meal', 'amicore:soybean_meal');
+  event.add('forge:plant_oil_meal', 'amicore:avocado_meal');
+  event.add('forge:plant_oil_meal', 'amicore:coconut_meal');
+  event.add('forge:plant_oil_meal', 'amicore:sesame_seed_meal');
+  event.add('forge:plant_oil_meal', 'amicore:peanut_meal');
+  event.add('forge:plant_oil_meal', 'amicore:pinenut_meal');
+  event.add('forge:plant_oil_fruit', 'pamhc2trees:oliveitem');
+  event.add('forge:plant_oil_fruit', 'pamhc2trees:soybeanitem');
+  event.add('forge:plant_oil_fruit', 'pamhc2trees:avocadoitem');
+  event.add('forge:plant_oil_fruit', 'pamhc2trees:coconutitem');
+  event.add('forge:plant_oil_fruit', 'pamhc2trees:sesameseedsitem');
+  event.add('forge:plant_oil_fruit', 'pamhc2trees:peanutitem');
+  event.add('forge:plant_oil_fruit', 'pamhc2trees:pinenutitem');
 
   //run last
   glowings1 = new Array(metalvariants.length);

@@ -1,6 +1,7 @@
 {
   "name": "fish_tank",
   "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
   "recipes": [
     {
       "uid": "salmon_fish_water",
@@ -8,56 +9,54 @@
       "inputs": {
         "item": [
           {
+            "chance": 1.0,
             "content": {
               "amount": 2,
               "matches": {
                 "item": "minecraft:salmon"
               }
-            },
-            "chance": 1.0
+            }
           },
           {
+            "chance": 1.0,
             "content": {
               "amount": 1,
               "matches": {
                 "item": "amicore:algae"
               }
-            },
-            "chance": 1.0
+            }
           }
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"amicore:fish_water\",Amount:500}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:fish_water\",Amount:500}"
           },
           {
-            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:1000}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:1000}"
           }
         ]
       },
       "outputs": {
         "item": [
           {
+            "chance": 1.0,
             "content": {
               "amount": 12,
               "matches": {
                 "item": "minecraft:salmon"
               }
-            },
-            "chance": 1.0
+            }
           }
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"amicore:used_fish_water\",Amount:500}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:used_fish_water\",Amount:500}"
           }
         ]
-      },
-      "tickInputs": {},
-      "tickOutputs": {}
+      }
     },
     {
       "uid": "algae_farming",
@@ -65,26 +64,24 @@
       "inputs": {
         "fluid": [
           {
-            "content": "{FluidName:\"minecraft:water\",Amount:1000}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"minecraft:water\",Amount:1000}"
           }
         ]
       },
       "outputs": {
         "item": [
           {
+            "chance": 1.0,
             "content": {
               "amount": 4,
               "matches": {
                 "item": "amicore:algae"
               }
-            },
-            "chance": 1.0
+            }
           }
         ]
-      },
-      "tickInputs": {},
-      "tickOutputs": {}
+      }
     },
     {
       "uid": "cod_fish_water",
@@ -92,56 +89,54 @@
       "inputs": {
         "item": [
           {
+            "chance": 1.0,
             "content": {
               "amount": 2,
               "matches": {
                 "item": "minecraft:cod"
               }
-            },
-            "chance": 1.0
+            }
           },
           {
+            "chance": 1.0,
             "content": {
               "amount": 1,
               "matches": {
                 "item": "amicore:algae"
               }
-            },
-            "chance": 1.0
+            }
           }
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"amicore:fish_water\",Amount:500}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:fish_water\",Amount:500}"
           },
           {
-            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:100}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:100}"
           }
         ]
       },
       "outputs": {
         "item": [
           {
+            "chance": 1.0,
             "content": {
               "amount": 12,
               "matches": {
                 "item": "minecraft:cod"
               }
-            },
-            "chance": 1.0
+            }
           }
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"amicore:used_fish_water\",Amount:500}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:used_fish_water\",Amount:500}"
           }
         ]
-      },
-      "tickInputs": {},
-      "tickOutputs": {}
+      }
     },
     {
       "uid": "cod_fish_petting",
@@ -149,95 +144,91 @@
       "inputs": {
         "item": [
           {
+            "chance": 1.0,
             "content": {
               "amount": 4,
               "matches": {
                 "item": "minecraft:cod"
               }
-            },
-            "chance": 1.0
+            }
           }
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"amicore:fish_water\",Amount:250}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:fish_water\",Amount:250}"
           },
           {
-            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:25}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:25}"
           }
         ]
       },
       "outputs": {
         "item": [
           {
+            "chance": 1.0,
             "content": {
               "amount": 3,
               "matches": {
                 "item": "minecraft:cod"
               }
-            },
-            "chance": 1.0
+            }
           }
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"amicore:used_fish_water\",Amount:250}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:used_fish_water\",Amount:250}"
           }
         ]
-      },
-      "tickInputs": {},
-      "tickOutputs": {}
+      }
     },
     {
       "uid": "salmon_fish_petting",
-      "duration": 1,
+      "duration": 300,
       "inputs": {
         "item": [
           {
+            "chance": 1.0,
             "content": {
               "amount": 4,
               "matches": {
                 "item": "minecraft:salmon"
               }
-            },
-            "chance": 1.0
+            }
           }
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"amicore:fish_water\",Amount:250}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:fish_water\",Amount:250}"
           },
           {
-            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:25}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:25}"
           }
         ]
       },
       "outputs": {
         "item": [
           {
+            "chance": 1.0,
             "content": {
               "amount": 3,
               "matches": {
                 "item": "minecraft:salmon"
               }
-            },
-            "chance": 1.0
+            }
           }
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"amicore:used_fish_water\",Amount:250}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:used_fish_water\",Amount:250}"
           }
         ]
-      },
-      "tickInputs": {},
-      "tickOutputs": {}
+      }
     },
     {
       "uid": "algae_fish_water_farming",
@@ -245,26 +236,24 @@
       "inputs": {
         "fluid": [
           {
-            "content": "{FluidName:\"amicore:fish_water\",Amount:500}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:fish_water\",Amount:500}"
           }
         ]
       },
       "outputs": {
         "item": [
           {
+            "chance": 1.0,
             "content": {
               "amount": 4,
               "matches": {
                 "item": "amicore:algae"
               }
-            },
-            "chance": 1.0
+            }
           }
         ]
-      },
-      "tickInputs": {},
-      "tickOutputs": {}
+      }
     },
     {
       "uid": "salmon_water",
@@ -272,50 +261,48 @@
       "inputs": {
         "item": [
           {
+            "chance": 1.0,
             "content": {
               "amount": 2,
               "matches": {
                 "item": "minecraft:salmon"
               }
-            },
-            "chance": 1.0
+            }
           },
           {
+            "chance": 1.0,
             "content": {
               "amount": 1,
               "matches": {
                 "item": "amicore:algae"
               }
-            },
-            "chance": 1.0
+            }
           }
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"minecraft:water\",Amount:500}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"minecraft:water\",Amount:500}"
           },
           {
-            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:100}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:100}"
           }
         ]
       },
       "outputs": {
         "item": [
           {
+            "chance": 1.0,
             "content": {
               "amount": 6,
               "matches": {
                 "item": "minecraft:salmon"
               }
-            },
-            "chance": 1.0
+            }
           }
         ]
-      },
-      "tickInputs": {},
-      "tickOutputs": {}
+      }
     },
     {
       "uid": "cod_water",
@@ -323,50 +310,48 @@
       "inputs": {
         "item": [
           {
+            "chance": 1.0,
             "content": {
               "amount": 2,
               "matches": {
                 "item": "minecraft:cod"
               }
-            },
-            "chance": 1.0
+            }
           },
           {
+            "chance": 1.0,
             "content": {
               "amount": 1,
               "matches": {
                 "item": "amicore:algae"
               }
-            },
-            "chance": 1.0
+            }
           }
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"minecraft:water\",Amount:500}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"minecraft:water\",Amount:500}"
           },
           {
-            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:100}",
-            "chance": 1.0
+            "chance": 1.0,
+            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:100}"
           }
         ]
       },
       "outputs": {
         "item": [
           {
+            "chance": 1.0,
             "content": {
               "amount": 6,
               "matches": {
                 "item": "minecraft:cod"
               }
-            },
-            "chance": 1.0
+            }
           }
         ]
-      },
-      "tickInputs": {},
-      "tickOutputs": {}
+      }
     }
   ]
 }

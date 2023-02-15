@@ -23,11 +23,11 @@ milling.addRecipe("fish_milling_cod", [<item:amicore:fish_meal>], <item:minecraf
 milling.addRecipe("fish_milling_salmon", [<item:amicore:fish_meal>], <item:minecraft:salmon>);
 milling.addRecipe("olive_milling", [<item:amicore:olive_meal>], <item:pamhc2trees:oliveitem>);
 milling.addRecipe("avocado_milling", [<item:amicore:avocado_meal>], <item:pamhc2trees:avocadoitem>);
-milling.addRecipe("peanut_milling", [<item:amicore:peanut_meal>], <item:pamhc2trees:avocadoitem>);
-milling.addRecipe("soybean_milling", [<item:amicore:soybean_meal>], <item:pamhc2trees:avocadoitem>);
-milling.addRecipe("sesame_seed_milling", [<item:amicore:sesame_seed_meal>], <item:pamhc2trees:avocadoitem>);
-milling.addRecipe("pinenut_milling", [<item:amicore:pinenut_meal>], <item:pamhc2trees:avocadoitem>);
-milling.addRecipe("coconut_milling", [<item:amicore:coconut_meal>], <item:pamhc2trees:avocadoitem>);
+milling.addRecipe("peanut_milling", [<item:amicore:peanut_meal>], <item:pamhc2trees:peanutitem>);
+milling.addRecipe("soybean_milling", [<item:amicore:soybean_meal>], <item:pamhc2trees:soybeanitem>);
+milling.addRecipe("sesame_seed_milling", [<item:amicore:sesame_seed_meal>], <item:pamhc2trees:sesameseedsitem>);
+milling.addRecipe("pinenut_milling", [<item:amicore:pinenut_meal>], <item:pamhc2trees:pinenutitem>);
+milling.addRecipe("coconut_milling", [<item:amicore:coconut_meal>], <item:pamhc2trees:coconutitem>);
 draining.addRecipe("fish_meal_draining", <item:amicore:biowaste>, <fluid:amicore:fish_oil> * 100, <item:amicore:fish_meal>);
 draining.addRecipe("olive_meal_draining", <item:amicore:biowaste>, <fluid:amicore:plant_oil> * 150, <item:amicore:olive_meal>);
 draining.addRecipe("avocado_meal_draining", <item:amicore:biowaste>, <fluid:amicore:plant_oil> * 150, <item:amicore:avocado_meal>);

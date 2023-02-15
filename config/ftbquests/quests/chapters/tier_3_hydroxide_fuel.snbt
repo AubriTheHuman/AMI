@@ -1362,7 +1362,9 @@
 			description: [
 				"Making an improved mechanism for machines will require removing as much friction as possible. The best way to do that is lubrication."
 				""
-				"During travels you've come across almost every other resource seen on earth, but one that hasnt shown its ugly face is oil. This does make sense, this world is newly terraformed, and hasnt had time to develope oil. No worries, natural oils can stand in its place."
+				"During travels you've come across almost every other resource seen on earth, but one that hasnt shown its ugly face is oil. This does make sense, this world is newly terraformed, and hasnt had time to develop oil. No worries, natural oils can stand in its place."
+				""
+				"Either fish or vegetables should work."
 			]
 			dependencies: ["2109C9CCA332ADB4"]
 			id: "19F01413A00BB938"
@@ -1433,6 +1435,8 @@
 				"While there exists 5 tiers of spirits, only the second and third tiers can be created this way. The fourth and fifth require much more advanced methods of synthesis."
 				""
 				"Upon finishing fermentation, drain the distillation from the bottle and crystalize it with a crystalizer machine."
+				""
+				"Use a chest next to the red output port for easy output, otherwise the item spawns nearby."
 				""
 				"For a complete guide on the tree of spirits, check out the AMI Discord."
 			]
@@ -1574,7 +1578,7 @@
 		}
 		{
 			title: "excavator"
-			x: 15.0d
+			x: 15.5d
 			y: 10.5d
 			dependencies: [
 				"412C83BCD7045EFA"
@@ -2034,6 +2038,8 @@
 				"What to do with these new spirits? Well the spirit altar has several recipes to utilize them!"
 				""
 				"If you didnt craft one in tier 2, go ahead and make one. Otherwise just go pick yours up and put it back down."
+				""
+				"Fair warning: There is a bug with this block. After crafting one item, it will continue to craft without catalysts until all pillar materials and spirits are used. Automation setups are going to be difficult."
 			]
 			dependencies: ["59904ABFCBF022B8"]
 			id: "60AFE3DA3E0BF2D6"
@@ -2485,11 +2491,12 @@
 			icon: "immersivepetroleum:lubricant_bucket"
 			x: -7.5d
 			y: 6.5d
-			description: ["By mixing together 1 part fish oil, and 1 part vegetable oil, lubricant is produced."]
+			description: ["By heating either plant oil or fish oil, a natural lubricant is produced."]
 			dependencies: [
 				"1FAEF4F8BB6334B7"
 				"20044DCC915F5206"
 			]
+			dependency_requirement: "one_completed"
 			id: "2B5FD091DBF8F470"
 			tasks: [{
 				id: "4D9E3A2527D2E6E4"

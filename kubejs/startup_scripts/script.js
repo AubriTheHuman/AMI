@@ -443,11 +443,9 @@ onEvent('item.registry', event => {
 	event.create('amicore:tiny_sulfur_pile').displayName('Tiny Pile of Sulfur Dust').texture('kubejs:item/blanks/tiny_dust').color(0, 0xDEE821).group('amicore.petrotab');
 	event.create('amicore:dirty_sulfur').displayName('Dirty Sulfur').texture("kubejs:item/dirty_sulfur").group('amicore.petrotab');
 	event.create('amicore:limey_weeping_paste').displayName('Limey Weeping Paste').texture("kubejs:item/limey_weeping_paste").group('amicore.biotab');
-	event.create('amicore:multicylinder_phase1').displayName('Partially Assembled Multi Cylinder Engine').texture("kubejs:item/multicylinder_phase1").tooltip("§7Phase 1 Completed").group('amicore.intermediatestab');
-	event.create('amicore:multicylinder_phase1a').displayName('Partially Assembled Multi Cylinder Engine').texture("kubejs:item/multicylinder_phase1").tooltip("§7Phase 1 In Progress").group(null);
-	event.create('amicore:multicylinder_phase2').displayName('Partially Assembled Multi Cylinder Engine').texture("kubejs:item/multicylinder_phase2").tooltip("§7Phase 2 Completed").group('amicore.intermediatestab');
-	event.create('amicore:multicylinder_phase2a').displayName('Partially Assembled Multi Cylinder Engine').texture("kubejs:item/multicylinder_phase2").tooltip("§7Phase 2 In Progress").group(null);
-	event.create('amicore:multicylinder_phase3a').displayName('Partially Assembled Multi Cylinder Engine').texture("kubejs:item/multicylinder_phase3").tooltip("§7Phase 3 In Progress").group(null);
+	event.create('amicore:partial_engine_cluster').displayName('Partially Assembled Engine Cluster').texture("kubejs:item/partial_engine_cluster").tooltip("§7Partially complete").group(null);
+	event.create('amicore:engine_cluster').displayName('Engine Cluster').texture("kubejs:item/engine_cluster").group('amicore.intermediatestab');
+	event.create('amicore:partial_multicyl_engine').displayName('Partially Assembled Multi Cylinder Engine').texture("kubejs:item/multicylinder_phase1").tooltip("§7Partially complete").group(null);
 	event.create('amicore:multicyl_engine').displayName('Multi Cylinder Engine').texture("kubejs:item/multicyl_engine").group('amicore.intermediatestab');
 	event.create('amicore:high_torque_gearbox').displayName('High Torque Gearbox').texture("kubejs:item/high_torque_gearbox").group('amicore.intermediatestab');
 	event.create('amicore:simple_resistor').displayName('Simple Resistor').texture("kubejs:item/simple_resistor").group('amicore.intermediatestab');
@@ -481,7 +479,7 @@ onEvent('item.registry', event => {
 	event.create('amicore:peanut_meal').displayName('Peanut Meal').texture("kubejs:item/peanut_meal").group('amicore.biotab');
 	event.create('amicore:soybean_meal').displayName('Soybean Meal').texture("kubejs:item/soybean_meal").group('amicore.biotab');
 	event.create('amicore:sesame_seed_meal').displayName('Sesame Seed Meal').texture("kubejs:item/sesame_seed_meal").group('amicore.biotab');
-	event.create('amicore:pinenut_meal').displayName('Peanut Meal').texture("kubejs:item/pinenut_meal").group('amicore.biotab');
+	event.create('amicore:pinenut_meal').displayName('Pine Nut Meal').texture("kubejs:item/pinenut_meal").group('amicore.biotab');
 	event.create('amicore:coconut_meal').displayName('Coconut Meal').texture("kubejs:item/coconut_meal").group('amicore.biotab');
 	event.create('amicore:biowaste').displayName('Biowaste').texture("kubejs:item/biowaste").group('amicore.biotab');
 	event.create('amicore:algae').displayName('Algae').texture("kubejs:item/algae").group('amicore.biotab');
@@ -695,7 +693,6 @@ onEvent('fluid.registry', event => {
 	event.create('amicore:mineral_water').textureThin(0xA87035).bucketColor(0xA87035).displayName('Mineral Water');
 	event.create('amicore:sulfuric_waste_water').textureThin(0xCBDECD).bucketColor(0xCBDECD).displayName('Sulfuric Waste Water');
 	event.create('amicore:nitric_waste_water').textureThin(0xDD7F94).bucketColor(0xDD7F94).displayName('Nitric Waste Water');
-	event.create('amicore:weeping_paste').textureThin(0xC61E07).bucketColor(0xC61E07).displayName('Weeping Paste')	
 	event.create('amicore:ashy_weeping_paste').textureThin(0xB2000A).bucketColor(0xB2000A).displayName('Ashy Weeping Paste')	
 	event.create('amicore:simple_spirit_solution').textureThin(0xD453C9).bucketColor(0xD453C9).displayName('Simple Spirit Solution');
 	// event.create('amicore:molten_solder').textureThick(0x837D7D).bucketColor(0x837D7D).displayName('Molten Solder').bucketItem(item => { item.group('amicore.metaltab')  });
