@@ -30,6 +30,8 @@ mods.jei.JEI.hideItem(<item:create:iron_sheet>);
 mods.jei.JEI.hideItem(<item:create:golden_sheet>);
 mods.jei.JEI.hideItem(<item:create:brass_sheet>);
 mods.jei.JEI.hideItem(<item:createaddition:zinc_sheet>);
+mods.jei.JEI.hideItem(<item:createdeco:zinc_sheet>);
+mods.jei.JEI.hideItem(<item:createdeco:netherite_sheet>);
 
 
 #rogue rods

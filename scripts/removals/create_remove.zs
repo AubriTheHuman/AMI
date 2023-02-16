@@ -55,3 +55,11 @@ mods.jei.JEI.hideItem(<item:steampowered:cast_iron_ingot>);
 mods.jei.JEI.hideItem(<item:steampowered:steel_ingot>);
 pressing.removeRecipe(<item:steampowered:cast_iron_sheet>);
 mixing.removeRecipe(<item:steampowered:cast_iron_ingot>);
+
+pressing.removeRecipe(<item:create:iron_sheet>);
+pressing.removeRecipe(<item:create:gold_sheet>);
+pressing.removeRecipe(<item:create:copper_sheet>);
+pressing.removeRecipe(<item:createdeco:zinc_sheet>);
+pressing.removeRecipe(<item:createdeco:netherite_sheet>);
+
+<recipetype:create:compacting>.removeRecipe(<item:steampowered:cast_iron_ingot>);

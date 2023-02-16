@@ -22,3 +22,5 @@ mods.jei.JEI.addItem(<item:immersive_geology:flask_hydrochloric_acid>);
 mods.jei.JEI.addItem(<item:immersive_geology:flask_hydrofluoric_acid>); 
 mods.jei.JEI.addItem(<item:immersive_geology:ingot_refractory_brick>);
 mods.jei.JEI.addInfo(<item:immersive_geology:block_item_machine_stone_bloomery>, ["§cThis item is unused!"]);
+
+craftingTable.removeByModid("immersive_geology");
