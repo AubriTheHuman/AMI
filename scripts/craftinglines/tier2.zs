@@ -331,8 +331,8 @@ milling.addRecipe("dirty_sulfur_milling", [<item:immersiveengineering:dust_sulfu
     },
     {
         "type": "create:pressing",
-        "ingredients": [ { "item": "amicore:multicylinder_phase2a" } ],
-        "results": [ { "item": "amicore:multicylinder_phase2a" } ],
+        "ingredients": [ { "item": "amicore:partial_multicyl_engine" } ],
+        "results": [ { "item": "amicore:partial_multicyl_engine" } ],
         "processingTime": 40
     },
     {

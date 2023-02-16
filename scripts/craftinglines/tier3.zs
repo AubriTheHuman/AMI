@@ -23,9 +23,9 @@ milling.addRecipe("fish_milling_cod", [<item:amicore:fish_meal>], <item:minecraf
 milling.addRecipe("fish_milling_salmon", [<item:amicore:fish_meal>], <item:minecraft:salmon>);
 milling.addRecipe("olive_milling", [<item:amicore:olive_meal>], <item:pamhc2trees:oliveitem>);
 milling.addRecipe("avocado_milling", [<item:amicore:avocado_meal>], <item:pamhc2trees:avocadoitem>);
-milling.addRecipe("peanut_milling", [<item:amicore:peanut_meal>], <item:pamhc2trees:peanutitem>);
-milling.addRecipe("soybean_milling", [<item:amicore:soybean_meal>], <item:pamhc2trees:soybeanitem>);
-milling.addRecipe("sesame_seed_milling", [<item:amicore:sesame_seed_meal>], <item:pamhc2trees:sesameseedsitem>);
+milling.addRecipe("peanut_milling", [<item:amicore:peanut_meal>], <item:pamhc2crops:peanutitem>);
+milling.addRecipe("soybean_milling", [<item:amicore:soybean_meal>], <item:pamhc2crops:soybeanitem>);
+milling.addRecipe("sesame_seed_milling", [<item:amicore:sesame_seed_meal>], <item:pamhc2crops:sesameseedsitem>);
 milling.addRecipe("pinenut_milling", [<item:amicore:pinenut_meal>], <item:pamhc2trees:pinenutitem>);
 milling.addRecipe("coconut_milling", [<item:amicore:coconut_meal>], <item:pamhc2trees:coconutitem>);
 draining.addRecipe("fish_meal_draining", <item:amicore:biowaste>, <fluid:amicore:fish_oil> * 100, <item:amicore:fish_meal>);
@@ -44,8 +44,8 @@ draining.addRecipe("coconut_meal_draining", <item:amicore:biowaste>, <fluid:amic
 <recipetype:immersiveengineering:squeezer>.addRecipe("sesame_seed_meal_squeezing", <item:amicore:sesame_seed_meal>, 40960, <fluid:amicore:plant_oil> * 100, <item:amicore:biowaste>);
 <recipetype:immersiveengineering:squeezer>.addRecipe("pinenut_meal_squeezing", <item:amicore:pinenut_meal>, 40960, <fluid:amicore:plant_oil> * 175, <item:amicore:biowaste>);
 <recipetype:immersiveengineering:squeezer>.addRecipe("coconut_meal_squeezing", <item:amicore:coconut_meal>, 40960, <fluid:amicore:plant_oil> * 175, <item:amicore:biowaste>);
-mixing.addRecipe("refined_plant_oil", "heated", <fluid:amicore:refined_plant_oil> * 100, [], [<fluid:amicore:plant_oil> * 100], 400);
-mixing.addRecipe("lubricant", "heated", <fluid:immersivepetroleum:lubricant> * 100, [], [<fluid:amicore:refined_plant_oil> * 50,<fluid:amicore:fish_oil> * 50], 400);
+mixing.addRecipe("lubricant_plant", "heated", <fluid:immersivepetroleum:lubricant> * 100, [], [<fluid:amicore:plant_oil> * 100], 400);
+mixing.addRecipe("lubricant_fish", "heated", <fluid:immersivepetroleum:lubricant> * 100, [], [<fluid:amicore:fish_oil> * 100], 400);
 
 #fish water
 new mods.immersivepetroleum.DistillationBuilder()
@@ -136,3 +136,27 @@ draining.addRecipe("sap_draining", <item:malum:runewood_log>, <fluid:amicore:sol
 filling.addRecipe("sap_filling_bottle", <item:malum:solar_sap_bottle>, <item:minecraft:glass_bottle>, <fluid:amicore:solar_sap> * 250);
 filling.addRecipe("sap_filling_slime", <item:malum:solar_sapball> * 3, <item:minecraft:slime_ball>, <fluid:amicore:solar_sap> * 250);
 
+#botany Pot/ Cloche
+craftingTable.removeByModid("botanypots");
+Recipe.type(Type.BASIC)
+  .shaped([[<item:minecraft:terracotta>, <item:minecraft:cobblestone>, <item:minecraft:terracotta>],
+  [<item:minecraft:terracotta>, <item:minecraft:flower_pot>, <item:minecraft:terracotta>],
+  [<item:minecraft:air>, <item:minecraft:terracotta>, <item:minecraft:air>]])
+  .output(<item:botanypots:botany_pot>)
+  .tool(<tag:items:artisantools:type/chisel>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .register();
+Recipe.type(Type.BASIC)
+  .shaped([[<item:minecraft:hopper>, <item:botanypots:botany_pot>, <item:amicore:steel_round_sheet>]])
+  .output(<item:botanypots:hopper_botany_pot>)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .secondary([<item:amicore:steel_bolt>*2])
+  .register();
+
+var color = ["white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray", "cyan", "purple", "blue", "brown", "green", "red", "black"] as string[];
+
+for item in color {
+  craftingTable.addShapeless("botany_pot_dye_" + item, BracketHandlers.getItem("botanypots:" + item + "_botany_pot"), [<tagManager:items>.getTag("forge:dyes/" + item), <item:botanypots:botany_pot>]);
+  craftingTable.addShapeless("hopper_botany_pot_dye_" + item, BracketHandlers.getItem("botanypots:hopper_" + item + "_botany_pot"), [<tagManager:items>.getTag("forge:dyes/" + item), <item:botanypots:hopper_botany_pot>]);
+}

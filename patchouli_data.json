@@ -188,6 +188,57 @@
         "advancedperipherals:items/chunk_controller"
       ],
       "completedManualQuests": []
+    },
+    "botania:lexicon": {
+      "viewedEntries": [
+        "botania:functional_flowers/flower_shrinking",
+        "botania:functional_flowers/agricarnation",
+        "botania:functional_flowers/bubbell",
+        "botania:functional_flowers/clayconia",
+        "botania:functional_flowers/daffomill",
+        "botania:functional_flowers/heisei_dream",
+        "botania:functional_flowers/jaded_amaranthus",
+        "botania:functional_flowers/labellia",
+        "botania:functional_flowers/jiyuulia",
+        "botania:functional_flowers/hyacidus",
+        "botania:functional_flowers/hopperhock",
+        "botania:functional_flowers/fallen_kanade",
+        "botania:functional_flowers/dreadthorne",
+        "botania:functional_flowers/exoflame",
+        "botania:functional_flowers/marimorphosis",
+        "botania:functional_flowers/medumone",
+        "botania:functional_flowers/bergamute",
+        "botania:functional_flowers/bellethorne",
+        "botania:functional_flowers/pollidisiac",
+        "botania:functional_flowers/rannuncarpus",
+        "botania:functional_flowers/solegnolia",
+        "botania:functional_flowers/tangleberrie",
+        "botania:functional_flowers/tigerseye",
+        "botania:functional_flowers/flower_speed",
+        "botania:functional_flowers/vinculotus",
+        "botania:functional_flowers/spectranthemum",
+        "botania:functional_flowers/loonium",
+        "botania:functional_flowers/orechid",
+        "botania:functional_flowers/orechid_ignem",
+        "botania:generating_flowers/spectrolus"
+      ],
+      "bookmarks": [],
+      "history": [
+        "botania:generating_flowers/spectrolus",
+        "botania:functional_flowers/vinculotus",
+        "botania:functional_flowers/marimorphosis",
+        "botania:functional_flowers/orechid_ignem",
+        "botania:functional_flowers/orechid",
+        "botania:functional_flowers/loonium",
+        "botania:functional_flowers/spectranthemum",
+        "botania:functional_flowers/flower_speed",
+        "botania:functional_flowers/tigerseye",
+        "botania:functional_flowers/tangleberrie",
+        "botania:functional_flowers/solegnolia",
+        "botania:functional_flowers/rannuncarpus",
+        "botania:functional_flowers/pollidisiac"
+      ],
+      "completedManualQuests": []
     }
   }
 }

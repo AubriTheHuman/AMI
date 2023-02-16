@@ -142,7 +142,7 @@ Recipe.type(Type.BASIC)
   .shaped([[<item:amicore:soul_soil_brick>,<item:amicore:soul_soil_brick>,<item:amicore:soul_soil_brick>],
   [<item:amicore:soul_soil_brick>,<item:minecraft:air>,<item:amicore:soul_soil_brick>],
   [<item:amicore:soul_soil_brick>,<item:amicore:soul_soil_brick>,<item:amicore:soul_soil_brick>]])
-  .output(<item:pamhc2foodcore:cuttingboarditem>)
+  .output(<item:pamhc2foodcore:bakewareitem>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .tool(<tag:items:artisantools:type/handsaw>, 1)
   .register();

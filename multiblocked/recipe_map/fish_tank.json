@@ -31,10 +31,6 @@
           {
             "chance": 1.0,
             "content": "{FluidName:\"amicore:fish_water\",Amount:500}"
-          },
-          {
-            "chance": 1.0,
-            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:1000}"
           }
         ]
       },
@@ -111,10 +107,6 @@
           {
             "chance": 1.0,
             "content": "{FluidName:\"amicore:fish_water\",Amount:500}"
-          },
-          {
-            "chance": 1.0,
-            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:100}"
           }
         ]
       },
@@ -157,10 +149,6 @@
           {
             "chance": 1.0,
             "content": "{FluidName:\"amicore:fish_water\",Amount:250}"
-          },
-          {
-            "chance": 1.0,
-            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:25}"
           }
         ]
       },
@@ -203,10 +191,6 @@
           {
             "chance": 1.0,
             "content": "{FluidName:\"amicore:fish_water\",Amount:250}"
-          },
-          {
-            "chance": 1.0,
-            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:25}"
           }
         ]
       },
@@ -283,10 +267,6 @@
           {
             "chance": 1.0,
             "content": "{FluidName:\"minecraft:water\",Amount:500}"
-          },
-          {
-            "chance": 1.0,
-            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:100}"
           }
         ]
       },
@@ -332,10 +312,6 @@
           {
             "chance": 1.0,
             "content": "{FluidName:\"minecraft:water\",Amount:500}"
-          },
-          {
-            "chance": 1.0,
-            "content": "{FluidName:\"amicore:nutrient_paste\",Amount:100}"
           }
         ]
       },

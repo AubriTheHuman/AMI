@@ -485,7 +485,7 @@
 			description: [
 				"The multicylinder engine, the other major crafting component of this age, and the next. "
 				""
-				"It's imperative that this is nearly totally, or fully automated. How you do this is up to you, but it is a sequenced assembly. You wont need a million of them, but youll need a fair few."
+				"You wont need a million of these engines, but youll need a fair few."
 				""
 				"The above line of quests outline the main production line, which is split into 3 phases, (22 steps total!)"
 			]
@@ -2083,6 +2083,7 @@
 					type: "item"
 					item: "create:spout"
 					count: 2L
+					consume_items: false
 				}
 				{
 					id: "413E613AC6A83C5F"

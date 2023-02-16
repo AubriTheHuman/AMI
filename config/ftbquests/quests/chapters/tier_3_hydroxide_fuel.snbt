@@ -749,6 +749,7 @@
 		{
 			x: 10.5d
 			y: 7.5d
+			description: ["Shadow steel, gold, steel, ancient debris"]
 			dependencies: ["2650498B9D601A6F"]
 			id: "3FC681E702B5BAD6"
 			tasks: [{
@@ -939,6 +940,13 @@
 			x: -13.5d
 			y: 10.5d
 			shape: "gear"
+			description: [
+				"Now on to the next era! No longer will you be bound by spinning objects to do your bidding, instead let the spinning objects govern half of your time!"
+				""
+				"Now that you have automated LV circuit production, LV power can be transfered to use as power instead of stress."
+				""
+				"By the end of Tier 3, you will be able to melt even the toughest natural metals, upgrade your storage solution, and melt the raw spirits of the living!"
+			]
 			dependencies: ["417096C593DECCAF"]
 			id: "320BF2147EF53D41"
 			tasks: [{
@@ -1291,6 +1299,11 @@
 					id: "0E84B6100FED58A9"
 					type: "item"
 					item: "pamhc2trees:olive_sapling"
+				}
+				{
+					id: "4D0C703ECE7A357C"
+					type: "checkmark"
+					title: "Hint?"
 				}
 			]
 		}
@@ -2505,8 +2518,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: 6.0d
+			x: -6.0d
+			y: 8.5d
 			description: [
 				"Quick note about the Garden Cloche."
 				""
@@ -2515,13 +2528,19 @@
 				"Also, it is capable of growing plants from other dimensions inside of it. Given the right medium."
 			]
 			hide_dependency_lines: true
-			dependencies: ["19F01413A00BB938"]
-			secret: true
+			dependencies: ["5ED19D446171E5F1"]
+			hide: true
+			dependency_requirement: "one_started"
 			id: "558537CAC91005C9"
 			tasks: [{
 				id: "25A280DB84D1FD24"
 				type: "item"
 				item: "immersiveengineering:cloche"
+			}]
+			rewards: [{
+				id: "1842C5985FE48759"
+				type: "item"
+				item: "amicore:amicoin"
 			}]
 		}
 		{
@@ -2630,6 +2649,56 @@
 					item: "malum:tempestuous_spirit"
 				}
 			]
+		}
+		{
+			title: "Fruited Trees"
+			icon: "minecraft:apple"
+			x: -6.0d
+			y: 7.5d
+			description: [
+				"In order for trees to bear fruit within the cloche, richer soil is needed. Making compost and letting it sit creates a suitible soil."
+				""
+				"Using dirt will cause only wood to be produced."
+			]
+			dependencies: ["558537CAC91005C9"]
+			hide: true
+			secret: true
+			id: "16F001831A5FEFE0"
+			tasks: [
+				{
+					id: "1C3BB84697139CDC"
+					type: "item"
+					item: "minecraft:dirt"
+				}
+				{
+					id: "255E680DEBE08130"
+					type: "item"
+					item: "farmersdelight:rich_soil"
+				}
+			]
+			rewards: [{
+				id: "54A3720ED2DB1D73"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Botany Pot"
+			x: -6.0d
+			y: 9.5d
+			description: ["A variant to the garden cloche, better suited for growing crops and other small plants."]
+			dependencies: ["558537CAC91005C9"]
+			id: "233EC839C1967FC6"
+			tasks: [{
+				id: "4DDE665D6C69635E"
+				type: "item"
+				item: "botanypots:botany_pot"
+			}]
+			rewards: [{
+				id: "7001E327EDE13C80"
+				type: "item"
+				item: "amicore:amicoin"
+			}]
 		}
 	]
 }

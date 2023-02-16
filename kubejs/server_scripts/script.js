@@ -349,6 +349,8 @@ onEvent('item.tags', event => {
   event.remove('forge:plates/iron', 'create:iron_sheet');
   event.remove('forge:plates/gold', 'create:golden_sheet');
   event.remove('forge:plates/brass', 'create:brass_sheet');
+  event.remove('forge:plates/zinc', 'createdeco:zinc_sheet');
+  event.remove('forge:plates/netherite', 'createdeco:netherite_sheet');
   event.remove('forge:plates/zinc', 'createaddition:zinc_sheet');
 
   //rods removal
@@ -670,11 +672,11 @@ onEvent('item.tags', event => {
   event.add('forge:plant_oil_meal', 'amicore:peanut_meal');
   event.add('forge:plant_oil_meal', 'amicore:pinenut_meal');
   event.add('forge:plant_oil_fruit', 'pamhc2trees:oliveitem');
-  event.add('forge:plant_oil_fruit', 'pamhc2trees:soybeanitem');
+  event.add('forge:plant_oil_fruit', 'pamhc2crops:soybeanitem');
   event.add('forge:plant_oil_fruit', 'pamhc2trees:avocadoitem');
   event.add('forge:plant_oil_fruit', 'pamhc2trees:coconutitem');
-  event.add('forge:plant_oil_fruit', 'pamhc2trees:sesameseedsitem');
-  event.add('forge:plant_oil_fruit', 'pamhc2trees:peanutitem');
+  event.add('forge:plant_oil_fruit', 'pamhc2crops:sesameseedsitem');
+  event.add('forge:plant_oil_fruit', 'pamhc2crops:peanutitem');
   event.add('forge:plant_oil_fruit', 'pamhc2trees:pinenutitem');
 
   //run last

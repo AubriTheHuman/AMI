@@ -625,6 +625,7 @@ onEvent('block.registry', event => {
 	event.create('amicore:rich_earth_slime_dirt').material('dirt').hardness(0.4).displayName('Rich Earthy Slime Dirt').model("kubejs:block/rich_earth_slime_dirt").harvestTool('shovel', 0).item(item => { item.group('amicore.biotab')  });
 	event.create('amicore:rich_sky_slime_dirt').material('dirt').hardness(0.4).displayName('Rich Sky Slime Dirt').model("kubejs:block/rich_sky_slime_dirt").harvestTool('shovel', 0).item(item => { item.group('amicore.biotab')  });
 	event.create('amicore:rich_ender_slime_dirt').material('dirt').hardness(0.4).displayName('Rich Ender Slime Dirt').model("kubejs:block/rich_ender_slime_dirt").harvestTool('shovel', 0).item(item => { item.group('amicore.biotab')  });
+	event.create('amicore:rich_ichor_slime_dirt').material('dirt').hardness(0.4).displayName('Rich Ichor Slime Dirt').model("kubejs:block/rich_ichor_slime_dirt").harvestTool('shovel', 0).item(item => { item.group('amicore.biotab')  });
 	
 })
 
@@ -704,7 +705,6 @@ onEvent('fluid.registry', event => {
 	event.create('amicore:plant_oil').textureThin(0xD1DF5C).bucketColor(0xD1DF5C).displayName('Plant Oil');
 	event.create('amicore:purified_water').textureThin(0xABECF4).bucketColor(0xABECF4).displayName('Pure Water');
 	event.create('amicore:saline').textureThin(0xADD6F6).bucketColor(0xADD6F6).displayName('Saline Water');
-	event.create('amicore:refined_plant_oil').textureThin(0xF2E131).bucketColor(0xF2E131).displayName('Refined Plant Oil');
 	// event.create('amicore:lubricant').textureThin(0x008F19).bucketColor(0x008F19).displayName('Lubricant');
 	event.create('amicore:nutrient_paste').textureThin(0x864D09).bucketColor(0x864D09).displayName('Nutrient Paste');
 	event.create('amicore:slag_slurry').textureThick(0x683D03).bucketColor(0x683D03).displayName('Slag Slurry');
