@@ -1,0 +1,10 @@
+{
+	"block.extendedcrafting.pedestal": "Auto-Altar Pedestal",
+	"block.extendedcrafting.crafting_core": "Powered Spirit Altar",
+	"block.extendedcrafting.basic_auto_table": "Automat Artisan",
+
+    "tooltip.extendedcrafting.tier": "Crafts any recipe from the basic, carpenter, engineer, and designer worktables and workstations.",
+	
+	"jei.category.extendedcrafting.combination": "Powered Spirit Altar",
+	"jei.category.extendedcrafting.basic_crafting": "Automat Artisan Recipe"
+}
