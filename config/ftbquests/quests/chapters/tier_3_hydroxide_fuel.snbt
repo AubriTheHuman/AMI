@@ -1924,7 +1924,7 @@
 		}
 		{
 			x: 6.5d
-			y: 15.5d
+			y: 16.5d
 			description: [
 				"When looking at a travel anchor whilst standing on another, you can shift to travel there instantly. The travel staff also allows this while off the anchor."
 				""
@@ -1940,7 +1940,7 @@
 		}
 		{
 			x: 6.5d
-			y: 16.5d
+			y: 15.5d
 			description: ["By shift+right clicking on an ender chest, it can be bound to it allowing acess from your inventory. Effective for dumping items in an ME system remotely."]
 			dependencies: ["35B01F53FBF40CE3"]
 			id: "5CA6F42DA0FB4D9D"

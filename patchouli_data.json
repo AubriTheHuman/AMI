@@ -40,6 +40,7 @@
       ],
       "bookmarks": [],
       "history": [
+        "geolosys:03_resources/anthracitic_coal",
         "geolosys:03_resources/andesite",
         "geolosys:01_introduction/02_ore_plutons",
         "geolosys:01_introduction/03_vanilla_ores",
@@ -111,19 +112,19 @@
       ],
       "bookmarks": [],
       "history": [
+        "patchouli:03_resources/nether_debris",
         "patchouli:03_resources/chromite",
+        "patchouli:03_resources/cinnabar",
+        "patchouli:03_resources/lignite",
+        "patchouli:03_resources/lazurite",
+        "patchouli:03_resources/malachite",
+        "patchouli:03_resources/teallite",
+        "patchouli:03_resources/pentlandite",
+        "patchouli:03_resources/hematite",
         "patchouli:03_resources/azurite",
         "patchouli:03_resources/cassiterite",
         "patchouli:02_prospecting/01_samples",
-        "patchouli:02_prospecting/02_prospectors_pick",
-        "patchouli:03_resources/hematite",
-        "patchouli:03_resources/limonite",
-        "patchouli:03_resources/nether_quartz",
-        "patchouli:03_resources/cinnabar",
-        "patchouli:03_resources/bitumen",
-        "patchouli:04_patrons/list",
-        "patchouli:03_resources/autunite",
-        "patchouli:01_introduction/04_configuring"
+        "patchouli:02_prospecting/02_prospectors_pick"
       ],
       "completedManualQuests": []
     },

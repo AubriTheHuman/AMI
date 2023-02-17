@@ -271,7 +271,7 @@
 	#[in Blocks]
 	#The maximum distance a mechanical pump can push or pull liquids on either side.
 	#Range: > 1
-	mechanicalPumpRange = 16
+	mechanicalPumpRange = 1
 	#
 	#[in Blocks]
 	#[-1 to disable this behaviour]
