@@ -15,6 +15,7 @@ var pressing = <recipetype:create:pressing>;
 var washing = <recipetype:create:splashing>;
 var milling = <recipetype:create:milling>;
 var filling = <recipetype:create:filling>;
+var draining = <recipetype:create:emptying>;
 
 #recipe tweaks
 <recipetype:create:cutting>.removeRecipe(<item:create:shaft>);
@@ -1228,6 +1229,42 @@ Recipe.type(Type.ENGINEER)
   .secondary([<item:amicore:crude_steel_bolt>*2])
   .register();
 
+# mechanical crafting recipes
+<recipetype:create:mechanical_crafting>.removeRecipe(<item:create:potato_cannon>);
+<recipetype:create:mechanical_crafting>.removeRecipe(<item:create_stuff_additions:brass_portable_drill>);
+<recipetype:create:mechanical_crafting>.removeRecipe(<item:create_stuff_additions:blaze_flame_thrower>);
+<recipetype:create:mechanical_crafting>.removeRecipe(<item:create_stuff_additions:brass_accelerator_leggings>);
+<recipetype:create:mechanical_crafting>.removeRecipe(<item:create_stuff_additions:copper_accelerator_leggings>);
+<recipetype:create:mechanical_crafting>.removeRecipe(<item:create_stuff_additions:andesite_accelerator_leggings>);
+
+<recipetype:create:mechanical_crafting>.addRecipe("potato_cannon_ami", <item:create:potato_cannon>, [
+  [<item:minecraft:glass_pane>,<item:minecraft:air>,<item:minecraft:air>,<item:minecraft:air>,<item:amicore:simple_engine>],
+  [<tag:items:forge:rounded_sheets/copper>, <item:create:fluid_pipe>, <item:create:fluid_pipe>,<item:create:fluid_pipe>,<item:create:fluid_pipe>],
+  [<item:minecraft:air>,<item:minecraft:air>, <item:minecraft:air>, <tag:items:forge:rods/copper>, <item:minecraft:piston>]]);
+<recipetype:create:mechanical_crafting>.addRecipe("brass_portable_drill_ami", <item:create_stuff_additions:brass_portable_drill>, [
+  [<tag:items:forge:rounded_sheets/silicon_brass>,<tag:items:forge:rounded_sheets/silicon_brass>,<tag:items:forge:large_sheets/silicon_brass>],
+  [<item:create:andesite_alloy>, <item:create:mechanical_drill>, <item:create:brass_casing>],
+  [<tag:items:forge:rounded_sheets/silicon_brass>,<tag:items:forge:rounded_sheets/silicon_brass>,<tag:items:forge:large_sheets/silicon_brass>]]);
+<recipetype:create:mechanical_crafting>.addRecipe("blaze_flame_thrower_ami", <item:create_stuff_additions:blaze_flame_thrower>, [
+  [<item:minecraft:glass_pane>,<item:minecraft:air>,<item:minecraft:air>,<item:minecraft:air>,<item:amicore:simple_engine>],
+  [<tag:items:forge:rounded_sheets/sterling_silver>, <tag:items:forge:rounded_sheets/sterling_silver>, <tag:items:forge:rounded_sheets/sterling_silver>,<tag:items:forge:rounded_sheets/sterling_silver>,<item:create:blaze_burner>],
+  [<item:minecraft:air>,<item:minecraft:air>, <item:minecraft:air>, <tag:items:forge:rods/sterling_silver>, <item:minecraft:piston>]]);
+<recipetype:create:mechanical_crafting>.addRecipe("andesite_accelerator_leggings_ami", <item:create_stuff_additions:andesite_accelerator_leggings>, [
+  [<item:create:cogwheel>, <item:amicore:simple_gearbox>, <item:create:cogwheel>],
+  [<item:create:andesite_alloy>, <item:create:andesite_alloy>, <item:create:brass_casing>],
+  [<item:create:andesite_casing>, <tag:items:forge:plates/silicon_brass>, <item:create:andesite_casing>],
+  [<item:create:andesite_alloy>, <tag:items:forge:plates/silicon_brass>, <item:create:brass_casing>]]);
+<recipetype:create:mechanical_crafting>.addRecipe("copper_accelerator_leggings_ami", <item:create_stuff_additions:copper_accelerator_leggings>, [
+  [<item:steampowered:bronze_cogwheel>, <item:amicore:high_torque_gearbox>, <item:steampowered:bronze_cogwheel>],
+  [<tag:items:forge:ingots/copper>, <tag:items:forge:ingots/copper>, <tag:items:forge:ingots/copper>],
+  [<item:create:copper_casing>, <tag:items:forge:plates/copper>, <item:create:copper_casing>],
+  [<tag:items:forge:ingots/copper>, <tag:items:forge:plates/copper>, <tag:items:forge:ingots/copper>]]);
+<recipetype:create:mechanical_crafting>.addRecipe("brass_accelerator_leggings_ami", <item:create_stuff_additions:brass_accelerator_leggings>, [
+  [<item:steampowered:cast_iron_cogwheel>, <item:amicore:multicyl_engine>, <item:steampowered:cast_iron_cogwheel>],
+  [<tag:items:forge:ingots/silicon_brass>, <tag:items:forge:ingots/crude_steel>, <tag:items:forge:ingots/silicon_brass>],
+  [<item:create:brass_casing>, <tag:items:forge:plates/crude_steel>, <item:create:brass_casing>],
+  [<tag:items:forge:ingots/silicon_brass>, <tag:items:forge:plates/crude_steel>, <tag:items:forge:ingots/silicon_brass>]]);
+
 #unify limestone
 <tag:items:forge:stone/limestone>.add([<item:create:limestone>,<item:create:limestone_cobblestone>,<item:create:limestone_cobblestone_wall>,
   <item:create:polished_limestone>,<item:create:polished_limestone_wall>,<item:create:limestone_bricks>,<item:create:limestone_bricks_wall>,
@@ -1295,6 +1332,15 @@ washing.removeByName("create:splashing/immersiveengineering/crushed_uranium_ore"
 washing.removeByName("create:splashing/crushed_zinc_ore");
 washing.removeByName("create:splashing/soul_sand");
 
+mixing.removeByName("createaddition:compat/immersiveengineering/electrum");
+mixing.removeByName("createaddition:compat/immersiveengineering/constantan");
+mixing.removeByName("createaddition:compat/tconstruct/manyullyn");
+mixing.removeByName("createaddition:compat/tconstruct/pig_iron");
+mixing.removeByName("createaddition:compat/tconstruct/queens_slime");
+mixing.removeByName("createaddition:compat/tconstruct/rose_gold");
+mixing.removeByName("createaddition:compat/tconstruct/tinkers_bronze");
+mixing.removeByName("createaddition:compat/tconstruct/slimesteel");
+
 #milling
 milling.removeByName("create:milling/iron_ore");
 milling.removeByName("create:milling/gold_ore");
@@ -1356,6 +1402,20 @@ milling.removeByName("create:milling/diorite");
 milling.removeByName("create:milling/gravel");
 milling.removeByName("create:milling/sandstone");
 milling.removeByName("create:milling/sand");
+milling.removeByName("create:milling/terracotta");
+
+crushing.removeByName("create:crushing/sand");
+crushing.removeByName("create:crushing/lapis_ore");
+crushing.removeByName("create:crushing/emerald_ore");
+crushing.removeByName("create:crushing/redstone_ore");
+crushing.removeByName("create:crushing/nether_quartz_ore");
+crushing.removeByName("create:crushing/diamond_ore");
+crushing.removeByName("create:crushing/coal_ore");
+crushing.removeByName("create:compat/ae2/crushing/certus_ore");
+crushing.removeByName("create:compat/ae2/crushing/charged_certus_ore");
+crushing.removeByName("byg:compat/create/lignite_ore");
+crushing.removeByName("byg:compat/create/anthracite_ore");
+crushing.removeByName("createaddition:crushing/diamond_ore");
 
 crushing.addRecipe("crushing/andesite", [<item:minecraft:cobblestone>], <item:minecraft:andesite>);
 crushing.addRecipe("crushing/granite", [<item:minecraft:red_sand>], <item:minecraft:granite>);
@@ -1371,3 +1431,7 @@ milling.removeByName("create:compat/ae2/milling/nether_quartz");
 milling.removeByName("create:compat/ae2/milling/certus_quartz");
 milling.removeByName("create:compat/ae2/milling/ender_pearl");
 milling.removeByName("create:compat/ae2/milling/sky_stone_block");
+
+
+
+
