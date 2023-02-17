@@ -26,3 +26,8 @@ mods.jei.JEI.hideItem(<item:advancedrocketry:nuggettitaniumaluminide>);
 mods.jei.JEI.hideItem(<item:advancedrocketry:nuggettitaniumiridium>);
 mods.jei.JEI.hideItem(<item:advancedrocketry:blocktitaniumaluminide>);
 mods.jei.JEI.hideItem(<item:advancedrocketry:blocktitaniumiridium>);
+
+mods.jei.JEI.hideItem(<item:advancedrocketry:geartitaniumaluminide>);
+mods.jei.JEI.hideItem(<item:advancedrocketry:geartitaniumiridium>);
+mods.jei.JEI.hideItem(<item:libvulpes:geartitanium>);
+mods.jei.JEI.hideItem(<item:libvulpes:gearsteel>);

@@ -491,6 +491,20 @@ onEvent('item.tags', event => {
   event.remove('forge:nuggets/titaniumaluminide', 'advancedrocketry:nuggettitaniumaluminide');
   event.remove('forge:nuggets', 'advancedrocketry:nuggettitaniumiridium');
   event.remove('forge:nuggets/titaniumiridium', 'advancedrocketry:nuggettitaniumiridium');
+  event.remove('forge:gears/titaniumaluminide', 'advancedrocketry:geartitaniumaluminide');
+  event.remove('forge:gears/titaniumiridium', 'advancedrocketry:geartitaniumiridium');
+  event.remove('forge:gears/titanium', 'libvulpes:geartitanium');
+  event.remove('forge:gears/steel', 'libvulpes:gearsteel');
+  event.remove('forge:coils', 'libvulpes:coiltitanium');
+  event.remove('forge:coils/titanium', 'libvulpes:coiltitanium');
+  event.remove('forge:coils', 'libvulpes:coilgold');
+  event.remove('forge:coils/gold', 'libvulpes:coilgold');
+  event.remove('forge:coils', 'libvulpes:coilcopper');
+  event.remove('forge:coils/copper', 'libvulpes:coilcopper');
+  event.remove('forge:coils', 'libvulpes:coilaluminum');
+  event.remove('forge:coils/aluminum', 'libvulpes:coilaluminum');
+  event.remove('forge:coils', 'libvulpes:coiliridium');
+  event.remove('forge:coils/iridium', 'libvulpes:coiliridium');
 
   //tinkers delite
 

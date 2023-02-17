@@ -10,6 +10,19 @@ mods.jei.JEI.hideItem(<item:xkdeco:steel_armor_chestplate>);
 mods.jei.JEI.hideItem(<item:xkdeco:steel_armor_leggings>);
 mods.jei.JEI.hideItem(<item:xkdeco:steel_armor_boots>);
 
+
+
+craftingTable.removeRecipe(<item:xkdeco:steel_ingot>);
+craftingTable.removeRecipe(<item:xkdeco:steel_pickaxe>);
+craftingTable.removeRecipe(<item:xkdeco:steel_shovel>);
+craftingTable.removeRecipe(<item:xkdeco:steel_sword>);
+craftingTable.removeRecipe(<item:xkdeco:steel_hoe>);
+craftingTable.removeRecipe(<item:xkdeco:steel_axe>);
+craftingTable.removeRecipe(<item:xkdeco:steel_armor_helmet>);
+craftingTable.removeRecipe(<item:xkdeco:steel_armor_chestplate>);
+craftingTable.removeRecipe(<item:xkdeco:steel_armor_leggings>);
+craftingTable.removeRecipe(<item:xkdeco:steel_armor_boots>);
+
 blastFurnace.removeRecipe(<item:xkdeco:steel_ingot>);
 craftingTable.removeRecipe(<item:xkdeco:steel_block>);
 craftingTable.removeRecipe(<item:xkdeco:steel_ingot>);
