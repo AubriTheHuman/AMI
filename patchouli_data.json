@@ -240,6 +240,28 @@
         "botania:functional_flowers/pollidisiac"
       ],
       "completedManualQuests": []
+    },
+    "extendedcrafting:guide": {
+      "viewedEntries": [
+        "extendedcrafting:crafting/auto_tables",
+        "extendedcrafting:crafting/ender_crafting",
+        "extendedcrafting:crafting/compression",
+        "extendedcrafting:crafting/combination",
+        "extendedcrafting:components/ultimate_singularity",
+        "extendedcrafting:components/singularities",
+        "extendedcrafting:crafting/tables"
+      ],
+      "bookmarks": [],
+      "history": [
+        "extendedcrafting:crafting/ender_crafting",
+        "extendedcrafting:crafting/compression",
+        "extendedcrafting:crafting/combination",
+        "extendedcrafting:crafting/tables",
+        "extendedcrafting:crafting/auto_tables",
+        "extendedcrafting:components/singularities",
+        "extendedcrafting:components/ultimate_singularity"
+      ],
+      "completedManualQuests": []
     }
   }
 }

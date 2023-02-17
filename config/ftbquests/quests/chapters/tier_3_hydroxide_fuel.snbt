@@ -772,7 +772,7 @@
 		}
 		{
 			x: 5.0d
-			y: 15.5d
+			y: 14.5d
 			description: [
 				"When charged with electricity, the travel staff will teleport the user forward."
 				""
@@ -966,6 +966,11 @@
 				id: "1CD8DE8680629555"
 				type: "item"
 				item: "scannable:scanner"
+			}]
+			rewards: [{
+				id: "3DFBAE3628C2BEB0"
+				type: "item"
+				item: "scannable:module_range"
 			}]
 		}
 		{
@@ -1923,8 +1928,8 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: 16.5d
+			x: 5.0d
+			y: 15.5d
 			description: [
 				"When looking at a travel anchor whilst standing on another, you can shift to travel there instantly. The travel staff also allows this while off the anchor."
 				""
@@ -1939,10 +1944,10 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: 15.5d
+			x: 4.0d
+			y: 15.0d
 			description: ["By shift+right clicking on an ender chest, it can be bound to it allowing acess from your inventory. Effective for dumping items in an ME system remotely."]
-			dependencies: ["35B01F53FBF40CE3"]
+			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "5CA6F42DA0FB4D9D"
 			tasks: [{
 				id: "2DF021B7AC1C8552"
@@ -2044,26 +2049,37 @@
 		}
 		{
 			title: "Complicating the Altar"
+			icon: "extendedcrafting:crafting_core"
 			x: 3.5d
 			y: 13.5d
 			shape: "rsquare"
 			description: [
 				"What to do with these new spirits? Well the spirit altar has several recipes to utilize them!"
 				""
-				"If you didnt craft one in tier 2, go ahead and make one. Otherwise just go pick yours up and put it back down."
+				"An upgraded altar can be crafted with some of these new spirits. This altar is able to be automated with ease. "
 				""
-				"Fair warning: There is a bug with this block. After crafting one item, it will continue to craft without catalysts until all pillar materials and spirits are used. Automation setups are going to be difficult."
+				"It functions almost the same, except spirits go on the new pedestals instead of on the altar itself. The pedestals can be placed up to 3 blocks away."
+				""
+				"Instead of using hex ash to speed up the recipe, instead hex ash is consumed as a catalyst for all recipes."
 			]
 			dependencies: ["59904ABFCBF022B8"]
 			id: "60AFE3DA3E0BF2D6"
-			tasks: [{
-				id: "44827872C3515269"
-				type: "item"
-				item: "malum:spirit_altar"
-			}]
+			tasks: [
+				{
+					id: "694D4E75D5D5CBBE"
+					type: "item"
+					item: "extendedcrafting:crafting_core"
+				}
+				{
+					id: "09C0A9FB3402B8B7"
+					type: "item"
+					item: "extendedcrafting:pedestal"
+					count: 8L
+				}
+			]
 		}
 		{
-			x: 3.5d
+			x: 3.0d
 			y: 15.0d
 			description: ["The spirit altar can be used to craft a mega torch, which when placed will prevent all mob spawns within a 32 block radius."]
 			dependencies: ["60AFE3DA3E0BF2D6"]
@@ -2307,7 +2323,7 @@
 				}
 			}
 			x: 12.0d
-			y: 7.5d
+			y: 6.0d
 			dependencies: ["3FC681E702B5BAD6"]
 			id: "07B7A013839A6ECB"
 			tasks: [
@@ -2383,7 +2399,7 @@
 		{
 			title: "Crystal Growth Accellerator"
 			x: 5.0d
-			y: 14.5d
+			y: 12.5d
 			description: [
 				"While already requiring an MV circuit to create. The Crystal Growth Acellerator will speed up the growth of pure cystal seeds significantly. Up to 6 can effect the growth, by placing on all sides of the water."
 				""
@@ -2698,6 +2714,26 @@
 				id: "7001E327EDE13C80"
 				type: "item"
 				item: "amicore:amicoin"
+			}]
+		}
+		{
+			title: "Automated Artisan"
+			x: 12.0d
+			y: 7.5d
+			description: [
+				"This variant crafting table uses power to automatically craft any recipe from the basic, carpenter, engineer, and designer worktables and workstations."
+				""
+				"The downside, other than power consumption, is that it cannot craft fluid recipes, or any recipe that output's fluid. As well as being limited to only 3x3 artisan recipes."
+			]
+			dependencies: [
+				"3FC681E702B5BAD6"
+				"6B5735D99D90A34E"
+			]
+			id: "51569FB0A828ACD1"
+			tasks: [{
+				id: "6FE07AD951424F19"
+				type: "item"
+				item: "extendedcrafting:basic_auto_table"
 			}]
 		}
 	]
