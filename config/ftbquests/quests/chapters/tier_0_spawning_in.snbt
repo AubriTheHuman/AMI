@@ -403,31 +403,6 @@
 			]
 		}
 		{
-			title: "Bounty Board (WIP)"
-			x: -4.5d
-			y: -2.0d
-			description: ["Speaking of robbing villages, find yourself a bounty board. While the rewards arent overwhelmingly good, periodically something useful may come along."]
-			dependencies: ["3C453753643763E0"]
-			id: "2DCAEB840B9166DB"
-			tasks: [{
-				id: "49F78CB28DB2E28F"
-				type: "item"
-				item: "bountiful:bountyboard"
-			}]
-			rewards: [
-				{
-					id: "1F483ABC0C4026AD"
-					type: "item"
-					item: "amicore:amicoin"
-				}
-				{
-					id: "73BD1B5211BFEED4"
-					type: "item"
-					item: "pamhc2foodcore:chickennuggetitem"
-				}
-			]
-		}
-		{
 			title: "Walking About"
 			x: -2.0d
 			y: 0.5d
@@ -997,7 +972,7 @@
 					Damage: 0
 				}
 			}
-			x: -2.5d
+			x: -4.5d
 			y: -2.0d
 			subtitle: "But not too high..."
 			description: [
@@ -1942,7 +1917,6 @@
 				"043E8FC39A0AECE1"
 				"02A63DF4EE4CCC8B"
 				"1B1F62F5D30C1A63"
-				"2DCAEB840B9166DB"
 				"4BE0F0CA62DC37A0"
 				"46FE14B06B2E4B5C"
 				"200FF97B4314F878"
@@ -2949,8 +2923,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -1.0d
+			x: -2.5d
+			y: -2.0d
 			description: ["Glide slowly down while holding the paraglider. Can help prevent death from a high drop. And it can be dyed!"]
 			dependencies: ["3C453753643763E0"]
 			id: "6E69D7D22F625FD2"
