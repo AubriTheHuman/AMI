@@ -1538,8 +1538,8 @@
 		}
 		{
 			title: "mixer"
-			x: -8.5d
-			y: 23.5d
+			x: -0.5d
+			y: 16.5d
 			id: "7F433BA0BC5F9CCF"
 			tasks: [{
 				id: "5EB6E1EED8A81536"
@@ -1549,7 +1549,7 @@
 		}
 		{
 			title: "press"
-			x: -7.5d
+			x: -7.0d
 			y: 22.5d
 			id: "3B1B38B745B0BEB3"
 			tasks: [{
@@ -2216,8 +2216,8 @@
 		}
 		{
 			title: "crystalizer"
-			x: -10.0d
-			y: 23.0d
+			x: -1.5d
+			y: 16.5d
 			id: "3EC0925258E4F03E"
 			tasks: [{
 				id: "3E6AFDC6AB215BA3"

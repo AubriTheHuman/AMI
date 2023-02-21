@@ -580,5 +580,15 @@
 				item: "quark:green_crystal_cluster"
 			}]
 		}
+		{
+			x: 10.5d
+			y: 0.0d
+			id: "609A4DC4629E8859"
+			tasks: [{
+				id: "352E6C6810B5B38B"
+				type: "item"
+				item: "amicore:magical_matter_2_bucket"
+			}]
+		}
 	]
 }

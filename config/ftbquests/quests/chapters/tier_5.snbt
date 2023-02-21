@@ -287,5 +287,15 @@
 				item: "advancedperipherals:ar_controller"
 			}]
 		}
+		{
+			x: -0.5d
+			y: 3.0d
+			id: "500A44524ACF8AA8"
+			tasks: [{
+				id: "285E9F71FDD0D64B"
+				type: "item"
+				item: "amicore:magical_matter_3_bucket"
+			}]
+		}
 	]
 }

@@ -162,5 +162,15 @@
 				item: "immersiveengineering:heavy_engineering"
 			}]
 		}
+		{
+			x: 3.5d
+			y: -1.5d
+			id: "2BE8A32D739660F9"
+			tasks: [{
+				id: "666C0DB3BF382CA2"
+				type: "item"
+				item: "amicore:magical_matter_4_bucket"
+			}]
+		}
 	]
 }
