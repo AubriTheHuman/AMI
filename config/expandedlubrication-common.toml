@@ -1,0 +1,83 @@
+
+["Lubricant speed factors"]
+	#Number of extra ticks tier 1 lubricants do. Must be > 0. Default: 0.25 (1.25x speed)
+	"Tier 1 factor" = 0.25
+	#Number of extra ticks tier 2 lubricants do. Must be > 0. Default: 0.5 (1.5x speed)
+	"Tier 2 factor" = 0.5
+	#Number of extra ticks tier 3 lubricants do. Must be > 0. Default: 1 (2x speed)
+	"Tier 3 factor" = 1.0
+	#Number of extra ticks tier 4 lubricants do. Must be > 0. Default: 3 (4x speed)
+	"Tier 4 factor" = 3.0
+
+["Lubricant consumption rates"]
+	#Consumption speed of tier 1 lubricants, calculated as n per every 4 ticks. Must be an integer 1 or greater. Default: 1 (5/s)
+	"Tier 1 Consumption" = 2
+	#Consumption speed of tier 2 lubricants, calculated as n per every 4 ticks. Must be an integer 1 or greater. Default: 2 (10/s)
+	"Tier 2 Consumption" = 3
+	#Consumption speed of tier 3 lubricants, calculated as n per every 4 ticks. Must be an integer 1 or greater. Default: 3 (15/s)
+	"Tier 3 Consumption" = 3
+	#Consumption speed of tier 4 lubricants, calculated as n per every 4 ticks. Must be an integer 1 or greater. Default: 4 (20/s)
+	"Tier 4 Consumption" = 4
+
+["Immersive Engineering Machine Toggles"]
+	#Add tiered functionality to Arc Furnace. Default: true
+	doArcFurnace = true
+	#Add tiered functionality to Automated Engineers Workbench. Default: true
+	doAutoEngineerWorkbench = true
+	#Add tiered functionality to Crusher, replacing default behavior. Default: true
+	doCrusher = true
+	#Add tiered functionality to Excavator, replacing default behavior. Default: true
+	doExcavatorReplace = true
+	#Add tiered functionality to Fermenter. Default: true
+	doFermenter = true
+	#Add tiered functionality to Mixer. Default: true
+	doMixer = true
+	#Add tiered functionality to Metal Press. Default: true
+	doMetalPress = true
+	#Add tiered functionality to Refinery. Default: true
+	doRefinery = true
+	#Add tiered functionality to Squeezer. Default: true
+	doSqueezer = true
+
+["Immersive Engineering Non-Electric Machine Toggles"]
+	#Add tiered functionality to Coke Oven. Default: true
+	doCokeOven = true
+	#Add tiered functionality to Crude Blast Furnace. Default: true
+	doCrudeBlastFurnace = true
+	#Add tiered functionality to Blast Furnace. Default: true
+	doBlastFurnace = true
+	#Add tiered functionality to Alloy Smelter. Default: true
+	doAlloySmelter = true
+
+["Immersive Petroleum Machine Toggles"]
+	#Add tiered functionality to Coker. Default: true
+	doCoker = true
+	#Add tiered functionality to Distillation Tower. Default: true
+	doDistillationTower = true
+	#Add tiered functionality to Sulfur Recovery Unit/Hyrdrotreater. Default: true
+	doSulfurRecovery = true
+	#Add tiered functionality to Pumpjack, replacing default behavior. Default: true
+	doPumpjackReplace = true
+
+["Immersive Geology Machine Toggles"]
+	#Add tiered functionality to the IG Rotary Kiln. Default: true
+	doRotaryKilnIG = true
+	#Add tiered functionality to Gravity Separator. Default: true
+	doGravitySeparator = true
+	#Add tiered functionality to Crystallizer. Default: true
+	doCrystallizer = true
+	#Add tiered functionality to Chemical Vat. Default: true
+	doChemicalVat = true
+	#Add tiered functionality to Hydrocutter. Default: true
+	doHydrocutter = true
+
+["Immersive Industry Machine Toggles"]
+	#Add tiered functionality to Crucible. Default: true
+	doCrucible = true
+	#Add tiered functionality to Electrolyzer. Default: true
+	doElectrolyzer = true
+	#Add tiered functionality to the II Rotary Kiln. Default: true
+	doRotaryKilnII = true
+	#Add tiered functionality to Car Kiln. Default: true
+	doCarKiln = true
+
