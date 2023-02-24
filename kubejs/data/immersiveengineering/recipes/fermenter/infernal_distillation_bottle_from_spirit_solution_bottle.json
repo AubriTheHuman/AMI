@@ -1,0 +1,15 @@
+{
+    "type":"immersiveengineering:fermenter",
+    "fluid":{
+        "fluid":"amicore:ether_gas",
+        "amount":50
+    },
+    "result":{
+        "item":"amicore:infernal_distillation_bottle"
+    },
+    "input":
+    {
+        "item":"amicore:infernal_solution_bottle"
+    },
+    "energy":3200
+}

@@ -1,0 +1,15 @@
+{
+    "type":"immersiveengineering:fermenter",
+    "fluid":{
+        "fluid":"amicore:ether_gas",
+        "amount":50
+    },
+    "result":{
+        "item":"amicore:earthen_solution_bottle"
+    },
+    "input":
+    {
+        "item":"amicore:earthen_brew_bottle"
+    },
+    "energy":3200
+}
