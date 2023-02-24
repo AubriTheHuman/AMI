@@ -12,6 +12,8 @@ dumps/
 emojiful/
 resourcepacks/
 tconplanner/
+global_data_packs/
+global_resource_packs/
 usercache.json
 usernamecache.json
 TrashSlotSaveState.json

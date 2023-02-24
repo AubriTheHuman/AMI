@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "geolosys:lignite_ore",
-    "geolosys:bituminous_coal_ore",
-    "geolosys:anthracite_coal_ore",
-    "geolosys:coal_ore"
-  ]
-}
