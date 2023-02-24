@@ -1,0 +1,32 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": 20,
+    "yMax": 40,
+    "size": 40,
+    "spread": 13,
+    "density": 1.0,
+    "dimensions": {
+      "isBlacklist": false,
+      "filter": [ "overworld" ]
+    },
+    "blocks": [{
+      "block": "amicore:pyrite_ore",
+      "chance": 0.47
+    },{
+      "block": "amicore:chalcopyrite_ore",
+      "chance": 0.46
+    },{
+      "block": "amicore:sphalerite_ore",
+      "chance": 0.05
+    },{
+      "block": "amicore:quartzite_ore",
+      "chance": 0.02
+    }],
+    "samples": [{
+      "block": "geolosys:cinnabar_ore_sample",
+      "chance": 1.0
+    }],
+    "generationWeight": 7
+  }
+}

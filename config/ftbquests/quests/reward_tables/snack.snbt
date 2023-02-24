@@ -1,0 +1,19 @@
+{
+	id: "0A048EDDA69186F2"
+	order_index: 13
+	title: "snack"
+	icon: "pamhc2foodextended:figpieitem"
+	loot_size: 2
+	rewards: [
+		{ item: "pamhc2foodextended:figpieitem", count: 4 }
+		{ item: "pamhc2foodextended:figjellysandwichitem", count: 4 }
+		{ item: "pamhc2foodextended:figjuiceitem", count: 4 }
+		{ item: "pamhc2foodextended:figyogurtitem", count: 4 }
+		{ item: "pamhc2foodextended:figjellytoastitem", count: 4 }
+		{ item: "pamhc2foodextended:figbaritem", count: 4 }
+		{ item: "createcafe:fig_milk_tea", count: 4 }
+		{ item: "pamhc2foodextended:figjuiceitem", count: 4 }
+		{ item: "pamhc2foodextended:figjellyitem", count: 4 }
+		{ item: "pamhc2foodextended:figsmoothieitem", count: 4 }
+	]
+}

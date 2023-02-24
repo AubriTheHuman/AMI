@@ -1,0 +1,44 @@
+{
+	id: "395C250EB253E3A4"
+	order_index: 9
+	title: "Artisan's Mortar"
+	icon: {
+		id: "artisantools:mortar_iron"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "artisantools:mortar_iron"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 5
+		}
+		{
+			item: {
+				id: "artisantools:mortar_steel"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "artisantools:mortar_diamond"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+}

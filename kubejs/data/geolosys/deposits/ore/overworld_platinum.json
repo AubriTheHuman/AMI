@@ -1,0 +1,32 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": 5,
+    "yMax": 15,
+    "size": 30,
+    "spread": 13,
+    "density": 1.0,
+    "dimensions": {
+      "isBlacklist": false,
+      "filter": [ "overworld" ]
+    },
+    "blocks": [{
+      "block": "amicore:sperrylite_ore",
+      "chance": 0.5
+    },{
+      "block": "amicore:cooperite_ore",
+      "chance": 0.46
+    },{
+      "block": "amicore:osmiridium_ore",
+      "chance": 0.04
+    }],
+    "samples": [{
+      "block": "amicore:sperrylite_ore_sample",
+      "chance": 0.6
+    },{
+      "block": "geolosys:amicore_cooperite_ore_sample",
+      "chance": 0.4
+    }],
+    "generationWeight": 1
+  }
+}

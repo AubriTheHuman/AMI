@@ -1,0 +1,37 @@
+{
+	id: "4C12A3182236B28A"
+	order_index: 11
+	title: "driver"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "artisantools:driver_iron"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 5
+		}
+		{
+			item: {
+				id: "artisantools:driver_steel"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "artisantools:driver_diamond"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+}

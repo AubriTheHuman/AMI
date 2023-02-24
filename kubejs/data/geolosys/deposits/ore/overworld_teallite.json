@@ -1,0 +1,33 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": 25,
+    "yMax": 50,
+    "size": 30,
+    "spread": 13,
+    "density": 1.0,
+    "dimensions": {
+      "isBlacklist": false,
+      "filter": [ "overworld" ]
+    },
+    "blocks": [{
+      "block": "amicore:apatite_ore",
+      "chance": 0.5
+    },{
+      "block": "amicore:teallite_ore",
+      "chance": 0.47
+    },{
+      "block": "amicore:leaded_galena_ore",
+      "chance": 0.03
+    }],
+    "samples": [{
+      "block": "amicore:teallite_ore_sample",
+      "chance": 0.7
+    },
+    {
+      "block": "geolosys:amicore_apatite_ore_sample",
+      "chance": 0.3
+    }],
+    "generationWeight": 2
+  }
+}

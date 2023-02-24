@@ -1,0 +1,29 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": 5,
+    "yMax": 15,
+    "size": 25,
+    "spread": 13,
+    "density": 1.0,
+    "dimensions": {
+      "isBlacklist": false,
+      "filter": [ "overworld" ]
+    },
+    "blocks": [{
+      "block": "amicore:chromite_ore",
+      "chance": 0.7
+    },{
+      "block": "amicore:magnesiochromite_ore",
+      "chance": 0.27
+    },{
+      "block": "amicore:hercynite_ore",
+      "chance": 0.03
+    }],
+    "samples": [{
+      "block": "geolosys:amicore_chromite_ore_sample",
+      "chance": 1.0
+    }],
+    "generationWeight": 1
+  }
+}

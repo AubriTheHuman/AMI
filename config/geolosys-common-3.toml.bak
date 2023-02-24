@@ -2,23 +2,24 @@
 #Feature Control
 ["feature control"]
 	#Output info into the logs when generating Geolosys deposits
-	debugWorldgen = true
+	debugWorldgen = false
 	#Disable generation of Vanilla ores
 	disableVanillaOreGen = true
 	#The fallback materials which a Deposit can replace if they're not specified by the deposit itself
 	#Format: Comma-delimited set of <modid:block> (see default for example)
-	defaultReplacementMaterials = ["minecraft:stone", "minecraft:netherrack", "minecraft:sandstone", "quark:deepslate", "quark:smooth_basalt", "chisel:basalt/raw", "chisel:marble/raw", "create:gabbro", "create:dolomite", "create:limestone", "create:natural_scoria", "minecraft:granite", "minecraft:andesite", "minecraft:diorite", "create:weathered_limestone", "quark:marble", "byg:soapstone", "byg:scoria_stone", "byg:rocky_stone", "minecraft:netherrack", "minecraft:end_stone"]
+	defaultReplacementMaterials = ["minecraft:stone", "minecraft:netherrack", "minecraft:sandstone", "quark:deepslate", "quark:smooth_basalt", "chisel:basalt/raw", "chisel:marble/raw", "create:gabbro", "create:dolomite", "create:limestone", "create:natural_scoria", "minecraft:granite", "minecraft:andesite", "minecraft:diorite", "create:weathered_limestone", "quark:marble", "byg:soapstone", "byg:scoria_stone", "byg:rocky_stone", "minecraft:netherrack", "minecraft:end_stone", "cavesandcliffs:deepslate", "cavesandcliffs:tuff", "cavesandcliffs:dripstone_block", "cavesandcliffs:smooth_basalt"]
 	#Outputs really advanced info when generating deposits.
-	advancedDebugWorldGen = true
+	advancedDebugWorldGen = false
 
 #Prospecting Options
 [prospecting]
 	#Maximum samples that can generate with each pluton within a chunk
 	#Range: 1 ~ 256
 	maxSamplesPerChunk = 7
-	#The percentage chance that a given chunk will be devoid of any Geolosys plutons (higher means more space between plutons)
-	#Range: 0.0 ~ 1.0
-	chunkSkipChance = 0.6
+	#The upper limit of RNG for generating any pluton in a given chunk.
+	#Larger values indicate further distance between plutons.
+	#Range: > 1
+	chunkSkipChance = 10
 	#A list of <modid:block> that samples may not be placed on
 	samplePlacementBlacklist = ["minecraft:ice", "minecraft:packed_ice", "minecraft:bedrock"]
 	#Enable the prospector's pickaxe
@@ -36,8 +37,6 @@
 	proPickDiameter = 10
 	#Give players a Field Manual if they haven't gotten one
 	giveManual = false
-	#Whether or not Samples randomly tick (like crops). This can be bad for performance but fixes waterlogging issues on worldgen
-	shouldSamplesTick = true
 
 #Mod-Compat Settings
 [compat]

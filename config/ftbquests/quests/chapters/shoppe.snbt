@@ -12,8 +12,8 @@
 		{
 			title: "Vanilla Saplings"
 			icon: "minecraft:oak_sapling"
-			x: 1.0d
-			y: -0.5d
+			x: 3.0d
+			y: 0.0d
 			dependencies: ["77A465AFE409E041"]
 			hide: true
 			id: "2D04293087F416BE"
@@ -33,8 +33,8 @@
 		{
 			title: "Random Sapling"
 			icon: "byg:aspen_sapling"
-			x: 1.0d
-			y: 0.5d
+			x: 3.0d
+			y: 1.0d
 			dependencies: [
 				"5806BB37145D65D8"
 				"77A465AFE409E041"
@@ -57,8 +57,9 @@
 		}
 		{
 			title: "Random Pam's Sapling"
-			x: 1.0d
-			y: 1.5d
+			icon: "pamhc2trees:apple_sapling"
+			x: 3.0d
+			y: 2.0d
 			dependencies: [
 				"5806BB37145D65D8"
 				"77A465AFE409E041"
@@ -87,8 +88,8 @@
 					Damage: 0
 				}
 			}
-			x: -2.0d
-			y: -0.5d
+			x: -4.0d
+			y: 0.0d
 			dependencies: ["21C13592EC5EF07F"]
 			hide: true
 			id: "63E24ABDCF89C586"
@@ -112,92 +113,1865 @@
 			}]
 		}
 		{
-			title: "Iron Cluster"
-			icon: "geolosys:iron_cluster"
-			x: 4.0d
-			y: -0.5d
-			dependencies: ["02A63DF4EE4CCC8B"]
-			id: "5E0F7AF7CC7E076B"
-			tasks: [{
-				id: "251EC27AF1516CDC"
-				type: "item"
-				item: "amicore:amicoin"
-				count: 16L
-			}]
-			rewards: [{
-				id: "0F268065E8001163"
-				type: "item"
-				item: "geolosys:iron_cluster"
-				count: 64
-			}]
-		}
-		{
-			title: "Gold Cluster"
-			icon: "geolosys:gold_cluster"
-			x: 4.0d
-			y: 0.5d
-			dependencies: ["13795E051B8764E4"]
-			id: "59E033EB375EE7E6"
-			tasks: [{
-				id: "0C5CCBBD8F46F2CF"
-				type: "item"
-				item: "amicore:amicoin"
-				count: 16L
-			}]
-			rewards: [{
-				id: "56F4216E75DF44AB"
-				type: "item"
-				item: "geolosys:gold_cluster"
-				count: 64
-			}]
-		}
-		{
-			title: "Copper Cluster"
-			icon: "geolosys:copper_cluster"
-			x: 4.0d
-			y: 1.5d
-			dependencies: ["02A63DF4EE4CCC8B"]
-			id: "016F9CFA18303E16"
-			tasks: [{
-				id: "59756F45215B381E"
-				type: "item"
-				item: "amicore:amicoin"
-				count: 16L
-			}]
-			rewards: [{
-				id: "7AA2EB60C1D0794C"
-				type: "item"
-				item: "geolosys:copper_cluster"
-				count: 64
-			}]
-		}
-		{
-			x: -2.0d
-			y: 0.5d
+			title: "Ender Pearls"
+			icon: "minecraft:ender_pearl"
+			x: 5.5d
+			y: 0.0d
+			dependencies: ["78D105B6CBFB10AD"]
 			id: "68C78B44D11EBF0E"
 			tasks: [{
-				id: "03C1DB961B2BF91F"
+				id: "10F5EEDD12A32EB9"
+				type: "item"
+				item: "amicore:amicoin_starmetal"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4D27DF91C41EAA9C"
 				type: "item"
 				item: "minecraft:ender_pearl"
+				count: 8
 			}]
 		}
 		{
 			title: "Spirit Orb"
 			icon: "paraglider:spirit_orb"
-			x: -2.0d
-			y: 1.5d
+			x: -4.0d
+			y: 1.0d
 			dependencies: ["4F703FEFFBD2281F"]
+			hide: true
+			repeatable: true
 			id: "6C39A03F43E8889D"
 			tasks: [{
 				id: "7AAD73845222BCFE"
 				type: "item"
-				item: "amicore:amicoin_damascus"
-				count: 2L
+				item: "amicore:amicoin_orachalchum"
+				consume_items: true
 			}]
 			rewards: [{
 				id: "1EF6BAA7D9976420"
 				type: "item"
 				item: "paraglider:spirit_orb"
+			}]
+		}
+		{
+			title: "Scanner Module: Range"
+			icon: "scannable:module_range"
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "790A1176B5329B8B"
+			tasks: [{
+				id: "463B7B9E8CBA80A2"
+				type: "item"
+				item: "amicore:amicoin_managold"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "49A8F88B7A88BDD5"
+				type: "item"
+				item: "scannable:module_range"
+			}]
+		}
+		{
+			title: "Scanner Module: Rare Ores"
+			icon: "scannable:module_ore_rare"
+			x: 0.0d
+			y: 1.0d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "02C309AC67596E6B"
+			tasks: [{
+				id: "4A005A8FC5370797"
+				type: "item"
+				item: "amicore:amicoin_managold"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6B1529A4D576E327"
+				type: "item"
+				item: "scannable:module_ore_rare"
+			}]
+		}
+		{
+			title: "Estradiol"
+			icon: "amicore:estradiol"
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["044979F991978D36"]
+			hide: true
+			repeatable: true
+			id: "7BF63D0FD0A41174"
+			tasks: [{
+				id: "5A1D7CF76FB59A30"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "587979736ECC7831"
+				type: "item"
+				item: "amicore:estradiol"
+			}]
+		}
+		{
+			title: "Crafting Hammer"
+			icon: {
+				id: "artisantools:hammer_iron"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.5d
+			y: 0.0d
+			dependencies: ["75489C7150DD17A2"]
+			hide: true
+			id: "3DFC7C9F27F05371"
+			tasks: [{
+				id: "202B9374A3271D2F"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6A4B027E1D5C31C2"
+				type: "random"
+				icon: {
+					id: "artisantools:hammer_iron"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				table_id: 1688057943128927314L
+			}]
+		}
+		{
+			title: "Crafting Cutters"
+			icon: {
+				id: "artisantools:cutters_iron"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.5d
+			y: 1.0d
+			dependencies: ["75489C7150DD17A2"]
+			hide: true
+			id: "6CB078F38B58B82C"
+			tasks: [{
+				id: "5A975AA70C5A48DB"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3CA3B90DEB3D776A"
+				type: "random"
+				icon: {
+					id: "artisantools:cutters_iron"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				table_id: 5651516933875739321L
+			}]
+		}
+		{
+			title: "Crafting Saw"
+			icon: {
+				id: "artisantools:handsaw_iron"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.5d
+			y: 2.0d
+			dependencies: ["75489C7150DD17A2"]
+			hide: true
+			id: "7C2DCA5AD04EED01"
+			tasks: [{
+				id: "7F1C69C73BB63BC1"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "1F706ED02BBA5ADF"
+				type: "random"
+				icon: {
+					id: "artisantools:handsaw_iron"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				table_id: 8793317866997788515L
+			}]
+		}
+		{
+			title: "Crafting Driver"
+			icon: {
+				id: "artisantools:driver_iron"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["75489C7150DD17A2"]
+			hide: true
+			id: "0B303770FCA4C127"
+			tasks: [{
+				id: "6563ACFBFCCCC1DB"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "1B9AE41F1D45BEBE"
+				type: "random"
+				icon: {
+					id: "artisantools:driver_iron"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				table_id: 700367157534284880L
+			}]
+		}
+		{
+			title: "Crafting Mortar"
+			icon: {
+				id: "artisantools:mortar_iron"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.5d
+			y: 1.0d
+			dependencies: ["75489C7150DD17A2"]
+			hide: true
+			id: "38AAFA2B5A1E36C4"
+			tasks: [{
+				id: "276574653FA08D22"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "45E416FC0A55BB93"
+				type: "random"
+				icon: {
+					id: "artisantools:mortar_iron"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				table_id: 4133219303070884772L
+			}]
+		}
+		{
+			title: "Crafting File"
+			icon: {
+				id: "artisantools:file_iron"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.5d
+			y: 2.0d
+			dependencies: ["75489C7150DD17A2"]
+			hide: true
+			id: "3DAE8CC19FFE4381"
+			tasks: [{
+				id: "6E71CFBDBBB0EAAE"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2EFAA601B068FC82"
+				type: "random"
+				icon: {
+					id: "artisantools:file_iron"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				table_id: 700367157534284880L
+			}]
+		}
+		{
+			title: "Geothite Ore"
+			icon: "amicore:geothite_ore"
+			x: -4.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E21662D477"
+			tasks: [{
+				id: "25FC887FA0FA0E03"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D20313C78D"
+				type: "item"
+				item: "amicore:geothite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Hematite Ore"
+			icon: "amicore:hematite_ore"
+			x: -3.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E21662D47F"
+			tasks: [{
+				id: "25FC887FA0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D20313C782"
+				type: "item"
+				item: "amicore:hematite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Limonite Ore"
+			icon: "amicore:limonite_ore"
+			x: -1.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E21662D478"
+			tasks: [{
+				id: "75B188BAD82277DF"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D20313C78F"
+				type: "item"
+				item: "amicore:limonite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Magnetite Ore"
+			icon: "amicore:magnetite_ore"
+			x: -4.0d
+			y: 5.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01421662D478"
+			tasks: [{
+				id: "25FC787FA0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED908D20313C78F"
+				type: "item"
+				item: "amicore:magnetite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Pyrite Ore"
+			icon: "amicore:pyrite_ore"
+			x: -2.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "063FE2CB8B337674"
+			tasks: [{
+				id: "25FC887FD0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D3C313C78F"
+				type: "item"
+				item: "amicore:pyrite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Chalcopyrite Ore"
+			icon: "amicore:chalcopyrite_ore"
+			x: -1.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "024F01E21662D478"
+			tasks: [{
+				id: "25FC887FA0FA0B04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D80313C78F"
+				type: "item"
+				item: "amicore:chalcopyrite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Sphalerite Ore"
+			icon: "amicore:sphalerite_ore"
+			x: 0.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E25662D478"
+			tasks: [{
+				id: "25FC887F305A0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED985D203A3C78F"
+				type: "item"
+				item: "amicore:sphalerite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Quartzite Ore"
+			icon: "amicore:quartzite_ore"
+			x: 1.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E24662D478"
+			tasks: [{
+				id: "25FC888FA0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D21213C78F"
+				type: "item"
+				item: "amicore:quartzite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Malachite Ore"
+			icon: "amicore:malachite_ore"
+			x: 2.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "00F4F01E9762D478"
+			tasks: [{
+				id: "25FC8874A0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D26313C78F"
+				type: "item"
+				item: "amicore:malachite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Azurite Ore"
+			icon: "amicore:azurite_ore"
+			x: -3.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E216698D78"
+			tasks: [{
+				id: "25FC8ACFA0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D203136A8F"
+				type: "item"
+				item: "amicore:azurite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Osmiridium Ore"
+			icon: "amicore:osmiridium_ore"
+			x: 4.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E67F62D478"
+			tasks: [{
+				id: "25FC882310FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 20L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D21033C78F"
+				type: "item"
+				item: "amicore:osmiridium_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Cassiterite Ore"
+			icon: "amicore:cassiterite_ore"
+			x: -2.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0D4F01E21662D478"
+			tasks: [{
+				id: "45FC887FA0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "56D988D20313C78F"
+				type: "item"
+				item: "amicore:cassiterite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Wolframite Ore"
+			icon: "amicore:wolframite_ore"
+			x: 4.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F21E21662D478"
+			tasks: [{
+				id: "25F9A87FA0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED938D20213C78F"
+				type: "item"
+				item: "amicore:wolframite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Silvery Galena Ore"
+			icon: "amicore:silvery_galena_ore"
+			x: 5.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E21F590478"
+			tasks: [{
+				id: "25FC8898D0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 6L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED958F20313C78F"
+				type: "item"
+				item: "amicore:silvery_galena_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Leaded Galena Ore"
+			icon: "amicore:leaded_galena_ore"
+			x: 5.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E21F110478"
+			tasks: [{
+				id: "25FC8898D0F10E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 6L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "111958F20313C78F"
+				type: "item"
+				item: "amicore:leaded_galena_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Sulfur Rich Ore"
+			icon: "amicore:sulfur_ore"
+			x: -4.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E21677D478"
+			tasks: [{
+				id: "25FC887FA0700E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D21113C78F"
+				type: "item"
+				item: "amicore:sulfur_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Teallite Ore"
+			icon: "amicore:teallite_ore"
+			x: 0.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01666662D478"
+			tasks: [{
+				id: "25FC887F41FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D66613C78F"
+				type: "item"
+				item: "amicore:teallite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Bauxite Ore"
+			icon: "amicore:bauxite_ore"
+			x: 6.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E21662D5FA"
+			tasks: [{
+				id: "25FC887FA0FA05FA"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D2031675FA"
+				type: "item"
+				item: "amicore:bauxite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Sperrylite Ore"
+			icon: "amicore:sperrylite_ore"
+			x: 6.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F9111E21662D478"
+			tasks: [{
+				id: "25FC888110FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 14L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988911313C78F"
+				type: "item"
+				item: "amicore:sperrylite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Copperite Ore"
+			icon: "amicore:cooperite_ore"
+			x: 7.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E216123478"
+			tasks: [{
+				id: "25FC887FA5670E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D28903C78F"
+				type: "item"
+				item: "amicore:cooperite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Uraninite Ore"
+			icon: "amicore:uraninite_ore"
+			x: 7.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E2166AB478"
+			tasks: [{
+				id: "25FC884F20FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988990313C78F"
+				type: "item"
+				item: "amicore:uraninite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Autunite Ore"
+			icon: "amicore:autunite_ore"
+			x: 8.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E216777478"
+			tasks: [{
+				id: "025FC887FA0F3074"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D20313FFFF"
+				type: "item"
+				item: "amicore:autunite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Apatite Ore"
+			icon: "amicore:apatite_ore"
+			x: 8.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E216624478"
+			tasks: [{
+				id: "25FC8875555A0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988880313C78F"
+				type: "item"
+				item: "amicore:apatite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Marmatite Ore"
+			icon: "amicore:marmatite_ore"
+			x: 4.0d
+			y: 5.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "000011E21662D478"
+			tasks: [{
+				id: "74FAA96FF3FB6BA8"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 6L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "002988D20313C78F"
+				type: "item"
+				item: "amicore:marmatite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Brucite Ore"
+			icon: "amicore:brucite_ore"
+			x: 5.0d
+			y: 5.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4333E21662D478"
+			tasks: [{
+				id: "25FC880760FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D58413C78F"
+				type: "item"
+				item: "amicore:brucite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Rutile Ore"
+			icon: "amicore:rutile_ore"
+			x: 6.0d
+			y: 5.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F0AAAA662D478"
+			tasks: [{
+				id: "25FC8CCCC0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED9FFFDDDD3C78F"
+				type: "item"
+				item: "amicore:rutile_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Certus Rich Ore"
+			icon: "amicore:certus_ore"
+			x: 1.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "4B2F47FEBEB514FD"
+			tasks: [{
+				id: "25EEEBBBA0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D20EEEC78F"
+				type: "item"
+				item: "amicore:certus_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Beryl Rich Ore"
+			icon: "amicore:beryl_ore"
+			x: 7.0d
+			y: 5.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E27766D478"
+			tasks: [{
+				id: "614C445A2ED1E76E"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 10L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED003120313C78F"
+				type: "item"
+				item: "amicore:beryl_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Red Beryl Rich Ore"
+			icon: "amicore:red_beryl_ore"
+			x: 8.0d
+			y: 5.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F0109E766D478"
+			tasks: [{
+				id: "25FC88ECA0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 10L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED003120385E78F"
+				type: "item"
+				item: "amicore:red_beryl_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Aquamarine Ore"
+			icon: "amicore:aquamarine_ore"
+			x: 2.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E277633978"
+			tasks: [{
+				id: "25FC887FA00AFE04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 10L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED00312031DE78F"
+				type: "item"
+				item: "amicore:aquamarine_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Kimberlite Rich Ore"
+			icon: "amicore:kimberlite_ore"
+			x: 10.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F40C21662D478"
+			tasks: [{
+				id: "25FC887ECBAF3E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D08383C78F"
+				type: "item"
+				item: "amicore:kimberlite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Lapis Lazuli Ore"
+			icon: "amicore:lapis_lazuli_ore"
+			x: 2.0d
+			y: 5.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "643A238701E08AE5"
+			tasks: [{
+				id: "2534A87FA0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6E07C8D20313C78F"
+				type: "item"
+				item: "amicore:lapis_lazuli_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Gold Ore"
+			icon: "amicore:gold_ore"
+			x: 10.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E210051478"
+			tasks: [{
+				id: "476CE5DD37D8733B"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D24952C78F"
+				type: "item"
+				item: "amicore:gold_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Calaverite Ore"
+			icon: "amicore:calaverite_ore"
+			x: 10.0d
+			y: 5.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F28E21662E478"
+			tasks: [{
+				id: "64D14F67E41B56AB"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED9ACE60313C78F"
+				type: "item"
+				item: "amicore:calaverite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Redstone Rich Ore"
+			icon: "amicore:redstone_ore"
+			x: -3.0d
+			y: 5.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E21772D478"
+			tasks: [{
+				id: "25F2177FA0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D203132177"
+				type: "item"
+				item: "amicore:redstone_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Chromite Ore"
+			icon: "amicore:chromite_ore"
+			x: 9.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01414162D478"
+			tasks: [{
+				id: "25FC881410FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988410313C78F"
+				type: "item"
+				item: "amicore:chromite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Magnesiochromite Ore"
+			icon: "amicore:magnesiochromite_ore"
+			x: 9.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "1EAF01E21662D478"
+			tasks: [{
+				id: "2998A87FA0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "773B88D20313C78F"
+				type: "item"
+				item: "amicore:magnesiochromite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Hercynite Ore"
+			icon: "amicore:hercynite_ore"
+			x: 9.0d
+			y: 5.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F02AB1662D478"
+			tasks: [{
+				id: "25FEABCFA0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED990060313C78F"
+				type: "item"
+				item: "amicore:hercynite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Pentlandite Ore"
+			icon: "amicore:pentlandite_ore"
+			x: 11.0d
+			y: 3.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "376B19E9B4560318"
+			tasks: [{
+				id: "4162F8A6657E1434"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "7A632A69D251F402"
+				type: "item"
+				item: "amicore:pentlandite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Millerite Ore"
+			icon: "amicore:millerite_ore"
+			x: 11.0d
+			y: 4.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E78462D478"
+			tasks: [{
+				id: "4731B77E9C7FB653"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D21393C78F"
+				type: "item"
+				item: "amicore:millerite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Coal Ore"
+			icon: "amicore:coal_ore"
+			x: -2.0d
+			y: 5.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E2169FA478"
+			tasks: [{
+				id: "2951E15B43B0F8DC"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED98845B313C78F"
+				type: "item"
+				item: "amicore:coal_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Lignite Ore"
+			icon: "amicore:lignite_ore"
+			x: -1.0d
+			y: 5.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E29882D478"
+			tasks: [{
+				id: "25FC887FFEBA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D98B13C78F"
+				type: "item"
+				item: "amicore:lignite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Bitumen Ore"
+			icon: "amicore:bitumen_ore"
+			x: 0.0d
+			y: 5.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01328662D478"
+			tasks: [{
+				id: "25FC8878C0FA0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED982390313C78F"
+				type: "item"
+				item: "amicore:bitumen_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Anthracite Ore"
+			icon: "amicore:anthracite_ore"
+			x: 1.0d
+			y: 5.5d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E216638B78"
+			tasks: [{
+				id: "0E149094C740B2E6"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988A30313C78F"
+				type: "item"
+				item: "amicore:anthracite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Tainted Anthracite Ore"
+			icon: "amicore:nether_anthracite_ore"
+			x: 1.0d
+			y: 7.0d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E21662AAAB"
+			tasks: [{
+				id: "25FC887FB9985604"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 6L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D2AABCC1BF"
+				type: "item"
+				item: "amicore:nether_anthracite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Tainted Gold Ore"
+			icon: "amicore:nether_gold_ore"
+			x: 0.0d
+			y: 7.0d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E2166B6AAB"
+			tasks: [{
+				id: "25FC887F2B985604"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED9884CAABCC1BF"
+				type: "item"
+				item: "amicore:nether_gold_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Tainted Ancient Debris Streaked Ore"
+			icon: "amicore:nether_debris_ore"
+			x: -1.0d
+			y: 7.0d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F98E21662AAAB"
+			tasks: [{
+				id: "25FC83ABB9985604"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 20L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED9899DAABCC1BF"
+				type: "item"
+				item: "amicore:nether_debris_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Tainted Cobaltite Ore"
+			icon: "amicore:nether_cobaltite_ore"
+			x: -2.0d
+			y: 7.0d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E243BFAAAB"
+			tasks: [{
+				id: "4933CD1819A84D96"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 20L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D12CBCC1BF"
+				type: "item"
+				item: "amicore:nether_cobaltite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Tainted Quartzite Rich Ore"
+			icon: "amicore:nether_quartz_ore"
+			x: -3.0d
+			y: 7.0d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F0121662AAFAB"
+			tasks: [{
+				id: "25FC88BC59985604"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6E988D2AAA2101BF"
+				type: "item"
+				item: "amicore:nether_quartz_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Tainted Blazing Quartz Rich Ore"
+			icon: "amicore:nether_blazing_quartz_ore"
+			x: -4.0d
+			y: 7.0d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E98C62AAAB"
+			tasks: [{
+				id: "25FC88AC19985604"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 14L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED0BED2AABCC1BF"
+				type: "item"
+				item: "amicore:nether_anthracite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Ender Anthracite Ore"
+			icon: "amicore:ender_anthracite_ore"
+			x: 1.0d
+			y: 8.0d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "44E34D2B83EF9B1D"
+			tasks: [{
+				id: "25FC887FBCAC0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 7L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D2455CC78F"
+				type: "item"
+				item: "amicore:ender_anthracite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Ender Thallasium Ore"
+			icon: "amicore:ender_thallasium_ore"
+			x: 0.0d
+			y: 8.0d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4FBA721662AAAB"
+			tasks: [{
+				id: "25FC887FBCAEA204"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 20L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED98821A55CC78F"
+				type: "item"
+				item: "amicore:ender_thallasium_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Ender Pendorite Streak Ore"
+			icon: "amicore:ender_pendorite_ore"
+			x: -1.0d
+			y: 8.0d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0A8201E21662AAAB"
+			tasks: [{
+				id: "25FC99BABCAC0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6E901AD2455CC78F"
+				type: "item"
+				item: "amicore:ender_pendorite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Ender Amber Ore"
+			icon: "amicore:ender_amber_ore"
+			x: -2.0d
+			y: 8.0d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4F01E216CDE2AB"
+			tasks: [{
+				id: "25FC887E81AC0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D24559AB3F"
+				type: "item"
+				item: "amicore:ender_amber_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Ender Ametrine Ore"
+			icon: "amicore:ender_ametrine_ore"
+			x: -3.0d
+			y: 8.0d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "0F4FA2B21662AAAB"
+			tasks: [{
+				id: "25FC8898ACAC0E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 20L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED988D241CFE78F"
+				type: "item"
+				item: "amicore:ender_ametrine_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "Ender Biotite Ore"
+			icon: "amicore:ender_biotite_ore"
+			x: -4.0d
+			y: 8.0d
+			dependencies: ["46944569A10BFA6C"]
+			hide: true
+			repeatable: true
+			id: "000001E21662AAAB"
+			tasks: [{
+				id: "25FC887FB0000E04"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 20L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ED98006655CC78F"
+				type: "item"
+				item: "amicore:ender_biotite_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "A Snack!"
+			icon: "pamhc2foodextended:figpieitem"
+			x: 1.5d
+			y: 1.0d
+			dependencies: ["77A465AFE409E041"]
+			id: "0D7234809EC35CCA"
+			tasks: [{
+				id: "3B2D269545A2CA1D"
+				type: "item"
+				item: "amicore:amicoin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3FA2DECBF3A0C229"
+				type: "random"
+				title: "Fig Snack!"
+				icon: "pamhc2foodextended:figpieitem"
+				table_id: 721858922919593714L
+			}]
+		}
+		{
+			title: "Maple Trees"
+			icon: "pamhc2trees:maple_sapling"
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["77A465AFE409E041"]
+			hide: true
+			repeatable: true
+			id: "1284479398635789"
+			tasks: [{
+				id: "49FB7E20FDE098F2"
+				type: "item"
+				item: "amicore:amicoin_orachalchum"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6ACBB8D8B6FA9B79"
+				type: "item"
+				item: "pamhc2trees:maple_sapling"
+				count: 4
+			}]
+		}
+		{
+			title: "Slime Sapling"
+			icon: "tconstruct:earth_slime_sapling"
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["77A465AFE409E041"]
+			hide: true
+			repeatable: true
+			id: "66DBE222E4CA1FC8"
+			tasks: [{
+				id: "172984D805FFF34A"
+				type: "item"
+				item: "amicore:amicoin_orachalchum"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "465F528A3165FD6C"
+				type: "item"
+				item: "tconstruct:earth_slime_sapling"
+			}]
+		}
+		{
+			title: "Pinenut Tree"
+			icon: "pamhc2trees:pinenut_sapling"
+			x: 4.0d
+			y: 1.0d
+			dependencies: ["77A465AFE409E041"]
+			hide: true
+			repeatable: true
+			id: "0EB251B01FBB24D2"
+			tasks: [{
+				id: "73EDCD80C571648A"
+				type: "item"
+				item: "amicore:amicoin_orachalchum"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "449885563088E1F2"
+				type: "item"
+				item: "pamhc2trees:pinenut_sapling"
+				count: 4
+			}]
+		}
+		{
+			title: "Rotten Flesh"
+			icon: "minecraft:rotten_flesh"
+			x: 5.5d
+			y: 1.0d
+			dependencies: ["78D105B6CBFB10AD"]
+			hide: true
+			repeatable: true
+			id: "025351AC4FDDB57B"
+			tasks: [{
+				id: "01CD5BA513372CA8"
+				type: "item"
+				item: "amicore:amicoin_starmetal"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "22E258D87AB67065"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 32
+			}]
+		}
+		{
+			title: "Bones"
+			icon: "minecraft:bone"
+			x: 5.5d
+			y: 2.0d
+			dependencies: ["78D105B6CBFB10AD"]
+			hide: true
+			repeatable: true
+			id: "498C1B62BF5DA470"
+			tasks: [{
+				id: "2E1B98E8C519AC4C"
+				type: "item"
+				item: "amicore:amicoin_starmetal"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3A2AEFDCED95C597"
+				type: "item"
+				item: "minecraft:bone"
+				count: 32
+			}]
+		}
+		{
+			title: "String"
+			icon: "minecraft:string"
+			x: 6.5d
+			y: 0.0d
+			dependencies: ["78D105B6CBFB10AD"]
+			hide: true
+			repeatable: true
+			id: "58C5A9EFB47E8369"
+			tasks: [{
+				id: "67D58F0E84AD8130"
+				type: "item"
+				item: "amicore:amicoin_starmetal"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "53805F556C40D7E3"
+				type: "item"
+				item: "minecraft:string"
+				count: 32
+			}]
+		}
+		{
+			title: "Gunpowder"
+			icon: "minecraft:gunpowder"
+			x: 6.5d
+			y: 1.0d
+			dependencies: ["78D105B6CBFB10AD"]
+			hide: true
+			repeatable: true
+			id: "488DB7A52D49CBAB"
+			tasks: [{
+				id: "1B57DF31E81A0FD5"
+				type: "item"
+				item: "amicore:amicoin_starmetal"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "41F31C78B8485A9F"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 12
+			}]
+		}
+		{
+			title: "Leather"
+			icon: "minecraft:leather"
+			x: 6.5d
+			y: 2.0d
+			dependencies: ["254D20348431674A"]
+			hide: true
+			repeatable: true
+			id: "55C2EAA7967C4623"
+			tasks: [{
+				id: "12C3963FE45A8AC2"
+				type: "item"
+				item: "amicore:amicoin_starmetal"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "1DF8EE4541DE745B"
+				type: "item"
+				item: "minecraft:leather"
+				count: 16
+			}]
+		}
+		{
+			title: "Ink Sacks"
+			icon: "minecraft:ink_sac"
+			x: 7.5d
+			y: 0.0d
+			dependencies: ["78D105B6CBFB10AD"]
+			hide: true
+			repeatable: true
+			id: "16E62006543F3DD2"
+			tasks: [{
+				id: "7A0DB32B57BA4A6F"
+				type: "item"
+				item: "amicore:amicoin_starmetal"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "66B5183FE2C2A877"
+				type: "item"
+				item: "minecraft:ink_sac"
+				count: 32
+			}]
+		}
+		{
+			title: "Feathers"
+			icon: "minecraft:feather"
+			x: 7.5d
+			y: 1.0d
+			dependencies: ["254D20348431674A"]
+			hide: true
+			repeatable: true
+			id: "6F01A72A9F89F21C"
+			tasks: [{
+				id: "5279997DBE30383E"
+				type: "item"
+				item: "amicore:amicoin_starmetal"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "197832D3D3DB0632"
+				type: "item"
+				item: "minecraft:feather"
+				count: 32
+			}]
+		}
+		{
+			title: "Wither Skull"
+			icon: "minecraft:wither_skeleton_skull"
+			x: 7.5d
+			y: 2.0d
+			description: [""]
+			dependencies: ["0921C101BDC9EDC4"]
+			hide: true
+			repeatable: true
+			id: "0E960A7D4563944E"
+			tasks: [{
+				id: "1EFCCED62E37BDD5"
+				type: "item"
+				item: "amicore:amicoin_managold"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "741D974346FAECC5"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
 			}]
 		}
 	]

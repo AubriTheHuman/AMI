@@ -1,0 +1,32 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": 5,
+    "yMax": 20,
+    "size": 30,
+    "spread": 13,
+    "density": 1.0,
+    "dimensions": {
+      "isBlacklist": false,
+      "filter": [ "overworld" ]
+    },
+    "blocks": [{
+      "block": "amicore:rutile_ore",
+      "chance": 0.66
+    },{
+      "block": "amicore:hematite_ore",
+      "chance": 0.14
+    },{
+      "block": "amicore:quartzite_ore",
+      "chance": 0.1
+    },{
+      "block": "amicore:certus_ore",
+      "chance": 0.1
+    }],
+    "samples": [{
+      "block": "geolosys:amicore_rutile_ore_sample",
+      "chance": 1.0
+    }],
+    "generationWeight": 1
+  }
+}

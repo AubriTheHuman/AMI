@@ -1,0 +1,31 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": 5,
+    "yMax": 25,
+    "size": 30,
+    "spread": 13,
+    "density": 1.0,
+    "dimensions": {
+      "isBlacklist": false,
+      "filter": [ "overworld" ]
+    },
+    "blocks": [{
+      "block": "amicore:quartzite_ore",
+      "chance": 0.5
+    },{
+      "block": "amicore:certus_ore",
+      "chance": 0.45
+    },{
+      "block": "amicore:pyrite_ore",
+      "chance": 0.05
+    }],
+    "samples": [
+      {
+        "block": "geolosys:amicore_autunite_ore_sample",
+        "chance": 1.0
+      }
+    ],
+    "generationWeight": 6
+  }
+}

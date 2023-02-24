@@ -1,0 +1,32 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": 5,
+    "yMax": 15,
+    "size": 25,
+    "spread": 13,
+    "density": 1.0,
+    "dimensions": {
+      "isBlacklist": false,
+      "filter": [ "overworld" ]
+    },
+    "blocks": [{
+      "block": "amicore:pentlandite_ore",
+      "chance": 0.6
+    },{
+      "block": "amicore:millerite_ore",
+      "chance": 0.34
+    },{
+      "block": "amicore:silvery_galena_ore",
+      "chance": 0.03
+    },{
+      "block": "amicore:leaded_galena_ore",
+      "chance": 0.03
+    }],
+    "samples": [{
+      "block": "geolosys:amicore_pentlandite_ore_sample",
+      "chance": 1.0
+    }],
+    "generationWeight": 2
+  }
+}

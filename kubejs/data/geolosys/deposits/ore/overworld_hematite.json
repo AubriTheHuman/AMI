@@ -1,0 +1,26 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": 30,
+    "yMax": 60,
+    "size": 40,
+    "spread": 13,
+    "density": 1.0,
+    "dimensions": {
+      "isBlacklist": false,
+      "filter": [ "overworld" ]
+    },
+    "blocks": [{
+      "block": "amicore:hematite_ore",
+      "chance": 0.8
+    },{
+      "block": "amicore:geothite_ore",
+      "chance": 0.2
+    }],
+    "samples": [{
+      "block": "geolosys:cinnabar_ore_sample",
+      "chance": 1.0
+    }],
+    "generationWeight": 3
+  }
+}

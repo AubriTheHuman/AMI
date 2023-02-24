@@ -1,0 +1,32 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": 20,
+    "yMax": 120,
+    "size": 40,
+    "spread": 13,
+    "density": 1.0,
+    "dimensions": {
+      "isBlacklist": false,
+      "filter": [ "overworld" ]
+    },
+    "blocks": [{
+      "block": "amicore:bauxite_ore",
+      "chance": 0.6
+    },{
+      "block": "amicore:geothite_ore",
+      "chance": 0.25
+    },{
+      "block": "minecraft:granite",
+      "chance": 0.1
+    },{
+      "block": "amicore:hematite_ore",
+      "chance": 0.5
+    }],
+    "samples": [{
+      "block": "geolosys:amicore_bauxite_ore_sample",
+      "chance": 1.0
+    }],
+    "generationWeight": 4
+  }
+}

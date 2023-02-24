@@ -1,0 +1,37 @@
+{
+	id: "09B83438152E5C50"
+	order_index: 12
+	title: "file"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "artisantools:file_iron"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 5
+		}
+		{
+			item: {
+				id: "artisantools:file_steel"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "artisantools:file_diamond"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+}

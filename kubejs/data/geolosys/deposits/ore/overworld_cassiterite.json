@@ -1,0 +1,32 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": 5,
+    "yMax": 25,
+    "size": 40,
+    "spread": 13,
+    "density": 1.0,
+    "dimensions": {
+      "isBlacklist": false,
+      "filter": [ "overworld" ]
+    },
+    "blocks": [{
+      "block": "amicore:cassiterite_ore",
+      "chance": 0.8
+    },{
+      "block": "amicore:wolframite_ore",
+      "chance": 0.13
+    },{
+      "block": "amicore:pyrite_ore",
+      "chance": 0.04
+    },{
+      "block": "amicore:quartz_ore",
+      "chance": 0.03
+    }],
+    "samples": [{
+      "block": "geolosys:amicore_cassiterite_ore_sample",
+      "chance": 1.0
+    }],
+    "generationWeight": 2
+  }
+}

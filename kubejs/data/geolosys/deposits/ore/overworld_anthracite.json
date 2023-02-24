@@ -1,0 +1,29 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": 5,
+    "yMax": 20,
+    "size": 25,
+    "spread": 13,
+    "density": 1.0,
+    "dimensions": {
+      "isBlacklist": false,
+      "filter": [ "overworld" ]
+    },
+    "blocks": [{
+      "block": "amicore:anthracite_ore",
+      "chance": 0.7
+    },{
+      "block": "amicore:coal_ore",
+      "chance": 0.27
+    },{
+      "block": "amicore:kimberlite_ore",
+      "chance": 0.03
+    }],
+    "samples": [{
+      "block": "geolosys:cinnabar_ore_sample",
+      "chance": 1.0
+    }],
+    "generationWeight": 3
+  }
+}
