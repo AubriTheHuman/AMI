@@ -1,0 +1,12 @@
+{
+    "type": "immersive_geology:crystalizer",
+    "result": {
+      "item": "malum:hex_ash"
+    },
+    "fluid_input": {
+      "tag": "forge:gasses/ether_gas",
+      "amount": 100
+    },
+    "time": 100,
+    "energy": 3200
+  }

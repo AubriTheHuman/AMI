@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:ingots/silver"
+	},
+	"result": {
+		"item": "immersiveengineering:silver_rod",
+		"count": 2
+	}
+}

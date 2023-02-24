@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "kubejs:item/tempered_bottle",
-    "layer1": "kubejs:item/tempered_bottle_fill"
+    "layer0": "kubejs:item/tempered_bottle_fill",
+    "layer1": "kubejs:item/tempered_bottle"
   }
 }

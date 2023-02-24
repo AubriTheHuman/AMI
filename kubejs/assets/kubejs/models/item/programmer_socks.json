@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kubejs:item/longsocks_stripe_white_icon_2",
+    "layer1": "kubejs:item/longsocks_stripe_white_icon_1"
+  }
+}

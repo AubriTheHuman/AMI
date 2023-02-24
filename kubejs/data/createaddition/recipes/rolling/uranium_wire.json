@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:plates/uranium"
+	},
+	"result": {
+		"item": "kubejs:uranium_wire",
+		"count": 2
+	}
+}

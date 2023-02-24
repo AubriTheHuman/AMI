@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:plates/nickel"
+	},
+	"result": {
+		"item": "kubejs:nickel_wire",
+		"count": 2
+	}
+}

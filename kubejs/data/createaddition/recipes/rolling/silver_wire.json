@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:plates/silver"
+	},
+	"result": {
+		"item": "kubejs:silver_wire",
+		"count": 2
+	}
+}
