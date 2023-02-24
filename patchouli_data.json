@@ -112,6 +112,8 @@
       ],
       "bookmarks": [],
       "history": [
+        "patchouli:03_resources/anthracite",
+        "patchouli:03_resources/azurite",
         "patchouli:03_resources/nether_debris",
         "patchouli:03_resources/chromite",
         "patchouli:03_resources/cinnabar",
@@ -121,10 +123,8 @@
         "patchouli:03_resources/teallite",
         "patchouli:03_resources/pentlandite",
         "patchouli:03_resources/hematite",
-        "patchouli:03_resources/azurite",
         "patchouli:03_resources/cassiterite",
-        "patchouli:02_prospecting/01_samples",
-        "patchouli:02_prospecting/02_prospectors_pick"
+        "patchouli:02_prospecting/01_samples"
       ],
       "completedManualQuests": []
     },

@@ -23,6 +23,15 @@ craftingTable.addShapeless("starmetal_from_orachalchum", <item:amicore:amicoin_s
 craftingTable.addShapeless("starmetal_from_managold", <item:amicore:amicoin_starmetal>*5, [<item:amicore:amicoin_managold>]);
 craftingTable.addShapeless("managold_from_damascus", <item:amicore:amicoin_managold>*4, [<item:amicore:amicoin_damascus>]);
 
+#programmer socks
+Recipe.type(Type.BASIC)
+  .shaped([[<tag:items:forge:dyes/pink>,<item:minecraft:string>,<tag:items:forge:dyes/pink>],
+          [<tag:items:forge:dyes/light_blue>,<item:amicore:estradiol>,<tag:items:forge:dyes/light_blue>],
+          [<item:minecraft:white_wool>,<item:minecraft:air>,<item:minecraft:white_wool>]])
+  .output(<item:amicore:programmer_socks>)
+  .tool(<tag:items:artisantools:type/cutters>, 1)
+  .register();
+
 #item info dumps
 mods.jei.JEI.addInfo(<item:amicore:anvil_repair>, ["When right clicked on an anvil, it will repair it to the next state up from its current, using 1 durability."]);
 
@@ -456,7 +465,7 @@ craftingTable.removeByName("minecraft:furnace");
 craftingTable.addShaped("furnace", <item:minecraft:furnace>,
   [[<tag:items:minecraft:stone_crafting_materials>, <tag:items:minecraft:stone_crafting_materials>, <tag:items:minecraft:stone_crafting_materials>],
   [<tag:items:minecraft:stone_crafting_materials>, <tag:items:minecraft:logs>, <tag:items:minecraft:stone_crafting_materials>],
-  [<tag:items:minecraft:stone_crafting_materials>, <tag:items:minecraft:stone_crafting_materials>, <tag:items:minecraft:stone_crafting_materials>]], null);
+  [<tag:items:minecraft:stone_crafting_materials>, <item:minecraft:flint>, <tag:items:minecraft:stone_crafting_materials>]], null);
 
 craftingTable.removeRecipe(<item:minecraft:blast_furnace>);
 craftingTable.addShaped("blast_furnace", <item:minecraft:blast_furnace>,

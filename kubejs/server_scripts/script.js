@@ -138,6 +138,13 @@ onEvent('fluid.tags', event => {
 
 onEvent('block.tags', event => {
     event.add('forge:steam', 'amicore:steam')
+    
+    for (let i = 0; i < oretypes.length; i++) {
+      for (let k = 0; k < oretypes[i][5].length; k++) {
+        event.add(oretypes[i][5][k], 'amicore:' + oretypes[i][0] + '_ore');
+      }
+    }
+		
 })
 
 onEvent('item.tags', event => {
@@ -270,6 +277,8 @@ onEvent('item.tags', event => {
       }
     }
   }
+
+  event.add('curios:necklace', 'amicore:lesbian_necklace');
 
   event.add('forge:bolts', 'amicore:wooden_bolt');
   event.add('forge:bolts/wooden', 'amicore:wooden_bolt');

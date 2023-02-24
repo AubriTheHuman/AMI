@@ -1,3 +1,5 @@
+#priority 20
+
 import crafttweaker.api.recipe.RecipeFilter;
 
 var dont = [  "bloomery",  "clay_refractory",  "bricks_refractory",  "stairs_refractory",  "slab_refractory",  "reinforced_refractory_brick",  "electronic_engineering",  "bucket_brine",  "flask_glass",  "flask_hydrofluoric_acid",  "flask_nitric_acid",  "flask_hydrochloric_acid",  "flask_sulfuric_dioxide",  "flask_sulfuric_acid",  "flask_sodium_hydroxide"] as string[];
@@ -19,3 +21,5 @@ mods.jei.JEI.addItem(<item:immersive_geology:ingot_refractory_brick>);
 mods.jei.JEI.addInfo(<item:immersive_geology:block_item_machine_stone_bloomery>, ["§cThis item is unused!"]);
 
 craftingTable.removeByModid("immersive_geology", (name as string) => {return name == "refractory";});
+
+<recipetype:immersive_geology:crystalizer>.removeAll();

@@ -122,8 +122,8 @@ const oretypes = [
 	['lignite', 'Lignite Ore', 3, 1, 0x4F3C2F, ['forge:ores/lignite'], 3, ['geolosys:lignite']],
 	['bitumen', 'Bitumen Ore', 3, 1, 0x252525, ['forge:ores/bitumen'], 3, ['geolosys:bitumen']],
 	['anthracite', 'Anthracite Ore', 3, 1, 0x111314, ['forge:ores/anthracite'], 3, ['geolosys:anthracite']],
-	['nether_anthracite', 'Anthracite Ore', 3, 1, 0x111314, ['forge:ores/anthracite'], 3, ['geolosys:anthracite']],
-	['ender_anthracite', 'Anthracite Ore', 3, 1, 0x111314, ['forge:ores/anthracite'], 3, ['geolosys:anthracite']],
+	['nether_anthracite', 'Tainted Anthracite Ore', 3, 1, 0x111314, ['forge:ores/anthracite'], 3, ['geolosys:anthracite']],
+	['ender_anthracite', 'Ender Anthracite Ore', 3, 1, 0x111314, ['forge:ores/anthracite'], 3, ['geolosys:anthracite']],
 	['nether_gold', 'Tainted Gold Ore', 0.4, 1, 0xE7CD57, ['forge:ores/gold', 'forge:ores/gold_tainted'], 1, ['Gold']],
 	['nether_debris', 'Tainted Ancient Debris Streaked Ore', 0.4, 1, 0x371E1A, ['forge:ores/netherite', 'forge:ores/netherite_tainted'], 6, ['Netherite']],
 	['nether_cobaltite', 'Tainted Cobaltite', 0.4, 1, 0x8A7E73, ['forge:ores/cobalt', 'forge:ores/cobalt_tainted'], 6, ['Cobalt']],
@@ -192,6 +192,19 @@ const expertSpirits = [
 // const kubejsRegistries = java("dev.latvian.kubejs.KubeJSRegistries");
 // const RUINOUS_SPIRIT_COLOR = new javaColor(75, 75, 75);
 
+onEvent('item.registry.armor_tiers', event => {
+	event.add('programmer_socks', tier => {
+	  tier.durabilityMultiplier = 15
+	  tier.slotProtections = [1, 3, 2, 1]
+	  tier.enchantmentValue = 25
+	  tier.equipSound = 'minecraft:item.armor.equip_leather'
+	  tier.repairIngredient = 'minecraft:string'
+	  tier.toughness = 0.0
+	  tier.knockbackResistance = 0.0
+	})
+  }) 
+  
+
 onEvent('item.registry', event => {
 
 	
@@ -203,6 +216,21 @@ onEvent('item.registry', event => {
 	event.create('amicore:amicoin_orachalchum').displayName('Orachalchum Amicoin').tooltip('Worth 10 Amicoin').texture("kubejs:item/amicoin_orachalchum").group('amicore.materialtab');
 	event.create('amicore:amicoin_managold').displayName('Managold Amicoin').tooltip('Worth 25 Amicoin').texture("kubejs:item/amicoin_managold").group('amicore.materialtab');
 	event.create('amicore:amicoin_damascus').displayName('Damascus Amicoin').tooltip('Worth 100 Amicoin').texture("kubejs:item/amicoin_damascus").group('amicore.materialtab');
+
+	//funnies
+	event.create('amicore:estradiol').displayName('Estradiol').texture("kubejs:item/estradiol").group('amicore.biotab').food(food => {
+		food
+			.hunger(4)
+			.saturation(1)
+			.effect('hero_of_the_village', 600, 0, 1)
+			.effect('invisibility', 600, 0, 1)
+			.alwaysEdible()
+			.eaten(ctx => {
+        		ctx.player.tell(Text.gold('You are filled with a sense of determination.'))
+        	})
+	});
+	event.create('amicore:lesbian_necklace').displayName('Lesbian Necklace').texture("kubejs:item/lesbian_necklace").group('amicore.toolstab').tooltip('§7§oCypress general§r').unstackable();
+	event.create('amicore:programmer_socks').type('boots').tier('programmer_socks').unstackable().displayName('Programmer Socks').parentModel("kubejs:item/programmer_socks").texture("kubejs:item/longsocks_stripe_white_icon_2").color(0, 0xF5A9B8).color(1, 0x5BCEFA).group('amicore.toolstab');
 
 	//read tabs
 	// let array = java("net.minecraft.item.ItemGroup").field_78032_a;
@@ -431,7 +459,7 @@ onEvent('item.registry', event => {
 	event.create('amicore:solder_spool').displayName('Solder Spool').texture("kubejs:item/solder_spool").maxDamage(16).maxStackSize(1).unstackable().group('amicore.materialtab');
 	event.create('amicore:scrap_picker').displayName('Scrap Picker').texture("kubejs:item/scrap_picker").maxDamage(256).maxStackSize(1).unstackable().group('amicore.toolstab');
 	event.create('amicore:empty_wire_spool').displayName('Empty Wire Spool').texture("kubejs:item/empty_wire_spool").group('amicore.materialtab');
-	event.create('amicore:tempered_bottle').displayName('Tempered Bottle').texture("kubejs:item/blanks/tempered_bottle").group('amicore.fluidtab');
+	event.create('amicore:tempered_bottle').displayName('Tempered Bottle').texture("kubejs:item/tempered_bottle").group('amicore.fluidtab');
 	event.create('amicore:sand_bottle_mold').displayName('Sand Bottle Mold').parentModel("kubejs:item/sand_bottle_mold").group('amicore.intermediatestab');
 	event.create('amicore:sand_bottle_mold_with_molten_glass').displayName('Sand Bottle Mold with Molten Glass').parentModel("kubejs:item/sand_bottle_mold_with_molten_glass").group('amicore.intermediatestab');
 	event.create('amicore:chromatic_dust_bottle').displayName('Tempered Bottle of Chromatic Dust').texture("kubejs:item/tempered_bottle_chromatic_dust").group('amicore.fluidtab');
@@ -515,33 +543,52 @@ onEvent('item.registry', event => {
 
 	//hydroxide malum
 	for(let j = 0; j < basicSpirits.length; j++) {
-		event.create('amicore:' + basicSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/tempered_bottle").color(1, basicSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + basicSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/tempered_bottle").color(1, basicSpirits[j][3]).group('amicore.fluidtab');
-		event.create('amicore:' + basicSpirits[j][0] + '_brew_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Brew').parentModel("kubejs:item/tempered_bottle").color(1, basicSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + basicSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").texture('kubejs:item/tempered_bottle_fill').color(0, basicSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + basicSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").texture('kubejs:item/tempered_bottle_fill').color(0, basicSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + basicSpirits[j][0] + '_brew_bottle').displayName('Tempered Bottle of ' + basicSpirits[j][1] + ' Spirit Brew').parentModel("kubejs:item/filled_tempered_bottle").texture('kubejs:item/tempered_bottle_fill').color(0, basicSpirits[j][3]).group('amicore.fluidtab');
 
 	}
 	for(let j = 0; j < simpleSpirits.length; j++) {
-		event.create('amicore:' + simpleSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + simpleSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/tempered_bottle").color(1, simpleSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + simpleSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + simpleSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/tempered_bottle").color(1, simpleSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + simpleSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + simpleSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").texture('kubejs:item/tempered_bottle_fill').color(0, simpleSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + simpleSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + simpleSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").texture('kubejs:item/tempered_bottle_fill').color(0, simpleSpirits[j][3]).group('amicore.fluidtab');
 	}
 	for(let j = 0; j < intermediateSpirits.length; j++) {
-		event.create('amicore:' + intermediateSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/tempered_bottle").color(1, intermediateSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + intermediateSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/tempered_bottle").color(1, intermediateSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + intermediateSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").texture('kubejs:item/tempered_bottle_fill').color(0, intermediateSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + intermediateSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").texture('kubejs:item/tempered_bottle_fill').color(0, intermediateSpirits[j][3]).group('amicore.fluidtab');
 		if(j == 3 || j == 6 ) {
-			event.create('amicore:' + intermediateSpirits[j][0] + '_brew_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Brew').parentModel("kubejs:item/tempered_bottle").color(1, intermediateSpirits[j][3]).group('amicore.fluidtab');
+			event.create('amicore:' + intermediateSpirits[j][0] + '_brew_bottle').displayName('Tempered Bottle of ' + intermediateSpirits[j][1] + ' Spirit Brew').parentModel("kubejs:item/filled_tempered_bottle").texture('kubejs:item/tempered_bottle_fill').color(0, intermediateSpirits[j][3]).group('amicore.fluidtab');
 		}
 	}
 	for(let j = 0; j < advancedSpirits.length; j++) {
-		event.create('amicore:' + advancedSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + advancedSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/tempered_bottle").color(1, advancedSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + advancedSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + advancedSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/tempered_bottle").color(1, advancedSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + advancedSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + advancedSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").texture('kubejs:item/tempered_bottle_fill').color(0, advancedSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + advancedSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + advancedSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").texture('kubejs:item/tempered_bottle_fill').color(0, advancedSpirits[j][3]).group('amicore.fluidtab');
 	}
 	for(let j = 0; j < expertSpirits.length; j++) {
-		event.create('amicore:' + expertSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + expertSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/tempered_bottle").color(1, expertSpirits[j][2]).group('amicore.fluidtab');
-		event.create('amicore:' + expertSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + expertSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/tempered_bottle").color(1, expertSpirits[j][3]).group('amicore.fluidtab');
+		event.create('amicore:' + expertSpirits[j][0] + '_distillation_bottle').displayName('Tempered Bottle of ' + expertSpirits[j][1] + ' Spirit Distillation').parentModel("kubejs:item/filled_tempered_bottle").texture('kubejs:item/tempered_bottle_fill').color(0, expertSpirits[j][2]).group('amicore.fluidtab');
+		event.create('amicore:' + expertSpirits[j][0] + '_solution_bottle').displayName('Tempered Bottle of ' + expertSpirits[j][1] + ' Spirit Solution').parentModel("kubejs:item/filled_tempered_bottle").texture('kubejs:item/tempered_bottle_fill').color(0, expertSpirits[j][3]).group('amicore.fluidtab');
 	}
 
 
 })
+
+const BlockItem = java('net.minecraft.item.BlockItem')
+const ItemProperties = java('net.minecraft.item.Item$Properties')
+
+/**
+ * https://github.com/oitsjustjose/Geolosys/blob/1.18/src/main/java/com/oitsjustjose/geolosys/Registry.java
+ * https://github.com/oitsjustjose/Geolosys/blob/1.18/src/main/java/com/oitsjustjose/geolosys/common/blocks/SampleBlock.java
+ * https://github.com/oitsjustjose/Geolosys/blob/1.18/src/main/java/com/oitsjustjose/geolosys/common/utils/GeolosysGroup.java
+ */
+// const GeolosysRegistry = java('com.oitsjustjose.geolosys.Registry')
+const GeolosysSampleBlock = java('com.oitsjustjose.geolosys.common.blocks.SampleBlock')
+const GeolosysGroup = java('com.oitsjustjose.geolosys.common.utils.GeolosysGroup')
+
+// Registers a custom Sample block through Geolosys' registry
+// Requires that the proper JSON files exist in the data folder of KubeJS
+function createCustomSample(event, sampleRegistryName) {
+	const sample = event.BLOCKS.register(sampleRegistryName, () => new GeolosysSampleBlock)
+	event.ITEMS.register(sampleRegistryName, () => new BlockItem(sample.get(), (new ItemProperties).tab(GeolosysGroup.getInstance())))
+}
 
 
 onEvent('block.registry', event => {
@@ -556,7 +603,7 @@ onEvent('block.registry', event => {
 			model = "kubejs:block/ore_ender_custom";
 		}
 
-		event.create('amicore:' + str + "_ore")
+		let block = event.create('amicore:' + str + "_ore")
 		.displayName(oretypes[i][1])
 		.material('stone')
 		.hardness(oretypes[i][2])
@@ -568,6 +615,7 @@ onEvent('block.registry', event => {
 		.color(0, oretypes[i][4])
 		.renderType("cutout")
 		.item(item => { item.group('amicore.oretab')  });
+		
 
 
 	}
@@ -581,12 +629,13 @@ onEvent('block.registry', event => {
 			model = "kubejs:block/ore_ender_sample_custom";
 		}
 
-		event.create('amicore:' + str + "_ore_sample")
+		let block = event.create('geolosys:amicore_' + str + "_ore_sample")
+		// event.custom('geolosys:amicore_' + str + "_ore_sample", () => new GeolosysSampleBlock)
 		.displayName(oretypes[i][1] + " Sample")
 		.material('stone')
-		.hardness(0)
-		.resistance(0)
-		.tagBlockAndItem('forge:samples')
+		.hardness(0.125)
+		.resistance(2.0)
+		.tagBlockAndItem('forge:ore_samples')
 		.model(model)
 		.texture('ore', 'kubejs:block/ore_custom')
 		.color(0, oretypes[i][4])
@@ -595,7 +644,27 @@ onEvent('block.registry', event => {
 		.notSolid()
 		.box(0.2, 0.0, 0.2, 0.8, 0.2, 0.8, false)
 		.renderType("cutout")
+		.tag("forge:ore_samples/" + str)
 		.item(item => { item.group('amicore.oretab')  });
+
+
+		// createCustomSample('amicore_' + str + "_ore_sample")
+
+		// event.create('amicore:' + str + "_ore_sample")
+		// .displayName(oretypes[i][1] + " Sample")
+		// .material('stone')
+		// .hardness(0.125)
+		// .resistance(2.0)
+		// .tagBlockAndItem('forge:samples')
+		// .model(model)
+		// .texture('ore', 'kubejs:block/ore_custom')
+		// .color(0, oretypes[i][4])
+		// .opaque(false)
+		// .fullBlock(false)
+		// .notSolid()
+		// .box(0.2, 0.0, 0.2, 0.8, 0.2, 0.8, false)
+		// .renderType("cutout")
+		// .item(item => { item.group('amicore.oretab')  });
 	}
 
 	//blocks for the blockless
@@ -606,16 +675,16 @@ onEvent('block.registry', event => {
 	}
 
 	// Register new blocks here
-	event.create('amicore:limestone_dust').material('sand').hardness(0.5).displayName('Limestone dust').texture("kubejs:block/limestone_dust").item(item => { item.group('amicore.materialtab')  });
-	event.create('amicore:crude_steel_sheetmetal').material('iron').hardness(5).displayName('Crude Steel Sheetmetal').texture("kubejs:block/crude_steel_sheetmetal").item(item => { item.group('amicore.metaltab')  });
+	event.create('amicore:limestone_dust').material('sand').hardness(0.5).displayName('Limestone dust').textureAll("kubejs:block/limestone_dust").item(item => { item.group('amicore.materialtab')  });
+	event.create('amicore:crude_steel_sheetmetal').material('iron').hardness(5).displayName('Crude Steel Sheetmetal').textureAll("kubejs:block/crude_steel_sheetmetal").item(item => { item.group('amicore.metaltab')  });
 	// event.create('crude_steel_block').material('iron').hardness(5).displayName('Block of Crude Steel')
 
-	event.create('amicore:sodalite').material('stone').hardness(2).displayName('Sodalite').texture("kubejs:block/sodalite").item(item => { item.group('amicore.oretab')  });
-	event.create('amicore:regolith').material('stone').hardness(2).displayName('Regolith').texture("kubejs:block/regolith").item(item => { item.group('amicore.oretab')  });
-	event.create('amicore:talcum').material('stone').hardness(0.5).displayName('Talcum').texture("kubejs:block/talcum").item(item => { item.group('amicore.oretab')  });
-	event.create('amicore:talc_dust').material('sand').hardness(0.5).displayName('Talcum Dust').texture("kubejs:block/talc_dust").item(item => { item.group('amicore.oretab')  });
-	event.create('amicore:tank_wall').material('wood').hardness(2).displayName('Tank Wall').texture("kubejs:block/tank_wall").harvestTool('axe', 0).item(item => { item.group('amicore.machinetab')  });
-	event.create('amicore:tank_filter').material('wood').hardness(2).displayName('Tank Filter').texture("kubejs:block/tank_filter").harvestTool('axe', 0).item(item => { item.group('amicore.machinetab')  });
+	event.create('amicore:sodalite').material('stone').hardness(2).displayName('Sodalite').textureAll("kubejs:block/sodalite").item(item => { item.group('amicore.oretab')  });
+	event.create('amicore:regolith').material('stone').hardness(2).displayName('Regolith').textureAll("kubejs:block/regolith").item(item => { item.group('amicore.oretab')  });
+	event.create('amicore:talcum').material('stone').hardness(0.5).displayName('Talcum').textureAll("kubejs:block/talcum").item(item => { item.group('amicore.oretab')  });
+	event.create('amicore:talc_dust').material('sand').hardness(0.5).displayName('Talcum Dust').textureAll("kubejs:block/talc_dust").item(item => { item.group('amicore.oretab')  });
+	event.create('amicore:tank_wall').material('wood').hardness(2).displayName('Tank Wall').textureAll("kubejs:block/tank_wall").harvestTool('axe', 0).item(item => { item.group('amicore.machinetab')  });
+	event.create('amicore:tank_filter').material('wood').hardness(2).displayName('Tank Filter').textureAll("kubejs:block/tank_filter").harvestTool('axe', 0).item(item => { item.group('amicore.machinetab')  });
 	
 	event.create('amicore:rich_crimson_nylium').material('stone').hardness(0.4).displayName('Rich Crimson Nylium').model("kubejs:block/rich_crimson_nylium").harvestTool('pickaxe', 0).item(item => { item.group('amicore.biotab')  });
 	event.create('amicore:rich_warped_nylium').material('stone').hardness(0.4).displayName('Rich Warped Nylium').model("kubejs:block/rich_warped_nylium").harvestTool('pickaxe', 0).item(item => { item.group('amicore.biotab')  });
@@ -647,6 +716,11 @@ onEvent('fluid.registry', event => {
 	}
 
 	// .block')
+
+	
+	//Funnies
+	event.create('amicore:estrodiol_solution').textureThin(0x7cd5ff).bucketColor(0x7cd5ff).displayName('Estradiol Solution');
+	event.create('amicore:estrodiol_concentrate').textureThin(0x4ac5ff).bucketColor(0x4ac5ff).displayName('Estradiol Concentrate');
 
 	//fuels
 	event.create('amicore:hydroxide_fuel').textureThin(0xE27778).bucketColor(0xE27778).displayName('Hydroxide Fuel');
