@@ -380,11 +380,6 @@
 			}]
 			rewards: [
 				{
-					id: "04D82AE30106FEFD"
-					type: "item"
-					item: "amicore:amicoin"
-				}
-				{
 					id: "12FC1FD3D8907DDF"
 					type: "item"
 					item: "pamhc2foodextended:datejellysandwichitem"
@@ -399,6 +394,11 @@
 					type: "choice"
 					icon: "paraglider:anti_vessel"
 					table_id: 946083085323769434L
+				}
+				{
+					id: "60C671954847A1D2"
+					type: "item"
+					item: "amicore:amicoin_starmetal"
 				}
 			]
 		}
@@ -690,15 +690,15 @@
 			}]
 			rewards: [
 				{
-					id: "68346FACE19F4109"
-					type: "item"
-					item: "amicore:amicoin"
-				}
-				{
 					id: "5932B47040F11262"
 					type: "choice"
 					icon: "paraglider:anti_vessel"
 					table_id: 946083085323769434L
+				}
+				{
+					id: "1E680D4A7B49D86A"
+					type: "item"
+					item: "amicore:amicoin_starmetal"
 				}
 			]
 		}
@@ -1004,6 +1004,17 @@
 					id: "12F0AA83A0F9DF09"
 					type: "item"
 					item: "pamhc2foodextended:garlicchickenitem"
+				}
+				{
+					id: "10D6241CE17CDD0D"
+					type: "item"
+					item: {
+						id: "amicore:programmer_socks"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
 				}
 			]
 		}
@@ -2088,7 +2099,7 @@
 				""
 				"There may come a time where you find an ore in which you cannot process it or use it for anything yet. Hold onto them since you may want it later."
 				""
-				""
+				"Also, if you want to upgrade your scanner's range, check the shop!"
 			]
 			dependencies: ["613118AC3275A7EC"]
 			id: "46944569A10BFA6C"
@@ -2122,6 +2133,16 @@
 							"patchouli:book": "patchouli:field_manual_ami"
 						}
 					}
+				}
+				{
+					id: "72F00899D4DA2E0B"
+					type: "item"
+					item: "scannable:scanner"
+				}
+				{
+					id: "2F7BB756A772C940"
+					type: "item"
+					item: "scannable:module_ore_common"
 				}
 			]
 		}
@@ -2621,9 +2642,10 @@
 					item: "amicore:amicoin"
 				}
 				{
-					id: "438CF59F51178610"
+					id: "17632B1852C358B0"
 					type: "item"
-					item: "pamhc2foodextended:raspberryjellysandwichitem"
+					item: "amicore:estradiol"
+					count: 4
 				}
 			]
 		}
@@ -3060,6 +3082,7 @@
 			]
 			dependencies: ["3ACC42F34BA35AD9"]
 			optional: true
+			repeatable: true
 			id: "5B8F31ABE692BAF4"
 			tasks: [{
 				id: "4424C77D3DB127F3"
@@ -3067,9 +3090,9 @@
 				title: "Akashic Tome"
 			}]
 			rewards: [{
-				id: "51FDC82337ADD982"
-				type: "questsadditions:repeat"
-				table_id: 9167514142016014558L
+				id: "481DF532E2F6F493"
+				type: "item"
+				item: "akashictome:tome"
 			}]
 		}
 	]

@@ -227,16 +227,6 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -3.0d
-			id: "373A8223987CED2C"
-			tasks: [{
-				id: "685469EA3DCC9F94"
-				type: "item"
-				item: "botanypots:botany_pot"
-			}]
-		}
-		{
 			x: 0.5d
 			y: -4.0d
 			description: ["end fish residue (angels crystals)"]

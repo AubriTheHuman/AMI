@@ -227,8 +227,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 1.5d
+			x: 8.5d
+			y: 1.0d
 			id: "0AFCF8EED30A56A2"
 			tasks: [{
 				id: "3964B0CB707ED89E"
@@ -588,6 +588,17 @@
 				id: "352E6C6810B5B38B"
 				type: "item"
 				item: "amicore:magical_matter_2_bucket"
+			}]
+		}
+		{
+			title: "mv specialized circuits"
+			x: 0.0d
+			y: -5.5d
+			id: "5999153F5C644994"
+			tasks: [{
+				id: "06F05B6C15C4AEC9"
+				type: "item"
+				item: "appliedenergistics2:engineering_processor"
 			}]
 		}
 	]

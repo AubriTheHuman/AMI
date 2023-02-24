@@ -322,6 +322,7 @@
 			]
 			hide: true
 			dependency_requirement: "one_started"
+			repeatable: true
 			id: "6369ECC9736E3B3C"
 			tasks: [{
 				id: "261464FAF8E7A270"

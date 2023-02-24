@@ -1509,30 +1509,23 @@
 			}
 			x: 5.5d
 			y: 13.0d
-			description: ["Placing a fire or lava in front of a fan will cause it to smoke or blast the item in front of it. "]
+			description: [
+				"Placing a fire/campfire or lava in front of a fan will cause it to smoke or blast the item in front of it. "
+				""
+				""
+			]
 			dependencies: ["0A60E3B680D64E3E"]
 			id: "75AF89757F562B9A"
 			tasks: [
-				{
-					id: "7D1D66F1B30A84C0"
-					type: "item"
-					item: {
-						id: "minecraft:flint_and_steel"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
 				{
 					id: "652AA0DD58506481"
 					type: "item"
 					item: "minecraft:lava_bucket"
 				}
 				{
-					id: "19BEC57E28A19D0D"
+					id: "176196DD91C19404"
 					type: "item"
-					item: "minecraft:netherrack"
+					item: "minecraft:campfire"
 				}
 			]
 			rewards: [
@@ -2920,7 +2913,7 @@
 			x: -2.5d
 			y: 15.5d
 			description: [
-				"A hammer which mines all connected ores."
+				"A hammer which mines several connected blocks. Only works on stones."
 				""
 				"Any material is valid."
 			]

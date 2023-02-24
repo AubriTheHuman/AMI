@@ -2302,6 +2302,7 @@
 		{
 			x: 9.0d
 			y: 8.0d
+			description: ["WEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE!!!!!11!!111!!!!11!!!!1"]
 			dependencies: ["6057D58F1A6A87AA"]
 			id: "35AFD6E0AB454CC2"
 			tasks: [{

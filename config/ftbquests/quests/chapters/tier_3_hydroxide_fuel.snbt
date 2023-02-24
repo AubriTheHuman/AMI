@@ -771,8 +771,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 14.5d
+			x: 4.0d
+			y: 15.0d
 			description: [
 				"When charged with electricity, the travel staff will teleport the user forward."
 				""
@@ -923,7 +923,7 @@
 		}
 		{
 			title: "charge crafting"
-			x: -8.5d
+			x: -9.0d
 			y: 13.5d
 			shape: "rsquare"
 			dependencies: ["7A306CE6E06C1BF2"]
@@ -952,25 +952,6 @@
 			tasks: [{
 				id: "008548E18184BD41"
 				type: "checkmark"
-			}]
-		}
-		{
-			x: -11.0d
-			y: 13.5d
-			dependencies: [
-				"29A64CCAFA24BF76"
-				"25C8E3EDDC6205DD"
-			]
-			id: "2C93FBB101B07389"
-			tasks: [{
-				id: "1CD8DE8680629555"
-				type: "item"
-				item: "scannable:scanner"
-			}]
-			rewards: [{
-				id: "3DFBAE3628C2BEB0"
-				type: "item"
-				item: "scannable:module_range"
 			}]
 		}
 		{
@@ -1163,8 +1144,8 @@
 			]
 		}
 		{
-			x: 3.5d
-			y: 12.0d
+			x: 3.0d
+			y: 15.0d
 			description: [
 				"By using electric anc mechanical spirits, the brass jetpack can be crafted. By holding it in your offhand and throwing fuels on the ground, it can be fueled."
 				""
@@ -1452,7 +1433,7 @@
 				""
 				"While there exists 5 tiers of spirits, only the second and third tiers can be created this way. The fourth and fifth require much more advanced methods of synthesis."
 				""
-				"Upon finishing fermentation, drain the distillation from the bottle and crystalize it with a crystalizer machine."
+				"Upon finishing fermentation, drain the distillation from the bottle and crystalize 1000mB of it with a crystalizer machine."
 				""
 				"Use a chest next to the red output port for easy output, otherwise the item spawns nearby."
 				""
@@ -1508,9 +1489,9 @@
 			}]
 		}
 		{
-			x: -9.5d
+			x: -10.5d
 			y: 13.5d
-			dependencies: ["7A306CE6E06C1BF2"]
+			dependencies: ["25C8E3EDDC6205DD"]
 			id: "29A64CCAFA24BF76"
 			tasks: [{
 				id: "57C4EFB1F682F7FD"
@@ -1519,6 +1500,7 @@
 			}]
 		}
 		{
+			icon: "immersiveengineering:capacitor_lv"
 			x: -7.5d
 			y: 12.0d
 			dependencies: ["2109C9CCA332ADB4"]
@@ -1530,7 +1512,7 @@
 					item: "immersiveengineering:capacitor_lv"
 				}
 				{
-					id: "3D744B7A25FC097A"
+					id: "7D33DD39DB246D66"
 					type: "item"
 					item: "createaddition:accumulator"
 				}
@@ -1538,8 +1520,8 @@
 		}
 		{
 			title: "mixer"
-			x: -0.5d
-			y: 16.5d
+			x: -5.0d
+			y: 22.5d
 			id: "7F433BA0BC5F9CCF"
 			tasks: [{
 				id: "5EB6E1EED8A81536"
@@ -1639,8 +1621,8 @@
 		}
 		{
 			title: "Magical Matter Injection"
-			x: 2.0d
-			y: 16.5d
+			x: 0.5d
+			y: 18.0d
 			description: [
 				"Attaching the Matter Injector to specific locations on Immersive machines, they can be sped up slightly, reducing the required number of machines."
 				""
@@ -1699,6 +1681,7 @@
 			}]
 		}
 		{
+			icon: "immersiveengineering:windmill"
 			x: -11.0d
 			y: 9.0d
 			dependencies: ["74926B1EAA6DE913"]
@@ -1718,6 +1701,7 @@
 					id: "3638C1324939F629"
 					type: "item"
 					item: "immersiveengineering:dynamo"
+					count: 2L
 				}
 			]
 		}
@@ -1817,7 +1801,7 @@
 			}]
 		}
 		{
-			title: "Specialized Circuits"
+			title: "LV Specialized Circuits"
 			x: -6.0d
 			y: 17.0d
 			dependencies: ["2BB8A3D81484DC0C"]
@@ -1877,7 +1861,7 @@
 			}]
 		}
 		{
-			title: "Nickel Wire Coils"
+			title: "Nickel Coated Antenna Coil"
 			x: -12.0d
 			y: 12.5d
 			dependencies: ["6A05CEC87FDE916C"]
@@ -1885,6 +1869,7 @@
 			tasks: [{
 				id: "39D3E8272E4DC2C1"
 				type: "item"
+				title: "nickel coated antenna"
 				item: "amicore:nickel_wire"
 			}]
 		}
@@ -1928,8 +1913,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 15.5d
+			x: 4.0d
+			y: 16.5d
 			description: [
 				"When looking at a travel anchor whilst standing on another, you can shift to travel there instantly. The travel staff also allows this while off the anchor."
 				""
@@ -1945,7 +1930,7 @@
 		}
 		{
 			x: 4.0d
-			y: 15.0d
+			y: 12.0d
 			description: ["By shift+right clicking on an ender chest, it can be bound to it allowing acess from your inventory. Effective for dumping items in an ME system remotely."]
 			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "5CA6F42DA0FB4D9D"
@@ -2080,7 +2065,7 @@
 		}
 		{
 			x: 3.0d
-			y: 15.0d
+			y: 12.0d
 			description: ["The spirit altar can be used to craft a mega torch, which when placed will prevent all mob spawns within a 32 block radius."]
 			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "330F0984AAF36A56"
@@ -2216,8 +2201,8 @@
 		}
 		{
 			title: "crystalizer"
-			x: -1.5d
-			y: 16.5d
+			x: -6.0d
+			y: 22.5d
 			id: "3EC0925258E4F03E"
 			tasks: [{
 				id: "3E6AFDC6AB215BA3"
@@ -2454,7 +2439,7 @@
 			title: "Alternate Hex Ash source"
 			x: 2.0d
 			y: 15.0d
-			description: ["Ether gas can also be crystalized into hex ash as an alternate source of it."]
+			description: ["100mB of ether gas can be crystalized into hex ash as an alternate source of it."]
 			dependencies: ["02E86ADDE3676E32"]
 			id: "6E1FBD630FCE3E50"
 			tasks: [{
@@ -2734,6 +2719,75 @@
 				id: "6FE07AD951424F19"
 				type: "item"
 				item: "extendedcrafting:basic_auto_table"
+			}]
+		}
+		{
+			x: 15.0d
+			y: 7.5d
+			dependencies: ["6B5735D99D90A34E"]
+			id: "285D986C36909430"
+			tasks: [{
+				id: "5B75D61330850132"
+				type: "item"
+				item: "refinedpipes:basic_fluid_pipe"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 14.0d
+			dependencies: [
+				"2CA66099ED95B688"
+				"2D6C8AF17E94B000"
+			]
+			id: "1A6EDA07CE020DC5"
+			tasks: [{
+				id: "2A8D240EE0A4E22E"
+				type: "item"
+				item: "scannable:module_blank"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 13.5d
+			dependencies: ["1A6EDA07CE020DC5"]
+			id: "75CA9E41F4BCF9CF"
+			tasks: [{
+				id: "55F0893EDC151A10"
+				type: "item"
+				item: "scannable:module_range"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 14.5d
+			dependencies: ["1A6EDA07CE020DC5"]
+			id: "46A72E4787A13E1E"
+			tasks: [{
+				id: "4D36D728205A38D6"
+				type: "item"
+				item: "scannable:module_entity"
+			}]
+		}
+		{
+			x: -12.5d
+			y: 15.5d
+			dependencies: ["1A6EDA07CE020DC5"]
+			id: "264E54C5C8D6F19C"
+			tasks: [{
+				id: "3612EF79D5BEBCD3"
+				type: "item"
+				item: "scannable:module_block"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 15.5d
+			dependencies: ["1A6EDA07CE020DC5"]
+			id: "7EE7938DE93593D9"
+			tasks: [{
+				id: "5C680B7A67696ED3"
+				type: "item"
+				item: "scannable:module_fluid"
 			}]
 		}
 	]

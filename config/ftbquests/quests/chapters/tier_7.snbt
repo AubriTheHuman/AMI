@@ -10,16 +10,6 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -0.5d
-			y: -0.5d
-			id: "24FE7036A551ACB7"
-			tasks: [{
-				id: "2C05EE1FEA6B049D"
-				type: "item"
-				item: "meetyourfight:phantoplasm"
-			}]
-		}
-		{
 			title: "Radioactive crafting"
 			x: 0.5d
 			y: -0.5d
@@ -28,6 +18,7 @@
 				id: "0C10547B471D4B27"
 				type: "item"
 				item: "compactcrafting:field_projector"
+				consume_items: false
 			}]
 		}
 		{
@@ -170,6 +161,17 @@
 				id: "666C0DB3BF382CA2"
 				type: "item"
 				item: "amicore:magical_matter_4_bucket"
+			}]
+		}
+		{
+			title: "create based nuclear reactor"
+			x: -0.5d
+			y: -1.5d
+			id: "2CA8E973EBEDA247"
+			tasks: [{
+				id: "735E0EA3ECA9CC80"
+				type: "item"
+				item: "create:shadow_steel_casing"
 			}]
 		}
 	]
