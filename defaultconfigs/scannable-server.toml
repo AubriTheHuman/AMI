@@ -1,7 +1,7 @@
 
 [energy]
 	#Whether to consume energy when performing a scan. Will make the scanner a chargeable item.
-	useEnergy = true
+	useEnergy = false
 	#Amount of energy that can be stored in a scanner.
 	#Range: > 0
 	energyCapacityScanner = 500000
@@ -41,7 +41,7 @@
 	#value by 0.25, and the block scanner multiplies it by 0.5.
 	#Range modules will boost the range by half this value.
 	#Range: 16 ~ 128
-	baseScanRadius = 64
+	baseScanRadius = 128
 	#How long the results from a scan should remain visible, in milliseconds.
 	#Range: 1000 ~ 300000
 	scanStayDuration = 10000
@@ -59,13 +59,13 @@
 	#Registry names of blocks considered 'common ores', requiring the common ore scanner module.
 	commonOreBlocks = ["minecraft:clay"]
 	#Block tags of blocks considered 'common ores', requiring the common ore scanner module.
-	commonOreBlockTags = ["forge:ores/iron", "forge:ores/redstone", "forge:ores/coal", "forge:ores/quartz"]
+	commonOreBlockTags = ["forge:ores/iron","forge:ores/nickel","forge:ores/copper","forge:ores/zinc","forge:ores/quartz","forge:ores/tin","forge:ores/sulfur","forge:ores/aluminum","forge:ores/calcium_phosphate","forge:ores/certus","forge:ores/redstone","forge:ores/coal","forge:ores/lignite","forge:ores/bitumen","forge:ores/anthracite"]
 	#Registry names of blocks considered 'rare ores', requiring the common ore scanner module.
-	rareOreBlocks = ["minecraft:glowstone"]
+	rareOreBlocks = ["minecraft:glowstone","malum:soulstone_ore","minecraft:gilded_blackstone","amicore:sodalite","amicore:regolith","amicore:talcum"]
 	#Block tags of blocks considered 'rare ores', requiring the common ore scanner module.
 	#Any block with the forge:ores tag is implicitly in this list, unless the block also
 	#matches an ignored or common ore block tag, or is an ignored or common block.
-	rareOreBlockTags = []
+	rareOreBlockTags = ["quark:crystal","forge:ores/osmium","forge:ores/iridium","forge:ores/tungsten","forge:ores/silver","forge:ores/lead","forge:ores/platinum","forge:ores/uranium","forge:ores/magnesium","forge:ores/titanium","forge:ores/beryl","forge:ores/red_beryl","forge:ores/aquamarine","forge:ores/kimberlite","forge:ores/lapis_lazuli","forge:ores/gold","forge:ores/chromium","forge:ores/netherite","forge:ores/cobalt","forge:ores/blazing_quartz","forge:ores/thallasium","forge:ores/pendorite","forge:ores/amber","forge:ores/ametrine","forge:ores/biotite"]
 
 [fluids]
 	#Fluid tags of fluids that should be ignored.
