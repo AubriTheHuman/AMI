@@ -771,7 +771,7 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 2.5d
 			y: 15.0d
 			description: [
 				"When charged with electricity, the travel staff will teleport the user forward."
@@ -966,7 +966,7 @@
 		}
 		{
 			x: 14.5d
-			y: 9.5d
+			y: 10.0d
 			dependencies: ["6E17974A62E5257D"]
 			id: "412C83BCD7045EFA"
 			tasks: [{
@@ -977,7 +977,7 @@
 		}
 		{
 			title: "Magical Matter: Tier 1"
-			x: 0.5d
+			x: 1.0d
 			y: 16.5d
 			description: ["By dissolving the coalesced ether into water with some catalyst, it can be used to speed up various machines."]
 			dependencies: ["02E86ADDE3676E32"]
@@ -1144,8 +1144,8 @@
 			]
 		}
 		{
-			x: 3.0d
-			y: 15.0d
+			x: 4.5d
+			y: 16.0d
 			description: [
 				"By using electric anc mechanical spirits, the brass jetpack can be crafted. By holding it in your offhand and throwing fuels on the ground, it can be fueled."
 				""
@@ -1554,8 +1554,8 @@
 		{
 			title: "Odd Ones Out"
 			icon: "immersiveengineering:light_engineering"
-			x: 2.0d
-			y: 18.0d
+			x: 0.5d
+			y: 19.5d
 			description: ["Why cant you accelerate the Bottling machine, Assembler, or sawmill? Simple, they arent meant to be used. Two of them flat out have no recipes. Consider using their create alternatives. "]
 			dependencies: ["23543BA294618103"]
 			hide: true
@@ -1648,9 +1648,9 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: 6.0d
-			dependencies: ["51ABF09BD17D3642"]
+			x: 14.5d
+			y: 8.0d
+			dependencies: ["6B5735D99D90A34E"]
 			id: "47549D4AF358C45A"
 			tasks: [{
 				id: "45E68D33FAD12C1E"
@@ -1913,7 +1913,7 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 2.5d
 			y: 16.5d
 			description: [
 				"When looking at a travel anchor whilst standing on another, you can shift to travel there instantly. The travel staff also allows this while off the anchor."
@@ -1929,8 +1929,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 12.0d
+			x: 6.5d
+			y: 15.0d
 			description: ["By shift+right clicking on an ender chest, it can be bound to it allowing acess from your inventory. Effective for dumping items in an ME system remotely."]
 			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "5CA6F42DA0FB4D9D"
@@ -2035,7 +2035,7 @@
 		{
 			title: "Complicating the Altar"
 			icon: "extendedcrafting:crafting_core"
-			x: 3.5d
+			x: 4.5d
 			y: 13.5d
 			shape: "rsquare"
 			description: [
@@ -2045,7 +2045,7 @@
 				""
 				"It functions almost the same, except spirits go on the new pedestals instead of on the altar itself. The pedestals can be placed up to 3 blocks away."
 				""
-				"Instead of using hex ash to speed up the recipe, instead hex ash is consumed as a catalyst for all recipes."
+				"Also instead of using hex ash to speed up the recipe, instead it is consumed as a catalyst for almost all recipes."
 			]
 			dependencies: ["59904ABFCBF022B8"]
 			id: "60AFE3DA3E0BF2D6"
@@ -2064,8 +2064,8 @@
 			]
 		}
 		{
-			x: 3.0d
-			y: 12.0d
+			x: 3.5d
+			y: 15.5d
 			description: ["The spirit altar can be used to craft a mega torch, which when placed will prevent all mob spawns within a 32 block radius."]
 			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "330F0984AAF36A56"
@@ -2121,8 +2121,8 @@
 			}]
 		}
 		{
-			x: 9.5d
-			y: 13.5d
+			x: 9.0d
+			y: 16.5d
 			shape: "diamond"
 			dependencies: [
 				"11B31B746EEE8FB1"
@@ -2139,8 +2139,8 @@
 		}
 		{
 			title: "Transistor"
-			x: 8.0d
-			y: 12.0d
+			x: 10.5d
+			y: 15.0d
 			shape: "rsquare"
 			dependencies: [
 				"3DFB9E99A226F3A7"
@@ -2155,8 +2155,8 @@
 		}
 		{
 			title: "capacitor"
-			x: 8.0d
-			y: 14.0d
+			x: 8.5d
+			y: 15.0d
 			shape: "rsquare"
 			dependencies: ["3DFB9E99A226F3A7"]
 			id: "6E42430AA7028047"
@@ -2252,8 +2252,8 @@
 		}
 		{
 			title: "Mid strength resistor"
-			x: 8.0d
-			y: 13.0d
+			x: 9.5d
+			y: 15.0d
 			shape: "rsquare"
 			dependencies: ["3DFB9E99A226F3A7"]
 			id: "11B31B746EEE8FB1"
@@ -2264,7 +2264,7 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: 7.0d
 			y: 13.5d
 			shape: "rsquare"
 			dependencies: ["60AFE3DA3E0BF2D6"]
@@ -2276,7 +2276,7 @@
 			}]
 		}
 		{
-			x: 6.5d
+			x: 9.0d
 			y: 13.5d
 			shape: "rsquare"
 			description: ["Now that you've made an inscriber, it needs a pattern to inscribe with. There are "]
@@ -2383,8 +2383,8 @@
 		}
 		{
 			title: "Crystal Growth Accellerator"
-			x: 5.0d
-			y: 12.5d
+			x: 5.5d
+			y: 15.5d
 			description: [
 				"While already requiring an MV circuit to create. The Crystal Growth Acellerator will speed up the growth of pure cystal seeds significantly. Up to 6 can effect the growth, by placing on all sides of the water."
 				""
@@ -2400,8 +2400,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 12.0d
+			x: 8.5d
+			y: 11.5d
 			dependencies: ["3DFB9E99A226F3A7"]
 			id: "7C40241E360F5DB9"
 			tasks: [{
@@ -2424,7 +2424,7 @@
 		}
 		{
 			title: "phenolic board"
-			x: 8.0d
+			x: 7.5d
 			y: 15.0d
 			shape: "rsquare"
 			dependencies: ["3DFB9E99A226F3A7"]
@@ -2437,8 +2437,8 @@
 		}
 		{
 			title: "Alternate Hex Ash source"
-			x: 2.0d
-			y: 15.0d
+			x: 0.0d
+			y: 16.5d
 			description: ["100mB of ether gas can be crystalized into hex ash as an alternate source of it."]
 			dependencies: ["02E86ADDE3676E32"]
 			id: "6E1FBD630FCE3E50"
@@ -2461,8 +2461,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 12.0d
+			x: 9.5d
+			y: 11.5d
 			dependencies: ["3DFB9E99A226F3A7"]
 			id: "61BE316888E4C0E9"
 			tasks: [{
@@ -2545,7 +2545,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: 7.5d
 			y: 16.0d
 			dependencies: ["2CECF2EE7CADF3C3"]
 			id: "06B0679D87A87F7F"
@@ -2723,7 +2723,7 @@
 		}
 		{
 			x: 15.0d
-			y: 7.5d
+			y: 9.0d
 			dependencies: ["6B5735D99D90A34E"]
 			id: "285D986C36909430"
 			tasks: [{
@@ -2788,6 +2788,41 @@
 				id: "5C680B7A67696ED3"
 				type: "item"
 				item: "scannable:module_fluid"
+			}]
+		}
+		{
+			title: "Regarding Stability"
+			icon: "malum:hallowed_spirit_resonator"
+			x: 4.5d
+			y: 12.0d
+			description: [
+				"This new version of the spirit altar is certainly more powerful. However this comes at a steep cost."
+				""
+				"Recipes done on this altar are unstable; some much more than others. "
+				""
+				"You can stabalize the altar by placing stablizers around the altar within 8 blocks in each direction (and 2 blocks up or down). Though there is a limit of how many of an object that can be used to stablize. Use a stained resonator on the altar side to get a list of stablizers effecting the altar. A hallowed resonator will show the altars stability, and if its is crafting, it shows the recipe info as well."
+				""
+				"For a full guide on the math behind it, check the AMI discord."
+				"{image:amicore:textures/quest/stability.png width:200 height:202 align:1 fit:true}"
+			]
+			dependencies: ["60AFE3DA3E0BF2D6"]
+			id: "67C7BA049DE17D25"
+			tasks: [
+				{
+					id: "54EC2784F05E266A"
+					type: "item"
+					item: "malum:hallowed_spirit_resonator"
+				}
+				{
+					id: "0C90BC1164F2FD3C"
+					type: "item"
+					item: "malum:stained_spirit_resonator"
+				}
+			]
+			rewards: [{
+				id: "7F488E3BF04817C9"
+				type: "item"
+				item: "quark:white_candle"
 			}]
 		}
 	]
