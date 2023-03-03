@@ -2,4 +2,16 @@
 ["Config for AMICore"]
 	#Toggle malum spirit additions. Default: true
 	"Do Malum Additions" = true
+	#Toggle malum spirit altar fixes. Patches out duplication issue, and empty inv crash. Default: true
+	"Do Spirit Altar Patches" = true
+	#Toggle amicore creative tabs. Default: true
+	"Do Creative Tabs" = true
+	#Toggle stability mechanic for malum spirit altar. Default: true
+	"Do Spirit Altar Stability" = true
+	#Toggle stack size increase for extended crafting combination crafting recipes. Default: true
+	"Do Combo Crafting Tweaks" = true
+	#Toggle stability mechanic for combiantion crafting recipes. Default: true
+	"Do Combo Stability" = true
+	#Minimum stability for combiantion crafting recipes. Default: 15.0
+	"Minimum Stability" = 16.0
 

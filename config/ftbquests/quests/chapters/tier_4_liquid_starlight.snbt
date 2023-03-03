@@ -40,8 +40,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 0.0d
+			x: 10.5d
+			y: 5.0d
 			id: "7D7513FFFBAEC93E"
 			tasks: [{
 				id: "173B9837FAA76FEF"
@@ -599,6 +599,22 @@
 				id: "06F05B6C15C4AEC9"
 				type: "item"
 				item: "appliedenergistics2:engineering_processor"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 3.5d
+			id: "74916A57878362B7"
+			tasks: [{
+				id: "43E93BB71B5D1C5A"
+				type: "item"
+				item: {
+					id: "endrem:magical_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
 			}]
 		}
 	]
