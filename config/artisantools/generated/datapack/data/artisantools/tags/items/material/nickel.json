@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "artisantools:cutters_nickel",
+    "artisantools:hammer_nickel",
+    "artisantools:handsaw_nickel",
+    "artisantools:beaker_nickel",
+    "artisantools:burner_nickel",
+    "artisantools:pencil_nickel",
+    "artisantools:tsquare_nickel",
+    "artisantools:driver_nickel",
+    "artisantools:spanner_nickel",
+    "artisantools:chisel_nickel",
+    "artisantools:compass_nickel",
+    "artisantools:mortar_nickel",
+    "artisantools:knife_nickel",
+    "artisantools:file_nickel",
+    "artisantools:solderer_nickel"
+  ]
+}

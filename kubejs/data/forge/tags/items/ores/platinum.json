@@ -1,7 +1,5 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "geolosys:platinum_cluster",
-    "geolosys:platinum_ore"
   ]
 }

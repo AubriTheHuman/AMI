@@ -1,6 +1,5 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "geolosys:ancient_debris_ore"
   ]
 }

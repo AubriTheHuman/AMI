@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " . ",
+    " . ",
+    "ppp"
+  ],
+  "key": {
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    ".": {
+      "tag": "forge:ingots/soul_stained_steel"
+    }
+  },
+  "result": {
+    "item": "artisantools:burner_soul_stained_steel"
+  }
+}

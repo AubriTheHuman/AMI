@@ -1,7 +1,5 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "geolosys:malachite_ore",
-    "geolosys:azurite_ore"
   ]
 }

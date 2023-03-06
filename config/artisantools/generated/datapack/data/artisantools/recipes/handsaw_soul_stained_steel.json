@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ./",
+    "./ ",
+    "/  "
+  ],
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    ".": {
+      "tag": "forge:ingots/soul_stained_steel"
+    }
+  },
+  "result": {
+    "item": "artisantools:handsaw_soul_stained_steel"
+  }
+}

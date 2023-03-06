@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "artisantools:cutters_soul_stained_steel",
+    "artisantools:hammer_soul_stained_steel",
+    "artisantools:handsaw_soul_stained_steel",
+    "artisantools:beaker_soul_stained_steel",
+    "artisantools:burner_soul_stained_steel",
+    "artisantools:pencil_soul_stained_steel",
+    "artisantools:tsquare_soul_stained_steel",
+    "artisantools:driver_soul_stained_steel",
+    "artisantools:spanner_soul_stained_steel",
+    "artisantools:chisel_soul_stained_steel",
+    "artisantools:compass_soul_stained_steel",
+    "artisantools:mortar_soul_stained_steel",
+    "artisantools:knife_soul_stained_steel",
+    "artisantools:file_soul_stained_steel",
+    "artisantools:solderer_soul_stained_steel"
+  ]
+}

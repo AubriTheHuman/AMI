@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "artisantools:cutters_diamond",
+    "artisantools:hammer_diamond",
+    "artisantools:handsaw_diamond",
+    "artisantools:beaker_diamond",
+    "artisantools:burner_diamond",
+    "artisantools:pencil_diamond",
+    "artisantools:tsquare_diamond",
+    "artisantools:driver_diamond",
+    "artisantools:spanner_diamond",
+    "artisantools:chisel_diamond",
+    "artisantools:compass_diamond",
+    "artisantools:mortar_diamond",
+    "artisantools:knife_diamond",
+    "artisantools:file_diamond",
+    "artisantools:solderer_diamond"
+  ]
+}

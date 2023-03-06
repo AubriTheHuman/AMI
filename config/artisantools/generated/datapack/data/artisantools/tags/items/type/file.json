@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "artisantools:file_flint",
+    "artisantools:file_copper",
+    "artisantools:file_invar",
+    "artisantools:file_nickel",
+    "artisantools:file_silver",
+    "artisantools:file_tin",
+    "artisantools:file_iron",
+    "artisantools:file_bronze",
+    "artisantools:file_silicon_brass",
+    "artisantools:file_thallasium",
+    "artisantools:file_crude_steel",
+    "artisantools:file_steel",
+    "artisantools:file_terminite",
+    "artisantools:file_diamond",
+    "artisantools:file_netherite",
+    "artisantools:file_soul_stained_steel",
+    "artisantools:file_aeternium",
+    "artisantools:file_pendorite"
+  ]
+}

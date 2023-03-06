@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "artisantools:driver_flint",
+    "artisantools:driver_copper",
+    "artisantools:driver_invar",
+    "artisantools:driver_nickel",
+    "artisantools:driver_silver",
+    "artisantools:driver_tin",
+    "artisantools:driver_iron",
+    "artisantools:driver_bronze",
+    "artisantools:driver_silicon_brass",
+    "artisantools:driver_thallasium",
+    "artisantools:driver_crude_steel",
+    "artisantools:driver_steel",
+    "artisantools:driver_terminite",
+    "artisantools:driver_diamond",
+    "artisantools:driver_netherite",
+    "artisantools:driver_soul_stained_steel",
+    "artisantools:driver_aeternium",
+    "artisantools:driver_pendorite"
+  ]
+}

@@ -1415,7 +1415,7 @@ crushing.removeByName("create:compat/ae2/crushing/certus_ore");
 crushing.removeByName("create:compat/ae2/crushing/charged_certus_ore");
 crushing.removeByName("byg:compat/create/lignite_ore");
 crushing.removeByName("byg:compat/create/anthracite_ore");
-crushing.removeByName("createaddition:crushing/diamond_ore");
+// crushing.removeByName("createaddition:crushing/diamond_ore");
 
 crushing.addRecipe("crushing/andesite", [<item:minecraft:cobblestone>], <item:minecraft:andesite>);
 crushing.addRecipe("crushing/granite", [<item:minecraft:red_sand>], <item:minecraft:granite>);

@@ -5,6 +5,7 @@ import crafttweaker.api.tag.TagManagerItem;
 import mods.artisanworktables.Recipe;
 import mods.artisanworktables.Type;
 import crafttweaker.api.ILogger;
+import mods.amicore.WorkingTreeBuilder;
 
 #smithing.addRecipe("iron_plate_anvil_smithing", <item:amicore:iron_plate>, <item:betterendforge:iron_hammer>.transformDamage(), <tag:items:forge:heated_ingots/iron>);
 #craftingTable.addShapeless("iron_plate_crafting_smithing", <item:amicore:iron_plate>, [<item:betterendforge:iron_hammer>.transformDamage(), <tag:items:forge:heated_ingots/iron>]);
@@ -83,6 +84,72 @@ val materials = [
 	["gildedfern", "Goldedfern", 0x096A14, 0xFFFFFF, false, true, true, true, "tdelight:gildedfern_ingot"],
 	["hamletite", "Hamletite", 0x900821, 0xFFFFFF, false, true, true, true, "tdelight:hamletite_ingot"]
 ] as string[][];
+
+val moltens = [
+  <fluid:tconstruct:molten_iron>,
+  <fluid:tconstruct:molten_gold>,
+  <fluid:tconstruct:molten_copper>,
+  <fluid:tconstruct:molten_tin>,
+  <fluid:tconstruct:molten_silver>,
+  <fluid:tconstruct:molten_lead>,
+  <fluid:tconstruct:molten_aluminum>,
+  <fluid:tconstruct:molten_nickel>,
+  <fluid:tconstruct:molten_platinum>,
+  <fluid:tconstruct:molten_uranium>,
+  <fluid:tconstruct:molten_zinc>,
+  <fluid:tconstruct:molten_osmium>,
+  <fluid:amicore:molten_titanium>,
+  <fluid:amicore:molten_chromium>,
+  <fluid:tconstruct:molten_cobalt>,
+  <fluid:tconstruct:molten_tungsten>,
+  <fluid:amicore:molten_iridium>,
+  <fluid:amicore:molten_silicon>,
+  <fluid:amicore:molten_magnesium>,
+  <fluid:amicore:molten_lead_brass>,
+  <fluid:amicore:molten_tin_brass>,
+  <fluid:amicore:molten_iron_brass>,
+  <fluid:amicore:molten_silicon_brass>,
+  <fluid:tconstruct:molten_brass>,
+  <fluid:tconstruct:molten_pig_iron>,
+  <fluid:amicore:molten_crude_steel>,
+  <fluid:tconstruct:molten_steel>,
+  <fluid:amicore:molten_cobalt_steel>,
+  <fluid:amicore:molten_stainless_steel>,
+  <fluid:amicore:molten_damascus_steel>,
+  <fluid:amicore:molten_alnico>,
+  <fluid:tconstruct:molten_bronze>,
+  <fluid:amicore:molten_aluminum_bronze>,
+  <fluid:amicore:molten_solder>,
+  <fluid:tconstruct:molten_hepatizon>,
+  <fluid:tconstruct:molten_electrum>,
+  <fluid:tconstruct:molten_invar>,
+  <fluid:amicore:molten_nichrome>,
+  <fluid:amicore:molten_nitinol>,
+  <fluid:amicore:molten_sterling_silver>,
+  <fluid:tconstruct:molten_constantan>,
+  <fluid:tconstruct:molten_netherite>,
+  <fluid:amicore:molten_manasteel>,
+  <fluid:amicore:molten_terrasteel>,
+  <fluid:amicore:molten_elementium>,
+  <fluid:tconstruct:molten_slimesteel>,
+  <fluid:tconstruct:molten_queens_slime>,
+  <fluid:tconstruct:molten_manyullyn>,
+  <fluid:amicore:molten_managold>,
+  <fluid:amicore:molten_enderium>,
+  <fluid:amicore:molten_titaniumaluminide>,
+  <fluid:amicore:molten_titaniumiridium>,
+  <fluid:amicore:molten_refined_radiance>,
+  <fluid:amicore:molten_shadow_steel>,
+  <fluid:amicore:molten_overcharged_alloy>,
+  <fluid:amicore:molten_aeternium>,
+  <fluid:amicore:molten_thallasium>,
+  <fluid:amicore:molten_terminite>,
+  <fluid:amicore:molten_pendorite>,
+  <fluid:amicore:molten_starmetal>,
+  <fluid:tdelight:molten_hamletite>,
+  <fluid:tdelight:molten_rosenquartz>,
+  <fluid:tdelight:molten_gildedfern>
+];
 
 var manager = <tag:items:forge:stone>.getManager();
 
@@ -299,75 +366,64 @@ if(materials[i][4] == "true") {
   <recipetype:immersiveengineering:metal_press>.addRecipe("amicore/immersive/" + item[0] + "_gear_pressing", <tagManager:items>.getTag("forge:heated_large_sheets/" + item[0]), <item:immersiveengineering:mold_gear>, 512, BracketHandlers.getItem("amicore:" + item[0] + "_gear"));
   <recipetype:immersiveengineering:metal_press>.addRecipe("amicore/immersive/" + item[0] + "_rod_pressing", <tagManager:items>.getTag("forge:heated_bar_stocks/" + item[0]), <item:immersiveengineering:mold_rod>, 128, BracketHandlers.getItem("amicore:" + item[0] + "_rod") * 2);
 
+  //artisan tree
+  val xoffset = 2;
+  val yoffset = 2;
+  WorkingTreeBuilder.create("test", <tagManager:items>.getTag("forge:ingots/" + item[0]), xoffset, yoffset + 72, true)
+    .addArrow(xoffset + 1, yoffset + 19, "up")
+    .addItem(<tagManager:items>.getTag("forge:tiny_dusts/" + item[0]), xoffset, yoffset, true)
+    .addArrow(xoffset + 1, yoffset + 55, "up")
+    .addItem(<tagManager:items>.getTag("forge:dusts/" + item[0]), xoffset, yoffset + 36, true)
+    .addArrow(xoffset + 1, yoffset + 91, "up")
+    .addFluid(moltens[i] * 144, 2, yoffset + 108, true)
+    .addArrow(xoffset + 1, yoffset + 127, "down")
+    .addItem(<tagManager:items>.getTag("forge:cakes/" + item[0]), xoffset, yoffset + 144, true)
+    .addArrow(xoffset + 1, yoffset + 163, "down")
+    .addItem(<tagManager:items>.getTag("forge:heated_cakes/" + item[0]), xoffset, yoffset + 180, true)
+    .addArrow(xoffset + 19, yoffset + 181, "right")
+    .addItem(<tagManager:items>.getTag("forge:large_sheets/" + item[0]), xoffset + 36, yoffset + 180, true)
+    .addArrow(xoffset + 55, yoffset + 181, "right")
+    .addItem(<tagManager:items>.getTag("forge:heated_large_sheets/" + item[0]), xoffset + 72, yoffset + 180, true)
+    .addArrow(xoffset + 73, yoffset + 163, "up")
+    .addItem(<tagManager:items>.getTag("forge:gears/" + item[0]), xoffset + 72, yoffset + 144, true)
+    .addArrow(xoffset + 91, yoffset + 181, "right")
+    .addItem(<tagManager:items>.getTag("forge:coils/" + item[0]), xoffset + 108, yoffset + 180, true)
+    .addArrow(xoffset + 127, yoffset + 181, "right")
+    .addItem(<tagManager:items>.getTag("forge:wires/" + item[0]), xoffset + 144, yoffset + 180, true)
+    .addArrow(xoffset + 19, yoffset + 109, "right")
+    .addItem(<tagManager:items>.getTag("forge:bar_stocks/" + item[0]), xoffset + 36, yoffset + 108, true)
+    .addArrow(xoffset + 55, yoffset + 109, "right")
+    .addItem(<tagManager:items>.getTag("forge:heated_bar_stocks/" + item[0]), xoffset + 72, yoffset + 108, true)
+    .addArrow(xoffset + 91, yoffset + 109, "right")
+    .addArrow(xoffset + 109, yoffset + 91, "up")
+    .addItem(<tagManager:items>.getTag("forge:rods/" + item[0]), xoffset + 108, yoffset + 108, true)
+    .addArrow(xoffset + 127, yoffset + 109, "right")
+    .addItem(<tagManager:items>.getTag("forge:bolts/" + item[0]), xoffset + 144, yoffset + 108, true)
+    .addArrow(xoffset + 19, yoffset + 73, "right")
+    .addItem(<tagManager:items>.getTag("forge:heated_ingots/" + item[0]), xoffset + 36, yoffset + 72, true)
+    .addArrow(xoffset + 55, yoffset + 73, "right")
+    .addItem(<tagManager:items>.getTag("forge:plates/" + item[0]), xoffset + 72, yoffset + 72, true)
+    .addArrow(xoffset + 91, yoffset + 73, "right")
+    .addItem(BracketHandlers.getItem("amicore:" + item[0] + "_mech_component"), xoffset + 108, yoffset + 72, true)
+    .addAntiClockwiseArrow(xoffset + 19, yoffset + 50, "up")
+    .addItem(<tagManager:items>.getTag("forge:nuggets/" + item[0]), xoffset + 22, yoffset + 31, true)
+    .addArrow(xoffset + 73, yoffset + 55, "up")
+    .addItem(<tagManager:items>.getTag("forge:rounded_sheets/" + item[0]), xoffset + 72, yoffset + 36, true)
+    // .addItem(<item:minecraft:grass_block> * 128, 100, 136, false)
+    // .addFluid(<fluid:amicore:ether_gas>, 100, 154, true)
+    // .addFluid(<fluid:minecraft:lava> * 1000, 100, 172, false)
+    // .addArrow(2, 2, "up")
+    // .addLongArrow(65, 66, "up")
+    // .addClockwiseArrow(20, 2, "up")
+    // .addAntiClockwiseArrow(42, 2, "up")
+    // .addLine(68, 2, "up")
+    // .addDrawableObject("tool", "beaker", 2, 100, "up")
+    .register();
 }
 
 
 
-val moltens = [
-  <fluid:tconstruct:molten_iron>,
-  <fluid:tconstruct:molten_gold>,
-  <fluid:tconstruct:molten_copper>,
-  <fluid:tconstruct:molten_tin>,
-  <fluid:tconstruct:molten_silver>,
-  <fluid:tconstruct:molten_lead>,
-  <fluid:tconstruct:molten_aluminum>,
-  <fluid:tconstruct:molten_nickel>,
-  <fluid:tconstruct:molten_platinum>,
-  <fluid:tconstruct:molten_uranium>,
-  <fluid:tconstruct:molten_zinc>,
-  <fluid:tconstruct:molten_osmium>,
-  <fluid:amicore:molten_titanium>,
-  <fluid:amicore:molten_chromium>,
-  <fluid:tconstruct:molten_cobalt>,
-  <fluid:tconstruct:molten_tungsten>,
-  <fluid:amicore:molten_iridium>,
-  <fluid:amicore:molten_silicon>,
-  <fluid:amicore:molten_magnesium>,
-  <fluid:amicore:molten_lead_brass>,
-  <fluid:amicore:molten_tin_brass>,
-  <fluid:amicore:molten_iron_brass>,
-  <fluid:amicore:molten_silicon_brass>,
-  <fluid:tconstruct:molten_brass>,
-  <fluid:tconstruct:molten_pig_iron>,
-  <fluid:amicore:molten_crude_steel>,
-  <fluid:tconstruct:molten_steel>,
-  <fluid:amicore:molten_cobalt_steel>,
-  <fluid:amicore:molten_stainless_steel>,
-  <fluid:amicore:molten_damascus_steel>,
-  <fluid:amicore:molten_alnico>,
-  <fluid:tconstruct:molten_bronze>,
-  <fluid:amicore:molten_aluminum_bronze>,
-  <fluid:amicore:molten_solder>,
-  <fluid:tconstruct:molten_hepatizon>,
-  <fluid:tconstruct:molten_electrum>,
-  <fluid:tconstruct:molten_invar>,
-  <fluid:amicore:molten_nichrome>,
-  <fluid:amicore:molten_nitinol>,
-  <fluid:amicore:molten_sterling_silver>,
-  <fluid:tconstruct:molten_constantan>,
-  <fluid:tconstruct:molten_netherite>,
-  <fluid:amicore:molten_manasteel>,
-  <fluid:amicore:molten_terrasteel>,
-  <fluid:amicore:molten_elementium>,
-  <fluid:tconstruct:molten_slimesteel>,
-  <fluid:tconstruct:molten_queens_slime>,
-  <fluid:tconstruct:molten_manyullyn>,
-  <fluid:amicore:molten_managold>,
-  <fluid:amicore:molten_enderium>,
-  <fluid:amicore:molten_titaniumaluminide>,
-  <fluid:amicore:molten_titaniumiridium>,
-  <fluid:amicore:molten_refined_radiance>,
-  <fluid:amicore:molten_shadow_steel>,
-  <fluid:amicore:molten_overcharged_alloy>,
-  <fluid:amicore:molten_aeternium>,
-  <fluid:amicore:molten_thallasium>,
-  <fluid:amicore:molten_terminite>,
-  <fluid:amicore:molten_pendorite>,
-  <fluid:amicore:molten_starmetal>,
-  <fluid:tdelight:molten_hamletite>,
-  <fluid:tdelight:molten_rosenquartz>,
-  <fluid:tdelight:molten_gildedfern>
-];
+
 
 #fixing all the casting, bc THERES SOME ISSUES WITH IT
 

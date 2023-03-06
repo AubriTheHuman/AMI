@@ -1,7 +1,5 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "geolosys:yellorium_cluster",
-    "geolosys:autunite_ore"
   ]
 }

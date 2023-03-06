@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "artisantools:tsquare_flint",
+    "artisantools:tsquare_copper",
+    "artisantools:tsquare_invar",
+    "artisantools:tsquare_nickel",
+    "artisantools:tsquare_silver",
+    "artisantools:tsquare_tin",
+    "artisantools:tsquare_iron",
+    "artisantools:tsquare_bronze",
+    "artisantools:tsquare_silicon_brass",
+    "artisantools:tsquare_thallasium",
+    "artisantools:tsquare_crude_steel",
+    "artisantools:tsquare_steel",
+    "artisantools:tsquare_terminite",
+    "artisantools:tsquare_diamond",
+    "artisantools:tsquare_netherite",
+    "artisantools:tsquare_soul_stained_steel",
+    "artisantools:tsquare_aeternium",
+    "artisantools:tsquare_pendorite"
+  ]
+}

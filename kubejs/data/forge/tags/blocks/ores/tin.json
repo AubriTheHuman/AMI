@@ -1,7 +1,5 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "geolosys:cassiterite_ore",
-    "geolosys:teallite_ore"
   ]
 }

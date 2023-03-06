@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "artisantools:pencil_flint",
+    "artisantools:pencil_copper",
+    "artisantools:pencil_invar",
+    "artisantools:pencil_nickel",
+    "artisantools:pencil_silver",
+    "artisantools:pencil_tin",
+    "artisantools:pencil_iron",
+    "artisantools:pencil_bronze",
+    "artisantools:pencil_silicon_brass",
+    "artisantools:pencil_thallasium",
+    "artisantools:pencil_crude_steel",
+    "artisantools:pencil_steel",
+    "artisantools:pencil_terminite",
+    "artisantools:pencil_diamond",
+    "artisantools:pencil_netherite",
+    "artisantools:pencil_soul_stained_steel",
+    "artisantools:pencil_aeternium",
+    "artisantools:pencil_pendorite"
+  ]
+}

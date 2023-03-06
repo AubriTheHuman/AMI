@@ -41,107 +41,74 @@ Recipe.type(Type.ENGINEER)
 
 mods.amicore.SpiritAltarHandler.clearMalumRecipes();
 
+mods.amicore.SpiritAltarHandler.addRecipe("hex_ash", <item:minecraft:gunpowder>, <item:malum:hex_ash>, [], [<item:malum:arcane_spirit> * 2]);
+mods.amicore.SpiritAltarHandler.addRecipe("tainted_rock", <item:minecraft:cobblestone> * 16, <item:malum:tainted_rock> * 16, [], [<item:malum:sacred_spirit> * 2, <item:malum:arcane_spirit>]);
+mods.amicore.SpiritAltarHandler.addRecipe("twisted_rock", <item:minecraft:cobblestone> * 16, <item:malum:twisted_rock> * 16, [], [<item:malum:wicked_spirit> * 2, <item:malum:arcane_spirit>]);
+mods.amicore.SpiritAltarHandler.addRecipe("cleansed_rock", <item:minecraft:granite> * 16, <item:malum:cleansed_rock> * 16, [], [<item:malum:earthen_spirit>, <item:malum:arcane_spirit>]);
+mods.amicore.SpiritAltarHandler.addRecipe("purified_rock", <item:minecraft:diorite> * 16, <item:malum:purified_rock> * 16, [], [<item:malum:earthen_spirit>, <item:malum:arcane_spirit>]);
+mods.amicore.SpiritAltarHandler.addRecipe("eroded_rock", <item:minecraft:andesite> * 16, <item:malum:eroded_rock> * 16, [], [<item:malum:earthen_spirit>, <item:malum:arcane_spirit>]);
+mods.amicore.SpiritAltarHandler.addRecipe("sacrificial_dagger", <item:minecraft:iron_sword>, <item:malum:sacrificial_dagger>, [<item:malum:tainted_rock>, <item:malum:runewood_planks>, <item:malum:soulstone>], [<item:malum:earthen_spirit> * 8]);
+mods.amicore.SpiritAltarHandler.addRecipe("yellow_ether", <item:minecraft:glowstone_dust> * 4, <item:malum:yellow_ether> * 2, [<item:malum:blazing_quartz>], [<item:malum:infernal_spirit> * 2, <item:malum:arcane_spirit>]);
+mods.amicore.SpiritAltarHandler.addRecipe("totem_base", <item:malum:runewood_log>, <item:malum:totem_base>, [<item:malum:runewood_planks>, <item:malum:runewood_planks>], [<item:malum:arcane_spirit> * 2,<item:malum:earthen_spirit> * 4]);
+mods.amicore.SpiritAltarHandler.addRecipe("rune_table", <item:malum:twisted_rock_item_pedestal>, <item:malum:rune_table>, [<item:malum:runewood_planks>, <item:malum:runewood_planks>], [<item:malum:arcane_spirit> * 2, <item:malum:earthen_spirit> * 4]);
+
+mods.amicore.SpiritAltarHandler.addRecipe("ring_of_arcane_reach", <item:malum:gilded_ring>, <item:malum:ring_of_arcane_reach>, [<item:malum:hallowed_gold_ingot>, <item:malum:hallowed_spirit_resonator>, <item:malum:soulstone>, <item:malum:soulstone>, <item:malum:soulstone>], [<item:malum:sacred_spirit> * 4]);
+mods.amicore.SpiritAltarHandler.addRecipe("ring_of_prowess", <item:malum:gilded_ring>, <item:malum:ring_of_prowess>, [<item:malum:hallowed_spirit_resonator>, <item:malum:soulstone>, <item:malum:confined_brilliance>, <item:malum:confined_brilliance>, <item:malum:confined_brilliance>], [<item:malum:sacred_spirit> * 2]);
+mods.amicore.SpiritAltarHandler.addRecipe("ring_of_arcane_spoil", <item:malum:ornate_ring>, <item:malum:ring_of_arcane_spoil>, [<item:malum:soul_stained_steel_ingot>, <item:malum:stained_spirit_resonator>, <item:malum:soulstone>, <item:malum:soulstone>, <item:malum:soulstone>], [<item:malum:arcane_spirit> * 4]);
+
+mods.amicore.SpiritAltarHandler.addRecipe("tyrving", <item:malum:soul_stained_steel_sword>, <item:malum:tyrving>, [<item:malum:soulstone>, <item:minecraft:obsidian>, <item:malum:twisted_rock>, <item:minecraft:obsidian>, <item:malum:hex_ash>], [<item:malum:wicked_spirit> * 12, <item:malum:eldritch_spirit> * 2]);
+
+
+
     # og malum recipes
-mods.extendedcrafting.CombinationCrafting.addRecipe("hex_ash_powered", <item:malum:hex_ash>, 6400, [
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("hex_ash_powered", <item:malum:hex_ash>, 6400, [
     <item:minecraft:gunpowder>,
     <item:malum:arcane_spirit> * 2
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("ether_powered", <item:malum:yellow_ether> * 2, 6400, [
+], 64, 1.0);
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("ether_powered", <item:malum:yellow_ether> * 2, 6400, [
     <item:minecraft:glowstone_dust> * 4,
     <item:malum:blazing_quartz>, <item:malum:infernal_spirit> * 2, <item:malum:arcane_spirit>
-], 64);
-
-mods.extendedcrafting.CombinationCrafting.addRecipe("tainted_rock_powered", <item:malum:tainted_rock> * 16, 6400, [
-    <item:minecraft:cobblestone> * 16,
-    <item:malum:arcane_spirit>, <item:malum:sacred_spirit> * 2
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("twisted_rock_powered", <item:malum:twisted_rock> * 16, 6400, [
-    <item:minecraft:cobblestone> * 16,
-    <item:malum:arcane_spirit>, <item:malum:wicked_spirit> * 2
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("cleansed_rock_powered", <item:malum:cleansed_rock> * 16, 6400, [
-    <item:minecraft:granite> * 16,
-    <item:malum:arcane_spirit>, <item:malum:earthen_spirit>
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("purified_rock_powered", <item:malum:purified_rock> * 16, 6400, [
-    <item:minecraft:diorite> * 16,
-    <item:malum:arcane_spirit>, <item:malum:earthen_spirit>
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("eroded_rock_powered", <item:malum:eroded_rock> * 16, 6400, [
-    <item:minecraft:andesite> * 16,
-    <item:malum:arcane_spirit>, <item:malum:earthen_spirit>
-], 64);
-
-mods.extendedcrafting.CombinationCrafting.addRecipe("sacrificial_dagger_powered", <item:malum:sacrificial_dagger>, 6400, [
-    <item:minecraft:iron_sword>,
-    <item:malum:tainted_rock>, <item:malum:soulstone>, <item:malum:runewood_planks>,
-    <item:malum:earthen_spirit> * 8
-], 64);
-
-mods.extendedcrafting.CombinationCrafting.addRecipe("totem_base_powered", <item:malum:totem_base>, 6400, [
-    <item:malum:runewood_log> * 4,
-    <item:malum:runewood_planks>, <item:malum:runewood_planks>,
-    <item:malum:arcane_spirit> * 2, <item:malum:earthen_spirit> * 4
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("rune_table_powered", <item:malum:rune_table>, 6400, [
-    <item:malum:twisted_rock_item_pedestal>,
-    <item:malum:runewood_planks>, <item:malum:runewood_planks>,
-    <item:malum:arcane_spirit> * 2, <item:malum:earthen_spirit> * 4
-], 64);
-
-mods.extendedcrafting.CombinationCrafting.addRecipe("ring_of_arcane_reach_powered", <item:malum:ring_of_arcane_reach>, 6400, [
-    <item:malum:gilded_ring>,
-    <item:malum:soulstone>, <item:malum:soulstone>, <item:malum:soulstone>, <item:malum:hallowed_gold_ingot>, <item:malum:hallowed_spirit_resonator>,
-    <item:malum:sacred_spirit> * 4
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("ring_of_prowess_powered", <item:malum:ring_of_prowess>, 6400, [
-    <item:malum:gilded_ring>,
-    <item:malum:soulstone>, <item:malum:confined_brilliance>, <item:malum:confined_brilliance>, <item:malum:confined_brilliance>, <item:malum:hallowed_spirit_resonator>,
-    <item:malum:arcane_spirit> * 4
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("ring_of_arcane_spoil_powered", <item:malum:ring_of_arcane_spoil>, 6400, [
-    <item:malum:ornate_ring>,
-    <item:malum:soulstone>, <item:malum:soulstone>, <item:malum:soulstone>, <item:malum:soul_stained_steel_ingot>, <item:malum:stained_spirit_resonator>,
-    <item:malum:wicked_spirit> * 4
-], 64);
-
-mods.extendedcrafting.CombinationCrafting.addRecipe("radiant_soulstone_powered", <item:malum:radiant_soulstone>, 6400, [
+], 64, 1.0);
+                    
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("radiant_soulstone_powered", <item:malum:radiant_soulstone>, 6400, [
     <item:malum:soulstone> * 2,
     <item:malum:hex_ash>, <item:minecraft:phantom_membrane>,
     <item:malum:wicked_spirit> * 2, <item:malum:sacred_spirit> * 2, <item:malum:arcane_spirit>
-], 64);
+], 64, 0.9);
 
-mods.extendedcrafting.CombinationCrafting.addRecipe("tyrving_powered", <item:malum:tyrving>, 6400, [
-    <item:malum:soul_stained_steel_sword>,
-    <item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:malum:tainted_rock>, <item:malum:soulstone>, <item:malum:hex_ash>,
-    <item:malum:eldritch_spirit> * 2, <item:malum:wicked_spirit> * 12
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("awakened_tyrving_powered", <item:malum:awakened_tyrving>, 6400, [
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("awakened_tyrving_powered", <item:malum:awakened_tyrving>, 6400, [
     <item:malum:tyrving>,
     <item:minecraft:obsidian>, <item:malum:twisted_rock>, <item:malum:radiant_soulstone>, <item:minecraft:nether_star>,
     <item:malum:wicked_spirit> * 32
-], 64);
+], 64, 0.5);
 
-mods.extendedcrafting.CombinationCrafting.addRecipe("soul_stained_stronghold_helmet_powered", <item:malum:soul_stained_stronghold_helmet>, 6400, [
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("soul_stained_stronghold_helmet_powered", <item:malum:soul_stained_stronghold_helmet>, 6400, [
     <item:malum:soul_stained_steel_helmet>,
     <item:minecraft:netherite_scrap>, <item:malum:tainted_rock>, <item:malum:soul_stained_steel_ingot>, <item:malum:radiant_soulstone>, <item:malum:hex_ash>,
     <item:malum:eldritch_spirit> * 2, <item:malum:earthen_spirit> * 6, <item:malum:arcane_spirit> * 12, <item:malum:wicked_spirit> * 12
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("soul_stained_stronghold_chestplate_powered", <item:malum:soul_stained_stronghold_chestplate>, 6400, [
+], 64, 0.2);
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("soul_stained_stronghold_chestplate_powered", <item:malum:soul_stained_stronghold_chestplate>, 6400, [
     <item:malum:soul_stained_steel_chestplate>,
     <item:minecraft:netherite_scrap>, <item:malum:tainted_rock>, <item:malum:soul_stained_steel_ingot>, <item:malum:radiant_soulstone>, <item:malum:hex_ash>,
     <item:malum:eldritch_spirit> * 2, <item:malum:infernal_spirit> * 6, <item:malum:arcane_spirit> * 12, <item:malum:wicked_spirit> * 12
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("soul_stained_stronghold_leggings_powered", <item:malum:soul_stained_stronghold_leggings>, 6400, [
+], 64, 0.2);
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("soul_stained_stronghold_leggings_powered", <item:malum:soul_stained_stronghold_leggings>, 6400, [
     <item:malum:soul_stained_steel_leggings>,
     <item:minecraft:netherite_scrap>, <item:malum:tainted_rock>, <item:malum:soul_stained_steel_ingot>, <item:malum:radiant_soulstone>, <item:malum:hex_ash>,
     <item:malum:eldritch_spirit> * 2, <item:malum:aerial_spirit> * 6, <item:malum:arcane_spirit> * 12, <item:malum:wicked_spirit> * 12
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("soul_stained_stronghold_boots_powered", <item:malum:soul_stained_stronghold_boots>, 6400, [
+], 64, 0.2);
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("soul_stained_stronghold_boots_powered", <item:malum:soul_stained_stronghold_boots>, 6400, [
     <item:malum:soul_stained_steel_boots>,
     <item:minecraft:netherite_scrap>, <item:malum:tainted_rock>, <item:malum:soul_stained_steel_ingot>, <item:malum:radiant_soulstone>, <item:malum:hex_ash>,
     <item:malum:eldritch_spirit> * 2, <item:malum:aquatic_spirit> * 6, <item:malum:arcane_spirit> * 12, <item:malum:wicked_spirit> * 12
-], 64);
+], 64, 0.2);
+
+#rune table edits
+mods.amicore.RuneTableHandler.clearMalumRecipes();
+mods.amicore.RuneTableHandler.regenMalumRecipes();
+mods.amicore.RuneTableHandler.removeMalumRecipeByIndex(9);
+mods.amicore.RuneTableHandler.removeMalumRecipeByIndex(8);
+
 
 craftingTable.removeRecipe(<item:immersivepetroleum:auto_lubricator>);
 craftingTable.removeRecipe(<item:torchmaster:megatorch>);
@@ -154,56 +121,56 @@ craftingTable.removeRecipe(<item:appliedenergistics2:quartz_growth_accelerator>)
 craftingTable.removeRecipe(<item:appliedenergistics2:inscriber>);
 craftingTable.removeByName("appliedenergistics2:decorative/fluix_block");
 
-mods.extendedcrafting.CombinationCrafting.addRecipe("autolube", <item:immersivepetroleum:auto_lubricator>, 12800, [
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("autolube", <item:immersivepetroleum:auto_lubricator>, 12800, [
     <item:malum:hex_ash>,
     <item:amicore:lv_circuit>, <item:amicore:transmissive_gearbox>, <item:immersiveengineering:fluid_pipe>, <item:create:mechanical_pump>, 
     <item:malum:arcane_spirit> * 4, <item:malum:electric_spirit> * 2, <item:malum:mechanical_spirit> *4, <item:malum:magnetic_spirit> * 4
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("megatorch", <item:torchmaster:megatorch>, 12800, [
+], 64, 0.9);
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("megatorch", <item:torchmaster:megatorch>, 12800, [
     <item:malum:hex_ash>,
     <item:minecraft:oak_log>, <item:minecraft:oak_log>, <item:minecraft:diamond>, <item:minecraft:gold_block>, <item:malum:arcane_spirit> * 4, 
     <item:malum:ruinous_spirit> * 2, <item:malum:tempestuous_spirit> *4, <item:malum:magnetic_spirit> * 4
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("feral_flare_lantern", <item:torchmaster:feral_flare_lantern>, 12800, [
+], 64, 0.9);
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("feral_flare_lantern", <item:torchmaster:feral_flare_lantern>, 12800, [
     <item:malum:hex_ash>,
     <item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>, <item:minecraft:glowstone_dust>, 
     <item:malum:arcane_spirit> * 4, <item:malum:electric_spirit> * 2, <item:malum:tempestuous_spirit> *4, <item:malum:magnetic_spirit> * 4
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("dreadlamp", <item:torchmaster:dreadlamp>, 12800, [
+], 64, 0.8);
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("dreadlamp", <item:torchmaster:dreadlamp>, 12800, [
     <item:malum:hex_ash>,
     <item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>,
     <item:malum:wicked_spirit> * 4, <item:malum:ruinous_spirit> * 4, <item:malum:tempestuous_spirit> *4, <item:malum:malicious_spirit> * 4
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("brass_encased_jet", <item:create_stuff_additions:encased_jet_chestplate>, 12800, [
+], 64, 0.8);
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("brass_encased_jet", <item:create_stuff_additions:encased_jet_chestplate>, 12800, [
     <item:malum:hex_ash>,
     <item:create_stuff_additions:brass_chestplate>, <item:amicore:transmissive_gearbox>, <item:create:encased_fan>, <item:create:encased_fan>, 
     <item:malum:aerial_spirit> * 4, <item:malum:mechanical_spirit> * 16, <item:malum:tempestuous_spirit> * 16, <item:malum:magnetic_spirit> * 4
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("travel_staff", <item:travel_anchors:travel_staff>, 12800, [
+], 64, 0.75);
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("travel_staff", <item:travel_anchors:travel_staff>, 12800, [
     <item:malum:hex_ash>,
     <item:amicore:steel_rod>, <item:amicore:lv_circuit>, <item:amicore:ender_core>, <item:amicore:steel_rod>, 
     <item:malum:eldritch_spirit> * 16, <item:malum:electric_spirit> * 16, <item:malum:aerial_spirit> * 16, <item:malum:magnetic_spirit> * 16
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("travel_anchor", <item:travel_anchors:travel_anchor>, 12800, [
+], 6, 0.75);
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("travel_anchor", <item:travel_anchors:travel_anchor>, 12800, [
     <item:malum:hex_ash>,
     <item:amicore:steel_large_sheet>, <item:amicore:lv_circuit>, <item:amicore:ender_core>, <item:amicore:steel_large_sheet>, 
     <item:malum:eldritch_spirit> * 4, <item:malum:electric_spirit> * 4, <item:malum:aerial_spirit> * 4, <item:malum:magnetic_spirit> * 4
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("ender_pouch", <item:enderstorage:ender_pouch>, 12800, [
+], 64, 0.9);
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("ender_pouch", <item:enderstorage:ender_pouch>, 12800, [
     <item:malum:hex_ash>,
     <item:minecraft:leather>, <item:minecraft:blaze_powder>, <item:amicore:ender_core>, <item:minecraft:leather>, 
     <item:malum:eldritch_spirit> * 16, <item:malum:tempestuous_spirit> * 16, <item:malum:aerial_spirit> * 16, <item:malum:magnetic_spirit> * 16
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("quartz_growth_accelerator", <item:appliedenergistics2:quartz_growth_accelerator>, 12800, [
+], 64, 0.9);
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("quartz_growth_accelerator", <item:appliedenergistics2:quartz_growth_accelerator>, 12800, [
     <item:malum:hex_ash>,
     <item:appliedenergistics2:fluix_block>, <item:appliedenergistics2:fluix_glass_cable>, <item:amicore:mv_circuit>, <item:appliedenergistics2:fluix_glass_cable>, 
     <item:malum:electric_spirit> * 2, <item:malum:earthen_spirit> * 16, <item:malum:herbal_spirit> * 4, <item:malum:magnetic_spirit> * 2
-], 64);
-mods.extendedcrafting.CombinationCrafting.addRecipe("inscriber", <item:appliedenergistics2:inscriber>, 12800, [
+], 64, 0.6);
+mods.amicore.StabilityCombinationCrafting.addStabilityRecipe("inscriber", <item:appliedenergistics2:inscriber>, 12800, [
     <item:malum:hex_ash>,
     <item:appliedenergistics2:fluix_crystal>, <item:minecraft:piston>, <item:amicore:steel_large_sheet>, <item:minecraft:piston>, 
     <item:malum:electric_spirit> * 8, <item:malum:earthen_spirit> * 4, <item:malum:mechanical_spirit> * 16, <item:malum:ruinous_spirit> * 2
-], 64);
+], 64, 0.9);
 
 // mods.amicore.SpiritAltarHandler.addRecipe("pop", <item:minecraft:glass>, <item:immersivepetroleum:auto_lubricator>, [<item:amicore:lv_circuit>, <item:amicore:transmissive_gearbox>, <item:immersiveengineering:fluid_pipe>, <item:create:mechanical_pump>], [<item:malum:arcane_spirit> * 4, <item:malum:electric_spirit> * 2, <item:malum:mechanical_spirit> *4, <item:malum:magnetic_spirit> * 4]);
 

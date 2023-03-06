@@ -1,7 +1,5 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "geolosys:hematite_ore",
-    "geolosys:limonite_ore"
   ]
 }

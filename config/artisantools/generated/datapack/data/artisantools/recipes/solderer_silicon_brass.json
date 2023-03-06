@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  .",
+    " . ",
+    "c  "
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:clay_ball"
+    },
+    ".": {
+      "tag": "forge:ingots/silicon_brass"
+    }
+  },
+  "result": {
+    "item": "artisantools:solderer_silicon_brass"
+  }
+}

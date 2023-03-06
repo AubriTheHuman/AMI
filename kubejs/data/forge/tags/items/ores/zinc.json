@@ -1,7 +1,5 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "geolosys:zinc_cluster",
-    "geolosys:sphalerite_ore"
   ]
 }

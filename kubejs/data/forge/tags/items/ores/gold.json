@@ -1,8 +1,5 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "geolosys:gold_cluster",
-    "geolosys:gold_ore",
-    "geolosys:nether_gold_ore"
   ]
 }

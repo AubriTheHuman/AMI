@@ -23,12 +23,19 @@ craftingTable.addShapeless("starmetal_from_orachalchum", <item:amicore:amicoin_s
 craftingTable.addShapeless("starmetal_from_managold", <item:amicore:amicoin_starmetal>*5, [<item:amicore:amicoin_managold>]);
 craftingTable.addShapeless("managold_from_damascus", <item:amicore:amicoin_managold>*4, [<item:amicore:amicoin_damascus>]);
 
-#programmer socks
+#funnies
 Recipe.type(Type.BASIC)
   .shaped([[<tag:items:forge:dyes/pink>,<item:minecraft:string>,<tag:items:forge:dyes/pink>],
           [<tag:items:forge:dyes/light_blue>,<item:amicore:estradiol>,<tag:items:forge:dyes/light_blue>],
           [<item:minecraft:white_wool>,<item:minecraft:air>,<item:minecraft:white_wool>]])
   .output(<item:amicore:programmer_socks>)
+  .tool(<tag:items:artisantools:type/cutters>, 1)
+  .register();
+Recipe.type(Type.BASIC)
+  .shaped([[<item:minecraft:air>, <item:minecraft:string>, <item:minecraft:air>],
+           [<item:minecraft:string>, <item:minecraft:air>, <item:minecraft:string>],
+           [<item:minecraft:air>, <item:amicore:estradiol>, <item:minecraft:air>]])
+  .output(<item:amicore:lesbian_necklace>)
   .tool(<tag:items:artisantools:type/cutters>, 1)
   .register();
 
