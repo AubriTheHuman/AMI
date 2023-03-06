@@ -35,6 +35,27 @@ mods.jei.JEI.hideItem(<item:artisanworktables:worktable_potter>);
 mods.jei.JEI.hideItem(<item:artisanworktables:workstation_potter>);
 mods.jei.JEI.hideItem(<item:artisanworktables:workshop_potter>);
 
+val toolMats = [
+	['flint', 'Flint', 0x191919, 32],
+	['copper', 'Copper', 0xFFA131, 64],
+	['invar', 'Invar', 0x8E9A95, 192],
+	['nickel', 'Nickel', 0xA2975D, 96],
+	['silver', 'Silver', 0x7B9DA4, 96],
+	['tin', 'Tin', 0x7C9AB2, 96],
+	['iron', 'Iron', 0xD4D4D4, 128],
+	['bronze', 'Bronze', 0xD5905C, 128],
+	['silicon_brass', 'Silicon Brass', 0xCEBD77, 128],
+	['thallasium', 'Thallasium', 0x74C4C9, 128],
+	['crude_steel', 'Crude Steel', 0x70848F, 320],
+	['steel', 'Steel', 0x949CA1, 384],
+	['terminite', 'Terminite', 0x00D392, 256],
+	['diamond', 'Diamond', 0x33EBCB, 512],
+	['netherite', 'Netherite', 0x756975, 768],
+	['aeternium', 'Aeternium', 0x4E8250, 1024],
+	['pendorite', 'Pendorite', 0x784B76, 1024],
+	['soul_stained_steel', 'Soul Stained Steel', 0x9B5DB7, 1024]
+] as string[][];
+
 
 #UNDONE
 craftingTable.addShaped("blacksmith_workshop", <item:artisanworktables:workshop_blacksmith>, [
@@ -121,3 +142,16 @@ Recipe.type(Type.ENGINEER)
   .tool(<tag:items:artisantools:type/spanner>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*2])
   .register();
+
+#universal_toolset
+for i, item in toolMats {
+    Recipe.type(Type.BASIC)
+    .shaped([[BracketHandlers.getItem("artisantools:cutters_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:hammer_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:driver_" + toolMats[i][0])],
+    [BracketHandlers.getItem("artisantools:handsaw_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:file_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:spanner_" + toolMats[i][0])],
+    [BracketHandlers.getItem("artisantools:solderer_" + toolMats[i][0]), <tag:items:forge:large_sheets/crude_steel>, BracketHandlers.getItem("artisantools:knife_" + toolMats[i][0])]])
+    .output(BracketHandlers.getItem("amicore:" + toolMats[i][0] + "_universal_toolset"))
+    .tool(<tag:items:artisantools:type/hammer>, 1)
+    .tool(<tag:items:artisantools:type/spanner>, 1)
+    .secondary([<item:amicore:crude_steel_bolt>*6])
+    .register();
+}

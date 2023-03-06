@@ -167,6 +167,27 @@ const expertSpirits = [
 	['thoughtful', 'Thoughtful', 0xFF6BF0, 0xff30ea], 
 	['enlightened', 'Enlightened', 0xA67910, 0x72530b]];
 
+const toolMats = [
+	['flint', 'Flint', 0x191919, 32],
+	['copper', 'Copper', 0xFFA131, 64],
+	['invar', 'Invar', 0x8E9A95, 192],
+	['nickel', 'Nickel', 0xA2975D, 96],
+	['silver', 'Silver', 0x7B9DA4, 96],
+	['tin', 'Tin', 0x7C9AB2, 96],
+	['iron', 'Iron', 0xD4D4D4, 128],
+	['bronze', 'Bronze', 0xD5905C, 128],
+	['silicon_brass', 'Silicon Brass', 0xCEBD77, 128],
+	['thallasium', 'Thallasium', 0x74C4C9, 128],
+	['crude_steel', 'Crude Steel', 0x70848F, 320],
+	['steel', 'Steel', 0x949CA1, 384],
+	['terminite', 'Terminite', 0x00D392, 256],
+	['diamond', 'Diamond', 0x33EBCB, 512],
+	['netherite', 'Netherite', 0x756975, 768],
+	['aeternium', 'Aeternium', 0x4E8250, 1024],
+	['pendorite', 'Pendorite', 0x784B76, 1024],
+	['soul_stained_steel', 'Soul Stained Steel', 0x9B5DB7, 1024]
+];
+
 // const chelperClass = java('top.theillusivec4.curios.api.CuriosApi');
 // const chelper = chelperClass.getCuriosHelper();
 // const param1 = java("net.minecraft.entity.LivingEntity");
@@ -380,7 +401,10 @@ onEvent('item.registry', event => {
 
 	//tools
 	event.create('amicore:metal_tongs').displayName('Metal Tongs').texture("kubejs:item/metal_tongs").maxDamage(500).maxStackSize(1).unstackable().group('amicore.toolstab');
-
+	for(let i = 0; i < toolMats.length; i++) {
+		event.create('amicore:' + toolMats[i][0] + '_universal_toolset').displayName(toolMats[i][1] + ' Universal Toolset').parentModel("kubejs:item/universal_toolset").texture("kubejs:item/universal_toolset_color").color(0, toolMats[i][2]).maxDamage(toolMats[i][3] * 8).maxStackSize(1).unstackable().group('amicore.toolstab');
+	}
+	
 
 	//random crafting components
 	event.create('amicore:diamond_plate').displayName('Diamond Plate').texture("kubejs:item/diamond_plate").group('amicore.materialtab')
@@ -580,15 +604,15 @@ const ItemProperties = java('net.minecraft.item.Item$Properties')
  * https://github.com/oitsjustjose/Geolosys/blob/1.18/src/main/java/com/oitsjustjose/geolosys/common/utils/GeolosysGroup.java
  */
 // const GeolosysRegistry = java('com.oitsjustjose.geolosys.Registry')
-const GeolosysSampleBlock = java('com.oitsjustjose.geolosys.common.blocks.SampleBlock')
-const GeolosysGroup = java('com.oitsjustjose.geolosys.common.utils.GeolosysGroup')
+//const GeolosysSampleBlock = java('com.oitsjustjose.geolosys.common.blocks.SampleBlock')
+//const GeolosysGroup = java('com.oitsjustjose.geolosys.common.utils.GeolosysGroup')
 
 // Registers a custom Sample block through Geolosys' registry
 // Requires that the proper JSON files exist in the data folder of KubeJS
-function createCustomSample(event, sampleRegistryName) {
-	const sample = event.BLOCKS.register(sampleRegistryName, () => new GeolosysSampleBlock)
-	event.ITEMS.register(sampleRegistryName, () => new BlockItem(sample.get(), (new ItemProperties).tab(GeolosysGroup.getInstance())))
-}
+// function createCustomSample(event, sampleRegistryName) {
+// 	const sample = event.BLOCKS.register(sampleRegistryName, () => new GeolosysSampleBlock)
+// 	event.ITEMS.register(sampleRegistryName, () => new BlockItem(sample.get(), (new ItemProperties).tab(GeolosysGroup.getInstance())))
+// }
 
 
 onEvent('block.registry', event => {

@@ -683,10 +683,11 @@
 			icon: "immersiveengineering:ingot_steel"
 			x: 10.5d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "Robot Boxing"
 			description: ["Finally you have some steel. Which is great because you'll need probably a few thousand moving forward. Get yourself a few components for the future."]
 			dependencies: ["6190093B36E50720"]
+			size: 1.6d
 			id: "2650498B9D601A6F"
 			tasks: [
 				{
@@ -817,7 +818,7 @@
 			}]
 		}
 		{
-			x: 10.5d
+			x: 12.0d
 			y: 6.0d
 			dependencies: ["3FC681E702B5BAD6"]
 			id: "5816C78A72FF7037"
@@ -2307,7 +2308,7 @@
 					Damage: 0
 				}
 			}
-			x: 12.0d
+			x: 10.5d
 			y: 6.0d
 			dependencies: ["3FC681E702B5BAD6"]
 			id: "07B7A013839A6ECB"
@@ -2401,7 +2402,7 @@
 		}
 		{
 			x: 8.5d
-			y: 11.5d
+			y: 12.0d
 			dependencies: ["3DFB9E99A226F3A7"]
 			id: "7C40241E360F5DB9"
 			tasks: [{
@@ -2462,7 +2463,7 @@
 		}
 		{
 			x: 9.5d
-			y: 11.5d
+			y: 12.0d
 			dependencies: ["3DFB9E99A226F3A7"]
 			id: "61BE316888E4C0E9"
 			tasks: [{
@@ -2594,7 +2595,7 @@
 			description: [
 				"Solutions are the product of fermenting brews. However they are also made by directly dissolving specific spirits."
 				""
-				"Unlike the generic spirit distillation from the previous tier, this requires a small amount of sugar to catalyze future raeactions."
+				"Unlike the generic spirit distillation from the previous tier, this requires a small amount of sugar to catalyze future reactions."
 				""
 				"This solution can then be fermented for distillation, which can be used for a whole host of purposes."
 			]
@@ -2708,7 +2709,7 @@
 			description: [
 				"This variant crafting table uses power to automatically craft any recipe from the basic, carpenter, engineer, and designer worktables and workstations."
 				""
-				"The downside, other than power consumption, is that it cannot craft fluid recipes, or any recipe that output's fluid. As well as being limited to only 3x3 artisan recipes."
+				"The downside, other than power consumption, is that it cannot craft fluid recipes, or any recipe that outputs fluid. As well as being limited to only 3x3 artisan recipes."
 			]
 			dependencies: [
 				"3FC681E702B5BAD6"
@@ -2824,6 +2825,81 @@
 				type: "item"
 				item: "quark:white_candle"
 			}]
+		}
+		{
+			x: 9.0d
+			y: 7.5d
+			description: ["intermediate spirit, netherite, hallowed gold"]
+			dependencies: ["3FC681E702B5BAD6"]
+			id: "13A5BCA2FB644A61"
+			tasks: [{
+				id: "6D9E989FECEF05B3"
+				type: "item"
+				item: "malum:soul_stained_steel_ingot"
+				count: 16L
+			}]
+		}
+		{
+			icon: {
+				id: "malum:soul_stained_stronghold_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 9.0d
+			y: 6.0d
+			dependencies: [
+				"13A5BCA2FB644A61"
+				"07B7A013839A6ECB"
+			]
+			id: "472FF51F692EF0AB"
+			tasks: [
+				{
+					id: "4A6A1E3A16BDF562"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_stronghold_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5ED3882F68CBBF1A"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_stronghold_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5E4A38FDB76BB152"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_stronghold_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "06937926C8E36851"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_stronghold_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 	]
 }

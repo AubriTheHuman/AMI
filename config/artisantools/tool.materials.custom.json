@@ -11,7 +11,7 @@
       "efficiency": 1.5,
       "damage": 1,
       "enchantability": 4,
-      "color": "FFFFFF",
+      "color": "191919",
       "shiny": false,
       "ingredient": "tag#forge:gems/flint",
       "langKey": "material.artisantools.flint"
@@ -101,7 +101,7 @@
       "langKey": "material.artisantools.bronze"
     },
     {
-      "name": "brass",
+      "name": "silicon_brass",
       "harvestLevel": 2,
       "maxUses": 128,
       "efficiency": 6.0,
@@ -109,8 +109,8 @@
       "enchantability": 15,
       "color": "CEBD77",
       "shiny": true,
-      "ingredient": "tag#forge:ingots/brass",
-      "langKey": "material.artisantools.brass"
+      "ingredient": "tag#forge:ingots/silicon_brass",
+      "langKey": "material.artisantools.silicon_brass"
     },
     {
       "name": "thallasium",
@@ -185,13 +185,25 @@
       "langKey": "material.artisantools.netherite"
     },
     {
+      "name": "soul_stained_steel",
+      "harvestLevel": 4,
+      "maxUses": 1024,
+      "efficiency": 9.0,
+      "damage": 4.0,
+      "enchantability": 20,
+      "color": "9B5DB7",
+      "shiny": false,
+      "ingredient": "tag#forge:ingots/soul_stained_steel",
+      "langKey": "material.artisantools.soul_stained_steel"
+    },
+    {
       "name": "aeternium",
       "harvestLevel": 4,
       "maxUses": 1024,
       "efficiency": 9.0,
       "damage": 4.0,
       "enchantability": 15,
-      "color": "756975",
+      "color": "4E8250",
       "shiny": false,
       "ingredient": "tag#forge:ingots/aeternium",
       "langKey": "material.artisantools.aeternium"

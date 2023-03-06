@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kubejs:item/universal_toolset_color",
+    "layer1": "kubejs:item/universal_toolset"
+  }
+}

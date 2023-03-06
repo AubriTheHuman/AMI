@@ -131,6 +131,27 @@ const oretypes = [
 	['ender_biotite', 'Ender Biotite Rich Ore', 4, 1, 0xb200ed, ['forge:ores/biotite', 'forge:ores/biotite_ender'], 2, ['biotite']]
 ];
 
+const toolMats = [
+	['flint', 'Flint', 0x191919, 32],
+	['copper', 'Copper', 0xFFA131, 64],
+	['invar', 'Invar', 0x8E9A95, 192],
+	['nickel', 'Nickel', 0xA2975D, 96],
+	['silver', 'Silver', 0x7B9DA4, 96],
+	['tin', 'Tin', 0x7C9AB2, 96],
+	['iron', 'Iron', 0xD4D4D4, 128],
+	['bronze', 'Bronze', 0xD5905C, 128],
+	['silicon_brass', 'Silicon Brass', 0xCEBD77, 128],
+	['thallasium', 'Thallasium', 0x74C4C9, 128],
+	['crude_steel', 'Crude Steel', 0x70848F, 320],
+	['steel', 'Steel', 0x949CA1, 384],
+	['terminite', 'Terminite', 0x00D392, 256],
+	['diamond', 'Diamond', 0x33EBCB, 512],
+	['netherite', 'Netherite', 0x756975, 768],
+	['aeternium', 'Aeternium', 0x4E8250, 1024],
+	['pendorite', 'Pendorite', 0x784B76, 1024],
+	['soul_stained_steel', 'Soul Stained Steel', 0x9B5DB7, 1024]
+];
+
 
 onEvent('fluid.tags', event => {
     event.add('forge:steam', 'amicore:steam')
@@ -163,6 +184,20 @@ onEvent('item.tags', event => {
   event.add('forge:fiber', 'byg:cattail')
 
   event.add('forge:sheetmetals/crude_steel', 'amicore:crude_steel_sheetmetal')
+
+  //universal toolsets
+  for (let i = 0; i < toolMats.length; i++) {
+    event.add('artisantools:type/cutters', 'amicore:' + toolMats[i][0] + '_universal_toolset');
+    event.add('artisantools:type/hammer', 'amicore:' + toolMats[i][0] + '_universal_toolset');
+    event.add('artisantools:type/driver', 'amicore:' + toolMats[i][0] + '_universal_toolset');
+    event.add('artisantools:type/handsaw', 'amicore:' + toolMats[i][0] + '_universal_toolset');
+    event.add('artisantools:type/file', 'amicore:' + toolMats[i][0] + '_universal_toolset');
+    event.add('artisantools:type/spanner', 'amicore:' + toolMats[i][0] + '_universal_toolset');
+    event.add('artisantools:type/solderer', 'amicore:' + toolMats[i][0] + '_universal_toolset');
+    event.add('artisantools:type/knife', 'amicore:' + toolMats[i][0] + '_universal_toolset');
+    event.add('artisantools:type/universal_toolset', 'amicore:' + toolMats[i][0] + '_universal_toolset');
+    event.add('artisantools:material/'  + toolMats[i][0], 'amicore:' + toolMats[i][0] + '_universal_toolset');
+  }
 
   // event.add('malum:spirits', 'malum:arcane_spirit')
   // event.add('malum:spirits', 'malum:wicked_spirit')

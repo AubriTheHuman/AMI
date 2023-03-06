@@ -198,9 +198,9 @@
 			y: 7.0d
 			shape: "rsquare"
 			description: [
-				"Congratulations! you've nearly reached the end of tier 2! while there are several more things to do before moving on, crude steel is the fourth of four alloys for this age."
+				"Congratulations! You've nearly reached the end of tier 2! Crude steel is the final of four alloys for this age."
 				""
-				"Feel free to visit portions of the tree incompletable to this point, such as ore tripling and multicylinder engines."
+				"There are several more things to do before moving on; feel free to visit portions of the tree that were uncompletable to this point, such as ore tripling and multicylinder engines."
 			]
 			dependencies: ["3761E493E26F7619"]
 			id: "55ECE1A531D4772A"
@@ -860,7 +860,7 @@
 		{
 			x: -5.5d
 			y: 10.5d
-			description: ["The Rope Pulley can pull structures vertically, and drop them backk down when rotation is reversed."]
+			description: ["The Rope Pulley can pull structures vertically, and drop them back down when rotation is reversed."]
 			dependencies: ["299F8BFDB7C2FCAB"]
 			id: "796FB4593D6CA96F"
 			tasks: [{
@@ -1106,7 +1106,7 @@
 		}
 		{
 			x: 4.5d
-			y: 8.5d
+			y: 8.0d
 			description: ["With crude steel, you can reinforce your backpack even more."]
 			dependencies: ["55ECE1A531D4772A"]
 			id: "44B6DA956ABCAFDF"
@@ -1151,13 +1151,13 @@
 			}]
 		}
 		{
-			title: "Spirit Distillation"
+			title: "Spirit Solutions"
 			icon: "malum:sacred_spirit"
 			x: 0.0d
 			y: 4.0d
 			shape: "rsquare"
 			description: [
-				"By mixing a collected spirit with water and sugar, a simple distillation of the spirit can be created, serving multiple purposes."
+				"By mixing a collected spirit with water, a simple solution of the spirit can be created, serving multiple purposes."
 				""
 				"For now lets make Soulfuric Acid."
 			]
@@ -3552,6 +3552,58 @@
 					id: "3BFBCF29FC179BDF"
 					type: "item"
 					item: "pamhc2foodextended:bibimbapitem"
+				}
+			]
+		}
+		{
+			title: "Universal Toolsets"
+			icon: {
+				id: "amicore:crude_steel_universal_toolset"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 4.5d
+			y: 9.0d
+			description: [
+				"Tired of making 12 different tools for all your recipes? Try the new Universal Toolset today!"
+				""
+				"By combining 8 tools in one (and a box), a single, multipurpose tool is created! Luckily the new crude steel is perfect for making these."
+				""
+				"Each toolset has 8x the base durability for a tool, meaning you lose no durability from the tools used to craft it."
+			]
+			dependencies: ["55ECE1A531D4772A"]
+			id: "6F6F641A88B7FA1D"
+			tasks: [{
+				id: "2DBC7112DCAEC2B5"
+				type: "item"
+				title: "Any #artisantools:type/universal_toolset"
+				icon: {
+					id: "amicore:crude_steel_universal_toolset"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "artisantools:type/driver"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "420DC1F718AFDC08"
+					type: "item"
+					item: "amicore:amicoin"
+				}
+				{
+					id: "3B4D996D27C4A3CD"
+					type: "item"
+					item: "pamhc2foodcore:cottoncandyitem"
 				}
 			]
 		}
