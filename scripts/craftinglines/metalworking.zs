@@ -20,47 +20,47 @@ var filling = <recipetype:create:filling>;
 # [id, name, colorcool, colorhot, needingot]
 
 val materials = [
-  ["iron", "Iron", 0x8B8B94, 0xFFFFFF, true, true, true, true],
-  ["gold", "Gold", 0xEAC33D, 0xFFFFFF, true, true, true, true],
-  ["copper", "Copper", 0xBC765E, 0xFFFFFF, true, true, true, true],
-  ["tin", "Tin", 0xADB0AD, 0xFFFFFF, true, true, true, true],
-  ["silver", "Silver", 0xF2F2F2, 0xFFFFFF, true, true, true, true],
-  ["lead", "Lead", 0x607489, 0xFFFFFF, true, true, true, true],
-  ["aluminum", "Aluminum", 0xD2D4D6, 0xFFFFFF, true, true, true, true],
-  ["nickel", "Nickel", 0xB1B09E, 0xFFFFFF, true, true, true, true],
-  ["platinum", "Platinum", 0x7B8DA1, 0xFFFFFF, true, true, true, true],
-  ["uranium", "Uranium", 0x878681, 0xFFFFFF, true, true, true, true],
-  ["zinc", "Zinc", 0x9A958F, 0xFFFFFF, true, true, true, true],
-  ["osmium", "Osmium", 0xAFB4BF, 0xFFFFFF, true, true, true, true],
-  ["titanium", "Titanium", 0xA19E92, 0xFFFFFF, true, true, true, true],
-  ["chromium", "Chromium", 0xC1C1C1, 0xFFFFFF, true, true, true, true],
-  ["cobalt", "Cobalt", 0xE6E6DE, 0xFFFFFF, true, true, true, true],
-  ["tungsten", "Tungsten", 0xB7C1C3, 0xFFFFFF, true, true, true, true],
-  ["iridium", "Iridium", 0xE4E4E4, 0xFFFFFF, true, true, true, true],
-  ["silicon", "Silicon", 0xBABCCC, 0xFFFFFF, true, true, true, true],
-  ["magnesium", "Magnesium", 0xC0CCD8, 0xFFFFFF, true, true, true, true],
-  ["lead_brass", "Leaded Brass", 0xBD9E7F, 0xFFFFFF, true, true, true, true],
-  ["tin_brass", "Tinny Brass", 0xDEC082, 0xFFFFFF, true, true, true, true],
-  ["iron_brass", "Ferrous Brass", 0xCDCDAB, 0xFFFFFF, true, true, true, true],
+  ["iron", "Iron", 0x8B8B94, 0xFFFFFF, true, true, true, true, ""],
+  ["gold", "Gold", 0xEAC33D, 0xFFFFFF, true, true, true, true, ""],
+  ["copper", "Copper", 0xBC765E, 0xFFFFFF, true, true, true, true, ""],
+  ["tin", "Tin", 0xADB0AD, 0xFFFFFF, true, true, true, true, ""],
+  ["silver", "Silver", 0xF2F2F2, 0xFFFFFF, true, true, true, true, ""],
+  ["lead", "Lead", 0x607489, 0xFFFFFF, true, true, true, true, ""],
+  ["aluminum", "Aluminum", 0xD2D4D6, 0xFFFFFF, true, true, true, true, ""],
+  ["nickel", "Nickel", 0xB1B09E, 0xFFFFFF, true, true, true, true, ""],
+  ["platinum", "Platinum", 0x7B8DA1, 0xFFFFFF, true, true, true, true, ""],
+  ["uranium", "Uranium", 0x878681, 0xFFFFFF, true, true, true, true, ""],
+  ["zinc", "Zinc", 0x9A958F, 0xFFFFFF, true, true, true, true, ""],
+  ["osmium", "Osmium", 0xAFB4BF, 0xFFFFFF, true, true, true, true, ""],
+  ["titanium", "Titanium", 0xA19E92, 0xFFFFFF, true, true, true, true, ""],
+  ["chromium", "Chromium", 0xC1C1C1, 0xFFFFFF, true, true, true, true, ""],
+  ["cobalt", "Cobalt", 0xE6E6DE, 0xFFFFFF, true, true, true, true, ""],
+  ["tungsten", "Tungsten", 0xB7C1C3, 0xFFFFFF, true, true, true, true, ""],
+  ["iridium", "Iridium", 0xE4E4E4, 0xFFFFFF, true, true, true, true, ""],
+  ["silicon", "Silicon", 0xBABCCC, 0xFFFFFF, true, true, true, true, ""],
+  ["magnesium", "Magnesium", 0xC0CCD8, 0xFFFFFF, true, true, true, true, ""],
+  ["lead_brass", "Leaded Brass", 0xBD9E7F, 0xFFFFFF, true, true, true, true, ""],
+  ["tin_brass", "Tinny Brass", 0xDEC082, 0xFFFFFF, true, true, true, true, ""],
+  ["iron_brass", "Ferrous Brass", 0xCDCDAB, 0xFFFFFF, true, true, true, true, ""],
   ["silicon_brass", "Silicon Brass", 0x7B746D, 0xFFFFFF, false, true, true, true, "tconstruct:tinkers_bronze_ingot"],
-  ["brass", "Brass", 0x9C9F99, 0xFFFFFF, true, true, true, true],
+  ["brass", "Brass", 0x9C9F99, 0xFFFFFF, true, true, true, true, ""],
   ["pig_iron", "Pig Iron", 0xB47778, 0xFFFFFF, false, true, true, true, "tconstruct:pig_iron_ingot"],
-  ["crude_steel", "Crude Steel", 0x70848F, 0xFFFFFF, true, true, true, true],
-  ["steel", "Steel", 0x949CA1, 0xFFFFFF, true, true, true, true],
-  ["cobalt_steel", "Cobalt Steel", 0xD4CBCB, 0xFFFFFF, true, true, true, true],
-  ["stainless_steel", "Stainless Steel", 0x989898, 0xFFFFFF, true, true, true, true],
-  ["damascus_steel", "Damascus Steel", 0xDDDDDD, 0xFFFFFF, true, true, true, true],
-  ["alnico", "Alnico Alloy", 0xE0D2C7, 0xFFFFFF, true, true, true, true],
-  ["bronze", "Bronze", 0xD5905C, 0xFFFFFF, true, true, true, true],
-  ["aluminum_bronze", "Aluminum Bronze", 0xDFBC7F, 0xFFFFFF, true, true, true, true],
-	["solder", "Solder", 0x837D7D, 0xFFFFFF, true, true, true, true],
+  ["crude_steel", "Crude Steel", 0x70848F, 0xFFFFFF, true, true, true, true, ""],
+  ["steel", "Steel", 0x949CA1, 0xFFFFFF, true, true, true, true, ""],
+  ["cobalt_steel", "Cobalt Steel", 0xD4CBCB, 0xFFFFFF, true, true, true, true, ""],
+  ["stainless_steel", "Stainless Steel", 0x989898, 0xFFFFFF, true, true, true, true, ""],
+  ["damascus_steel", "Damascus Steel", 0xDDDDDD, 0xFFFFFF, true, true, true, true, ""],
+  ["alnico", "Alnico Alloy", 0xE0D2C7, 0xFFFFFF, true, true, true, true, ""],
+  ["bronze", "Bronze", 0xD5905C, 0xFFFFFF, true, true, true, true, ""],
+  ["aluminum_bronze", "Aluminum Bronze", 0xDFBC7F, 0xFFFFFF, true, true, true, true, ""],
+	["solder", "Solder", 0x837D7D, 0xFFFFFF, true, true, true, true, ""],
   ["hepatizon", "Hepatizon", 0x473351, 0xFFFFFF, false, true, true, true, "tconstruct:hepatizon_ingot"],
-  ["electrum", "Electrum", 0xAD624E, 0xFFFFFF, true, true, true, true],
-  ["invar", "Invar", 0xA89E8D, 0xFFFFFF, true, true, true, true],
-  ["nichrome", "Nichrome", 0xECE9E7, 0xFFFFFF, true, true, true, true],
-  ["nitinol", "Nitinol", 0xD9E5D7 , 0xFFFFFF, true, true, true, true],
-  ["sterling_silver", "Sterling Silver", 0xF4F4F2, 0xFFFFFF, true, true, true, true],
-  ["constantan", "Constantan", 0xAD624E, 0xFFFFFF, true, true, true, true],
+  ["electrum", "Electrum", 0xAD624E, 0xFFFFFF, true, true, true, true, ""],
+  ["invar", "Invar", 0xA89E8D, 0xFFFFFF, true, true, true, true, ""],
+  ["nichrome", "Nichrome", 0xECE9E7, 0xFFFFFF, true, true, true, true, ""],
+  ["nitinol", "Nitinol", 0xD9E5D7 , 0xFFFFFF, true, true, true, true, ""],
+  ["sterling_silver", "Sterling Silver", 0xF4F4F2, 0xFFFFFF, true, true, true, true, ""],
+  ["constantan", "Constantan", 0xAD624E, 0xFFFFFF, true, true, true, true, ""],
   ["netherite", "Netherite", 0x3F393B, 0xFFFFFF, false, true, true, true, "minecraft:netherite_ingot"],
   ["manasteel", "Manasteel", 0x4F78CD , 0xFFFFFF, false, true, true, true, "botania:manasteel_ingot"],
   ["terrasteel", "Terrasteel", 0x40AE15, 0xFFFFFF, false, true, true, true, "botania:terrasteel_ingot"],
@@ -68,10 +68,10 @@ val materials = [
   ["slimesteel", "Slimesteel", 0x70BBC0, 0xFFFFFF, false, true, true, true, "tconstruct:slimesteel_ingot"],
   ["queens_slime", "Queen's Slime", 0xAEB0E7, 0xFFFFFF, false, true, true, true, "tconstruct:queens_slime_ingot"],
   ["manyullyn", "Manyullyn", 0x7950A9, 0xFFFFFF, false, true, true, true, "tconstruct:manyullyn_ingot"],
-  ["managold", "Managold", 0x19E8FF, 0xFFFFFF, true, true, true, true],
-  ["enderium", "Enderium", 0x0F6A6A, 0xFFFFFF, true, true, true, true],
-  ["titaniumaluminide", "Titanium Aluminide", 0xA7ADB1 , 0xFFFFFF, true, true, true, true],
-  ["titaniumiridium", "Titanium-Iridium", 0xA7ADB1, 0xFFFFFF, true, true, true, true],
+  ["managold", "Managold", 0x19E8FF, 0xFFFFFF, true, true, true, true, ""],
+  ["enderium", "Enderium", 0x0F6A6A, 0xFFFFFF, true, true, true, true, ""],
+  ["titaniumaluminide", "Titanium Aluminide", 0xA7ADB1 , 0xFFFFFF, true, true, true, true, ""],
+  ["titaniumiridium", "Titanium-Iridium", 0xA7ADB1, 0xFFFFFF, true, true, true, true, ""],
   ["refined_radiance", "Refined Radiance", 0xE7EBDC, 0xFFFFFF, false, true, true, true, "create:refined_radiance"],
   ["shadow_steel", "Shadow Steel", 0x433E52, 0xFFFFFF, false, true, true, true, "create:shadow_steel"],
   ["overcharged_alloy", "Overcharged Alloy", 0x70848F, 0xFFFFFF, false, true, true, true, "createaddition:overcharged_alloy"],
@@ -146,9 +146,9 @@ val moltens = [
   <fluid:amicore:molten_terminite>,
   <fluid:amicore:molten_pendorite>,
   <fluid:amicore:molten_starmetal>,
-  <fluid:tdelight:molten_hamletite>,
   <fluid:tdelight:molten_rosenquartz>,
-  <fluid:tdelight:molten_gildedfern>
+  <fluid:tdelight:molten_gildedfern>,
+  <fluid:tdelight:molten_hamletite>
 ];
 
 var manager = <tag:items:forge:stone>.getManager();
@@ -367,57 +367,76 @@ if(materials[i][4] == "true") {
   <recipetype:immersiveengineering:metal_press>.addRecipe("amicore/immersive/" + item[0] + "_rod_pressing", <tagManager:items>.getTag("forge:heated_bar_stocks/" + item[0]), <item:immersiveengineering:mold_rod>, 128, BracketHandlers.getItem("amicore:" + item[0] + "_rod") * 2);
 
   //artisan tree
-  val xoffset = 2;
-  val yoffset = 2;
-  WorkingTreeBuilder.create("test", <tagManager:items>.getTag("forge:ingots/" + item[0]), xoffset, yoffset + 72, true)
-    .addArrow(xoffset + 1, yoffset + 19, "up")
-    .addItem(<tagManager:items>.getTag("forge:tiny_dusts/" + item[0]), xoffset, yoffset, true)
-    .addArrow(xoffset + 1, yoffset + 55, "up")
-    .addItem(<tagManager:items>.getTag("forge:dusts/" + item[0]), xoffset, yoffset + 36, true)
-    .addArrow(xoffset + 1, yoffset + 91, "up")
-    .addFluid(moltens[i] * 144, 2, yoffset + 108, true)
-    .addArrow(xoffset + 1, yoffset + 127, "down")
-    .addItem(<tagManager:items>.getTag("forge:cakes/" + item[0]), xoffset, yoffset + 144, true)
-    .addArrow(xoffset + 1, yoffset + 163, "down")
-    .addItem(<tagManager:items>.getTag("forge:heated_cakes/" + item[0]), xoffset, yoffset + 180, true)
-    .addArrow(xoffset + 19, yoffset + 181, "right")
-    .addItem(<tagManager:items>.getTag("forge:large_sheets/" + item[0]), xoffset + 36, yoffset + 180, true)
-    .addArrow(xoffset + 55, yoffset + 181, "right")
-    .addItem(<tagManager:items>.getTag("forge:heated_large_sheets/" + item[0]), xoffset + 72, yoffset + 180, true)
-    .addArrow(xoffset + 73, yoffset + 163, "up")
-    .addItem(<tagManager:items>.getTag("forge:gears/" + item[0]), xoffset + 72, yoffset + 144, true)
-    .addArrow(xoffset + 91, yoffset + 181, "right")
-    .addItem(<tagManager:items>.getTag("forge:coils/" + item[0]), xoffset + 108, yoffset + 180, true)
-    .addArrow(xoffset + 127, yoffset + 181, "right")
-    .addItem(<tagManager:items>.getTag("forge:wires/" + item[0]), xoffset + 144, yoffset + 180, true)
-    .addArrow(xoffset + 19, yoffset + 109, "right")
-    .addItem(<tagManager:items>.getTag("forge:bar_stocks/" + item[0]), xoffset + 36, yoffset + 108, true)
-    .addArrow(xoffset + 55, yoffset + 109, "right")
-    .addItem(<tagManager:items>.getTag("forge:heated_bar_stocks/" + item[0]), xoffset + 72, yoffset + 108, true)
-    .addArrow(xoffset + 91, yoffset + 109, "right")
-    .addArrow(xoffset + 109, yoffset + 91, "up")
-    .addItem(<tagManager:items>.getTag("forge:rods/" + item[0]), xoffset + 108, yoffset + 108, true)
-    .addArrow(xoffset + 127, yoffset + 109, "right")
-    .addItem(<tagManager:items>.getTag("forge:bolts/" + item[0]), xoffset + 144, yoffset + 108, true)
-    .addArrow(xoffset + 19, yoffset + 73, "right")
-    .addItem(<tagManager:items>.getTag("forge:heated_ingots/" + item[0]), xoffset + 36, yoffset + 72, true)
-    .addArrow(xoffset + 55, yoffset + 73, "right")
-    .addItem(<tagManager:items>.getTag("forge:plates/" + item[0]), xoffset + 72, yoffset + 72, true)
-    .addArrow(xoffset + 91, yoffset + 73, "right")
-    .addItem(BracketHandlers.getItem("amicore:" + item[0] + "_mech_component"), xoffset + 108, yoffset + 72, true)
-    .addAntiClockwiseArrow(xoffset + 19, yoffset + 50, "up")
-    .addItem(<tagManager:items>.getTag("forge:nuggets/" + item[0]), xoffset + 22, yoffset + 31, true)
-    .addArrow(xoffset + 73, yoffset + 55, "up")
-    .addItem(<tagManager:items>.getTag("forge:rounded_sheets/" + item[0]), xoffset + 72, yoffset + 36, true)
-    // .addItem(<item:minecraft:grass_block> * 128, 100, 136, false)
-    // .addFluid(<fluid:amicore:ether_gas>, 100, 154, true)
-    // .addFluid(<fluid:minecraft:lava> * 1000, 100, 172, false)
-    // .addArrow(2, 2, "up")
-    // .addLongArrow(65, 66, "up")
-    // .addClockwiseArrow(20, 2, "up")
-    // .addAntiClockwiseArrow(42, 2, "up")
-    // .addLine(68, 2, "up")
-    // .addDrawableObject("tool", "beaker", 2, 100, "up")
+  val xoffset = 4;
+  val yoffset = 54;
+  WorkingTreeBuilder.create("test", <tagManager:items>.getTag("forge:ingots/" + item[0]), xoffset+36, yoffset + 18, true)
+    .addItem(<tagManager:items>.getTag("forge:storage_blocks/" + item[0]), xoffset, yoffset, true)
+    .addItem(<tagManager:items>.getTag("forge:nuggets/" + item[0]), xoffset, yoffset+27, true)
+    .addItem(BracketHandlers.getItem("amicore:molten_" + item[0] + "_bucket"), xoffset, yoffset+54, true)
+    .addItem(<tagManager:items>.getTag("forge:bar_stocks/" + item[0]), xoffset+36, yoffset+54, true)
+    .addItem(<tagManager:items>.getTag("forge:cakes/" + item[0]), xoffset+36, yoffset+90, true)
+    .addItem(<tagManager:items>.getTag("forge:heated_cakes/" + item[0]), xoffset+63, yoffset+90, true)
+    .addItem(<tagManager:items>.getTag("forge:heated_bar_stocks/" + item[0]), xoffset+63, yoffset+54, true)
+    .addItem(<tagManager:items>.getTag("forge:heated_ingots/" + item[0]), xoffset+63, yoffset+18, true)
+    .addItem(<tagManager:items>.getTag("forge:large_sheets/" + item[0]), xoffset+90, yoffset+90, true)
+    .addItem(<tagManager:items>.getTag("forge:tiny_dusts/" + item[0]), xoffset+4, yoffset+117, true)
+    .addItem(<tagManager:items>.getTag("forge:dusts/" + item[0]), xoffset+32, yoffset+117, true)
+    .addItem(<tagManager:items>.getTag("forge:heated_large_sheets/" + item[0]), xoffset+90, yoffset+117, true)
+    .addItem(<tagManager:items>.getTag("forge:rods/" + item[0]), xoffset+90, yoffset+54, true)
+    .addItem(<tagManager:items>.getTag("forge:plates/" + item[0]), xoffset+90, yoffset+18, true)
+    .addItem(<tagManager:items>.getTag("forge:rounded_sheets/" + item[0]), xoffset+126, yoffset, true)
+    .addItem(BracketHandlers.getItem("amicore:" + item[0] + "_mech_component"), xoffset+126, yoffset+36, true)
+    .addItem(<tagManager:items>.getTag("forge:bolts/" + item[0]), xoffset+126, yoffset+72, true)
+    .addItem(<tagManager:items>.getTag("forge:coils/" + item[0]), xoffset+126, yoffset+99, true)
+    .addItem(<tagManager:items>.getTag("forge:gears/" + item[0]), xoffset+126, yoffset+126, true)
+    .addItem(<tagManager:items>.getTag("forge:wires/" + item[0]), xoffset+153, yoffset+99, true)
+    .addFluid(moltens[i] * 144, xoffset, yoffset+81, true)
+    .addStep(<item:custommachinery:custom_machine_item>.withTag({machine: "custommachinery:forge_furnace" as string}), xoffset + 63, yoffset + 134)
+    .addArrow(xoffset, yoffset + 72, "up")
+    .addDrawableObject("half_line", "none", xoffset + 18, yoffset+81, "left")
+    .addAntiClockwiseArrow(xoffset + 18, yoffset+90, "right")
+    .addAntiClockwiseArrow(xoffset + 18, yoffset+54, "right")
+    .addAntiClockwiseArrow(xoffset + 18, yoffset+18, "right")
+    .addAntiClockwiseArrow(xoffset + 18, yoffset, "left")
+    .addAntiClockwiseArrow(xoffset + 18, yoffset+27, "left")
+    .addLine(xoffset + 18, yoffset+63, "up")
+    .addLine(xoffset + 18, yoffset+18, "up")
+    .addLine(xoffset + 18, yoffset+36, "up")
+    .addLine(xoffset + 18, yoffset+45, "up")
+    .addLine(xoffset + 18, yoffset+81, "up")
+    .addArrow(xoffset + 22, yoffset + 117, "left")
+    .addArrow(xoffset + 14, yoffset + 117, "right")
+    .addDrawableObject("tool", "crusher", xoffset + 18, yoffset+137, "up")
+    .addArrow(xoffset + 45, yoffset + 18, "right")
+    .addArrow(xoffset + 45, yoffset + 54, "right")
+    .addArrow(xoffset + 45, yoffset + 90, "right")
+    .addDrawableObject("fire", "hammer", xoffset + 64, yoffset+119, "up")
+    .addArrow(xoffset + 72, yoffset + 18, "right")
+    .addArrow(xoffset + 72, yoffset + 54, "right")
+    .addArrow(xoffset + 72, yoffset + 90, "right")
+    .addArrow(xoffset + 72, yoffset + 118, "right")
+    .addArrow(xoffset + 63, yoffset + 109, "up")
+    .addDrawableObject("half_line", "none", xoffset + 108, yoffset+18, "left")
+    .addDrawableObject("half_line", "none", xoffset + 108, yoffset+54, "left")
+    .addDrawableObject("half_line", "none", xoffset + 108, yoffset+117, "left")
+    .addArrow(xoffset + 90, yoffset + 99, "down")
+    .addArrow(xoffset + 108, yoffset, "right")
+    .addArrow(xoffset + 108, yoffset + 33, "right")
+    .addArrow(xoffset + 108, yoffset + 39, "right")
+    .addArrow(xoffset + 108, yoffset + 72, "right")
+    .addArrow(xoffset + 108, yoffset + 99, "right")
+    .addArrow(xoffset + 135, yoffset + 99, "right")
+    .addArrow(xoffset + 108, yoffset + 126, "right")
+    .addLine(xoffset + 108, yoffset+9, "up")
+    .addLine(xoffset + 108, yoffset+24, "up")
+    .addLine(xoffset + 108, yoffset+48, "up")
+    .addLine(xoffset + 108, yoffset+63, "up")
+    .addLine(xoffset + 108, yoffset+108, "up")
+    .addLine(xoffset + 108, yoffset+117, "up")
+    .addDrawableObject("tool", "hammer", xoffset + 145, yoffset + 1, "up")
+    .addDrawableObject("tool", "cutters", xoffset + 145, yoffset + 72, "up")
+    .addDrawableObject("tool", "press", xoffset + 145, yoffset + 127, "up")
+    .addText(1, 2, item[1] + " Metalworking Tree", [])
     .register();
 }
 

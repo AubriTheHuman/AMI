@@ -144,20 +144,20 @@ pressing.addRecipe("remove_compound_from_bottle", [<item:create:chromatic_compou
 #crude steel recipes TODO FIX
 craftingTable.addShaped("water_wheel_crude", <item:immersiveengineering:watermill>,
 [[<item:minecraft:air>,<item:immersiveengineering:waterwheel_segment>,<item:minecraft:air>],
-[<item:immersiveengineering:waterwheel_segment>,<tag:items:forge:ingots/crude_steel>,<item:immersiveengineering:waterwheel_segment>],
+[<item:immersiveengineering:waterwheel_segment>,<tag:items:forge:ingots/steel_crafting>,<item:immersiveengineering:waterwheel_segment>],
 [<item:minecraft:air>,<item:immersiveengineering:waterwheel_segment>,<item:minecraft:air>]], null);
 craftingTable.addShaped("steel_wallmount_crude", <item:immersiveengineering:steel_wallmount>,
-[[<tag:items:forge:ingots/crude_steel>,<tag:items:forge:ingots/crude_steel>],
-[<tag:items:forge:ingots/crude_steel>,<tag:items:forge:rods/crude_steel>]], null);
+[[<tag:items:forge:ingots/steel_crafting>,<tag:items:forge:ingots/steel_crafting>],
+[<tag:items:forge:ingots/steel_crafting>,<tag:items:forge:rods/steel_crafting>]], null);
 craftingTable.addShaped("steel_scaffolding_crude", <item:immersiveengineering:steel_scaffolding_standard>,
-[[<tag:items:forge:ingots/crude_steel>,<tag:items:forge:ingots/crude_steel>,<tag:items:forge:ingots/crude_steel>],
-[<item:minecraft:air>,<tag:items:forge:rods/crude_steel>,<item:minecraft:air>],
-[<tag:items:forge:rods/crude_steel>,<item:minecraft:air>,<tag:items:forge:rods/crude_steel>]], null);
+[[<tag:items:forge:ingots/steel_crafting>,<tag:items:forge:ingots/steel_crafting>,<tag:items:forge:ingots/steel_crafting>],
+[<item:minecraft:air>,<tag:items:forge:rods/steel_crafting>,<item:minecraft:air>],
+[<tag:items:forge:rods/steel_crafting>,<item:minecraft:air>,<tag:items:forge:rods/steel_crafting>]], null);
 craftingTable.addShaped("steel_fence_crude", <item:immersiveengineering:steel_fence>,
-[[<tag:items:forge:ingots/crude_steel>,<tag:items:forge:rods/crude_steel>,<tag:items:forge:ingots/crude_steel>],
-[<tag:items:forge:ingots/crude_steel>,<tag:items:forge:rods/crude_steel>,<tag:items:forge:ingots/crude_steel>]], null);
+[[<tag:items:forge:ingots/steel_crafting>,<tag:items:forge:rods/steel_crafting>,<tag:items:forge:ingots/steel_crafting>],
+[<tag:items:forge:ingots/steel_crafting>,<tag:items:forge:rods/steel_crafting>,<tag:items:forge:ingots/steel_crafting>]], null);
 craftingTable.addShaped("thermoelectric_generator_crude", <item:immersiveengineering:thermoelectric_generator>,
-[[<tag:items:forge:ingots/crude_steel>,<tag:items:forge:ingots/crude_steel>,<tag:items:forge:ingots/crude_steel>],
+[[<tag:items:forge:ingots/steel_crafting>,<tag:items:forge:ingots/steel_crafting>,<tag:items:forge:ingots/steel_crafting>],
 [<tag:items:forge:plates/constantan>,<item:immersiveengineering:coil_lv>,<tag:items:forge:plates/constantan>],
 [<tag:items:forge:plates/constantan>,<tag:items:forge:plates/constantan>,<tag:items:forge:plates/constantan>]], null);
 craftingTable.addShaped("crude_steel_block", <item:amicore:crude_steel_block>,
@@ -259,7 +259,7 @@ crushing.addRecipe("dirty_sulfur_crushing", [<item:immersiveengineering:dust_sul
 milling.addRecipe("dirty_sulfur_milling", [<item:immersiveengineering:dust_sulfur> * 2, <item:minecraft:sand> * 2 % 50], <item:amicore:dirty_sulfur>);
 
 //multicyl engine
-<recipetype:create:sequenced_assembly>.addJSONRecipe("engine_cluster", {
+<recipetype:create:sequenced_assembly>.addJSONRecipe("engine_cluster_crude", {
   "type": "create:sequenced_assembly",
   "ingredient": { "item": "amicore:crude_steel_plate" },
   "transitionalItem": { "item": "amicore:partial_engine_cluster" },
@@ -303,7 +303,51 @@ milling.addRecipe("dirty_sulfur_milling", [<item:immersiveengineering:dust_sulfu
   "results": [ { "item": "amicore:engine_cluster" } ],
   "loops": 1
 });
-<recipetype:create:sequenced_assembly>.addJSONRecipe("multicyl_engine", {
+<recipetype:create:sequenced_assembly>.addJSONRecipe("engine_cluster_steel", {
+  "type": "create:sequenced_assembly",
+  "ingredient": { "item": "amicore:steel_plate" },
+  "transitionalItem": { "item": "amicore:partial_engine_cluster" },
+  "sequence": [
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_engine_cluster" },
+            { "item": "amicore:high_torque_gearbox" }],
+        "results": [ { "item": "amicore:partial_engine_cluster" } ],
+        "processingTime": 100
+    },
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_engine_cluster" },
+            { "item": "amicore:simple_engine" }],
+        "results": [ { "item": "amicore:partial_engine_cluster" } ],
+        "processingTime": 40
+    },
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_engine_cluster" },
+            { "item": "amicore:simple_engine" }],
+        "results": [ { "item": "amicore:partial_engine_cluster" } ],
+        "processingTime": 40
+    },
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_engine_cluster" },
+            { "item": "amicore:simple_engine" }],
+        "results": [ { "item": "amicore:partial_engine_cluster" } ],
+        "processingTime": 40
+    },
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_engine_cluster" },
+            { "item": "amicore:simple_engine" }],
+        "results": [ { "item": "amicore:partial_engine_cluster" } ],
+        "processingTime": 40
+    }
+  ],
+  "results": [ { "item": "amicore:engine_cluster" } ],
+  "loops": 1
+});
+<recipetype:create:sequenced_assembly>.addJSONRecipe("multicyl_engine_crude", {
   "type": "create:sequenced_assembly",
   "ingredient": { "item": "amicore:engine_cluster" },
   "transitionalItem": { "item": "amicore:partial_multicyl_engine" },
@@ -352,6 +396,56 @@ milling.addRecipe("dirty_sulfur_milling", [<item:immersiveengineering:dust_sulfu
   "results": [ { "item": "amicore:multicyl_engine" } ],
   "loops": 1
 });
+<recipetype:create:sequenced_assembly>.addJSONRecipe("multicyl_engine_steel", {
+  "type": "create:sequenced_assembly",
+  "ingredient": { "item": "amicore:engine_cluster" },
+  "transitionalItem": { "item": "amicore:partial_multicyl_engine" },
+  "sequence": [
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_multicyl_engine" },
+            { "item": "amicore:steel_mech_component" }],
+        "results": [ { "item": "amicore:partial_multicyl_engine" } ],
+        "processingTime": 100
+    },
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_multicyl_engine" },
+            { "item": "amicore:steel_round_sheet" }],
+        "results": [ { "item": "amicore:partial_multicyl_engine" } ],
+        "processingTime": 40
+    },
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_multicyl_engine" },
+            { "item": "amicore:steel_bolt" }],
+        "results": [ { "item": "amicore:partial_multicyl_engine" } ],
+        "processingTime": 40
+    },
+    {
+        "type": "create:pressing",
+        "ingredients": [ { "item": "amicore:partial_multicyl_engine" } ],
+        "results": [ { "item": "amicore:partial_multicyl_engine" } ],
+        "processingTime": 40
+    },
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_multicyl_engine" },
+            { "item": "amicore:steel_bolt" }],
+        "results": [ { "item": "amicore:partial_multicyl_engine" } ],
+        "processingTime": 40
+    },
+    {
+        "type": "create:pressing",
+        "ingredients": [ { "item": "amicore:partial_multicyl_engine" } ],
+        "results": [ { "item": "amicore:partial_multicyl_engine" } ],
+        "processingTime": 40
+    }
+  ],
+  "results": [ { "item": "amicore:multicyl_engine" } ],
+  "loops": 1
+});
+
 mods.jei.JEI.hideItem(<item:amicore:partial_multicyl_engine>);
 mods.jei.JEI.hideItem(<item:amicore:partial_engine_cluster>);
 
@@ -434,7 +528,7 @@ craftingTable.removeRecipe(<item:trashcans:item_trash_can>);
 craftingTable.removeRecipe(<item:trashcans:energy_trash_can>);
 craftingTable.removeRecipe(<item:trashcans:liquid_trash_can>);
 Recipe.type(Type.CHEMIST)
-  .shaped([[<tag:items:forge:stone>, <tag:items:forge:plates/crude_steel>, <tag:items:forge:stone>],
+  .shaped([[<tag:items:forge:stone>, <tag:items:forge:plates/steel_crafting>, <tag:items:forge:stone>],
   [<tag:items:forge:cobblestone>, <tag:items:forge:chests/wooden>, <tag:items:forge:cobblestone>],
   [<tag:items:forge:cobblestone>, <tag:items:forge:cobblestone>, <tag:items:forge:cobblestone>]])
   .output(<item:trashcans:item_trash_can>)
@@ -443,7 +537,7 @@ Recipe.type(Type.CHEMIST)
   .secondary([<item:amicore:crude_steel_bolt>*2])
   .register();
 Recipe.type(Type.CHEMIST)
-  .shaped([[<tag:items:forge:stone>, <tag:items:forge:plates/crude_steel>, <tag:items:forge:stone>],
+  .shaped([[<tag:items:forge:stone>, <tag:items:forge:plates/steel_crafting>, <tag:items:forge:stone>],
   [<tag:items:forge:cobblestone>, <item:minecraft:bucket>, <tag:items:forge:cobblestone>],
   [<tag:items:forge:cobblestone>, <tag:items:forge:cobblestone>, <tag:items:forge:cobblestone>]])
   .output(<item:trashcans:liquid_trash_can>)
@@ -452,13 +546,40 @@ Recipe.type(Type.CHEMIST)
   .secondary([<item:amicore:crude_steel_bolt>*2])
   .register();
 Recipe.type(Type.CHEMIST)
-  .shaped([[<tag:items:forge:stone>, <tag:items:forge:plates/crude_steel>, <tag:items:forge:stone>],
+  .shaped([[<tag:items:forge:stone>, <tag:items:forge:plates/steel_crafting>, <tag:items:forge:stone>],
   [<tag:items:forge:cobblestone>, <item:minecraft:redstone>, <tag:items:forge:cobblestone>],
   [<tag:items:forge:cobblestone>, <tag:items:forge:cobblestone>, <tag:items:forge:cobblestone>]])
   .output(<item:trashcans:energy_trash_can>)
   .tool(<tag:items:artisantools:type/driver>, 1)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*2])
+  .register();
+Recipe.type(Type.CHEMIST)
+  .shaped([[<tag:items:forge:stone>, <tag:items:forge:plates/steel_crafting>, <tag:items:forge:stone>],
+  [<tag:items:forge:cobblestone>, <tag:items:forge:chests/wooden>, <tag:items:forge:cobblestone>],
+  [<tag:items:forge:cobblestone>, <tag:items:forge:cobblestone>, <tag:items:forge:cobblestone>]])
+  .output(<item:trashcans:item_trash_can>)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .secondary([<item:amicore:steel_bolt>*2])
+  .register();
+Recipe.type(Type.CHEMIST)
+  .shaped([[<tag:items:forge:stone>, <tag:items:forge:plates/steel_crafting>, <tag:items:forge:stone>],
+  [<tag:items:forge:cobblestone>, <item:minecraft:bucket>, <tag:items:forge:cobblestone>],
+  [<tag:items:forge:cobblestone>, <tag:items:forge:cobblestone>, <tag:items:forge:cobblestone>]])
+  .output(<item:trashcans:liquid_trash_can>)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .secondary([<item:amicore:steel_bolt>*2])
+  .register();
+Recipe.type(Type.CHEMIST)
+  .shaped([[<tag:items:forge:stone>, <tag:items:forge:plates/steel_crafting>, <tag:items:forge:stone>],
+  [<tag:items:forge:cobblestone>, <item:minecraft:redstone>, <tag:items:forge:cobblestone>],
+  [<tag:items:forge:cobblestone>, <tag:items:forge:cobblestone>, <tag:items:forge:cobblestone>]])
+  .output(<item:trashcans:energy_trash_can>)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .secondary([<item:amicore:steel_bolt>*2])
   .register();
 
 #lv circuits
@@ -479,7 +600,7 @@ craftingTable.addShaped("solder_spool", <item:amicore:solder_spool>,
 <recipetype:create:crushing>.addRecipe("carbon_dust_from_coal", [<item:amicore:carbon_dust> * 3], <item:immersiveengineering:coal_coke>);
 <recipetype:create:crushing>.addRecipe("carbon_dust_from_petcoke", [<item:amicore:carbon_dust> * 3], <item:immersivepetroleum:petcoke>);
 <recipetype:create:mechanical_crafting>.addRecipe("simple_resistor", <item:amicore:simple_resistor>, [[<tag:items:forge:wires/copper>, <item:amicore:carbon_dust>, <tag:items:forge:wires/copper>]]);
-<recipetype:create:sequenced_assembly>.addJSONRecipe("lv_circuit", {
+<recipetype:create:sequenced_assembly>.addJSONRecipe("lv_circuit_crude", {
   "type": "create:sequenced_assembly",
   "ingredient": { "tag": "minecraft:wooden_slabs" },
   "transitionalItem": { "item": "amicore:partial_lv_circuit" },
@@ -543,8 +664,72 @@ craftingTable.addShaped("solder_spool", <item:amicore:solder_spool>,
   "results": [ { "item": "amicore:lv_circuit" } ],
   "loops": 1
 });
+<recipetype:create:sequenced_assembly>.addJSONRecipe("lv_circuit_steel", {
+  "type": "create:sequenced_assembly",
+  "ingredient": { "tag": "minecraft:wooden_slabs" },
+  "transitionalItem": { "item": "amicore:partial_lv_circuit" },
+  "sequence": [
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_lv_circuit" },
+            { "item": "amicore:simple_resistor" }],
+        "results": [ { "item": "amicore:partial_lv_circuit" } ],
+        "processingTime": 100
+    },
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_lv_circuit" },
+            { "item": "amicore:solder_spool" }],
+        "results": [ { "item": "amicore:partial_lv_circuit" } ],
+        "processingTime": 100
+    },
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_lv_circuit" },
+            { "item": "amicore:held_solderer" }],
+        "results": [ { "item": "amicore:partial_lv_circuit" } ],
+        "processingTime": 100
+    },
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_lv_circuit" },
+            { "item": "amicore:simple_resistor" }],
+        "results": [ { "item": "amicore:partial_lv_circuit" } ],
+        "processingTime": 100
+    },
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_lv_circuit" },
+            { "item": "amicore:solder_spool" }],
+        "results": [ { "item": "amicore:partial_lv_circuit" } ],
+        "processingTime": 100
+    },
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_lv_circuit" },
+            { "item": "amicore:held_solderer" }],
+        "results": [ { "item": "amicore:partial_lv_circuit" } ],
+        "processingTime": 100
+    },
+    {
+        "type": "create:deploying",
+        "ingredients": [{ "item": "amicore:partial_lv_circuit" },
+            { "item": "amicore:steel_bolt" }],
+        "results": [ { "item": "amicore:partial_lv_circuit" } ],
+        "processingTime": 100
+    },
+    {
+        "type": "create:pressing",
+        "ingredients": [ { "item": "amicore:partial_lv_circuit" } ],
+        "results": [ { "item": "amicore:partial_lv_circuit" } ],
+        "processingTime": 100
+    }
+  ],
+  "results": [ { "item": "amicore:lv_circuit" } ],
+  "loops": 1
+});
 Recipe.type(Type.ENGINEER)
-  .shapeless([<tag:items:forge:heated_bar_stocks/crude_steel>,<tag:items:forge:wires/crude_steel>,<tag:items:forge:wires/crude_steel>])
+  .shapeless([<tag:items:forge:heated_bar_stocks/steel_crafting>,<tag:items:forge:wires/steel_crafting>,<tag:items:forge:wires/steel_crafting>])
   .output(<item:amicore:held_solderer>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .tool(<tag:items:artisantools:type/cutters>, 1)
@@ -558,7 +743,7 @@ Recipe.type(Type.ENGINEER)
 
 #sitting pool components
 Recipe.type(Type.ENGINEER)
-  .shaped([[<item:steampowered:cast_iron_large_cogwheel>, <tag:items:forge:large_sheets/crude_steel>, <item:steampowered:cast_iron_large_cogwheel>],
+  .shaped([[<item:steampowered:cast_iron_large_cogwheel>, <tag:items:forge:large_sheets/steel_crafting>, <item:steampowered:cast_iron_large_cogwheel>],
   [<tag:items:forge:plates/iron_brass>, <item:create:copper_casing>, <tag:items:forge:plates/iron_brass>],
   [<item:createdeco:copper_sheet_metal>, <item:amicore:multicyl_engine>, <item:createdeco:copper_sheet_metal>]])
   .output(<item:amicore:sitting_tank>)
@@ -569,14 +754,14 @@ Recipe.type(Type.ENGINEER)
 Recipe.type(Type.ENGINEER)
   .shaped([[<item:create:fluid_pipe>, <item:create:fluid_valve>, <item:create:fluid_pipe>],
   [<tag:items:forge:rods/iron_brass>, <item:create:copper_casing>, <tag:items:forge:rods/iron_brass>],
-  [<item:createdeco:copper_sheet_metal>, <tag:items:forge:plates/crude_steel>, <item:createdeco:copper_sheet_metal>]])
+  [<item:createdeco:copper_sheet_metal>, <tag:items:forge:plates/steel_crafting>, <item:createdeco:copper_sheet_metal>]])
   .output(<item:amicore:copper_fluid_input>)
   .tool(<tag:items:artisantools:type/driver>, 1)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*2])
   .register();
 Recipe.type(Type.ENGINEER)
-  .shaped([[<item:create:fluid_pipe>, <tag:items:forge:plates/crude_steel>, <item:create:fluid_pipe>],
+  .shaped([[<item:create:fluid_pipe>, <tag:items:forge:plates/steel_crafting>, <item:create:fluid_pipe>],
   [<tag:items:forge:rods/iron_brass>, <item:create:copper_casing>, <tag:items:forge:rods/iron_brass>],
   [<item:createdeco:copper_sheet_metal>, <item:create:fluid_valve>, <item:createdeco:copper_sheet_metal>]])
   .output(<item:amicore:copper_fluid_output>)
@@ -584,19 +769,55 @@ Recipe.type(Type.ENGINEER)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*2])
   .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:steampowered:cast_iron_large_cogwheel>, <tag:items:forge:large_sheets/steel_crafting>, <item:steampowered:cast_iron_large_cogwheel>],
+  [<tag:items:forge:plates/iron_brass>, <item:create:copper_casing>, <tag:items:forge:plates/iron_brass>],
+  [<item:createdeco:copper_sheet_metal>, <item:amicore:multicyl_engine>, <item:createdeco:copper_sheet_metal>]])
+  .output(<item:amicore:sitting_tank>)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .secondary([<item:amicore:steel_bolt>*4])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:create:fluid_pipe>, <item:create:fluid_valve>, <item:create:fluid_pipe>],
+  [<tag:items:forge:rods/iron_brass>, <item:create:copper_casing>, <tag:items:forge:rods/iron_brass>],
+  [<item:createdeco:copper_sheet_metal>, <tag:items:forge:plates/steel_crafting>, <item:createdeco:copper_sheet_metal>]])
+  .output(<item:amicore:copper_fluid_input>)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .secondary([<item:amicore:steel_bolt>*2])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:create:fluid_pipe>, <tag:items:forge:plates/steel_crafting>, <item:create:fluid_pipe>],
+  [<tag:items:forge:rods/iron_brass>, <item:create:copper_casing>, <tag:items:forge:rods/iron_brass>],
+  [<item:createdeco:copper_sheet_metal>, <item:create:fluid_valve>, <item:createdeco:copper_sheet_metal>]])
+  .output(<item:amicore:copper_fluid_output>)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .secondary([<item:amicore:steel_bolt>*2])
+  .register();
 craftingTable.addShapeless("ami_fluid_outlet_inlet", <item:amicore:copper_fluid_output>,
 [<item:amicore:copper_fluid_input>], null);
 craftingTable.addShapeless("ami_fluid_inlet_outlet", <item:amicore:copper_fluid_input>,
 [<item:amicore:copper_fluid_output>], null);
 
 Recipe.type(Type.ENGINEER)
-  .shaped([[<item:minecraft:air>, <tag:items:forge:plates/crude_steel>, <item:minecraft:air>],
+  .shaped([[<item:minecraft:air>, <tag:items:forge:plates/steel_crafting>, <item:minecraft:air>],
   [<item:createdeco:copper_sheet_metal>, <item:create:brass_casing>,<item:createdeco:copper_sheet_metal>],
   [<tag:items:forge:rounded_sheets/lead_brass>, <item:quark:chute>, <tag:items:forge:rounded_sheets/lead_brass>]])
   .output(<item:amicore:copper_item_output>)
   .tool(<tag:items:artisantools:type/driver>, 1)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*2])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:minecraft:air>, <tag:items:forge:plates/steel_crafting>, <item:minecraft:air>],
+  [<item:createdeco:copper_sheet_metal>, <item:create:brass_casing>,<item:createdeco:copper_sheet_metal>],
+  [<tag:items:forge:rounded_sheets/lead_brass>, <item:quark:chute>, <tag:items:forge:rounded_sheets/lead_brass>]])
+  .output(<item:amicore:copper_item_output>)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .secondary([<item:amicore:steel_bolt>*2])
   .register();
 
 #tank components

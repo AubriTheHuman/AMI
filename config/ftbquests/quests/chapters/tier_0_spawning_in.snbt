@@ -1989,6 +1989,8 @@
 				"332C5B26D0AEC69B"
 				"5EF28B0975160533"
 				"63DD009403C33F30"
+				"5F9D94AEFABFB948"
+				"04EA9E074DC04A00"
 			]
 			hide: true
 			id: "4AC2742AC548FEA6"
@@ -3093,6 +3095,50 @@
 				id: "481DF532E2F6F493"
 				type: "item"
 				item: "akashictome:tome"
+			}]
+		}
+		{
+			title: "Find a Goddess Statue"
+			icon: "paraglider:goddess_statue"
+			x: -2.0d
+			y: -1.0d
+			description: ["Want to trade in any spirit orbs you find? You'll need a goddess statue!"]
+			dependencies: ["3C453753643763E0"]
+			id: "04EA9E074DC04A00"
+			tasks: [{
+				id: "4524818434D33C45"
+				type: "item"
+				title: "Any #paraglider:statues/goddess"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "paraglider:statues/goddess"
+					}
+				}
+			}]
+			rewards: [{
+				id: "39C50FCE70F87391"
+				type: "item"
+				item: "amicore:amicoin_starmetal"
+			}]
+		}
+		{
+			title: "Horned Statues"
+			x: -1.5d
+			y: -2.0d
+			description: ["Horned statues allow you to trade your hearts for stamina and vice versa, at a small cost!"]
+			dependencies: ["04EA9E074DC04A00"]
+			id: "5F9D94AEFABFB948"
+			tasks: [{
+				id: "2474DD9EA2E633C8"
+				type: "item"
+				item: "paraglider:horned_statue"
+			}]
+			rewards: [{
+				id: "7B69D4BCA9B828F7"
+				type: "item"
+				item: "amicore:amicoin_orachalchum"
 			}]
 		}
 	]

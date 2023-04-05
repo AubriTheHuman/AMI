@@ -260,11 +260,11 @@ Recipe.type(Type.CARPENTER)
   .secondary([<item:amicore:iron_bolt>*4,<item:amicore:wooden_bolt>*2])
   .register();
 Recipe.type(Type.CARPENTER)
-  .shaped([[<item:minecraft:air>,<item:minecraft:air>,<tag:items:forge:rods/crude_steel>,<item:minecraft:air>,<item:minecraft:air>],
+  .shaped([[<item:minecraft:air>,<item:minecraft:air>,<tag:items:forge:rods/steel_crafting>,<item:minecraft:air>,<item:minecraft:air>],
   [<item:minecraft:air>,<item:minecraft:stick>, <tag:items:forge:gems/diamond>, <item:minecraft:stick>,<item:minecraft:air>],
-  [<tag:items:forge:rods/crude_steel>,<tag:items:forge:gems/diamond>, <item:storagedrawers:upgrade_template>, <tag:items:forge:gems/diamond>,<tag:items:forge:rods/crude_steel>],
+  [<tag:items:forge:rods/steel_crafting>,<tag:items:forge:gems/diamond>, <item:storagedrawers:upgrade_template>, <tag:items:forge:gems/diamond>,<tag:items:forge:rods/steel_crafting>],
   [<item:minecraft:air>,<item:minecraft:stick>, <tag:items:forge:gems/diamond>, <item:minecraft:stick>,<item:minecraft:air>],
-  [<item:minecraft:air>,<item:minecraft:air>,<tag:items:forge:rods/crude_steel>,<item:minecraft:air>,<item:minecraft:air>]])
+  [<item:minecraft:air>,<item:minecraft:air>,<tag:items:forge:rods/steel_crafting>,<item:minecraft:air>,<item:minecraft:air>]])
   .output(<item:storagedrawers:diamond_storage_upgrade>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .tool(<tag:items:artisantools:type/handsaw>, 1)
@@ -272,16 +272,40 @@ Recipe.type(Type.CARPENTER)
   .secondary([<item:amicore:iron_bolt>*2,<item:amicore:crude_steel_bolt>*8])
   .register();
 Recipe.type(Type.CARPENTER)
-  .shaped([[<item:minecraft:air>,<item:minecraft:air>,<tag:items:forge:rods/crude_steel>,<item:minecraft:air>,<item:minecraft:air>],
+  .shaped([[<item:minecraft:air>,<item:minecraft:air>,<tag:items:forge:rods/steel_crafting>,<item:minecraft:air>,<item:minecraft:air>],
   [<item:minecraft:air>,<item:minecraft:stick>, <tag:items:forge:gems/emerald>, <item:minecraft:stick>,<item:minecraft:air>],
-  [<tag:items:forge:rods/crude_steel>,<tag:items:forge:gems/emerald>, <item:storagedrawers:diamond_storage_upgrade>, <tag:items:forge:gems/emerald>,<tag:items:forge:rods/crude_steel>],
+  [<tag:items:forge:rods/steel_crafting>,<tag:items:forge:gems/emerald>, <item:storagedrawers:diamond_storage_upgrade>, <tag:items:forge:gems/emerald>,<tag:items:forge:rods/steel_crafting>],
   [<item:minecraft:air>,<item:minecraft:stick>, <tag:items:forge:gems/emerald>, <item:minecraft:stick>,<item:minecraft:air>],
-  [<item:minecraft:air>,<item:minecraft:air>,<tag:items:forge:rods/crude_steel>,<item:minecraft:air>,<item:minecraft:air>]])
+  [<item:minecraft:air>,<item:minecraft:air>,<tag:items:forge:rods/steel_crafting>,<item:minecraft:air>,<item:minecraft:air>]])
   .output(<item:storagedrawers:emerald_storage_upgrade>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .tool(<tag:items:artisantools:type/handsaw>, 1)
   .tool(<tag:items:artisantools:type/file>, 1)
   .secondary([<item:amicore:iron_bolt>*2,<item:amicore:crude_steel_bolt>*8])
+  .register();
+Recipe.type(Type.CARPENTER)
+  .shaped([[<item:minecraft:air>,<item:minecraft:air>,<tag:items:forge:rods/steel_crafting>,<item:minecraft:air>,<item:minecraft:air>],
+  [<item:minecraft:air>,<item:minecraft:stick>, <tag:items:forge:gems/diamond>, <item:minecraft:stick>,<item:minecraft:air>],
+  [<tag:items:forge:rods/steel_crafting>,<tag:items:forge:gems/diamond>, <item:storagedrawers:upgrade_template>, <tag:items:forge:gems/diamond>,<tag:items:forge:rods/steel_crafting>],
+  [<item:minecraft:air>,<item:minecraft:stick>, <tag:items:forge:gems/diamond>, <item:minecraft:stick>,<item:minecraft:air>],
+  [<item:minecraft:air>,<item:minecraft:air>,<tag:items:forge:rods/steel_crafting>,<item:minecraft:air>,<item:minecraft:air>]])
+  .output(<item:storagedrawers:diamond_storage_upgrade>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/handsaw>, 1)
+  .tool(<tag:items:artisantools:type/file>, 1)
+  .secondary([<item:amicore:iron_bolt>*2,<item:amicore:steel_bolt>*8])
+  .register();
+Recipe.type(Type.CARPENTER)
+  .shaped([[<item:minecraft:air>,<item:minecraft:air>,<tag:items:forge:rods/steel_crafting>,<item:minecraft:air>,<item:minecraft:air>],
+  [<item:minecraft:air>,<item:minecraft:stick>, <tag:items:forge:gems/emerald>, <item:minecraft:stick>,<item:minecraft:air>],
+  [<tag:items:forge:rods/steel_crafting>,<tag:items:forge:gems/emerald>, <item:storagedrawers:diamond_storage_upgrade>, <tag:items:forge:gems/emerald>,<tag:items:forge:rods/steel_crafting>],
+  [<item:minecraft:air>,<item:minecraft:stick>, <tag:items:forge:gems/emerald>, <item:minecraft:stick>,<item:minecraft:air>],
+  [<item:minecraft:air>,<item:minecraft:air>,<tag:items:forge:rods/steel_crafting>,<item:minecraft:air>,<item:minecraft:air>]])
+  .output(<item:storagedrawers:emerald_storage_upgrade>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/handsaw>, 1)
+  .tool(<tag:items:artisantools:type/file>, 1)
+  .secondary([<item:amicore:iron_bolt>*2,<item:amicore:steel_bolt>*8])
   .register();
 Recipe.type(Type.CARPENTER)
   .shaped([[<item:minecraft:stick>, <item:minecraft:flint>, <item:minecraft:stick>],
@@ -476,8 +500,8 @@ craftingTable.addShaped("furnace", <item:minecraft:furnace>,
 
 craftingTable.removeRecipe(<item:minecraft:blast_furnace>);
 craftingTable.addShaped("blast_furnace", <item:minecraft:blast_furnace>,
-  [[ <tag:items:forge:rounded_sheets/crude_steel>, <tag:items:forge:plates/crude_steel>, <tag:items:forge:rounded_sheets/crude_steel>],
-  [<tag:items:forge:plates/crude_steel>, <item:minecraft:furnace>, <tag:items:forge:plates/crude_steel>],
+  [[ <tag:items:forge:rounded_sheets/steel_crafting>, <tag:items:forge:plates/steel_crafting>, <tag:items:forge:rounded_sheets/steel_crafting>],
+  [<tag:items:forge:plates/steel_crafting>, <item:minecraft:furnace>, <tag:items:forge:plates/steel_crafting>],
   [<item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>]], null);
 craftingTable.removeRecipe(<item:minecraft:smoker>);
 craftingTable.addShaped("smoker", <item:minecraft:smoker>,
@@ -1031,7 +1055,7 @@ Recipe.type(Type.BASIC)
   .register();
 Recipe.type(Type.BASIC)
   .shapeless([<item:minecraft:air>,<tag:items:forge:gems/diamond>,
-  <tag:items:forge:rods/crude_steel>,<item:minecraft:air>])
+  <tag:items:forge:rods/steel_crafting>,<item:minecraft:air>])
   .output(<item:chisel:diamond_chisel>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .register();

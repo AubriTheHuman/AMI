@@ -300,13 +300,22 @@ Recipe.type(Type.ENGINEER)
   .tool(<tag:items:artisantools:type/driver>, 1)
   .register();
 Recipe.type(Type.ENGINEER)
-  .shaped([[<tag:items:forge:rods/crude_steel>,<item:amicore:multicyl_engine>,<item:create:shaft>],
+  .shaped([[<tag:items:forge:rods/steel_crafting>,<item:amicore:multicyl_engine>,<item:create:shaft>],
   [<item:create:mechanical_pump>,<item:create:fluid_tank>,<item:create:fluid_pipe>],
   [<item:steampowered:cast_iron_cogwheel>,<item:amicore:pliable_hose>,<item:steampowered:cast_iron_cogwheel>]])
   .output(<item:create:hose_pulley>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .tool(<tag:items:artisantools:type/driver>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*4])
+  .register();
+  Recipe.type(Type.ENGINEER)
+  .shaped([[<tag:items:forge:rods/steel_crafting>,<item:amicore:multicyl_engine>,<item:create:shaft>],
+  [<item:create:mechanical_pump>,<item:create:fluid_tank>,<item:create:fluid_pipe>],
+  [<item:steampowered:cast_iron_cogwheel>,<item:amicore:pliable_hose>,<item:steampowered:cast_iron_cogwheel>]])
+  .output(<item:create:hose_pulley>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .secondary([<item:amicore:steel_bolt>*4])
   .register();
 Recipe.type(Type.ENGINEER)
   .shaped([[<item:minecraft:dried_kelp>,<item:amicore:soul_soil_clay>,<item:minecraft:dried_kelp>],
@@ -1083,13 +1092,22 @@ mods.jei.JEI.hideItem(<item:create_stuff_additions:exoskeleton_chestplate>);
   [<tag:items:forge:plates/refined_radiance>, <item:create:brass_casing>, <item:amicore:multicyl_engine>, <item:create:brass_casing>, <tag:items:forge:plates/refined_radiance>],
   [<tag:items:forge:plates/refined_radiance>, <item:create:refined_radiance_casing>, <item:create:brass_casing>, <item:create:refined_radiance_casing>, <tag:items:forge:plates/refined_radiance>]]);
 Recipe.type(Type.ENGINEER)
-  .shaped([[<tag:items:minecraft:planks>,<tag:items:forge:plates/crude_steel>,<tag:items:minecraft:planks>],
+  .shaped([[<tag:items:minecraft:planks>,<tag:items:forge:plates/steel_crafting>,<tag:items:minecraft:planks>],
   [<tag:items:forge:plates/refined_radiance>,<tag:items:minecraft:logs>,<tag:items:forge:plates/refined_radiance>],
-  [<tag:items:minecraft:planks>,<tag:items:forge:plates/crude_steel>,<tag:items:minecraft:planks>]])
+  [<tag:items:minecraft:planks>,<tag:items:forge:plates/steel_crafting>,<tag:items:minecraft:planks>]])
   .output(<item:create:refined_radiance_casing> * 4)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .tool(<tag:items:artisantools:type/driver>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*4])
+  .register();
+  Recipe.type(Type.ENGINEER)
+  .shaped([[<tag:items:minecraft:planks>,<tag:items:forge:plates/steel_crafting>,<tag:items:minecraft:planks>],
+  [<tag:items:forge:plates/refined_radiance>,<tag:items:minecraft:logs>,<tag:items:forge:plates/refined_radiance>],
+  [<tag:items:minecraft:planks>,<tag:items:forge:plates/steel_crafting>,<tag:items:minecraft:planks>]])
+  .output(<item:create:refined_radiance_casing> * 6)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .secondary([<item:amicore:steel_bolt>*4])
   .register();
 
 #cast iron cog
@@ -1125,24 +1143,31 @@ Recipe.type(Type.ENGINEER)
   .secondary([<item:amicore:crude_steel_bolt>*3])
   .register();
 <recipetype:create:mechanical_crafting>.addRecipe("moped_ami", <item:create_stuff_additions:brass_moped_item>, [
-  [<tag:items:forge:rods/crude_steel>, <item:minecraft:air>, <item:minecraft:air>],
+  [<tag:items:forge:rods/steel_crafting>, <item:minecraft:air>, <item:minecraft:air>],
   [<item:create:brass_casing>, <item:amicore:multicyl_engine>, <item:create:brass_casing>],
   [<item:steampowered:cast_iron_cogwheel>, <item:create:furnace_engine>, <item:steampowered:cast_iron_cogwheel>],
   [<item:create:belt_connector>, <item:create:belt_connector>, <item:create:belt_connector>]]);
 Recipe.type(Type.ENGINEER)
-  .shaped([[<item:minecraft:furnace>, <tag:items:forge:plates/crude_steel>]])
+  .shaped([[<item:minecraft:furnace>, <tag:items:forge:plates/steel_crafting>]])
   .output(<item:createaddition:furnace_burner>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .tool(<tag:items:artisantools:type/driver>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*2])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:minecraft:furnace>, <tag:items:forge:plates/steel_crafting>]])
+  .output(<item:createaddition:furnace_burner>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .secondary([<item:amicore:steel_bolt>*2])
   .register();
 
 #schematicannon
 craftingTable.removeRecipe(<item:create:schematicannon>);
 craftingTable.removeRecipe(<item:create:schematic_table>);
 Recipe.type(Type.ENGINEER)
-  .shaped([[<tag:items:forge:rounded_sheets/crude_steel>, <item:minecraft:cauldron>, <tag:items:forge:rounded_sheets/crude_steel>],
-  [<tag:items:forge:large_sheets/crude_steel>,<item:amicore:multicyl_engine>,<tag:items:forge:large_sheets/crude_steel>],
+  .shaped([[<tag:items:forge:rounded_sheets/steel_crafting>, <item:minecraft:cauldron>, <tag:items:forge:rounded_sheets/steel_crafting>],
+  [<tag:items:forge:large_sheets/steel_crafting>,<item:amicore:multicyl_engine>,<tag:items:forge:large_sheets/steel_crafting>],
   [<item:minecraft:smooth_stone>, <item:create:deployer>, <item:steampowered:cast_iron_large_cogwheel>]])
   .output(<item:create:schematicannon>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
@@ -1150,13 +1175,31 @@ Recipe.type(Type.ENGINEER)
   .secondary([<item:amicore:crude_steel_bolt>*6])
   .register();
 Recipe.type(Type.ENGINEER)
-  .shaped([[<tag:items:forge:plates/crude_steel>, <tag:items:forge:large_sheets/crude_steel>, <tag:items:forge:plates/crude_steel>],
+  .shaped([[<tag:items:forge:plates/steel_crafting>, <tag:items:forge:large_sheets/steel_crafting>, <tag:items:forge:plates/steel_crafting>],
   [<item:minecraft:air>,<item:minecraft:smooth_stone>,<item:minecraft:air>],
   [<item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>]])
   .output(<item:create:schematic_table>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .tool(<tag:items:artisantools:type/driver>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*4])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<tag:items:forge:rounded_sheets/steel_crafting>, <item:minecraft:cauldron>, <tag:items:forge:rounded_sheets/steel_crafting>],
+  [<tag:items:forge:large_sheets/steel_crafting>,<item:amicore:multicyl_engine>,<tag:items:forge:large_sheets/steel_crafting>],
+  [<item:minecraft:smooth_stone>, <item:create:deployer>, <item:steampowered:cast_iron_large_cogwheel>]])
+  .output(<item:create:schematicannon>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .secondary([<item:amicore:steel_bolt>*6])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<tag:items:forge:plates/steel_crafting>, <tag:items:forge:large_sheets/steel_crafting>, <tag:items:forge:plates/steel_crafting>],
+  [<item:minecraft:air>,<item:minecraft:smooth_stone>,<item:minecraft:air>],
+  [<item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>]])
+  .output(<item:create:schematic_table>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .secondary([<item:amicore:steel_bolt>*4])
   .register();
 
 
@@ -1203,8 +1246,8 @@ craftingTable.removeRecipe(<item:create:mechanical_arm>);
 craftingTable.removeRecipe(<item:create:redstone_link>);
 craftingTable.removeRecipe(<item:create:linked_controller>);
 Recipe.type(Type.ENGINEER)
-  .shaped([[<item:amicore:crude_steel_mech_component>, <tag:items:forge:rods/crude_steel>, <item:create:brass_hand>],
-  [<tag:items:forge:rods/crude_steel>,<tag:items:forge:rounded_sheets/crude_steel>, <item:minecraft:air>],
+  .shaped([[<tag:items:forge:mech_components/steel_crafting>, <tag:items:forge:rods/steel_crafting>, <item:create:brass_hand>],
+  [<tag:items:forge:rods/steel_crafting>,<tag:items:forge:rounded_sheets/steel_crafting>, <item:minecraft:air>],
   [<item:amicore:multicyl_engine>, <item:create:brass_casing>, <item:amicore:lv_circuit>]])
   .output(<item:create:mechanical_arm>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
@@ -1213,7 +1256,7 @@ Recipe.type(Type.ENGINEER)
   .register();
 Recipe.type(Type.ENGINEER)
   .shaped([[<item:create:filter>,<item:amicore:lv_circuit>, <item:amicore:simple_antenna>],
-  [<tag:items:forge:rounded_sheets/crude_steel>, <item:create:brass_casing>, <tag:items:forge:rounded_sheets/crude_steel>]])
+  [<tag:items:forge:rounded_sheets/steel_crafting>, <item:create:brass_casing>, <tag:items:forge:rounded_sheets/steel_crafting>]])
   .output(<item:create:redstone_link>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .tool(<tag:items:artisantools:type/driver>, 1)
@@ -1222,11 +1265,37 @@ Recipe.type(Type.ENGINEER)
 Recipe.type(Type.ENGINEER)
   .shaped([[<tag:items:minecraft:buttons>, <tag:items:minecraft:buttons>, <tag:items:minecraft:buttons>],
   [<tag:items:minecraft:buttons>,<item:create:redstone_link>, <item:amicore:antenna_cluster>],
-  [<tag:items:forge:rounded_sheets/crude_steel>, <item:create:brass_casing>, <tag:items:forge:rounded_sheets/crude_steel>]])
+  [<tag:items:forge:rounded_sheets/steel_crafting>, <item:create:brass_casing>, <tag:items:forge:rounded_sheets/steel_crafting>]])
   .output(<item:create:linked_controller>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .tool(<tag:items:artisantools:type/driver>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*2])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<tag:items:forge:mech_components/steel_crafting>, <tag:items:forge:rods/steel_crafting>, <item:create:brass_hand>],
+  [<tag:items:forge:rods/steel_crafting>,<tag:items:forge:rounded_sheets/steel_crafting>, <item:minecraft:air>],
+  [<item:amicore:multicyl_engine>, <item:create:brass_casing>, <item:amicore:lv_circuit>]])
+  .output(<item:create:mechanical_arm>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .secondary([<item:amicore:steel_bolt>*4])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:create:filter>,<item:amicore:lv_circuit>, <item:amicore:simple_antenna>],
+  [<tag:items:forge:rounded_sheets/steel_crafting>, <item:create:brass_casing>, <tag:items:forge:rounded_sheets/steel_crafting>]])
+  .output(<item:create:redstone_link>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .secondary([<item:amicore:steel_bolt>*2])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<tag:items:minecraft:buttons>, <tag:items:minecraft:buttons>, <tag:items:minecraft:buttons>],
+  [<tag:items:minecraft:buttons>,<item:create:redstone_link>, <item:amicore:antenna_cluster>],
+  [<tag:items:forge:rounded_sheets/steel_crafting>, <item:create:brass_casing>, <tag:items:forge:rounded_sheets/steel_crafting>]])
+  .output(<item:create:linked_controller>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .secondary([<item:amicore:steel_bolt>*2])
   .register();
 
 # mechanical crafting recipes
@@ -1261,9 +1330,9 @@ Recipe.type(Type.ENGINEER)
   [<tag:items:forge:ingots/copper>, <tag:items:forge:plates/copper>, <tag:items:forge:ingots/copper>]]);
 <recipetype:create:mechanical_crafting>.addRecipe("brass_accelerator_leggings_ami", <item:create_stuff_additions:brass_accelerator_leggings>, [
   [<item:steampowered:cast_iron_cogwheel>, <item:amicore:multicyl_engine>, <item:steampowered:cast_iron_cogwheel>],
-  [<tag:items:forge:ingots/silicon_brass>, <tag:items:forge:ingots/crude_steel>, <tag:items:forge:ingots/silicon_brass>],
-  [<item:create:brass_casing>, <tag:items:forge:plates/crude_steel>, <item:create:brass_casing>],
-  [<tag:items:forge:ingots/silicon_brass>, <tag:items:forge:plates/crude_steel>, <tag:items:forge:ingots/silicon_brass>]]);
+  [<tag:items:forge:ingots/silicon_brass>, <tag:items:forge:ingots/steel_crafting>, <tag:items:forge:ingots/silicon_brass>],
+  [<item:create:brass_casing>, <tag:items:forge:plates/steel_crafting>, <item:create:brass_casing>],
+  [<tag:items:forge:ingots/silicon_brass>, <tag:items:forge:plates/steel_crafting>, <tag:items:forge:ingots/silicon_brass>]]);
 
 #unify limestone
 <tag:items:forge:stone/limestone>.add([<item:create:limestone>,<item:create:limestone_cobblestone>,<item:create:limestone_cobblestone_wall>,
@@ -1304,8 +1373,6 @@ pressing.addRecipe("diamond_plate", [<item:amicore:diamond_plate>], <item:minecr
 pressing.addRecipe("obsidan_ctystal_plate", [<item:amicore:crying_obsidian_plate>], <item:minecraft:crying_obsidian>);
 pressing.addRecipe("dirt_plate", [<item:amicore:dirt_plate>], <item:minecraft:dirt>);
 
-#crude steel plate
-pressing.addRecipe("crude_steel_plate_smash", [<item:amicore:crude_steel_plate>], <item:amicore:crude_steel_ingot>);
 
 #remove crushing recipes
 var variants = ["iron", "gold", "copper", "tin", "silver", "lead", "aluminum", "nickel", "platinum", "uranium", "zinc", "osmium"];

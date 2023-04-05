@@ -6,7 +6,7 @@ import mods.artisanworktables.Type;
 # crafting the extended crafting tables
 
 Recipe.type(Type.CHEMIST)
-  .shaped([[<tag:items:forge:plates/magnesium>, <item:amicore:crude_steel_mech_component>, <tag:items:forge:plates/magnesium>],
+  .shaped([[<tag:items:forge:plates/magnesium>, <tag:items:forge:mech_components/steel_crafting>, <tag:items:forge:plates/magnesium>],
   [<item:malum:radiant_soulstone>,<item:malum:spirit_altar>, <item:malum:radiant_soulstone>],
   [<item:amicore:lv_circuit>, <item:malum:yellow_ether>, <item:amicore:lv_circuit>]])
   .output(<item:extendedcrafting:crafting_core>)
@@ -15,7 +15,7 @@ Recipe.type(Type.CHEMIST)
   .secondary([<item:amicore:crude_steel_bolt>*12, <item:malum:magnetic_spirit>*4, <item:malum:electric_spirit>*4,<item:malum:mechanical_spirit>*4])
   .register();
 Recipe.type(Type.CHEMIST)
-  .shaped([[<tag:items:forge:plates/magnesium>, <item:amicore:crude_steel_mech_component>, <tag:items:forge:plates/magnesium>],
+  .shaped([[<tag:items:forge:plates/magnesium>, <tag:items:forge:mech_components/steel_crafting>, <tag:items:forge:plates/magnesium>],
   [<item:minecraft:air>,<item:malum:stripped_runewood_log>, <item:minecraft:air>],
   [<item:malum:runewood_planks>, <item:malum:stripped_runewood_log>, <item:malum:runewood_planks>]])
   .output(<item:extendedcrafting:pedestal>)
@@ -23,9 +23,27 @@ Recipe.type(Type.CHEMIST)
   .tool(<tag:items:artisantools:type/handsaw>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*2, <item:amicore:wooden_bolt>*4, <item:malum:magnetic_spirit>*4])
   .register();
+Recipe.type(Type.CHEMIST)
+  .shaped([[<tag:items:forge:plates/magnesium>, <tag:items:forge:mech_components/steel_crafting>, <tag:items:forge:plates/magnesium>],
+  [<item:malum:radiant_soulstone>,<item:malum:spirit_altar>, <item:malum:radiant_soulstone>],
+  [<item:amicore:lv_circuit>, <item:malum:yellow_ether>, <item:amicore:lv_circuit>]])
+  .output(<item:extendedcrafting:crafting_core>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .secondary([<item:amicore:steel_bolt>*12, <item:malum:magnetic_spirit>*4, <item:malum:electric_spirit>*4,<item:malum:mechanical_spirit>*4])
+  .register();
+Recipe.type(Type.CHEMIST)
+  .shaped([[<tag:items:forge:plates/magnesium>, <tag:items:forge:mech_components/steel_crafting>, <tag:items:forge:plates/magnesium>],
+  [<item:minecraft:air>,<item:malum:stripped_runewood_log>, <item:minecraft:air>],
+  [<item:malum:runewood_planks>, <item:malum:stripped_runewood_log>, <item:malum:runewood_planks>]])
+  .output(<item:extendedcrafting:pedestal>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/handsaw>, 1)
+  .secondary([<item:amicore:steel_bolt>*2, <item:amicore:wooden_bolt>*4, <item:malum:magnetic_spirit>*4])
+  .register();
 
 Recipe.type(Type.ENGINEER)
-  .shaped([[<tag:items:forge:rods/steel>, <item:amicore:steel_mech_component>, <tag:items:forge:rods/steel>],
+  .shaped([[<tag:items:forge:rods/steel>, <tag:items:forge:mech_components/steel_crafting>, <tag:items:forge:rods/steel>],
   [<tag:items:forge:large_sheets/steel>, <item:amicore:high_torque_gearbox>, <tag:items:forge:large_sheets/steel>],
   [<tag:items:forge:rounded_sheets/netherite>,<item:artisanworktables:workshop_engineer>, <tag:items:forge:rounded_sheets/netherite>],
   [<item:amicore:lv_circuit>, <item:appliedenergistics2:inscriber>, <item:amicore:lv_circuit>]])

@@ -1,5 +1,5 @@
 <galaxy>
-  <star name="Sol" temp="100" x="0" y="0" numPlanets="0" numGasGiants="0">
+  	<star name="Sol" temp="100" x="0" y="0" numPlanets="0" numGasGiants="0">
 		<planet name="Earth" DIMID="0" dimMapping="">
 			<isKnown>true</isKnown>
 			<fogColor>1.0,1.0,1.0</fogColor>
@@ -165,6 +165,4 @@
 			<rotationalPeriod>12000</rotationalPeriod>
         </planet>
 	</star>
-    <star name="Trappist-1" temp="50" x="100" y="0" numPlanets="7" numGasGiants="0">
-  </star>
 </galaxy>

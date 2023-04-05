@@ -236,13 +236,13 @@ craftingTable.removeRecipe(<item:tconstruct:scorched_ladder>);
 craftingTable.removeRecipe(<item:tconstruct:scorched_lantern>);
 Recipe.type(Type.BASIC)
   .shaped([[<item:tconstruct:scorched_brick>,<item:tconstruct:scorched_fuel_gauge>,<item:tconstruct:scorched_brick>],
-  [<item:tconstruct:scorched_brick>,<tag:items:forge:plates/crude_steel>,<item:tconstruct:scorched_brick>]])
+  [<item:tconstruct:scorched_brick>,<tag:items:forge:plates/steel_crafting>,<item:tconstruct:scorched_brick>]])
   .output(<item:tconstruct:scorched_alloyer>)
   .tool(<tag:items:artisantools:type/chisel>, 1)
   .register();
 Recipe.type(Type.BASIC)
   .shaped([[<item:tconstruct:scorched_brick>,<item:tconstruct:scorched_ingot_gauge>,<item:tconstruct:scorched_brick>],
-  [<item:tconstruct:scorched_brick>,<tag:items:forge:plates/crude_steel>,<item:tconstruct:scorched_brick>]])
+  [<item:tconstruct:scorched_brick>,<tag:items:forge:plates/steel_crafting>,<item:tconstruct:scorched_brick>]])
   .output(<item:tconstruct:scorched_alloyer>)
   .tool(<tag:items:artisantools:type/chisel>, 1)
   .register();
@@ -384,7 +384,7 @@ Recipe.type(Type.BASIC)
 Recipe.type(Type.CHEMIST)
   .shaped([[<item:tconstruct:scorched_brick>,<item:tconstruct:seared_fuel_gauge>,<item:tconstruct:scorched_brick>],
   [<item:tconstruct:scorched_brick>,<item:tconstruct:seared_heater>,<item:tconstruct:scorched_brick>],
-  [<item:tconstruct:scorched_brick>,<tag:items:forge:large_sheets/crude_steel>,<item:tconstruct:scorched_brick>]])
+  [<item:tconstruct:scorched_brick>,<tag:items:forge:large_sheets/steel_crafting>,<item:tconstruct:scorched_brick>]])
   .output(<item:amicore:assembled_foundry_controller>)
   .tool(<tag:items:artisantools:type/chisel>, 1)
   .tool(<tag:items:artisantools:type/hammer>, 1)

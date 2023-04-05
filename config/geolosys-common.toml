@@ -2,14 +2,14 @@
 #Feature Control
 ["feature control"]
 	#Output info into the logs when generating Geolosys deposits
-	debugWorldgen = true
+	debugWorldgen = false
 	#Disable generation of Vanilla ores
 	disableVanillaOreGen = true
 	#The fallback materials which a Deposit can replace if they're not specified by the deposit itself
 	#Format: Comma-delimited set of <modid:block> (see default for example)
 	defaultReplacementMaterials = ["minecraft:stone", "minecraft:netherrack", "minecraft:sandstone", "quark:deepslate", "quark:smooth_basalt", "chisel:basalt/raw", "chisel:marble/raw", "create:gabbro", "create:dolomite", "create:limestone", "create:natural_scoria", "minecraft:granite", "minecraft:andesite", "minecraft:diorite", "create:weathered_limestone", "quark:marble", "byg:soapstone", "byg:scoria_stone", "byg:rocky_stone", "minecraft:netherrack", "minecraft:end_stone"]
 	#Outputs really advanced info when generating deposits.
-	advancedDebugWorldGen = true
+	advancedDebugWorldGen = false
 
 #Prospecting Options
 [prospecting]

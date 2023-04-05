@@ -394,9 +394,15 @@ onEvent('item.registry', event => {
 	//================================================================================================================================
 
 	event.create('amicore:chicken_cheese').displayName('Chicken Cheese').texture("kubejs:item/chicken_cheese").group('amicore.biotab').food(food => {
-				food
-					.hunger(4)
-					.saturation(1)
+		food
+			.hunger(4)
+			.saturation(0)
+			.effect('hunger', 600, 0, 1)
+			.effect('nausea', 200, 0, 1)
+			.alwaysEdible()
+			.eaten(ctx => {
+				ctx.player.tell(Text.gold('Why did I eat this?'))
+			})
 	});
 
 	//tools

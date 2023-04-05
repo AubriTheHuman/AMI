@@ -111,6 +111,51 @@ Recipe.type(Type.ENGINEER)
   .secondary([<item:amicore:crude_steel_bolt>*1])
   .register();
 Recipe.type(Type.ENGINEER)
+  .shaped([[<item:steampowered:cast_iron_large_cogwheel>, <item:amicore:lv_circuit>, <item:steampowered:cast_iron_large_cogwheel>],
+  [<item:minecraft:glass>, <item:minecraft:heart_of_the_sea>, <item:minecraft:glass>],
+  [<item:minecraft:glass>, <item:amicore:multicyl_engine>, <item:minecraft:glass>]])
+  .output(<item:amicore:fish_tank_controller>)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .secondary([<item:amicore:steel_bolt>*4])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:amicore:lv_circuit>],
+  [<item:minecraft:glass>],
+  [<item:create:fluid_pipe>]])
+  .output(<item:amicore:glass_fluid_input>)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .secondary([<item:amicore:steel_bolt>*1])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:create:fluid_pipe>],
+  [<item:minecraft:glass>],
+  [<item:amicore:lv_circuit>]])
+  .output(<item:amicore:glass_fluid_output>)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .secondary([<item:amicore:steel_bolt>*1])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:amicore:lv_circuit>],
+  [<item:minecraft:glass>],
+  [<item:quark:chute>]])
+  .output(<item:amicore:glass_item_input>)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .secondary([<item:amicore:steel_bolt>*1])
+  .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:quark:chute>],
+  [<item:minecraft:glass>],
+  [<item:amicore:lv_circuit>]])
+  .output(<item:amicore:glass_item_output>)
+  .tool(<tag:items:artisantools:type/driver>, 1)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .secondary([<item:amicore:steel_bolt>*1])
+  .register();
+Recipe.type(Type.ENGINEER)
   .shaped([[<item:minecraft:stick>, <item:create:filter>, <item:minecraft:stick>],
   [<item:minecraft:stick>, <item:create:filter>, <item:minecraft:stick>],
   [<item:minecraft:stick>, <item:create:filter>, <item:minecraft:stick>]])

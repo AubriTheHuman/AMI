@@ -23,3 +23,4 @@ mods.jei.JEI.addInfo(<item:immersive_geology:block_item_machine_stone_bloomery>,
 craftingTable.removeByModid("immersive_geology", (name as string) => {return name == "refractory";});
 
 <recipetype:immersive_geology:crystalizer>.removeAll();
+

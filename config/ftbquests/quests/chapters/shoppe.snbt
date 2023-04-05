@@ -16,6 +16,7 @@
 			y: 0.0d
 			dependencies: ["77A465AFE409E041"]
 			hide: true
+			repeatable: true
 			id: "2D04293087F416BE"
 			tasks: [{
 				id: "158FE1DB724BD848"
@@ -40,6 +41,7 @@
 				"77A465AFE409E041"
 			]
 			hide: true
+			repeatable: true
 			id: "140CEC3183058331"
 			tasks: [{
 				id: "74D49FC5E4B07858"
@@ -65,6 +67,7 @@
 				"77A465AFE409E041"
 			]
 			hide: true
+			repeatable: true
 			id: "7E384F0F4A961315"
 			tasks: [{
 				id: "3DF5963F41DC7662"
@@ -92,6 +95,7 @@
 			y: 0.0d
 			dependencies: ["21C13592EC5EF07F"]
 			hide: true
+			repeatable: true
 			id: "63E24ABDCF89C586"
 			tasks: [{
 				id: "33EA8DDAA9879883"
@@ -118,6 +122,7 @@
 			x: 5.5d
 			y: 0.0d
 			dependencies: ["78D105B6CBFB10AD"]
+			repeatable: true
 			id: "68C78B44D11EBF0E"
 			tasks: [{
 				id: "10F5EEDD12A32EB9"
@@ -158,6 +163,7 @@
 			icon: "scannable:module_range"
 			x: 0.0d
 			y: 0.0d
+			description: ["Probably a worthwhile investment."]
 			dependencies: ["46944569A10BFA6C"]
 			hide: true
 			repeatable: true
@@ -180,6 +186,7 @@
 			icon: "scannable:module_ore_rare"
 			x: 0.0d
 			y: 1.0d
+			description: ["Probably a worthwhile investment."]
 			dependencies: ["46944569A10BFA6C"]
 			hide: true
 			repeatable: true
@@ -232,6 +239,7 @@
 			y: 0.0d
 			dependencies: ["75489C7150DD17A2"]
 			hide: true
+			repeatable: true
 			id: "3DFC7C9F27F05371"
 			tasks: [{
 				id: "202B9374A3271D2F"
@@ -266,6 +274,7 @@
 			y: 1.0d
 			dependencies: ["75489C7150DD17A2"]
 			hide: true
+			repeatable: true
 			id: "6CB078F38B58B82C"
 			tasks: [{
 				id: "5A975AA70C5A48DB"
@@ -300,6 +309,7 @@
 			y: 2.0d
 			dependencies: ["75489C7150DD17A2"]
 			hide: true
+			repeatable: true
 			id: "7C2DCA5AD04EED01"
 			tasks: [{
 				id: "7F1C69C73BB63BC1"
@@ -334,6 +344,7 @@
 			y: 0.0d
 			dependencies: ["75489C7150DD17A2"]
 			hide: true
+			repeatable: true
 			id: "0B303770FCA4C127"
 			tasks: [{
 				id: "6563ACFBFCCCC1DB"
@@ -368,6 +379,7 @@
 			y: 1.0d
 			dependencies: ["75489C7150DD17A2"]
 			hide: true
+			repeatable: true
 			id: "38AAFA2B5A1E36C4"
 			tasks: [{
 				id: "276574653FA08D22"
@@ -402,6 +414,7 @@
 			y: 2.0d
 			dependencies: ["75489C7150DD17A2"]
 			hide: true
+			repeatable: true
 			id: "3DAE8CC19FFE4381"
 			tasks: [{
 				id: "6E71CFBDBBB0EAAE"
@@ -1717,6 +1730,7 @@
 			x: 1.5d
 			y: 1.0d
 			dependencies: ["77A465AFE409E041"]
+			repeatable: true
 			id: "0D7234809EC35CCA"
 			tasks: [{
 				id: "3B2D269545A2CA1D"
@@ -1972,6 +1986,69 @@
 				id: "741D974346FAECC5"
 				type: "item"
 				item: "minecraft:wither_skeleton_skull"
+			}]
+		}
+		{
+			title: "A Snack?"
+			icon: "amicore:chicken_cheese"
+			x: 1.5d
+			y: 2.0d
+			description: ["Is this really edible?"]
+			dependencies: ["77A465AFE409E041"]
+			repeatable: true
+			id: "50FAE9CA4BFB3A22"
+			tasks: [{
+				id: "4A99AD93C2C77346"
+				type: "item"
+				item: "amicore:amicoin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "687BC50257C527AA"
+				type: "item"
+				item: "amicore:chicken_cheese"
+			}]
+		}
+		{
+			title: "Goddess Statue"
+			icon: "paraglider:goddess_statue"
+			x: -4.0d
+			y: 2.0d
+			description: ["Can't find a goddess statue? No problem, just buy one!"]
+			dependencies: ["6E69D7D22F625FD2"]
+			repeatable: true
+			id: "1F1ED7B4FE3DD3CD"
+			tasks: [{
+				id: "66352A7321943F8C"
+				type: "item"
+				item: "amicore:amicoin_managold"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3C0E2EB8AEF14649"
+				type: "item"
+				item: "paraglider:goddess_statue"
+			}]
+		}
+		{
+			title: "Horned Statue"
+			icon: "paraglider:horned_statue"
+			x: -5.0d
+			y: 2.0d
+			description: ["Can't find a horned statue? Just buy one!"]
+			dependencies: ["04EA9E074DC04A00"]
+			id: "102A8E191EED320D"
+			tasks: [{
+				id: "61E66DDBA8A02EC5"
+				type: "item"
+				item: "amicore:amicoin_managold"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "78EF3B02AC85DC1E"
+				type: "item"
+				item: "paraglider:horned_statue"
 			}]
 		}
 	]

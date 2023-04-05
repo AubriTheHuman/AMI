@@ -2804,7 +2804,6 @@
 				"You can stabalize the altar by placing stablizers around the altar within 8 blocks in each direction (and 2 blocks up or down). Though there is a limit of how many of an object that can be used to stablize. Use a stained resonator on the altar side to get a list of stablizers effecting the altar. A hallowed resonator will show the altars stability, and if its is crafting, it shows the recipe info as well."
 				""
 				"For a full guide on the math behind it, check the AMI discord."
-				"{image:amicore:textures/quest/stability.png width:200 height:202 align:1 fit:true}"
 			]
 			dependencies: ["60AFE3DA3E0BF2D6"]
 			id: "67C7BA049DE17D25"

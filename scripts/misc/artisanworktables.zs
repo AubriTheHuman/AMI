@@ -134,24 +134,42 @@ Recipe.type(Type.CARPENTER)
   .register();
 
 Recipe.type(Type.ENGINEER)
-  .shaped([[<item:minecraft:air>, <tag:items:forge:plates/crude_steel>, <item:minecraft:air>],
+  .shaped([[<item:minecraft:air>, <tag:items:forge:plates/steel_crafting>, <item:minecraft:air>],
   [<item:steampowered:cast_iron_cogwheel>, <item:artisanworktables:toolbox>, <item:steampowered:cast_iron_cogwheel>],
-  [<item:minecraft:air>, <tag:items:forge:plates/crude_steel>, <item:minecraft:air>]])
+  [<item:minecraft:air>, <tag:items:forge:plates/steel_crafting>, <item:minecraft:air>]])
   .output(<item:artisanworktables:mechanical_toolbox>)
   .tool(<tag:items:artisantools:type/hammer>, 1)
   .tool(<tag:items:artisantools:type/spanner>, 1)
   .secondary([<item:amicore:crude_steel_bolt>*2])
   .register();
+Recipe.type(Type.ENGINEER)
+  .shaped([[<item:minecraft:air>, <tag:items:forge:plates/steel_crafting>, <item:minecraft:air>],
+  [<item:steampowered:cast_iron_cogwheel>, <item:artisanworktables:toolbox>, <item:steampowered:cast_iron_cogwheel>],
+  [<item:minecraft:air>, <tag:items:forge:plates/steel_crafting>, <item:minecraft:air>]])
+  .output(<item:artisanworktables:mechanical_toolbox>)
+  .tool(<tag:items:artisantools:type/hammer>, 1)
+  .tool(<tag:items:artisantools:type/spanner>, 1)
+  .secondary([<item:amicore:steel_bolt>*2])
+  .register();
 
 #universal_toolset
 for i, item in toolMats {
     Recipe.type(Type.BASIC)
-    .shaped([[BracketHandlers.getItem("artisantools:cutters_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:hammer_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:driver_" + toolMats[i][0])],
-    [BracketHandlers.getItem("artisantools:handsaw_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:file_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:spanner_" + toolMats[i][0])],
-    [BracketHandlers.getItem("artisantools:solderer_" + toolMats[i][0]), <tag:items:forge:large_sheets/crude_steel>, BracketHandlers.getItem("artisantools:knife_" + toolMats[i][0])]])
-    .output(BracketHandlers.getItem("amicore:" + toolMats[i][0] + "_universal_toolset"))
-    .tool(<tag:items:artisantools:type/hammer>, 1)
-    .tool(<tag:items:artisantools:type/spanner>, 1)
-    .secondary([<item:amicore:crude_steel_bolt>*6])
-    .register();
+        .shaped([[BracketHandlers.getItem("artisantools:cutters_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:hammer_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:driver_" + toolMats[i][0])],
+        [BracketHandlers.getItem("artisantools:handsaw_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:file_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:spanner_" + toolMats[i][0])],
+        [BracketHandlers.getItem("artisantools:solderer_" + toolMats[i][0]), <tag:items:forge:large_sheets/steel_crafting>, BracketHandlers.getItem("artisantools:knife_" + toolMats[i][0])]])
+        .output(BracketHandlers.getItem("amicore:" + toolMats[i][0] + "_universal_toolset"))
+        .tool(<tag:items:artisantools:type/hammer>, 1)
+        .tool(<tag:items:artisantools:type/spanner>, 1)
+        .secondary([<item:amicore:crude_steel_bolt>*6])
+        .register();
+    Recipe.type(Type.BASIC)
+        .shaped([[BracketHandlers.getItem("artisantools:cutters_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:hammer_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:driver_" + toolMats[i][0])],
+        [BracketHandlers.getItem("artisantools:handsaw_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:file_" + toolMats[i][0]), BracketHandlers.getItem("artisantools:spanner_" + toolMats[i][0])],
+        [BracketHandlers.getItem("artisantools:solderer_" + toolMats[i][0]), <tag:items:forge:large_sheets/steel_crafting>, BracketHandlers.getItem("artisantools:knife_" + toolMats[i][0])]])
+        .output(BracketHandlers.getItem("amicore:" + toolMats[i][0] + "_universal_toolset"))
+        .tool(<tag:items:artisantools:type/hammer>, 1)
+        .tool(<tag:items:artisantools:type/spanner>, 1)
+        .secondary([<item:amicore:steel_bolt>*6])
+        .register();
 }
