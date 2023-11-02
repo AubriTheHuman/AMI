@@ -1450,6 +1450,8 @@
 				"The classic calculator, NOW WITH JEI!"
 				""
 				"The bottom right button in the gui should help explain how to use this. Otherwise just click an item out of jei and place it into the top left slot to start."
+				""
+				"Do note that you need to add recipes manually, it does not automatically calculate from JEI."
 			]
 			dependencies: ["0C246EC3E6AF074A"]
 			id: "223EC940CB68EA5C"

@@ -36,7 +36,7 @@ paragliderInTowersOfTheWild = "DEFAULT"
 	maxHeartContainers = 502
 	#Maximum amount of stamina Player can get. Do note that one third of this value is equal to one stamina wheel.
 	#Range: > 0
-	maxStamina = 9000
+	maxStamina = 15000
 	#Amount of stamina Player starts with. Values higher than maxStamina doesn't work.
 	#If you want to make this value displayed as exactly one stamina wheel, you have to make this value one third of maxStamina.
 	#Range: > 0

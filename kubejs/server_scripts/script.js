@@ -1406,16 +1406,6 @@ onEvent('item.tags', event => {
   event.remove('forge:rods/gold', 'immersiveposts:stick_gold');
 
   //dusts removal
-  event.remove('forge:dusts', 'pedestals:dustiron');
-  event.remove('forge:dusts', 'pedestals:dustgold');
-  event.remove('forge:dusts', 'pedestals:dustcopper');
-  event.remove('forge:dusts', 'pedestals:dusttin');
-  event.remove('forge:dusts', 'pedestals:dustosmium');
-  event.remove('forge:dusts', 'pedestals:dusturanium');
-  event.remove('forge:dusts', 'pedestals:dustlead');
-  event.remove('forge:dusts', 'pedestals:dustsilver');
-  event.remove('forge:dusts', 'pedestals:dustaluminum');
-  event.remove('forge:dusts', 'pedestals:dustnickel');
   event.remove('forge:dusts', 'advancedrocketry:dusttitaniumaluminide');
   event.remove('forge:dusts', 'advancedrocketry:dusttitaniumiridium');
   event.remove('forge:dusts', 'libvulpes:dustiron');
@@ -1440,19 +1430,7 @@ onEvent('item.tags', event => {
   event.remove('forge:dusts', 'immersiveengineering:dust_gold');
   event.remove('forge:dusts', 'appliedenergistics2:gold_dust');
   event.remove('forge:dusts', 'appliedenergistics2:iron_dust');
-  event.remove('forge:dusts', 'bloodmagic:ironsand');
-  event.remove('forge:dusts', 'bloodmagic:goldsand');
 
-  event.remove('forge:dusts/iron', 'pedestals:dustiron');
-  event.remove('forge:dusts/gold', 'pedestals:dustgold');
-  event.remove('forge:dusts/copper', 'pedestals:dustcopper');
-  event.remove('forge:dusts/tin', 'pedestals:dusttin');
-  event.remove('forge:dusts/osmium', 'pedestals:dustosmium');
-  event.remove('forge:dusts/uranium', 'pedestals:dusturanium');
-  event.remove('forge:dusts/lead', 'pedestals:dustlead');
-  event.remove('forge:dusts/silver', 'pedestals:dustsilver');
-  event.remove('forge:dusts/aluminum', 'pedestals:dustaluminum');
-  event.remove('forge:dusts/nickel', 'pedestals:dustnickel');
   event.remove('forge:dusts/titaniumaluminide', 'advancedrocketry:dusttitaniumaluminide');
   event.remove('forge:dusts/titaniumiridium', 'advancedrocketry:dusttitaniumiridium');
   event.remove('forge:dusts/iron', 'libvulpes:dustiron');
@@ -1477,9 +1455,6 @@ onEvent('item.tags', event => {
   event.remove('forge:dusts/gold', 'immersiveengineering:dust_gold');
   event.remove('forge:dusts/iron', 'appliedenergistics2:iron_dust');
   event.remove('forge:dusts/gold', 'appliedenergistics2:gold_dust');
-  event.remove('forge:dusts/iron', 'bloodmagic:ironsand');
-  event.remove('forge:dusts/gold', 'bloodmagic:goldsand');
-  event.remove('forge:dusts/netherite_scrap', 'bloodmagic:sand_netherite');
 
   //remove wires
   event.remove('forge:wires', 'createaddition:copper_wire');

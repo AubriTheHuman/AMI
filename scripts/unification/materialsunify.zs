@@ -52,17 +52,6 @@ mods.jei.JEI.hideItem(<item:immersiveposts:stick_electrum>);
 mods.jei.JEI.hideItem(<item:immersiveposts:stick_uranium>);
 
 #rogue dust
-mods.jei.JEI.hideItem(<item:pedestals:dustiron>);
-mods.jei.JEI.hideItem(<item:pedestals:dustgold>);
-mods.jei.JEI.hideItem(<item:pedestals:dustcopper>);
-mods.jei.JEI.hideItem(<item:pedestals:dusttin>);
-mods.jei.JEI.hideItem(<item:pedestals:dustosmium>);
-mods.jei.JEI.hideItem(<item:pedestals:dusturanium>);
-mods.jei.JEI.hideItem(<item:pedestals:dustlead>);
-mods.jei.JEI.hideItem(<item:pedestals:dustsilver>);
-mods.jei.JEI.hideItem(<item:pedestals:dustaluminum>);
-mods.jei.JEI.hideItem(<item:pedestals:dustnickel>);
-
 mods.jei.JEI.hideItem(<item:advancedrocketry:dusttitaniumaluminide>);
 mods.jei.JEI.hideItem(<item:advancedrocketry:dusttitaniumiridium>);
 mods.jei.JEI.hideItem(<item:libvulpes:dustiron>);

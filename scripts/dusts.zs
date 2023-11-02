@@ -24,7 +24,3 @@ blastFurnace.removeByName("immersiveengineering:crafting/iron_ingot_from_dust_fr
 furnace.removeByName("immersiveengineering:crafting/gold_ingot_from_dust");
 blastFurnace.removeByName("immersiveengineering:crafting/gold_ingot_from_dust_from_blasting");
 furnace.removeByName("immersiveengineering:crafting/ingot_hop_graphite");
-furnace.removeByName("pedestals:ingot_iron");
-blastFurnace.removeByName("pedestals:ingot_iron_blasting");
-furnace.removeByName("pedestals:ingot_gold");
-blastFurnace.removeByName("pedestals:ingot_gold_blasting");

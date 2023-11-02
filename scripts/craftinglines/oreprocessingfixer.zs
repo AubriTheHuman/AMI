@@ -12,8 +12,6 @@ import crafttweaker.api.ILogger;
 
 
 //Delete other processing methods
-craftingTable.removeByName("pedestals:upgrades/rfcrusher");
-craftingTable.removeByName("pedestals:upgrades/crusher");
 craftingTable.removeByName("advancedrocketry:platepress");
 <recipetype:immersiveengineering:arc_furnace>.removeAll();
 <recipetype:immersiveengineering:crusher>.removeByModid("immersive_geology");
